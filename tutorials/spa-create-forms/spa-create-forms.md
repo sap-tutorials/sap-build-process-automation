@@ -297,13 +297,13 @@ After the user approves or rejects the request, the next step is to create notif
     | Headline 1 | Order Rejection
     | Paragraph  | We are sorry to inform you that your order cannot be accepted. Any inconvenience caused due to the refusal of the order is regretted. You can find the reason of the rejection and the details of your order below, please confirm the request:
 
-    <!-- border -->![Notifications](031.png)
-
 17. For the below **Input Field** enter the label:
 
     | **Form Fields** | **Field Settings with Label**
     |  :------------- | :-------------
     | Paragraph | Please press the SUBMIT button to acknowledge the order status.
+
+    <!-- border -->![Notifications](031a.png)
 
 18. **Save** the form.
 
