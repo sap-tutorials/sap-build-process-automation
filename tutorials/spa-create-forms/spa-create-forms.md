@@ -13,7 +13,7 @@ primary_tag: software-product>sap-process-automation
 
 
 ## Prerequisites
-  - Complete [Create a Business Process](spa-create-process) mission
+  - Complete [Create a Business Process](spa-create-process) tutorial
 
 ## You will learn
   - How to add interactive forms to the process
@@ -40,7 +40,7 @@ Let us now explore how these different forms are created. In the steps below, yo
 
 First, you will create a trigger form that will start the business process. For that, you have to open your process in the process builder and add a new form.
 
-1. Choose **+** in the Trigger Settings, then **Forms** and **New Form**.
+1. Choose **+** in the Trigger settings, then **Forms** and **New Form**.
 
     <!-- border -->![Form](001.png)
 
@@ -94,7 +94,7 @@ The approval form will be used to get faster and easier approvals from the busin
 
 You can create these different forms using the **Form Builder** embedded in the process builder using different form field options. You can design and modify them without any coding.   
 
-1. Go the **Order Processing** Project.
+1. Go to the **Order Processing** Project.
 
     <!-- border -->![Approval](007.png)
 
@@ -109,7 +109,7 @@ You can create these different forms using the **Form Builder** embedded in the 
 
     <!-- border -->![Approval](009.png)
 
-4. **Open Editor** of the Approval Form.
+4. Choose **Open Editor** of the Approval Form.
 
     <!-- border -->![Approval](010.png)
 
@@ -123,7 +123,7 @@ You can create these different forms using the **Form Builder** embedded in the 
 
     <!-- border -->![Approval](011.png)
 
-6. Add **Input Fields** enter the labels and select the **Read Only** checkbox.
+6. Add **Input Fields**, enter the labels and select the **Read Only** checkbox.
 
     |  **Form Fields**   | **Field Settings with Label**
     |  :------------- | :-------------
@@ -203,21 +203,20 @@ You can create these different forms using the **Form Builder** embedded in the 
 ### Create and configure form for notifications
 
 
-After the user approves or rejects the request, the next step is to create notifications. These notifications will inform the requester whether their sales order is approved or rejected, and will be sent either via an email or through the form.
-They will appear in the inbox of the requester as a task.
+After the user approves or rejects the request, the next step is to create notifications. These notifications will inform the requester whether their sales order is approved or rejected, and will be sent either via an email or through the form. They will appear in the inbox of the requester as a task.
 
 1. To add a confirmation to the process, select **+** next to the Approve action. Choose Forms and **New Form**.
 
     <!-- border -->![Notifications](021.png)
 
 2. In the **Create Form** dialog box, do the following:
-    - In the Name field enter **Order Confirmation Form**
-    - In the Description field enter **Notification form to inform whether the sales order is approved by the supplier**
+    - In the Name field, enter **Order Confirmation Form**
+    - In the Description field, enter **Notification form to inform whether the sales order is approved by the supplier**
     - Choose **Create**.
 
     <!-- border -->![Notifications](022.png)
 
-3. **Open Editor** of the form.
+3. Choose **Open Editor** of the form.
 
     <!-- border -->![Notifications](023.png)
 
@@ -232,7 +231,7 @@ They will appear in the inbox of the requester as a task.
 
     <!-- border -->![Notifications](024.png)
 
-5. Add below **Input Fields** enter the labels and select the **Read Only** checkbox.
+5. Add below **Input Fields**, enter the labels and select the **Read Only** checkbox.
 
     | Form Fields| Field Settings with Label
     |  :------------- | :-------------
@@ -249,7 +248,7 @@ They will appear in the inbox of the requester as a task.
 8. Select the **Order Confirmation** form to configure the **General** information section.
 
 9. In the **Subject** box:
-    - Enter **Your order**,
+    - Enter **Your order**
     - Select **Order Number** from Order Processing Form
     - Enter **has been successfully received**
 
@@ -277,13 +276,13 @@ They will appear in the inbox of the requester as a task.
 
 13. To add the new rejection form, you will use the **Duplicate** feature. Select the **Overview**.
 
-    > Duplicate feature is used to copy artifacts within the Business Process whereas **Copy** feature is used to copy artifacts across the business processes.
+    > **Duplicate** feature is used to copy artifacts within the Business Process whereas **Copy** feature is used to copy artifacts across the business processes.
 
     <!-- border -->![Notifications](028.png)
 
 14. In the **Overview** screen:
-    - Find **Order Confirmation Form** under the Artifacts section and select **...**.
-    - Choose **Duplicate**.
+    - Find **Order Confirmation Form** under the Artifacts section and select **...**
+    - Choose **Duplicate**
 
     <!-- border -->![Notifications](029.png)
 
@@ -298,23 +297,23 @@ They will appear in the inbox of the requester as a task.
     | Headline 1 | Order Rejection
     | Paragraph  | We are sorry to inform you that your order cannot be accepted. Any inconvenience caused due to the refusal of the order is regretted. You can find the reason of the rejection and the details of your order below, please confirm the request:
 
+    <!-- border -->![Notifications](031.png)
+
 17. For the below **Input Field** enter the label:
 
     | **Form Fields** | **Field Settings with Label**
     |  :------------- | :-------------
     | Paragraph | Please press the SUBMIT button to acknowledge the order status.
 
-    <!-- border -->![Notifications](031.png)
-
 18. **Save** the form.
 
-19. Go back to the process builder and add the order rejection notification form to the process. Select **Approval Form** and Choose **+** option for the **Reject**. Choose **Forms** and select **Order Rejection Form**.
+19. Go back to the process builder and add the order rejection notification form to the process. Select **Approval Form** and choose **+** option for the **Reject**. Choose **Forms** and select **Order Rejection Form**.
 
     <!-- border -->![Notifications](032.png)
 
 20.	Configure the order rejection form. In the General section configure in the **Subject** box:
     - Enter **Your order**
-    - Select **Order Number**,
+    - Select **Order Number** from the Order Processing Form
     - Enter **is rejected by the supplier**
 
 21. Under Priority select **High**.
