@@ -36,49 +36,43 @@ There are many use cases where you can make a difference using SAP Process Autom
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Process Automation. You can access business application processes, company configured templates, and other resources for your end-to-end business process.
 
-    <!-- border -->![Lobby overview](01_Lobby.png)
+    <!-- border -->![Lobby](001.png)
 
-2. Select **Business Process**.
+2. Pick **Build an Automated Process**.
 
     > Business Process Projects are a collection of skills in SAP Process Automation. Projects are part of the internal business processes of a company and are defined based on business scenarios. A project can contain a set of processes, forms, automations and decisions, which are reusable artifacts.
 
-    <!-- border -->![Create a Business Process Project](02_Lobby_Create.png)
+    <!-- border -->![Create a Project](002.png)
+
+3. Select **Business Process**.
+
+    <!-- border -->![Create a Project](003.png)
+
 
 3. In the **Create Business Process Project** dialog box, do the following:
-    - Enter a **Project Name**: Sales Orders Management.
-    - Enter a **Short Description**: Sales Orders Management Project.
+    - Enter a Project Name: **Sales Orders Management**
+    - Enter a Short Description: **Sales Orders Management Project**
     - Choose **Create**.
 
-    <!-- border -->![Fill Project information ](02_Lobby_Create_Business_Process_Project_filled_name.png)
-
-    A new tabs opens with the project that you created.
-
+    <!-- border -->![Project information](004.png)
 
 
 ### Create a business process
 
 
-1. In the **Project Overview**, choose **Create**.
+1.   A new tabs opens with the newly created project.
 
-    <!-- border -->![Process Builder](01_Design_Studio.png)
+2. In the **Create Process** dialog box, provide the following:
+    - Enter a Name: **Order Processing**
+    - Enter a Description for your process: **A process to handle sales orders**
+    - Choose **Create**
 
-2. Select **Process**.
 
     > Inside a project, you can create a process. This process is equivalent to a workflow in any business scenario. You can create this process from different skills such as forms, decisions, automations.
 
-    <!-- border -->![Process Builder Create Process](02_Design_Studio_Create.png)
+    <!-- border -->![Create Process](005.png)
 
-3. In the **Create Process** dialog box, provide the following:
-    - Enter a **Name**: Order Processing.
-    - Enter a **Description** for your process: A process to handle sales orders.
-    - Choose **Create**.
-
-    > The process **Identifier** field is auto-filled.
-
-    The process builder loads.
-
-    <!-- border -->![Process Builder Create Process filled](03_Design_Studio_Create_Process_filled.png)
-
+    > The form **Identifier** field is auto-filled.
 
 
 ---
