@@ -173,7 +173,7 @@ primary_tag: software-product>sap-build
 
         <!-- border -->![Automation](023.png)
 
-    - Select the value **220** in the document and map to the field `grossAmount`.
+    - Select the value **220** in the document and map to the field `grossAmount`. Choose **Apply**.
 
         <!-- border -->![Automation](024.png)
 
@@ -185,7 +185,7 @@ primary_tag: software-product>sap-build
 ### Build the automation
 
 
-1. Navigate back to Application Development and select **Extract Invoice Data** automation tab.
+1. Navigate back to **Build Process Automation** and select **Extract Invoice Data** automation tab.
 
     <!-- border -->![Automation](026.png)
 
