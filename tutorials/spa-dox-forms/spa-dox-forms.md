@@ -24,7 +24,7 @@ There are different requirements and business situations when a form is needed i
 
 ---
 
-### Create New Approval Form
+### Create new approval form
 
 
 1. Choose **+** at the connection flow after the decision **Determine Approver** to open the context menu. Then select **Approvals > New Approval Form**.
@@ -63,9 +63,9 @@ There are different requirements and business situations when a form is needed i
     |  Number           | **`Gross Amount`**
     |  Text   | **`Employee Name`**
 
-    <!-- border -->![Further input fields](08.png)
-
 9. You are done with the layout and input fields of the approval form. **Save** your work.
+
+    <!-- border -->![Further input fields](08.png)
 
 10. Go back to your process, you will recognize some errors, e.g. inputs are missing. No need to worry, you will provide the required details in the next steps.
 
@@ -137,11 +137,11 @@ There are different requirements and business situations when a form is needed i
 
     <!-- border -->![Approval Notification General Entries](22.png)
 
-7. Select **Inputs** tab and assign the **Invoice Number** from the process content here.
+8. Select **Inputs** tab and assign the **Invoice Number** from the process content here.
 
     <!-- border -->![Approval Notification Input](23.png)
 
-8. **Save** your work.
+9. **Save** your work.
 
 
 ### Create Rejection Notification Form
@@ -180,7 +180,7 @@ To add the new rejection form, you will use the **Duplicate** feature.
 
 6. Change the invoice rejection form in the form builder to reflect the data for rejection case.
 
-7. Change the **Description** to **`Form to inform about the rejected invoice`** and the following fields to:
+7. Change the **Description** to **`Form to notify about the rejected invoice`** and the following fields to:
 
     | Form Fields | Field Settings with Label
     |  :------------- | :-------------
