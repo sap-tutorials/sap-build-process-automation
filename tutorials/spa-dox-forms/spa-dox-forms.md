@@ -108,7 +108,7 @@ There are different requirements and business situations when a form is needed i
 17. **Save** your work.
 
 
-### Create Approval Notification Form
+### Create approval notification form
 
 
 1. Choose the **+** of the control flow for **Approve** coming from the **Invoice Approval Form** you have just created. In the context menu, select **Forms > New Form**.
@@ -144,7 +144,7 @@ There are different requirements and business situations when a form is needed i
 9. **Save** your work.
 
 
-### Create Rejection Notification Form
+### Create rejection notification form
 
 With this you completed designing and configuring the notification form. You can copy the same form to create another form to send a rejection notification to the requester.
 
