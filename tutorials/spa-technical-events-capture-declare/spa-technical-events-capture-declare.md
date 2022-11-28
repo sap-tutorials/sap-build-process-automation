@@ -3,7 +3,7 @@ parser: v2
 author_name: Céline Audin
 author_profile: https://github.com/celineaudinsap
 auto_validation: true
-time: 20
+time: 25
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-process-automation
 ---
