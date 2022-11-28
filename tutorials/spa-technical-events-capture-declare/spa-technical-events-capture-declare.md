@@ -8,7 +8,7 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-process-automation
 ---
 
-# Capture and Declare an Application to trigger Technical Events
+# Capture and Declare an Application to Trigger Technical Events
 <!-- description --> Capture and declare an order detail application to retrieve details on an excel spreadsheet
 
 ## Prerequisites
