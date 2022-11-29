@@ -37,10 +37,13 @@ The very first time you launch the Desktop Agent 3 on your workstations, you wil
 
 ### Download the Desktop Agent 3
 
+> If you are a P user, you will have to download the Desktop Agent 3 from the SAP Development Tools.
 
-The setup program is provided in the form of an industry standard Windows MSI installer.
+[OPTION BEGIN [Automatically]]
 
-1. You can install the Desktop Agent 3 from SAP Application Development. Navigate to the **Settings** on your tenant, choose **Agent Update** under **Agents**.
+Follow these steps once and your Desktop Agent 3 will be regularly updated to the latest version.
+
+1. You can install the Desktop Agent 3 from SAP Build. Navigate to the **Settings** on your tenant, choose **Agent Update** under **Agents**.
 
     >The following steps are required if you have not set up your Secret ID yet.
 
@@ -72,7 +75,7 @@ The setup program is provided in the form of an industry standard Windows MSI in
 
     <!-- border -->![Generate a new key](agent3-028.png)
 
-8. Go back to the SAP Application Development, and select the **Enter Secret ID** button.
+8. Go back to SAP Build, and select the **Enter Secret ID** button.
 
     <!-- border -->![Change settings](agent3-029a.png)
 
@@ -88,6 +91,19 @@ The setup program is provided in the form of an industry standard Windows MSI in
 
     <!-- border -->![Download file](agent3-004.png)
 
+[OPTION END]
+
+[OPTION BEGIN [Manually]]
+
+You will download the setup program from the SAP Development Tools. It is provided in the form of an industry standard Windows MSI installer.
+
+1. Download the **latest version**  of the [MSI file extension](https://tools.hana.ondemand.com/#cloud).
+
+    > MSI version will be updated for every new release. Always download the latest version.
+
+    <!-- border -->![Link text e.g., Destination screen](tools.png)
+
+[OPTION END]
 
 ### Install the Desktop Agent 3
 
