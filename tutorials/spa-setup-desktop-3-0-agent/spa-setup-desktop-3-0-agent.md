@@ -37,7 +37,7 @@ The very first time you launch the Desktop Agent 3 on your workstations, you wil
 
 ### Download the Desktop Agent 3
 
-> If you are a P user, you will have to download the Desktop Agent 3 from the SAP Development Tools.
+>**CAUTION**: If you are a **P user**, you will have to download the Desktop Agent 3 from the SAP Development Tools. Please choose option **Manually**.
 
 [OPTION BEGIN [Automatically]]
 
