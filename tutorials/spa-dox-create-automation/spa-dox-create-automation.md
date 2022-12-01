@@ -16,11 +16,10 @@ primary_tag: software-product>sap-build
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
  - Download the [Invoice Document](invoice.pdf) to your local machine
 
+
 ## You will learn
   - How to extract data using Document Extraction Template
   - How to bind parameters between process and automation
-
----
 
 ### Create automation
 

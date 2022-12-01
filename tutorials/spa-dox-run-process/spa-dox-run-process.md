@@ -26,7 +26,7 @@ primary_tag: software-product>sap-process-automation
 
 ---
 
-### Release Business Process Project
+### Release business process project
 
    Before you run the process, ensure that the process is saved and that there are no errors showing in the Design Console.
    To run the process, you must first release and then deploy the Business Process project. Releasing a project creates a version or snapshot of the changes.
@@ -52,7 +52,7 @@ primary_tag: software-product>sap-process-automation
     <!-- border -->![Released](03_Released_first_version.png)
 
 
-### Deploy the Released Process
+### Deploy the released process
 
 
     You can deploy Business Process projects from each released version of the project in the Process Builder or through the Lobby. Deploying the project makes it available for others to use it. Bare in mind that you can only deploy a released version of the project.
@@ -69,13 +69,13 @@ primary_tag: software-product>sap-process-automation
 
     <!-- border -->![Deploy confirm  first](02_Deploy_first_version_confirm.png)
 
-3. Choose **Deploy**.
+4. Choose **Deploy**.
 
     <!-- border -->![Deploy](02_Deploy_first_version_deploy.png)
 
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
-4. The project deployed successfully and is now ready for running and monitoring.
+5. The project deployed successfully and is now ready for running and monitoring.
 
     <!-- border -->![Deployed](03_Deployed_first_version.png)
 
@@ -86,7 +86,7 @@ primary_tag: software-product>sap-process-automation
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
 
 
-### Run the Business Process
+### Run the business process
 
 
    Now that you have successfully deployed your project, it is time to run the process and see the results.
@@ -116,7 +116,7 @@ primary_tag: software-product>sap-process-automation
     <!-- border -->![Run form successfully submitted](Run_inputs_2.png)
 
 
-### Work on the Tasks
+### Work on the tasks
 
 
 1. Start in the **Lobby** and open the **My Inbox** application by selecting the button ![Inbox Icon](02_Inbox_Icon.png) at the top right corner.
@@ -144,7 +144,7 @@ primary_tag: software-product>sap-process-automation
     <!-- border -->![Confirmation Form](06_ConfirmationForm.png)
 
 
-### Monitor Process and Automation
+### Monitor process and automation
 
 
 1. Navigate to the **Monitor** tab and choose **Process and Workflow Instances**.

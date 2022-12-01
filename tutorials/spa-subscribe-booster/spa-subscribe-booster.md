@@ -8,7 +8,7 @@ tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tu
 primary_tag: software-product>sap-process-automation
 ---
 
-# Subscribe to SAP Process Automation Using Booster in SAP BTP Free Tier
+# Subscribe to SAP Process Automation using Booster in SAP BTP Free Tier
 <!-- description --> Activate the SAP Process Automation service in the SAP BTP with booster
 
 ## Prerequisites
@@ -22,11 +22,11 @@ SAP Process Automation in the SAP Business Technology Platform combines the capa
 
 ---
 
-### Creation of SAP BTP Free Tier Account
+### Creation of SAP BTP Free Tier account
 
 
   SAP Process Automation is available only on SAP BTP Free Tier Account.
-  Create a SAP BTP Free Tier Account using the following tutorial: [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account)
+  Create a SAP BTP Free Tier account using the following tutorial: [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account)
 
 
 

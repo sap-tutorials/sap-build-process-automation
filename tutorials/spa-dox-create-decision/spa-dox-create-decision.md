@@ -113,7 +113,7 @@ There are many ways to express a business rule, in this case you will create a d
     <!-- border -->![Decision Table Name](015.png)
 
 4. You will now configure the conditions:
-    - Under **Data Types**, choose **Invoice Parameter**,
+    - Under **Vocabulary**, choose **Invoice Parameter**,
     - Select **Sender Name**,
     - Choose **Next Step** to configure the results.
 

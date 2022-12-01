@@ -3,12 +3,12 @@ parser: v2
 author_name: Céline Audin
 author_profile: https://github.com/celineaudinsap
 auto_validation: true
-time: 20
+time: 25
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-process-automation
 ---
 
-# Capture and Declare an Application to trigger Technical Events
+# Capture and Declare an Application to Trigger Technical Events
 <!-- description --> Capture and declare an order detail application to retrieve details on an excel spreadsheet
 
 ## Prerequisites

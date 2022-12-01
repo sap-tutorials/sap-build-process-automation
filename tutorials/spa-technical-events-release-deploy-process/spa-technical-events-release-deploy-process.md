@@ -8,7 +8,7 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-process-automation
 ---
 
-# Release and Deploy the Process to trigger Technical Events
+# Release and Deploy the Process to Trigger Technical Events
 <!-- description --> Release and deploy the Process to retrieve details on an excel spreadsheet
 
 ## Prerequisites

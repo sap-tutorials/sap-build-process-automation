@@ -459,7 +459,7 @@ You will now retrieve the values in the Line Items table and set them in excel.
     > Please make sure not to copy and paste the `rangeDefinition` values directly in the field but to follow the steps mentioned above.
 
 
-### Design the automation - Save and Release
+### Design the automation - Save and release
 
 
 The last step consists in saving the workbook you created and releasing the excel instance.
