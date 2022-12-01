@@ -33,7 +33,7 @@ primary_tag: software-product>sap-build
 
 2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
     - From the dropdown, select the version of the Desktop Agent installed on your machine.
-    - Choose **Confirm**.
+    - Choose **Confirm**. 
 
     > It would be with suffix as **Registered**.
 
