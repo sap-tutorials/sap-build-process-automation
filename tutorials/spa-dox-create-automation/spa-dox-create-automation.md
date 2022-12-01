@@ -14,13 +14,12 @@ primary_tag: software-product>sap-build
 ## Prerequisites
  - Complete the tutorial on creating an [Invoice Approval Process](spa-dox-create-process)
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
- - Download the [Invoice Document](https://github.com/sap-tutorials/sap-build-process-automation/blob/master/tutorials/spa-dox-create-automation/invoice.pdf) to your local machine
+ - Download the [Invoice Document](invoice.pdf) to your local machine
+
 
 ## You will learn
   - How to extract data using Document Extraction Template
   - How to bind parameters between process and automation
-
----
 
 ### Create automation
 
@@ -33,7 +32,7 @@ primary_tag: software-product>sap-build
 
 2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
     - From the dropdown, select the version of the Desktop Agent installed on your machine.
-    - Choose **Confirm**.
+    - Choose **Confirm**. 
 
     > It would be with suffix as **Registered**.
 
