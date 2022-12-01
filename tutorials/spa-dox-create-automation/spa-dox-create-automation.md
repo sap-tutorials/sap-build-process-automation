@@ -14,7 +14,7 @@ primary_tag: software-product>sap-build
 ## Prerequisites
  - Complete the tutorial on creating an [Invoice Approval Process](spa-dox-create-process)
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
- - Download the [Invoice Document](https://github.com/sap-tutorials/Tutorials/blob/master/tutorials/spa-dox-create-automation/invoice.pdf) to your local machine
+ - Download the [Invoice Document](invoice.pdf) to your local machine
 
 ## You will learn
   - How to extract data using Document Extraction Template
@@ -102,7 +102,7 @@ primary_tag: software-product>sap-build
 
     |  Parameter Name       | Data type        | Parameter Type | Description
     |  :---------------     | :-------------   | :------------- | :---------------
-    |  `FilePath`      | String     | Input          | Path where the invoice document is stored  
+    |  `FilePath`      | String     | Input          | Please provide the full qualified path to the PDF file containing the invoice
     |  `InvoiceDetails`    | Invoice| Output         | Extracted Invoice Details
 
     <!-- border -->![Automation](011.png)
@@ -173,7 +173,7 @@ primary_tag: software-product>sap-build
 
         <!-- border -->![Automation](023.png)
 
-    - Select the value **220** in the document and map to the field `grossAmount`.
+    - Select the value **220** in the document and map to the field `grossAmount`. Choose **Apply**.
 
         <!-- border -->![Automation](024.png)
 
@@ -185,7 +185,7 @@ primary_tag: software-product>sap-build
 ### Build the automation
 
 
-1. Navigate back to Application Development and select **Extract Invoice Data** automation tab.
+1. Navigate back to **Build Process Automation** and select **Extract Invoice Data** automation tab.
 
     <!-- border -->![Automation](026.png)
 
