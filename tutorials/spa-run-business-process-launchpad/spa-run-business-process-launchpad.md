@@ -80,14 +80,14 @@ You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assig
 
 
 
-### Assign Sales Order Management Trigger to SAP Process Automation Group
+### Assign Sales Order Management Trigger to SAP Build Process Automation Group
 
 
 1. Navigate back to **My Content**.
 
     <!-- border -->![My Content](13a.png)
 
-2. Select **SAP Process Automation** group.
+2. Select **SAP Build Process Automation** group.
 
     <!-- border -->![SAP Process Automation](03.png)
 
