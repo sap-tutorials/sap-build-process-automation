@@ -11,16 +11,16 @@ primary_tag: software-product>sap-process-automation
 <!-- description --> Create a Visibility Scenario for your Business Process
 
 ## Prerequisites
- - [Build Your First Business Process with SAP Process Automation](mission.sap-process-automation) Completed
+ - [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation) Completed
  - [Get Order Details from Excel File with SPA](spa-create-automation) Completed
 
 ## You will learn
   - How to create and configure a Process Visibility Scenario
   - How to define performance indicators of a process by using visibility scenarios
-  - Why and how you can gain visibility into your processes to measure performance with SAP Process Automation.
+  - Why and how you can gain visibility into your processes to measure performance with SAP Build Process Automation.
 
 ---
-The process is created where several forms are defined, an automation to extract data is included in that same process and a condition to control the flow and even improved the process with some decision logic are used. Now it's time to measure success and improvements. In fact, you will gain end-to-end process visibility. There is a comprehensive dashboard with several process performance indicators, like process cycle time, duration of individual steps or status of the running processes – and this view is created automatically, in real time.
+The process is created where several forms are defined, an automation to extract data is included in that same process and a condition to control the flow and even improved the process with some decision logic are used. Now it is time to measure success and improvements. In fact, you will gain end-to-end process visibility. There is a comprehensive dashboard with several process performance indicators, like process cycle time, duration of individual steps or status of the running processes – and this view is created automatically, in real time.
 
 ### Prepare Process
 
@@ -50,9 +50,6 @@ Before creating a **Visibility Scenario** we need to prepare the process.
     > The relevant attributes are the ones that could be used to measure, calculate, or derive some meaningful information in the visibility dashboard.
 
 4.  **Save** your work.
-
-    <!-- border -->![Save](Step1-4.png)
-
 
 
 ### Create Visibility Scenario
@@ -97,7 +94,7 @@ This step involves adding a process to the visibility scenario we created.
 
     <!-- border -->![Change data types in context data](Step3-3.png)
 
-    | Name                   | Current Data Type | New Data Type |
+    | **Name**                   | **Current Data Type** | **New Data Type** |
     | ---------------------- | ----------------- | ------------- |
     | `expectedDeliveryDate` | String            | Date          |
     | `orderAmount`          | String            | Double        |

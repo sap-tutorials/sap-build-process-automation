@@ -27,15 +27,15 @@ Before releasing and deploying your business process, please make sure you have 
 
 Once you have taken care of the agent management settings, you can release and deploy the business process project to run the process.
 
-  <!-- border -->![Release](00_Release.png)
+  <!-- border -->![Release](001.png)
 
-  <!-- border -->![Deploy](00_Deploy.png)
+  <!-- border -->![Deploy](002.png)
 
 1. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
 
 2. Choose **Confirm** and then **Deploy**.
 
-  <!-- border -->![OrderFilePath](00_OrderFilePath.png)
+  <!-- border -->![OrderFilePath](003.png)
 
 
 ### Run the business process
@@ -45,13 +45,13 @@ You will now run the process and learn how to monitor the process and work on th
 
 1. From the deployed version of the Business Process Project in the **Overview** section, open the process **Order Processing**.
 
-    <!-- border -->![Run](01_Open_Order_Processing.png)
+    <!-- border -->![Run](004.png)
 
 2. Choose **Order Processing Form**.
 
 3. Choose the **Copy** icon aside the **Form Link**.
 
-    <!-- border -->![Run copy the form link](02_Process_Start.png)
+    <!-- border -->![Run copy the form link](005.png)
 
 4. Open the Form pasting the **Form Link** in a browser window.
 
@@ -61,7 +61,7 @@ You will now run the process and learn how to monitor the process and work on th
 
     > You have to enter one of the order numbers from the excel file. Do not enter any random order number or else the automation will not give any results.
 
-    <!-- border -->![Run open the form](Form_Inputs.png)
+    <!-- border -->![Run open the form](006.png)
 
     After you choose the **Submit** button, you will receive a notification that the form has been successfully submitted.
 
@@ -71,15 +71,15 @@ You will now run the process and learn how to monitor the process and work on th
 ### Work on the tasks
 
 
-Tasks are requests for users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with SAP Process Automation. Users can claim, approve, and/or reject the task from their inbox.
+Tasks are requests for users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with SAP Build Process Automation. Users can claim, approve, and/or reject the task from their inbox.
 
-1. Start in the **Lobby** and open the **My Inbox** application by selecting the button ![Inbox Icon](02_Inbox_Icon.png) at the top right corner.
+1. Start in the **Lobby** and open the **My Inbox**.
 
-    <!-- border -->![Lobby](01_Lobby.png)
+    <!-- border -->![Lobby](007.png)
 
 2. After opening the **My Inbox** application, you will see on the left-hand side all the tasks listed. Select the Approval Form, complete it and choose **Approve**.
 
-    <!-- border -->![My Inbox Actions](03-MyInbox-Actions.png)
+    <!-- border -->![My Inbox Actions](008.png)
 
     > The provided tasks and forms might look different than this screenshot, depending on your configurations.
 
@@ -87,7 +87,7 @@ Tasks are requests for users to participate in an approval or review process. Th
 
     Once you approve or reject the approval task, refresh the inbox again to get the final notification based on the action you took. Once you acknowledge the notification sent via the approval process, the process will be completed.
 
-    <!-- border -->![Confirmation Form](06-ConfirmationForm.png)
+    <!-- border -->![Confirmation Form](009.png)
 
 
 ### Monitor process and automation
@@ -95,13 +95,13 @@ Tasks are requests for users to participate in an approval or review process. Th
 
 Monitoring business processes is one of the key aspects of successful automation. Using monitoring capabilities, you can proactively and consistently monitor process performance, identify any issues in the process and take necessary actions to ensure business process continuity.
 
-SAP Process Automation provides different applications for monitoring and managing different process skills. The applications include Process and Workflow Instances, Automation Jobs, Acquired Events etc. These applications are available under the **Monitor** tab in Application Development studio.
+SAP Build Process Automation provides different applications for monitoring and managing different process skills. The applications include Process and Workflow Instances, Automation Jobs, Acquired Events etc. These applications are available under the **Monitor** tab in Application Development studio.
 
 > All deployed processes can be accessed by following **Manage** > **Processes and Workflows application**.
 
 1. To monitor all the running instances of the process, navigate to **Monitor** > **Process and Workflow Instances**.
 
-    <!-- border -->![Monitor](01_Monitor.png)
+    <!-- border -->![Monitor](010.png)
 
     In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statuses such as running, completed, suspended, terminated, etc.
 
@@ -111,25 +111,25 @@ SAP Process Automation provides different applications for monitoring and managi
 
     > Observe the process instance information, which provides the context for the process. You can see actual process data flowing across different activities in the process, and the execution logs where you can trace how the entire process has been progressing. You can also see some basic runtime information for each activity such activity name, who started it, when was it completed etc.
 
-    <!-- border -->![Monitor](02-Process-and-Workflow.png)
+    <!-- border -->![Monitor](011.png)
 
 3. Go to **Automation Jobs** under **Monitor**.
 
-    <!-- border -->![Monitor](03_Automations_Jobs.png)
+    <!-- border -->![Monitor](012.png)
 
 4. Choose the **Warning** icon (if applicable) to learn more about the Automation.
 
     > If this is the case, go to the [Settings](spa-run-agent-settings) section and add your agent in order to run the Automation Job.
 
-    <!-- border -->![Monitor](03_Automations_Jobs_warning.png)
+    <!-- border -->![Monitor](013.png)
 
-    You will see the automation ran successfully as below:
+5. You will see the automation ran successfully as below:
 
-    <!-- border -->![Monitor](04_Monitor_Automation_successful.png)
+    <!-- border -->![Monitor](014.png)
 
-    Notice the process instance progresses further to the approval step in the business process.
+6. Notice the process instance progresses further to the approval step in the business process.
 
-    <!-- border -->![Monitor](05-Monitor-Process-and-Workflow.png)
+    <!-- border -->![Monitor](015.png)
 
 
 
@@ -139,20 +139,16 @@ SAP Process Automation provides different applications for monitoring and managi
 
 1. From the deployed version of the business process project, click to open **Sales Order Visibility Scenario** artifact.
 
-    <!-- border -->![open](05_Open_Visibility_Scenario.png)
+    <!-- border -->![open](016.png)
 
 2. In **General** section, click the **Copy** icon aside the **Dashboard Link**.
 
-    <!-- border -->![copy](05_Copy_Visibility_Link.png)
+    <!-- border -->![copy](017.png)
 
 3. Open the **Visibility Scenario Dashboard** by pasting the **Dashboard Link** in a browser window.
 
     The dashboard is there. The performance indicators are filling up, depending on the time it has taken, there might be different results. Please now feel free to explore the details and discover what is included in each tile. You could even navigate into single instances.
 
-      <!-- border -->![Browse Scenario](03_BrowseScenario.png)
-
-
-
-
+      <!-- border -->![Browse Scenario](018.png)
 
 ---

@@ -8,12 +8,12 @@ tags: [tutorial>intermediate, software-product>sap-conversational-ai]
 primary_tag: software-product>sap-process-automation
 ---
 
-# Integrate Chatbot with SAP Process Automation
-<!-- description --> Integrate SAP Process Automation with SAP Conversational AI using API Triggers and Notifiers
+# Integrate Chatbot with SAP Build Process Automation
+<!-- description --> Integrate SAP Build Process Automation with SAP Conversational AI using API Triggers and Notifiers
 
 ## Prerequisites
- - Complete [SAP Process Automation Application Capture](spa-create-automation-application-capture)
-  - Complete [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
+ - Complete [SAP Build Process Automation Application Capture](spa-create-automation-application-capture)
+ - Complete [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
 
 ## You will learn
   - How to add API Trigger and Notifiers to an automation
@@ -22,12 +22,12 @@ primary_tag: software-product>sap-process-automation
 ---
 
 ## Intro
-In this tutorial you will retrieve the specific Sales Order details through a chatbot (SAP Conversational AI) that interacts with your SAP Process Automation project.
+In this tutorial you will retrieve the specific Sales Order details through a chatbot (SAP Conversational AI) that interacts with your SAP Build Process Automation project.
 
 ### Release and deploy the project
 
 
-1.  Open the project you created in [SAP Process Automation Application Capture](spa-create-automation-application-capture).
+1.  Open the project you created in [SAP Build Process Automation Application Capture](spa-create-automation-application-capture).
 
 2.  Add **Agent Attribute**.
 
@@ -67,9 +67,9 @@ In this tutorial you will retrieve the specific Sales Order details through a ch
 ### Create API key
 
 
-1.  Go to lobby landing page of **SAP Process Automation**.
+1.  Go to lobby landing page of **SAP Build**.
 
-    <!-- border -->![Lobby Page](Step2-0.png)
+    <!-- border -->![Lobby Page](099.png)
 
 2.  Go to **Settings > API Keys**.
 
@@ -107,7 +107,7 @@ In this tutorial you will retrieve the specific Sales Order details through a ch
     <!-- border -->![Navigate to instances and subscriptions](Step3-1.png)
 
 3.  For the new instance:
-    -  Select **SAP Process Automation** as **Service**.
+    -  Select **SAP Build Process Automation** as **Service**.
     -  Select **Standard Instance** plan from the **Plan** list.
     -  Select **Other** as **Runtime Environment**.
     -  Set **Instance Name** as **SPA-instance**.
@@ -137,7 +137,7 @@ In this tutorial you will retrieve the specific Sales Order details through a ch
 ### Get API trigger URL
 
 
-1.  Navigate to **SAP Process Automation > Monitor > Manage > Automations**.
+1.  Navigate to **Home > Monitor > Manage > Automations**.
 2.  From the shown triggers:
     - Find your trigger (Created in Step **1.4** during deployment).
     - Click on **Actions** and select **Edit**.
@@ -154,7 +154,7 @@ In this tutorial you will retrieve the specific Sales Order details through a ch
 ### Configure CAI bot API call
 
 A ready CAI bot is used here.
-This bot has a goal of emitting an API Call to **SAP Process Automation** using **API Trigger**, **API Key** and **Service Binding** we created previously.
+This bot has a goal of emitting an API Call to **SAP Build Process Automation** using **API Trigger**, **API Key** and **Service Binding** we created previously.
 
 Using **CONSUME API SERVICE** feature in **Conversational AI** bot we can make API Calls.
 
@@ -221,12 +221,12 @@ Using **CONSUME API SERVICE** feature in **Conversational AI** bot we can make A
 
 ### Create notifiers
 
-1.  Navigate to **SAP Process Automation > Monitor > Manage > Automations**.
+1.  Navigate to **Home > Monitor > Manage > Automations**.
 
     <!-- border -->![Find Trigger](Step7-1.png)
 
 2.  Start **Notifier**:
-    - Click ![More Options button](icon-three-dots.png) under **Actions** in the same row as your **Trigger**.
+    - Click three dots under **Actions** in the same row as your **Trigger**.
 
     <!-- border -->![More options in screen](Step7-2-0.png)
 
@@ -337,8 +337,8 @@ Using **CONSUME API SERVICE** feature in **Conversational AI** bot we can make A
 8.  The workflow of the execution:
     - The process starts with the user triggering it in the chatbot (sending **Start my automation**).
     - The chatbot asks for an **Sales Order Number** which will be used as an input for our automation.
-    - Once the **Order Number** is submitted by the user, the bot sends the **API Request** to **SAP Process Automation** according to what we configured it, and displays **CAI Bot: Emitting the API Call.**
-    - Once the **API Request** is reached, the **SAP Process Automation** **Start notifier** sends back a message declaring its start: **IRPA: Bot Started.**
+    - Once the **Order Number** is submitted by the user, the bot sends the **API Request** to **SAP Build Process Automation** according to what we configured it, and displays **CAI Bot: Emitting the API Call.**
+    - Once the **API Request** is reached, the **SAP Build Process Automation** **Start notifier** sends back a message declaring its start: **IRPA: Bot Started.**
     - Upon a successful execution of the automation, the **Success notifier** is triggered and the **Sales Order**'s details are returned to the bot that displays them.
 
     <!-- border -->![Response From SPA](step8-4.png)
