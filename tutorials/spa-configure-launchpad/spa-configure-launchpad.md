@@ -12,7 +12,6 @@ primary_tag: software-product>sap-process-automation
 <!-- description --> Configure launchpad for visibility scenario
 
 ## Prerequisites
- - [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account)
  - Space in BTP Cockpit subaccount created
 
 ## You will learn
@@ -25,7 +24,7 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
 ### Add entitlement
 
-1.  Navigate to **SAP BTP Cockpit** subaccount > **Entitlements**.
+1.  Navigate to **SAP BTP Cockpit** subaccount and select **Entitlements**.
 
     <!-- border -->![navigate to entitlements](Step1-1.png)
 
@@ -68,7 +67,7 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
     The subscription is now added.
 
-<!-- border -->![Result Subscription](Step2-3.png)
+    <!-- border -->![Result Subscription](Step2-3.png)
 
 
 
@@ -98,11 +97,11 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
     The roles are assigned.
 
-<!-- border -->![Result assignation](Step3-5.png)
+    <!-- border -->![Result assignation](Step3-5.png)
 
 
 
-### Create SAP process automation instance
+### Create SAP Build Process Automation instance
 
 1.  Navigate to **SAP BTP Cockpit** subaccount > **Services** > **Instances and subscriptions**.
 
@@ -111,7 +110,7 @@ In this tutorial, you will configure everything needed for the creation of a lau
     <!-- border -->![navigate to instances and subscriptions](Step2-1.png)
 
 3.  For the new instance:
-    -  Select **SAP Process Automation** as a **Service**.
+    -  Select **SAP Build Process Automation** as a **Service**.
     -  Select **Instance** plan from the **Plan** list.
     -  Select **Cloud Foundry** as **Runtime Environment**.
     -  Select a space from **Space** list.
@@ -164,7 +163,7 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
     <!-- border -->![Provider manager](Step6-3.png)
 
-2.  choose **Update Content**.
+2.  Choose **Update Content**.
 
     <!-- border -->![Update Content](Step6-4.png)
 
@@ -188,7 +187,7 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
     <!-- border -->![Add new Group](Step6-7.png)
 
-8.  Set **Title** to **SAP Process Automation**.
+8.  Set **Title** to **SAP Build Process Automation**.
 
 9.  Assign **My Inbox** and **Process Workspace** to the group.
 
