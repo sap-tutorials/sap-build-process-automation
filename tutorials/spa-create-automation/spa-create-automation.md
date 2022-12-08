@@ -5,7 +5,7 @@ author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
 time: 25
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier ]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Create an Automation to Extract Data
@@ -33,7 +33,7 @@ An Automation is a succession of steps to orchestrate multiple activities and ap
 
 In this exercise, you will automate the process to read the **sales order** details from an Excel and select the specific sales order details based on the input from the submitted form. To design the automation, you will need an Excel file filled with the sales order data. You can:
 
-- Download [Sales Order Data](Orders.xlsx) **OR**
+- Download [Sales Order Data](spa-create-automation/Orders.xlsx) **OR**
 - Create the file yourself using the following data:
 
 
