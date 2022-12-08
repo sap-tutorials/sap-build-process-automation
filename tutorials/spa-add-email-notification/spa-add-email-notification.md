@@ -5,14 +5,14 @@ author_profile: https://github.com/WinAcharya
 auto_validation: true
 time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier ]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Add Mail Notifications to a Process
 <!-- description --> Add mail notifications to your business process via the process builder
 
 ## Prerequisites
- - Complete the mission: [Build Your First Business Process with SAP Process Automation](mission.sap-process-automation)
+ - Complete the mission: [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation)
  - [Configure SMTP Destination](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/4f2d36db614241c9850b9ec80f9e0c1b.html)
 
 ## You will learn
