@@ -5,7 +5,7 @@ author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
 time: 25
 tags: [ tutorial>intermediate , software-product>sap-business-technology-platform , tutorial>free-tier]
-primary_tag: software-product>sap-build
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Create an Automation to Extract Invoice Details
@@ -16,10 +16,11 @@ primary_tag: software-product>sap-build
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
  - Download the [Invoice Document](invoice.pdf) to your local machine
 
-
 ## You will learn
   - How to extract data using Document Extraction Template
   - How to bind parameters between process and automation
+
+---
 
 ### Create automation
 
@@ -32,7 +33,7 @@ primary_tag: software-product>sap-build
 
 2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
     - From the dropdown, select the version of the Desktop Agent installed on your machine.
-    - Choose **Confirm**. 
+    - Choose **Confirm**.
 
     > It would be with suffix as **Registered**.
 
