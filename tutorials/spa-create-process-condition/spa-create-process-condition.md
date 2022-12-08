@@ -5,7 +5,7 @@ author_profile: https://github.com/ArchanaShukla/
 auto_validation: true
 time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier ]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Create a Process Condition
