@@ -5,7 +5,7 @@ author_profile: https://github.com/shielddz
 auto_validation: true
 time: 30
 tags: [tutorial>intermediate, software-product>sap-conversational-ai]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Integrate Chatbot with SAP Build Process Automation
