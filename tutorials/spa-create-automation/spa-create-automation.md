@@ -140,7 +140,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 5. In the Excel File screen:
     - Select **Browse**.
-    - Choose the **SalesOrdersDetails.xlsx** file which is saved on your machine.
+    - Choose the **Orders.xlsx** file which is saved on your machine.
 
     ![001](013.png)
 
@@ -352,7 +352,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
     |  Parameter         | Value  
     |  :---------------- | :-------------  |
-    |  `OrderNumber`  | Any order number which is available in `SalesOrdersDetails` Excel |
+    |  `OrderNumber`  | Any order number which is available in `Orders` Excel |
     |  `OrderFilePath` | Path where the `SalesOrderDetails` Excel is stored on your local machine |
 
     Select **Test** button.
