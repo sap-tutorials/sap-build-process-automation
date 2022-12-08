@@ -5,13 +5,12 @@ author_profile: https://github.com/shielddz
 auto_validation: true
 time: 30
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform,  tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
-# Capture an Application using SAP Process Automation
+# Capture an Application using SAP Build Process Automation
 <!-- description --> Learn how to capture a web application and then build an automation to automate the process of retrieving order details.
 
 ## Prerequisites
- - [Trial account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/) with the SAP Build Process Automation enabled **OR**
  - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 
@@ -239,7 +238,7 @@ In this tutorial, a Sales Orders web application is captured and details will be
     - Make sure the target is set to `Orders Management > Orders List`.
     - Select your browser.
 
-    > Note: SAP Intelligent Robotic Process Automation browser extension must be installed on the used navigator.
+    > Note: SAP Build Process Automation browser extension must be installed on the used navigator.
 
     <!-- border -->![Start Web Page activity](Step6-4.png)
 
