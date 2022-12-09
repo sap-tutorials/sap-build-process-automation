@@ -5,7 +5,7 @@ author_profile: https://github.com/pbujnicka
 auto_validation: true
 time: 15
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Run an API Trigger for the Business Process

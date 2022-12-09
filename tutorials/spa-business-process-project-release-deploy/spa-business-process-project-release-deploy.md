@@ -5,7 +5,7 @@ author_profile: https://github.com/celineaudinsap
 auto_validation: true
 time: 5
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Release, Deploy and Run a Business Process Project

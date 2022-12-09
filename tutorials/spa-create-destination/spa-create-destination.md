@@ -5,7 +5,8 @@ author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
 time: 10
 tags: [ tutorial>beginner , software-product>sap-business-technology-platform , tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
+
 ---
 
 # Configure BTP Destinations in SAP Process Automation

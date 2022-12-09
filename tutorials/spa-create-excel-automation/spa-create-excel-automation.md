@@ -5,7 +5,8 @@ author_profile: https://github.com/r3ksk
 auto_validation: true
 time: 30
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
+
 ---
 
 # Build Your First Automation Using Excel SDK of SAP Process Automation
