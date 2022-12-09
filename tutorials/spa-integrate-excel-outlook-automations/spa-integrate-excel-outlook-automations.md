@@ -5,7 +5,7 @@ author_profile: https://github.com/r3ksk
 auto_validation: true
 time: 20
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Integrate Excel and Outlook SDK Based Automations To A Single Project
