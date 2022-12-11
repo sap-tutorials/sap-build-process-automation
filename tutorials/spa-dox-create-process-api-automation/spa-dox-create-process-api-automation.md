@@ -5,7 +5,7 @@ author_profile: https://github.com/celineaudinsap
 auto_validation: true
 time: 30
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Automate to Access Documents from Document Management Repository
@@ -91,7 +91,7 @@ Once you have completed the [Invoice Processing and Approval Using SAP Process A
     <!-- border -->![Create Destination](create-destination.png)
 
 
-### Build Automation to Download Document DMS 
+### Build Automation to Download Document DMS
 
 
 1. Select **Tools**.
