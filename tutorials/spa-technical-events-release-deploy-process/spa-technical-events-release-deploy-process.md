@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Release and deploy the Process to retrieve details on an excel spreadsheet
 
 ## Prerequisites
-- [Subscribe to SAP Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+- [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 - [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
 
@@ -29,12 +29,13 @@ Since the automation requires a human intervention, with a popup dialog, the aut
 You will trigger the automation using the project launcher.
 
 >The project launcher allows you to launch your automation in attended mode in two different ways:
-- You can launch your automations manually in attended mode from the agent using the Launch manually from the agent section.
+
+> - You can launch your automations manually in attended mode from the agent using the Launch manually from the agent section.
 - You can configure events to trigger and launch your automations automatically using the Launch automatically by events section.
 
 In this tutorial, you will manually launch your automation from the agent by adding it in the Launch manually from the agent section of the project launcher.
 
-1. In the **Application Development** page, choose **Create** and **Project Launcher**.
+1. In **Build Process Automation** overview page, choose **Create** and **Project Launcher**.
 
     <!-- border -->![Project Launcher](84-project-launcher.png)
 
@@ -42,7 +43,7 @@ In this tutorial, you will manually launch your automation from the agent by add
 
     <!-- border -->![Project Launcher](85-project-launcher.png)
 
-    A project launcher editor opens in the main panel of the Application Development. On the Project Launcher details information right-hand side panel, you can see the automations available in your project.
+    A project launcher editor opens in the main panel of **Build Process Automation**. On the Project Launcher details information right-hand side panel, you can see the automations available in your project.
 
 3. In the **Project Launcher Details**, drag the automation and drop it in the **Launch manually from agent** section of the project launcher.
 
