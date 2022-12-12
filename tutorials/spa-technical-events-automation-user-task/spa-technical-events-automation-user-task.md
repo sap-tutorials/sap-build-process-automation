@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create an automation to retrieve details on an excel spreadsheet
 
 ## Prerequisites
- - [Subscribe to SAP Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+ - [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
 
 ## You will learn
   - How to design an automation that will retrieve order details from an application and read them on excel.
@@ -24,7 +24,7 @@ primary_tag: software-product>sap-build-process-automation
 
 1. Now you will create your automation.
 
-2. In the **Overview** of the **Application Development**, choose **Create** and select **Automation**.
+2. In the **Overview** of **Build Process Automation**, choose **Create** and select **Automation**.
 
     <!-- border -->![Create Automation](03-create-automation.png)
 
@@ -253,7 +253,7 @@ You will now create the Excel Group that will group all the excel activities tha
 
 8. Select the activity and under **Input Parameters**, choose the pencil icon next to the `workbookPath` field.
 
-9. Edit the Expression to: `irpa_core.enums.path.files + '/OrderDetailsAssistant.xlsx'`.
+9. Edit the Expression to: `irpa_core.enums.path.files + '/OrderDetailsAssistant.xlsx'`
 
 10. Choose **Save Expression**.
 
