@@ -9,12 +9,12 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-# Call Web Services using Destinations in SAP Process Automation
+# Call Web Services using Destinations in SAP Build Process Automation
 <!-- description --> Call Web Services using Destinations to retrieve sales order details from SAP S/4HANA
 
 ## Prerequisites
- - [Configure BTP Destinations in SAP Process Automation](spa-create-destination)
- - Basic understanding of SAP Process Automation
+ - [Configure BTP Destinations in SAP Build Process Automation](spa-create-destination)
+ - Basic understanding of SAP Build Process Automation
 
 ## You will learn
   - How to call Web services using Destinations
@@ -24,28 +24,28 @@ In this tutorial, you will retrieve sales order details for a particular Sales O
 
 ---
 
-### Create a user on the public Gateway System
+### Create a user on the public gateway system
 
 
-You need to get access to the Public gateway system. Please [Create an Account on the SAP Gateway Demo System.] (https://developers.sap.com/tutorials/gateway-demo-signup.html)
+You need to get access to the public gateway system. Please [Create an Account on the SAP Gateway Demo System.] (https://developers.sap.com/tutorials/gateway-demo-signup.html)
 
 
-### Create Destinations in BTP and SAP Process Automation
+### Create destinations in BTP and SAP Build Process Automation
 
 
-Once you have successfully created an account in the SAP Gateway Demo system, use the credentials and configure the Destination in SAP BTP account. Refer to the Prerequisites to [Configure BTP Destinations in SAP Process Automation](spa-create-destination)
+Once you have successfully created an account in the SAP gateway demo system, use the credentials and configure the destination in SAP BTP account. Refer to the prerequisites to [Configure BTP Destinations in SAP Build Process Automation](spa-create-destination)
 
 
 
-### Create Business Process and Automation
+### Create business process and automation
 
 
-1.  Create a Business Process named **Sales Order**.
+1.  Create a **Business Process** named **Sales Order**.
 
 2.  Create an **Automation** named **Get Sales Order Details**.
 
 
-### Build an Automation
+### Build an automation
 
 
 You will now build an automation to retrieve sales order details from SAP backend using Destinations configured in SAP BTP.
@@ -110,7 +110,7 @@ You will now build an automation to retrieve sales order details from SAP backen
 1. Refer to the tutorial on how to release and deploy the Process.
 2.  When you deploy the Process, enter the value for the Destination.
 
-    > The value for the destination parameter would appear only after successful completion of the tutorial Create Destination as mentioned in Prerequisites.
+    > The value for the destination parameter would appear only after successful completion of the tutorial [Configure BTP Destinations in SAP Build Process Automation](spa-create-destination) as mentioned in Prerequisites.
 
 3. Enter the values as shown below.
 
