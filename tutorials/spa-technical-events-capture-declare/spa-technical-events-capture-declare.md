@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Capture and declare an order detail application to retrieve details on an excel spreadsheet
 
 ## Prerequisites
- - [Subscribe to SAP Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+ - [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
 
 ## You will learn
     - How to capture and declare a Sales Orders application
@@ -25,19 +25,27 @@ primary_tag: software-product>sap-build-process-automation
 
 The first step consists in creating the Business Process Project.
 
-1. In the **Lobby** of the **Application Development**, choose **Create** and select **Business Process**.
+1. In the **Lobby** of **Build**, choose **Create**.
 
     <!-- border -->![Create Business Process](01-create-business-process.png)
 
-2. In the **Create Business Process Project** window, name the project **Get Order Details** and choose **Create**.
+2. Select **Build an Automated Process**.
+
+    <!-- border -->![Build Automated Process](01a-automated-process.png)
+
+3. Select **Business Process**.
+
+    <!-- border -->![Business Process](01b-business-process.png)
+
+4. In the **Create Business Process** window, name the project **Get Order Details** and choose **Create**.
 
     <!-- border -->![Create Business Process Project](02-create-business-process-project.png)
 
-3. You will be navigated to the **Get Order Details** business process project overview page.
+5. You will be navigated to the **Get Order Details** business process project overview page.
 
-4. You will be prompted to configure your agent version. Select the agent version that is registered on your machine.
+6. You will be prompted to configure your agent version. Select the agent version that is registered on your machine.
 
-5. Choose **Confirm**.
+7. Choose **Confirm**.
 
     <!-- border -->![Configure Agent Version](03-configure-agent-version.png)
 
@@ -49,7 +57,7 @@ Now you can start capturing the application you wish to retrieve the order detai
 
 1. Open the **Browse Orders** application in a different window. You will capture the details of one order from the **Browse Order** page. To do so, select an order.
 
-    > Make sure the Browse Order page is open in a separate window than your Process Automation application.
+    > Make sure the Browse Order page is open in a separate window than SAP Build Process Automation.
 
 2. Navigate back to the **Overview** tab.
 
@@ -61,7 +69,7 @@ Now you can start capturing the application you wish to retrieve the order detai
 
     <!-- border -->![Capture Application](07-capture-application.png)
 
-    The screen that you captured will appear in the **Application Development** page.
+    The screen that you captured will appear in the **Build Process Automation** page.
 
 5. Select the captured screen.
 
