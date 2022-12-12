@@ -9,26 +9,26 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-# Configure BTP Destinations in SAP Process Automation
-<!-- description --> Configure BTP Destinations in SAP Process Automation to securely store sensitive information.
+# Configure BTP Destinations in SAP Build Process Automation
+<!-- description --> Configure BTP Destinations in SAP Build Process Automation to securely store sensitive information.
 
 ## Prerequisites
  - Subaccount Administrator role to create Destinations in SAP Business Technology platform.
 
 ## You will learn
-  - How to create destinations in BTP for SAP Process Automation
+  - How to create Destinations in BTP for SAP Build Process Automation
   - Add Destinations to Process Automation
 
 ---
 Destinations are predefined endpoints used in the Business Technology Platform (or BTP). Destinations allow you to securely store sensitive information used to connect to a system, such as client credentials, keys, or certificates in the BTP.
 
-### Create a Destination in SAP Business Technology Platform
+### Create a destination in SAP Business Technology Platform
 
 
 
 1.  Navigate to **Settings** page in SAP Process tenant.
 
-2.  Choose **Destinations**
+2.  Choose **Destinations**.
 
 3.  Choose **Open in BTP Cockpit**.
 
@@ -48,7 +48,7 @@ Destinations are predefined endpoints used in the Business Technology Platform (
 
 
 
-### Create a Destination in SAP Process Automation Tenant
+### Create a destination in SAP Process Automation tenant
 
 
 1.  Navigate to Settings>Destinations>New Destination.
@@ -62,14 +62,13 @@ Destinations are predefined endpoints used in the Business Technology Platform (
     <!-- border -->![Successful Destination](3.png)
 
 
-### Access Destination in the Business Process
+### Access destination in the Business Process
 
 
 
 The destination can be accessed in the **Business Process** project  by creating an Environment variable of the type Destination.
 
-Create a **Business Process** from the Lobby.
-After creating the Business Process , create the Environment variable of the type Destination.
+Create a **Business Process** from the Lobby. After creating the Business Process, create the Environment variable of type Destination.
 
 1.  Navigate to Settings>Environment Variables.
 
