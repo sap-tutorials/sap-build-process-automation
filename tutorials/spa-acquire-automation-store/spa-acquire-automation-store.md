@@ -265,9 +265,11 @@ You need to create a matching agent attribute at this step. Please follow these 
 
 2. Set the agent in attended mode.
 
-    Now your project is ready to be launched in attended mode.
+    <!-- border -->![Projects](19.png)
 
-    <!-- border -->![Start Project](19-start-project.png)
+3. Now your project is ready to be launched in attended mode. 
+
+    <!-- border -->![Start Project](19-start.png)
 
 
 ### Run the business process
@@ -295,9 +297,9 @@ You need to create a matching agent attribute at this step. Please follow these 
 
     <!-- border -->![Form submitted](25-form-submitted.png)
 
-7. Go back to your Desktop Agent, choose your project and **Start**.
+7. Go back to your Desktop Agent, choose your project and **Activate**.
 
-    <!-- border -->![Start Project](19-start-project.png)
+    <!-- border -->![Activate Project](19-activate-project.png)
 
 8. Now choose **Get Processors Details**.
 
