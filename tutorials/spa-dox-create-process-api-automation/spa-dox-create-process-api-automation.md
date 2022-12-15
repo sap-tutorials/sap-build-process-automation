@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Automate to access and retrieve documents from DMS
 
 ## Prerequisites
- - Complete [Invoice Processing and Approval Using SAP Process Automation](mission.invoice-processing-approval-spa) mission
+ - Complete [Invoice Processing and Approval Using SAP Build Process Automation](mission.invoice-processing-approval-spa) mission
  - Configure[ Document Management Repository](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/3da3846d0da94d96a4f38688cd2e936a.html?locale=en-US&version=Cloud)
 
 ## You will learn
@@ -71,7 +71,7 @@ Once you have completed the [Invoice Processing and Approval Using SAP Process A
 3. Save your work.
 
 
-### Create Environment Variable
+### Create environment variable
 
 
 1. Choose **Manage the project properties**, then **Environment Variables**. Finally, select **+ Create**.
@@ -91,7 +91,7 @@ Once you have completed the [Invoice Processing and Approval Using SAP Process A
     <!-- border -->![Create Destination](create-destination.png)
 
 
-### Build Automation to Download Document DMS
+### Build automation to download document DMS
 
 
 1. Select **Tools**.
@@ -108,7 +108,7 @@ Once you have completed the [Invoice Processing and Approval Using SAP Process A
 
     ```
 "C:\\Users\\Public\\" + Step0.uploadedFileName
-```
+    ```
 
     <!-- border -->![String Variable Value](08_c.png)
 
@@ -157,7 +157,7 @@ Once you have completed the [Invoice Processing and Approval Using SAP Process A
 
 18. Copy and paste this script:
 
-    ```
+```
 return {
     url : folderName ? folderName + '/' + uploadedFileName : uploadedFileName,
     method: 'GET',
@@ -234,7 +234,7 @@ return {
 
     ```return
     buffer.toString('binary');
-```
+    ```
 
 34. Create Input and Output parameters as per screenshot below:
 
