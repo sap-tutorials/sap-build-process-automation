@@ -10,16 +10,16 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Acquire a Template Project from the Store
-<!-- description --> Acquire Orders Management package from the SAP Process Automation store and reuse the package in the Application Development.
+<!-- description --> Acquire Orders Management package from the SAP Build store and reuse the package in SAP Build Process Automation.
 
 ## Prerequisites
 - [Trial account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/) with the SAP Build Process Automation enabled **OR**
 - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
 
 ## You will learn
-  - How to explore content in the SAP Process Automation Bot Store.
-  - How to acquire the **Orders Management using UI5 application** package from SAP Process Automation's Store.
-  - How to reuse a package from the Store in the Application Development.
+  - How to explore content in the SAP Build Store.
+  - How to acquire the **Orders Management using UI5 application** package from the SAP Build Store.
+  - How to reuse a package from the Store in SAP Build Process Automation.
 
 ---
 ### Explore the store
@@ -70,13 +70,13 @@ The Store offers predefined content for your automation. Packages are categorize
 
     You will now create a Business Process Project from this template.
 
-5. Name the project **Orders Management Dev Tutorial** and choose **Create**.
+4. Name the project **Orders Management Dev Tutorial** and choose **Create**.
 
     <!-- border -->![Create Project](08-CreateProject.png)
 
-6. To see the newly created project, navigate back to **Lobby** from the top menu.
+5. To see the newly created project, navigate back to **Lobby** from the top menu.
 
-    <!-- border -->![Created Project](09-CreatedProject.png)
+    <!-- border -->![Created Project](09.png)
 
 
 ### Add an automation to the process
@@ -84,9 +84,9 @@ The Store offers predefined content for your automation. Packages are categorize
 
 1. Choose the project. You will see all the artifacts that are part of the project. The project is **Editable** which means you can modify it.
 
-2. The project can now be edited in the **Application Development**.
+2. The project can now be edited in **Build Process Automation**.
 
-    <!-- border -->![Application Development](10-ApplicationDevelopment.png)
+    <!-- border -->![Application Development](10.png)
 
     For instance, you can create a process artifact and add an automation to the Business Process.
 
@@ -98,7 +98,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
     <!-- border -->![Create Process Window](14-CreateProcessWindow.png)
 
-    The **Application Development** with the just created process opens.
+    **SAP Build Process Automation** with the just created process opens.
 
 5. Now right click on the + icon and select **Automation**.
 
@@ -173,14 +173,15 @@ Since the automation requires a human intervention, with a popup dialog, the aut
 You will trigger the automation using the project launcher.
 
 >The project launcher allows you to launch your automation in attended mode in two different ways:
-- You can launch your automations manually in attended mode from the agent using the Launch manually from the agent section.
+
+> - You can launch your automations manually in attended mode from the agent using the Launch manually from the agent section.
 - You can configure events to trigger and launch your automations automatically using the Launch automatically by events section.
 
 In this tutorial, you will manually launch your automation from the agent by adding it in the Launch manually from the agent section of the project launcher.
 
-1. Navigate back to the **Application Development** lobby, choose the project.
+1. Navigate back to **SAP Build** lobby, choose the project.
 
-2. In the **Application Development** overview page, you can see all the artifacts that are part of the project. The project is **Editable** which means you can modify it.
+2. In the **SAP Build Process Automation** overview page, you can see all the artifacts that are part of the project. The project is **Editable** which means you can modify it.
 
 3. Select the **Get Processors Details** automation.
 
@@ -192,11 +193,11 @@ In this tutorial, you will manually launch your automation from the agent by add
 
     <!-- border -->![Uncheck](26-uncheck.png)
 
-6. Now go back to the **Application Development** overview page, and select **p** which is the already created **Project Launcher**.
+6. Now go back to the **SAP Build Process Automation** overview page, and select **p** which is the already created **Project Launcher**.
 
     <!-- border -->![Project Launcher](27-project-launcher.png)
 
-    The project launcher **p** editor opens in the main panel of the Application Development.
+    The project launcher **p** editor opens in the main panel of the SAP Build Process Automation.
 
 7. Select the three automations that are in the **Launch manually from the agent** section and choose the delete icon.
 
@@ -272,7 +273,7 @@ You need to create a matching agent attribute at this step. Please follow these 
 ### Run the business process
 
 
-1. Navigate back to the **Application Development** overview page and select the **Order Processing** process.
+1. Navigate back to the **SAP Build Process Automation** overview page and select the **Order Processing** process.
 
     >Make sure you select the deployed version of the project.
 
@@ -280,7 +281,7 @@ You need to create a matching agent attribute at this step. Please follow these 
 
 2. Select the **Order Processing Form** and copy the link.
 
-    <!-- border -->![Order Processing Form](23-order-processing-form.png)
+    <!-- border -->![Order Processing Form](23.png)
 
 3. Paste the link in your browser.
 
