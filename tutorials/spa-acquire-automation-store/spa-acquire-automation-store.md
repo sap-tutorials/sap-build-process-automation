@@ -29,7 +29,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
 1. Navigate to the store in your SPA Tenant.
 
-    <!-- border -->![Navigate Store](01-NavigateStore.png)
+    <!-- border -->![Navigate Store](01.png)
 
     > **Learning Content** offers learning packages to get started with the Application Development tool. These packages allow you to learn best practices by reusing the most common flows to design your first projects.
 
