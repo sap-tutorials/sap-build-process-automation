@@ -72,7 +72,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
 4. Name the project **Orders Management Dev Tutorial** and choose **Create**.
 
-    <!-- border -->![Create Project](08-CreateProject.png)
+    <!-- border -->![Create Project](08.png)
 
 5. To see the newly created project, navigate back to **Lobby** from the top menu.
 
