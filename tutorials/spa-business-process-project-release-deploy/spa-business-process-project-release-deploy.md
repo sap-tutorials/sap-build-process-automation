@@ -19,7 +19,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-### Release Business Process Project
+### Release business process project
 Before you run the process, ensure that the process is saved and that there are no errors showing in the Design Console. To run the process, you must first release and then deploy the Business Process project. Releasing a project creates a version or snapshot of the changes.
 
 1. In the Process Builder, choose **Release**.
@@ -43,7 +43,7 @@ Before you run the process, ensure that the process is saved and that there are 
     <!-- border -->![Released](03_Released_first_version.png)
 
 
-### Deploy the Released Process
+### Deploy the released process
 
 
     You can deploy Business Process projects from each released version of the project in the Process Builder or through the Lobby. Deploying the project makes it available for others to use it. Bare in mind that you can only deploy a released version of the project.
@@ -78,7 +78,7 @@ Before you run the process, ensure that the process is saved and that there are 
 
 
 
-### Run the Business Process
+### Run the business process
 
 
    Now that you have successfully deployed your project, it is time to run the process and see the results.
@@ -89,7 +89,7 @@ Before you run the process, ensure that the process is saved and that there are 
 
 2. Select **Invoice Request Form**.
 
-3. Choose the **Copy** icon aside the **Form Link** in the **Trigger Settings**.
+3. Choose the **Copy** icon aside the **Form Link** in the **Invoice Request Form**.
 
     <!-- border -->![Run copy the form link](02_Process_Start.png)
 
