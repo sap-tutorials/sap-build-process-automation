@@ -23,7 +23,7 @@ primary_tag: software-product>sap-build-process-automation
 ### Create an automation to download a document from DMS
 
 
-Once you have completed the [Invoice Processing and Approval Using SAP Process Automation](mission.invoice-processing-approval-spa) mission, your process looks like this:
+Once you have completed the [Invoice Processing and Approval Using SAP Build Process Automation](mission.invoice-processing-approval-spa) mission, your process looks like this:
 
 <!-- border -->![Process](01.png)
 
