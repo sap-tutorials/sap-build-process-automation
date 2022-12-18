@@ -19,12 +19,12 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-### Configure Inputs for API Trigger
+### Configure inputs for API trigger
 
 
-Once you have completed the [Automate to Access Documents from Document Management Repository](spa-dox-create-process-api-automation), your process looks like this:
+Once you have completed the [Automate to Access Documents from Document Management Repository](spa-dox-create-process-api-automation) tutorial, your process looks like this:
 
-<!-- border -->![Proces](001.png)
+<!-- border -->![Process](001.png)
 
 1. From the **Editable** version of the **Invoice Approval** project, choose the three dots of the **Invoice Request Form** and **Remove** to delete the form.
 
@@ -55,7 +55,7 @@ Once you have completed the [Automate to Access Documents from Document Manageme
     <!-- border -->![Add Inputs](1002.png)
 
 
-### Binding Input and Output Parameters
+### Binding input and output parameters
 
 
 1. Choose **Download Document DMS** automation.
