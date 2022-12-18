@@ -3,14 +3,15 @@ parser: v2
 auto_validation: true
 time: 15
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
+
 ---
 
 # Agent Management Settings to Execute the Process with an Automation
 <!-- description --> Create an agent attribute in the tenant to add it to your agent and project
 
 ## Prerequisites
- - Access to a [SAP BTP tenant with SAP Process Automation](spa-subscribe-booster)
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
   - How to create an Agent Attribute in the tenant.
@@ -22,14 +23,14 @@ Agent attributes allow you to sort agents registered within the same tenant and 
 
 ---
 
-### Create an Agent Attribute in the Tenant
+### Create an agent attribute in the tenant
 
 
 Now that you have your project free of errors, ready to be released, you need to add an **Attribute** to your project. But first, you need to create an Agent Attribute.
 
 To do so, please follow these steps:
 
-1. Select **Settings**.
+1. Navigate to the **Build** page, select **Settings**.
 
 2. Choose **Agent Attributes**.
 
@@ -49,7 +50,7 @@ To do so, please follow these steps:
     <!-- border -->![Create Agent Attribute](01-Settings-create-agent-attribute.png)  
 
 
-### Add the Attribute to your Agent
+### Add the attribute to your agent
 
 
 1. Choose **Agent List**, then search for your agent and verify that it is idle or ready and connected in unattended mode then click on it.
@@ -67,7 +68,7 @@ To do so, please follow these steps:
     <!-- border -->![Settings Add Attribute](01-Settings-agent-attributes-add.png)
 
 
-### Add the Attribute to your Project
+### Add the attribute to your project
 
 
 1. Navigate back to your project in the Process Builder.
@@ -88,7 +89,7 @@ To do so, please follow these steps:
 
 
 
-### Desktop Agent in Unattended Mode
+### Desktop agent in unattended mode
 
 
 When you are running the process make sure to have the Desktop Agent in unattended mode.
