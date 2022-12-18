@@ -10,7 +10,7 @@ parser: v2
 ---
 
 # Install and Set Up the Desktop Agent 3
-<!-- description --> Install and Set Up the Desktop Agent 3 to run your automations
+<!-- description --> Install and set up the Desktop Agent 3 to run your automations
 
 
 ## Prerequisites
@@ -21,15 +21,12 @@ parser: v2
   - How to install the Desktop Agent 3
   - How to register a tenant in the Desktop Agent 3
 
-## Intro
-The Desktop Agent 3 is a component of SAP Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
-
 ---
 
 ### About the Desktop Agent 3
 
 
-The Desktop Agent 3 is an on-premise component of SAP Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
+The Desktop Agent 3 is an on-premise component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
 
 The very first time you launch the Desktop Agent 3 on your workstations, you will be prompted to log in. If you are unsure of your login details, please ask an administrator.
 
@@ -107,11 +104,11 @@ You will download the setup program from the SAP Development Tools. It is provid
 ### Install the Desktop Agent 3
 
 
-When you install the Desktop Agent 3, it will automatically set up the SAP Process Automation web browser extension for Google Chrome and Edge.
+When you install the Desktop Agent 3, it will automatically set up the SAP Build Process Automation web browser extension for Google Chrome and Edge.
 
 >To prevent issues during the installation, please close all the Chrome or Edge tabs opened on your machine.
 
->The minimum version of the Desktop Agent supported by SAP Process Automation is **3.7.41**.
+>The minimum version of the Desktop Agent supported by SAP Build Process Automation is **3.7.41**.
 
 1. Open the downloaded file with **administrator rights**. Select **Next** to begin the installation process.
 
@@ -138,10 +135,10 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Proce
     <!-- border -->![Enable extension](agent3-006.png)
 
 
-### Register the Desktop Agent on your Tenant
+### Register the Desktop Agent on your tenant
 
 
-Once the installation steps of the SAP Robotic Process Automation setup wizard are completed, you need to register your agent and connect it to a SAP Process Automation tenant in order to execute automations.
+Once the installation steps of the SAP Build Process Automation setup wizard are completed, you need to register your agent and connect it to a SAP Build Process Automation tenant in order to execute automations.
 
 > The Agent icon will be available on your System Tray, when the Desktop Agent 3 is installed.
 
@@ -182,7 +179,7 @@ Once the installation steps of the SAP Robotic Process Automation setup wizard a
 
     <!-- border -->![Desktop Agent 3 Installation](agent3-009.png)
 
-3. On the SAP Process Automation homepage, go to **Settings**, choose **Agents List** under **Agents** and select the **Register new agent** button.
+3. On the SAP Build homepage, go to **Settings**, choose **Agents List** under **Agents** and select the **Register new agent** button.
 
     <!-- border -->![Register new agent](agent3-007.png)
 
@@ -218,7 +215,7 @@ Once the installation steps of the SAP Robotic Process Automation setup wizard a
 ### Add your agent
 
 
-1. Navigate back to the **Application Development**. Select **Settings**. Choose **Agents Management** then **Add Agent**.
+1. Navigate back to **SAP Build** page. Select **Settings**. Choose **Agents Management** then **Add Agent**.
 
     <!-- border -->![Agent Management](agent3-020.png)
 
