@@ -51,7 +51,7 @@ First you will have to check if the external authentication to access Microsoft 
 
     > Each registration item can be registered or unregistered given a user email address.
 
-6. Select **Register** button.
+6. Select **Register** button. 
 
     <!-- border -->![Office](9.png)
 
