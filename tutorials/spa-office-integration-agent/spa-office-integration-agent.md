@@ -57,7 +57,7 @@ First you will have to check if the external authentication to access Microsoft 
 
 7. In the newly opened window consent for agent to use your ID with the activities.
 
-8. The confirmation of registration will appear.
+8. The confirmation of registration will appear. 
 
     <!-- border -->![Office](7.png)
 
