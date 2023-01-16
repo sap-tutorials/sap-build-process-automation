@@ -24,7 +24,7 @@ To configure action in business process, you will need to create an environment 
 
 1. To add the destination in your BTP Cockpit, do the following:
 
-    - [Download](S4HANACloud) the S4HANACloud destination file.
+    - [Download](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-process-action-setupenv/S4HANACloud) the S4HANACloud destination file.
     - Go to **Connectivity** >> **Destinations** in your **BTP Cockpit**.
     - Click **Import Destination** and select the downloaded destination file.
     - Update the **URL**, **User** and the **Password** based on your **S4HANACloud** setup.
