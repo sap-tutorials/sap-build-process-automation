@@ -168,52 +168,52 @@ You will be navigated to the automation editor where you can build your automati
 
     Here you can automate  if you would like to copy the values in each step or set up the Input Parameters in Automation. To do that click on the canvas and select Input/ Output under Automation Details.
 
-        <!-- border -->![Office](099.png)
+    <!-- border -->![Office](099.png)
 
 
 12. Under **Automation Details** panel, under **Tools** look for **Get Range Values** activity. Drag & drop it into the workflow.
 
-      <!-- border -->![Office](026.png)
+    <!-- border -->![Office](026.png)
 
-      > This activity retrieves the values, formulas or `numberFormats` from the current worksheet.
+    > This activity retrieves the values, formulas or `numberFormats` from the current worksheet.
 
 
 13. Select the **Get Range Values** activity. Under **Input Parameters** in:
     - range Definition enter: A1:F11 and select the expression in quotes.
     - format choose: `objectsHeadersOnFirstRow`
 
-      <!-- border -->![Office](027.png)
+    <!-- border -->![Office](027.png)
 
 14. Under **Automation Details** panel, under **Tools** look for **For Each** control. Drag & drop it into the workflow.
 
-      <!-- border -->![Office](028.png)
+    <!-- border -->![Office](028.png)
 
 
 15. Select the **For Each** control. Under **Parameters** in **Set looping list** choose **result**.
 
-      <!-- border -->![Office](030.png)
+    <!-- border -->![Office](030.png)
 
 16. Under **Automation Details** panel, under **Tools** look for **Log messages** activity. Drag & drop it into the workflow inside the **For Each** loop.
 
-      <!-- border -->![Office](029.png)
+    <!-- border -->![Office](029.png)
 
 17. Select the **Log Message** activity. Under Input Parameters in message choose `currentMember`.
 
-      <!-- border -->![Office](031.png)
+    <!-- border -->![Office](031.png)
 
 18. Under **Automation Details** panel, under **Tools** look for Select **Download File** activity. Drag & drop it into the workflow outside the **For Each** loop.
 
-      <!-- border -->![Office](032.png)
+    <!-- border -->![Office](032.png)
 
 19. Select the **Download File** activity. In the Input Parameters:
     - under `driveID` and `pathOrFieldId`: provide the value that you have copied. Select the expression in quotes.
     - under `localFilePath`: provide the path of the file which will store the data on your machine  e.g. `C:\Downloads\Order.xlsx`. Please select the expression in quotes.
 
-      <!-- border -->![Office](033.png)
+    <!-- border -->![Office](033.png)
 
 20. Under **Automation Details** panel, under **Tools** look for Select **Send emails** activity. Drag & drop it into the workflow just below **Download File** activity.
 
-      <!-- border -->![Office](034.png)
+    <!-- border -->![Office](034.png)
 
 21. Select the **Send Email** activity. In Input Parameters under `mailDescription` choose **Create Custom Data**.
 
@@ -225,15 +225,15 @@ You will be navigated to the automation editor where you can build your automati
     - Under `toRecipients` add: your email address and select the expression in quotes
     - Under attachments path: provide the path of the file which will be added to the email message e.g. `C:\Downloads\Order.xlsx` and select expression in quotes.
 
-      <!-- border -->![Office](036.png)
+    <!-- border -->![Office](036.png)
 
 23. Under **Automation Details** panel, under **Tools** look for **Remove File/Folder** activity. Drag & drop it into the workflow.
 
-      <!-- border -->![Office](037.png)
+    <!-- border -->![Office](037.png)
 
 24. Select the **Remove File/Folder** activity. In Input Parameters under path provide the path of the file that will be removed once email is sent.
 
-      <!-- border -->![Office](038.png)
+    <!-- border -->![Office](038.png)
 
 25. **Save** your work.
 
@@ -241,11 +241,11 @@ You will be navigated to the automation editor where you can build your automati
 
 1. Once the automation is saved and ready you can test it. Choose **Test** button.
 
-      <!-- border -->![Office](039.png)
+    <!-- border -->![Office](039.png)
 
-      >  If you have decided to add Inputs in step Build an automation (sub-step 11), you will need to add the values to the in the Automation Details and run the test.
+    >  If you have decided to add Inputs in step Build an automation (sub-step 11), you will need to add the values to the in the Automation Details and run the test.
 
-      <!-- border -->![Office](098.png)
+    <!-- border -->![Office](098.png)
 
 2. Check your Outlook Inbox to see the email, that was send with the attachment.
 
