@@ -77,7 +77,7 @@ parser: v2
 
     <!-- border -->![Run Process](RunProcess-05a.png)
 
-2. In **MyInbox** application, you will see a new task **Review and Approve order** with the given purchase order number in your inbox.
+2. In `MyInbox` application, you will see a new task **Review and Approve order** with the given purchase order number in your inbox.
 
     > You can also search the inbox items with your purchase order number.
 
@@ -113,7 +113,7 @@ parser: v2
 
 2. Now click to open **CONTEXT** tab.
 
-    - You can observe the process context as how it has been updated after successfull execution of each process step.
+    - You can observe the process context as how it has been updated after successful execution of each process step.
     - Notice the output after the Action execution.
     - Copy this `SalesOrder` number from the output to validate it in
       SAP S/4HANA system.

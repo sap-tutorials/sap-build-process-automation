@@ -57,4 +57,4 @@ Once the business process is successfully executed, a sales order will be create
 
 2. You can now explore the sales order to check Ship to Party, Expected Delivery Date etc.
 
-    <!-- border -->![](AccessSystem_03.png)
+    <!-- border -->![Access System](AccessSystem_03.png)
