@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../../sap-build-process-automation"
+		},
+		{
+			"path": "../.."
+		}
+	]
+}
