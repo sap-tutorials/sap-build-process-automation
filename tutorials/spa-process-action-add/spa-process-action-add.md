@@ -23,22 +23,6 @@ parser: v2
 Learn how to add the action in the business process to connect to backend system. You can do this by choosing the relevant action from the actions library, and then configuring the action's parameters.
 
 
-### Import sample process as template
-
-1. From the **SAP Build Lobby**, click on the **Store** tab.
-
-    <!-- border -->![Store](ImportProject_31.png)
-
-2. On the **Store** page, search for **Sales Order Approvals - Sample** and once it loads, click **Create from Template**.
-
-    <!-- border -->![Create Template](ImportProject_32.png)
-
-3. In the **Project Name** field, enter **Sales Order Approval**.
-
-    - click **Create**.
-
-    <!-- border -->![Project Name](ImportProject_33.png)
-
 ### Add action
 
 1. In the Process Builder canvas, click the **+** in output connector of **Auto Approval Notification**.
@@ -68,16 +52,16 @@ Learn how to add the action in the business process to connect to backend system
 
 2. Click **Inputs** tab, and map each input to the actual process content.
 
-    
-    |  Input Field         |  Process Content 
-    |  :-------------------|  :------------- 
-    |  `DistributionChannel` |  Order Processing Form > Distribution Channel 
-    |  `OrganizationDivision` |  Order Processing Form > Division 
-    |  `PurchaseOrderByCustomer` |  Order Processing Form > Order Number 
-    |  `SalesOrderType` |  Order Processing Form > Sales Order Type 
-    |  `SalesOrganization` |  Order Processing Form > Sales Organisation 
-    |  `SoldToParty` |  Order Processing Form > Ship To Party (Customer) 
-    
+
+    |  Input Field         |  Process Content
+    |  :-------------------|  :-------------
+    |  `DistributionChannel` |  Order Processing Form > Distribution Channel
+    |  `OrganizationDivision` |  Order Processing Form > Division
+    |  `PurchaseOrderByCustomer` |  Order Processing Form > Order Number
+    |  `SalesOrderType` |  Order Processing Form > Sales Order Type
+    |  `SalesOrganization` |  Order Processing Form > Sales Organisation
+    |  `SoldToParty` |  Order Processing Form > Ship To Party (Customer)
+
 
     <!-- border -->![Map Inputs](action6.png)
 
