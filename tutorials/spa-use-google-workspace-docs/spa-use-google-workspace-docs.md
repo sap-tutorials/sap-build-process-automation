@@ -155,8 +155,7 @@ There are two ways to retrieve the document id of the Google Document, either th
 
 [OPTION BEGIN [`FromCreatedDocument`]]
 
-1. Search for the activity **Get Document (Google Docs)** activity. Drag and drop the activity to your workflow.
-    Under **Input Parameters**, for `documentId`, choose the pencil to open the expression editor.
+1. Search for the activity **Get Document (Google Docs)** activity. Drag and drop the activity to your workflow. Under **Input Parameters**, for `documentId`, choose the pencil to open the expression editor.
 
 2. Choose as **Variables**: `createdDocument`>`documentId`.
 

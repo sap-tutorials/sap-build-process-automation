@@ -26,11 +26,11 @@ SAP Build Process Automation enables users to automate Google Workspace products
 - oAuth
 - Workflow Identity Federation
 
-SAP Build Process Automation supports Service Account and oAuth In this tutorial, you will authorize using Service Account.
+SAP Build Process Automation supports Service Account and oAuth. In this tutorial, you will authorize using Service Account.
 
 > What is a Service Account ?
 
-> Service account differs from user accounts and it will be used by a software application to make authorized API calls. The service account can also be authorized to access data on behalf of users in a domain without their consent by enabling Domain-wide delegation. The service accounts should be created and configured through Google Cloud Console before using the activity in SAP Build Process Automation. Refer to pre-requisites to **Setup Service Account**
+> Service account differs from user accounts and it will be used by a software application to make authorized API calls. The service account can also be authorized to access data on behalf of users in a domain without their consent by enabling Domain-wide delegation. The service accounts should be created and configured through Google Cloud Console before using the activity in SAP Build Process Automation. Refer to pre-requisites to **Setup Service Account**.
 
 ---
 

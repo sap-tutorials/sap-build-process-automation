@@ -192,7 +192,7 @@ You will build an automation that will create a presentation where you will add 
 
 27. Select the activity. For **message** parameter, select **result** to log the details of the presentation.
 
-    > Finally you will disconnect the Google Account.
+    Finally you will disconnect the Google Account.
 
 28. In the **Automation Details** panel, under **Tools**, search for the **Disconnect (Google)** and drag and drop it into the workflow.
 

@@ -92,7 +92,7 @@ You will build an automation that will search for an email in the user's Gmail a
 
 6. Now search for the **Search Emails (Gmail)** activity and drag and drop it into the workflow, just below the **Try**.
 
-    > Add Search Emails(Gmail) activity to search for a specific email in your Gmail account. This activity uses GMAIL API to search for emails based on the search filters as specified in the search query Parameters. You can optionally also specify if the search should include spam and trash folders or not. Output of this activity is a list of Metadata of the emails that match search criteria.
+    > Add Search Emails (Gmail) activity to search for a specific email in your Gmail account. This activity uses GMAIL API to search for emails based on the search filters as specified in the search query Parameters. You can optionally also specify if the search should include spam and trash folders or not. Output of this activity is a list of Metadata of the emails that match search criteria.
 
     <!-- border -->![Search Emails](04.png)
 
