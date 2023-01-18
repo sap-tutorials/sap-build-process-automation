@@ -50,12 +50,36 @@ To configure action in business process, you will need to create an environment 
 
     > This destination will be associated with the environment variable while deploying the business process.
 
+### Import sample process as template
+
+1. From the **SAP Build Lobby**, click on the **Store** tab.
+
+    <!-- border -->![Import Project](ImportProject_31.png)
+
+2. On the **Store** page, search for **Sales Order Approvals - Sample** and once it loads, click **Create from Template**.
+
+    <!-- border -->![Import Project](ImportProject_32.png)
+
+3. In the **Project Name** field, enter **Sales Order Approval**.
+    > you can keep the default description or enter the description of your choice
+
+    - click **Create**.
+
+    <!-- border -->![Import Project](ImportProject_33.png)
+
+4. Open **Lobby** and you will see your project created
+
+    <!-- border -->![Import Project](ImportProject_34.png)
 
 ### Add environment variable to access destination
 
-1. Click to go back to **Lobby** and open your business project.
+1. Click to open **Sales Order Approval** business process project from the **Lobby**.
+    > When you open for the first time then you might get an option to Accept.
+
+    <!-- border -->![](ImportProject_35.png)
+
+1. Click to open **Order Processing** process.
     - From your project overview section,
-        - click to open **Order Processing** process.
         - In the process builder, click to open **Project Properties** from top-right corner of the page.
 
     <!-- border -->![Destination](destination_04.png)
