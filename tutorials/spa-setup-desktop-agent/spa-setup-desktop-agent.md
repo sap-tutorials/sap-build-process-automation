@@ -5,7 +5,7 @@ author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
 time: 15
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
-primary_tag: software-product>sap-process-automation
+primary_tag: software-product>sap-build-process-automation
 ---
 
 # Install and Set Up the Desktop Agent

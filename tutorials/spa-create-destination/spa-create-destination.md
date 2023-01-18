@@ -22,7 +22,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 Destinations are predefined endpoints used in the Business Technology Platform (or BTP). Destinations allow you to securely store sensitive information used to connect to a system, such as client credentials, keys, or certificates in the BTP.
 
-### Create a destination in SAP Business Technology Platform
+### Create a destination in SAP Build Business Technology Platform
 
 
 

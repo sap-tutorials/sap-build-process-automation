@@ -78,17 +78,17 @@ To configure action in business process, you will need to create an environment 
 
     <!-- border -->![](ImportProject_35.png)
 
-1. Click to open **Order Processing** process.
+2. Click to open **Order Processing** process.
     - From your project overview section,
         - In the process builder, click to open **Project Properties** from top-right corner of the page.
 
     <!-- border -->![Destination](destination_04.png)
 
-2. In the **Project Properties** pop-up, select **Environment Variables** and click **Create** to create an environment variable for this business processes.
+3. In the **Project Properties** pop-up, select **Environment Variables** and click **Create** to create an environment variable for this business processes.
 
     <!-- border -->![Destination](destination_05.png)
 
-3. Enter the following to create an environment variable:
+4. Enter the following to create an environment variable:
 
     - **S4HANACloud** as **Identifier**.
     - Any **Description** of your choice.
@@ -98,7 +98,7 @@ To configure action in business process, you will need to create an environment 
 
     - Click **Create**.
 
-4. Once the environment variable is created, **Close** the project properties' pop-up.
+5. Once the environment variable is created, **Close** the project properties' pop-up.
 
     <!-- border -->![Destination](destination_06.png)
 
