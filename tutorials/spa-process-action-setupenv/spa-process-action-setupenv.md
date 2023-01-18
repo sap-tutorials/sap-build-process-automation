@@ -76,7 +76,7 @@ To configure action in business process, you will need to create an environment 
 1. Click to open **Sales Order Approval** business process project from the **Lobby**.
     > When you open for the first time then you might get an option to Accept.
 
-    <!-- border -->![](ImportProject_35.png)
+    <!-- border -->![Import Project](ImportProject_35.png)
 
 1. Click to open **Order Processing** process.
     - From your project overview section,
