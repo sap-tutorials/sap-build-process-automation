@@ -63,7 +63,7 @@ You will now run the process and learn how to monitor the process and work on th
 
     <!-- border -->![Run open the form](006.png)
 
-    After you choose the **Submit** button, you will receive a notification that the form has been successfully submitted.
+    After you choose the **Submit** button, you will be notified that the form has been successfully submitted.
 
 6. The workflow has been triggered and the approval process has started. You can now work on the tasks, monitor the process and gain insights.
 
