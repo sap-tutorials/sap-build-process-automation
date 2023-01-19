@@ -4,7 +4,7 @@ author_name: Stephan Schluchter
 author_profile: https://github.com/SchluchterStephan
 auto_validation: true
 time: 15
-tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
+tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, software-product>document-information-extraction, topic>artificial-intelligence, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 ---
 
