@@ -118,7 +118,6 @@ primary_tag: software-product>sap-build-process-automation
 
 ### Work on the tasks
 
-
 1. Start in the **Lobby** and open the **My Inbox** application by selecting the button ![Inbox Icon](02_Inbox_Icon.png) at the top right corner.
 
     <!-- border -->![Lobby](01_Lobby.png)
