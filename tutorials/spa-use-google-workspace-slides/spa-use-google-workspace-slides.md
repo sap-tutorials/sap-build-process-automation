@@ -22,6 +22,7 @@ parser: v2
 
 ## Intro
 In this tutorial, you will build an automation that will create a presentation where you will add one slide with a header and a list and another slide with an image. You will then retrieve the presentation details through a log message that will be read in the test console.
+
 ---
 
 ### Create an automation
