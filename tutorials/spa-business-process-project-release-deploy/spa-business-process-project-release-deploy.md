@@ -45,7 +45,6 @@ Before you run the process, ensure that the process is saved and that there are 
 
 ### Deploy the released process
 
-
     You can deploy Business Process projects from each released version of the project in the Process Builder or through the Lobby. Deploying the project makes it available for others to use it. Bare in mind that you can only deploy a released version of the project.
 
 1. From the released version of the Business Process project in the Process Builder, choose **Deploy**.
