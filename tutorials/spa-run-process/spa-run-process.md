@@ -67,7 +67,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](007.png)
 
-3. After you select the submit button, you will be notification that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has been started.
+3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has been started.
 
     <!-- border -->![Run](008.png)
 
