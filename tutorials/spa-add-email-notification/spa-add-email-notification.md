@@ -98,7 +98,7 @@ Now that you have designed the process with forms, you can define the mail notif
 
 2. Fill the form and choose **Submit**.
 
-3. After you select the submit button, a notification will inform you that the form has been successfully submitted.This means that the workflow has been triggered and the approval process has been started.
+3. After you select the submit button, a notification will inform you that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has been started.
 
     <!-- border -->![Submit The Form](Submit-New.png)
 
