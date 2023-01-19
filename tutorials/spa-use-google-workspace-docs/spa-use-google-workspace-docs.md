@@ -21,6 +21,11 @@ parser: v2
 - How to insert header, footer and text in Google Document
 - How to retrieve a specific document and replace text in it
 
+## Intro
+In this tutorial, you will build an automation that will create a Google Document where you will insert a header and a footer as well as some text. You will then retrieve the Google document and replace some text in the document.
+
+---
+
 ### Create an automation
 
 1. In the **Lobby**, select the **Google Suite** project that has been done as part of previous tutorials as mentioned in pre-requisites.
@@ -37,8 +42,6 @@ parser: v2
 
 
 ### Build an automation to create a Google document
-
-You will build an automation that will create a Google Document where you will insert a header and a footer as well as some text. You will then retrieve the Google document and replace some text in the document.
 
 1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-sdk) automation you created as mentioned in the pre-requisites.
 

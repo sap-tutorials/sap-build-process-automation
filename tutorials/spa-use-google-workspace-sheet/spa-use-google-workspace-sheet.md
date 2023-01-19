@@ -21,6 +21,9 @@ primary_tag: software-product>sap-build-process-automation
   - How to retrieve the details of a Google spreadsheet
   - How to set the values of a specified cells range in Google Sheet
 
+## Intro
+In this tutorial, you will build an automation that will import data from an excel file, create a Google spreadsheet named Order Details with the values from the excel file. The automation will then create a new Google sheet within the spreadsheet named Updated Order Status with values set to a specified cell range.
+
 ---
 
 ### Create an automation
@@ -53,8 +56,6 @@ You will add one input parameter.
 <!-- border -->![Input Parameters](02.png)
 
 ### Build an automation to use Google Sheets
-
-You will build an automation that will import data from an excel file, create a Google spreadsheet named Order Details with the values from the excel file. The automation will then create a new Google sheet within the spreadsheet named Updated Order Status with values set to a specified cell range.
 
 1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-sdk) automation you created.
     <!-- border -->![Google Authorization Automation](03.png)

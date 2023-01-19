@@ -20,6 +20,10 @@ parser: v2
 - How to use Google Workspace to automate the creation of a new presentation, add slides, a header, a list and an image
 - How to retrieve the details of the presentation
 
+## Intro
+In this tutorial, you will build an automation that will create a presentation where you will add one slide with a header and a list and another slide with an image. You will then retrieve the presentation details through a log message that will be read in the test console.
+---
+
 ### Create an automation
 
 1. In the **Lobby**, select the **Google Suite** project that has been done as part of previous tutorials as mentioned in pre-requisites.
@@ -35,8 +39,6 @@ parser: v2
     You will be navigated to the automation editor of the newly created automation.
 
 ### Build an automation to use Google Slides
-
-You will build an automation that will create a presentation where you will add one slide with a header and a list and another slide with an image. You will then retrieve the presentation details through a log message that will be read in the test console.
 
 1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-sdk) automation you created.
 
