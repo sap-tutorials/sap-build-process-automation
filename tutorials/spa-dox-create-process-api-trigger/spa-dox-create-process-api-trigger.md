@@ -4,7 +4,7 @@ author_name: Paulina Bujnicka
 author_profile: https://github.com/pbujnicka
 auto_validation: true
 time: 20
-tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
+tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, software-product>document-information-extraction, topic>artificial-intelligence, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 ---
 
