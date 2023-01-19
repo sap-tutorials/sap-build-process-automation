@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Use Google Workspace to work with Gmail
-<!-- description --> Use Google Workspace to search, read and send a Gmail reply.
+<!-- description --> Use Google Workspace to search, read and send a Gmail reply
 
 ## Prerequisites
  - Complete [Google Authorization](spa-authorize-google-sdk) tutorial
@@ -145,7 +145,7 @@ You will add two input parameters.
 
 22. For **location** field, select **drive**.
 
-23. Finally for **`markAsRead`** field, select **true**.
+23. Finally, for **`markAsRead`** field, select **true**.
 
     <!-- border -->![Input Parameters](10.png)
 
@@ -224,13 +224,4 @@ You will add two input parameters.
     After searching in Gmail for the email(s), the automation will read the email(s) found, store the attachement(s) if any in your Drive and send a reply to a specified recipient from your gmail account.
 
     <!-- border -->![Test result](20.png)
-
-
-
-
-
-
-
-
-
 ---
