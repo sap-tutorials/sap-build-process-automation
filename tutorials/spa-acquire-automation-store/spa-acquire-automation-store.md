@@ -42,7 +42,6 @@ The Store offers predefined content for your automation. Packages are categorize
     <!-- border -->![Store View](02-StoreView.png)
 
 
-
 ### Acquire the Orders Management using SAPUI5 application package
 
 
