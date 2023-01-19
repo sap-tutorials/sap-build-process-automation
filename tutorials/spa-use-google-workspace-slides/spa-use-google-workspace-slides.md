@@ -146,7 +146,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
 26. In the **Automation Details** panel, under **Tools**, search for the **Add Image (Google Slides)** and drag and drop it into the workflow.
 
-    > You will set the parameter for prensentationID, the id of the presentation in which you want to add an image.
+    > You will set the parameter for `prensentationID`, the id of the presentation in which you want to add an image.
 
     - Select the activity. Under **Input Parameters**, for `presentationId`, choose the pencil to open the expression editor.
 
