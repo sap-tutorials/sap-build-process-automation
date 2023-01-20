@@ -65,7 +65,7 @@ Now you may release and deploy it in attended mode. You need to select this trig
 
     <!-- border -->![Release Project](80-release-project.png)
 
-    > ## What's going on?
+    > ### What's going on?
     > Every time you release, a new version will be created. Versions are incremented automatically based on how you want to store the changes in the repository (that is as major or minor updates or as a patch). Versions use an x.y.z format where x is a major version number, y is minor, and z is the patch number. For instance, if you are releasing your process project for the first time, then the version will start with 1.0.0. The next time you release there will be options to choose from – that is, if the new version is a major, minor, or patch update; version numbers will be automatically updated.
 
 3. The project released successfully and is ready to be deployed.
