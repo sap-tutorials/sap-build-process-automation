@@ -3,7 +3,7 @@ parser: v2
 author_name: Chaitanya Priya Puvvada
 author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
-time: 15
+time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 ---
@@ -69,18 +69,18 @@ All Process Automation APIs (except Inbox APIs which are OData v2 API) are REST 
 
     <!-- border -->![Select Environment](7.png)
 
-    Map the credentials of the service key that you have created  for SAP Build Process Automation as mentioned in **pre-requisites**.
+
+    Map the credentials of the service key that you have created  for SAP Build Process Automation as mentioned in **prerequisites**.
+
+    <!-- border -->![Select Environment](8.png)
 
     <!-- border -->![Credentials](credentials.png)
 
     | Field|Value
     | --- | :---
-    | Client ID | Client ID from the Service key credentials
-    | Client Secret | Client Secret from the Service key credentials
-    | Token Service URL|  url/oauth/token, where url is noted from Service key credentials
-
-
-    <!-- border -->![Credentials in Demo Environment](11.png)
+    | Client ID | Client ID from the service key credentials
+    | Client Secret | Client secret from the service key credentials
+    | Token Service URL|  `url/oauth/token`, where `url` is noted from the service key credentials
 
 5. After successful creation of demo environment, the token for the API call would be added to the header section.
 
@@ -93,7 +93,7 @@ All Process Automation APIs (except Inbox APIs which are OData v2 API) are REST 
 
     <!-- border -->![Copy Payload](13.png)  
 
-    The payload looks as below before execution of the API. Click **Run** to trigger the API, which would start your process.
+    Add values for the input fields. The payload looks as below before execution of the API. Click **Run** to trigger the API, which would start your process.
 
     <!-- border -->![Run](14.png)
 
@@ -104,20 +104,6 @@ All Process Automation APIs (except Inbox APIs which are OData v2 API) are REST 
 
 ### Monitor the triggered process in Home Page.
 
-In the home page of SAP Build Process Automation tenant, navigate to **Monitor**-->**Process and Workflow instances** to view the running instance of your process that was triggered from API call.
+In the home page of SAP Build Process Automation tenant, navigate to **Monitor** > **Process and Workflow instances** to view the running instance of your process that was triggered from API call.
 
   <!-- border -->![Success](16.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
----

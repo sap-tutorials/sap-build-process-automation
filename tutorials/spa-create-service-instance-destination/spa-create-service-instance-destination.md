@@ -4,13 +4,13 @@ author_name: Chaitanya Priya Puvvada
 author_profile: https://github.com/chaitanya-priya-puvvada
 keywords: destination
 auto_validation: true
-time: 15
+time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Create Destination To Trigger Process From Any Service
-<!-- description --> Learn how to create a destination to trigger process by creating an instance and service key of SAP Build Process Automation.
+# Create Destination to Trigger Process from any Service
+<!-- description --> Create a destination to trigger a business process by creating a service instance and service key of SAP Build Process Automation.
 
 ## Prerequisites
 - Account on [SAP BTP](btp-free-tier-account) to try out Free Tier service plans
@@ -18,11 +18,11 @@ primary_tag: software-product>sap-build-process-automation
 - Proper roles to create service instance, service key and destinations in SAP BTP Cockpit
 
 ## You will learn
-- How to create destination in SAP BTP Cockpit to start the business process from SAP Build Apps
-- How to create an instance and service key for SAP Build Process Automation
+- How to create a destination in the SAP BTP cockpit to start a business process from SAP Build Apps
+- How to create an service instance and service key for SAP Build Process Automation
 
 ## Intro
-In this tutorial, you will create a service instance and service key for SAP Build Process Automation. You would consume the credentials of the service key of Build Process Automation to create a destination that would trigger business process from SAP Build Apps.
+In this tutorial, you will create a service instance and service key for SAP Build Process Automation. You would consume the credentials of the service key of SAP Build Process Automation to create a destination that would trigger a business process from SAP Build Apps.
 
 ---
 
@@ -80,7 +80,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
 ### Create a destination to trigger process
 
-1. Navigate to **Destinations** > **Create Destination**. Enter the destination name as `spa_process_destination`.
+1. Navigate to **Destinations** > **New Destination**. Enter the destination name as `spa_process_destination`.
 
     <!-- border --> ![Create](10.png)
 
@@ -95,10 +95,10 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Proxy Type | Internet
     | Authentication |  OAuth2ClientCredentials
     | Use `mTLS` for token retrieval |  Off
-    | Client ID | Paste the clientid noted previously in step2
-    | Client Secret | Paste the client secret noted previously in step2
+    | Client ID | Paste the clientid noted previously in step 2
+    | Client Secret | Paste the client secret noted previously in step 2
     | Token Service URL Type | Dedicated
-    | Token Service URL|  `url/oauth/token`, where `url` is noted previously in step2
+    | Token Service URL|  `url/oauth/token`, where `url` is noted previously in step 2<div>&nbsp;</div>The final URL should be something like this: <div></div>`https://<your tenant>.authentication.<domain>.hana.ondemand.com/oauth/token`
     | Token Service User| Blank
     | Token Service Password| Blank
 

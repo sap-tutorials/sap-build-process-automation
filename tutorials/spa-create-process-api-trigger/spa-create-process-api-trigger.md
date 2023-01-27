@@ -3,23 +3,28 @@ parser: v2
 author_name: Chaitanya Priya Puvvada
 author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
-time: 20
+time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Create An API Trigger For The  Process
-<!-- description --> Create an API trigger for the process
+# Create an API Trigger for the Process
+<!-- description --> Create an API trigger for the business process.
 
 ## Prerequisites
  - Complete [Acquire A Template Project From The Store](spa-acquire-businessprocess-store) **OR**
  - Complete the mission [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation)
 
 ## You will learn
-  - How to create an API trigger for the business process to start the instance from my any service like SAP Build Apps.
+  - How to create an API trigger to start an instance of a business process from any service, like SAP Build Apps
 
-## Intro 
-A business process is started by defining a trigger, an event that indicates to your SAP Build Process Automation tenant to start a process instance. Process triggers can be either a form, such as a request form, or an API call, where an external system starts the process. You can start an instance of your process using an API call, with the inputs for the call configured from the process builder. These inputs can then be used as input fields in your process.
+
+## Intro
+A business process is started by defining a trigger, an event that indicates to your SAP Build Process Automation tenant to start a process instance.
+
+Process triggers can be either a form, such as a request form, or an API call, where an external system starts the process.
+
+You can start an instance of your process using an API call, with the inputs for the call configured from the process builder. These inputs can then be used as input fields in your process.
 
 ### Create an API trigger for the process
 
@@ -31,7 +36,7 @@ Once you have completed the tutorial [Acquire A Template Project From The Store]
 
     <!-- border -->![Process](1.1.png)
 
-2. From the **Editable** version of the **Sales Order Dev Tutorial** project, choose the three dots of the **Order Processing Form** and select **Remove** to delete the form.
+2. From the **Editable** version of the **Sales Order Approvals Dev Tutorial** project, choose the three dots of the **Order Processing Form** and select **Remove** to delete the form.
 
     <!-- border -->![Delete Form](2.png)
 
@@ -89,7 +94,7 @@ Once you have completed the tutorial [Acquire A Template Project From The Store]
 
 ### Modify the process
 
-Since you have created an API trigger, the bindings were lost as mentioned in **Step1**. Let's adjust the process with the new inputs configured for the API trigger.
+Since you have created an API trigger, the bindings were lost as mentioned in **Step 1**. Let's adjust the process with the new inputs configured for the API trigger.
 
 1. Choose the condition artifact and click on **Open Condition Editor**.
 
