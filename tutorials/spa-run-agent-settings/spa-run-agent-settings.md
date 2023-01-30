@@ -12,6 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
+ - 
 
 ## You will learn
   - How to create an Agent Attribute in the tenant.
@@ -22,6 +23,24 @@ primary_tag: software-product>sap-build-process-automation
 Agent attributes allow you to sort agents registered within the same tenant and make sure that a specific agent executes the job of your choice.
 
 ---
+
+
+### Add your agent
+
+After you have installed the desktop agent, you need to add your agent so that it is able to run an automation.
+
+1. Navigate to **SAP Build** page. Select **Settings**. Choose **Agents Management** then **Add Agent**.
+
+    <!-- border -->![Agent Management](agent3-020.png)
+
+2. When the pop-up window opens, select your agent and choose **Add agent**.
+
+    <!-- border -->![Agent Management Add](agent3-021.png)
+
+3. Your agent is now added and ready to run.
+
+    <!-- border -->![Agent Management List](agent3-022.png)
+
 
 ### Create an agent attribute in the tenant
 
