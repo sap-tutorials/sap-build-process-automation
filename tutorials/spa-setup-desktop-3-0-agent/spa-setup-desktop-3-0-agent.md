@@ -209,9 +209,6 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 [OPTION END]
 
 
-
-
-
 ### Add your agent
 
 
