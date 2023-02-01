@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../.."
+		},
+		{
+			"path": "../../../Tutorials-Contribution"
+		},
+		{
+			"path": "../../../Tutorials"
 		}
 	]
 }
