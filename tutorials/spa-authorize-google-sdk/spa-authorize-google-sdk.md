@@ -20,7 +20,7 @@ primary_tag: software-product>sap-build-process-automation
  - How to use the authorization mechanisms supported by the Google Authorization SDK
 
 ## Intro
-SAP Build Process Automation enables users to automate Google Workspace products such as Gmail, Google Drive, Google Sheets, Google Docs, Google Calendar and other services such as Google Cloud Storage, Document AI and Vision AI. In order to automate Google workspace products, you have to be authorized. There are three authorization mechanisms that Google supports:
+SAP Build Process Automation enables users to automate Google Workspace products such as Gmail, Google Drive, Google Sheets, Google Docs, Google Calendar and other services such as Google Cloud Storage, Document AI and Vision AI. Any company which is using Google Workspace instead of MS Office products, can use the Google Workspace SDK to automate the workspace products. In order to automate Google workspace products, you have to be authorized. There are three authorization mechanisms that Google supports:
 
 - Service Account
 - oAuth
@@ -51,7 +51,7 @@ Before you can authorize Google applications, you will need to create an automat
 
     <!-- border -->![Task Automation](02a.png)
 
-4. In the **Create Task Automation** window, enter the name: **Google Suite**  and as a description: **A demo to automate Google Applications using Google SDK**.
+4. In the **Create Task Automation** window, enter the name: **Google Workspace**  and as a description: **A demo to automate Google Applications using Google SDK**.
 
 5. Choose **Create**.
 
@@ -148,7 +148,7 @@ After successful completion of setting the Service Account as mentioned in the p
 
 ### Use the service account activity
 
-The Authorize Google (Service Account) activity is used to authorize using service account and the same activity is supported on Desktop Agent 2.0 and Desktop Agent 3.0. Once the activity executes successfully, the bot is authorized to execute any subsequent google activities.
+The Authorize Google (Service Account) activity is used to authorize using service account and the same activity is supported on Desktop Agent 2.0 and Desktop Agent 3.0. Once the activity executes successfully, the bot is authorized to execute any subsequent Google activities.
 
 The Bot using Service Account Authorization doesn't require any human intervention such as providing the user consent or credentials. Hence this will be a suitable choice for unattended scenarios.
 
@@ -200,4 +200,8 @@ You can test if the Google Authorization has been set up correctly.
 
     <!-- border -->![Test result](17.png)
 
-    Now that you have set the Authorize activity, you may add Google Workspace SDK to automate google applications such as google drive, Gmail and google sheet. Once you are done building your automation, you may use the Disconnect activity at the end of the automation.
+    Now that you have set the Authorize activity, you may add Google Workspace SDK to automate Google applications such as Google Drive, Gmail, Google Docs, Google Sheets and Google Slides. Once you are done building your automation, you may use the Disconnect activity at the end of the automation.
+
+    > Please note that all the Google Workspace activities also work with Agent 2.0.
+
+

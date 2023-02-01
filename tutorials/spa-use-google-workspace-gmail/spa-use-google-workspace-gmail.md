@@ -207,7 +207,7 @@ You will add two input parameters.
 
 2. Fill in the **Input parameters**:
     - For `searchSubject`: the subject of the email you want to search in Gmail
-    - For `serachFrom`: the email you want to search in Gmail
+    - For `searchFrom`: the email you want to search in Gmail
 
 3. Fill in the **Environment Variables**:
     - For `userEmail`: your Gmail user email
@@ -223,5 +223,5 @@ You will add two input parameters.
 
     After searching in Gmail for the email(s), the automation will read the email(s) found, store the attachment(s) if any in your Drive and send a reply to a specified recipient from your gmail account.
 
-    <!-- border -->![Test result](20.png)
+    <!-- border -->![Test result](21.png)
 ---
