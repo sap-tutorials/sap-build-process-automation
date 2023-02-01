@@ -84,7 +84,7 @@ To configure action in business process, you will need to create an environment 
 
     <!-- border -->![Destination](destination_04.png)
 
-2. In the **Project Properties** pop-up, select **Environment Variables** and click **Create** to create an environment variable for this business processes.
+2. In the **Project Properties** pop-up, select **Environment Variables** and choose **Create** to create an environment variable for this business processes.
 
     <!-- border -->![Destination](destination_05.png)
 
