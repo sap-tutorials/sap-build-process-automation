@@ -29,7 +29,7 @@ In this tutorial, you will use Google Authorization SDK and Google Workspace SDK
 
 ### Create an automation
 
-1. In the **Lobby**, select the **Google Suite** project.
+1. In the **Lobby**, select the **Google Workspace** project.
 
 2. In **Build Process Automation**, choose **Create** and then select **Automation**.
 
