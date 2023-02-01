@@ -92,7 +92,7 @@ parser: v2
 
 3. As per the process, once you approve the sales order - an explicit notification task is sent to the approver to inform him of the approval with the comment from the supplier.
 
-    - Click **Refresh** to get new tasks.
+    - Choose **Refresh** to get new tasks.
     - Select task with your purchase order number having text **Your order PO has been successfully received**.
 
     > You will see the message from the supplier.
