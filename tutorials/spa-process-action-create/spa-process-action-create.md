@@ -48,7 +48,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     <!-- border -->![Action Project](ActionProject_02.png)
 
-3. In the popup, click **Build an Automated Process** and then select **Actions**.
+3. In the popup, choose **Build an Automated Process** and then select **Actions**.
 
     <!-- border -->![Action Project](ActionProject_02a.png)
 
