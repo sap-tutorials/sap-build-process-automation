@@ -154,17 +154,16 @@ After the data types are created, you will now configure the decision:
     > A decision table is a tabular representation of the rule with If and Then header and row columns. If-header columns contain the expressions, which are evaluated, and Then-header columns contain the result structure that will be returned after the decision is run.
 
 10. You will now configure the conditions. Under **Data Types**:
-    - Choose **Sales Order Input**,
-    - Select **`shippingCountry`**,
-    - Select **`orderAmount`**,
+    - Select **Sales Order Input**,
+    - From the dropdown, choose the inputs `shippingCountry` and `orderAmount`,
     - Choose **Next Step** button.
 
     <!-- border -->![002](018.png)
 
-11. Configure the output or result of the decision table. Under Data Type:
-    - Choose **Approver**,
-    - Select `UserGroup`,
-    - Select **Email**,
+11. Configure the output or result of the decision table. 
+    - Under **Result Vocabulary**, choose **Approver Output**,
+    - Under Data Type, select **Approver Output** 
+    - From the dropdown, choose outputs `UserGroup` and `Email`,
     - Choose **Next Step** button.
 
     <!-- border -->![002](019.png)
@@ -191,8 +190,6 @@ After the data types are created, you will now configure the decision:
 
     > You can either type-in the entire expression as free-flow or use the context help to write the expression.
 
-    > For all *String* type of data object attribute, you have to mandatory add single-quote (') before and after the text.
-
     <!-- border -->![002](024.png)
 
     > Remember that for all String type data object attributes, you must add a single quote (') before and after the text.
@@ -204,6 +201,7 @@ After the data types are created, you will now configure the decision:
 18. Similarly, enter the following expressions for the respective result column (or **Then** section):
     - Under `UserGroup` enter: `'SO_APPROVER'`
     - Under Email enter: `'your user email'`
+    
     > Do not forget to put single-quote (') for string type values
 
     <!-- border -->![002](026.png)
