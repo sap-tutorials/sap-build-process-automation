@@ -23,13 +23,10 @@ primary_tag: software-product>sap-build-process-automation
 
 ### Add a Decision to the Process
 
-
 A **decision** consists of one or more policies. Each policy consists of a collection of rules. They are used to automate the decision-making parts of a business process. After you create a decision, define your business logic by adding rules to the policy. There are two types of rules:
 
 - **Decision Table Rule**: A decision table is a collection of input and output rule expressions in a tabular representation.
 - **Text Rule**: A text rule is the collection of rule expressions in a simple if-then format.
-
-A **Decision Diagram** is a flow chart that describes the execution flow of the decision logic from the input to the output. Using a decision diagram, you can view the input, output, policies of a decision and the rules of the policies. You can also access each component of a decision, like a policy or a rule, via the decision diagram itself.
 
 > To add a decision, you must first identify the set of rules that you need to add to the decision-making process. Once you have identified your rules, then define the data types relevant for designing the rules. This is an important step before you start modelling your decision because these data types will contain all necessary fields that will be needed to model the rule.
 
@@ -55,7 +52,9 @@ In this section, you will create and configure a decision which will be used to 
 
 4. A decision editor opens. You can see the decision diagram on the left panel and configuration option for Input and Output on the right panel. Notice the default policy that is pre-created with the decision.
 
-    > A Policy is a collection of rules to be executed in strict order, meaning that they will run in the order in which they are added to the policy, and only the results of the last rule execution will be given as the final output of the decision.  
+    A **Decision Diagram** is a flow chart that describes the execution flow of the decision logic from the input to the output. Using a decision diagram, you can view the input, output, policies of a decision and the rules of the policies. You can also access each component of a decision, like a policy or a rule, via the decision diagram itself.
+
+    A Policy is a collection of rules to be executed in strict order, meaning that they will run in the order in which they are added to the policy, and only the results of the last rule execution will be given as the final output of the decision.  
 
     <!-- border -->![002](004.png)
 
@@ -107,43 +106,43 @@ After the data types are created, you will now configure the decision:
 - With Input and Output data types.
 - Create decision table rule to the business policy.
 
-1. First, add this newly created data object as the decision output.
+First, add this newly created data object as the decision output.
 
-2. Go back to **Determine Approver** decision tab.
+1. Go back to **Determine Approver** decision tab.
 
     <!-- border -->![002](011.png)
 
-3. In the  Determine Approver section:
+2. In the  Determine Approver section:
     - select **Add Input Parameter** button,
     - select **Add Output Parameter** button.
 
     <!-- border -->![002](012.png)
 
-4. Configure Input Parameter:
+3. Configure Input Parameter:
     - In Name enter: **Sales Order Input**,
     - In Description enter: **business rules input**,
     - In Type choose: **Sales Order**.
 
     <!-- border -->![002](013.png)
 
-5. Configure Output Parameter:
+4. Configure Output Parameter:
     - In Name enter: **Approver Output**,
     - In Description enter: **business rules output**,
     - In Type choose: **Approver**.
 
     <!-- border -->![002](014.png)
 
-6. **Save** changes.
+5. **Save** changes.
 
-7. Then you will create the actual decision-making parts that make the decision in the process. Under Determine approver, select **Rules**.
+6. Then you will create the actual decision-making parts that make the decision in the process. Under Determine approver, select **Rules**.
 
     <!-- border -->![002](015.png)
 
-8. Select **Add Rule**.
+7. Select **Add Rule**.
 
     <!-- border -->![002](016.png)
 
-9. In the Create Rule window:
+8. In the Create Rule window:
     - Under Rule Type select **Decision Table**,
     - In the Rule Name enter **Determine Approver**,
     - In the Rule Description enter **Rule to identify the potential approvers for sales order**,
@@ -153,40 +152,39 @@ After the data types are created, you will now configure the decision:
 
     > A decision table is a tabular representation of the rule with If and Then header and row columns. If-header columns contain the expressions, which are evaluated, and Then-header columns contain the result structure that will be returned after the decision is run.
 
-10. You will now configure the conditions. Under **Data Types**:
-    - Select **Sales Order Input**,
+9. You will now configure the conditions. Under **Vocabulary**:
+    - Select **Sales Order Input** data type,
     - From the dropdown, choose the inputs `shippingCountry` and `orderAmount`,
     - Choose **Next Step** button.
 
     <!-- border -->![002](018.png)
 
-11. Configure the output or result of the decision table. 
-    - Under **Result Vocabulary**, choose **Approver Output**,
-    - Under Data Type, select **Approver Output** 
+10. Configure the output or result of the decision table. Under **Result Vocabulary**:
+    - Select **Approver Output** data type,
     - From the dropdown, choose outputs `UserGroup` and `Email`,
     - Choose **Next Step** button.
 
     <!-- border -->![002](019.png)
 
-12. Review and choose **Create** button to create the rule.
+11. Review and choose **Create** button to create the rule.
 
     <!-- border -->![002](020.png)
 
     > You can use the Settings option to easily define these If and Then header expressions with inline suggestions or free-flow typing.
 
-13. In the newly created **Decision Table**, add values to condition and result columns.
+12. In the newly created **Decision Table**, add values to condition and result columns.
 
     <!-- border -->![002](021.png)
 
-14. Click in the first field (first column)
+13. Click in the first field (first column)
 
     <!-- border -->![002](022.png)
 
-15. Type EXISTSIN, and choose **exists in** from Array Operators.
+14. Type EXISTSIN, and choose **exists in** from Array Operators.
 
     <!-- border -->![002](023.png)
 
-16. Continue typing, and write this expression: **EXISTSIN ['United Kingdom' , 'India' , 'Germany']**. After you have finished, press Enter key or click outside the input field to confirm.
+15. Continue typing, and write this expression: **EXISTSIN ['United Kingdom' , 'India' , 'Germany']**. After you have finished, press Enter key or click outside the input field to confirm.
 
     > You can either type-in the entire expression as free-flow or use the context help to write the expression.
 
@@ -194,14 +192,14 @@ After the data types are created, you will now configure the decision:
 
     > Remember that for all String type data object attributes, you must add a single quote (') before and after the text.
 
-17. Choose the input field of **Order Amount** column (second column of the decision table) and enter **<= 100000**.
+16. Choose the input field of **Order Amount** column (second column of the decision table) and enter **<= 100000**.
 
     <!-- border -->![002](025.png)
 
-18. Similarly, enter the following expressions for the respective result column (or **Then** section):
+17. Similarly, enter the following expressions for the respective result column (or **Then** section):
     - Under `UserGroup` enter: `'SO_APPROVER'`
-    - Under Email enter: `'your user email'`
-    
+    - Under Email enter your email such as `jane.doe@sap.com`
+
     > Do not forget to put single-quote (') for string type values
 
     <!-- border -->![002](026.png)
@@ -212,14 +210,14 @@ After the data types are created, you will now configure the decision:
 
     So, for example, for all sales orders coming from India, Germany, or the United Kingdom (the defined shipping countries) which have a value smaller or equal than 100,000 – the first row will run. For all other sales orders, whose value is greater than 100000, the second row will return; and for any other combination that does not match the rows – an empty result will be returned.
 
-13. To add a new row to the decision table, do the following:
+18. To add a new row to the decision table, do the following:
     - Choose the check-box of the first row,
     - Choose **Add Row**,
     - From the dropdown options, select **Insert After**.
 
     <!-- border -->![002](027.png)
 
-14. Similarly, enter the following values for the new row:
+19. Similarly, enter the following values for the new row:
 
     |  Condition Column    | Value
     |  :------------- | :-------------
@@ -229,11 +227,11 @@ After the data types are created, you will now configure the decision:
     |  Action Column   | Value
     |  :------------- | :-------------
     |  `UserGroup`        | `'SO_MGMNT'`
-    |  `Email`       | `'your user email'`|
+    |  `Email`       | `john.doe@sap.com`|
 
     <!-- border -->![002](028.png)
 
-15. Choose **Save** button.
+20. Choose **Save** button.
 
     > Save will both save and activate the decision table. If there are any validation issues in the decision table, then Save will not happen and the errors will be shown in the **Design Console**
 
