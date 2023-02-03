@@ -112,9 +112,7 @@ First, add this newly created data object as the decision output.
 
     <!-- border -->![002](011.png)
 
-2. In the  Determine Approver section:
-    - select **Add Input Parameter** button,
-    - select **Add Output Parameter** button.
+2. In the Determine Approver section, you will select **Add Input Parameter** button and **Add Output Parameter** button to configure input and output parameters.
 
     <!-- border -->![002](012.png)
 
