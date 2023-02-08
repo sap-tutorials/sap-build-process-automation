@@ -221,7 +221,7 @@ You will add two input parameters.
 
     <!-- border -->![Test result](20.png)
 
-    After searching in Gmail for the email(s), the automation will read the email(s) found, store the attachement(s) if any in your Drive and send a reply to a specified recipient from your gmail account.
+    After searching in Gmail for the email(s), the automation will read the email(s) found, store the attachment(s) if any in your Drive and send a reply to a specified recipient from your gmail account.
 
     <!-- border -->![Test result](21.png)
 ---
