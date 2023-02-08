@@ -23,10 +23,10 @@ primary_tag: software-product>sap-build-process-automation
 SAP Build Process Automation enables users to automate Google Workspace products such as Gmail, Google Drive, Google Sheets, Google Docs, Google Calendar and other services such as Google Cloud Storage, Document AI and Vision AI. Any company which is using Google Workspace instead of MS Office products, can use the Google Workspace SDK to automate the workspace products. In order to automate Google workspace products, you have to be authorized. There are three authorization mechanisms that Google supports:
 
 - Service Account
-- oAuth
+- `oAuth`
 - Workflow Identity Federation
 
-SAP Build Process Automation supports Service Account and oAuth. In this tutorial, you will authorize using Service Account.
+SAP Build Process Automation supports Service Account and `oAuth`. In this tutorial, you will authorize using Service Account.
 
 > What is a Service Account ?
 
@@ -109,7 +109,7 @@ Environment Variables allow you to reuse certain information for a given environ
 
 ### Add the Google authorization SDK
 
-The Google Authorization SDK is a collection of activities allowing you to acquire authorization with Google to perform activities in the Google Workspace and the Google Document AI SDK. It is mandatory for authorizing SAP Build Process Automation to Google Applications. It contains activities to support authorization mechanisms such as Service Account and OAuth. The Authorize activity must be used before any Google SDK Activity and the Disconnect activity must be used at the end of the automation.
+The Google Authorization SDK is a collection of activities allowing you to acquire authorization with Google to perform activities in the Google Workspace and the Google Document AI SDK. It is mandatory for authorizing SAP Build Process Automation to Google Applications. It contains activities to support authorization mechanisms such as Service Account and `oAuth`. The Authorize activity must be used before any Google SDK Activity and the Disconnect activity must be used at the end of the automation.
 
 1. Select Settings.
 
