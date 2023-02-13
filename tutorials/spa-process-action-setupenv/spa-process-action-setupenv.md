@@ -20,35 +20,34 @@ parser: v2
 To configure action in business process, you will need to create an environment variable to access the destination that is created in SAP Business Technology Platform. A destination is needed to connect to the S/4HANA system to execute the APIs. The destination-based environment variable will be used to configure the action of the business process.
 
 
-### Add environment variable to access destination
+### Add destination in SAP Build Process Automation
 
-1. Click to open **Sales Order Approval** business process project from the **Lobby**.
-    > When you open for the first time then you might get an option to Accept.
+1. To add the destination in your BTP Cockpit, do the following:
 
-    <!-- border -->![Import Project](ImportProject_35.png)
+    - [Download](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-process-action-setupenv/S4HANACloud) the S4HANACloud destination file.
+    - Go to **Connectivity** >> **Destinations** in your **BTP Cockpit**.
+    - Click **Import Destination** and select the downloaded destination file.
+    - Update the **URL**, **User** and the **Password** based on your **S4HANACloud** setup.
+    - **Save** the changed.
 
-1. Click to open **Order Processing** process.
-    - From your project overview section,
-        - In the process builder, click to open **Project Properties** from top-right corner of the page.
+    <!-- border -->![Destination](destination_01a.png)
 
-    <!-- border -->![Destination](destination_04.png)
+    > Note that there is a property **sap.processautomation.enabled** added to the destination. The destinations which have this property set as true can be discovered and added in SAP Build Process Automation.
 
-2. In the **Project Properties** pop-up, select **Environment Variables** and choose **Create** to create an environment variable for this business processes.
+2. Set this destination, created in BTP cockpit, in SAP Build Process Automation. To do so:
 
-    <!-- border -->![Destination](destination_05.png)
+    - Open **SAP Build** development workbench.
+    - Click **Settings**.
+    - Go to **Destinations** section, and click **New Destination**.
+    - From **Add Destination** pop-up, select *S4HANACloud* destination.
+    - Click **Add** to add a new destination in SAP Build Process Automation.
 
-3. Enter the following to create an environment variable:
+    <!-- border -->![Destination](destination_02.png)
 
-    - **S4HANACloud** as **Identifier**.
-    - Any **Description** of your choice.
-    - **Destination** as variable type.
+    A new destination will be added.
 
-    <!-- border -->![Destination](destination_05a.png)
+    <!-- border -->![Destination](destination_03.png)
 
-    - Click **Create**.
-
-4. Once the environment variable is created, **Close** the project properties' pop-up.
-
-    <!-- border -->![Destination](destination_06.png)
+    > This destination will be associated with the environment variable while deploying the business process.
 
 You have successfully created and configured the destination to be accessed while configuring business process.
