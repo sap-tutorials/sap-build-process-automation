@@ -35,7 +35,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
 ### Download open API specification
 
-1.  [Download and extract](https://sap.sharepoint.com/:u:/r/sites/120611/Shared%20Documents/Downloads/SAP%20Build%20Process%20Automation/API_SALES_ORDER_SRV.zip?csf=1&web=1&e=44VvEk) **Open API Specification** zip file for **Sales Order (A2X)** API in your local file system.
+1.  [Download and extract](https://www.sap.com/registration/trial.f47300f6-63b8-4f22-b189-dbadd3c903d6.html?id=0055000000004722023) **Open API Specification** zip file for **Sales Order (A2X)** API in your local file system.
 
 > Open API specification of 2.x or 3.x or higher is needed for creating action project. For APIs that are available in [SAP API Business Hub](https://api.sap.com), you can directly download the specification from the API overview section. For example: The API specification that will be used for sales order creation in this exercise is downloaded from [here](https://api.sap.com/api/API_SALES_ORDER_SRV/overview).
 
