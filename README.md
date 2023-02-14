@@ -20,11 +20,18 @@ In case you are the maintainer of a new SAP-toturials open source project, these
 
 ## About this project
 
-*Insert a short description of your project here...*
+The sap-build-process automation repository will support publishing of tutorials related to the SAP Build process automation services.
 
 ## Requirements and Setup
 
-*Insert a short description what is required to get your project running...*
+-Migration of existing tutorials from the Tutorials repository
+  
+-Setup of repository as "Public"
+  
+-Setup of rules regarding pull requests requirements
+  
+-Setup of repository and repository owner in the repository.owner.json file in the tutorial-checker-->data folder
+
 
 ## Support, Feedback, Contributing
 
