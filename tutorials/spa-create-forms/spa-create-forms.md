@@ -29,7 +29,7 @@ These interactive forms can be created by dragging and dropping the text element
 
 Let us now explore how these different forms are created. In the steps below, you will create three forms that will be used to:
 
--	Start the approval process.
+- Start the approval process.
 - Send a task to the inbox of the business user for approval.
 - Notify the requester for approval or rejection.
 
