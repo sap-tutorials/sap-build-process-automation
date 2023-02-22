@@ -53,7 +53,7 @@ First, you will create a trigger form that will start the business process. For 
 
     The form will be added as the **Start Trigger**.
 
-3. To design the form, choose the three dots and select **Open Editor**
+3. To design the form, choose the three dots and select **Open Editor**.
 
     <!-- border -->![Form](003.png)
 
