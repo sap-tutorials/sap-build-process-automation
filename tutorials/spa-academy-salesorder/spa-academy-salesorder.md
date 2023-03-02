@@ -3,12 +3,13 @@ parser: v2
 author_name: Chaitanya Priya Puvvada
 author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
+title: Create Sales Order Business Process
 time: 30
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier ]
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Create a Business Process
+# Create Sales Order Business Process
 <!-- description --> Create a Business Project and Process to build and extend business processes
 
 ## Prerequisites
@@ -19,6 +20,7 @@ primary_tag: software-product>sap-build-process-automation
 ## You will learn
   - How to create a SAP Build Process Automation project
   - How to create a process that automates sales order creation and approval
+  - How create an API trigger to integrate with any applications like SAP Build Apps, CAP etc.
 
 ---
 

@@ -3,12 +3,13 @@ parser: v2
 author_name: Chaitanya Priya Puvvada
 author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
+title: Run the Sales Order Business Process
 time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier ]
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Run the Business Process
+# Run the Sales Order Business Process
 <!-- description --> Release, deploy and run the business process
 
 ## Prerequisites
@@ -17,6 +18,7 @@ primary_tag: software-product>sap-build-process-automation
 ## You will learn
   - How to release and deploy the process
   - How to view the Triggers
+  - How to trigger the process with API Trigger
 
 ---
 
