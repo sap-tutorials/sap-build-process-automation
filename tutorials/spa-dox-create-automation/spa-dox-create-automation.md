@@ -137,7 +137,7 @@ primary_tag: software-product>sap-build-process-automation
     <!-- border -->![Automation](015.png)
 
 5. Under **Choose Schema**:
-    - SAP Build provides **Extraction Schema** with the required Header Fields and Line Item Fields,
+    - SAP Build provides **Extraction Schema** with the required Header Fields and Line Item Fields
     - Choose **Select**.
 
     <!-- border -->![Automation](016.png)
