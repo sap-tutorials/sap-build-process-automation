@@ -117,7 +117,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](013.png)
 
-2. In the **Create Document Template** window, under **Details**:
+2. In the **Add Document Template** window, under **Start**:
     - Choose **Create a new template**,
     - Enter the **Name** of the template,
     - Upload the invoice document which you have downloaded from prerequisites,
@@ -125,21 +125,32 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](014.png)
 
-3. Select **Invoice** as the document type of your template and choose **Next**.
+3. Under **Enter Details**:
+    - Enter the **Name** of the template,
+    - Upload the invoice document which you have downloaded from prerequisites,
+    - Choose **Next**.
+
+    <!-- border -->![Automation](042.png)
+
+4. Select **Invoice** as the document type of your template and choose **Next**.
 
     <!-- border -->![Automation](015.png)
 
-4. Under **Choose Schema**:
-    - Choose **Create New**,
-    - Enter the **Name** of the schema,
-    - Choose the Header fields that you would extract the data from the Invoice document. In this scenario you would select `documentNumber`, `grossAmount`, `senderName`.
-    - Choose **Add**.
+5. Under **Choose Schema**:
+    - SAP Build provides **Extraction Schema** with the required Header Fields and Line Item Fields
+    - Choose **Select**.
 
     <!-- border -->![Automation](016.png)
 
-5. Document Information Extraction SDK would be added as dependency to your project. The schema and template are created successfully.
+6. Under **Summary**:
+    - SAP Build provides the summary of all the details related to schema to be created,
+    - Choose **Add**.
 
-6. Once Upload will be completed, choose **Open in a new tab**.
+    <!-- border -->![Automation](043.png)
+
+7. Document Information Extraction SDK would be added as dependency to your project. The schema and template are created successfully.
+
+8. Once Upload will be completed, choose **Open in a new tab**.
 
     <!-- border -->![Automation](017.png)
 
