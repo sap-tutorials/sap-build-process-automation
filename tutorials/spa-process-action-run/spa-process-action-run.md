@@ -70,7 +70,7 @@ parser: v2
 
     <!-- border -->![Run Process](RunProcess-04a.png)
 
-    - Go to **Lsog** and you will see that the user task is waiting to be approved.
+    - Go to **Logs** and you will see that the user task is waiting to be approved.
 
     <!-- border -->![Run Process](RunProcess-05.png)
 

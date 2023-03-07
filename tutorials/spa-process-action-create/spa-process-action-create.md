@@ -89,7 +89,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     <!-- border -->![Action Project](ActionProject_08.png)
 
-    - Change the name to **Create a sales order**.
+    - Change the name to **Creates a sales order**.
     - Once done, select **check** icon to submit the changes.
 
     <!-- border -->![Action Project](ActionProject_09.png)
@@ -156,7 +156,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - In the popup, enter **/** and click **Enable**.
 
-    > Action project uses Destination service to execute the API. In the destination you have already create the URL Path as `https://my-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SALES_ORDER_SRV` to call the API. So, while configuring XSRF token path you do not have to enter any explicit path rather use standard URL configured in the destination.
+    > Action project uses Destination service to execute the API. In the destination you have already created the URL Path as `https://my-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SALES_ORDER_SRV` to call the API. So, while configuring CSRF token path you do not have to enter any explicit path rather use standard URL configured in the destination.
 
     <!-- border -->![Action Project](ActionProject_15.png)
 
@@ -236,7 +236,7 @@ You will now release the action project to create version(s) and then publish a 
 
 ### Publish action project
 
-Once the action project is released, you can the publish any release version of the action by clicking **Publish to Library** from top-right corner.
+Once the action project is released, you can then publish any release version of the action by clicking **Publish to Library** from top-right corner.
 
 <!-- border -->![Action Project](ActionProject_22.png)
 
