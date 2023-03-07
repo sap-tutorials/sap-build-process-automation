@@ -67,22 +67,22 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
 ### Configure action project
 
-1. Once the action project is created, the action editor will automatically open. In the popup, you have to select *POST* method of `/A_SalesOrder` API. You can either directly search from the given list of APIs or follow the steps below:
+1. Once the action project is created, select it to open the Action Editor. The **Add Actions From Sales Order** pop up  will automatically open. In the popup, you have to select *POST* method of `/A_SalesOrder` API. You can either directly search from the given list of APIs or follow the steps below:
     - Select **filter** option.
 
     <!-- border -->![Action Project](ActionProject_05.png)
 
-    - Select **Request Type** >> **POST** and click **OK**.
+    - Select **Actions Type** >> **POST**.
 
     <!-- border size:540px -->![Action Project](ActionProject_06.png)
 
-    - From the filtered list of APIs, select **POST** option for `/A_SalesOrder` API.
+    - From the filtered list of APIs, choose **Sales Order Header** and select **POST** option for `/A_SalesOrder` API.
 
     - Click **Add**.
 
     <!-- border -->![Action Project](ActionProject_07.png)
 
-2. Action editor will be opened with the selected APIs which can be further configured based on the requirements:
+2. Action Editor will open with the selected APIs which can be further configured based on the requirements:
 
     - To update the project name, click on the **pencil icon** next to the project name.
     > This action project name will help you search your action project from your API list, once published in action repository.
@@ -154,13 +154,13 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     <!-- border -->![Action Project](ActionProject_14.png)
 
-    - In the popup, enter **/** and click **Add X-CSRF**.
+    - In the popup, enter **/** and click **Enable**.
 
     > Action project uses Destination service to execute the API. In the destination you have already create the URL Path as `https://my-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SALES_ORDER_SRV` to call the API. So, while configuring XSRF token path you do not have to enter any explicit path rather use standard URL configured in the destination.
 
     <!-- border -->![Action Project](ActionProject_15.png)
 
-5. With this you have configured the action project name, XSRF token and API input fields. **Save** the work.
+5. With this you have configured the action project name, CSRF token and API input fields. **Save** the work.
 
     <!-- border -->![Action Project](ActionProject_16.png)
 
@@ -188,6 +188,8 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
 
     - Click **cross** to delete rest of the unwanted output fields.
+
+    - In the confirmation popup, click **Remove**.
 
     - **Save** the changes.
 
