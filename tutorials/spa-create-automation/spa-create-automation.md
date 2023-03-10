@@ -164,7 +164,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
     <!-- border -->![001](017.png)
 
-9. Go to Get Order Details automation. In Excel Cloud Link activity on the right side, under Output Parameters, change the variable name to **Orders**.
+9. Go to Get Order Details automation. In Excel Cloud Link activity on the right side, under Output Parameters, manually change the variable name to **Orders**.
 
     <!-- border -->![001](018.png)
 
