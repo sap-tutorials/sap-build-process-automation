@@ -148,7 +148,7 @@ primary_tag: software-product>sap-build-process-automation
     <!-- border -->![Automation](045.png)
 
 7. Under **Define information to extract**:
-    - Click the **Add** button to add **Header Fields**. For this scenario we will be adding documentNumber, grossAmount and senderName,
+    - Select the **Add** option to add **Header Fields**. For this scenario you will be adding '`documentNumber`', `grossAmount` and `senderName`,
     - Choose **Next**.
 
     <!-- border -->![Automation](044.png)
@@ -221,22 +221,22 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](028.png)
 
-4. Select the activity. Click on **Add Document Template**
+4. Select the activity. Choose on **Add Document Template**
 
     <!-- border -->![Automation](046.png)
 
 5. Under Add Document Template:
-    - Click on **Choose a template from the current project**,
-    - Click **Next**.
+    - Choose on **Choose a template from the current project**,
+    - Choose **Next**.
     <!-- border -->![Automation](047.png)
 
 
 6. Under Select Template:
-    - Choose the **ABCSchema1** we created in the previous steps,
-    - Click **Next**.
+    - Choose the **ABCSchema1** you created in the previous steps,
+    - Choose **Next**.
     <!-- border -->![Automation](048.png)
 
-7. Under Summary, click on **Add**
+7. Under Summary, choose on **Add**
     <!-- border -->![Automation](049.png)
 
 8. Select the activity. Maintain the parameters for the activity as follows:
@@ -246,7 +246,7 @@ primary_tag: software-product>sap-build-process-automation
 
 9. You have already created the data type **Invoice** in Step 2. Now, you will create a variable of type **Invoice**.
 
-10. Click on the canvas. Search for the datatype **Invoice**, located under the **Data Types** section.
+10. Choose on the canvas. Search for the datatype **Invoice**, located under the **Data Types** section.
 
     <!-- border -->![Automation](030.png)
 
@@ -274,7 +274,7 @@ primary_tag: software-product>sap-build-process-automation
 
     >  With this activity you generate a log message within the tester and the trace file, which is useful for setting up an automation. By default, a log will be "Information".
 
-17. Click on canvas, search for **Log Message** activity and drag and drop it into the automation flow.
+17. Select canvas, search for **Log Message** activity and drag and drop it into the automation flow.
 
     <!-- border -->![Automation](035.png)
 
