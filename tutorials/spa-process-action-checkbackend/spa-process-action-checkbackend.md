@@ -28,14 +28,14 @@ Once the business process is successfully executed, a sales order will be create
 
     <!-- border -->![Access System](AccessSystem_02c.png)
 
-    - Click to filter **COMPLETED** instances.
+    - Click to filter **Completed** instances.
 
     <!-- border -->![Access System](AccessSystem_02a.png)
 
     - Search for your Order Processing Instance.
-    - Click **EXECUTION LOG** tab.
+    - Click **Logs** tab.
     - Check if the **Action** is completed.
-    - Open **CONTEXT** tab.
+    - Open **Context** tab.
     - Copy the sales order number.
 
     > This is the sales order that is newly created in the backend S/4HANA system.

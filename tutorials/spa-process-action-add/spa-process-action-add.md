@@ -32,21 +32,21 @@ Learn how to add the action in the business process to connect to backend system
 
     <!-- border -->![Import Project](ImportProject_32.png)
 
-3. In the **Project Name** field, enter **Sales Order Approval**.
-    > you can keep the default description or enter the description of your choice
+3. In the **Project Name** field, enter **Sales Order Approvals**.
+    > You can keep the default description or enter the description of your choice
 
     - click **Create**.
 
     <!-- border -->![Import Project](ImportProject_33.png)
 
-4. Open **Lobby** and you will see your project created
+4. Open **Lobby** and you will see your project created.
 
     <!-- border -->![Import Project](ImportProject_34.png)
 
 
 ### Add environment variable to access destination
 
-1. Click to open **Sales Order Approval** business process project from the **Lobby**.
+1. Click to open **Sales Order Approvals** business process project from the **Lobby**.
     > When you open for the first time then you might get an option to Accept.
 
     <!-- border -->![Import Project](ImportProject_35.png)
@@ -180,15 +180,19 @@ You can deploy business process projects from each released version of the proje
 
     <!-- border -->![Start Deploy](deploy1.png)
 
-2. From the drop-down select the destination **S4HANACloud** and click **Confirm**.
+2. In the **Deploy Sales Order Approvals version 1.0.0** window, choose **Next**.
+
+    <!-- border -->![Start Deploy](deploy1a.png)
+
+3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Next**.
 
     > Variables allow you to reuse certain information for a given business process project deployment.
 
-    >  You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the  business process project. For example, in the current use case, you have created a *Destination* variable. Please use the same destination *S4HANACloud*.
+    > You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the business process project. For example, in the current use case, you have created a *Destination* variable. Please use the same destination *S4HANACloud*.
 
     <!-- border -->![Deploy confirm first](deploy2.png)
 
-3. Click **Deploy**.
+4. Click **Deploy**.
 
     <!-- border -->![Deploy](deploy3.png)
 

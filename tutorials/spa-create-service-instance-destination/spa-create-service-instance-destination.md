@@ -19,7 +19,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## You will learn
 - How to create a destination in the SAP BTP cockpit to start a business process from SAP Build Apps
-- How to create an service instance and service key for SAP Build Process Automation
+- How to create a service instance and service key for SAP Build Process Automation
 
 ## Intro
 In this tutorial, you will create a service instance and service key for SAP Build Process Automation. You would consume the credentials of the service key of SAP Build Process Automation to create a destination that would trigger a business process from SAP Build Apps.

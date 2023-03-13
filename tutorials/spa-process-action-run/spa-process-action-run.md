@@ -10,7 +10,7 @@ parser: v2
 ---
 
 # Run Business Process
-<!-- description --> Once the business process is deployed, learn how to run the business process and monitor the process with action execution details
+<!-- description --> Once the business process is deployed, learn how to run the business process and monitor the process with action execution details.
 
 ## You will learn
 - to run and monitor business process with action
@@ -49,7 +49,7 @@ parser: v2
 
     > As per the process, if the order amount is > 100000 then it will go for approval or else it will auto-approved.
 
-    > The sales order information in the form has to filled based on the available business object values in the backend system such that the sales order gets created successfully in S/4HANA system.
+    > The sales order information in the form has to be filled based on the available business object values in the backend system such that the sales order gets created successfully in S/4HANA system.
 
     <!-- border -->![Run Process](RunProcess-02.png)
 
@@ -67,7 +67,10 @@ parser: v2
 3. In process instance detail page, select your process instance to inspect the instance details.
 
     - Look at the context section. In the context, you will see the order details that you entered in the form.
-    - Go to **Execution Log** and you will see that the user task is waiting to be approved.
+
+    <!-- border -->![Run Process](RunProcess-04a.png)
+
+    - Go to **Logs** and you will see that the user task is waiting to be approved.
 
     <!-- border -->![Run Process](RunProcess-05.png)
 
@@ -104,14 +107,14 @@ parser: v2
 
 ### Check action log
 
-1. Go back to the **Monitor** application, select your process instance and observe the **EXECUTION LOG**.
+1. Go back to the **Monitor** application, select your process instance and observe the **Logs**.
 
     - **Refresh** the logs from top-right corner of the screen.
     - You will see the log entry for **Action** execution which informs you that a POST API for Sales Order has been executed, with the given destination configuration.
 
     <!-- border -->![Run Process](RunProcess-08.png)
 
-2. Now click to open **CONTEXT** tab.
+2. Now click to open **Context** tab.
 
     - You can observe the process context as how it has been updated after successful execution of each process step.
     - Notice the output after the Action execution.

@@ -29,7 +29,7 @@ These interactive forms can be created by dragging and dropping the text element
 
 Let us now explore how these different forms are created. In the steps below, you will create three forms that will be used to:
 
--	Start the approval process.
+- Start the approval process.
 - Send a task to the inbox of the business user for approval.
 - Notify the requester for approval or rejection.
 
@@ -53,7 +53,7 @@ First, you will create a trigger form that will start the business process. For 
 
     The form will be added as the **Start Trigger**.
 
-3. To design the form, choose the three dots and select **Open Editor**
+3. To design the form, choose the three dots and select **Open Editor**.
 
     <!-- border -->![Form](003.png)
 

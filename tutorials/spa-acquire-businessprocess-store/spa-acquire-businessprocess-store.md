@@ -39,7 +39,7 @@ Packages are categorized by catalog, which let you choose between Business Conte
 
     <!-- border -->![Navigate Store](1.Store.png)
 
-    You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Business Process), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
+    You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Process Automation), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
 
 
 ### Import sales order approvals business process

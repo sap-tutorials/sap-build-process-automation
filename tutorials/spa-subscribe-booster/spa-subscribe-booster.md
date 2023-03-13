@@ -12,22 +12,21 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Activate the SAP Build Process Automation service in the SAP BTP with booster
 
 ## Prerequisites
-   [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account)
+  - [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account) 
 
 ## You will learn
-  - How to activate SAP Build Process Automation in SAP BTP Free Tier
+  - How to activate SAP Build Process Automation in SAP BTP Free Tier account
 
 ## Intro
 SAP Build Process Automation in the SAP Business Technology Platform combines the capabilities of SAP Workflow Management and SAP Intelligent RPA in an easy-to-use, no-code AI-powered experience. It increases organizations' capacity to drive process automation by empowering business experts to become citizen developers. Leveraging the power of no-code, citizen developers can build, adapt, improve, and innovate business processes with minimum assistance from scarce IT resources.
 
 ---
 
-### Creation of SAP BTP Free Tier account
+### Create a SAP BTP Free Tier 
 
-
-  SAP Build Process Automation is available only on SAP BTP Free Tier Account.
-  Create a SAP BTP Free Tier account using the following tutorial: [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account)
-
+SAP Build Process Automation is available either on SAP BTP Free Tier Account as well as SAP BTP Trial Account. In this tutorial, you will learn how to enable SAP Build Process Automation in SAP BTP Free Tier account. Hence, you will need to create a SAP BTP Free Tier account beforehand. You can do so by following this tutorial: [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account). 
+  
+> If you rather use a SAP BTP Trial account, please follow this blog to enable SAP Build Process Automation: [SAP Process Automation now available in your Trial Account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/).
 
 
 ### Subscribe to SAP Build Process Automation Booster
