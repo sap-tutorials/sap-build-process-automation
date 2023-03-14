@@ -69,7 +69,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 ### Run business process
 
-1. Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the Overview section under the tab Triggers.
+1. Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the Overview section under the    tab Triggers.
 
     Click View to see context of the workflow API.
 
@@ -87,35 +87,39 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](4.1.png)
 
-3. Since we have created API Trigger for the Business process ,let's test the process with API Trigger in **Monitor** section before we start the process from SAP Build Apps.
+3. Since we have created API Trigger for the Business process ,let's test the process with API Trigger in **Monitor** section before we start the  process from SAP Build Apps.
 
    - Navigate to **Monitor** ---> **Manage** ---> **Process and Workflow Definitions** .
    - Search for the project **Sales Order Management** that you have created.
    - Click on **Start New Instance**.
    - Paste the payload that you have copied in Step 2.
 
- >> Don't modify the payload when you integrate with SAP Build Apps.
+        >> Don't modify the payload when you integrate with SAP Build Apps.
 
    Since the Definition ID is already available in the Monitor section , remove the definition ID and context .
 
-   You payload should like below.
+   You payload should like below after providing values to the fields.
 
-   ```JSON
-   {
-          "salesorderdetails": {
-              "material": "",
-              "orderAmount": 0,
-              "shipToParty": "",
-              "salesOrderType": "",
-              "salesOrganisation": "",
-              "distributionChannel": "",
-              "shippingCountry": "",
-              "expectedDeliveryDate": "",
-              "division": ""
-          }
-      }
+   
 
-  ```
+            ```JSON
+            {
+                    "salesorderdetails": 
+                    {
+                        "material": "Laptop",
+                        "orderAmount": 900000,
+                        "shipToParty": "ABCD",
+                        "salesOrderType": "01",
+                        "salesOrganisation": "01",
+                        "distributionChannel": "01",
+                        "shippingCountry": "India",
+                        "expectedDeliveryDate": "2023-05-08",
+                        "division": "01"
+                    }
+            }    
+
+            ```
+
   <!-- border -->![Run](5.png)
 
   - Click on **Start New Instance and Close**.
