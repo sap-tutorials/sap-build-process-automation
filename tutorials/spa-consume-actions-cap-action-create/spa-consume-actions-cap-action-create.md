@@ -90,7 +90,7 @@ The OpenAPI spec was generated as part of the previous tutorial [Create simple C
    
     >To get correct output information for the actions just replace the lines in the generated file in each of the following sections
 
-       - "“/toInteger(value='{value}’)”: {"
+       - `“/toInteger(value='{value}’)”: {`
 
         ```JSON
         "200": {
