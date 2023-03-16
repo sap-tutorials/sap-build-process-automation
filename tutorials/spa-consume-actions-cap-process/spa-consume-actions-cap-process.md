@@ -65,17 +65,17 @@ parser: v2
    
     - Filter on project **CAP Sample Actions** 
   
-    - Click **Add** on the action **get list of Todos** 
+    - Click **Add** on the action **`get list of Todos`** 
   
     <!-- border -->![browse](BrowseActions.png)
 
-3. Click **+** next to **End** and repeat the **Actions** > **Browse Library** steps to add the action **listToString**
+3. Click **+** next to **End** and repeat the **Actions** > **Browse Library** steps to add the action **`listToString`**
 
-4.  Select **get list of todos** in the canvas and create Destination variable **`capService`**
+4.  Select **`get list of Todos`** in the canvas and create Destination variable **`capService`**
    
     <!-- border -->![todo destination](TodosDestination.png)
    
-5. Select **listToString** in the canvas and select Destination variable **capService**
+5. Select **`listToString`** in the canvas and select Destination variable **`capService`**
    
     <!-- border -->![listToString destination](ListToStringDestination.png)
 
@@ -89,18 +89,18 @@ parser: v2
 
     - Click **Select list** next to **Bind List**
 
-    -  Select **list responseArray** from **get list of Todos**
+    -  Select **`list responseArray`** from **`get list of Todos`**
   
     <!-- border -->![list](SelectList.png)
 
->The **Inputs** for **listToString** should show the following values
+>The **Inputs** for **`listToString`** should show the following values
 
 ><!-- border -->![list inputs](ListToStringInputs.png)<div>&nbsp;</div>
 
 
 ### Release and Deploy
 
-1. **Save** the process **myCAP Sample**, click **Release**
+1. **Save** the process **`myCAP Sample`**, click **Release**
 
 2. On popup **Release Project**, click **Release**
     
@@ -110,7 +110,7 @@ parser: v2
      
     <!-- border -->![overview](Deploy-1.png)
 
-    - On **2 - Runtime Variables**, for **capService** select Destination **Demo_CAP_Sample_Library**, click **Next** 
+    - On **2 - Runtime Variables**, for **`capService`** select Destination **`Demo_CAP_Sample_Library`**, click **Next** 
 
     <!-- border -->![variables](Deploy-2.png)
 
@@ -125,7 +125,7 @@ parser: v2
 
 2. Select **Manage** > **Process and Workflow Definitions**
    
-3. Click **myCAPSample**
+3. Click **`myCAPSample`**
 
     <!-- border -->![process](MonitorCAP.png)
 
@@ -146,7 +146,7 @@ parser: v2
 
 6. Click the line to display the details of the instance
 
-    >The result of the action listToString is shown as comma separated value string    
+    >The result of the action `listToString` is shown as comma separated value string    
 
     <!-- border -->![result](RunInstanceResults.png)
 

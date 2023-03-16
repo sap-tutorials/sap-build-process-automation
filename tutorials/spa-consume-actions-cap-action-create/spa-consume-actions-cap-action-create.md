@@ -25,7 +25,7 @@ parser: v2
 ---
 ### Adjust the OpenAPI specification
 
-The openAPI spec was generated as part of the previous tutorial [Create simple CAP Service with Node.js using the SAP Business Application Studio](sap-consume-actions-cap-nodejs-service). This definition will be used to create the Action Project in SAP Build and needs some manual changes.
+The `openAPI` spec was generated as part of the previous tutorial [Create simple CAP Service with Node.js using the SAP Business Application Studio](cap-simple-nodejs-service). This definition will be used to create the Action Project in SAP Build and needs some manual changes.
 
 1. In the subfolder **`docs`** folder, open the file **`sap_build_cap_sample_library.openapi3.json`**
 
@@ -43,7 +43,7 @@ The openAPI spec was generated as part of the previous tutorial [Create simple C
     "/addQuotes(value='{value}')": {    
     ```
 
-3. Update the **paths** and **schema** definition for **getListOfTodos** (just replace the lines in the generated file)
+3. Update the **paths** and **schema** definition for `getListOfTodos` (just replace the lines in the generated file)
 
     >The output for this action must be set as required, this needs two modifications
 
@@ -90,7 +90,7 @@ The openAPI spec was generated as part of the previous tutorial [Create simple C
    
     >To get correct output information for the actions just replace the lines in the generated file in each of the following sections
 
-       - **“/toInteger(value='{value}’)”: {**
+       - `“/toInteger(value='{value}’)”: {`
 
         ```JSON
         "200": {
@@ -106,7 +106,7 @@ The openAPI spec was generated as part of the previous tutorial [Create simple C
         "4XX": {    
         ```
 
-       - **“/toNumber(value='{value}’)”: {**
+       - `“/toNumber(value='{value}’)”: {`
 
         ```JSON
         "200": {
@@ -122,11 +122,11 @@ The openAPI spec was generated as part of the previous tutorial [Create simple C
         "4XX": {    
         ```
 
-       - **“/toStr(value={value})”: {** and
+       - `“/toStr(value={value})”: {` and
   
-       -  **“/addQuotes(value='{value}’)”: {** and
+       -  `“/addQuotes(value='{value}’)”: {` and
   
-       -  **“/listToString”: {**
+       -  `“/listToString”: {`
 
         ```JSON
         "200": {
@@ -182,7 +182,7 @@ The openAPI spec was generated as part of the previous tutorial [Create simple C
 
 You can test the execution of your action in the Action Editor.
 
-1. Select **listToString** from the list, the action has input parameters
+1. Select `listToString` from the list, the action has input parameters
 
 2. Select Tab **Test**
   
@@ -200,7 +200,7 @@ You can test the execution of your action in the Action Editor.
 
     >In the Test you can specify only one value for a list. In the Response View you can see that the values are converted to a string (with more than one value they will be comma separated). You can also try **title** as field and check the result.
 
-3. Select **get list of Todos** from the list, click **Output** tab to check that the array is marked as required with **red asterix**
+3. Select `get list of Todos` from the list, click **Output** tab to check that the array is marked as required with `red asterix`
 
     <!-- border -->![output getListOfTodos](ActionGetListOfTodosOutput.png)
 

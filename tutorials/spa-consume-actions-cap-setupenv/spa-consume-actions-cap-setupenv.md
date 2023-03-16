@@ -25,7 +25,7 @@ parser: v2
 
 In the SAP BTP Cockpit, you will create a destination that will be used in the Action Editor to test the Action and later also in the Process execution.
 
-1. Goto **BTP Cockpit**
+1. Open the **BTP Cockpit**
 
 2. Get the Application Routes URL from the service which is running in your Cloud Foundry space, click on the Name
 
@@ -43,7 +43,7 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
      - Click **New Destination** 
   
-     - enter **URL** **`<Application Routes url>/api/v1`** (paste Routes url from the clipboard)
+     - enter `URL` **`<Application Routes url>/api/v1`** (paste Routes url from the clipboard)
 
      - enter **Name** **`Demo_CAP_Sample_Library`**
   
@@ -58,7 +58,7 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
 ### Add Destination in SAP Build Process Automation
 
-1. Goto **SAP Build Process Automation**
+1. Open **SAP Build Process Automation**
 
 2. Click **Settings**
 
@@ -66,7 +66,7 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
      - Click **New Destination** 
 
-     - From the popup, select **Demo_CAP_Sample_Library**
+     - From the popup, select **`Demo_CAP_Sample_Library`**
 
      - Click **Add** 
 
