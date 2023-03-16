@@ -90,7 +90,7 @@ The OpenAPI spec was generated as part of the previous tutorial [Create simple C
    
     >To get correct output information for the actions just replace the lines in the generated file in each of the following sections
 
-       - `/toInteger(value='{value}’): {`
+       - `/toInteger(value='{value}'): {`
 
         ```JSON
         "200": {
@@ -106,7 +106,7 @@ The OpenAPI spec was generated as part of the previous tutorial [Create simple C
         "4XX": {    
         ```
 
-       - `/toNumber(value='{value}’): {`
+       - `/toNumber(value='{value}'): {`
 
         ```JSON
         "200": {
@@ -124,7 +124,7 @@ The OpenAPI spec was generated as part of the previous tutorial [Create simple C
 
        - `/toStr(value={value}): {` and
   
-       -  `/addQuotes(value='{value}’): {` and
+       -  `/addQuotes(value='{value}'): {` and
   
        -  `/listToString: {`
 
