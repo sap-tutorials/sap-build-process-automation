@@ -55,7 +55,7 @@ The first step consists in creating the Business Process Project.
 
 Now you can start capturing the application you wish to retrieve the order details from.
 
-1. Open the **Browse Orders** application in a different window. You will capture the details of one order from the **Browse Order** page. To do so, select an order.
+1. Open the [Browse Orders](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html#) application in a different window. You will capture the details of one order from the **Browse Order** page. To do so, select an order.
 
     > Make sure the Browse Order page is open in a separate window than SAP Build Process Automation.
 
