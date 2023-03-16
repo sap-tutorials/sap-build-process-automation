@@ -13,7 +13,7 @@ parser: v2
 <!-- description --> Create an action project from the Lobby using the OpenAPI specification of a simple CAP Service
 
 ## You will learn
-  - to modify the generated Open API specification of a CAP Service
+  - to modify the generated OpenAPI specification of a CAP Service
   - to create an action project based on the API specification
   - to test API using a BTP destination 
   - to release and publish the action project to be consumed in a process of SAP Build Process Automation
