@@ -43,7 +43,7 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
      - Click **New Destination** 
   
-     - enter `URL` **`<Application Routes url>/api/v1`** (paste Routes url from the clipboard)
+     - enter **URL** **`<Application Routes url>/api/v1`** (paste Routes URL from the clipboard)
 
      - enter **Name** **`Demo_CAP_Sample_Library`**
   

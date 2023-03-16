@@ -25,7 +25,7 @@ parser: v2
 ---
 ### Adjust the OpenAPI specification
 
-The `openAPI` spec was generated as part of the previous tutorial [Create simple CAP Service with Node.js using the SAP Business Application Studio](cap-simple-nodejs-service). This definition will be used to create the Action Project in SAP Build and needs some manual changes.
+The OpenAPI spec was generated as part of the previous tutorial [Create simple CAP Service with Node.js using the SAP Business Application Studio](cap-simple-nodejs-service). This definition will be used to create the Action Project in SAP Build and needs some manual changes.
 
 1. In the subfolder **`docs`** folder, open the file **`sap_build_cap_sample_library.openapi3.json`**
 
@@ -90,7 +90,7 @@ The `openAPI` spec was generated as part of the previous tutorial [Create simple
    
     >To get correct output information for the actions just replace the lines in the generated file in each of the following sections
 
-       - `“/toInteger(value='{value}’)”: {`
+       - "“/toInteger(value='{value}’)”: {"
 
         ```JSON
         "200": {
