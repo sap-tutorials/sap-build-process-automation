@@ -196,6 +196,7 @@ Now you will create the Shipping Address Group that will group all the Shipping 
 
 ### Import the excel template
 
+Download the Order Details Assistant
 
 You will now add the excel template to your artifacts.
 
