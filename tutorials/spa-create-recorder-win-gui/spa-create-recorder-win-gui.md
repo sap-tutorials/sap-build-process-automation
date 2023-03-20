@@ -223,7 +223,7 @@ The password is recorded as **asterisks**. You need to change its value to the r
 
 <!-- border -->![Change Password field Value](21.png)
 
->**CAUTION:** Please note that the best practice would be to create an enviornment variable for your password. How to do this will be shown in a next tutorial.
+>**CAUTION:** Please note that the best practice would be to create an environment variable of type password and map it to the value field. How to do this will be shown in a next tutorial.
 
 The automation is ready to be tested.
 
