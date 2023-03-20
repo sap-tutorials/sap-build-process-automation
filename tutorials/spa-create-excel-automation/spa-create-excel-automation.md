@@ -172,7 +172,7 @@ In the next step, you will take a more traditional approach to process the Excel
 9. You copy the result of filter to a new sheet. For this you add a sheet through **Add Worksheet**  and give it a name **Result**.
     <!-- border -->![Add a New Worksheet](26-AddAddWorksheet.png)
 
-10. Add **Activate Worksheet** to activate the new worksheet, in the WorksheetName box put the name of your first sheet of your original excel file.
+10. Add **Activate Worksheet** to activate the new worksheet, in the `WorksheetName` box put the name of your first sheet of your original excel file.
     <!-- border -->![Activate original sheet](27-ActivateBackFirstSheet.png)
 
 11. Add **Copy Range** activity and provide the source range, destination worksheet and workbook and starting cell for copy.
