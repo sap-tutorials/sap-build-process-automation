@@ -137,54 +137,60 @@ In the next step, you will take a more traditional approach to process the Excel
 
 3. One of the variable will point to the base `folder path` and the second variable will point to the `file name`. Creating them in this form, helps to use them in subsequent activity types.
   <!-- border -->![Create String Variables FolderPath & FileName](18-Created2VariableNames.png)
+  <!-- border -->![Create String Variables FolderPath & FileName](18-Created2VariableNames2.png)
 
-4. You call **Get File Name** activity to fetch the fileName. You can avoid this by creating a string variable for the file name.
-  <!-- border -->![Get Excel File Name](19-AddGetFileName.png)
-
-5. You add **Open Workbook** activity and point it to the full path (folder + file name) of the test Excel file. This will open the specific Excel file.
+4. You add **Open Workbook** activity and point it to the full path `FolderPath` of the test Excel file. This will open the specific Excel file.
   <!-- border -->![Add Open Workbook](20-AddOpenWorkbook.png)
+  <!-- border -->![Add Open Workbook](20-AddOpenWorkbook2.png)
 
-6. Subsequently, you activate the workbook and the first worksheet. Input for the activate work book activity is the file name from the previous step and the input of the activate worksheet activity is the first sheet name. You can use variables or hard coded values for now. If you are trying a different Excel, use these values appropriately.
-  <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet.png)
+5. To activate the workbook and the first worksheet:
+   
+    -  In the Automation Details search for the activity **Activate Workbook** and **Activate Worksheet**.
+    -  Drag and drop the activity into the canvas.
+  <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet.png) 
 
-7. Now that Excel sheet is open, you can apply filters, hide columns or get values from a range of cells or add a new sheet and copy a range of values to the newly created sheet.
-  <!-- border -->![Activate Worksheet](22-ActivateWorkbookWorksheet.png)
+    -  Input for the activate work book activity is the file name.
+    -  The input of the activate worksheet activity is the first sheet name.
+  <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet2.png)
+  <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet4.png)
 
-8. You can add **Get Values (Cells)** to fetch specific range cells and subsequently you can validate the step using output parameter through `LogMessage`. The input to **Get Values (Cells)** can be a single cell or a range of Excel cells. When you use **Excel Cloud Link**, reading Excel data is pretty quick and simple. The traditional approach requires a few steps.
-  <!-- border -->![Add Get All Values](23-AddGetAllValues.png)
+    > You can use variables or hard coded values for now. If you are trying a different Excel, use these values appropriately.
+ 
+6. Now that Excel sheet is open, you can apply filters, hide columns or get values from a range of cells or add a new sheet and copy a range of values to the newly created sheet.
 
-9.  Now Add **Filter Range** activity. In the **Filter Range**, you specify the data range, where the filter needs to be applied, along with the column on which the filter needs to apply with a filter condition.
-You add a new Excel sheet to your workbook and copy this filtered data onto that, just for demonstration purpose.
-    <!-- border -->![Add Filter Range](24-FilterColumn.png)
+7.  Now Add **Filter Range** activity. 
+  <!-- border -->![Add Filter Range](24-FilterColumn.png)
 
-10. Subsequently you can add **Hide column** activity to hide a specific column in the result.
+    In the **Filter Range**, you specify the data range, where the filter needs to be applied, along with the column on which the filter needs to apply with a filter condition. 
+   <!-- border -->![Add Filter Range](24-FilterColumn2.png)
+    > You add a new Excel sheet to your workbook and copy this filtered data onto that, just for demonstration purpose.
+
+8. Subsequently you can add **Hide column** activity to hide a specific column in the result.
     <!-- border -->![Add Hide Column](25-AddHideColumns.png)
+    <!-- border -->![Add Hide Column](25-AddHideColumns2.png)
 
-11. You copy the result of filter to a new sheet. For this you add a sheet through **Add Worksheet**  and give it a name **Result**.
+9. You copy the result of filter to a new sheet. For this you add a sheet through **Add Worksheet**  and give it a name **Result**.
     <!-- border -->![Add a New Worksheet](26-AddAddWorksheet.png)
 
-12. This will activate the new worksheet, but for us to copy from the filter results to this new sheet, you switch to the first sheet and copy its values.
+10. Add **Activate Worksheet** to activate the new worksheet, in the `WorksheetName` box put the name of your first sheet of your original excel file.
     <!-- border -->![Activate original sheet](27-ActivateBackFirstSheet.png)
 
-13. Add **Copy Range** activity and provide the source range, destination worksheet and workbook and starting cell for copy.
+11. Add **Copy Range** activity and provide the source range, destination worksheet and workbook and starting cell for copy.
     <!-- border -->![Add Copy Range](28-AddCopyRange.png)
 
-14. Activate the new sheet now, in order to save it.
-    <!-- border -->![Activate Result Sheet](29-AddActivateWorksheet4Result.png)
-
-15. Now add **Save As Workbook** to save the new sheet as another file. You have the option to save workbook as an Excel file or CSV file. In order to save as a new CSV file, you will need a file path to store this CSV file. This will be of the format `folderName` + `fileName` without extension where it needs to be saved.
+12. Now add **Save As Workbook** to save the new sheet as another file. You have the option to save workbook as an Excel file or CSV file. In order to save as a new CSV file, you will need a file path to store this CSV file. This will be of the format `folderName` + `fileName` without extension where it needs to be saved.
     <!-- border -->![Save As Workbook](30-SaveAsWorkbook.png)
 
-16. Finally, you need to include **Close Excel Instance** to conclude the step.
+13. Finally, you need to include **Close Excel Instance** to conclude the step.
     <!-- border -->![Add Close Instance](31-AddCloseExcelInstance.png)
 
-17. You can save the project and test it to validate the result.
+14. You can save the project and test it to validate the result.
     <!-- border -->![Run the project to test and validate](32-ValidationResult.png)
 
-18. At the end, when this tutorial will be tested, the below source data will be used:
+15. At the end, when this tutorial will be tested, for example the below source data will be used:
     <!-- border -->![Source Excel Data](33-OriginalExcelData.png)
 
-19. After the automaton is executed, it has filtered the data (Town starting with a), hidden a column (Column F with title `storey_range`) and resultant Excel will look like this.
+16. After the automaton is executed, it has filtered the data, hidden a column (Column C) and resultant Excel will look like this.
     <!-- border -->![Final Excel Data](34-AfterAutomationProcessing.png)
 
 Excel SDK of SAP Build Process Automation offers a wide variety of activities you can consider for business processes.
