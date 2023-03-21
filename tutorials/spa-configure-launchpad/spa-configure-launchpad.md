@@ -1,79 +1,51 @@
 ---
 parser: v2
-author_name: Ilyes Yamoun
-author_profile: https://github.com/shielddz
+author_name: Paulina Bujnicka
+author_profile: https://github.com/pbujnicka
 auto_validation: true
 time: 20
 tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Configure Launchpad
-<!-- description --> Configure launchpad for visibility scenario
+# Configure SAP Build Workzone, standard edition
+<!-- description --> Configure SAP Build Workzone, standard edition for visibility scenario
 
 ## Prerequisites
  - Space in BTP Cockpit subaccount created
+ - [Trial account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/) with the SAP Build Process Automation enabled **OR**
+ - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
+
 
 ## You will learn
-  - How to configure launchpad in **SAP BTP Cockpit** to gain visibility in your dashboard
+  - How to configure SAP Build Workzone, standard edition in **SAP BTP Cockpit** to gain visibility in your dashboard
 
 ## Intro
-In this tutorial, you will configure everything needed for the creation of a launchpad dashboard in **SAP BTP Cockpit** to gain visibility of your processes.
+In this tutorial, you will configure everything needed for the creation of a SAP Build Workzone, standard edition dashboard in **SAP BTP Cockpit** to gain visibility of your processes.
 
 ---
 
-### Add entitlement
+### Subscribe to the SAP Build Work Zone, standard edition
 
-1.  Navigate to **SAP BTP Cockpit** subaccount and select **Entitlements**.
+1.  Navigate to **SAP BTP Cockpit** subaccount and select **Instances and Subscription** under Services. Choose **Create**.
 
-    <!-- border -->![navigate to entitlements](Step1-1.png)
+    <!-- border -->![SBWSE](080.png)
 
-2.  Search **Launchpad Service** in the search bar.
-    > If it is already added, skip to the next step of this tutorial.
+2. For the new subscription:
+    - Under Service select **SAP Build Work Zone, standard edition**.
+    - Under Plan select **standard** as subscription.
+    - Choose **Create**.
 
-    <!-- border -->![search launchpad service](Step1-2.png)
+    <!-- border -->![SBWSE](081.png)
 
-3.  Choose **Add Service Plans**.
-
-    <!-- border -->![add service plans button](Step1-3.png)
-
-4.  Search **Launchpad Service**:
-    - Select **Launchpad Service** from the options shown.
-    - Select **standard (Application)**.
-    - Choose **Add 1 Service Plan**.
-
-    <!-- border -->![Add service plan](Step1-4.png)
-
-5.  Choose **Save**.
-
-    <!-- border -->![save changes](Step1-5.png)
-
-    **Launchpad Service** entitlement has now been added.
+3. The subscription is created.
+   
+    <!-- border -->![SBWSE](006b.png)   
 
 
-### Create a new subscription
+### Assign roles for SAP Build Work Zone, standard edition
 
-1.  Navigate to **SAP BTP Cockpit** subaccount > **Services** > **Instances and subscriptions**.
-
-2.  Choose **Create**.
-
-    <!-- border -->![navigate to instances and subscriptions](Step2-1.png)
-
-3.  For the new subscription:
-    -  Select **Launchpad Service** as a **Service**.
-    -  Select your plan from the **Plan** list.
-    -  Choose **Create**.
-    <!-- border -->![Subscription details](Step2-2.png)
-
-    The subscription is now added.
-
-    <!-- border -->![Result Subscription](Step2-3.png)
-
-
-
-### Assign roles to users
-
-1.  Navigate to **SAP BTP Cockpit** subaccount > **Security** > **Users**.
+1. Navigate to **SAP BTP Cockpit** subaccount > **Security** > **Users**.
 
     <!-- border -->![navigate to Users](Step3-1.png)
 
@@ -85,13 +57,11 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
     <!-- border -->![Assign Role Collection button](Step3-3.png)
 
-4.  Select **Launchpad Admin** and **Launchpad External User** then choose **Assign Role Collection**.
+4.  Select **Launchpad Admin** and **Launchpad External User** then choose **Assign Role Collection**. 
 
-    > Launchpad Admin is the role for whom is going to design the launchpad in the launchpad editor.
-    >
-    > Launchpad external user is the role for whom accesses the final launchpad.
-    >
-    > Note: Launchpad Admin shouldn't be given to all users for security purposes.
+    > **Launchpad Admin** is the role for whom is going to design the launchpad in the launchpad editor. Launchpad Admin should not be given to all users for security purposes.
+    
+    > **Launchpad external** user is the role for whom accesses the final launchpad. 
 
     <!-- border -->![Select Roles](Step3-4.png)
 
@@ -99,113 +69,99 @@ In this tutorial, you will configure everything needed for the creation of a lau
 
     <!-- border -->![Result assignation](Step3-5.png)
 
-
+   
 
 ### Create SAP Build Process Automation instance
 
-1.  Navigate to **SAP BTP Cockpit** subaccount > **Services** > **Instances and subscriptions**.
+1.  Navigate to **SAP BTP Cockpit** subaccount. Select **Services** > **Instances and subscriptions**. Choose **Create**.
 
-2.  Choose **Create**.
+    <!-- border -->![SBWSE](014.png)  
 
-    <!-- border -->![navigate to instances and subscriptions](Step2-1.png)
-
-3.  For the new instance:
+2.  For the new instance:
     -  Select **SAP Build Process Automation** as a **Service**.
     -  Select **Instance** plan from the **Plan** list.
     -  Select **Cloud Foundry** as **Runtime Environment**.
     -  Select a space from **Space** list.
     -  Set **Instance Name** as **SPA-instance**.
-    -  Choose **Create**.
+    -  Choose **Create**. 
 
-    <!-- border -->![Instance details](Step4-2.png)
+    <!-- border -->![SBWSE](015.png)
 
-    The instance was added.
+3. The instance was added.
 
-    <!-- border -->![Result instance](Step4-3.png)
-
-
+    <!-- border -->![SBWSE](016b.png)
 
 ### Create a new destination
 
 1.  Navigate to **SAP BTP Cockpit** subaccount > **Connectivity** > **Destinations**.
 
-    <!-- border -->![navigate to Destinations](Step5-1.png)
-
 2.  To create a new destination:
     -  Choose **New Destination**.
     -  Select **Service Instance**.
-    -  Set **Service Instance** to **SPA-instance** that you created in Step **4.3**.
+    -  Set **Service Instance** to **SPA-instance** that was created in the previous step.
     -  Set **Name** to **spa-launchpad**.
     -  Choose **Next**.
 
-    <!-- border -->![create a new destination](Step5-2.png)
+    <!-- border -->![SBWSE](017.png) 
 
-3.  Choose **Save**.
+3.  Choose **Save**. 
 
-    <!-- border -->![Save destination](Step5-3.png)
+    <!-- border -->![SBWSE](070.png) 
 
-    The new destination was created.
+4. The new destination was created.
+
+    <!-- border -->![SBWSE](030.png) 
 
 
-### Open launchpad editor
+### Open and manage SAP Build Work Zone Application
 
-1.  Navigate back to **SAP BTP Cockpit** subaccount > **Services** > **Instances and Subscriptions**.
+1.  Navigate back to **SAP BTP Cockpit** subaccount. Choose **Services** then **Instances and Subscriptions**. Choose **Go to Application** next to **SAP Build Work Zone**.
 
-2.  Choose **Go to Application** on **Launchpad Service** in **Applications** tab.
+    <!-- border -->![SBWSE](018.png) 
 
-    <!-- border -->![navigate to Instances and Subscriptions](Step6-1.png)
+2. The Site Manager is now ready to use. Select **Channel Manager**.
 
-3. Your launchpad is now ready to be created and designed with **Launchpad Editor**.
+    <!-- border -->![SBWSE](031.png)
 
-    <!-- border -->![Launchpad Editor](Step6-2.png)
+3.  Choose **Update Content**.
 
-1.  Select **Provider Manager**.
-
-    <!-- border -->![Provider manager](Step6-3.png)
-
-2.  Choose **Update Content**.
-
-    <!-- border -->![Update Content](Step6-4.png)
-
+    <!-- border -->![SBWSE](032.png)
+    
     > The content updates and the status changes to Activated.
 
-3.  Select **Content Manager**.
+4.  Select **Content Manager**. On the top tabs select **Content Explorer** Select **HTML5 Apps**.
 
-4.  On the top two tabs select **Content Explorer**.
-
-4.  Select **HTML5 Apps**.
-
-    <!-- border -->![Content manager > content Explorer > HTML5 Apps](Step6-5.png)
+    <!-- border -->![SBWSE](033.png)
 
 5.  Select all items and click **+ Add to My Content**.
 
-    <!-- border -->![Select and add to my content](Step6-6.png)
+    <!-- border -->![SBWSE](034.png)
 
-6.  Navigate to **Content Manager** > **My Content**.
+6.  Navigate to **My Content**. Choose **New** and select **Group**.
 
-7.  Choose **New** and select **Group**.
+    <!-- border -->![SBWSE](040.png)
 
-    <!-- border -->![Add new Group](Step6-7.png)
+7.  Manage the Group:
+    - Set **Title** to **SAP Process Automation**.
+    - Assign **My Inbox** and **Process Workspace** to the group.
+    - **Save**.
+    - Go back. 
 
-8.  Set **Title** to **SAP Build Process Automation**.
+    <!-- border -->![SBWSE](041.png)
 
-9.  Assign **My Inbox** and **Process Workspace** to the group.
+8.   Choose **Everyone** role to edit it.
 
-10. **Save** and go back.
+    <!-- border -->![SBWSE](042.png)
 
-    <!-- border -->![Add Assignments to group](Step6-8.png)
+9.   Select **Edit** to edit role.
 
-11.  Choose **Everyone** role to edit it.
+    <!-- border -->![SBWSE](043.png)
 
-    <!-- border -->![Everyone Role from list](Step6-9.png)
+10.  Manage changes:
+    - Assign **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role.
+    - Select **Save**.
 
-12.  Select **Edit** to edit role.
-
-    <!-- border -->![Edit button](Step6-10.png)
-
-13.  Assign **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role then click **Save**.
-
-    <!-- border -->![Assignments to Everyone Role](Step6-11.png)
+    <!-- border -->![SBWSE](044a.png)
 
 
 ---
