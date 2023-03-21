@@ -18,10 +18,10 @@ primary_tag: software-product>sap-build-process-automation
 
 
 ## You will learn
-  - How to configure SAP Build Workzone, standard edition in **SAP BTP Cockpit** to gain visibility in your dashboard
+  - How to configure SAP Build Work Zone, standard edition in **SAP BTP Cockpit** to gain visibility in your dashboard
 
 ## Intro
-In this tutorial, you will configure everything needed for the creation of a SAP Build Workzone, standard edition dashboard in **SAP BTP Cockpit** to gain visibility of your processes.
+In this tutorial, you will configure everything needed for the creation of a SAP Build Work Zone, standard edition dashboard in **SAP BTP Cockpit** to gain visibility of your processes.
 
 ---
 
