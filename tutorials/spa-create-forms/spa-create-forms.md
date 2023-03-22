@@ -172,8 +172,11 @@ You can create these different forms using the **Form Builder** embedded in the 
     > This form will appear as the task in the `MyInbox` of the given Recipients to take action.
 
 5. In the **Due Date** section:
-    - Select **Duration** as **type of due date**
+    - Select **Static Duration** as **type of due date**
     - Enter **2 Days** as the duration.
+
+    > ### What is going on?
+    > This means that the due date to approve or reject the form will be set to 2 days.
 
     <!-- border -->![Approval](017.png)
 
