@@ -180,7 +180,7 @@ You can create these different forms using the **Form Builder** embedded in the 
 
     <!-- border -->![Approval](017.png)
 
-    > As the task appears in the `MyInbox`, there will be duration information shown to the recipients like Overdue if the task was not completed in 2 days, or within 1 day if the task is supposed to be completed in 1 day etc.
+    As the task appears in the `MyInbox`, there will be duration information shown to the recipients like Overdue if the task was not completed in 2 days, or within 1 day if the task is supposed to be completed in 1 day etc.
 
 
 6.	Similarly, go to the **Inputs** tab and map the different input fields, which were marked as read-only in the approval form, by selecting the respective **Process Content** entry.
