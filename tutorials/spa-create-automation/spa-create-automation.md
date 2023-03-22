@@ -34,10 +34,11 @@ An Automation is a succession of steps to orchestrate multiple activities and ap
 In this exercise, you will automate the process to read the **sales order** details from an Excel and select the specific sales order details based on the input from the submitted form. To design the automation, you will need an Excel file filled with the sales order data. You can:
 
 - Download [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/50c942bbd0a7612e1cb672134578e517786e7b0e/tutorials/spa-create-automation/Orders.xlsx) **OR**
+
 - Create the file yourself using the following data:
 
 
-    | **Order Number**| **Order Amount** | **Order Date** | **Shipping Country**         | **Expected Delivery Date** | **Order Status**
+| **Order Number**| **Order Amount** | **Order Date** | **Shipping Country**         | **Expected Delivery Date** | **Order Status**
 |  :----------| :------------|:-----------| :------------------------|:-----------------------|:-----------
 |  PO7991     | 410418.22    | 1/21/2022	| United States of America | 1/29/2022	            | In Time
 |  PO7918     | 150935.13	   | 1/22/2022	| United Kingdom           | 1/27/2022	            | Urgent
@@ -213,6 +214,8 @@ Input and output parameters allow you to exchange data in the workflow of your a
 
     <!-- border -->![001](025.png)
 
+4. Save your work.
+
 
 ### Create a Variable
 
@@ -230,6 +233,8 @@ Variables that are used, build your automation, and are data storage that have a
 2. Select **Create Sales Order variable**. Under Output Parameters enter the value of as `selectedOrderDetails`.
 
     <!-- border -->![001](027.png)
+
+3. Save your work.
 
 
 ### Looping through Excel Sheet and searching for the Order
@@ -308,7 +313,7 @@ This control has the following loop parameters:
     - Select **Log Message**,
     - In message field enter `selectedOrderDetails`.
 
-
+11. Save your work.
 
 ### Link Automation Parameters with Business Process
 
