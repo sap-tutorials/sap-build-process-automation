@@ -28,7 +28,7 @@ An Automation is a succession of steps to orchestrate multiple activities and ap
 
 ---
 
-### Create the Automation
+### Create the automation
 
 
 In this exercise, you will automate the process to read the **sales order** details from an Excel and select the specific sales order details based on the input from the submitted form. To design the automation, you will need an Excel file filled with the sales order data. You can:
@@ -80,7 +80,7 @@ In this exercise, you will automate the process to read the **sales order** deta
     <!-- border -->![001](004.png)
 
 
-### Create Environment Variable
+### Create environment variable
 
 
 Business projects usually need to use parameters and variable at runtime. These variables are usually saved in their runtime landscapes for example Dev, Test or Production environments. In this case, you will need to maintain an environment variable that will contain the file full path of the Excel file used in the automation.
@@ -109,7 +109,7 @@ Business projects usually need to use parameters and variable at runtime. These 
 
 
 
-### Add Excel Activities
+### Add Excel activities
 
 
 You will now design the automation in the Automation Editor by dragging-and-dropping activities into the workflow of the automation. Later you will configure the inputs and outputs of each activity. You will need activities to interact with the Microsoft Excel application. These activities will open the Excel application, open the workbook that contains the sales orders details, and map them into a data type that will be created during the design. Last, after extracting and mapping the data, the Excel application will be closed.
@@ -191,7 +191,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 
 
-### Add Input and Output Parameters
+### Add input and output parameters
 
 
 Input and output parameters allow you to exchange data in the workflow of your automation between activities, screens, and scripts.
@@ -217,7 +217,7 @@ Input and output parameters allow you to exchange data in the workflow of your a
 4. Save your work.
 
 
-### Create a Variable
+### Create a variable
 
 
 Variables that are used, build your automation, and are data storage that have a name, a type (example: string, list of string or data type), and a value. A variable in the automation is also associated to a step represented by its number.
@@ -237,7 +237,7 @@ Variables that are used, build your automation, and are data storage that have a
 3. Save your work.
 
 
-### Looping through Excel Sheet and searching for the Order
+### Looping through Excel sheet and searching for the order
 
 
 Now you will loop through each **Order** from the Excel sheet, retrieve the order details for order number submitted in the **Order Processing Form**. **For Each** control allows you to go through a list of members provided as input to your automation, and execute an action for each member in that list.
@@ -315,7 +315,7 @@ This control has the following loop parameters:
 
 11. Save your work.
 
-### Link Automation Parameters with Business Process
+### Link automation parameters with business process
 
 
 Apart from creating an output parameter, it is mandatory to pass the data through the **End** step to expose the data outside the automation.
@@ -346,7 +346,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 7. Choose the **Save** button.
 
 
-### Test the Automation
+### Test the automation
 
 
 1. Navigate back to the automation **Get Order Details** and choose the **Test** button.
@@ -377,7 +377,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 
 
-### Simplify the Start Form
+### Simplify the start form
 
 
 After the design of the automation that retrieves the data form the Excel file, simplify the start form by deleting the not needed fields.
@@ -401,7 +401,7 @@ After the design of the automation that retrieves the data form the Excel file, 
     <!-- border -->![001](047.png)
 
 
-### Mapping Forms of the Process
+### Mapping forms of the process
 
 
 The different Forms of the process will need Inputs Mapping from the Automation Outputs.
