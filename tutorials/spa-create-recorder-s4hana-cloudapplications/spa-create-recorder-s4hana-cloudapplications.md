@@ -326,6 +326,8 @@ When you record an application, you always create a new application and automati
 
     <!-- border -->![Delete duplicate steps](39.png)
 
+16. Save your automation.
+
 16. You may test your automation. Now **Home** application is opened in a browser window and creates the purchase order with values provided in the steps of the automation.
 
 
