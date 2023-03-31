@@ -3,7 +3,6 @@ parser: v2
 author_name: Chaitanya Priya Puvvada
 author_profile: https://github.com/chaitanya-priya-puvvada
 auto_validation: true
-title: Run the Sales Order Business Process
 time: 10
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier ]
 primary_tag: software-product>sap-build-process-automation
@@ -13,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Release, deploy and run the business process
 
 ## Prerequisites
-- Complete [Create a Business Process](spa-academy-salesorder.md) tutorial
+  - Complete [Create a Business Process](spa-academy-salesorder.md) tutorial
 
 ## You will learn
   - How to release and deploy the process
@@ -29,7 +28,7 @@ To run the process you have to first release and then deploy the business proces
 
 Releasing a project creates a version or snapshot of the changes and deploying the project makes it available in runtime to be consumed. You can only deploy a released version of the project, and at a given time there can be multiple deployed versions of the same project.
 
-1. In the Process Builder, to release a project, choose the **Release** button on the top-right corner of the screen and provide a description.
+1. In the Process Builder, to release a project, click  **Release** button on the top-right corner of the screen and provide a description.
 
     <!-- border -->![released](1.png)
 
@@ -53,7 +52,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Deploy](3.2.png)
 
-    Since we have created an **API trigger** in our process ,you can see **Sales Order Trigger** in the list of the triggers.
+    Since we have created an **API trigger** in our process, you can see **Sales Order Trigger** in the list of the triggers.
 
     <!-- border -->![Deploy](3.3.png)
 
@@ -69,14 +68,13 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 ### Run business process
 
-1. Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the Overview section under the    tab Triggers.
+1. Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the Overview section under the tab Triggers.
 
     Click View to see context of the workflow API.
 
     <!-- border -->![Triggers](4.png)
 
-2. You can view the API URL and the payload to start the process.
-    Copy the payload which would be used in the later steps .
+2. You can view the API URL and the payload to start the process. Copy the payload which would be used in the later steps.
 
     Details of the payload:
 
@@ -87,42 +85,46 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](4.1.png)
 
-3. Since we have created API Trigger for the Business process ,let's test the process with API Trigger in **Monitor** section before we start the  process from SAP Build Apps.
+3. Copy-paste Payload to notepad or some other editor for future use.Click on Copy button.
 
-   - Navigate to **Monitor** ---> **Manage** ---> **Process and Workflow Definitions** .
-   - Search for the project **Sales Order Management** that you have created.
-   - Click on **Start New Instance**.
-   - Paste the payload that you have copied in Step 2.
+    <!-- border -->![Run](4.11.png)
 
-        >> Don't modify the payload when you integrate with SAP Build Apps.
+4. . Since we have created API Trigger for the Business process, let's test the process with API Trigger in **Monitor** section before we start the process from SAP Build Apps.
 
-   Since the Definition ID is already available in the Monitor section , remove the definition ID and context .
+    - Navigate to **Monitor** > **Manage** > **Process and Workflow Definitions**.
+    - Search for the project `<your unique identifier>_Sales Management` that you have created in previous tutorial.
+    - Click on **Start New Instance**.
 
-   You payload should like below after providing values to the fields.
+    <!-- border -->![Run](4.2.png)
 
-   
+5.  Paste the payload that you have copied in Step 3.Since the Definition ID is already available in the Monitor section, remove the definition ID and context.
 
-            ```JSON
+    > Don't modify the payload when you integrate with SAP Build Apps.
+
+     Provide the values to the fileds as shown below.Your payload should like below after providing values to the fields.
+
+    
+    ```JSON
+    {
+            "salesorderdetails": 
             {
-                    "salesorderdetails": 
-                    {
-                        "material": "Laptop",
-                        "orderAmount": 900000,
-                        "shipToParty": "ABCD",
-                        "salesOrderType": "01",
-                        "salesOrganisation": "01",
-                        "distributionChannel": "01",
-                        "shippingCountry": "India",
-                        "expectedDeliveryDate": "2023-05-08",
-                        "division": "01"
-                    }
-            }    
+                "material": "HT-1000",
+                "orderAmount": 120000,
+                "shipToParty": "SAP",
+                "salesOrderType": "01",
+                "salesOrganisation": "01",
+                "distributionChannel": "01",
+                "shippingCountry": "India",
+                "expectedDeliveryDate": "2023-10-10",
+                "division": "01"
+            }
+     }    
 
-            ```
+    ``` 
 
-  <!-- border -->![Run](5.png)
+    Click on **Start New Instance and Close**.
 
-  - Click on **Start New Instance and Close**.
+    <!-- border -->![Run](5.png)
 
 ### Monitoring the process flow
 
@@ -134,11 +136,14 @@ Monitoring business process is one of the key aspect of the automated processes.
 
     <!-- border -->![Run](6.png)
 
- In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated etc.
+    In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated etc.
 
 2. Choose your process instance that was just triggered above.
 
     > Explore different process monitoring options. Observe the process instance information, process context which is the actual process data flowing across different activities in the process and the execution logs where you can see entire trace of how the process has been progressing with some basic runtime information of each activity.
+
+
+    Since the Order Amount is greater 100000 , the process would trigger approval workflow .
 
     <!-- border -->![Run](6.1.png)
 
@@ -152,10 +157,12 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 
 1. Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. User can claim, approve and reject the task from their inbox.
+In our testing ,Click **Approve** .
 
     <!-- border -->![Inbox](8.png)
 
 2.  Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken.
+    Click on **Submit** to complete the process.
 
     <!-- border -->![Run](8.1.png)
 
