@@ -140,7 +140,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
     | `SoldToParty` | 17100006
     
 
-    > Use can also change Labels of the fields.
+    > You can also change the Labels of the fields.
 
     <!-- border -->![Action Project](ActionProject_24.png)
 
@@ -150,7 +150,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     > If you see that changes are not saved, then try saving again and refreshing the browser.
 
-4. As S/4HANA APIs need CSRF token, select **Settings** icon.
+4. As S/4HANA APIs need CSRF token, you need to enable it. Select **Settings** icon.
 
 5. In the **Project Settings** window, select **CSRF** and do the following:
 
