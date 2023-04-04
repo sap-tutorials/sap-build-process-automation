@@ -117,7 +117,6 @@ Learn how to add the action in the business process to connect to backend system
 
     <!-- border -->![Map Inputs](action6.png)
 
-
 3. In **Outputs** tab, check to make sure all outputs are same as defined in the action project.
 
     <!-- border -->![Check Outputs](action7.png)
