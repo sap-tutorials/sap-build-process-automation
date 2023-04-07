@@ -1,0 +1,12 @@
+#Password=<< Existing password/certificate removed on export >>
+#
+#Wed Apr 05 08:12:33 UTC 2023
+Description=S/4 cloud system
+Type=HTTP
+Authentication=BasicAuthentication
+Name=S4_Business_Partner
+sap.processautomation.enabled=true
+ProxyType=Internet
+URL=https\://my300470-api.s4hana.ondemand.com/sap/opu/odata/sap/API_Business_Partner
+User=LCNCUSER
+sap.applicationdevelopment.actions.enabled=true
