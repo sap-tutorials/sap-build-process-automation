@@ -20,7 +20,7 @@ parser: v2
 - to implement action in the project
 - to create a destination environment variable 
 - to create a dropdown in trigger form with action response as the data source
-- to add destination based environment variable in form 
+- to add destination based environment variable in trigger form 
 
 ## Intro
 In this tutorial, you will create a project using a template from the store. You will edit the trigger form and create a dropdown to populate it with action response as options.
