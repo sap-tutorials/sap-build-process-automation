@@ -9,21 +9,23 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Create a Project and add a Dropdown
-<!-- description --> Create a project from a sample in store and edit the trigger form
+# Add Action to a Dropdown in a Form
+<!-- description --> Add action to a dropdown in the trigger form to connect to the backend system
 
 ## Prerequisites
 - Complete the tutorial [Create Action Project in Lobby](spa-business-partner-action-create)
 
 ## You will learn
-- to import a sample project from the store
+- to import a sample process from the store
 - to implement action in the project
-- to create a dropdown in form with action response as the data source 
+- to create a destination environment variable 
+- to create a dropdown in trigger form with action response as the data source
+- to add destination based environment variable in form 
 
 ## Intro
-In this tutorial, you will create a project using a template from the store. You will create a dropdown in the trigger form and populate it with action response as options.
+In this tutorial, you will create a project using a template from the store. You will edit the trigger form and create a dropdown to populate it with action response as options.
 
-### Create a project with the template
+### Import sample process as template
 
 1.  In **SAP Build**, select the **Store** tab.
 
@@ -55,7 +57,7 @@ In this tutorial, you will create a project using a template from the store. You
 
     <!-- border -->![Action Project](007.png)
 
-### Create a destination environment variable
+### Add environment variable to access destination
 
 4. Select the **Settings** icon at the top-right corner.
 
@@ -75,7 +77,7 @@ In this tutorial, you will create a project using a template from the store. You
 
     <!-- border -->![Action Project](011.png)
 
-4. Once the destination is created, close the popup.
+4. Once the environment variable is created, close the popup.
 
     <!-- border -->![Action Project](012.png)
 

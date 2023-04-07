@@ -22,7 +22,7 @@ parser: v2
 ## Intro
 In this tutorial, you will release and deploy the project created in the previous tutorial and test the dropdown filtering in the form.
 
-### Release and deploy the project
+### Release and deploy the business process project
 
 1. In the project overview tab, select the **Release** option.
 

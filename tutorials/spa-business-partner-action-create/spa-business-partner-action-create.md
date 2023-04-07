@@ -23,7 +23,7 @@ parser: v2
 - to discover APIs in SAP API Business Hub
 - to download Open API specification
 - to create action project based on the API specification
-- to configure API methods to update title, input and output fields and their description to improve readability for business users
+- to configure API methods to update input and output fields
 - to test API using destination option
 - to release and publish action project to be consumed in the business process modelling
 
