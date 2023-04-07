@@ -41,7 +41,7 @@ In this tutorial, you will create an action project based on Business Partner AP
 
 ### Create action project
 
-2.	Open **SAP Build Lobby** with your username and password:
+2.	Open **SAP Build** lobby with your username and password:
 
     - then click **Create**.
 
