@@ -79,7 +79,7 @@ In this tutorial, you will configure everything needed for the creation of a SAP
 
 2.  For the new instance:
     -  Select **SAP Build Process Automation** as a **Service**.
-    -  Select **Instance** plan from the **Plan** list.
+    -  Select **standard** plan from the **Plan** list.
     -  Select **Cloud Foundry** as **Runtime Environment**.
     -  Select a space from **Space** list.
     -  Set **Instance Name** as **SPA-instance**.
@@ -142,7 +142,7 @@ In this tutorial, you will configure everything needed for the creation of a SAP
     <!-- border -->![SBWSE](040.png)
 
 7.  Manage the Group:
-    - Set **Title** to **SAP Process Automation**.
+    - Set **Title** to **SAP Build Process Automation**.
     - Assign **My Inbox** and **Process Workspace** to the group.
     - **Save**.
     - Go back. 
