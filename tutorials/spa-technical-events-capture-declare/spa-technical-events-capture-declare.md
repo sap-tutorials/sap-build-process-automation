@@ -20,10 +20,10 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-### Create a Business Process Project
+### Create a project
 
 
-The first step consists in creating the Business Process Project.
+The first step consists in creating a project.
 
 1. In the **Lobby** of **Build**, choose **Create**.
 
@@ -33,21 +33,31 @@ The first step consists in creating the Business Process Project.
 
     <!-- border -->![Build Automated Process](01a-automated-process.png)
 
-3. Select **Business Process**.
+3. Select **Task Automation**.
 
-    <!-- border -->![Business Process](01b-business-process.png)
+    <!-- border -->![Task Automation](01b-task-automation.png)
 
-4. In the **Create Business Process** window, name the project **Get Order Details** and choose **Create**.
+4. In the **Create Task Automation** window, name the project **Get Order Details** and choose **Create**.
 
-    <!-- border -->![Create Business Process Project](02-create-business-process-project.png)
+    <!-- border -->![Create Task Automation](02-create-task-automation.png)
 
-5. You will be navigated to the **Get Order Details** business process project overview page.
+5. You will be navigated to the **Get Order Details** project overview page.
 
 6. You will be prompted to configure your agent version. Select the agent version that is registered on your machine.
 
 7. Choose **Confirm**.
 
     <!-- border -->![Configure Agent Version](03-configure-agent-version.png)
+
+ 8. A pop-up window asking you to create an automation will appear, please choose **Cancel**.
+
+    <!-- border -->![Cancel automation](03-cancel-automation.png)
+
+    > ### What is going on?
+    > As you will be using the capture feature, you do not need to create an automation but an application.
+
+    The next step would be to create your application within your project.
+
 
 
 ### Capture and declare the application
@@ -65,21 +75,30 @@ Now you can start capturing the application you wish to retrieve the order detai
 
     <!-- border -->![Create Application](06-create-application.png)
 
-4. Select the **Browse Orders** screen from the list, choose **Capture application** and **Capture**.
+4. In the **Create Application** window, name your application: **Browse Orders** and choose **Create**.
+
+    <!-- border -->![Create Application](06b-create-application.png)
+
+5. Select the **Browse Orders** screen from the list, choose **Next**.
 
     <!-- border -->![Capture Application](07-capture-application.png)
 
-    The screen that you captured will appear in the **Build Process Automation** page.
+6. Choose **Manual Capture** as type ad select **Capture**.
 
-5. Select the captured screen.
+    <!-- border -->![Capture Application](07b-capture-application.png)
+
+
+    The screen that you captured will appear in **SAP Build Process Automation**.
+
+6. Select the captured screen.
 
     <!-- border -->![Capture Application](07bis-capture-application.png)
 
-6. In the **Screen Details** panel change the name to **Order Details**.
+7. In the **Screen Details** panel change the name to **Order Details**.
 
-7. Remove the criteria **Mainframe** and add the criteria **URL**. Change the Operator to **contains** and the Value to **tab=shipping**. Choose **Apply**.
+8. Remove the criteria **Mainframe** and add the criteria **URL**. Change the Operator to **contains** and the Value to **tab=shipping**. Choose **Apply**.
 
-8. Choose **Save**.
+9. Choose **Save**.
 
     <!-- border -->![Order Details Screen](8b-order-details-screen.png)
 
