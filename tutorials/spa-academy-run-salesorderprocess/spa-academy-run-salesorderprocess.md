@@ -101,7 +101,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     > Don't modify the payload when you integrate with SAP Build Apps.
 
-     Provide the values to the fileds as shown below.Your payload should like below after providing values to the fields.
+     Provide the values to the fields as shown below.Your payload should like below after providing values to the fields.
 
     
     ```JSON
