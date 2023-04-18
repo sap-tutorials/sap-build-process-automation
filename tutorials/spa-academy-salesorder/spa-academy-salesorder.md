@@ -56,7 +56,9 @@ There are many use cases where you can make a difference using SAP Build Process
 4. In the **Create a Business Process** dialog box, do the following:
 
     - Enter a **Project Name**: Sales Orders Management.In workshops, use: `<your unique identifier>_Sales Management`.
-     >Tip: Always use a name that would help users distinguish your workspace from others.
+
+    >Tip: Always use a name that would help users distinguish your workspace from others.
+
     - Enter a **Short Description**: Sales Orders Management Project.
     - Choose **Create**.
 
@@ -85,7 +87,7 @@ There are many use cases where you can make a difference using SAP Build Process
 
 1.  Click on **+** > **Create** > **Data Type**.
 
-    <!-- border -->![6](6.png)
+    <!-- border -->![Create data type](6.png)
 
 2.  Create a datatype **Sales Order**.
 
@@ -101,13 +103,13 @@ There are many use cases where you can make a difference using SAP Build Process
     |  Field Name   | Type
     |  :------------- | :-------------
     |  material   | String  |
-    |  orderAmount     | Number |
-    |  shipToParty    | String|
-    |  salesOrderType    | String|
-    |  salesOrganisation    | String|
-    |  distributionChannel  | String|
-    |  shippingCountry    | String|
-    |  expectedDeliveryDate   | Date|
+    |  `orderAmount`     | Number |
+    |  `shipToParty`    | String|
+    |  `salesOrderType`    | String|
+    |  `salesOrganisation`    | String|
+    |  `distributionChannel`  | String|
+    |  `shippingCountry`    | String|
+    |  `expectedDeliveryDate`  | Date|
     |  division  | String |
 
 
@@ -119,7 +121,7 @@ There are many use cases where you can make a difference using SAP Build Process
 
 1.  Click on **+** > **API** > **New API Trigger**.
 
-    <!-- border -->![7](7.png)
+    <!-- border -->![New API Trigger](7.png)
 
 
 2.  Enter the name as **Sales Order Trigger**.
@@ -152,15 +154,15 @@ Navigate back to the Process builder Canvas to  create an Approval Form.
 
 1. Click on **+** > **Approval** > **New Approval Form**.
 
-    <!-- border -->![8](8.png)
+    <!-- border -->![New Approval Form](8.png)
 
 2. Enter the name as **Approval Form**.
 
-    <!-- border -->![8.1](8.1.png)
+    <!-- border -->![Approval Form](8.1.png)
 
 3. Click on **Edit form**.
 
-    <!-- border -->![8.2](8.3.png)
+    <!-- border -->![Edit form](8.3.png)
 
 4. Design the form by dragging and dropping the corresponding form elements as shown below.
 
@@ -201,11 +203,11 @@ Navigate back to the Process builder Canvas to  create an Approval Form.
 
 1.  Click on **+** > **Forms** > **New Form**.
 
-    <!-- border -->![9](9.png)
+    <!-- border -->![New form](9.png)
 
 2.  Enter the name as **Order Confirmation Form**.
 
-    <!-- border -->![9.1](9.1.png)
+    <!-- border -->![Order confirmation form](9.1.png)
 
 3.  Click on **Edit form**.
 
@@ -288,7 +290,7 @@ Once the process with forms is designed, define which process flow should run ba
 
 3. Edit your branch condition:
 
-    - Set **orderAmount** from the process content.
+    - Set `orderAmount` from the process content.
     - Select **is greater than**.
     - Enter **100000** as the value.
     - Choose **Apply**.
@@ -300,13 +302,13 @@ Once the process with forms is designed, define which process flow should run ba
 
 ### Create and configure Auto Approval Notification Form
 
-In this step,you will create a notification form which would be recieved by supplier if the order is approved automatically with out any approvals.
+In this step,you will create a notification form which would be received by supplier if the order is approved automatically with out any approvals.
 
 1. To add the new form, you will use the **Duplicate** feature. Select the **Overview**.
     - Find **Order Confirmation Form** under the Artifacts section and select three dots **(...)**.
     - Choose **Duplicate**.
 
-    <!-- border -->![10](10.png)
+    <!-- border -->![Duplicate](10.png)
 
 2. In the duplicate artifact pop-up window change the name to **Auto Approval Notification** and select **Duplicate**.
 
@@ -353,10 +355,10 @@ In this step,you will create a notification form which would be recieved by supp
 
     | Form Input Fields| Process Content Entry
     |  :------------- | :-------------
-    | Customer Name | shipToParty    
+    | Customer Name | `shipToParty`    
     | Material Name| material
-    | Order Amount | orderAmount
-    | Expected Delivery Date | expectedDeliveryDate
+    | Order Amount | `orderAmount`
+    | Expected Delivery Date | `expectedDeliveryDate`
 
     <!-- border -->![Auto Approval](11.8.png)
 
