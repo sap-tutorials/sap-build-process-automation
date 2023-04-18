@@ -196,8 +196,9 @@ Now you will create the Shipping Address Group that will group all the Shipping 
 
 ### Import the excel template
 
+Download the [Order Details Assistant](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-technical-events-automation-user-task/OrderDetailsAssistant.xlsx) excel file.
 
-You will now add the excel template to your artifacts.
+Once you have downloaded your excel template file, you will it to your artifacts.
 
 1. Go back to the **Overview** tab.
 

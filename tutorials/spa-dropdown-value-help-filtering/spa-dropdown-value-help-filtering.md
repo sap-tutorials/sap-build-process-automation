@@ -12,6 +12,7 @@ parser: v2
 # Connect Action Project to Dropdown in Form
 <!-- description -->Use and  add a data source to the Form dropdown field in order to display information from external systems.
 
+
 ## Prerequisites
 - Complete the tutorial [Create Action Project in Lobby](spa-business-partner-action-create)
 
@@ -20,6 +21,7 @@ parser: v2
 
 ## Intro
 In this tutorial, you will create a project using a template from the store and edit the trigger form to create a dropdown and populate it with the values from the Actions Project.
+
 
 ### Import sample process as template
 

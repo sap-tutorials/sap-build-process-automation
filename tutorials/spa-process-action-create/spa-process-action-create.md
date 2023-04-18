@@ -140,7 +140,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
     | `SoldToParty` | 17100006
     
 
-    > Use can also change Labels of the fields.
+    > You can also change the Labels of the fields.
 
     <!-- border -->![Action Project](ActionProject_24.png)
 
@@ -150,11 +150,13 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     > If you see that changes are not saved, then try saving again and refreshing the browser.
 
-4. As S/4HANA APIs need CSRF token, click **...** of the POST API on the left panel and select **Enable X-CSRF**.
+4. As S/4HANA APIs need CSRF token, you need to enable it. Select **Settings** icon.
 
-    <!-- border -->![Action Project](ActionProject_14.png)
+5. In the **Project Settings** window, select **CSRF** and do the following:
 
-    - In the popup, enter **/** and click **Enable**.
+    - Enable CSRF by selecting **YES**
+    - Under the **Token Fetch End Point**, enter **/**
+    - Choose **Save**
 
     > Action project uses Destination service to execute the API. In the destination you have already created the URL Path as `https://my-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SALES_ORDER_SRV` to call the API. So, while configuring CSRF token path you do not have to enter any explicit path rather use standard URL configured in the destination.
 
