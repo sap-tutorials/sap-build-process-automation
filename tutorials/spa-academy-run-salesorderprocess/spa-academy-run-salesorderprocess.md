@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Release, deploy and run the business process
 
 ## Prerequisites
-  - Complete [Create a Business Process](spa-academy-salesorder.md) tutorial
+  - Complete [Create a Business Process](spa-academy-salesorder) tutorial
 
 ## You will learn
   - How to release and deploy the process
