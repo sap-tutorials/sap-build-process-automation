@@ -10,17 +10,18 @@ parser: v2
 ---
 
 # Setup Environment
-<!-- description --> Create destination and environment variables for action configuration
+<!-- description --> Create destination in BTP cockît and set it in SAP Build Process Automation
 
 ## You will learn
-  - How to create destination in SAP BTP Cockpit to connect to backend system
-  - How to add destination based environment variable in business process for action configuration
+  - to add destination in SAP BTP Cockpit to connect to backend system
+  - to set destination in SAP Build Process Automation
+
 
 ## Intro
 To configure action in business process, you will need to create an environment variable to access the destination that is created in SAP Business Technology Platform. A destination is needed to connect to the S/4HANA system to execute the APIs. The destination-based environment variable will be used to configure the action of the business process.
 
 
-### Add destination in SAP Build Process Automation
+### Add destination in SAP BTP cockpit
 
 1. To add the destination in your BTP Cockpit, do the following:
 
@@ -36,7 +37,10 @@ To configure action in business process, you will need to create an environment 
 
     > Note that there is a property **sap.processautomation.enabled** added to the destination. The destinations which have this property set as true can be discovered and added in SAP Build Process Automation.
 
-2. Set this destination, created in BTP cockpit, in SAP Build Process Automation. To do so:
+
+### Set destination in SAP Build Process Automation
+
+1. Now that your destination is created in SAP BTP cockpit, you may set it in SAP Build Process Automation. To do so:
 
     - Open **SAP Build** development workbench.
     - Click **Settings**.
@@ -50,6 +54,6 @@ To configure action in business process, you will need to create an environment 
 
     <!-- border -->![Destination](004.png)
 
-    > This destination will be associated with the environment variable while deploying the business process.
+    > This destination will then be associated with the environment variable while deploying the business process.
 
     You have successfully created and configured the destination to be accessed while configuring business process.

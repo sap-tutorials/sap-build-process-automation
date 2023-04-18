@@ -10,7 +10,7 @@ parser: v2
 ---
 
 # Deploy and test the project
-<!-- description --> Deploy the project and test the dropdown filtering.
+<!-- description --> Deploy the project and test the dropdown filtering
 
 ## Prerequisites
 - Complete the tutorial [Create a Project and add a Dropdown](spa-dropdown-value-help-filtering)
@@ -22,7 +22,7 @@ parser: v2
 ## Intro
 In this tutorial, you will release and deploy the project created in the previous tutorial and test the dropdown filtering in the form.
 
-### Release and deploy the project
+### Release and deploy the business process project
 
 1. In the project overview tab, select the **Release** option.
 
@@ -67,5 +67,7 @@ In this tutorial, you will release and deploy the project created in the previou
 5. In the **Customer Name** field, if you enter anything, the records will get filtered accordingly.
 
     <!-- border -->![Action Project](010.png)
+
+    > The filtering is implemented only on the number of records mentioned in $top parameter of actions project, since only those records are fetched and shown. 
 
     You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing form.

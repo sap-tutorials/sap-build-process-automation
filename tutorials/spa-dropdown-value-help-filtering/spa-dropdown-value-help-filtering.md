@@ -9,22 +9,21 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Create a Project and add a Dropdown
-<!-- description --> Create a project from the sample in store and edit the trigger form.
+# Connect Action Project to Dropdown in Form
+<!-- description -->Use and  add a data source to the Form dropdown field in order to display information from external systems.
 
 ## Prerequisites
 - Complete the tutorial [Create Action Project in Lobby](spa-business-partner-action-create)
 
 ## You will learn
-- to implement action in the project
-- create a dropdown in form with action response as the data source 
+- use Action Project to retrieve data from data source and show in dropdown in Form
 
 ## Intro
-In this tutorial, you will create a project using a template from the store. You will create a dropdown in trigger form and populate it with action response as options.
+In this tutorial, you will create a project using a template from the store and edit the trigger form to create a dropdown and populate it with the values from the Actions Project.
 
-### Create a project with the template
+### Import sample process as template
 
-1.  In the SAP Build, select the **Store** tab.
+1.  In **SAP Build**, select the **Store** tab.
 
     <!-- border -->![Action Project](001.png)
 
@@ -40,7 +39,7 @@ In this tutorial, you will create a project using a template from the store. You
 
     <!-- border -->![Action Project](004.png)
 
-### Create a dropdown in Order Processing Form
+### Create a dropdown in order processing form
 
 1.	Once the project is created, select the **Order Processing Form** from the side menu of artifacts.
 
@@ -54,7 +53,7 @@ In this tutorial, you will create a project using a template from the store. You
 
     <!-- border -->![Action Project](007.png)
 
-### Create a destination environment variable
+### Add environment variable to access destination
 
 4. Select the **Settings** icon at the top-right corner.
 
@@ -74,7 +73,7 @@ In this tutorial, you will create a project using a template from the store. You
 
     <!-- border -->![Action Project](011.png)
 
-4. Once the destination is created, close the popup.
+4. Once the environment variable is created, close the popup.
 
     <!-- border -->![Action Project](012.png)
 
@@ -89,6 +88,8 @@ In this tutorial, you will create a project using a template from the store. You
 
     <!-- border -->![Action Project](013.png)
 
+    > The action project will only be visible in the Browse Library popup if the Main Output Array is marked in the action response as described in previous tutorial.
+
 1. Select the `S4_Business_Partner` as the **Destination Variable** and select the value-help option for **Available Data** field.
 
     <!-- border -->![Action Project](014.png)
@@ -100,3 +101,5 @@ In this tutorial, you will create a project using a template from the store. You
 1. **Save** the form.
 
     <!-- border -->![Action Project](016.png)
+
+With this, you have created a form with dropdown as input field and connected your action project to the dropdown.
