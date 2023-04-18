@@ -17,7 +17,7 @@ parser: v2
   [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
 - Complete the tutorial [Setup Environment](spa-dropdown-value-help-filtering-setupenv)
 - S/4HANA Cloud system where Business Partner module is available
-- A communication user to access S/4HANA Business Partner inbound services based on `SAP_COM_0109` communication scenario ID
+- A communication user to access S/4HANA Business Partner inbound services based on `SAP_COM_0008` communication scenario ID
 
 ## You will learn
 - to discover APIs in SAP API Business Hub
@@ -84,15 +84,7 @@ In this tutorial, you will create an action project based on Business Partner AP
 
     The Action Editor will open with the selected APIs which can be further configured based on the requirements.
 
-2. As S/4HANA APIs need CSRF token, click on the **Settings** icon at the top right.
-
-    <!-- border -->![Action Project](ActionProject_14.png)
-
-    - In the popup, toggle the **Enable CSRF** button to **YES** and enter **/** in the **Token Fetch End Point** field and click **Save**.
-
-    <!-- border -->![Action Project](ActionProject_015.png)
-
-3. Since the Action can fetch a limited number of records, you need to configure the `$top` input parameter to a specific value. For this use case, you will be fetching 150 records.
+2. The Action supports JSON files and the file size is limited to 5 MB, you need to fetch a specific number of records from your data source. This can be done using the `$top` input parameter. For this use case, you will be setting the parameter to 150. This will enable us to fetch the first 150 records and display their details. 
 
     - Select the **$top** parameter.
     - In the side panel, toggle the **Static** option to **YES**.
@@ -101,10 +93,10 @@ In this tutorial, you will create an action project based on Business Partner AP
 
     <!-- border -->![Action Project](ActionProject_23.png)
 
-    With this you have configured the CSRF token and API input fields.
+    With this you have configured the action project name and API input fields.
 
 
-4. Similarly, configure the output fields. Do the following:
+3. Similarly, configure the output fields. Do the following:
 
     - Click **Output** tab.
     - Expand the output key **d**.
@@ -115,7 +107,7 @@ In this tutorial, you will create an action project based on Business Partner AP
     <!-- border -->![Action Project](ActionProject_17.png)
 
     > ### What is going on?
-    > The action response does not return the main array of customer names. It is embedded under other response parameters. You need to mark the main output array from the response in order to make the action visible in the process builder.
+    > If this array is not marked as Main Output Array, the Actions Project will not be visible in the Form Editor as a data source.
 
 ### Test action project
 
@@ -136,6 +128,8 @@ In this tutorial, you will create an action project based on Business Partner AP
     - Once the execution is successful, you see **200 OK** response with the details of the customers in the backend S/4HANA Cloud system.
 
     <!-- border -->![Action Project](ActionProject_19.png)
+
+    The action gives a response which, in this use case, returns the customer details and related details. You need to display the customer names which are in an array of objects.
 
 
 ### Release action project
@@ -158,4 +152,4 @@ Once the action project is released, you can then publish any released version o
 
 <!-- border -->![Action Project](ActionProject_22.png)
 
-With this you have successfully completed creating, configuring, releasing and publishing of action project. Now you will use these published actions to connect process to external systems via APIs.
+With this you have successfully completed creating, configuring, releasing and publishing of action project. Now you will use this published action to get data for the dropdown in Form.

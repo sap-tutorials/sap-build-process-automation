@@ -68,4 +68,6 @@ In this tutorial, you will release and deploy the project created in the previou
 
     <!-- border -->![Action Project](010.png)
 
+    > The filtering is implemented only on the number of records mentioned in $top parameter of actions project, since only those records are fetched and shown. 
+
     You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing form.
