@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Deploy and test the project
+# Deploy and Test the Project
 <!-- description --> Deploy the project and test the dropdown filtering
 
 ## Prerequisites
