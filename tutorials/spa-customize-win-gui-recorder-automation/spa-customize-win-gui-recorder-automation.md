@@ -8,7 +8,7 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Customize Automation generated through Recorder
+# Customize Automation Generated Through Recorder
 <!-- description --> Customize sales orders creation (SAP GUI for Windows) bot which is generated using Recorder
 
 ## Prerequisites

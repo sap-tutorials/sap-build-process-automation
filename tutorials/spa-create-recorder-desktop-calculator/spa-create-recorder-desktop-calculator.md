@@ -8,7 +8,7 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Automate Windows Calculator Application using the Recorder
+# Automate Windows Calculator Application Using the Recorder
 <!-- description --> Automate computations in the windows calculator application with manual capture mode and capture on hover mode
 
 ## Prerequisites

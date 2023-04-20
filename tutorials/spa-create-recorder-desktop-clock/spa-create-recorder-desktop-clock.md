@@ -8,7 +8,7 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Automate Windows Clock Application using the Recorder
+# Automate Windows Clock Application Using the Recorder
 <!-- description --> Automate the creation of alarms in the windows clock application with set and get activities
 
 ## Prerequisites
