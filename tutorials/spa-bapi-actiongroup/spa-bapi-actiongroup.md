@@ -13,11 +13,10 @@ parser: v2
 <!-- description -->Learn how to create BAPI Action Group which uses BAPI  Action and retrieves the data from the backend.
 
 ## Prerequisites
-
--[Desktop agent](https://developers.sap.com/tutorials/spa-setup-desktop-3-0-agent.html) version must be equal to or greater than 2.0.30.
--Install Microsoft Visual C++ 2010 Redistributable Package x86, available on the Microsoft website.
--For using SSO connection system, SSO (SAP Single Sign-On) must be configured on your system.
--BAPI  with  Remote-enabled Module
+- [Desktop agent](https://developers.sap.com/tutorials/spa-setup-desktop-3-0-agent.html) version must be equal to or greater than 2.0.30.
+- Install Microsoft Visual C++ 2010 Redistributable Package x86, available on the Microsoft website.
+- For using SSO connection system, SSO (SAP Single Sign-On) must be configured on your system.
+- BAPI  with  Remote-enabled Module
 
 ## You will learn
 - How to create an Action Group
@@ -43,11 +42,11 @@ In this tutorial, you will create an Action Group Artifact and connect to BAPI R
 
     <!-- border -->![Action Project](039.png)
 
-4. When we execute the module, we get the following output.
+4. When you execute the module, you get the following output.
 
     <!-- border -->![Action Project](040.png)
 
-This is the output we expect at the end of our automation. In the next steps we will be building an automation for the same.
+This is the output we expect at the end of our automation. In the next steps you will be building an automation for the same.
 
 
 
@@ -199,6 +198,7 @@ Each Action Group artifact can have multiple actions. Each Action corresponds to
 9. The parameter **Close Connection** closes the connection to your external system automatically. Hence you dont need to close the connection explicitly.
 
     <!-- border -->![Action Project](035.png)
+
 
 10. Search for the **Log Message** process and drag it below step 2 - RFC Read Table Action.
 
