@@ -12,7 +12,6 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Customize sales orders creation (SAP GUI for Windows) bot which is generated using Recorder
 
 ## Prerequisites
-  - [Install and set up the Desktop Agent 3](spa-setup-desktop-3-0-agent)
   - Complete [Automate SAP GUI for Windows application using recorder](spa-create-recorder-win-gui)
 
 ## You will learn

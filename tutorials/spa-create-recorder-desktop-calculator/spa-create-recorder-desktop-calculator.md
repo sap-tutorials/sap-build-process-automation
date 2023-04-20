@@ -12,7 +12,8 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Automate computations in the windows calculator application with manual capture mode and capture on hover mode
 
 ## Prerequisites
- - [Install and set up the Desktop Agent 3](spa-setup-desktop-3-0-agent)
+ - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
+ - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
  - Basic understanding of how to record applications in SAP Build Process Automation
 
 ## You will learn
