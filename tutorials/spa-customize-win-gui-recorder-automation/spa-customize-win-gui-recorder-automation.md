@@ -8,11 +8,11 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Customize automation generated through Recorder
+# Customize Automation generated through Recorder
 <!-- description --> Customize sales orders creation (SAP GUI for Windows) bot which is generated using Recorder
 
 ## Prerequisites
-  - Complete [Automate SAP GUI for Windows application using recorder](spa-create-recorder-win-gui)
+  - Complete [Automate SAP GUI for Windows Application using the Recorder](spa-create-recorder-win-gui)
 
 ## You will learn
   - How to customize a recorder generated automation

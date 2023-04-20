@@ -8,7 +8,7 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Automate SAP S/4 HANA Cloud application using Recorder
+# Automate SAP S/4 HANA Cloud Application using the Recorder
 <!-- description --> Automate the process of creating a purchase order in Manage Purchase Orders application in SAP S/4 HANA Cloud.
 
 ## Prerequisites
