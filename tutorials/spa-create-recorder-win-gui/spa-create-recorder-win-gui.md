@@ -8,7 +8,7 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Automate SAP GUI for Windows Application sing the Recorder
+# Automate SAP GUI for Windows Application Using the Recorder
 <!-- description --> Automate sales order creation in SAP GUI for Windows
 
 ## Prerequisites
