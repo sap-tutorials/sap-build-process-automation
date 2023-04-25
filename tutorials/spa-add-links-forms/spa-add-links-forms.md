@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Add Links to Forms
-<!-- description --> Add the web links of three tutorials to three forms as incremental learning tasks for the user.
+<!-- description --> Learn how to links in the Forms of SAP Build Process Automation.
 
 ## Prerequisites
 - Complete [Subscribe to SAP Build Process Automation using Booster in SAP BTP Free Tier](https://developers.sap.com/tutorials/spa-subscribe-booster.html)
@@ -80,7 +80,14 @@ After completing the prerequisites, you will create a project.
     |  :------------- | :-------------
     |  Headline 1         | Training Form
     |  Paragraph          | *Enter the description of your project here*. 
-    Such as: Welcome to our training document. This document has been designed to assist you in completing specific training courses that are necessary for your job. This document contains links to online training tutorials that will guide you through the different steps of the automation process using SAP Build Process Automation. We hope that this training document will be useful for you in understanding the benefits of SAP Build Process Automation and how to use it to improve the efficiency of our company.
+    
+    For the purpose of this tutorial, you may use the following description:
+
+    Welcome to our training document. This document has been designed to assist you in completing specific training courses that are necessary for your job. 
+    
+    This document contains links to online training tutorials that will guide you through the different steps of the automation process using SAP Build Process Automation. 
+    
+    We hope that this training document will be useful for you in understanding the benefits of SAP Build Process Automation and how to use it to improve the efficiency of our company.
 
     <!-- border -->![Form](5.png)
 
@@ -88,7 +95,7 @@ After completing the prerequisites, you will create a project.
 
     <!-- border -->![Form](5_1.png)
 
-    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). For example, here we have set the button to **Start** for a trigger form. 
+    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). For example, here the button of the trigger form has been set to **Start**.
 
     <!-- border -->![Form](button.png)
 ### Create the first mission form
@@ -114,7 +121,16 @@ After completing the prerequisites, you will create a project.
     |  :------------- | :-------------
     | Headline 1 | First mission 
     | Headline 2 | Time :  1 hr. 15 min
-    | Paragraph  | *Enter the description of your mission here*. Such as: In this training, you will learn how to use SAP Build Process Automation's intuitive low-code and no-code capabilities to create, develop, deploy, and run your first business process. You will discover how this tool can help you build the apps you need at the speed demanded by your business, using visual drag-and-drop tools for application development. You will also learn:                                                                                  -	How to enable SAP Build Process Automation in SAP BTP Free Tier account.                                                                               -	How to create interactive forms that can be used as triggers for processes or as approval steps within a business process.
+    | Paragraph  | *Enter the description of your mission here*. 
+    
+    For the purpose of this tutorial, you may use: 
+
+    In this training, you will learn how to use SAP Build Process Automation's intuitive low-code and no-code capabilities to create, develop, deploy, and run your first business process. You will discover how this tool can help you build the apps you need at the speed demanded by your business, using visual drag-and-drop tools for application development. 
+    
+    You will also learn: 
+    
+     - How to enable SAP Build Process Automation in SAP BTP Free Tier account.                                                                               
+     - How to create interactive forms that can be used as triggers for processes or as approval steps within a business process.
 
     <!-- border -->![Form](8.png)
 
@@ -130,7 +146,7 @@ After completing the prerequisites, you will create a project.
 
 6. **Save** the form.
 
-    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). Here, we have set the button to **Next**.
+    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). Here, the button has been set to **Next**.
 
     <!-- border -->![Form](button2.png)
 
@@ -178,7 +194,17 @@ After completing the prerequisites, you will create a project.
     |  :------------- | :-------------
     | Headline 1 | Second mission 
     | Headline 2 | Time :  2 hr. 5 min
-    | Paragraph  | *Enter the description of your second mission here*. Such as : In this training, you will learn how to automate repetitive processes by integrating decision logic with business rules and configuring SAP Process Visibility. You will go through several stages of learning, which include:                                                -	Creating an automation to extract and read sales order details from an Excel file. "25 min"                                                                                  -	Creating a decision to determine authorized approvers. "20 min"                     -	Creating a visibility scenario for your business process. "15 min"                  -	Configuring SAP Build Workzone, standard edition for the visibility scenario. "30 min"                                                                                      -	Configuring a form trigger in the SAP Launchpad to run a business process. "35min"
+    | Paragraph  | *Enter the description of your second mission here*. 
+    
+    For the purpose of this tutorial, you may use: 
+
+    In this training, you will learn how to automate repetitive processes by integrating decision logic with business rules and configuring SAP Process Visibility. You will go through several stages of learning, which include:  
+
+     - Creating an automation to extract and read sales order details from an Excel file "25min"                                                                                 
+     - Creating a decision to determine authorized approvers. "20 min"                     
+     - Creating a visibility scenario for your business process. "15 min"                  
+     - Configuring SAP Build Workzone, standard edition for the visibility scenario. "30 min"                                                                                      
+     - Configuring a form trigger in the SAP Launchpad to run a business process. "35min"
 
     <!-- border -->![Form](14.png)
 
@@ -192,7 +218,7 @@ After completing the prerequisites, you will create a project.
 
 6. **Save** the form.
 
-    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). Similarly, here for the second mission we have set the button to **Next**.
+    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). Similarly, here for the second mission, the button has been set to **Next**.
 
     <!-- border -->![Form](button3.png)
 
@@ -234,7 +260,11 @@ After completing the prerequisites, you will create a project.
     |  :------------- | :-------------
     | Headline 1 | Third mission 
     | Headline 2 | Time :  2 hr. 5 min
-    | Paragraph  | *Enter the description of your third mission here*. Such as : In this training, you will learn how to create a table in a form, validate the order details extracted from the automation, and display any error details in the table.
+    | Paragraph  | *Enter the description of your third mission here*. 
+       
+    For the purpose of this tutorial, you may use:
+
+    In this training, you will learn how to create a table in a form, validate the order details extracted from the automation, and display any error details in the table.
 
     Similarly add a **Link** field: 
 
@@ -246,7 +276,7 @@ After completing the prerequisites, you will create a project.
 
 5. **Save** the form.
 
-    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). Here for the last mission we have set the button to **Done**.
+    > To configure the form buttons, you can follow the tutorial [Customize the Titles of Buttons in Forms](https://developers.sap.com/tutorials/spa-customize-title-button-form.html). Here for the last mission, the button has been set to **Done**.
 
     <!-- border -->![Form](button4.png)
 
