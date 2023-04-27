@@ -129,7 +129,7 @@ There are many use cases where you can make a difference using SAP Build Process
     <!-- border -->![7.1](7.1.png)
 
 
-3.  Choose **Inputs**. Then choose **Configure** to configure inputs.
+3.  Click on the process canvas and in the **Process Details** choose **Inputs**. Then choose **Configure** to configure inputs.
 
     <!-- border -->![Inputs](7.2.png)
 
@@ -256,7 +256,7 @@ In this step,you will send out an email notification if the order is rejected.
 
     <!-- border -->![Mail_1](Mail_1.png)
 
-2.  Once you have successfully added Mail ,let's configure **Mail Header** and **Mail Body**.Enter the your login ID(email) in the **To** section.
+2.  Once you have successfully added Mail ,let's configure **Mail Header** and **Mail Body**. Enter the your email address in the **To** section.
     
     <!-- border -->![Mail_2](mail_2.png)   
 
@@ -345,7 +345,7 @@ In this step,you will create a notification form which would be received by supp
 
     - Enter: **Your order**.
     - Choose: **material** from `salesorderdetails`.
-    - Enter: **has been successfully received**.
+    - Enter: **has been approved automatically**.
 
     Under **Recipients** Enter your login ID(email).
 
