@@ -173,7 +173,7 @@ Navigate back to the Process builder Canvas to  create an Approval Form.
     | A new order has been received. Please review and confirm whether the requirements can be met or not.| Paragraph | |
     | Material | Text | X |
     | Order Amount | Number | X|
-    | Text | Customer Name | X
+    | Customer Name | Text | X
     | Expected Delivery Date | Date | X|
     | I acknowledge that we have received your order and will process it based on the availability | Checkbox | |
     | Message to Buyer | Text Area | |
@@ -220,7 +220,7 @@ Navigate back to the Process builder Canvas to  create an Approval Form.
     | Headline 1 | Order Confirmation | |
     | Paragraph  |Your order has been received and accepted for delivery. We will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request: | |
     | Text Area  | Message from the supplier: | X
-    | Text | Material Name | X
+    | Text | Material | X
     | Text | Customer Name | X
     | Number | Order Amount | X
     | Date | Expected Delivery Date | X
