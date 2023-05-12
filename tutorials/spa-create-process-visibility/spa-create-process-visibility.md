@@ -24,7 +24,7 @@ The process is created where several forms are defined, an automation to extract
 
 ### Prepare Process
 
-Before creating a **Visibility Scenario** we need to prepare the process.
+Before creating a **Visibility Scenario**, you need to prepare the process.
 
 1.  In the **Process Builder** open the process and on the right-hand side select the tab **Visibility**.
 

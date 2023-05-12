@@ -8,21 +8,21 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Run a Business Process from the Launchpad
-<!-- description --> Configure a form trigger in the SAP Launchpad to run a Business Process
+# Run a Business Process from the Business Site
+<!-- description --> Configure a form trigger in the SAP Build Work Zone, standard edition to run a Business Process
 
 ## Prerequisites
- - Complete [Configure Launchpad](spa-configure-launchpad) tutorial
+ - Complete [Configure SAP Build Work Zone, standard edition](spa-configure-launchpad) tutorial
 
 ## You will learn
-  - How to configure your form trigger as a tile in the SAP Launchpad Service.
+  - How to configure your form trigger as a tile in the SAP Build Work Zone, standard edition.
 
 ---
 
 ### Configure the Process Trigger
 
 
-You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assigned **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role and clicked **Save**.
+You completed [Configure SAP Build Work Zone, standard edition](spa-configure-launchpad) tutorial. You assigned **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role and clicked **Save**.
 
 <!-- border -->![Assignments to Everyone Role](01.png)
 
@@ -30,7 +30,7 @@ You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assig
 
     <!-- border -->![Back My Content](02.png)
 
-2. Choose **Process Trigger**.
+2. Select **Process Trigger**.
 
     <!-- border -->![Process Trigger](07.png)
 
@@ -50,13 +50,13 @@ You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assig
 
     <!-- border -->![Navigation](11.png)
 
-6. Now you need to fill the **Default Value** of the app's parameters with the **Launchpad Configuration Parameter** of your process's **Trigger Settings**.
+6. Now you need to fill the **Default Value** of the app's parameters with the **Launchpad Configuration Parameter** of your process' **Trigger Settings**.
 
     <!-- border -->![Default Value Field](11a.png)
 
-7. Navigate back to your deployed project in the **Application Development**.
+7. Navigate back to your deployed project in the **SAP Build Process Automation**.
 
-8. Select the **Start Process**.
+8. Select the **Order Processing Form**.
 
 9. Copy the **Launchpad Configuration Parameter**.
 
@@ -64,7 +64,7 @@ You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assig
 
     >This is the parameter you need to configure this form trigger as a tile in the SAP Launchpad Service.
 
-10. Now navigate back to the Launchpad.
+10. Now navigate back to the Work Zone.
 
 11. Paste the value in the **Default Value** field of the Sales Order Management app's parameters.
 
@@ -130,7 +130,7 @@ You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assig
     <!-- border -->![Everyone](17.png)
 
 
-### Launch Site
+### Launch Business Site
 
 
 1. Navigate back to the **Site Directory**.
@@ -141,15 +141,15 @@ You completed [Configure Launchpad](spa-configure-launchpad) tutorial. You assig
 
     <!-- border -->![Go to site](19.png)
 
-    You will be directed to the Launchpad where the Sales Order Management tile has been created.
+    You will be directed to the **Business Site** where the Sales Order Management tile has been created.
 
-    You can now trigger the process from the launchpad.
+    You can now trigger the process from the **Business Site**.
 
 3. Choose **Sales Order Management** tile.
 
     <!-- border -->![Tile](20.png)
 
-    > You can also see `MyInbox` and Process Workspace tiles added to the launchpad which can be used by the business users to access the tasks and monitor the processes respectively.
+    > You can also see **My Inbox** and **Process Workspace** tiles added to the **Business Site** which can be used by the business users to access the tasks and monitor the processes respectively.
 
     You will be redirected to the **Order Approval Request Form**.
 

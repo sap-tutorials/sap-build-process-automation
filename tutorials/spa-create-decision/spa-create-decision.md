@@ -104,6 +104,7 @@ Now, you have to map the Input and Output of the decision to the actual data obj
 After the data types are created, you will now configure the decision:
 
 - With Input and Output data types.
+
 - Create decision table rule to the business policy.
 
 First, add this newly created data object as the decision output.
@@ -118,14 +119,14 @@ First, add this newly created data object as the decision output.
 
 3. Configure Input Parameter:
     - In Name enter: **Sales Order Input**,
-    - In Description enter: **business rules input**,
+    - In Description enter: **Business rules input**,
     - In Type choose: **Sales Order**.
 
     <!-- border -->![002](013.png)
 
 4. Configure Output Parameter:
     - In Name enter: **Approver Output**,
-    - In Description enter: **business rules output**,
+    - In Description enter: **Business rules output**,
     - In Type choose: **Approver**.
 
     <!-- border -->![002](014.png)
@@ -227,12 +228,11 @@ First, add this newly created data object as the decision output.
     |  `UserGroup`        | `'SO_MGMNT'`
     |  `Email`       | `john.doe@sap.com`|
 
-    <!-- border -->![002](028.png)
-
 20. Choose **Save** button.
 
-    > Save will both save and activate the decision table. If there are any validation issues in the decision table, then Save will not happen and the errors will be shown in the **Design Console**
+    > Save will both save and activate the decision table. If there are any validation issues in the decision table, then Save will not happen and the errors will be shown in the **Design Console**.
 
+    <!-- border -->![002](028.png)
 
 
 ### Configure Decision in Process Builder

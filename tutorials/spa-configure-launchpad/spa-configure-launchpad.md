@@ -8,8 +8,8 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Configure SAP Build Workzone, standard edition
-<!-- description --> Configure SAP Build Workzone, standard edition for visibility scenario
+# Configure SAP Build Work Zone, standard edition
+<!-- description --> Configure SAP Build Work Zone, standard edition for visibility scenario
 
 ## Prerequisites
  - Space in BTP Cockpit subaccount created
@@ -68,8 +68,7 @@ In this tutorial, you will configure everything needed for the creation of a SAP
     The roles are assigned.
 
     <!-- border -->![Result assignation](Step3-5.png)
-
-   
+  
 
 ### Create SAP Build Process Automation instance
 
@@ -129,7 +128,7 @@ In this tutorial, you will configure everything needed for the creation of a SAP
     
     > The content updates and the status changes to Activated.
 
-4.  Select **Content Manager**. On the top tabs select **Content Explorer** Select **HTML5 Apps**.
+4.  Select **Content Manager**. On the top tabs select **Content Explorer** and then select **HTML5 Apps**.
 
     <!-- border -->![SBWSE](033.png)
 
@@ -143,23 +142,27 @@ In this tutorial, you will configure everything needed for the creation of a SAP
 
 7.  Manage the Group:
     - Set **Title** to **SAP Build Process Automation**.
+    - Click on the search field to display item results.
     - Assign **My Inbox** and **Process Workspace** to the group.
-    - **Save**.
+    - Choose **Save**.
     - Go back. 
 
     <!-- border -->![SBWSE](041.png)
 
-8.   Choose **Everyone** role to edit it.
+8.   Select **Everyone** item to edit it.
 
     <!-- border -->![SBWSE](042.png)
 
 9.   Select **Edit** to edit role.
 
+10. Click on the search field to display item results.
+
     <!-- border -->![SBWSE](043.png)
 
 10.  Manage changes:
+
     - Assign **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role.
-    - Select **Save**.
+    - Choose **Save**.
 
     <!-- border -->![SBWSE](044a.png)
 

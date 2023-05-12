@@ -311,7 +311,7 @@ This control has the following loop parameters:
 
 10. Use the activity to check `selectedOrderDetails` in testing mode. To do that:
     - Select **Log Message**,
-    - In message field enter `selectedOrderDetails`.
+    - In message field, select `selectedOrderDetails`.
 
 11. Save your work.
 
@@ -357,8 +357,8 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
     |  Parameter         | Value  
     |  :---------------- | :-------------  |
-    |  `OrderNumber`  | Any order number which is available in `SalesOrdersDetails` Excel |
-    |  `OrderFilePath` | Path where the `SalesOrderDetails` Excel is stored on your local machine |
+    |  `OrderNumber`  | Any order number which is available in Sales Order Data Excel |
+    |  `OrderFilePath` | Path where the Sales Order Data Excel is stored on your local machine |
 
     Select **Test** button.
 
