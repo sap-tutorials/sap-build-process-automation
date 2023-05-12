@@ -27,7 +27,7 @@ In this tutorial, you will configure everything needed for the creation of a SAP
 
 ### Subscribe to the SAP Build Work Zone, standard edition
 
-1.  Navigate to **SAP BTP Cockpit** subaccount and select **Instances and Subscription** under Services. Choose **Create**.
+1.  Navigate to **SAP BTP Cockpit** subaccount and select **Instances and Subscriptions** under Services. Choose **Create**.
 
     <!-- border -->![SBWSE](080.png)
 
@@ -59,9 +59,9 @@ In this tutorial, you will configure everything needed for the creation of a SAP
 
 4.  Select **Launchpad Admin** and **Launchpad External User** then choose **Assign Role Collection**. 
 
-    > **Launchpad Admin** is the role for whom is going to design the launchpad in the launchpad editor. Launchpad Admin should not be given to all users for security purposes.
+    > **Launchpad Admin** is the role for whom is going to design the Business Site in the Business Site editor. Launchpad Admin should not be given to all users for security purposes.
     
-    > **Launchpad external** user is the role for whom accesses the final launchpad. 
+    > **Launchpad external user** is the role for whom accesses the final Business Site. 
 
     <!-- border -->![Select Roles](Step3-4.png)
 
