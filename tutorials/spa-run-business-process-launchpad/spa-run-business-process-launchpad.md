@@ -62,7 +62,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-la
 
     <!-- border -->![Copy Parameter](12.png)
 
-    >This is the parameter you need to configure this form trigger as a tile in the SAP Launchpad Service.
+    >This is the parameter you need to configure this form trigger as a tile in the Business Site.
 
 10. Now navigate back to the Work Zone.
 
@@ -130,7 +130,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-la
     <!-- border -->![Everyone](17.png)
 
 
-### Launch Business Site
+### Launch the Business Site
 
 
 1. Navigate back to the **Site Directory**.
