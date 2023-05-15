@@ -8,7 +8,7 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Run a Business Process from the Business Site
+# Run a Business Process From the Business Site
 <!-- description --> Configure a form trigger in the Business Site to run a Business Process
 
 ## Prerequisites
