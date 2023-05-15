@@ -8,11 +8,14 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Run the Process with an Automation
+# Run the Process With an Automation
 <!-- description --> Run the business process with a full monitoring of the workflow instances and automation jobs
 
 ## Prerequisites
  - Complete [Agent Management settings to execute the process with an automation](spa-run-agent-settings)
+ - Complete [Create an Automation to Extract Data](spa-create-automation) 
+ - Complete [Create a Decision](spa-create-decision)
+ - Complete [Create Process Visibility Scenario](spa-create-process-visibility)
 
 ## You will learn
   - How to run the Process
@@ -35,11 +38,11 @@ Once you have taken care of the agent management settings, you can release and d
 
 2. Choose **Next**.
 
-  <!-- border -->![OrderFilePath](003.png)
+    <!-- border -->![OrderFilePath](003.png)
 
 3. Choose **Deploy**.
  
-  <!-- border -->![Deploy](003b.png)
+    <!-- border -->![Deploy](003b.png)
 
 
 ### Run the business process
@@ -96,7 +99,7 @@ Tasks are requests for users to participate in an approval or review process. Th
 
 Monitoring business processes is one of the key aspects of successful automation. Using monitoring capabilities, you can proactively and consistently monitor process performance, identify any issues in the process and take necessary actions to ensure business process continuity.
 
-SAP Build Process Automation provides different applications for monitoring and managing different process skills. The applications include Process and Workflow Instances, Automation Jobs, Acquired Events etc. These applications are available under the **Monitor** tab in Application Development studio.
+SAP Build Process Automation provides different applications for monitoring and managing different process skills. The applications include Process and Workflow Instances, Automation Jobs, Acquired Events etc. These applications are available under the **Monitor** tab in SAP Build.
 
 > All deployed processes can be accessed by following **Manage** > **Processes and Workflows application**.
 
@@ -147,11 +150,11 @@ SAP Build Process Automation provides different applications for monitoring and 
 
 ### Gain visibility into the business process
 
-1. From the deployed version of the business process project, click to open **Sales Order Visibility Scenario** artifact.
+1. From the deployed version of the business process project, select **Sales Order Visibility Scenario** to open the artifact.
 
     <!-- border -->![open](016.png)
 
-2. In **General** section, click the **Copy** icon aside the **Dashboard Link**.
+2. In **General** section, choose the **Copy** icon aside the **Dashboard Link**.
 
     <!-- border -->![copy](017.png)
 
@@ -159,6 +162,6 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     The dashboard is there. The performance indicators are filling up, depending on the time it has taken, there might be different results. Please now feel free to explore the details and discover what is included in each tile. You could even navigate into single instances.
 
-      <!-- border -->![Browse Scenario](018.png)
+    <!-- border -->![Browse Scenario](018.png)
 
 ---
