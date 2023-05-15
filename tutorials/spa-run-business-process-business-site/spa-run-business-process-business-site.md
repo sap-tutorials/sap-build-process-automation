@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Configure a form trigger in the Business Site to run a Business Process
 
 ## Prerequisites
- - Complete [Configure SAP Build Work Zone, standard edition](spa-configure-launchpad) tutorial
+ - Complete [Configure SAP Build Work Zone, standard edition](spa-configure-workzone) tutorial
 
 ## You will learn
   - How to configure your form trigger as a tile in the Business Site.
@@ -22,7 +22,7 @@ primary_tag: software-product>sap-build-process-automation
 ### Configure the Process Trigger
 
 
-You completed [Configure SAP Build Work Zone, standard edition](spa-configure-launchpad) tutorial. You assigned **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role and clicked **Save**.
+You completed [Configure SAP Build Work Zone, standard edition](spa-configure-workzone) tutorial. You assigned **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role and clicked **Save**.
 
 <!-- border -->![Assignments to Everyone Role](01.png)
 
