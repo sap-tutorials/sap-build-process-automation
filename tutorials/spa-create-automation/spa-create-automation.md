@@ -67,7 +67,7 @@ In this exercise, you will automate the process to read the **sales order** deta
 
 3. A new pop-up will appear to create the automation. Do the following in the pop-up:
 
-    -  Under Name Field enter: **Get Order Details**.
+    -  Under Name enter: **Get Order Details**.
     -  Under Description enter: **Automation for Order Process**.
     -  Choose the **Create** button.
 
@@ -151,13 +151,13 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
     ![001](014.png)
 
-7. Select the button **From Excel Data**.
+7. Select the button **+ From Excel data**.
 
     ![001](015.png)
 
     > A pop up appears to create a data type. A **Sales Order** variable is needed to collect the data from the Excel sheet columns. In this step, a variable is automatically created from the Excel file columns.
 
-8. Under Name of the data type **Sales Order** and choose the **Create** button.
+8. Under Name of the data type, enter **Sales Order** and choose the **Create** button.
 
     <!-- border -->![001](016.png)
 
@@ -224,7 +224,7 @@ Variables that are used, build your automation, and are data storage that have a
 
 1.  In the **Automation Details** under Tools:
     - Search for the **Sales Order** data type (created in the previous step).
-    - Drag and drop the **Sales Order** into the canvas.
+    - Drag and drop the **Sales Order** data type into the canvas.
 
     <!-- border -->![001](026.png)
 
@@ -279,7 +279,7 @@ This control has the following loop parameters:
 
     > If the order number is found in Excel, i.e. the condition is **True**, set the variable using **Set Variable Value** activity that is a **Data Management Activity**.
 
-6. To add set variable Value:
+6. To add Set Variable Value:
     - Click on the canvas.
     - In Automation Details search for the activity **Set Variable Value**.
     - Drag and Drop the activity into the canvas.
@@ -304,7 +304,7 @@ This control has the following loop parameters:
 
 
 9. Use **Log message** activity to print your results. To add Log Message:
-     - in Automation Details search for the activity **Log message**,
+     - In Automation Details search for the activity **Log message**,
      - Drag and Drop the activity into the canvas.
 
     <!-- border -->![001](036.png)
@@ -322,28 +322,28 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 1. To do that:
     - Select **End**.
-    - In the configuration screen on the right, under the Output Parameter, in the `SelectedOrder` Field enter `selectedOrderDetails`.
+    - In the configuration screen on the right, under the Output Parameter, in the `SelectedOrder` field enter `selectedOrderDetails`.
     - **Save** the Automation.
 
     <!-- border -->![001](037.png)
 
-    > Make sure to add the steps **Condition**, **Set variable value**, **End Loop** inside the **For Each** block.
+    > Make sure to add the steps **Condition**, **Set Variable Value**, **End Loop** inside the **For Each** block.
 
 2. The complete automation **Get Order Details** automation looks as below.  
 
     <!-- border -->![001](038.png)
 
-3. Map the Automation Parameters with Form Parameters.
+    Now you will map the Automation Parameters with the Form Parameters.
 
-4. Select **Order Processing** Process. Choose **Get Order Details** automation in the process.
+3. Select **Order Processing** Process. Choose **Get Order Details** automation in the process.
 
     <!-- border -->![001](039.png)
 
-5. In Get Order Details map the input parameters `OrderNumber` of the automation  with the **Order Number** of Order Processing Form.
+4. In Get Order Details, map the input parameter `OrderNumber` of the automation  with the **Order Number** of Order Processing Form.
 
     <!-- border -->![001](040.png)
 
-7. Choose the **Save** button.
+5. Choose the **Save** button.
 
 
 ### Test the automation
@@ -388,7 +388,7 @@ After the design of the automation that retrieves the data form the Excel file, 
 
     <!-- border -->![001](045.png)
 
-2. In the form delete following inputs by selecting the 3 dots next to each input  menu  and selecting **Delete**:
+2. In the form delete following inputs by selecting the 3 dots next to each input menu and selecting **Delete**:
     - Order Amount.
     - Order Date.
     - Expected Delivery Date.
@@ -396,7 +396,7 @@ After the design of the automation that retrieves the data form the Excel file, 
 
     <!-- border -->![001](046.png)
 
-3. **Save** the Form, close the Form Editor and go back to the Order Processing Tab.
+3. **Save** the Form, close the Form Editor and go back to the Order Processing tab.
 
     <!-- border -->![001](047.png)
 
@@ -414,11 +414,11 @@ The different Forms of the process will need Inputs Mapping from the Automation 
 
     <!-- border -->![001](049.png)
 
-4. Do the same for the **Order Confirmation Form**.
+4. Do the same for the **Order Confirmation Notification**.
 
     <!-- border -->![001](050.png)
 
-5. Do the same for the **Order Rejection Form**.
+5. Do the same for the **Order Rejection Notification**.
 
     <!-- border -->![001](051.png)
 
