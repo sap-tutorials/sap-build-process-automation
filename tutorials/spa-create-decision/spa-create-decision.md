@@ -15,9 +15,9 @@ primary_tag: software-product>sap-build-process-automation
  - [Create an Automation to Extract Data](spa-create-automation)
 
 ## You will learn
- - Create & configure decision in the process
- - Create & configure data types
- - Model decision tables with rules expressions
+ - How to create & configure decision in the process
+ - How to create & configure data types
+ - How to model decision tables with rules expressions
 
 ---
 
@@ -199,7 +199,7 @@ First, add this newly created data object as the decision output.
     - Under `UserGroup` enter: `'SO_APPROVER'`
     - Under Email enter your email such as `jane.doe@sap.com`
 
-    > Do not forget to put single-quote (') for string type values
+    > Do not forget to put single-quote (') for string type values.
 
     <!-- border -->![002](026.png)
 
@@ -279,5 +279,7 @@ After you have created and configured the decision, next you have to map the inp
     >You can modify your selection as needed.
 
     <!-- border -->![002](032.png)
+
+3. Save your work.
 
 ---
