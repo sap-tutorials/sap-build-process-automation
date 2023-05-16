@@ -15,6 +15,7 @@ primary_tag: software-product>sap-build-process-automation
   - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
   - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
   - [Scripting enabled for SAP GUI for Windows](https://help.sap.com/viewer/8e71b41b9ea043c8bccee01a10d6ba72/Cloud/en-US/f0fe92f292c946bca1269f826cd682b3.html) on the Client and the Server
+  - Only use 32-bit SAP GUI for Windows Application
   - SAP GUI for Windows must run in the background
 
 ## You will learn
