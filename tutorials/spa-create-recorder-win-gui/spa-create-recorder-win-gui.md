@@ -224,7 +224,7 @@ The password is recorded as **asterisks**. You need to change its value to the r
 
 <!-- border -->![Change Password field Value](21.png)
 
->**CAUTION:** Please note that the best practice would be to create an environment variable of type password and map it to the value field. How to do this will be covered in a next tutorial.
+>**CAUTION:** Please note that the best practice would be to create an environment variable of type password and map it to the value field. How to do this will be covered in the next [tutorial](spa-customize-win-gui-recorder-automation).
 
 The automation is ready to be tested.
 
