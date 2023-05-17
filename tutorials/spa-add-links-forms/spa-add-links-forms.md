@@ -203,7 +203,7 @@ After completing the prerequisites, you will create a project.
      - Creating an automation to extract and read sales order details from an Excel file "25min"                                                                                 
      - Creating a decision to determine authorized approvers. "20 min"                     
      - Creating a visibility scenario for your business process. "15 min"                  
-     - Configuring SAP Build Workzone, standard edition for the visibility scenario. "30 min"                                                                                      
+     - Configuring SAP Build Work Zone, standard edition for the visibility scenario. "30 min"                                                                                      
      - Configuring a form trigger in the SAP Launchpad to run a business process. "35min"
 
     <!-- border -->![Form](14.png)
