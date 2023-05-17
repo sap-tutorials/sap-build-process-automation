@@ -13,8 +13,8 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - Complete the tutorial on creating an [Boost your Business Process with Automation, Decision and Process Visibility](mission.sap-process-automation-boost).
- - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-forms-table/Orders.xlsx) in your local machine.
- - Setup the desktop agent to run automation as explained in [this tutorial](https://developers.sap.com/tutorials/spa-run-agent-settings.html)
+ - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-forms-table/Orders.xlsx) in your local machine.
+ - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings)
 
 ## You will learn
   - How to create Table in the Form.
