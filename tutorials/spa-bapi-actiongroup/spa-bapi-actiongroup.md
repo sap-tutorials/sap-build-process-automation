@@ -26,7 +26,9 @@ parser: v2
 ## Intro
 BAPI is a standard interface to the business object model in SAP products. BAPIs are the primary methods through which customer code and third-party applications interact with SAP products. An Action Group is collection of actions that once executed, return some response. BAPI is part of an Action Group whose actions help you to construct the parameters to execute the BAPI module and return the BAPI response.
 
-In this tutorial, you will create an Action Group Artifact and connect to BAPI RFC_GET_TABLE and query the **MAKT-Material Master** related table.
+In this tutorial, you will create an Action Group Artifact and connect to `BAPI RFC_GET_TABLE` and query the **MAKT-Material Master** related table.
+
+---
 
 ### Execute BAPI module in SAP GUI system
 
@@ -34,7 +36,7 @@ In this tutorial, you will create an Action Group Artifact and connect to BAPI R
 
     <!-- border -->![Action Project](037.png)
 
-2. Select the **RFC_READ_TABLE** module as the Function Module.
+2. Select the `RFC_READ_TABLE` module as the Function Module.
 
     <!-- border -->![Action Project](038.png)
 
@@ -46,8 +48,7 @@ In this tutorial, you will create an Action Group Artifact and connect to BAPI R
 
     <!-- border -->![Action Project](040.png)
 
-This is the output we expect at the end of our automation. In the next steps you will be building an automation for the same.
-
+    This is the output we expect at the end of our automation. In the next steps you will be building an automation for the same.
 
 
 ### Create a project
@@ -76,6 +77,7 @@ This is the output we expect at the end of our automation. In the next steps you
 
     <!-- border -->![Action Project](006.png)
 
+
 ### Create BAPI Action Group Artifact
 
 1.	Select the **+** icon in top-left corner. Select **Create** option and choose **Action Group**.
@@ -87,10 +89,10 @@ This is the output we expect at the end of our automation. In the next steps you
     <!-- border -->![Action Project](008.png)
 
     > There are three types of connections in BAPI Connection System.
-      SSO: This connection type allows you to set SSO connection. SNCName, MessageServer, InstanceNumber and Client are commonly used for this connection type. By default, SNCMode is set to true for this connection type.
-      Basic: This connection type allows you to set Basic connection. User, Password, MessageServer, InstanceNumber and Client are commonly used for this connection type. By default, SNCMode is set to false for this connection type.
-      Custom: This connection type allows you to set any other advance connection. You can add connection parameters as per your requirement. By default, SNCMode is set to false for this connection type. However, you can change the SNCMode value by adding the parameter.
-      In the tutorial, you will use **Basic** Connection Type .
+    SSO: This connection type allows you to set SSO connection. `SNCName`, `MessageServer`, `InstanceNumber` and Client are commonly used for this connection type. By default, `SNCMode` is set to true for this connection type.
+    Basic: This connection type allows you to set Basic connection. User, Password, `MessageServer`, `InstanceNumber` and Client are commonly used for this connection type. By default, `SNCMode` is set to false for this connection type.
+    Custom: This connection type allows you to set any other advance connection. You can add connection parameters as per your requirement. By default, `SNCMode` is set to false for this connection type. However, you can change the `SNCMode` value by adding the parameter.
+    In the tutorial, you will use **Basic** Connection Type .
 
 3. Open SAP Logon Pad. Select the system, right-click the connection and select **Properties**.
 
@@ -117,14 +119,14 @@ Each Action Group artifact can have multiple actions. Each Action corresponds to
     <!-- border -->![Action Project](013.png)
 
 3. In the next popup,
-    - Enter the BAPI module name as **RFC_READ_TABLE**.
+    - Enter the BAPI module name as `RFC_READ_TABLE`.
     - Select the search icon.
     - Select the BAPI module from the search results.
     - Select **Create**.
 
     <!-- border -->![Action Project](014.png)
 
-4. In the Input tab, select the **QUERY_TABLE** and **ROWCOUNT** fields.
+4. In the Input tab, select the `QUERY_TABLE` and **ROWCOUNT** fields.
 
     <!-- border -->![Action Project](015.png)
 
@@ -133,7 +135,7 @@ Each Action Group artifact can have multiple actions. Each Action corresponds to
     <!-- border -->![Action Project](016.png)
 
 6. To test your BAPI module select the **Test** tab.
-    - Enter the **QUERY_TABLE** as **MAKT**.
+    - Enter the `QUERY_TABLE` as **MAKT**.
     - Enter the **ROWCOUNT** as 10.
     - Select the **Test** option.
 
@@ -191,11 +193,11 @@ Each Action Group artifact can have multiple actions. Each Action corresponds to
 
     <!-- border -->![Action Project](025.png)
 
-8. Under the **QUERY_TABLE** input, enter the name of the table you want to read. In this use case, we are reading **MAKT** table. Enter the number of rows you want to query in **ROWCOUNT** input parameter.
+8. Under the `QUERY_TABLE` input, enter the name of the table you want to read. In this use case, we are reading **MAKT** table. Enter the number of rows you want to query in **ROWCOUNT** input parameter.
 
     <!-- border -->![Action Project](026.png)
 
-9. The parameter **Close Connection** closes the connection to your external system automatically. Hence you dont need to close the connection explicitly.
+9. The parameter **Close Connection** closes the connection to your external system automatically. Hence you don't need to close the connection explicitly.
 
     <!-- border -->![Action Project](035.png)
 
