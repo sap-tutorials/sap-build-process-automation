@@ -64,7 +64,7 @@ After completing the prerequisites, you will create a project.
     <!-- border -->![Form](2.png)
 
 2. In the **Create Form** pop-up window, enter:
-    - **Name**: Training Form.
+    - **Name**: Registration Form.
     - A description to describe the task of the form.
     - Choose **Create**.
 
@@ -78,16 +78,14 @@ After completing the prerequisites, you will create a project.
 
     |  **Form Fields**    | **Field Settings with Label**
     |  :------------- | :-------------
-    |  Headline 1         | Training Form
+    |  Headline 1         | Welcome to your SAP Build Process Automation online training
     |  Paragraph          | *Enter the description of your project here*. 
     
-    For the purpose of this tutorial, you may use the following description:
+    This training has been designed to assist you in completing specific courses that are necessary for your job.
 
-    Welcome to our training document. This document has been designed to assist you in completing specific training courses that are necessary for your job. 
-    
-    This document contains links to online training tutorials that will guide you through the different steps of the automation process using SAP Build Process Automation. 
-    
-    We hope that this training document will be useful for you in understanding the benefits of SAP Build Process Automation and how to use it to improve the efficiency of our company.
+    It contains links to online training tutorials that will guide you through the different steps of the automation process using SAP Build Process Automation.
+
+    We hope that this training will be useful for you in understanding the benefits of SAP Build Process Automation and how to use it to improve the efficiency of our company.
 
     <!-- border -->![Form](5.png)
 
@@ -119,10 +117,11 @@ After completing the prerequisites, you will create a project.
 
     |  **Form Fields**    | **Field Settings with Label**
     |  :------------- | :-------------
-    | Headline 1 | First mission 
+    | Headline 1 | First Mission: Build your First Business Process 
     | Headline 2 | Time :  1 hr. 15 min
     | Paragraph  | *Enter the description of your mission here*. 
-    
+    | Chekbox    | I have completed the first mission!. 
+
     For the purpose of this tutorial, you may use: 
 
     In this training, you will learn how to use SAP Build Process Automation's intuitive low-code and no-code capabilities to create, develop, deploy, and run your first business process. You will discover how this tool can help you build the apps you need at the speed demanded by your business, using visual drag-and-drop tools for application development. 
@@ -138,7 +137,7 @@ After completing the prerequisites, you will create a project.
 
     |  :------------- | :------------- 
     | Link | <https://developers.sap.com/mission.sap-process-automation.html>
-    | Link Text | Build Your First Business Process with SAP Build Process Automation
+    | Link Text | Start First Mission
 
     <!-- border -->![Form](9.png)
 
@@ -192,9 +191,11 @@ After completing the prerequisites, you will create a project.
 
     |  **Form Fields**    | **Field Settings with Label**
     |  :------------- | :-------------
-    | Headline 1 | Second mission 
+    | Headline 1 | Second Mission: Boost your Business Process with Automation, Decision and Process Visibility. 
     | Headline 2 | Time :  2 hr. 5 min
     | Paragraph  | *Enter the description of your second mission here*. 
+    | Chekbox    | I have completed the second mission!. 
+
     
     For the purpose of this tutorial, you may use: 
 
@@ -203,7 +204,7 @@ After completing the prerequisites, you will create a project.
      - Creating an automation to extract and read sales order details from an Excel file "25min"                                                                                 
      - Creating a decision to determine authorized approvers. "20 min"                     
      - Creating a visibility scenario for your business process. "15 min"                  
-     - Configuring SAP Build Workzone, standard edition for the visibility scenario. "30 min"                                                                                      
+     - Configuring SAP Build Work Zone, standard edition for the visibility scenario. "30 min"                                                                                      
      - Configuring a form trigger in the SAP Launchpad to run a business process. "35min"
 
     <!-- border -->![Form](14.png)
@@ -212,7 +213,7 @@ After completing the prerequisites, you will create a project.
 
     |  :------------- | :-------------
     | Link | <https://developers.sap.com/mission.sap-process-automation-boost.html>
-    | Link Text | Boost your Business Process with Automation, Decision and Process Visibility 
+    | Link Text | Start Second Mission 
 
     <!-- border -->![Form](15.png)
 
@@ -258,10 +259,11 @@ After completing the prerequisites, you will create a project.
 
     |  **Form Fields**    | **Field Settings with Label**
     |  :------------- | :-------------
-    | Headline 1 | Third mission 
+    | Headline 1 | Third Mission: Create Tables in the Form 
     | Headline 2 | Time :  2 hr. 5 min
     | Paragraph  | *Enter the description of your third mission here*. 
-       
+    | Chekbox    | I have completed the Third mission!. 
+      
     For the purpose of this tutorial, you may use:
 
     In this training, you will learn how to create a table in a form, validate the order details extracted from the automation, and display any error details in the table.
@@ -270,7 +272,7 @@ After completing the prerequisites, you will create a project.
 
     |  :------------- | :-------------
     | Link | <https://developers.sap.com/tutorials/spa-forms-table.html>
-    | Link Text | Create Tables in the Form
+    | Link Text | Start Third Mission
 
     <!-- border -->![Form](20.png)
 
