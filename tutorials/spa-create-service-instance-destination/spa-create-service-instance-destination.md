@@ -111,3 +111,11 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     <!-- border --> ![Create](11.png)    
 
     You have successfully created a destination and you can trigger your business process from any service like SAP Build Apps.
+
+    ### Test the destination
+
+    When you will check the connection to the destination, the status will show **401: Unauthorized**. 
+
+    > Even though the connection returns unauthorized, the status is successful.
+
+    <!-- border --> ![Status connection](12.png) 
