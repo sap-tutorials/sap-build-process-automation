@@ -134,25 +134,21 @@ You can also use an Excel sample of your choice.
 
 20. In the **Edit Expression** window, type: `"Order Number is " + `
 
-21. Then select `salesOrders`>`orderNumber` from the list of Variables.
+21. Then select `currentMember`>`orderNumber` from the list of Variables.
 
-    <!-- border -->![Add salesOrders OrderNumber](13.png)
+    <!-- border -->![Add currentMember OrderNumber](13.png)
 
-    It will take the 0-th index. You will have to use the index variable, so for each loop iteration, it will print the corresponding value.
-
-22. Within [0], insert the variable index.
-
-23. Choose **Save Expression**.
+22. Choose **Save Expression**.
 
     <!-- border -->![Add index variable](13-index.png)
 
-24. Add **Close Excel Instance** after the **For Each** loop as you added **Open Excel Instance** in the first step.
+23. Add **Close Excel Instance** after the **For Each** loop as you added **Open Excel Instance** in the first step.
 
-25. Choose **Save** to save your project.
+24. Choose **Save** to save your project.
 
     <!-- border -->![Add Close Excel Instance](14-1-AddCloseExcelInstance.png)
 
-26. Now you can test the output.
+25. Now you can test the output.
 
     <!-- border -->![Save and Run project to validate result](15-Output.png)
 
