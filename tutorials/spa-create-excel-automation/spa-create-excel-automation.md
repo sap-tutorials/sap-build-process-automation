@@ -136,11 +136,9 @@ You can also use an Excel sample of your choice.
 
 21. Then select `currentMember`>`orderNumber` from the list of Variables.
 
-    <!-- border -->![Add currentMember OrderNumber](13.png)
-
 22. Choose **Save Expression**.
 
-    <!-- border -->![Add index variable](13-index.png)
+    <!-- border -->![Add currentMember OrderNumber](13.png)
 
 23. Add **Close Excel Instance** after the **For Each** loop as you added **Open Excel Instance** in the first step.
 
