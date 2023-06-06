@@ -120,8 +120,7 @@ After completing the prerequisites, you will create a project.
     | Headline 1 | First Mission: Build your First Business Process 
     | Headline 2 | Time :  1 hr. 15 min
     | Paragraph  | *Enter the description of your mission here*. 
-    | Checkbox    | I have completed the first mission!. 
-
+    
     For the purpose of this tutorial, you may use: 
 
     In this training, you will learn how to use SAP Build Process Automation's intuitive low-code and no-code capabilities to create, develop, deploy, and run your first business process. You will discover how this tool can help you build the apps you need at the speed demanded by your business, using visual drag-and-drop tools for application development. 
@@ -194,8 +193,6 @@ After completing the prerequisites, you will create a project.
     | Headline 1 | Second Mission: Boost your Business Process with Automation, Decision and Process Visibility. 
     | Headline 2 | Time :  2 hr. 5 min
     | Paragraph  | *Enter the description of your second mission here*. 
-    | Checkbox    | I have completed the second mission!. 
-
     
     For the purpose of this tutorial, you may use: 
 
@@ -262,8 +259,7 @@ After completing the prerequisites, you will create a project.
     | Headline 1 | Third Mission: Create Tables in the Form 
     | Headline 2 | Time :  2 hr. 5 min
     | Paragraph  | *Enter the description of your third mission here*. 
-    | Checkbox    | I have completed the Third mission!. 
-      
+       
     For the purpose of this tutorial, you may use:
 
     In this training, you will learn how to create a table in a form, validate the order details extracted from the automation, and display any error details in the table.
