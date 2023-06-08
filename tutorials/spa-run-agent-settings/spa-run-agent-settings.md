@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
- - Installed and set up desktop agent
+ - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
 
 ## You will learn
   - How to create an Agent Attribute in the tenant.
