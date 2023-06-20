@@ -181,11 +181,18 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 
 ### Accessing the tasks
+Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. Users can claim, approve and reject the task from their inbox.
+
+Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon in the upper right.
+
+![My Inbox icon](MyInboxIcon.png)
+
+![My Inbox](MyInbox.png)
 
 
-1. Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. Users can claim, approve and reject the task from their inbox.
-   
-    In our testing ,Click **Approve** .
+1.  Open the **My Inbox**, and find the task for the process you just triggered.
+
+2. Click **Approve** .
 
     <!-- border -->![Inbox](8.png)
 
