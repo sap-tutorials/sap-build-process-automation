@@ -52,11 +52,11 @@ SAP Build Process Automation is available either in SAP BTP Free Tier Account as
 
     <!-- border -->![4.PNG](4.png)
 
-5. System shows you all generated IDs which can be changed or accepted in the next page. The most important point here is that you can see the correct service and plan in the green box then choose **Next**.
+5. System shows you all generated IDs which can be changed or accepted. The most important point here is that you can see the correct service and plan in the box then choose **Next**.
 
     <!-- border -->![5.PNG](5.png)
 
-6. Maintain users that would be added to the SAP Build Process Automation service. The users can be added later too.
+6. Maintain users that would be added to the SAP Build Process Automation service. The users can be added later too. Choose **Next**.
 
     <!-- border -->![6.PNG](6.png)
 
@@ -68,7 +68,13 @@ SAP Build Process Automation is available either in SAP BTP Free Tier Account as
 
     <!-- border -->![8.PNG](8.png)
 
-9. In the sub-account, choose **Instances and Subscriptions** in the menu.
+    A pop-up will inform you that the Booster was successfully executed.
+
+9. Choose **Navigate to Subaccount**.
+
+    <!-- border -->![9.PNG](9.png)
+
+10. Then choose **Instances and Subscriptions** in the menu.
 
     You now get an overview on the activated services and you can move directly to the **SAP Build Process Automation** application by selecting the icon.
 
@@ -76,9 +82,9 @@ SAP Build Process Automation is available either in SAP BTP Free Tier Account as
 
     <!-- border -->![10.1](10.1.png)
 
-10. You will have access to SAP Build which is a no-code environment from where you can start your development of the business processes.
+11. You will have access to SAP Build which is a no-code environment from where you can start your development of the business processes.
 
-    <!-- border -->![Studio](110.png)
+    <!-- border -->![Studio](11.png)
 
     Your are now ready to use SAP Build Process Automation in SAP BTP Free Tier.
 
