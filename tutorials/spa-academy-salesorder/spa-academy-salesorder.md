@@ -11,7 +11,7 @@ primary_tag: software-product>sap-build-process-automation
 # Create Sales Order Business Process
 <!-- description --> Create a business project and process to build and extend business processes.
 
-## Prerequisites
+## Prerequisites 
   - [Trial account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/) with the SAP Build Process Automation enabled **OR**
   - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
   - [Configure SMTP Destination](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configuring-smtp-mail-destination) to send mail notifications.
