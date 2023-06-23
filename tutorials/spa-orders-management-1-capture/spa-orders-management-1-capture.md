@@ -21,6 +21,8 @@ primary_tag: software-product>sap-build-process-automation
   - How to capture a web application
   - How to test an application using Application Tester
 
+## Intro
+In this tutorial you will open the Orders Management application in a browser, create an Application in SAP Build Process Automation and declare the elements for the application screen.
 ---
 
 ### Open application to automate

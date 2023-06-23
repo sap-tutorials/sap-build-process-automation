@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Capture Orders Management SAP UI5 application using Recorder
-<!-- description --> In this tutorial, you will record SAPUI5 application screens using SAP Build Process Automation Recorder and declare multiple screens and elements which can be used later in an Automation. We will capture Order Management Application screens and search for an order using supplier name. Later we will extend this use case to read an excel file with supplier names and search for orders.
+<!-- description --> Record the Order Management application to search for supplier name and declare screen elements using SAP Build Process Automation.
 
 ## Prerequisites
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
@@ -19,6 +19,8 @@ primary_tag: software-product>sap-build-process-automation
   - How to use the recorder for SAPUI5 applications to prepare screens for automation
   - How to use **Multi Dimensional Collection** in an Automation
 
+## Intro
+In this tutorial, you will record SAPUI5 application screens using SAP Build Process Automation Recorder and declare multiple screens and elements which can be used later in an Automation. We will capture Order Management Application screens and search for an order using supplier name. Later we will extend this use case to read an excel file with supplier names and search for orders.
 ---
 
 ### Create Project
