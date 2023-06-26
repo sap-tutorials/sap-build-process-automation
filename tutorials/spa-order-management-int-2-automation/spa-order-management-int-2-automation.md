@@ -416,6 +416,9 @@ The name, address, zip and so on from the shipping address are currently stored 
 7.  Choose **Add Condition** and type the following formula in the **Expression Editor**:
     - **Step11.index === 1**
 
+    <!-- border -->![073](images/122.png)
+
+
 8.  Similarly, add three other Conditions and enter the following formulas in the **Expression Editor**:
     - **Step11.index === 2**
     - **Step11.index === 3**
