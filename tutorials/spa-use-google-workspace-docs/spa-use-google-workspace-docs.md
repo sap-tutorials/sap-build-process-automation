@@ -4,7 +4,7 @@ author_profile: https://github.com/celineaudinsap
 keywords: tutorial
 auto_validation: true
 time: 20
-tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
