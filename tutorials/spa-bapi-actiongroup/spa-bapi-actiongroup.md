@@ -16,7 +16,7 @@ parser: v2
 - [Desktop agent](https://developers.sap.com/tutorials/spa-setup-desktop-3-0-agent.html) version must be equal to or greater than 2.0.30.
 - Install Microsoft Visual C++ 2010 Redistributable Package x86, available on the Microsoft website.
 - For using SSO connection system, SSO (SAP Single Sign-On) must be configured on your system.
-- BAPI  with  Remote-enabled Module
+- BAPI with Remote-enabled Module.
 
 ## You will learn
 - How to create an Action Group
