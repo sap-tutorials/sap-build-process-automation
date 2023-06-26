@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Use Google Workspace to search, read and send a Gmail reply
 
 ## Prerequisites
- - Complete [Google Authorization](spa-authorize-google-sdk) tutorial
+ - Complete [Google Authorization](spa-authorize-google-service-account) tutorial
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
 
 ## You will learn
@@ -43,7 +43,7 @@ In this tutorial, you will use Google Authorization SDK and Google Workspace SDK
 
 ### Add Google Workspace SDK
 
-In the previous [tutorial](spa-authorize-google-sdk), you have added the Google Authorization SDK to authorize SAP Build Process Automation to automate Google Applications, now you will need to add Google Workspace SDK to use and automate Google services.
+In the previous [tutorial](spa-authorize-google-service-account), you have added the Google Authorization SDK to authorize SAP Build Process Automation to automate Google Applications, now you will need to add Google Workspace SDK to use and automate Google services.
 
 1. From the automation editor, navigate to **Settings**.
 
@@ -73,7 +73,7 @@ You will add two input parameters.
 
 ### Build an automation to use Gmail
 
-1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-sdk) automation you created in the previous tutorial. This will allow you to authorize SAP Build Process Automation to automate your Google Applications.
+1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-service-account) automation you created in the previous tutorial. This will allow you to authorize SAP Build Process Automation to automate your Google Applications.
 
     <!-- border -->![Google Authorization Automation](01b.png)
 

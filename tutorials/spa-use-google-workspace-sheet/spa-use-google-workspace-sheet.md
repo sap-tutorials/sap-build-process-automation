@@ -13,7 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 
 
 ## Prerequisites
- - Complete [Google Authorization](spa-authorize-google-sdk) tutorial
+ - Complete [Google Authorization](spa-authorize-google-service-account) tutorial
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
 
 ## You will learn
@@ -57,7 +57,7 @@ You will add one input parameter.
 
 ### Build an automation to use Google Sheets
 
-1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-sdk) automation you created.
+1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-service-account) automation you created.
     <!-- border -->![Google Authorization Automation](03.png)
 
     You will import data and create a new Google spreadsheet.
