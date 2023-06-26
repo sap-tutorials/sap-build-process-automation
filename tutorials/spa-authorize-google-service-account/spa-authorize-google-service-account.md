@@ -8,7 +8,7 @@ tags: [tutorial>intermediate, software-product>sap-business-technology-platform,
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Authorize SAP Build Process Automation with Google Authorization SDK
+# Authorize SAP Build Process Automation with Google Authorization SDK Using Google Service Account
 <!-- description --> Authorize SAP Build Process Automation to automate Google Applications with Google Authorization SDK
 
 ## Prerequisites

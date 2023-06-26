@@ -8,7 +8,7 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Authorize SAP Build Process Automation with Google Authorization SDK using Google Oauth Client ID
+# Authorize SAP Build Process Automation with Google Authorization SDK Using Google Oauth Client ID
 <!-- description --> Authorize SAP Build Process Automation to automate Google Applications with Google Authorization SDK using Google Oauth Client ID
 
 ## Prerequisites
