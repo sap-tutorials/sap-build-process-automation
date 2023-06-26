@@ -8,14 +8,14 @@ tags: [ tutorial>intermediate , software-product>sap-business-technology-platfor
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Automate the extraction of Order Details in Order Management Application
+# Automate the Extraction of Order Details in Order Management Application
 <!-- description --> Automate the extraction of order details and product's details in Order Management application.
 
 ## Prerequisites
-- You have completed the first exercise: [Capture Order Management Application Using the Recorder for SAPUI5](irpa-order-management-int-1-recorder)
+- You have completed the first exercise: [Capture Orders Management SAP UI5 Application Using Recorder](spa-order-management-int-1-recorder)
 
 ## You will learn
-  - How to build an SAP Build Process Automation automation to extract data from an SAPUI5 screen.
+  - How to build a SAP Build Process Automation automation to extract data from a SAPUI5 screen.
   - How to get the header and line items data of a table.
   - How to use sub-automations.
 
@@ -30,12 +30,12 @@ Think about what your bot should do. On a very high level it must:
 
 ---
 
-### Define the Automations
+### Define the automations
 
 
 > **NOTE**: You can reuse the automation **Orders Management Automation** created by the screen recorder and modify it later.
 
-For now, start by creating two additional automations: the main one (named **Order Management**) and the other one for Excel (named **Write Excel**).
+For now, start by creating two additional automations: the main one (named **Order Management**) and an other one for Excel (named **Write Excel**).
 
 1.  Make sure that the **Overview** tab is selected and then click the **Create** button and select the **Automation** artifact from the artifact menu.
 
@@ -65,9 +65,9 @@ For now, start by creating two additional automations: the main one (named **Ord
 
     <!-- border -->![004](images/004.png)
 
-### Main Automation: Order Management
+### Main automation - Order Management
 
-In this automation, you will retrieve the date from this [excel](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-order-management-int-2-automation/Demo_procurement.xlsx).
+In this automation, you will retrieve the data from this [excel](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-order-management-int-2-automation/Demo_procurement.xlsx).
 
 Define the general structure of the automation. The following is the data that needs to be retrieved from excel:
 
@@ -87,7 +87,7 @@ Define the general structure of the automation. The following is the data that n
 
     <!-- border -->![013](images/013.png)
 
-    Or you can edit the expression and enter the full path to your file. Make sure the path is within quotation marks **"..."**. For example: `"C:\Users\Public\sbpa\Demo_Procurement.xlsx"**`
+    Or you can edit the expression and enter the full path to your file. Make sure the path is within quotation marks **"..."**. For example: `"C:\Users\Public\sbpa\Demo_Procurement.xlsx"`
 
     <!-- border -->![014](images/014.png)
 
@@ -107,7 +107,7 @@ Define the general structure of the automation. The following is the data that n
 
     <!-- border -->![017](images/017.png)
 
-    So far you read Excel Cell B1 and saved the result in a variable called `supplierName`.
+    So far, you read Excel Cell B1 and saved the result in a variable called `supplierName`.
 
     <!-- border -->![018](images/018.png)
 
@@ -115,7 +115,7 @@ Define the general structure of the automation. The following is the data that n
 
     <!-- border -->![019](images/019.png)
 
-7.  At the end you must make sure that Excel is not used by the SAP Build Process Automation anymore. Therefore, you add the **Release Excel Instance** activity to release the instance.
+7.  At the end you must make sure that Excel is not used by SAP Build Process Automation anymore. Therefore, you add the **Release Excel Instance** activity to release the instance.
 
     <!-- border -->![020](images/020.png)
 
@@ -141,7 +141,7 @@ For instance, click on the **Get Values (Cells)** step and you can see the corre
 
 
 
-### Web Portal Automaton: Search for Order Number
+### Web Portal automation - Search for order number
 
 
 The Recorder created an automation that you renamed to **Web Portal**. On a high level, refer to the following steps:
@@ -156,22 +156,22 @@ Now, you must modify the recorded automation and enhance it. You must make sure 
 
     <!-- border -->![028](images/028.png)
 
-2.  Click on the **Start Screen** step. There is no need to modify anything however if you want, here you can change the default web browser application. Select only chromium web browsers (Chrome or Microsoft Edge).
+2.  Click on the **Start Web Page** step. There is no need to modify anything however if you want, here you can change the default web browser application. Select only chromium web browsers (Chrome or Microsoft Edge).
 
     <!-- border -->![029](images/029.png)
 
-3.  Click on the **Browse Orders** and Click **Define Screen Activities**.
+3.  Click on the **Browse Orders** and choose **Define Screen Activities**.
 
     <!-- border -->![030](images/030.png)
 
 4. To make your automation more robust, you must be sure that the screen is fully loaded.
-   Search for the **Wait (Screen)** activity, and drag and drop it after the **Start Screen** activity. The SAP Build Process Automation will wait until the screen is fully loaded.
+   Search for the **Wait (Screen)** activity, and drag and drop it after the **Start Web Page** activity. SAP Build Process Automation will wait until the screen is fully loaded.
 
     <!-- border -->![031](images/031.png)
 
     <!-- border -->![032](images/032.png)
 
-5.  Additionally, The SAP Build Process Automation must wait to ensure that the search box loads as well. Search for the **Wait (Element)** activity.
+5.  Additionally, SAP Build Process Automation must wait to ensure that the search box loads as well. Search for the **Wait (Element)** activity.
    You have two options on how to add it to your automation. Check them and apply the one you prefer.
 
 **OPTION 1**: Drag and drop the **Wait (Element)** activity on the search box. Make sure the cursor changes to **+** before releasing. The step is added as the last one. Move it just after the **Wait (Screen)** step.
@@ -194,7 +194,7 @@ Select the Search Field element and click **Confirm**.
 
 <!-- border -->![038](images/038.png)
 
-### Input Parameter
+### Input parameter
 
 In the **Set Element (SAPUI5 Recorder)** step, you search for the supplier name. You recorded a fixed value and now, you must modify the automation in such a way that you search for a value defined in Excel.
 
@@ -214,7 +214,7 @@ But how to get the name of the supplier from Excel? It's not available in the **
 
     <!-- border -->![041](images/041.png)
 
-4.   Go, back to the **Search String** step, delete the old value and select the `CustomerName` variable, which is the input parameter passed to the sub-automation.
+4.   Go back to the **Search String** step, delete the old value and select the `CustomerName` variable, which is the input parameter passed to the sub-automation.
 
     <!-- border -->![042](images/042.png)
 
@@ -229,7 +229,7 @@ But how to get the name of the supplier from Excel? It's not available in the **
 6.   Click **Save**.
 
 
-### Web Portal Automation: Get Order Info
+### Web Portal automation - Get Order info
 
 
 Next, make sure that your search results are loaded before you continue with your automation.
@@ -238,15 +238,15 @@ Next, make sure that your search results are loaded before you continue with you
 
     <!-- border -->![046](images/046.png)
 
-2.  Click **Target** and select the `OrderFound` element.
+2.  Click **Target**, select the `OrderFound` element and choose **Confirm**.
 
     <!-- border -->![047](images/047.png)
 
-3.  The SAP Build Process Automation should wait for the details screen to open and load. Add a **Wait (Element)** step.
+3.  SAP Build Process Automation should wait for the details screen to open and load. Add a **Wait (Element)** step.
 
     <!-- border -->![048](images/048.png)
 
-4.  Click **Target** and select the **Price** element.
+4.  Click **Target**, select the **Price** element and choose **Confirm**.
 
     <!-- border -->![049](images/049.png)
 
@@ -254,7 +254,7 @@ Next, make sure that your search results are loaded before you continue with you
 
     <!-- border -->![050](images/050.png)
 
-6.  Set the target to **Order Number** element.
+6.  Set the target to **Order Number** element and choose **Confirm**.
 
     <!-- border -->![051](images/051.png)
 
@@ -281,7 +281,7 @@ Next, make sure that your search results are loaded before you continue with you
     > **NOTE**: You can also rename these two **Get Element** activities to more meaningful names (for example, **Get Element (price)** and  **Get Element (order number)**).
 
 
-### Web Portal Automation: Get Shipping Address and Line Items Information Using Multi-level Collection
+### Web Portal automation - Get Shipping Address and Line Items information using multi-level collection
 
 
 1. Use the **Get Element** activity for the **Shipping Address** table. Drag and drop the activity on the table.
@@ -298,7 +298,7 @@ Next, make sure that your search results are loaded before you continue with you
 
 4. Click **Save**.
 
-    <!-- border -->![058](images/058bis.png)
+    <!-- border -->![058](images/058.png)
 
 5. Use the **Get Element** activity for the **Line Items** table. Drag and drop the activity on the Table Data.
 
@@ -306,7 +306,7 @@ Next, make sure that your search results are loaded before you continue with you
 
     <!-- border -->![059](images/059.png)
 
-    The Table Data is **Two-Dimensional**, hence **two** "For Each" loop has been automatically created.
+    The Table Data is **Two-Dimensional**, hence **two** "For Each" loop have been automatically created.
 
     <!-- border -->![060](images/060.png)
 
@@ -334,9 +334,9 @@ Next, make sure that your search results are loaded before you continue with you
 
 13. Click on the **Log Message** activity, and click the expression editor button for the **Input Parameters** message.
 
-14. Edit the expression to **'Row no :' + Step12.index**.
+14. Edit the expression to **'Row no :' + Step13.index**.
 
-    > **NOTE**: Step number 12 is the first for loop to display the row count.
+    > **NOTE**: Step number 13 is the first for loop to display the row count.
 
     <!-- border -->![065](images/065.png)
 
@@ -349,7 +349,7 @@ Next, make sure that your search results are loaded before you continue with you
 ### Create Data Types for Shipping Address and Line Item
 
 
-The name, address, zip and so on from the shipping address are currently stored in an array. You can add better structure to that by using **Data Types** from the SAP Build Process Automation. These data types can store multiple variables and named fields to represent more complex data structures. Create two data types: one for a shipping address and another for a line item.
+The name, address, zip and so on from the shipping address are currently stored in an array. You can add better structure to that by using **Data Types** from SAP Build Process Automation. These data types can store multiple variables and named fields to represent more complex data structures. Create two data types: one for a shipping address and another for a line item.
 
 **Save** the automation you have so far. Go to **Overview** tab.
 
@@ -365,7 +365,7 @@ The name, address, zip and so on from the shipping address are currently stored 
 
     <!-- border -->![059](images/059bis.png)
 
-4.  Now, go back to the **Line Item** data type, create a new field by clicking on the **New Field**
+4.  Now, go back to the **Line Item** data type, create a new field by clicking on **New Field**.
 
     <!-- border -->![060](images/060bis.png)
 
@@ -384,7 +384,7 @@ The name, address, zip and so on from the shipping address are currently stored 
 8.  Click **Save** to save both data types.
 
 
-### Add Shipping Address Data Type in Web Portal Automation
+### Add Shipping Address Data Type in Web Portal automation
 
 
 1.  Go back to the **Web Portal** automation and drag and drop the **Shipping Address** data type just after the **Get Element (Price)** step.
@@ -401,7 +401,6 @@ The name, address, zip and so on from the shipping address are currently stored 
 
     <!-- border -->![070](images/070bis.png)
 
-
 4.  Drag a **Condition** step and drop it under **Get Element** step.
 
     <!-- border -->![071](images/071bis.png)
@@ -415,7 +414,10 @@ The name, address, zip and so on from the shipping address are currently stored 
     <!-- border -->![073](images/073bis.png)
 
 7.  Click **Add Condition** and type the following formula in the **Expression Editor**:
-**Step11.index === 1**
+    - **Step11.index === 1**
+
+    <!-- border -->![073](images/122.png)
+
 
 8.  Similarly, add three other Conditions and enter the following formulas in the **Expression Editor**:
     - **Step11.index === 2**
@@ -475,7 +477,7 @@ The name, address, zip and so on from the shipping address are currently stored 
   <!-- border -->![077](images/077bis.png)
 
 
-### Add Line Item Data Type in Web Portal Automation
+### Add Line Item Data Type in Web Portal automation
 
 
 Start by creating a variable which will contain multiple line items.
@@ -498,7 +500,7 @@ Start by creating a variable which will contain multiple line items.
 
     <!-- border -->![080](images/080bis.png)
 
-7. Select the **Add Item (List)** activity and select the `list` field value to `lineItems` and `itemToAdd` field value to `lineItem`.
+7. Select the **Add Item (List)** activity and set the `list` field value to `lineItems` and `itemToAdd` field value to `lineItem`.
 
     <!-- border -->![081](images/081bis.png)
 
@@ -555,10 +557,10 @@ Repeat steps 10-13 with the following information :
 
 
 
-### Input/Output Parameters
+### Input/Output parameters
 
 
-Now, you have to pass data between sub-automation. You can do this by using input and output parameters.
+Now, you have to pass data between sub-automations. You can do this by using input and output parameters.
 
 The web automation will get the partner name from the main automation and return the order number, price, shipping info and line item details. This data will in turn be passed to the excel automation.
 
@@ -586,7 +588,7 @@ The web automation will get the partner name from the main automation and return
 5.  Click **Save** to save the automation.
 
 
-### Write Excel Automation - First Worksheet
+### Write Excel automation - First Worksheet
 
 
 Now, you must automate the Excel part. You have collected the data from the SAPUI5 application. You must insert the data back into Excel. You will do this in the **Write Excel** sub-automation.
@@ -660,10 +662,10 @@ The following is the expected result:
 
 
 
-### Write Excel Automation - Second Worksheet
+### Write Excel automation - Second Worksheet
 
 
-Now, you add a second worksheet for the line item details.
+Now, you will add a second worksheet for the line item details.
 
 Desired result:
 
@@ -685,7 +687,7 @@ Desired result:
 
     <!-- border -->![112](images/112.png)
 
-5.  The data cells start at row **2**, the index starts at **0**, so use the following formula in the `rangeDefintion` field to determine the correct cell:
+5.  The data cells start at row **2**, the index starts at **0**, so use the following formula in the `rangeDefinition` field to determine the correct cell:
 
     **"A" + (Step9.index + 2)**
 
