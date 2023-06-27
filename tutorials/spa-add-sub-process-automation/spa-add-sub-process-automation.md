@@ -8,7 +8,7 @@ tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tu
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Add a subprocess to an Automation
+# Add a Subprocess to an Automation
 <!-- description --> Learn how to use a subprocess in SAP Build Process Automation.
 
 ## Prerequisites
@@ -34,7 +34,7 @@ You will incorporate a subprocess within a primary process.
 
 After completing the [prerequisites](https://developers.sap.com/tutorials/spa-add-links-forms.html), your process will look like this:
     
-<!-- border -->![sub-process](1.png)
+<!-- border -->![subprocess](1.png)
 
 1. Navigate to the **Overview** tab, from the editable version of your project, click the **Create** dropdown and choose **Process**.
 
