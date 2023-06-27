@@ -11,8 +11,9 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create a Visibility Scenario for your Business Process
 
 ## Prerequisites
- - [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation) Completed
- - [Get Order Details from Excel File with SPA](spa-create-automation) Completed
+
+ - [Create an Automation to Extract Data](spa-create-automation) 
+ - [Create a Decision](spa-create-decision)
 
 ## You will learn
   - How to create and configure a Process Visibility Scenario
@@ -24,9 +25,9 @@ The process is created where several forms are defined, an automation to extract
 
 ### Prepare Process
 
-Before creating a **Visibility Scenario** we need to prepare the process.
+Before creating a **Visibility Scenario**, you need to prepare the process.
 
-1.  In the **Process Builder** open the process and on the right-hand side select the tab **Visibility**.
+1.  In the **Process Builder** open the process and on the right-hand side, select the tab **Visibility**.
 
     <!-- border -->![Find Visibility tab](Step1-1.png)
 

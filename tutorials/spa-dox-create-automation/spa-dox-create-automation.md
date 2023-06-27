@@ -117,7 +117,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](013.png)
 
-2. In the **Create Document Template** window, under **Details**:
+2. In the **Add Document Template** window, under **Start**:
     - Choose **Create a new template**,
     - Enter the **Name** of the template,
     - Upload the invoice document which you have downloaded from prerequisites,
@@ -125,21 +125,43 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](014.png)
 
-3. Select **Invoice** as the document type of your template and choose **Next**.
+3. Under **Enter Details**:
+    - Enter the **Name** of the template,
+    - Upload the invoice document which you have downloaded from prerequisites,
+    - Choose **Next**.
+
+    <!-- border -->![Automation](042.png)
+
+4. Select **Invoice** as the document type of your template and choose **Next**.
 
     <!-- border -->![Automation](015.png)
 
-4. Under **Choose Schema**:
-    - Choose **Create New**,
-    - Enter the **Name** of the schema,
-    - Choose the Header fields that you would extract the data from the Invoice document. In this scenario you would select `documentNumber`, `grossAmount`, `senderName`.
-    - Choose **Add**.
+5. Under **Choose Schema**:
+    - Choose **New**.
 
     <!-- border -->![Automation](016.png)
 
-5. Document Information Extraction SDK would be added as dependency to your project. The schema and template are created successfully.
+6. Under **Create New Schema**:
+    - Enter **Invoice Schema Name**,
+    - Choose **Next**.
 
-6. Once Upload will be completed, choose **Open in a new tab**.
+    <!-- border -->![Automation](045.png)
+
+7. Under **Define information to extract**:
+    - Select the **Add** option to add **Header Fields**. For this scenario you will be adding `documentNumber`, `grossAmount` and `senderName`,
+    - Choose **Next**.
+
+    <!-- border -->![Automation](044.png)
+
+8. Under **Summary**:
+    - SAP Build provides the summary of all the details related to schema to be created,
+    - Choose **Add**.
+
+    <!-- border -->![Automation](043.png)
+
+9. Document Information Extraction SDK would be added as dependency to your project. The schema and template are created successfully.
+
+10. Once Upload will be completed, choose **Open in a new tab**.
 
     <!-- border -->![Automation](017.png)
 
@@ -199,52 +221,73 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](028.png)
 
-4. Select the activity. Maintain the parameters for the activity as follows:
-    - Under Document Schema: select your Schema
-    - Under Document Template: select your Template
+4. Select the activity. Choose **Add Document Template**
+
+    <!-- border -->![Automation](046.png)
+
+5. In the **Add Document Template** window:
+
+    - Select **Choose a template from the current project**,
+    - Choose **Next**.
+
+    <!-- border -->![Automation](047.png)
+
+6. Under **Select Template**:
+
+    - Choose the **ABCSchema1** you created in the previous steps,
+    - Choose **Next**.
+
+    <!-- border -->![Automation](048.png)
+
+7. Under Summary, choose **Add**.
+
+    <!-- border -->![Automation](049.png)
+
+8. Select the activity. Maintain the parameters for the activity as follows:
+
     - Under `documentPath`: choose `FilePath`
 
     <!-- border -->![Automation](029.png)
 
-5. You have already created the data type **Invoice** in Step 2. Now, you will create a variable of type **Invoice**.
+9. You have already created the data type **Invoice** in Step 2. Now, you will create a variable of type **Invoice**.
 
-6. Click on the canvas. Search for the datatype **Invoice**, located under the **Data Types** section.
+10. Click on the canvas. Search for the datatype **Invoice**, located under the **Data Types** section.
 
     <!-- border -->![Automation](030.png)
 
-7. Drag and drop the data type **Invoice** into the automation flow.
+11. Drag and drop the data type **Invoice** into the automation flow.
 
     <!-- border -->![Automation](031.png)
 
-8. Select **Create Invoice variable**. In the Input Parameters, under value, choose **Create Custom Data**.
+12. Select **Create Invoice variable**. In the Input Parameters, under value, choose **Create Custom Data**.
 
     <!-- border -->![Automation](032.png)
 
-9. Choose the Edit button to map the parameters:
+13. Choose the Edit button to map the parameters:
     - `DocumentNumber` to the extracted invoice data from the activity Extract Data (template),
     - Repeat the same for `GrossAmount` and `SenderName` and map it to the corresponding fields of `extractedData`.
 
     <!-- border -->![Automation](033.png)
 
-10. Rename the output parameter to `myInvoiceData`.
+14. Rename the output parameter to `myInvoiceData`.
 
-11. The final input and output parameters of **Create Invoice Variable** looks as below.
+15. The final input and output parameters of **Create Invoice Variable** looks as below.
 
     <!-- border -->![Automation](034.png)
 
-12. Print the invoice data using the activity **Log message**.
+16. Print the invoice data using the activity **Log message**.
 
     >  With this activity you generate a log message within the tester and the trace file, which is useful for setting up an automation. By default, a log will be "Information".
 
-13. Click on canvas, search for **Log Message** activity and drag and drop it into the automation flow.
+17. Click on the canvas, search for **Log Message** activity and drag and drop it into the automation flow.
 
     <!-- border -->![Automation](035.png)
 
-14. Select **Log Message** activity. In Input Parameters under message add `myInvoiceData` value.
+18. Select **Log Message** activity. In Input Parameters under message add `myInvoiceData` value.
 
     <!-- border -->![Automation](036.png)
 
-15. Select **Save**.
+19. Select **Save**.
 
 
 

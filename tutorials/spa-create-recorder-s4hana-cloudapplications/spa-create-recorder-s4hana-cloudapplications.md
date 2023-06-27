@@ -8,26 +8,24 @@ tags: [tutorial>beginner, software-product>sap-business-technology-platform, tut
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Automate SAP S/4 HANA Cloud Applications using Recorder
+# Automate SAP S/4 HANA Cloud Application Using the Recorder
 <!-- description --> Automate the process of creating a purchase order in Manage Purchase Orders application in SAP S/4 HANA Cloud.
 
 ## Prerequisites
  - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
- - Register to [SAP S/4 HANA Cloud Trial](https://www.sap.com/germany/products/s4hana-erp/trial.html) account
+ - Register to [SAP S/4 HANA Cloud Trial](https://www.sap.com/products/erp/s4hana/trial.html) account
  - Manage Purchase Orders application must run in the background
 
 ## You will learn
   - How to automate applications in SAP S/4 HANA Cloud
   - How to re record applications
 
-### Open Manage Purchase Orders Application
+### Search for Manage Purchase Orders Application
 
 1.  Once you have successfully created S/4 HANA Cloud Trial account as mentioned in pre-requisites, navigate to **SAP S/4 HANA Cloud Trial account.**
 
 2.  Search for **Manage Purchase Orders**.
-
-3.  Select the tile **Manage Purchase Orders**. This will open the **Manage Purchase Orders** application.
 
     <!-- border -->![Manage Purchase Orders](01a.png)
 
@@ -36,19 +34,27 @@ primary_tag: software-product>sap-build-process-automation
 
 You will create a new project in SAP Build Process Automation application.
 
-1.  Go to **SAP Build** application.
+1. Navigate to **SAP Build** application and create a project by choosing **Create**.
 
-2.  Create a new task automation project. Type **Upload Purchase Order** in the **Project Name** field.
+    <!-- border -->![Create a project](01.png)
 
-3.  Choose **Create**.
+2. Select **Build an Automated Process**.
+
+    <!-- border -->![Build an Automated Process](02.png)
+
+3. Select **Task Automation**.
+
+    <!-- border -->![Task Automation](03.png)
+
+4. In the **Create Task Automation** window, please give the project the name: **Upload Purchase Order** and choose **Create**.
 
     <!-- border -->![Create Task Automation](02a.png)
 
-4.  Once the project is created, a new tab will open. You will need to configure your agent version. Select the version of the agent installed on your machine and choose **Confirm**.
+5.  Once the project is created, a new tab will open. You will need to configure your agent version. Select the version of the agent installed on your machine and choose **Confirm**.
 
     <!-- border -->![Select desktop version](03a.png)
 
-5. A pop-up window asking you to create an automation will appear, please choose **Cancel**.
+6. A pop-up window asking you to create an automation will appear, please choose **Cancel**.
 
     <!-- border -->![Cancel automation](04a.png)
 
@@ -132,7 +138,7 @@ In earlier versions of the Recorder, when the screen changed in the application,
 
     > **CAUTION:** Please wait until the page is fully recorded.
 
-3. Now choose **Create**.
+3. On the **Manage Purchase Orders** application, choose **Create**.
 
     <!-- border -->![Recorder](13.png)
 
@@ -229,11 +235,11 @@ The application **Manage Purchase Orders** and the automation **Manage Purchase 
 
 <!-- border -->![Overview](25.png)
 
-You will find the Declared Application in **Build Process Automation**. You can view the recorded screens under **Declared Application** and the recorded elements under **Declared Elements**. If required, you can manually edit the screens to add or remove objects.
+You will find the Declared Application in **Manage Purchase Orders** application. You can view the recorded screens under **Declared Application** and the recorded elements under **Declared Elements**. If required, you can manually edit the screens to add or remove objects.
 
 <!-- border -->![Overview Application](26.png)
 
-All the recorded steps will be displayed in the automation designer of **Build Process Automation**. You can then edit the automation to update the Step Details.
+All the recorded steps will be displayed in the automation designer of **Manage Purchase Orders** automation. You can then edit the automation to update the Step Details.
 
 <!-- border -->![Overview Automation](27.png)
 
@@ -259,7 +265,7 @@ When you record an application, you always create a new application and automati
 
 3. In the **Create Application** popup window, enter the following:
 
-    - Enter the name in the **Application Name** field: logon
+    - Enter the name in the **Application Name** field: Home
     - Optional: edit the **Application Identifier** field without using a space.
     - Enter a short description in the **Description** field: Add home screen
 
@@ -319,6 +325,8 @@ When you record an application, you always create a new application and automati
 15. You can delete step 3 and 4 as they are duplicate activities.
 
     <!-- border -->![Delete duplicate steps](39.png)
+
+16. Save your automation.
 
 16. You may test your automation. Now **Home** application is opened in a browser window and creates the purchase order with values provided in the steps of the automation.
 

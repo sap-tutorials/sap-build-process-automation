@@ -4,7 +4,7 @@ author_profile: https://github.com/celineaudinsap
 keywords: tutorial
 auto_validation: true
 time: 20
-tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier]
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
@@ -13,7 +13,7 @@ parser: v2
 <!-- description --> Use Google Workspace to automate Google Slides in SAP Build Process Automation
 
 ## Prerequisites
- - Complete [Google Authorization](spa-authorize-google-sdk) tutorial
+ - Complete [Google Authorization](spa-authorize-google-service-account) tutorial
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
 
 ## You will learn
@@ -41,7 +41,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
 ### Build an automation to use Google Slides
 
-1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-sdk) automation you created.
+1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-service-account) automation you created.
 
     <!-- border -->![Google Authorization Automation](03.png)
 

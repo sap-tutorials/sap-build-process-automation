@@ -120,7 +120,7 @@ After completing the prerequisites, you will create a project.
     | Headline 1 | First Mission: Build your First Business Process 
     | Headline 2 | Time :  1 hr. 15 min
     | Paragraph  | *Enter the description of your mission here*. 
-    | Chekbox    | I have completed the first mission!. 
+    | Checkbox    | I have completed the first mission!
 
     For the purpose of this tutorial, you may use: 
 
@@ -194,7 +194,7 @@ After completing the prerequisites, you will create a project.
     | Headline 1 | Second Mission: Boost your Business Process with Automation, Decision and Process Visibility. 
     | Headline 2 | Time :  2 hr. 5 min
     | Paragraph  | *Enter the description of your second mission here*. 
-    | Chekbox    | I have completed the second mission!. 
+    | Checkbox    | I have completed the second mission!
 
     
     For the purpose of this tutorial, you may use: 
@@ -205,7 +205,7 @@ After completing the prerequisites, you will create a project.
      - Creating a decision to determine authorized approvers. "20 min"                     
      - Creating a visibility scenario for your business process. "15 min"                  
      - Configuring SAP Build Work Zone, standard edition for the visibility scenario. "30 min"                                                                                      
-     - Configuring a form trigger in the SAP Launchpad to run a business process. "35min"
+     - Configuring a form trigger in the SAP Business Site to run a business process. "35min"
 
     <!-- border -->![Form](14.png)
 
@@ -262,7 +262,7 @@ After completing the prerequisites, you will create a project.
     | Headline 1 | Third Mission: Create Tables in the Form 
     | Headline 2 | Time :  2 hr. 5 min
     | Paragraph  | *Enter the description of your third mission here*. 
-    | Chekbox    | I have completed the Third mission!. 
+    | Checkbox    | I have completed the Third mission! 
       
     For the purpose of this tutorial, you may use:
 

@@ -28,16 +28,17 @@ An Automation is a succession of steps to orchestrate multiple activities and ap
 
 ---
 
-### Create the Automation
+### Create the automation
 
 
 In this exercise, you will automate the process to read the **sales order** details from an Excel and select the specific sales order details based on the input from the submitted form. To design the automation, you will need an Excel file filled with the sales order data. You can:
 
 - Download [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/50c942bbd0a7612e1cb672134578e517786e7b0e/tutorials/spa-create-automation/Orders.xlsx) **OR**
+
 - Create the file yourself using the following data:
 
 
-    | **Order Number**| **Order Amount** | **Order Date** | **Shipping Country**         | **Expected Delivery Date** | **Order Status**
+| **Order Number**| **Order Amount** | **Order Date** | **Shipping Country**         | **Expected Delivery Date** | **Order Status**
 |  :----------| :------------|:-----------| :------------------------|:-----------------------|:-----------
 |  PO7991     | 410418.22    | 1/21/2022	| United States of America | 1/29/2022	            | In Time
 |  PO7918     | 150935.13	   | 1/22/2022	| United Kingdom           | 1/27/2022	            | Urgent
@@ -66,7 +67,7 @@ In this exercise, you will automate the process to read the **sales order** deta
 
 3. A new pop-up will appear to create the automation. Do the following in the pop-up:
 
-    -  Under Name Field enter: **Get Order Details**.
+    -  Under Name enter: **Get Order Details**.
     -  Under Description enter: **Automation for Order Process**.
     -  Choose the **Create** button.
 
@@ -79,7 +80,7 @@ In this exercise, you will automate the process to read the **sales order** deta
     <!-- border -->![001](004.png)
 
 
-### Create Environment Variable
+### Create environment variable
 
 
 Business projects usually need to use parameters and variable at runtime. These variables are usually saved in their runtime landscapes for example Dev, Test or Production environments. In this case, you will need to maintain an environment variable that will contain the file full path of the Excel file used in the automation.
@@ -108,7 +109,7 @@ Business projects usually need to use parameters and variable at runtime. These 
 
 
 
-### Add Excel Activities
+### Add Excel activities
 
 
 You will now design the automation in the Automation Editor by dragging-and-dropping activities into the workflow of the automation. Later you will configure the inputs and outputs of each activity. You will need activities to interact with the Microsoft Excel application. These activities will open the Excel application, open the workbook that contains the sales orders details, and map them into a data type that will be created during the design. Last, after extracting and mapping the data, the Excel application will be closed.
@@ -150,13 +151,13 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
     ![001](014.png)
 
-7. Select the button **From Excel Data**.
+7. Select the button **+ From Excel data**.
 
     ![001](015.png)
 
     > A pop up appears to create a data type. A **Sales Order** variable is needed to collect the data from the Excel sheet columns. In this step, a variable is automatically created from the Excel file columns.
 
-8. Under Name of the data type **Sales Order** and choose the **Create** button.
+8. Under Name of the data type, enter **Sales Order** and choose the **Create** button.
 
     <!-- border -->![001](016.png)
 
@@ -190,7 +191,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 
 
-### Add Input and Output Parameters
+### Add input and output parameters
 
 
 Input and output parameters allow you to exchange data in the workflow of your automation between activities, screens, and scripts.
@@ -213,15 +214,17 @@ Input and output parameters allow you to exchange data in the workflow of your a
 
     <!-- border -->![001](025.png)
 
+4. Save your work.
 
-### Create a Variable
+
+### Create a variable
 
 
 Variables that are used, build your automation, and are data storage that have a name, a type (example: string, list of string or data type), and a value. A variable in the automation is also associated to a step represented by its number.
 
 1.  In the **Automation Details** under Tools:
     - Search for the **Sales Order** data type (created in the previous step).
-    - Drag and drop the **Sales Order** into the canvas.
+    - Drag and drop the **Sales Order** data type into the canvas.
 
     <!-- border -->![001](026.png)
 
@@ -231,8 +234,10 @@ Variables that are used, build your automation, and are data storage that have a
 
     <!-- border -->![001](027.png)
 
+3. Save your work.
 
-### Looping through Excel Sheet and searching for the Order
+
+### Looping through Excel sheet and searching for the order
 
 
 Now you will loop through each **Order** from the Excel sheet, retrieve the order details for order number submitted in the **Order Processing Form**. **For Each** control allows you to go through a list of members provided as input to your automation, and execute an action for each member in that list.
@@ -274,7 +279,7 @@ This control has the following loop parameters:
 
     > If the order number is found in Excel, i.e. the condition is **True**, set the variable using **Set Variable Value** activity that is a **Data Management Activity**.
 
-6. To add set variable Value:
+6. To add Set Variable Value:
     - Click on the canvas.
     - In Automation Details search for the activity **Set Variable Value**.
     - Drag and Drop the activity into the canvas.
@@ -299,49 +304,49 @@ This control has the following loop parameters:
 
 
 9. Use **Log message** activity to print your results. To add Log Message:
-     - in Automation Details search for the activity **Log message**,
+     - In Automation Details search for the activity **Log message**,
      - Drag and Drop the activity into the canvas.
 
     <!-- border -->![001](036.png)
 
 10. Use the activity to check `selectedOrderDetails` in testing mode. To do that:
     - Select **Log Message**,
-    - In message field enter `selectedOrderDetails`.
+    - In message field, select `selectedOrderDetails`.
 
+11. Save your work.
 
-
-### Link Automation Parameters with Business Process
+### Link automation parameters with business process
 
 
 Apart from creating an output parameter, it is mandatory to pass the data through the **End** step to expose the data outside the automation.
 
 1. To do that:
     - Select **End**.
-    - In the configuration screen on the right, under the Output Parameter, in the `SelectedOrder` Field enter `selectedOrderDetails`.
+    - In the configuration screen on the right, under the Output Parameter, in the `SelectedOrder` field enter `selectedOrderDetails`.
     - **Save** the Automation.
 
     <!-- border -->![001](037.png)
 
-    > Make sure to add the steps **Condition**, **Set variable value**, **End Loop** inside the **For Each** block.
+    > Make sure to add the steps **Condition**, **Set Variable Value**, **End Loop** inside the **For Each** block.
 
 2. The complete automation **Get Order Details** automation looks as below.  
 
     <!-- border -->![001](038.png)
 
-3. Map the Automation Parameters with Form Parameters.
+    Now you will map the Automation Parameters with the Form Parameters.
 
-4. Select **Order Processing** Process. Choose **Get Order Details** automation in the process.
+3. Select **Order Processing** Process. Choose **Get Order Details** automation in the process.
 
     <!-- border -->![001](039.png)
 
-5. In Get Order Details map the input parameters `OrderNumber` of the automation  with the **Order Number** of Order Processing Form.
+4. In Get Order Details, map the input parameter `OrderNumber` of the automation  with the **Order Number** of Order Processing Form.
 
     <!-- border -->![001](040.png)
 
-7. Choose the **Save** button.
+5. Choose the **Save** button.
 
 
-### Test the Automation
+### Test the automation
 
 
 1. Navigate back to the automation **Get Order Details** and choose the **Test** button.
@@ -352,8 +357,8 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
     |  Parameter         | Value  
     |  :---------------- | :-------------  |
-    |  `OrderNumber`  | Any order number which is available in `SalesOrdersDetails` Excel |
-    |  `OrderFilePath` | Path where the `SalesOrderDetails` Excel is stored on your local machine |
+    |  `OrderNumber`  | Any order number which is available in Sales Order Data Excel |
+    |  `OrderFilePath` | Path where the Sales Order Data Excel is stored on your local machine |
 
     Select **Test** button.
 
@@ -372,7 +377,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 
 
-### Simplify the Start Form
+### Simplify the start form
 
 
 After the design of the automation that retrieves the data form the Excel file, simplify the start form by deleting the not needed fields.
@@ -383,7 +388,7 @@ After the design of the automation that retrieves the data form the Excel file, 
 
     <!-- border -->![001](045.png)
 
-2. In the form delete following inputs by selecting the 3 dots next to each input  menu  and selecting **Delete**:
+2. In the form delete following inputs by selecting the 3 dots next to each input menu and selecting **Delete**:
     - Order Amount.
     - Order Date.
     - Expected Delivery Date.
@@ -391,12 +396,12 @@ After the design of the automation that retrieves the data form the Excel file, 
 
     <!-- border -->![001](046.png)
 
-3. **Save** the Form, close the Form Editor and go back to the Order Processing Tab.
+3. **Save** the Form, close the Form Editor and go back to the Order Processing tab.
 
     <!-- border -->![001](047.png)
 
 
-### Mapping Forms of the Process
+### Mapping forms of the process
 
 
 The different Forms of the process will need Inputs Mapping from the Automation Outputs.
@@ -409,11 +414,11 @@ The different Forms of the process will need Inputs Mapping from the Automation 
 
     <!-- border -->![001](049.png)
 
-4. Do the same for the **Order Confirmation Form**.
+4. Do the same for the **Order Confirmation Notification**.
 
     <!-- border -->![001](050.png)
 
-5. Do the same for the **Order Rejection Form**.
+5. Do the same for the **Order Rejection Notification**.
 
     <!-- border -->![001](051.png)
 
