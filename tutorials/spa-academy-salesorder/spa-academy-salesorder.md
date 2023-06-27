@@ -15,13 +15,13 @@ primary_tag: software-product>sap-build-process-automation
   - [Trial account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/) with the SAP Build Process Automation enabled **OR**
   - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
   - [Configure SMTP Destination](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configuring-smtp-mail-destination) to send mail notifications.
+  - Download the [this]() excel file for Sales Order datatype.
 
 
 ## You will learn
   - How to create a SAP Build Process Automation project
   - How to create a process that automates sales order creation and approval
   - How create an API trigger to integrate with any applications like SAP Build Apps, CAP etc.
-  - How to use Decisions artifact.
   - How to send an Email notification.
 
 ---
@@ -95,26 +95,18 @@ There are many use cases where you can make a difference using SAP Build Process
 
     <!-- border -->![6.1](6.1.png)
 
-3. Click on **New Field** to add new fields to the data type **Sales Order**.
+3. Click on **Import Excel File**.
 
     <!-- border -->![6.2](6.2.png)
 
+3. Click on **Browse** to select the excel file.
 
-4.  Repeat the process to add all the fields of the type as shown below.
+    <!-- border -->![6.4](6.4.png)
 
-    |  Field Name   | Type
-    |  :------------- | :-------------
-    |  `material`   | String  |
-    |  `orderAmount`     | Number |
-    |  `shipToParty`    | String|
-    |  `salesOrderType`    | String|
-    |  `salesOrganisation`    | String|
-    |  `distributionChannel`  | String|
-    |  `shippingCountry`    | String|
-    |  `expectedDeliveryDate`  | Date|
-    |  `division`  | String |
+3. Select **Import an Excel File**.
 
-    >**IMPORTANT:** The spelling and casing of the fields, as well as any extra spaces, is crucial because the API to trigger the process will require the fields exactly as written.
+    <!-- border -->![6.5](6.5.png)
+
 
     Your final data type looks as below.
 
