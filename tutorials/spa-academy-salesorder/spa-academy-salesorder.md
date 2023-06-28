@@ -21,7 +21,6 @@ primary_tag: software-product>sap-build-process-automation
   - How to create a SAP Build Process Automation project
   - How to create a process that automates sales order creation and approval
   - How create an API trigger to integrate with any applications like SAP Build Apps, CAP etc.
-  - How to use Decisions artifact.
   - How to send an Email notification.
 
 ---
@@ -87,6 +86,52 @@ There are many use cases where you can make a difference using SAP Build Process
 
 ### Create a Data Type
 
+[OPTION BEGIN [Import Excel File]]
+
+You have two options to create the fields in data type. You can either import an excel or define the fields manually.
+
+In this option you will be importing an excel file to create the data type. Based on the values present in the excel , the type of field is determined automatically and the fields are created accordingly. For example orderAmount is maintained as 19000, hence the  type of the field orderAmount is determined as Number.
+
+
+1.  Download [this](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-academy-salesorder/SalesorderDatatype.xlsx) excel file for Sales Order datatype.
+
+    <!-- border -->![Create data type](6.6.png)
+
+2.  Click on **+** > **Create** > **Data Type**.
+
+    <!-- border -->![Create data type](6.png)
+
+3.  Name the data type **Sales Order**.
+
+    <!-- border -->![6.1](6.1.png)
+
+4. Click on **Import Excel File**.
+
+    <!-- border -->![6.2](6.2.png)
+
+5. Click on **Browse** to select the excel file.
+
+    <!-- border -->![6.4](6.4.png)
+
+6. Select **Import an Excel File**.
+
+    <!-- border -->![6.5](6.5.png)
+
+
+    Your final data type looks as below.
+
+    <!-- border -->![DataType](6.3.png)
+
+5. Click **Save** to save the data type.
+
+[OPTION END]
+
+[OPTION BEGIN [Define Fields Manually]]
+
+You have two options to create the fields in data type. You can either import an excel or define the fields manually.
+
+In this option you will be defining each field with field name and type of field manually.
+
 1.  Click on **+** > **Create** > **Data Type**.
 
     <!-- border -->![Create data type](6.png)
@@ -97,7 +142,7 @@ There are many use cases where you can make a difference using SAP Build Process
 
 3. Click on **New Field** to add new fields to the data type **Sales Order**.
 
-    <!-- border -->![6.2](6.2.png)
+    <!-- border -->![6.7](6.7.png)
 
 
 4.  Repeat the process to add all the fields of the type as shown below.
@@ -121,7 +166,9 @@ There are many use cases where you can make a difference using SAP Build Process
     <!-- border -->![DataType](6.3.png)
 
 5. Click **Save** to save the data type.
-     
+
+[OPTION END]
+
 
 ### Create and configure API trigger
 
