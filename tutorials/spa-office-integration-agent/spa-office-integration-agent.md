@@ -22,18 +22,18 @@ parser: v2
 - How to use Microsoft 365 Cloud Office SDK Activities
 
 ## Intro
-After completing this tutorial, you will be able to search for an Excel file on SharePoint or OneDrive, download it and store it on your local machine, read Excel data for a given range and send an email via Outlook with the new Excel file as an attachment.
+After completing this tutorial, you will be able to search for an Excel file on SharePoint or OneDrive, download it and store it on your local machine, read Excel data for a given range and send an email via Outlook with the new Excel file as an attachment. 
 
 ---
-
 
 ### Check authentication and set up your agent
 
 First you will have to check if the external authentication to access Microsoft services is enabled. Otherwise some activities will not be available.
 
-1. Navigate to SAP Build Lobby. Choose **Settings > External Authentication**.
+1. Navigate to SAP Build Lobby. Choose **Settings > External Authentication**. 
 
-    > If the External Authentication for Office 365 is not listed, contact your company administrator to set it up.
+    > If the External Authentication for Office 365 is not listed, contact your company administrator to set it up by following [Help Portal instructions](https://help.sap.com/docs/intelligent-robotic-process-automation/factory-user-guide/create-external-authentication?q=External%20Authentication).
+
 
 2. Open Desktop Agent. Once you are connected to the tenant, choose **Settings > External Authentication**.
 
@@ -41,23 +41,23 @@ First you will have to check if the external authentication to access Microsoft 
 
     > The agent receives and shows a list of registration items defined in IRPA Factory.
 
-4. Select Office 365 Authentication.
+3. Select Office 365 Authentication.
 
     <!-- border -->![Office](1.png)
 
-5. Fill out your email address and **save**.
+4. Fill out your email address and **save**.
 
     <!-- border -->![Office](8.png)
 
     > Each registration item can be registered or unregistered given a user email address.
 
-6. Select **Register** button. 
+5. Select **Register** button. 
 
     <!-- border -->![Office](9.png)
 
-7. In the newly opened window consent for agent to use your ID with the activities.
+6. In the newly opened window consent for agent to use your ID with the activities.
 
-8. The confirmation of registration will appear. 
+7.  The confirmation of registration will appear. 
 
     <!-- border -->![Office](7.png)
 
@@ -84,7 +84,7 @@ First you will have to check if the external authentication to access Microsoft 
 
     <!-- border -->![Office](010.png)
 
-6. Provide the name of the automation, a description and choose **Create**.
+6. Provide the name of the first automation with the name **Get File info**, and choose **Create**.
 
     <!-- border -->![Office](011.png)
 
@@ -247,7 +247,7 @@ You will be navigated to the automation editor where you can build your automati
 
     <!-- border -->![Office](098.png)
 
-2. Check your Outlook Inbox to see the email, that was send with the attachment.
+2. Check your Outlook Inbox to see the email that was send with the attachment.
 
 
 ---
