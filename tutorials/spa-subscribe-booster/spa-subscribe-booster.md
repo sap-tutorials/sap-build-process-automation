@@ -8,7 +8,7 @@ tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tu
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Subscribe to SAP Build Process Automation using Booster in SAP BTP Free Tier
+# Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier
 <!-- description --> Activate the SAP Build Process Automation service in the SAP BTP with booster
 
 ## Prerequisites
