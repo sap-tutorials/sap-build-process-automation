@@ -39,9 +39,9 @@ The very first time you launch the Desktop Agent 3 on your workstations, you wil
 
 Follow these steps once and your Desktop Agent 3 will be regularly updated to the latest version.
 
-1. You can install the Desktop Agent 3 from SAP Build. Navigate to the **Settings** on your tenant, choose **Agent Update** under **Agents**.
+1. You can install the Desktop Agent 3 from SAP Build. Navigate to the **Settings** on your tenant, choose **Agent Update** under **Agents**. 
 
-    >The following steps are required if you have not set up your Secret ID yet.
+    >The following steps are required if you have not set up your Secret ID yet. 
 
 2. Select **Go to RBSC portal** button.
 
@@ -110,27 +110,25 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Build
 
 >The minimum version of the Desktop Agent supported by SAP Build Process Automation is **3.7.41**.
 
-1. Open the downloaded file with **administrator rights**. Select **Next** to begin the installation process.
+1. Open the downloaded file. Select **Next** to begin the installation process.
 
     <!-- border -->![Desktop Agent 3 Installation](agent3-002.png)
 
-2. Make sure you install the service, and confirm.
+    > You can open the file with **administrator rights**, and install the service, only if your use case requires is. For example, using the agent in unattended mode in production. It is not required for following the tutorials.
 
-    <!-- border -->![Desktop Agent 3 Installation](agent3-033.png)
-
-3. Wait for the installation process to complete.
+2. Wait for the installation process to complete.
 
     <!-- border -->![Desktop Agent 3 Installation](agent3-034.png)
 
-4. Once the installation has been successfully completed, choose **Finish** and launch the Desktop Agent 3.
+3. Once the installation has been successfully completed, choose **Finish** and launch the Desktop Agent 3.
 
     >A Google Chrome extension and an Edge add-on are installed when you install the Desktop Agent but you have to enable them (at least the Google Chrome extension).
 
-6. On Google Chrome select the manage extensions under Extensions.
+4. On Google Chrome select the manage extensions under Extensions.
 
     <!-- border -->![Manage extensions](agent3-005.png)
 
-7. Enable SAP Process Automation extension.
+5. Enable SAP Process Automation extension.
 
     <!-- border -->![Enable extension](agent3-006.png)
 
