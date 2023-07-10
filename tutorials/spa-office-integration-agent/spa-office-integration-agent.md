@@ -37,7 +37,7 @@ Once you have successfully configured the Azure Application as mentioned in Pre-
 
 2. Navigate to **Settings > External Authentication**.
 
-    <!-- border -->![Office](01.png)
+    <!-- border -->![Office](1a.png)
 
 3. On the External Authentication page, click **Create New Authentication**.
 
@@ -165,7 +165,7 @@ You will be navigated to the automation editor where you can build your automati
 5. To retrieve the needed URL, please follow these steps:
     - Go to your One Drive.
     - Choose **My Files**.
-    - Find the Orders excel file that you downloaded and saved in your One Drive as mentionned in the pre-requisites, and check it.
+    - Find the Orders excel file that you downloaded and saved in your One Drive as mentioned in the pre-requisites, and check it.
     - Choose **Copy link**.
 
     > **What's going on?:** This is the URL you will copy and paste under `sourceURL` input parameter.
@@ -291,6 +291,7 @@ For the purpose of this tutorial, you will create input parameters for the two v
 12. Select the **Download File** activity. 
 
 13. Under **Input Parameters**:
+
     - for `driveId`: select parameter `driveId`.
     - for `pathOrFileId`: select parameter `fileId`.
     - for `localFilePath`: select paramether **path**.
