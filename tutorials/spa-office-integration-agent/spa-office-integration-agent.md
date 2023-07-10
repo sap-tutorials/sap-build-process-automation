@@ -291,8 +291,9 @@ For the purpose of this tutorial, you will create input parameters for the two v
 12. Select the **Download File** activity. 
 
 13. Under **Input Parameters**:
-    - for `driveId`: select paramether `driveId`.
-    - for `pathOrFileId`: select paramether `fileId`.
+
+    - for `driveId`: select parameter `driveId`.
+    - for `pathOrFileId`: select parameter `fileId`.
     - for `localFilePath`: select paramether **path**.
 
     > `localFilePath` corresponds to the path to the file which will store the data on your machine.
