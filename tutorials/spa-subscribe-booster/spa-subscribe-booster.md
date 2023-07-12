@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier
-<!-- description --> Activate the SAP Build Process Automation service in the SAP BTP with booster
+<!-- description --> Activate the SAP Build Process Automation service in the SAP BTP with Booster
 
 ## Prerequisites
   - [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account) 
@@ -87,7 +87,5 @@ SAP Build Process Automation is available either in SAP BTP Free Tier Account as
     <!-- border -->![Studio](11.png)
 
     Your are now ready to use SAP Build Process Automation in SAP BTP Free Tier.
-
-
 
 ---
