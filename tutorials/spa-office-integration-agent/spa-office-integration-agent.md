@@ -203,7 +203,7 @@ You will be navigated to the automation editor where you can build your automati
 
 An input or output parameter is a variable that is passed, received, or sent from one automation, SDK activity or control to another. This variable allows you to manipulate data that you can use in your workflow. Input or output parameters have a name (optionally a description) and data that complies to a type.
 
-For the purpose of this tutorial, you will create input parameters for the two values retrieved above `driveId` and `fileId` as well as for the path to the excel file.
+For the purpose of this tutorial, you will create input parameters for the two values retrieved above `driveId` and `fileId` as well as for the `path` to the excel file which will be downloaded locally in your system.
 
 1. In your automation, on the right-hand side panel, go the **Input/Output** section and click **Add new input parameter**.
 
@@ -221,7 +221,7 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
     |  Field Value  | Input Parameter 1  | Input Parameter 2
     |  :------------| :------------------| :----------------
-    |  Name         | `fileId`           | path
+    |  Name         | `fileId`           | `path`
     |  Description  | ID of the workbook | Path to the excel file
     |  Type         | String             | String
 
@@ -291,10 +291,9 @@ For the purpose of this tutorial, you will create input parameters for the two v
 12. Select the **Download File** activity. 
 
 13. Under **Input Parameters**:
-
     - for `driveId`: select parameter `driveId`.
     - for `pathOrFileId`: select parameter `fileId`.
-    - for `localFilePath`: select paramether **path**.
+    - for `localFilePath`: select parameter `path`.
 
     > `localFilePath` corresponds to the path to the file which will store the data on your machine.
 
@@ -317,11 +316,11 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
     <!-- border -->![Office](036.png)
 
-    - Under attachments, select **Custom Data** and **+** to add the name and path parameter:
+    - Under attachments, select **Custom Data** and **+** to add the name and `path` parameter:
         - In the name field, enter **ListOfOrders.xlsx** and select the expression in quotes. 
-        - In the path field, select parameter **path**.
+        - In the path field, select parameter `path`.
 
-    > **path** corresponds to the path of the file which will be added to the email message.
+    > `path` corresponds to the path of the file which will be added to the email message.
   
     <!-- border -->![Office](040.png)
 
@@ -331,9 +330,9 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
 18. Select the **Remove File/Folder** activity. 
 
-19. Under **Input Parameters**, for **path**, select the parameter **path**.
+19. Under **Input Parameters**, for **path**, select the parameter `path`.
     
-    > **path** is the path of the file that will be removed once email is sent.
+    > `path` is the path of the file that will be removed once email is sent.
 
 20. **Save** your work.
 
@@ -350,7 +349,9 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
     - For `driveId`: you will enter the value that you retrieved in step 5.
     - For `fileId`: you will enter the value that you retrieved in step 5.
-    - For **path**: you will enter the path to the excel file.
+    - For `path`: you will enter the path to the excel file. Your path would be like `C:\Users\Public\Orders.xlsx`
+
+    > The file will be saved with the name `ListOfOrders` in the above-mentioned folder and would be deleted after the mail is received.
 
 3. Choose **Test**.
 
