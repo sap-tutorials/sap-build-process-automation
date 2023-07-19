@@ -25,6 +25,8 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 ### Subscribe to SAP Build Process Automation
 
+**IMPORTANT**: In case you cannot see SAP Build Process Automation in Service Marketplace, please use the option **Using Entitlements** above in the tab.  
+
 [OPTION BEGIN [Using Service Marketplace]]
 
 1. After successful creation of SAP BTP account using Free Trial, select **Services**> **Service Marketplace**. In the search field, type **SAP Build Process Automation** and select the tile.
@@ -67,7 +69,7 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 ### Assign Roles
 
-In order to have access, you will have to assign the role collections to your user.
+In order to have access, you will have to assign the role collections to your user. 
    
 2. Go to the **Users**, under **Security**, and select your user.
 
