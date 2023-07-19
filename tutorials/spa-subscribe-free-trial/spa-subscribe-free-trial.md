@@ -25,7 +25,7 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 ### Subscribe to SAP Build Process Automation
 
-**IMPORTANT**: In case you cannot see SAP Build Process Automation in Service Marketplace, please use the option **Using Entitlements** above in the tab.  
+**IMPORTANT**: In case you cannot see SAP Build Process Automation in Service Marketplace, please use the option **Using Entitlements** above in the tab.
 
 [OPTION BEGIN [Using Service Marketplace]]
 
