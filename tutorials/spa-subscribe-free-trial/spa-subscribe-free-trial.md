@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Subscribe to SAP Build Process Automation Using SAP BTP Free Trial
-<!-- description --> Activate the SAP Build Process Automation service in the SAP BTP free Trial
+<!-- description --> Activate SAP Build Process Automation service in SAP BTP Free Trial
 
 ## Prerequisites
   - Complete [Get a Free Account on SAP BTP Trial tutorial](hcp-create-trial-account)
@@ -25,8 +25,11 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 ### Subscribe to SAP Build Process Automation
 
+**IMPORTANT**: In case you cannot see SAP Build Process Automation in Service Marketplace, please use the option **Using Entitlements** above in the tab.
 
-1. After successful creation of SAP BTP account using Free Trial, select **Service Marketplace**. In the search field, type SAP Process Build Automation and select the tile.
+[OPTION BEGIN [Using Service Marketplace]]
+
+1. After successful creation of SAP BTP account using Free Trial, select **Services**> **Service Marketplace**. In the search field, type **SAP Build Process Automation** and select the tile.
 
     <!-- border -->![Trial](001.png)
 
@@ -46,10 +49,27 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
     <!-- border -->![Trial](004freeplan.png)
 
+[OPTION END]
+
+[OPTION BEGIN [Using Entitlements]]
+
+1. Select **Entitlements**. Choose **Configure Entitlements**. 
+
+    <!-- border -->![Trial](050.png)
+
+2. Select **Add Service Plans**.
+
+    <!-- border -->![Trial](051.png)
+
+3. Look for **SAP Build Process Automation** Entitlement. Select **free** plan. Click on **Add Service Plans**.
+
+    <!-- border -->![Trial](052.png)
+
+[OPTION END]
 
 ### Assign Roles
 
-In order to have access, you will have to assign the role collections to your user.
+In order to have access, you will have to assign the role collections to your user. 
    
 2. Go to the **Users**, under **Security**, and select your user.
 

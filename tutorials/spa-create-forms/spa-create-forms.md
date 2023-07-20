@@ -274,7 +274,7 @@ After the user approves or rejects the request, the next step is to create notif
 
 12. **Save** the process. With this you completed designing and configuring the notification form.
 
-    > You can copy the same form to create another form to send a rejection notification to the requester. If copy is not available then create the form in the same way and modify the texts wherever relevant as shown below.
+    > You can copy the same form to create another form to send a rejection notification to the requester. If copy is not available then create the form in the same way and modify the texts wherever relevant as shown below. 
 
 
 13. To add the new rejection form, you will use the **Duplicate** feature. Select the **Overview**.
