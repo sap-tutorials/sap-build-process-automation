@@ -4,7 +4,7 @@ author_name: Djamai Hania
 author_profile: https://github.com/Haniadjamai
 auto_validation: true
 time: 30 
-tags: [ tutorial>Intermediate, software-product>sap-business-technology-platform, tutorial>free-tier ]
+tags: [ tutorial>intermediate, software-product>sap-business-technology-platform, tutorial>free-tier ]
 primary_tag: software-product>sap-build-process-automation
 ---
 
@@ -44,7 +44,7 @@ The process looks as below
 
 After completing the prerequisites, you will create a new process.
 
-1. Navigate to the **Artificats** tab, from the editable version of your project, click the **Create** dropdown and choose **Process**.
+1. Navigate to the **Artifacts** tab, from the editable version of your project, click the **Create** dropdown and choose **Process**.
 
     <!-- border -->![decision](2.png)
 
@@ -91,7 +91,7 @@ After completing the prerequisites, you will create a new process.
 
 ### Create a new automation
 
-1. Navigate to the **Artificats** tab, from the editable version of your project, search for **Get Order Automtion**. Choose the three dots and select **Duplicate**.
+1. Navigate to the **Artifacts** tab, from the editable version of your project, search for **Get Order Automtion**. Choose the three dots and select **Duplicate**.
 
     <!-- border -->![decision](8.png)
 
@@ -107,7 +107,7 @@ After completing the prerequisites, you will create a new process.
     <!-- border -->![decision](11.png)
 
 
-4. Click on the Canvas, in the Automation Details section on the right, select **Input/Output**, and in the inputs section rename orderNumber to **FilePath**. Select **List** in the Output parameters.
+4. Click on the Canvas, in the Automation Details section on the right, select **Input/Output**, and in the inputs section rename `OrderNumber` to `FilePath`. Select **List** in the Output parameters.
 
     <!-- border -->![decision](12.png)
 
@@ -137,7 +137,7 @@ After completing the prerequisites, you will create a new process.
 
 ### Create Data Types
 
-1. Go back to the **Overview** tab and Navigate to the **Artificats** tab, select **Error Output** data.
+1. Go back to the **Overview** tab and Navigate to the **Artifacts** tab, select **Error Output** data.
 
     <!-- border -->![decision](data1.png)
 
@@ -248,7 +248,7 @@ After completing the prerequisites, you will create a new process.
 3. Configure the output or result of the decision table. Under **Result Vocabulary**:
 
     - Select **Error Output** data type,
-    - In the Vocabulary section choose **Error Output** to add the Result Atributes.
+    - In the Vocabulary section choose **Error Output** to add the Result Attributes.
     - Choose **Next Step** button.
 
     <!-- border -->![decision](29.png)
@@ -448,7 +448,7 @@ After completing the prerequisites, you will create a new process.
 
 ### Create Order Error Table Form
 
-1. Go back to the **Overview** tab and Navigate to the **Artificats** tab, search for **Order Rejection Notification With Errors** form. Choose the three dots and select **Duplicate**.
+1. Go back to the **Overview** tab and Navigate to the **Artifacts** tab, search for **Order Rejection Notification With Errors** form. Choose the three dots and select **Duplicate**.
 
     <!-- border -->![decision](61.png)
 
@@ -528,7 +528,7 @@ After completing the prerequisites, you will create a new process.
 
     <!-- border -->![decision](78-1.png)
 
-5. In the **Runtime Variables** section, choose **Next**. You will enter the ordersFilePath as you would provide the path of excel in the Input form which is explained in **Step 13: Test the process**.
+5. In the **Runtime Variables** section, choose **Next**. You will enter the `ordersFilePath` as you would provide the path of excel in the Input form which is explained in **Step 13: Test the process**.
 
     <!-- border -->![decision](78-2.png)
 
