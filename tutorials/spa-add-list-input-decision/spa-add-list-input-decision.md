@@ -8,7 +8,7 @@ tags: [ tutorial>intermediate, software-product>sap-business-technology-platform
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Use list as an input for Decision artifact in SAP Build Process Automation.
+# Use list as an input/output for Decision artifact in SAP Build Process Automation.
  
 <!-- description --> Use a list as an input to your Decision artifact, process the data and extract the details to a table in a Form.
 
@@ -18,7 +18,7 @@ primary_tag: software-product>sap-build-process-automation
   - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-add-list-input-in-decision/Orders%20.xlsx) in your local machine. 
 
 ## You will learn
-  - How to use a List as an input to your Decision.
+  - How to use a List as an input/output to your Decision.
   - How to use a reusable text rules. 
   - How to bind List in Decision to Table in Form.
 
