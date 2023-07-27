@@ -91,7 +91,7 @@ After completing the prerequisites, you will create a new process.
 
 ### Create a new automation
 
-1. Navigate to the **Artifacts** tab, from the editable version of your project, search for **Get Order Automtion**. Choose the three dots and select **Duplicate**.
+1. Navigate to the **Artifacts** tab, from the editable version of your project, search for **Get Order Automation**. Choose the three dots and select **Duplicate**.
 
     <!-- border -->![decision](8.png)
 
