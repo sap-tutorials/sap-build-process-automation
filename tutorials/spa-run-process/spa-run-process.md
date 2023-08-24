@@ -99,13 +99,11 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 3. Choose your process instance that was just triggered via the start form.
    
-4.  As you can see the process is waiting for the task to be completed. These tasks are generated from the forms that are added in the process and can be accessed via the **My Inbox** application.
+4.  As you can see the process is waiting for the task to be completed. These tasks are generated from the forms that are added in the process and can be accessed via the **My Inbox** application. In logs, you can see the entire trace of how the process has been progressing with some basic runtime information of each activity.
 
     <!-- border -->![Run](011.png)
 
     > Notice the **Recipients** list. This is the same as configured in the **General** section of the **Approval Form**. The task will go into the inboxes of all the recipients.
-
-    > Explore different process monitoring options. Observe the process context which is the actual process data flowing across different activities in the process and logs where you can see entire trace of how the process has been progressing with some basic runtime information of each activity.
 
 5. Observe the process context which is the actual process data flowing across different activities in the process. This option contains the information that you entered in the **Order Approval Request Form**.
 
