@@ -248,7 +248,7 @@ After the user approves or rejects the request, the next step is to create notif
 
 7.	Go back to the process builder to map the process content with the form input fields.
 
-8. Select the **Order Confirmation** form to configure the **General** information section.
+8. Select the **Order Confirmation Form** to configure the **General** information section.
 
 9. In the **Subject** box:
     - Enter **Your order**
