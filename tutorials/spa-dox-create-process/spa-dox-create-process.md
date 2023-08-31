@@ -68,7 +68,7 @@ Within the newly created project **Invoice Approval**, you will be prompted to c
 
     <!-- border -->![Maintain Process Name](03a.png)
 
-    The process with a start and end event is now available for you.
+The process with a start and end event is now available for you.
 
 
 
@@ -94,28 +94,28 @@ Within the newly created project **Invoice Approval**, you will be prompted to c
 
     <!-- border -->![Open editor](005c.png)
 
-4. In the form you have multiple Layout and Input elements.
+4. In the form you have multiple elements.
 
     <!-- border -->![Elements](005b.png)
 
-5. To add Layout or Inputs, drag and drop them or click on the element to enter them in the form.
+5. To add elements, drag and drop them or click on the element to enter them in the form.
 
-6. Add Layout elements:
+6. Add the following layout elements:
 
-    |  **Layout Type**  | **Name**
+    |  **Type**       | **Name**
     |  :------------- | :-------------
-    |    Headline 1   | Invoice Request Form |
-    |    Paragraph      |  Please provide the following details to start the process |
+    |  Headline 1     | Invoice Request Form |
+    |  Paragraph      | Please provide the following details to start the process |
 
     <!-- border -->![Add Layout](006.png)
 
-7. Add Input elements:
+7. Add the following input elements:
 
-    |  **Input Field Type**  | **Name** | **Settings**
+    |  **Field Type** | **Name**       | **Settings**
     |  :------------- | :------------- | :------------
-    |    Text       | Employee Name | Required
-    |    Text       | File Path | Required
-    |      Date     | Current Date | Required
+    |  Text           | Employee Name  | Required
+    |  Text           | File Path      | Required
+    |  Date           | Current Date   | Required
 
     > Required checkbox indicates, that it is a mandatory field.
 
