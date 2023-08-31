@@ -4,7 +4,7 @@ author_profile: https://github.com/pbujnicka
 keywords: tutorial
 auto_validation: true
 time: 30
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
