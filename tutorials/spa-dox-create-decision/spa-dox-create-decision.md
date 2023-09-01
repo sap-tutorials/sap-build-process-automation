@@ -130,12 +130,12 @@ There are many ways to express a business rule, in this case you will create a d
 
     <!-- border -->![Create](021.png)
 
-7. You may edit the rule you just created by selecting the pencil icon.
+7. If you need to edit the rule you just created, you may do so by selecting the pencil icon.
 
     <!-- border -->![Edit](018.png)
 
 8. Define the attributes:
-    - for **Invoice Parameter.SenderName**: `EXISTSIN['ABC Communication']`
+    - for **Sender Name**: `EXISTSIN['ABC Communication']`
     - for **eMail**: `'your SAP BTP user ID'`, e.g. `'diana.smith@mail.com'`.
 
     You can also make use of the value help, by pressing the space bar before maintaining the expression in the first column.
@@ -144,7 +144,7 @@ There are many ways to express a business rule, in this case you will create a d
 
     <!-- border -->![If Then](096a.png)
 
-9. Select the first row and **Add Row** to **Insert After**. In case the **Invoice Parameter.SenderName** is defined as `EXISTSIN['Telecommunications']`, the approval request should be sent to any recipient you might want to choose. e.g. `'jane.doe@sap.com'`.
+9. Select the first row and **Add Row** to **Insert After**. In case the **Sender Name** is defined as `EXISTSIN['Telecommunications']`, the approval request should be sent to any recipient you might want to choose. e.g. `'jane.doe@sap.com'`.
 
     > When inserting emails please do not forget the simple quotes otherwise you will end up with an error when you save the decision artifact.
 
