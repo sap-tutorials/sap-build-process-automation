@@ -48,7 +48,7 @@ First, you will create a trigger form that will start the business process. For 
 
     - Enter the Name: **Order Processing Form**
     - Enter a Description: **Form to collect order details**
-    - Choose **Create**
+    - Choose **Create**.
 
     <!-- border -->![Form](002.png)
 
@@ -95,7 +95,7 @@ The approval form will be used to get faster and easier approvals from the busin
 
 You can create these different forms using the **Form Builder** embedded in the process builder using different form field options. You can design and modify them without any coding.   
 
-1. Go to the **Order Processing** Project.
+1. Go to the **Order Processing** process.
 
     <!-- border -->![Approval](007.png)
 
