@@ -42,6 +42,7 @@ Once the process with forms is designed, define which process flow should run ba
     > Process content will contain a list of attributes that have been defined in previous skills. For example: in the screenshot, you can see attributes from the trigger form. You will use this process content to configure different skills during business process modelling.
 
 3. Edit your branch condition:
+   
     - Set **Order Amount** from the process content
     - Select **is less than**
     - Enter **100000** as the value
@@ -125,9 +126,9 @@ Once the process with forms is designed, define which process flow should run ba
 2. Configure the **General** section.
 
 3. Under Subject:
-    - Enter: Your order
+    - Enter: **Your order**
     - Choose: **Order Number** from Order Processing Form
-    - Enter: has been successfully received
+    - Enter: **has been successfully** received
 
 4. Under Recipients select **Process Started By**.
 
