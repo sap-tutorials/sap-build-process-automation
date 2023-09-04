@@ -142,26 +142,27 @@ primary_tag: software-product>sap-build-process-automation
     <!-- border -->![Automation](016.png)
 
 6. Under **Create New Schema**:
-    - Enter **Invoice Schema Name**,
+    - Enter **Invoice Schema Name** such as `ABCSchema`.
     - Choose **Next**.
 
     <!-- border -->![Automation](045.png)
 
 7. Under **Define information to extract**:
-    - Select the **Add** option to add **Header Fields**. For this scenario you will be adding `documentNumber`, `grossAmount` and `senderName`,
-    - Choose **Next**.
+    - Select the **Add** option to add **Header Fields**. For this scenario you will be adding `documentNumber` of Type String, `grossAmount` of Type Number and `senderName` of Type String.
 
     <!-- border -->![Automation](044.png)
+    
+    - Choose **Next**.
 
 8. Under **Summary**:
-    - SAP Build provides the summary of all the details related to schema to be created,
+    - SAP Build provides the summary of all the details related to the schema to be created,
     - Choose **Add**.
 
     <!-- border -->![Automation](043.png)
 
 9. Document Information Extraction SDK would be added as dependency to your project. The schema and template are created successfully.
 
-10. Once Upload will be completed, choose **Open in a new tab**.
+10. Once Upload will be completed, choose **Open Template Editor**.
 
     <!-- border -->![Automation](017.png)
 
@@ -170,23 +171,15 @@ primary_tag: software-product>sap-build-process-automation
 ### Annotate and activate the document template
 
 
-1. You are now navigated to Document Information Extractor. It allows you to edit and annotate the template. To work on Document Information Extractor, please check if you have been assigned to `Document_Information_Extraction_UI_Templates_Admin` role in SAP BTP Cockpit. Otherwise, add the role manually. You would get an error if you do not have DOX roles.
-
-    <!-- border -->![Automation](018.png)
-
-2. Select the **Document Name**.
+1. Choose **Refresh**
 
     <!-- border -->![Automation](019.png)
 
-3. Choose **Annotate**.
-
-    <!-- border -->![Automation](020.png)
-
-4. Choose **Edit**.
+2. Choose **Edit**.
 
     <!-- border -->![Automation](021.png)
 
-5. Select the data in your invoice document which you would like to extract the information. In this scenario, you will read the Document Number, Gross Amount and Sender Name.
+3. Select the data in your invoice document which you would like to extract the information. In this scenario, you will read the Document Number, Gross Amount and Sender Name.
     - Select the value  **174221** in the document and map to the field `documentNumber`. Choose **Apply**.
 
         <!-- border -->![Automation](022.png)
@@ -195,11 +188,11 @@ primary_tag: software-product>sap-build-process-automation
 
         <!-- border -->![Automation](023.png)
 
-    - Select the value **220** in the document and map to the field `grossAmount`. Choose **Apply**.
+    - Select the value **220.00** in the document and map to the field `grossAmount`. Choose **Apply**.
 
         <!-- border -->![Automation](024.png)
 
-6. Once mapping is done. Choose **Save** and **Activate** the template.
+4. Once mapping is done. Choose **Save** and **Close** the template.
 
     <!-- border -->![Automation](025.png)
 
@@ -234,7 +227,7 @@ primary_tag: software-product>sap-build-process-automation
 
 6. Under **Select Template**:
 
-    - Choose the **ABCSchema1** you created in the previous steps,
+    - Choose the `ABCSchema_1` template, you created in the previous steps,
     - Choose **Next**.
 
     <!-- border -->![Automation](048.png)
