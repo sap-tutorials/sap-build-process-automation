@@ -45,9 +45,10 @@ First, you will create a trigger form that will start the business process. For 
     <!-- border -->![Form](001.png)
 
 2. In the pop-up window for new form:
+
     - Enter the Name: **Order Processing Form**
     - Enter a Description: **Form to collect order details**
-    - Choose **Create**.
+    - Choose **Create**
 
     <!-- border -->![Form](002.png)
 
@@ -79,7 +80,7 @@ First, you will create a trigger form that will start the business process. For 
 
     <!-- border -->![Form](005.png)
 
-5. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
+6. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
 
     <!-- border -->![Form](006.png)
 
