@@ -61,11 +61,13 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Start Deploy](01_Released_first_version.png)
 
-2. In this case there are no **Variables** to set.
+2. Choose **Next**.
+
+    <!-- border -->![Deploy confirm  first](01_Deploy_first_version_confirm.png)
+
+3. In this case there are no **Variables** to set. Choose **Next**
 
     > Variables allow you to reuse certain information for a given Business Process project deployment. You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the Business Process project.
-
-3. Choose **Confirm**.
 
     <!-- border -->![Deploy confirm  first](02_Deploy_first_version_confirm.png)
 
