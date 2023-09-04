@@ -73,7 +73,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](007.png)
 
-3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has been started.
+3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has started.
 
     <!-- border -->![Run](008.png)
 
@@ -84,7 +84,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 Monitoring business process is one of the key aspect of the automated processes. Technical monitoring is an administrator job where a process admin proactively and consistently monitors the process performance, identifies any issues in the process and takes necessary actions to ensure business process continuity.
 
-**SAP Build** provides different applications to monitor and manage different process artefacts. These applications are available under the **Monitor** tab.
+**SAP Build** provides different applications to monitor and manage different process artifacts. These applications are available under the **Monitor** tab.
 
 1. Choose Home, then Monitor.
 
@@ -95,7 +95,7 @@ Monitoring business process is one of the key aspect of the automated processes.
     <!-- border -->![Run](009.png)
 
 
-2. In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated etc.
+2. In there, you will see all the running, erroneous and canceled process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, canceled, erroneous etc.
 
 3. Choose your process instance that was just triggered via the start form.
    
