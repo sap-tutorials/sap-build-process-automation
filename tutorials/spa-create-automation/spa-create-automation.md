@@ -83,7 +83,7 @@ In this exercise, you will automate the process to read the **sales order** deta
 ### Create environment variable
 
 
-Business projects usually need to use parameters and variable at runtime. These variables are usually saved in their runtime landscapes for example Dev, Test or Production environments. In this case, you will need to maintain an environment variable that will contain the file full path of the Excel file used in the automation.
+Business projects usually need to use parameters and variables at runtime. These variables are usually saved in their runtime landscapes for example Dev, Test or Production environments. In this case, you will need to maintain an environment variable that will contain the file full path of the Excel file used in the automation.
 
 > Environment Variables allow you to reuse certain information for a given environment. You use environment variables to pass parameters to automations.
 
@@ -131,7 +131,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 3. To get the **Excel Cloud Link**:
 
     -  In the Automation Details search for the activity **Excel Cloud Link**,
-    -  Drag and drop the activity into the canvas,
+    -  Drag and drop the activity into the canvas.
 
     ![001](011.png)
 
@@ -141,7 +141,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 5. In the Excel File screen:
     - Select **Browse**.
-    - Choose the **SalesOrdersDetails.xlsx** file which is saved on your machine.
+    - Choose the **Orders.xlsx** file which is saved on your machine.
 
     ![001](013.png)
 
@@ -165,7 +165,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
     <!-- border -->![001](017.png)
 
-9. Go to Get Order Details automation. In Excel Cloud Link activity on the right side, under Output Parameters, manually change the variable name to **Orders**.
+9. Go to **Get Order Details** automation. In **Excel Cloud Link** activity on the right side, under Output Parameters, manually change the variable name to **Orders**.
 
     <!-- border -->![001](018.png)
 
@@ -202,14 +202,14 @@ Input and output parameters allow you to exchange data in the workflow of your a
 
 2. Add Input parameters as following:
     - In Parameter Name enter: `OrderNumber`.
-    - In Description enter: Receives order number from the Order Processing Form.
+    - In Description enter: **Receives order number from the Order Processing Form**.
     - In Data type choose: **String**.
 
     <!-- border -->![001](024.png)
 
 3. Add Output parameters as following:
     - In Parameter Name enter: `SelectedOrder`.
-    - In Description enter: Selected order details are passed to the Process.
+    - In Description enter: **Selected order details are passed to the Process**.
     - In Data type choose: **Sales Order**.
 
     <!-- border -->![001](025.png)
@@ -282,7 +282,7 @@ This control has the following loop parameters:
 6. To add Set Variable Value:
     - Click on the canvas.
     - In Automation Details search for the activity **Set Variable Value**.
-    - Drag and Drop the activity into the canvas.
+    - Drag and Drop the activity into the canvas below the condition you set.
 
     <!-- border -->![001](033.png)
 
@@ -297,15 +297,15 @@ This control has the following loop parameters:
 
 8. To end loop:
     - Click on the canvas,
-    - in Automation Details search for the activity **Loop End**,
-    - Drag and Drop the activity into the canvas.
+    - In Automation Details search for the activity **Loop End**,
+    - Drag and Drop the activity into the canvas just below the **Set Variable Value**.
 
     <!-- border -->![001](035.png)
 
 
 9. Use **Log message** activity to print your results. To add Log Message:
      - In Automation Details search for the activity **Log message**,
-     - Drag and Drop the activity into the canvas.
+     - Drag and Drop the activity into the canvas outside the **For Each** loop.
 
     <!-- border -->![001](036.png)
 
@@ -329,13 +329,13 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
     > Make sure to add the steps **Condition**, **Set Variable Value**, **End Loop** inside the **For Each** block.
 
-2. The complete automation **Get Order Details** automation looks as below.  
+2. The complete **Get Order Details** automation looks as below.  
 
     <!-- border -->![001](038.png)
 
     Now you will map the Automation Parameters with the Form Parameters.
 
-3. Select **Order Processing** Process. Choose **Get Order Details** automation in the process.
+3. Select **Order Processing** process. Choose **Get Order Details** automation in the process.
 
     <!-- border -->![001](039.png)
 
@@ -382,7 +382,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 After the design of the automation that retrieves the data form the Excel file, simplify the start form by deleting the not needed fields.
 
-1. In the Order Processing Process tab:
+1. In the Order Processing tab:
     - Select three dots next to **Order Processing Form**.
     - Select **Open Editor**.
 
@@ -404,7 +404,7 @@ After the design of the automation that retrieves the data form the Excel file, 
 ### Mapping forms of the process
 
 
-The different Forms of the process will need Inputs Mapping from the Automation Outputs.
+The different Forms of the process will need Inputs mapping from the automation Outputs.
 
 <!-- border -->![001](048.png)
 
