@@ -93,9 +93,9 @@ parser: v2
   
     <!-- border -->![list](SelectList.png)
 
->The **Inputs** for **`listToString`** should show the following values
+    >The **Inputs** for **`listToString`** should show the following values:
 
-><!-- border -->![list inputs](ListToStringInputs.png)<div>&nbsp;</div>
+    ><!-- border -->![list inputs](ListToStringInputs.png)<div>&nbsp;</div>
 
 
 ### Release and Deploy
