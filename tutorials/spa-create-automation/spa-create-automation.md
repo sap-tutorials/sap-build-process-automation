@@ -45,7 +45,7 @@ In this exercise, you will automate the process to read the **sales order** deta
 |  PO7375     | 313977.82	   | 1/23/2022	| United Kingdom	         | 2/20/2022              | In Time
 |  PO7311     | 755055.4	   | 1/24/2022	| United Kingdom	         | 3/30/2022              | In Time
 |  PO6858     | 429358.4     | 1/25/2022	| United Kingdom	         | 2/20/2022	            | In Time
-|  PO6368     | 43739.82	   | 1/26/2022	| United Kingdom	         | 3/25/2022	            | In Time
+|  PO6368     | 43739.82	   | 1/26/2022	| India         	         | 3/25/2022	            | In Time
 |  PO6189     | 483574.12	   | 1/27/2022	| Germany	                 | 2/5/2022	              | In Time
 |  PO3115     | 273993.56	   | 1/28/2022	| Germany	                 | 3/10/2022	            | In Time
 |  PO2686     | 220887.56	   | 1/29/2022	| Germany	                 | 3/5/2022	              | In Time
@@ -401,6 +401,30 @@ After the design of the automation that retrieves the data form the Excel file, 
     <!-- border -->![001](047.png)
 
 
+
+### Update Process Condition 
+
+
+Since you have created an automation **Get Order Details** to collect `Order Amount`, `Order Date` , `Expected Delivery Date` and `Shipping Country` directly from the Excel file, you need to update the process condition which previously was dependent of **Order Processing Form** outputs.
+
+1. Click on **Condition** and choose **Open Condition Editor**.
+
+    <!-- border -->![001](053.png)
+
+2. In the **Edit Branch Condition**, select conditions :
+   
+    | **Item** | **Condition** | **Value**
+    |  :------------- | :------------- | :-------------
+    | `orderAmount` | is less than | 100000
+    | `shippingCountry` | is equal to | India
+    | `shippingCountry` | is equal to| Germany
+
+    Choose **Apply** to add the condition to the business process.
+
+    <!-- border -->![Process Condition](054.png)
+
+
+
 ### Mapping forms of the process
 
 
@@ -408,21 +432,29 @@ The different Forms of the process will need Inputs mapping from the automation 
 
 <!-- border -->![001](048.png)
 
-1. Select the **Approval Form** and go to the Inputs:
+1. Select the **Auto Approval Notification** and go to the Inputs :
+   
+    - In the **Order Amount** field, choose the `orderAmount` from the Automation outputs.
+    - In the **Expected Delivery Date** field, choose `expectedDeliveryDate` from the Automation outputs.
+
+    <!-- border -->![001](055.png)
+
+2. Select the **Approval Form** and go to the Inputs :
+    
     - In the **Order Amount** field, choose the `orderAmount` from the Automation outputs.
     - In the **Expected Delivery Date** field, choose `expectedDeliveryDate` from the Automation outputs.
 
     <!-- border -->![001](049.png)
 
-4. Do the same for the **Order Confirmation Notification**.
+3. Do the same for the **Order Confirmation Notification**.
 
     <!-- border -->![001](050.png)
 
-5. Do the same for the **Order Rejection Notification**.
+4. Do the same for the **Order Rejection Notification**.
 
     <!-- border -->![001](051.png)
 
-6. **Save** the Process.
+5. **Save** the Process.
 
     <!-- border -->![001](052.png)
 
