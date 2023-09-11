@@ -45,6 +45,7 @@ First, you will create a trigger form that will start the business process. For 
     <!-- border -->![Form](001.png)
 
 2. In the pop-up window for new form:
+
     - Enter the Name: **Order Processing Form**
     - Enter a Description: **Form to collect order details**
     - Choose **Create**.
@@ -79,7 +80,7 @@ First, you will create a trigger form that will start the business process. For 
 
     <!-- border -->![Form](005.png)
 
-5. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
+6. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
 
     <!-- border -->![Form](006.png)
 
@@ -94,7 +95,7 @@ The approval form will be used to get faster and easier approvals from the busin
 
 You can create these different forms using the **Form Builder** embedded in the process builder using different form field options. You can design and modify them without any coding.   
 
-1. Go to the **Order Processing** Project.
+1. Go to the **Order Processing** process.
 
     <!-- border -->![Approval](007.png)
 
