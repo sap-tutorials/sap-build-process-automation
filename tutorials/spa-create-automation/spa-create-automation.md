@@ -33,7 +33,7 @@ An Automation is a succession of steps to orchestrate multiple activities and ap
 
 In this exercise, you will automate the process to read the **sales order** details from an Excel and select the specific sales order details based on the input from the submitted form. To design the automation, you will need an Excel file filled with the sales order data. You can:
 
-- Download [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/50c942bbd0a7612e1cb672134578e517786e7b0e/tutorials/spa-create-automation/Orders.xlsx) **OR**
+- Download [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-create-automation/Orders.xlsx) **OR**
 
 - Create the file yourself using the following data:
 
