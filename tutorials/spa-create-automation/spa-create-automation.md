@@ -382,7 +382,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 After the design of the automation that retrieves the data form the Excel file, simplify the start form by deleting the not needed fields.
 
-1. In the Order Processing tab:
+1. In the Order Processing tab :
     - Select three dots next to **Order Processing Form**.
     - Select **Open Editor**.
 
