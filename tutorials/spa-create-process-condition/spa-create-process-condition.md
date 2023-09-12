@@ -119,7 +119,7 @@ Once the process with forms is designed, define which process flow should run ba
 
 14. **Save** your work.
 
-### Configure process condition
+### Configure auto-approval form
 
 1. Go back to the process builder and configure the auto approval form.
 
