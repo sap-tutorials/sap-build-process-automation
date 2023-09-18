@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Build Your First Automation Using Outlook SDK of SAP Build Process Automation
-<!-- description --> In this tutorial, you will be developing a basic automation using Outlook SDK of SAP Build Process Automation. In the end, by using the activities in Outlook SDK, you will know how to search outlook inbox or a specific email folder and download any attachments found in the email to a specific local folder.
+<!-- description --> In this tutorial, you will be developing a basic automation using Outlook SDK of SAP Build Process Automation. In the end, by using the activities in Outlook SDK, you will learn how to search outlook inbox or a specific email folder and download any attachments found in the email to a specific local folder.
 
 ## Prerequisites
 - [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
@@ -154,5 +154,5 @@ The Outlook SDK in SAP Build Process Automation, is a collection of activities a
 
     > Review the resources:
     >    
-    - Microsoft Outlook Best Practices from the SAP Process Automation [documentation](https://help.sap.com/docs/IRPA/8e71b41b9ea043c8bccee01a10d6ba72/5a48c81502db40b08e4aac866e04592a.html)
+    - Microsoft Outlook Best Practices from the SAP Build Process Automation [documentation](https://help.sap.com/docs/IRPA/8e71b41b9ea043c8bccee01a10d6ba72/5a48c81502db40b08e4aac866e04592a.html)
     >- Outlook Email Best Practices Automation from the [SAP Build Process Automation Store](https://irpa.store.sap.com/#/package/a4c61c62-356e-4165-bdcb-bef08e236cf5)
