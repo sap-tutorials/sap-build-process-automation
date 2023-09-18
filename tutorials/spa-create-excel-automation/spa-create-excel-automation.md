@@ -206,7 +206,7 @@ In the next step, you will take a more traditional approach to process the Excel
  
     <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet2.png)
 
-    -  Under `worksheetName` input parameter, enter `sheet1`.
+    -  Under `worksheetName` input parameter, enter `sheet1` and select the expression in quotes.
 
     - Save your work.
 
@@ -254,7 +254,7 @@ In the next step, you will take a more traditional approach to process the Excel
 
 19. Add **Activate Worksheet** activity to activate the new worksheet.
 
-20. Select the activity and under `worksheetName` input parameter, enter the name of the first sheet of your original excel file such as `Shee1`.
+20. Select the activity and under `worksheetName` input parameter, enter the name of the first sheet of your original excel file such as `Sheet1`.
 
     <!-- border -->![Activate original sheet](27-ActivateBackFirstSheet.png)
 
