@@ -157,11 +157,15 @@ At times, you may want the automation to handle sending an acknowledgement or an
    
     <!-- border -->![Add a reply body](28-EmailBodyInReply.png)
 
-6.  Save and Test the project.
+6. Once you are done designing your automation, do not forget to add **Close Outlook Instance** and **Release Outlook Instance** to your flow.
+
+    <!-- border -->![Add close and release outlook instance](28a.png)
+
+7.  Save and Test the project.
    
     <!-- border -->![Save and test project](29-SaveAndTest.png)
 
-7.  You can validate the result by checking your email reply.
+8.  You can validate the result by checking your email reply.
    
     <!-- border -->![Validate the result](30-ResultOfEmailReply.png)
 

@@ -57,8 +57,8 @@ You can also use an Excel sample of your choice.
 ### Use Excel Link in your Excel automations
 
 
-1.  From the SAP Build Process Automation Lobby, create a new automation.
-2.  Provide an appropriate name to your project and relevant automation.
+1.  From the SAP Build Process Automation Lobby, create a new automation project.
+2.  Provide an appropriate name to your project such as **Excel Sample** and relevant automation such as `excelLink`.
 3.  Select your active desktop agent version to be used during design and development of your automation.
 4.  By default Excel and Core SDK are added to the automations and your automation opens in a new browser tab. You have a couple of ways to read Excel data:
       - Using the activity **Excel Cloud Link** to achieve Excel Data Mapping.
@@ -161,7 +161,7 @@ In the next step, you will take a more traditional approach to process the Excel
 ### Process Excel data
 
 
-1. Start by adding a new automation to the project and add **Open Excel Instance** to the flow.
+1. Start by adding a new automation to the **Excel Sample** project. Name the new automation **Process Excel Data** and add **Open Excel Instance** to the flow.
 
     <!-- border -->![Add Open Excel Instance](16-AddOpenExcelInstance.png)
 
@@ -206,7 +206,7 @@ In the next step, you will take a more traditional approach to process the Excel
  
     <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet2.png)
 
-    -  Under `worksheetName` input parameter, enter `sheet1` and select the expression in quotes.
+    -  Under `worksheetName` input parameter, enter `Sheet1` and select the expression in quotes.
 
     - Save your work.
 
@@ -234,7 +234,7 @@ In the next step, you will take a more traditional approach to process the Excel
 
     > You add a new Excel sheet to your workbook and copy this filtered data onto that, just for demonstration purpose.
 
-15. Subsequently add a **Hide column** activity to hide a specific column in the result.
+15. Subsequently add a **Hide columns** activity to hide a specific column in the result.
 
     <!-- border -->![Add Hide Column](25-AddHideColumns.png)
 
