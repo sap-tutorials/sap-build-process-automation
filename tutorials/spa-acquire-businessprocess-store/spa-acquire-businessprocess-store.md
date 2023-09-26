@@ -12,6 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Import a sample business process from the SAP Build store.
 
 ## Prerequisites
+- [Trial account](spa-subscribe-free-trial) with the SAP Build Process Automation enabled **OR**
 - Account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
 
 ## You will learn
@@ -48,11 +49,11 @@ You will import the business process titled **Sales Order Approvals**.
 
 1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Approvals**  in the search bar and hit **Enter**.
 
-    > This sample content is designed to help users to get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
+    > This sample content is designed to help users get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
 
     <!-- border -->![Import Business Process](2.ImportBusinessProcess.png)
 
-2. To add the package,  select **Create from Template**.
+2. To add the entire package,  select **Create from Template**.
 
     <!-- border -->![Create Project](3.Createfromtemplate.png)
    
@@ -60,8 +61,16 @@ You will import the business process titled **Sales Order Approvals**.
 
     <!-- border -->![Create Project](3a.png)
 
-4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** from the top menu.
+    You also have the option to choose the version of the project that you want to get depending on your requirements. 
+
+4. Choose the sample content, and select the version needed.
+
+    <!-- border -->![Get version](3b.png)
+
+5. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** from the top menu.
 
     <!-- border -->![Lobby](4.Lobby.png)
 
     You have now imported a sample process and are ready to test/modify it.
+
+
