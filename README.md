@@ -20,7 +20,7 @@ In case you are the maintainer of a new SAP-toturials open source project, these
 
 ## About this project
 
-*Insert a short description of your project here...*
+The SAP Build Process Automation repository will house tutorials pertaining to the SAP Build Process Automation solution.
 
 ## Requirements and Setup
 
