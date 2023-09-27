@@ -90,8 +90,8 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 
 5. Create a second MTA Module: Workflow UI
    
-    - in the File Explorer, locate the *mta.yaml* file and right-click on it
-    - select Create MTA Module from Template
+    - in the File Explorer, locate the **mta.yaml** file and right-click on it
+    - select **Create MTA Module from Template**
 
     <!-- border -->![Process](005.png)
 
@@ -220,7 +220,7 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 
     > For the sales order approval use case, you need the following sales order details as **inputs** and a comment from the approver as **output** of the task.
 
-3.  Customize your *App.view.xml* file
+3.  Customize your **App.view.xml** file
    
     - in the File Explorer, under `../webapp/view/` folder, locate and open the `App.view.xml` file 
     - customize it with your needed page layout
