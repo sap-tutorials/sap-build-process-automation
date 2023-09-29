@@ -1,4 +1,4 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/sap-tutorials/abap-core-development)](https://api.reuse.software/info/github.com/sap-tutorials/abap-core-development)
+[![REUSE status](https://api.reuse.software/badge/github.com/sap-tutorials/sap-build-process-automation)](https://api.reuse.software/info/github.com/sap-tutorials/sap-build-process-automation)
 
 # SAP-Tutorials Repository Template
 
