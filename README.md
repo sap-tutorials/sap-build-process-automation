@@ -1,30 +1,14 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/sap-tutorials/sap-build-process-automation)](https://api.reuse.software/info/github.com/sap-tutorials/sap-build-process-automation)
 
-# SAP-Tutorials Repository Template
-
-Default templates for SAP open source repositories, including LICENSE, .reuse/dep5, Code of Conduct, etc... All repositories on github.com/SAP-tutorials will be created based on this template.
-
-## To-Do
-
-In case you are the maintainer of a new SAP-toturials open source project, these are the steps to do with the template files:
-
-- Check if the default license (Apache 2.0) also applies to your project. A license change should only be required in exceptional cases. If this is the case, please change the [license file](LICENSE).
-- Enter the correct metadata for the REUSE tool. See our [wiki page](https://wiki.wdf.sap.corp/wiki/display/ospodocs/Using+the+Reuse+Tool+of+FSFE+for+Copyright+and+License+Information) for details how to do it. You can find an initial .reuse/dep5 file to build on. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository and be sure to run the REUSE tool to validate that the metadata is correct.
-- Adjust the contribution guidelines (e.g. add coding style guidelines, pull request checklists, different license if needed etc.)
-- Add information about your project to this README (name, description, requirements etc). Especially take care for the <your-project> placeholders - those ones need to be replaced with your project name. See the sections below the horizontal line and [our guidelines on our wiki page](https://wiki.wdf.sap.corp/wiki/display/ospodocs/Guidelines+for+README.md+file) what is required and recommended.
-- Remove all content in this README above and including the horizontal line ;)
-
-***
-
-# Our new open source project
+# SAP Build Process Automation Tutorial Repository
 
 ## About this project
 
-The SAP Build Process Automation repository will house tutorials pertaining to the SAP Build Process Automation solution.
+The SAP Build Process Automation repository will house tutorials pertaining to the SAP Build Process Automation solution.  SAP Build Process Automation is an SAP BTP service that allows citizen developers to adapt, improve, and innovate business processes with low-code/no-code capabilities.
 
 ## Requirements and Setup
 
-*Insert a short description what is required to get your project running...*
+If you will be using this repository to publish tutorials, please be sure you fork the tutorial and clone it to your local machine.  Before working on any tutorial, remember to execute a `git pull` command to update your local repository.  Unless you are the repository administrator, you will need to submit a pull request after you commit your changes.
 
 ## Support, Feedback, Contributing
 
