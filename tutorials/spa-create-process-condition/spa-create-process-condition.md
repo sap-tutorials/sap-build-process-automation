@@ -85,7 +85,7 @@ Once the process with forms is designed, define which process flow should run ba
 
 9. In the Create Form window:
 
-    - Enter the Name: **Auto Approval Notification**.
+    - Enter the Name: **Auto Approval Notification**
     - Enter a Description: **Notification form to inform auto approval of the sales order**.
     - Choose **Create**.
 
@@ -128,7 +128,7 @@ Once the process with forms is designed, define which process flow should run ba
 3. Under Subject:
     - Enter: **Your order**
     - Choose: **Order Number** from Order Processing Form
-    - Enter: **has been successfully** received
+    - Enter: **has been successfully received**
 
 4. Under Recipients select **Process Started By**.
 
