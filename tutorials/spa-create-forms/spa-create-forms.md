@@ -273,10 +273,9 @@ After the user approves or rejects the request, the next step is to create notif
 
     > The process content will highlight the entries with same data type of the input field. For example: if the input field is of Number type then Process Content will show only number-type entries.
 
-12. **Save** the process. With this you completed designing and configuring the notification form.
+12. **Save** the process. With this you completed designing and configuring the confirmation notification form.
 
-    > You can copy the same form to create another form to send a rejection notification to the requester. If copy is not available then create the form in the same way and modify the texts wherever relevant as shown below. 
-
+    > You can duplicate the same form to create another form to send a rejection notification to the requester. If duplicate is not available then create the form in the same way and modify the texts wherever relevant as shown below. 
 
 13. To add the new rejection form, you will use the **Duplicate** feature. Select the **Overview**.
 
@@ -344,6 +343,3 @@ After the user approves or rejects the request, the next step is to create notif
 23. **Save** your work.
 
     With this you have completed the process design of your business process. You have experienced building a process in a completely no-code environment and with no technical know-how. You used the process builder to create a one-step approval process with trigger form, approval form and notification forms.
-
-
----
