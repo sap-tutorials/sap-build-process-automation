@@ -197,7 +197,7 @@ The process can be triggered with a Form or using an API trigger. Since you are 
     <!-- border -->![7.1](7.1.png)
 
 
-3.  Click on the process canvas and in the **Process Details** choose **Inputs**. Then choose **Configure** to configure inputs.
+3.  Click on the process canvas and in the **Process Details** choose **Variables**. Then choose **Configure** to configure inputs.
 
     <!-- border -->![Inputs](7.2.png)
 
@@ -207,7 +207,7 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
     |  **Name**    | **Type**
     |  :------------- | :-------------
-    |  `salesorderdetails`       | `Sales Order`
+    |  `salesorderdetails`       | `SalesOrder`
 
 5. **Apply** changes.
 
@@ -350,7 +350,7 @@ In this step, you will create and design a form which will be sent as notificati
 
 ### Create and configure Order Rejection Notification through an Email
 
-Notifications can be sent via an Email or to the SAP Build Inbox of the Seller. Before adding mail notifications to a process, you must first configure your SMTP mail destinations for SAP Build Process Automation. Please refer to the pre-requsites to learn how to configure SMTP destination to send mail notifications.
+Notifications can be sent via an Email or to the SAP Build Inbox of the Seller. Before adding mail notifications to a process, you must first configure your SMTP mail destinations for SAP Build Process Automation. Please refer to the pre-requisites to learn how to configure SMTP destination to send mail notifications.
 
 In this step, you will send out an email notification to the Seller if the Sales order is rejected. You need to configure the mail server to use the Mail Artifact.
 
@@ -382,7 +382,8 @@ In this step, you will send out an email notification to the Seller if the Sales
 
     <!-- border -->![Mail_4](mail_4.png)  
 
-
+5. Click on **Save**.
+   
 ### Create and configure Process Condition
 
 Once the process with forms is designed, define which process flow should run based on if/else condition criteria. During the Sales Order Approval process, the Sales order can be approved automatically based on certain condition. In this step, you will add a condition where the Sales order goes for Supplier approval if the Order amount is greater than 100000 else the Sales order is approved automatically.
@@ -475,7 +476,9 @@ In this step, you will create a notification form which would be received by sup
 
     <!-- border -->![Auto Approval](11.8.png)
 
-8. Connect the outgoing flow of the **Auto Approval Notification form** to the **End** activity.
+8.  Click on **Save**.
+   
+9.  Connect the outgoing flow of the **Auto Approval Notification form** to the **End** activity.
 
     <!-- border -->![Auto Approval](11.10.png)
 

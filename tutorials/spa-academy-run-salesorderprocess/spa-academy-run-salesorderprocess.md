@@ -114,7 +114,7 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     `definitionId` of the process can be seen in Monitor section or in the API trigger section as shown in the above step.
 
-    - Navigate to **Monitor** > **Manage** > **Process and Workflow Definitions**.
+    - From the Build lobby, Navigate to Monitor tab and within the Monitor tab, access **Manage** > **Process and Workflow Definitions**.
     - Search for the project `<your unique identifier>_Sales Management` that you have created in previous tutorial.
     - Click on **Start New Instance**.
 
