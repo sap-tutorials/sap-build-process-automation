@@ -476,7 +476,7 @@ For your company, you need to design the process to submit innovation ideas by t
 
 ### Test the process 
 
-3. Open the main process. 
+3. Open the main process.
    
     <!-- border -->![CGV](1006.png)
 
