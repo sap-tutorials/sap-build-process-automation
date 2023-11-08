@@ -488,7 +488,7 @@ For your company, you need to design the process to submit innovation ideas by t
 
     <!-- border -->![CGV](1008.png)
 
-6. To approve the form as CAPEX/OPEX Council or CFO open the **Inbox** in the Lobby. 
+6. To approve the form as CAPEX/OPEX Council or CFO open the **Inbox** in the Lobby.
 
     <!-- border -->![CGV](1009.png)
 
