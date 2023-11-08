@@ -467,7 +467,7 @@ For your company, you need to design the process to submit innovation ideas by t
     <!-- border -->![CGV](1001.png)
     <!-- border -->![CGV](1002.png)
 
-2. Deploy the process. 
+2. Deploy the process.
 
     <!-- border -->![CGV](1003.png)
     <!-- border -->![CGV](1004.png)
@@ -476,7 +476,7 @@ For your company, you need to design the process to submit innovation ideas by t
 
 ### Test the process 
 
-3. Open the main process.
+3. Open the main process. 
    
     <!-- border -->![CGV](1006.png)
 
