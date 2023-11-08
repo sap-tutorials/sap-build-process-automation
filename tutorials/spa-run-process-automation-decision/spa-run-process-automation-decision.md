@@ -107,7 +107,7 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     <!-- border -->![Monitor](010.png)
 
-    In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statuses such as running, completed, suspended, terminated, etc.
+    In there, you will see all the running, erroneous and canceled process instances. Use the filter bar to get a more customized view of the process instances based on different statuses such as running, completed, canceled, etc.
 
     To explore different process monitoring options, go to the **Process and Workflow Instances** list and choose your new process instance that was just triggered via the start form.
 

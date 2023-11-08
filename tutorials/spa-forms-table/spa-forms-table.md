@@ -12,8 +12,8 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Validate the order details extracted from the automation and display the error details in table in a form.
 
 ## Prerequisites
- - Complete the tutorial on creating an [Boost your Business Process with Automation, Decision and Process Visibility](mission.sap-process-automation-boost).
- - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-forms-table/Orders.xlsx) in your local machine.
+ - Complete the mission [Boost your Business Process with Automation, Decision and Process Visibility](mission.sap-process-automation-boost).
+ - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-forms-table/Orders.xlsx) on your local machine.
  - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings)
 
 ## You will learn

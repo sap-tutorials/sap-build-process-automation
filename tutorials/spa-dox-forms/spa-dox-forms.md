@@ -123,7 +123,7 @@ There are different requirements and business situations when a form is needed i
 
     <!-- border -->![Open Editor](19.png)
 
-4. In the form, add a headline **`Invoice Approval`**, a paragraph **`Your invoice has been approved.`** and also a text field **`Invoice Number`** and select here **Read Only**. **Save** your work.
+4. In the form, add a Headline 1 **`Invoice Approval`**, a Paragraph **`Your invoice has been approved.`** and also a Text  **`Invoice Number`** and select here **Read Only**. **Save** your work.
 
     <!-- border -->![Invoice Approval Notification Form](20.png)
 

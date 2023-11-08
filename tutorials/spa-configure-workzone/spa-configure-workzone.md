@@ -283,33 +283,35 @@ Once you have created a destination, you must now assign roles to any users who 
 4.  Select **Content Manager**. On the top tabs select **Content Explorer** and then select **HTML5 Apps**.
 
     <!-- border -->![SBWSE](033.png)
+    
+    <!-- border -->![SBWSE](033b.png)
 
-5.  Select all items and click **+ Add to My Content**.
+5.  Select all items and click **Add**.
 
     <!-- border -->![SBWSE](034.png)
 
-6.  Navigate to **My Content**. Choose **New** and select **Group**.
+6.  Navigate to **Content Manager**. Choose **Create** and select **Group**.
 
     <!-- border -->![SBWSE](040.png)
+    
+    <!-- border -->![SBWSE](040a.png)
 
 7.  Manage the Group:
     - Set **Title** to **SAP Build Process Automation**.
     - Click on the search field to display item results.
     - Assign **My Inbox** and **Process Workspace** to the group.
     - Choose **Save**.
-    - Go back. 
+    - Go back to **Content Manager**. 
 
     <!-- border -->![SBWSE](041.png)
 
-8.   Select **Everyone** item to edit it. Select **Edit** to edit role.
+8.  Select **Everyone** item to edit it. Select **Edit** to edit role.
 
     <!-- border -->![SBWSE](042.png)
 
-9.  Click on the search field to display item results.
-
     <!-- border -->![SBWSE](043.png)
 
-10.  Manage changes:
+9.  Manage changes:
 
     - Assign **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role.
     - Choose **Save**.

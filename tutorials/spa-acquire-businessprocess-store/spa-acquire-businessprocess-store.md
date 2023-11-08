@@ -12,6 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Import a sample business process from the SAP Build store.
 
 ## Prerequisites
+- [Trial account](spa-subscribe-free-trial) with the SAP Build Process Automation enabled **OR**
 - Account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
 
 ## You will learn
@@ -25,10 +26,10 @@ primary_tag: software-product>sap-build-process-automation
 
 The store is available for everyone and can be accessed directly from the home page. The store offers pre-built content created and curated by SAP, which can be used free of charge with SAP Build Process Automation.
 
-Packages are categorized by catalog, which let you choose between Business Content, Learning Content and Automation SDK. It also offers a variety of filters, a search feature, and content descriptions to help users find what they are looking for quickly.
+Packages are categorized by catalog, which let you choose between Automation SDK, Business Content and Learning Content. It also offers a variety of filters, a search feature, and content descriptions to help users find what they are looking for quickly.
 
 1. Navigate to the store in your SAP Build Process Automation tenant.
-
+   
     &nbsp;
 
     > **Learning Content** offers learning packages to get started with the Application Development tool. These packages allow you to learn best practices by reusing the most common flows to design your first projects.
@@ -39,28 +40,31 @@ Packages are categorized by catalog, which let you choose between Business Conte
 
     <!-- border -->![Navigate Store](1.Store.png)
 
-    You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Process Automation), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
+    You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Business Process), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
 
 
 ### Import sales order approvals business process
 
-You will import the business process titled **Sales Order Approvals - Sample**.
+You will import the business process titled **Sales Order Approvals**.
 
-1. Set the following parameters: under **Catalog**, check **Learning Content** and type **Sales Order Approvals - Sample**  in the search bar and hit **Enter**.
+1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Approvals**  in the search bar and hit **Enter**.
 
-    > This sample content is designed to help users to get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
+    > This sample content is designed to help users get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
 
     <!-- border -->![Import Business Process](2.ImportBusinessProcess.png)
 
-2. To add the package,  select **Create from Template**.
-
-    Name the project **Sales Order Approvals Dev Tutorial** and choose **Create**.
+2. To add the entire package, select **Create from Template**.
 
     <!-- border -->![Create Project](3.Createfromtemplate.png)
+   
+3. Name the project **Sales Order Approvals Dev Tutorial** and choose **Create**.
 
+    <!-- border -->![Create Project](3a.png)
 
-3. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** from the top menu.
+4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** from the top menu.
 
     <!-- border -->![Lobby](4.Lobby.png)
 
     You have now imported a sample process and are ready to test/modify it.
+
+

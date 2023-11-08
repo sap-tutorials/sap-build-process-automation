@@ -4,7 +4,7 @@ author_profile: https://github.com/pbujnicka
 keywords: tutorial
 auto_validation: true
 time: 30
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
 primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
@@ -22,7 +22,7 @@ parser: v2
  - Download and save [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/50c942bbd0a7612e1cb672134578e517786e7b0e/tutorials/spa-create-automation/Orders.xlsx) on your SharePoint or OneDrive.
 
 ## You will learn
-- How to use Microsoft 365 Cloud Office SDK Activities
+- How to use Microsoft 365 Cloud Office SDK activities
 
 ## Intro
 After completing this tutorial, you will be able to search for an Excel file on SharePoint or OneDrive, download it and store it on your local machine, read Excel data for a given range and send an email via Outlook Online with the new Excel file as an attachment. 
@@ -35,7 +35,7 @@ Once you have successfully configured the Azure Application as mentioned in Pre-
 
 1. Log in to SAP Build Process Automation Tenant.
 
-2. Navigate to **Settings > External Authentication**.
+2. Navigate to **Control Tower > External Authentication**.
 
     <!-- border -->![Office](1a.png)
 
@@ -114,11 +114,15 @@ Once the external authentication is created, you can see it on Agent 3.
 
     <!-- border -->![Office](4.png)
 
-5. Select the agent version that is registered on your system.
+5. Choose **Create > Automation**.
+   
+    <!-- border -->![Office](4a.png)
+   
+6. Select the agent version that is registered on your system.
 
     <!-- border -->![Office](010.png)
 
-6. Provide a name for the automation such as **Automation send email**, and choose **Create**.
+7. Provide a name for the automation such as **Automation send email**, and choose **Create**.
 
     <!-- border -->![Office](011.png)
 
@@ -134,7 +138,7 @@ You will be navigated to the automation editor where you can build your automati
 
     <!-- border -->![Office](014.png)
 
-3. Under Add dependency search for **Microsoft 365 Cloud SDK** and **Add** it.
+3. Under Add Dependency search for **Microsoft 365 Cloud SDK** and **Add** it.
 
     <!-- border -->![Office](015.png)
 
@@ -152,11 +156,11 @@ You will be navigated to the automation editor where you can build your automati
 
 3. Under **Automation Details** panel, under **Tools**, look for **Get Remote File Information** activity. Drag and drop the activity into the workflow.
 
-    <!-- border -->![Office](020.png)
-
     > **Get Remote File Information** activity gets information about a remote file using its source URL.
 
     > It will generate a log message within the tester and the trace file.
+
+    <!-- border -->![Office](020.png)
 
 4. Select the **Get Remote File Information** activity. In **Input Parameters**, under `sourceURL`, you need to copy and paste the URL provided by Microsoft to open the file. You will retrieve the file URL in the step below.
 
@@ -182,51 +186,35 @@ You will be navigated to the automation editor where you can build your automati
 
     <!-- border -->![Office](022.png)
 
-9. **Save** the automation. **Test** the automation.
+9.  **Save** the automation. **Test** the automation.
 
     <!-- border -->![Office](021.png)
 
-
-10.  Once the Test is done, go to **Info** in the **Test Console**. Copy:
-
-    - `driveId` value
-    - `fileId` value
-
-11. Save the values for later. You will need them when you test your automation.
+10.  Once the Test is done, go to **Info** in the **Test Console** where you will find the `driveId` and `fileId` values.
 
     > The `driveId` is the ID of the remote SharePoint Drive where the file is located and the `fileId` is the ID of the workbook.
 
     <!-- border -->![Office](024.png)
 
 
-### Create Input Parameters
+### Create Input Parameter
 
 An input or output parameter is a variable that is passed, received, or sent from one automation, SDK activity or control to another. This variable allows you to manipulate data that you can use in your workflow. Input or output parameters have a name (optionally a description) and data that complies to a type.
 
-For the purpose of this tutorial, you will create input parameters for the two values retrieved above `driveId` and `fileId` as well as for the `path` to the excel file which will be downloaded locally in your system.
+For the purpose of this tutorial, you will create an input parameter for the `path` to the excel file which will be downloaded locally in your system.
 
 1. In your automation, on the right-hand side panel, go the **Input/Output** section and click **Add new input parameter**.
 
     <!-- border -->![Office](07.png)
 
-2. Enter a name: `driveId`.
+2. Perform the following:
+   
+    - Enter a name: path
+    - Enter a description: Path to the excel file
+    - Select **String** as type
 
-3. Enter a description: ID of the remote Drive where the file is located.
-
-4. Select **String** as type.
-
-    <!-- border -->![Office](07a.png)
-
-5. In the same way, create two other input parameters as follows:
-
-    |  Field Value  | Input Parameter 1  | Input Parameter 2
-    |  :------------| :------------------| :----------------
-    |  Name         | `fileId`           | `path`
-    |  Description  | ID of the workbook | Path to the excel file
-    |  Type         | String             | String
-
-6. Choose **Save**.
-
+3. Choose **Save**.
+   
     <!-- border -->![Office](08.png)
 
 
@@ -234,29 +222,39 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
 1.  Under **Automation Details** panel, under **Tools**, look for **Open Workbook** activity. Drag & drop it into the workflow.
 
-    <!-- border -->![Office](023.png)
-
     > This activity opens Excel Workbook.
+
+    <!-- border -->![Office](023.png)
 
 2. Select the **Open Workbook** activity.
 
-3. Under **Input Parameters**, for `driveId`, you may select `driveId` parameter you just created.
+3. Under **Input Parameters**, for `driveId`, perform the following steps:
+   
+    - Open the expression editor
+    - Select **Variables**
+    - Select the variable `fileInformation` from Step 2 and choose `driveId` 
+    - Choose **Save Expression**
 
     <!-- border -->![Office](04.png)
 
-4. In the same way, you will select `fileId` parameter under `pathOrFileId`.
+4. In the same way, for `pathOrFileId`, perform the following steps:
 
+    - Open the expression editor
+    - Select **Variables**
+    - Select the variable `fileInformation` from Step 2 and choose `fileIdId` 
+    - Choose **Save Expression**
+ 
     <!-- border -->![Office](05.png)
 
 5. Under **Automation Details** panel, under **Tools**, look for **Get Values** activity. Drag & drop it into the workflow.
 
-    <!-- border -->![Office](026.png)
-
     > This activity retrieves the values, formulas or `numberFormats` from the current worksheet.
 
-6. Select the **Get Values** activity. Under **Input Parameters** in:
+    <!-- border -->![Office](026.png)
 
-    - range Definition enter: **A1:F11** and select the expression in quotes.
+6. Select the **Get Values** activity. Under **Input Parameters** for:
+
+    - range Definition, enter: **A1:F11** and select the expression in quotes.
 
     > **What's going on?:** The range definition of the excel file has values up to this range therefore you need to specify those values.
 
@@ -268,19 +266,19 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
     <!-- border -->![Office](027.png)
 
-7. Under **Automation Details** panel, under **Tools**, look for **For Each** control. Drag & drop it into the workflow.
+7.  Under **Automation Details** panel, under **Tools**, look for **For Each** control. Drag & drop it into the workflow.
 
     <!-- border -->![Office](028.png)
 
-8. Select the **For Each** control. Under **Parameters** in **Set looping list**, choose **result**.
+8.  Select the **For Each** control. Under **Parameters** in **Set looping list**, choose **result**.
 
     <!-- border -->![Office](030.png)
 
-9. Under **Automation Details** panel, under **Tools**, look for **Log Message** activity. Drag & drop it into the workflow inside the **For Each** loop.
+9.  Under **Automation Details** panel, under **Tools**, look for **Log Message** activity. Drag & drop it into the workflow inside the **For Each** loop.
 
     <!-- border -->![Office](029.png)
 
-10. Select the **Log Message** activity. Under Input Parameters in message choose `currentMember`.
+10. Select the **Log Message** activity. Under Input Parameters in **message** choose `currentMember`.
 
     <!-- border -->![Office](031.png)
 
@@ -290,51 +288,68 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
 12. Select the **Download File** activity. 
 
-13. Under **Input Parameters**:
-    - for `driveId`: select parameter `driveId`.
-    - for `pathOrFileId`: select parameter `fileId`.
-    - for `localFilePath`: select parameter `path`.
-
-    > `localFilePath` corresponds to the path to the file which will store the data on your machine.
+13. Under **Input Parameters**, for `driveId`, perform the following steps:
+   
+    - Open the expression editor
+    - Select **Variables**
+    - Select the variable `fileInformation` from Step 2 and choose `driveId` 
+    - Choose **Save Expression**
 
     <!-- border -->![Office](06.png)
 
-14. Under **Automation Details** panel, under **Tools**, look for **Send E-mail** activity under **Outlook Online**. Drag & drop it into the workflow just below **Download File** activity.
+14. In the same way, for `pathOrFileId`, perform the following steps:
 
-    <!-- border -->![Office](034.png)
+    - Open the expression editor
+    - Select **Variables**
+    - Select the variable `fileInformation` from Step 2 and choose `fileIdId` 
+    - Choose **Save Expression**
+
+    <!-- border -->![Office](06a.png)
+
+15. For `localFilePath`: select parameter `path`.
+
+    > `localFilePath` corresponds to the path to the file which will store the data on your machine.
+
+    <!-- border -->![Office](06b.png)
+
+16. Under **Automation Details** panel, under **Tools**, look for **Send E-mail** activity under **Outlook Online**. Drag & drop it into the workflow just below **Download File** activity.
 
     > This activity will send an email using Outlook Online.
 
-15. Select the **Send E-mail** activity. In Input Parameters under `mailDescription` choose **Create Custom Data**.
+    <!-- border -->![Office](034.png)
+
+17. Select the **Send E-mail** activity. In Input Parameters under `mailDescription` choose **Create Custom Data**.
 
     <!-- border -->![Office](035.png)
 
-16. Customize the Email:
+18. Customize the Email:
+    
     - Under subject enter: **Your list of orders** and select expression in quotes.
     - Under body enter: **Hello, Your list of orders is ready for you.** and select expression in quotes.
     - Under `toRecipients`, select **+** and add your email address. Select the expression in quotes.
 
     <!-- border -->![Office](036.png)
 
-    - Under attachments, select **Custom Data** and **+** to add the name and `path` parameter:
-        - In the name field, enter **ListOfOrders.xlsx** and select the expression in quotes. 
-        - In the path field, select parameter `path`.
+    - Under attachments, select **+** next to **Description of a mail.attachments**
+    - Under attachments, select **Create Custom Data** to add the name and `path` parameter:
+      - In the name field, enter **ListOfOrders.xlsx** and select the expression in quotes. 
+      - In the path field, select parameter `path`.
 
     > `path` corresponds to the path of the file which will be added to the email message.
   
     <!-- border -->![Office](040.png)
 
-17. Under **Automation Details** panel, under **Tools**, look for **Remove File/Folder** activity. Drag & drop it into the workflow.
+19. Under **Automation Details** panel, under **Tools**, look for **Remove File/Folder** activity. Drag & drop it into the workflow.
 
     <!-- border -->![Office](037.png)
 
-18. Select the **Remove File/Folder** activity. 
+20. Select the **Remove File/Folder** activity. 
 
-19. Under **Input Parameters**, for **path**, select the parameter `path`.
+21. Under **Input Parameters**, for **path**, select the parameter `path`.
     
     > `path` is the path of the file that will be removed once email is sent.
 
-20. **Save** your work.
+22. **Save** your work.
 
     <!-- border -->![Office](038.png)
 
@@ -345,15 +360,13 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
     <!-- border -->![Office](039.png)
 
-2. Now you will enter the actual values of the **Input parameters**.
+    You will be prompted to enter the value of **Input parameters**.
 
-    - For `driveId`: you will enter the value that you retrieved in step 5.
-    - For `fileId`: you will enter the value that you retrieved in step 5.
-    - For `path`: you will enter the path to the excel file. Your path would be like `C:\Users\Public\Orders.xlsx`
+2. For `path`: enter the path to the excel file. Your path would be like `C:\temp\ListOfOrders.xlsx`
 
     > The file will be saved with the name `ListOfOrders` in the above-mentioned folder and would be deleted after the mail is received.
 
-3. Choose **Test**.
+2. Choose **Test**.
 
     <!-- border -->![Office](098.png)
 
@@ -361,7 +374,7 @@ For the purpose of this tutorial, you will create input parameters for the two v
 
     <!-- border -->![Office](042.png)
 
-4. Check your Outlook Inbox to see the email that was send with the attachment.
+3. Check your Outlook Inbox to see the email that was send with the attachment.
 
     <!-- border -->![Office](041.png)
 

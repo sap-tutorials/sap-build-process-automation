@@ -83,7 +83,7 @@ Now, you have to map the Input and Output of the decision to the actual data obj
 
     <!-- border -->![002](007.png)
 
-4. In the Field Details section on the right, in the **Name** field enter **Email**. Keep the **Type** as **String**.
+4. In the Field Details section on the right, in the **Name** field enter `Email`. Keep the **Type** as **String**.
 
     > You can choose the **Type** dropdown list to see the different kind of data types that are supported like Number, Password, Date, Time, Boolean etc.
 
@@ -197,7 +197,7 @@ First, add this newly created data object as the decision output.
 
 17. Similarly, enter the following expressions for the respective result column (or **Then** section):
     - Under `UserGroup` enter: `'SO_APPROVER'`
-    - Under Email enter your email such as `jane.doe@sap.com`
+    - Under Email enter your email such as `'jane.doe@sap.com'`
 
     > Do not forget to put single-quote (') for string type values.
 
@@ -226,7 +226,7 @@ First, add this newly created data object as the decision output.
     |  Action Column   | Value
     |  :------------- | :-------------
     |  `UserGroup`        | `'SO_MGMNT'`
-    |  `Email`       | `john.doe@sap.com`|
+    |  `Email`       | `'john.doe@sap.com'`|
 
 20. Choose **Save** button.
 

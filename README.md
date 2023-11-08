@@ -1,19 +1,14 @@
-# Our new open source project
+[![REUSE status](https://api.reuse.software/badge/github.com/sap-tutorials/sap-build-process-automation)](https://api.reuse.software/info/github.com/sap-tutorials/sap-build-process-automation)
+
+# SAP Build Process Automation Tutorial Repository
 
 ## About this project
 
-The sap-build-process automation repository will support publishing of tutorials related to the SAP Build process automation services.
+The SAP Build Process Automation repository will house tutorials pertaining to the SAP Build Process Automation solution.  SAP Build Process Automation is an SAP BTP service that allows citizen developers to adapt, improve, and innovate business processes with low-code/no-code capabilities.
 
 ## Requirements and Setup
 
--Migration of existing tutorials from the Tutorials repository
-  
--Setup of repository as "Public"
-  
--Setup of rules regarding pull requests requirements
-  
--Setup of repository and repository owner in the repository.owner.json file in the tutorial-checker-->data folder
-
+If you will be using this repository to publish tutorials, please be sure you fork the tutorial and clone it to your local machine.  Before working on any tutorial, remember to execute a `git pull` command to update your local repository.  Unless you are the repository administrator, you will need to submit a pull request after you commit your changes.
 
 ## Support, Feedback, Contributing
 

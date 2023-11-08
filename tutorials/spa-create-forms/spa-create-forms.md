@@ -45,6 +45,7 @@ First, you will create a trigger form that will start the business process. For 
     <!-- border -->![Form](001.png)
 
 2. In the pop-up window for new form:
+
     - Enter the Name: **Order Processing Form**
     - Enter a Description: **Form to collect order details**
     - Choose **Create**.
@@ -79,7 +80,7 @@ First, you will create a trigger form that will start the business process. For 
 
     <!-- border -->![Form](005.png)
 
-5. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
+6. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
 
     <!-- border -->![Form](006.png)
 
@@ -94,7 +95,7 @@ The approval form will be used to get faster and easier approvals from the busin
 
 You can create these different forms using the **Form Builder** embedded in the process builder using different form field options. You can design and modify them without any coding.   
 
-1. Go to the **Order Processing** Project.
+1. Go to the **Order Processing** process.
 
     <!-- border -->![Approval](007.png)
 
@@ -248,7 +249,7 @@ After the user approves or rejects the request, the next step is to create notif
 
 7.	Go back to the process builder to map the process content with the form input fields.
 
-8. Select the **Order Confirmation** form to configure the **General** information section.
+8. Select the **Order Confirmation Form** to configure the **General** information section.
 
 9. In the **Subject** box:
     - Enter **Your order**
@@ -272,10 +273,9 @@ After the user approves or rejects the request, the next step is to create notif
 
     > The process content will highlight the entries with same data type of the input field. For example: if the input field is of Number type then Process Content will show only number-type entries.
 
-12. **Save** the process. With this you completed designing and configuring the notification form.
+12. **Save** the process. With this you completed designing and configuring the confirmation notification form.
 
-    > You can copy the same form to create another form to send a rejection notification to the requester. If copy is not available then create the form in the same way and modify the texts wherever relevant as shown below. 
-
+    > You can duplicate the same form to create another form to send a rejection notification to the requester. If duplicate is not available then create the form in the same way and modify the texts wherever relevant as shown below. 
 
 13. To add the new rejection form, you will use the **Duplicate** feature. Select the **Overview**.
 
@@ -343,6 +343,3 @@ After the user approves or rejects the request, the next step is to create notif
 23. **Save** your work.
 
     With this you have completed the process design of your business process. You have experienced building a process in a completely no-code environment and with no technical know-how. You used the process builder to create a one-step approval process with trigger form, approval form and notification forms.
-
-
----
