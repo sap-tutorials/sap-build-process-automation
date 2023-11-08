@@ -26,7 +26,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 <!-- border -->![Assignments to Everyone Role](01.png)
 
-1. Go back to **My Content** page.
+1. Go back to **Content Manager** page.
 
     <!-- border -->![Back My Content](02.png)
 
@@ -34,56 +34,56 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
     <!-- border -->![Process Trigger](07.png)
 
-2. Choose **Create a Local Copy**.
+3. Choose **Create a Local Copy**.
 
     <!-- border -->![Create Local Copy](08.png)
 
-3. Choose **Edit** to make changes to the **Process Trigger** app.
+4. Choose **Edit** to make changes to the **Process Trigger** app.
 
     <!-- border -->![Edit](09.png)
 
-4. Change the name of the app to **Sales Order Management**.
+5. Change the name of the app to **Sales Order Management**.
 
     <!-- border -->![Change Name](10.png)
 
-5. Select the tab **Navigation**.
+6. Select the tab **Navigation**.
 
     <!-- border -->![Navigation](11.png)
 
-6. Now you need to fill the **Default Value** of the app's parameters with the **Launchpad Configuration Parameter** of your process' **Trigger Settings**.
+7. Now you need to fill the **Default Value** of the app's parameters with the **Launchpad Configuration Parameter** of your process' **Trigger Settings**.
 
     <!-- border -->![Default Value Field](11a.png)
 
-7. Navigate back to your deployed project in the **SAP Build Process Automation**.
+8. Navigate back to your deployed project in the **SAP Build Process Automation**.
 
-8. Select the **Order Processing Form**.
+9. Select the **Order Processing Form**.
 
-9. Copy the **Launchpad Configuration Parameter**.
+10. Copy the **Launchpad Configuration Parameter**.
 
     <!-- border -->![Copy Parameter](12.png)
 
     >This is the parameter you need to configure this form trigger as a tile in the Business Site.
 
-10. Now navigate back to the Work Zone.
+11. Now navigate back to the Work Zone.
 
-11. Paste the value in the **Default Value** field of the Sales Order Management app's parameters.
+12. Paste the value in the **Default Value** field of the Sales Order Management app's parameters.
 
     <!-- border -->![Default Value](13.png)
 
-12. Select the tab **Translation**.
+13. Select the tab **Translation**.
 
-13. Change the name of the **Title** to **Sales Order Management**.
+14. Change the name of the **Title** to **Sales Order Management**.
 
     <!-- border -->![Change Name](13b.png)
 
-12. Choose **Save**.
+15. Choose **Save**.
 
 
 
 ### Assign Sales Order Management Trigger to SAP Build Process Automation Group
 
 
-1. Navigate back to **My Content**.
+1. Navigate back to **Content Manager**.
 
     <!-- border -->![My Content](13a.png)
 
@@ -99,7 +99,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 4. Select the search bar.
 
-5. Choose the **+** to add the **Sales Order Management** item.
+5. Click on the **On/Off Button** to add the **Sales Order Management** item.
 
 6. Choose **Save**.
 
@@ -109,7 +109,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 ### Assign Sales Order Management Trigger to Everyone Role
 
 
-1. Go back to **My Content**.
+1. Go back to **Content Manager**.
 
     <!-- border -->![My Contact](06.png)
 
@@ -121,11 +121,9 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 4. You will now assign the **Sales Order Management** trigger to Everyone role.
 
-5. Select the search bar.
+5. Click on the **On/Off Button** to add the **Sales Order Management** item.
 
-6. Choose the **+** to add the **Sales Order Management** item.
-
-7. Choose **Save**.
+6. Choose **Save**.
 
     <!-- border -->![Everyone](17.png)
 
