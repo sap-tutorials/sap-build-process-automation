@@ -8,7 +8,7 @@ tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tu
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Acquire a Template Project from the Store
+# Acquire a Template Project From the Store
 <!-- description --> Import a sample business process from the SAP Build store.
 
 ## Prerequisites
@@ -61,10 +61,12 @@ You will import the business process titled **Sales Order Approvals**.
 
     <!-- border -->![Create Project](3a.png)
 
-4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** from the top menu.
+4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** by clicking on the SAP logo on the top left corner.
 
     <!-- border -->![Lobby](4.Lobby.png)
 
     You have now imported a sample process and are ready to test/modify it.
+
+    <!-- border -->![Lobby](5.png)
 
 
