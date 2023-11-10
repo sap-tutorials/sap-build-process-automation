@@ -9,12 +9,12 @@ tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tu
 primary_tag: software-product>sap-build-process-automation
 ---
 
-# Create Destination to Trigger Process from any Service
+# Create Destination to Trigger Process From any Service
 <!-- description --> Create a destination to trigger a business process by creating a service instance and service key of SAP Build Process Automation.
 
 ## Prerequisites
-- Account on [SAP BTP](btp-free-tier-account) to try out Free Tier service plans
-- Subscribe to [SAP Build Process Automation](spa-subscribe-booster) using booster in SAP BTP Free Tier
+- Subscribe to [SAP Build Process Automation](spa-subscribe-booster) using booster in SAP BTP Free Tier **OR**
+- Subscribe to [SAP Build Process Automation](spa-subscribe-free-trial) using SAP BTP Free Trial
 - Proper roles to create service instance, service key and destinations in SAP BTP Cockpit
 
 ## You will learn
@@ -32,9 +32,11 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
 <!-- border --> ![SBPA Service](1.png)
 
+> **IMPORTANT:** If you are using a SAP BTP Free Trial account, the Instance **SPA-instance** and the Key **SBPA key** get automatically created when you subscribe to SAP Build Process Automation in SAP BTP Cockpit. You will find the Instance under **Instances and Subscriptions > Instances**. Please skip to step 2.3 to retrieve the credentials of your key. 
+
 1. Let's create an **Instance** for SAP Build Process Automation. Choose **Create**.
 
-2. Select the Service as **SAP Build Process Automation** and plan as **standard instance**. Choose **Next**.
+2. Select the Service as **SAP Build Process Automation** and plan as **standard instance**.
 
     <!-- border --> ![Create](2.png)
 
@@ -80,7 +82,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
 ### Create a destination to trigger process
 
-1. Navigate to **Destinations** > **New Destination**. Enter the destination name as `spa_process_destination`.
+1. Navigate to **Destinations** > **Create Destination**. Enter the destination name as `spa_process_destination`.
 
     <!-- border --> ![Create](10.png)
 
