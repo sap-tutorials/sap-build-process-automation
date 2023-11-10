@@ -31,7 +31,7 @@ Custom Variables allow you to store information, that are accessible anywhere in
 
 ### Process description 
 
-For your company, you need to design the process to submit innovation ideas by the employees. The process should by triggered by the employee who fill out the form. Then CFO would like it to be divided to CAPEX and `OPEX` categories, so two different councils can process the ideas and decide whether to provide an approval. If the innovation idea requires additional information, the council will send it back to the requester. In case the process will be approved by the council, the CFO will received the case for the final approval. The requester must receive an email with the council or CFO decision. 
+For your company, you need to design the process to submit innovation ideas by the employees. The process should by triggered by the employee who fill out the form. Then CFO would like it to be divided to `CAPEX` and `OPEX` categories, so two different councils can process the ideas and decide whether to provide an approval. If the innovation idea requires additional information, the council will send it back to the requester. In case the process will be approved by the council, the CFO will received the case for the final approval. The requester must receive an email with the council or CFO decision. 
 
 
 ### Create the project
@@ -72,7 +72,7 @@ For your company, you need to design the process to submit innovation ideas by t
     | global description | string |
     | global idea name | string |
     | global council comments | string |
-    | category `OPEX`/capex | string |
+    | category `OPEX`/`CAPEX` | string |
 
     <!-- border -->![CGV](2000.png)
 
@@ -151,7 +151,7 @@ For your company, you need to design the process to submit innovation ideas by t
 
     <!-- border -->![CGV](CV009.png)
 
-4. For the Drop-down Fields provide two Values: `OPEX` and CAPEX. 
+4. For the Drop-down Fields provide two Values: `OPEX` and `CAPEX`. 
    
     <!-- border -->![CGV](CV010.png)
 
@@ -174,7 +174,7 @@ For your company, you need to design the process to submit innovation ideas by t
      - **Global cost** with **Number SP**
      - **Global description** with **Description SP**
      - **Global idea name** with **Name SP**
-     - **Category `OPEX`/CAPEX** with **Number SP**
+     - **Category `OPEX`/`CAPEX`** with **Number SP**
 
     <!-- border -->![CGV](012.png)
 
@@ -187,12 +187,12 @@ For your company, you need to design the process to submit innovation ideas by t
 
     <!-- border -->![CGV](013.png)
 
-2. Name it **CAPEX Council Approval** and make sure to mark the checkbox **Based on a form** and select the trigger form from the list.
+2. Name it **`CAPEX` Council Approval** and make sure to mark the checkbox **Based on a form** and select the trigger form from the list.
    
     <!-- border -->![CGV](CV012.png)
 
-3. Select **Open Editor** of the CAPEX form. Make changes in the form:
-    - change the Headline to **CAPEX Approval for Innovation Idea**
+3. Select **Open Editor** of the `CAPEX` form. Make changes in the form:
+    - change the Headline to **`CAPEX` Approval for Innovation Idea**
     - at the end of the form add additional Input fields:
 
     | **Form Field**    | **Value** | **Option** |
@@ -203,11 +203,11 @@ For your company, you need to design the process to submit innovation ideas by t
 
     <!-- border -->![CGV](CV013a.png)
 
-4. **Save** the CAPEX approval form, and close the tab.
+4. **Save** the `CAPEX` approval form, and close the tab.
 
-5. In the Process Tab choose Capex form. In the General Section:
-    - Under **Subject** enter: Capex Council Approval
-    - Under **Users** enter: email of the Capex Council
+5. In the Process Tab choose `CAPEX` form. In the General Section:
+    - Under **Subject** enter: `CAPEX` Council Approval
+    - Under **Users** enter: email of the `CAPEX` Council
 
     <!-- border -->![CGV](CV065.png)
 
@@ -215,7 +215,7 @@ For your company, you need to design the process to submit innovation ideas by t
     - **Estimated Cost of the Innovation** with **global cost**
     - **Idea Description** with **global description**
     - **Name of the idea** with **global idea name**
-    - **Select the category** with **category `OPEX`/capex**
+    - **Select the category** with **category `OPEX`/`CAPEX`**
   
     <!-- border -->![CGV](CV103.png)
 
@@ -225,13 +225,13 @@ For your company, you need to design the process to submit innovation ideas by t
 
     <!-- border -->![CGV](022.png)
 
-8. Before CAPEX form add a condition which will distribute the form to CAPEX or `OPEX` council. Select **+** > **Controls** > **Condition**. 
+8. Before `CAPEX` form add a condition which will distribute the form to `CAPEX` or `OPEX` council. Select **+** > **Controls** > **Condition**. 
 
     <!-- border -->![CGV](014.png)
 
 9. Define the condition panel:
-    - Provide the step Name: **Condition `OPEX`/CAPEX** custom variable
-    - Name the Branch: **If CAPEX**
+    - Provide the step Name: **Condition `OPEX`/`CAPEX`** custom variable
+    - Name the Branch: **If `CAPEX`**
   
     <!-- border -->![CGV](CV104.png)
 
