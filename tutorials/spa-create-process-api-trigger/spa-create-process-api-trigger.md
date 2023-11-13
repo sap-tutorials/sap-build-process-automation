@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create an API trigger for the business process.
 
 ## Prerequisites
- - Complete [Acquire a Template Project from the Store](spa-acquire-businessprocess-store) and choose version history 1.2.0 **OR**
+ - Complete [Acquire a Template Project From the Store](spa-acquire-businessprocess-store) **OR**
  - Complete the mission [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation)
 
 ## You will learn
