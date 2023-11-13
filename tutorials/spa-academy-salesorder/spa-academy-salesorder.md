@@ -207,7 +207,9 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
     |  **Name**    | **Type**
     |  :------------- | :-------------
-    |  `salesorderdetails`       | `SalesOrder`
+    |  `salesorderdetails`       | `Sales Order`
+
+    Note: Type is a dropdown field which contains "Sales Order" as datatype.
 
 5. **Apply** changes.
 
@@ -438,8 +440,8 @@ In this step, you will create a notification form which would be received by sup
     | Headline 1 | Automatic Order Confirmation | |
     | Paragraph  | Your order has been received and we will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request:| |
     | Paragraph  | Your Sales Order Details: | |
-    | Text |  Material Name  | X
-    | Text |  Customer | X
+    | Text |  Material  | X
+    | Text |  Customer Name | X
     | Number | Order Amount | X
     | Date | Expected Delivery Date | X
     | Paragraph | Please press the SUBMIT button to acknowledge the order status| |
@@ -469,10 +471,11 @@ In this step, you will create a notification form which would be received by sup
 
     | Form Input Fields| Process Content Entry
     |  :------------- | :-------------
-    | Customer Name | `shipToParty`    
+    | Customer Name | `shipToParty`
+    | Expected Delivery Date | `expectedDeliveryDate`    
     | Material | `material`
     | Order Amount | `orderAmount`
-    | Expected Delivery Date | `expectedDeliveryDate`
+   
 
     <!-- border -->![Auto Approval](11.8.png)
 
