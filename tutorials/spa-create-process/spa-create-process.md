@@ -49,10 +49,11 @@ There are many use cases where you can make a difference using SAP Build Process
     <!-- border -->![Create a Project](003.png)
 
 
-3. In the **Create a Business Process** dialog box, do the following:
-    - Enter a **Project Name**: Sales Orders Management.
-    - Enter a **Short Description**: Sales Orders Management Project.
-    - Choose **Create**.
+4. In the **Create a Business Process Project** dialog box, do the following:
+   
+    - Enter a **Project Name**: Sales Orders Management
+    - Enter a **Short Description**: Sales Orders Management Project
+    - Choose **Create**
 
     <!-- border -->![Project information](004.png)
 
@@ -60,19 +61,19 @@ There are many use cases where you can make a difference using SAP Build Process
 ### Create a business process
 
 
-1.   A new tabs opens with the newly created project.
+1. A new tabs opens with the newly created project.
 
 2. In the **Create Process** dialog box, provide the following:
-    - Enter a **Name**: Order Processing.
-    - Enter a **Description** for your process: A process to handle sales orders.
-    - Choose **Create**.
-
+   
+    - Enter a **Name**: Order Processing
+    - Enter a **Description** for your process: A process to handle sales orders
+    - Choose **Create**
 
     > Inside a project, you can create a process. This process is equivalent to a workflow in any business scenario. You can create this process from different skills such as forms, decisions, automations.
 
     <!-- border -->![Create Process](005.png)
 
-    > The form **Identifier** field is auto-filled.
+    > Note that the form **Identifier** field is auto-filled.
 
 
 ---
