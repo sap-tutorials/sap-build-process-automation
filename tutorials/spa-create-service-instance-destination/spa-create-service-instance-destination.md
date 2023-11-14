@@ -94,7 +94,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Name | any name (`spa_process_destination`)
     | Type | HTTP
     | Description | any description
-    | URL | `api\public/workflow/rest/v1/workflow-instances`, where `api` is noted previously in step 2<div>&nbsp;</div> such as: `https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/public/workflow/rest/v1/workflow-instances`
+    | URL | `api/public/workflow/rest/v1/workflow-instances`, where `api` is noted previously in step 2<div>&nbsp;</div> such as: `https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/public/workflow/rest/v1/workflow-instances`
     | Proxy Type | Internet
     | Authentication |  OAuth2ClientCredentials
     | Use `mTLS` for token retrieval |  Off
