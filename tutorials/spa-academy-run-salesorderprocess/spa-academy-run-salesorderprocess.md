@@ -114,11 +114,12 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     `definitionId` of the process can be seen in Monitor section or in the API trigger section as shown in the above step.
 
-    - From the Build lobby, Navigate to Monitor tab and within the Monitor tab, access **Manage** > **Process and Workflow Definitions**.
-    - Search for the project `<your unique identifier>_Sales Management` that you have created in previous tutorial.
+    - From the Build lobby, Navigate to Monitoring tab and within the tab, under **Manage** section, access **Process and Workflow**.
+    - Search for the project `Sales Order Management_<your unique identifier>` that you have created in previous tutorial.
     - Click on **Start New Instance**.
 
-    <!-- border -->![Run](4.2.png)
+    <!-- border -->![Run](4.2a.png)
+    <!-- border -->![Run](4.2b.png)
 
 5.  Remove the example payload in the dialog. You need to add the payload you saved earlier, but only part of the payload.
    
@@ -161,13 +162,14 @@ Once you have successfully deployed the business process with an API trigger, yo
 
 Monitoring business process is one of the key aspect of the automated processes. Technical monitoring is an administrator job where a process admin proactively and consistently monitors the process performance, identifies any issues in the process and takes necessary actions to ensure business process continuity.
 
-**SAP Build** provides different applications to monitor and manage different process artifacts. These applications are available under the **Monitor** tab.
+**SAP Build** provides different applications to monitor and manage different process artifacts. These applications are available under the **Monitoring** tab.
 
 1. Earlier, you accessed **Processes and Workflows** under the **Manage** section to see all the deployed processes.
    
     To monitor all the running instances of the process, you must go to **Process and Workflow Instances** under the **Monitor** section.
 
-    <!-- border -->![Run](6.png)
+    <!-- border -->![Run](6a.png)
+    <!-- border -->![Run](6b.png)
 
     In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated and so forth.
 
@@ -198,8 +200,6 @@ Monitoring business process is one of the key aspect of the automated processes.
 Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. Users can claim, approve and reject the task from their inbox.
 
 Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon in the upper right.
-
-![My Inbox icon](MyInboxIcon.png)
 
 ![My Inbox](MyInbox.png)
 
