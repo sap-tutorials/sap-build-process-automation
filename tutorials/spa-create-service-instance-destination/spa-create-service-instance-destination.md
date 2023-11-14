@@ -72,6 +72,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
 4. After the key is provisioned, open it and take note of the following fields:
 
+    - `api`
     - `clientid`
     - `clientsecret`
     - `url`
@@ -93,11 +94,11 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Name | any name (`spa_process_destination`)
     | Type | HTTP
     | Description | any description
-    | URL | `https://spa-api-gateway-bpi-eu-prod.cfapps.eu10.hana.ondemand.com/public/workflow/rest/v1/workflow-instances`
+    | URL | `api\public/workflow/rest/v1/workflow-instances`, where `api` is noted previously in step 2<div>&nbsp;</div> such as: `https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/public/workflow/rest/v1/workflow-instances`
     | Proxy Type | Internet
     | Authentication |  OAuth2ClientCredentials
     | Use `mTLS` for token retrieval |  Off
-    | Client ID | Paste the clientid noted previously in step 2
+    | Client ID | Paste the client id noted previously in step 2
     | Client Secret | Paste the client secret noted previously in step 2
     | Token Service URL Type | Dedicated
     | Token Service URL|  `url/oauth/token`, where `url` is noted previously in step 2<div>&nbsp;</div>The final URL should be something like this: <div></div>`https://<your tenant>.authentication.<domain>.hana.ondemand.com/oauth/token`
@@ -109,6 +110,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     - `AppgyverEnabled`
     - `HTML5.DynamicDestination`
     - `WebIDEEnabled`  
+    - `sap.processautomation.enabled`
 
     <!-- border --> ![Create](11.png)    
 
