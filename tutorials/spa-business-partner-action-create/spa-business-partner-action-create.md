@@ -9,18 +9,18 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Create Action Project in Lobby
-<!-- description --> Create an action project in lobby from Open API specification
+# Create Action Project in SAP Build Actions
+<!-- description --> Create an action project from Open API specification
 
 ## Prerequisites
-- [SAP BTP Free Trial Account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/)  **OR**
+- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
   [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
 - Complete the tutorial [Setup Environment](spa-dropdown-value-help-filtering-setupenv)
 - S/4HANA Cloud system where Business Partner module is available
 - A communication user to access S/4HANA Business Partner inbound services based on `SAP_COM_0008` communication scenario ID
 
 ## You will learn
-- to discover APIs in SAP API Business Hub
+- to discover APIs in SAP Business Accelerator Hub
 - to download Open API specification
 - to create action project based on the API specification
 - to configure API methods to update input and output fields
@@ -30,49 +30,63 @@ parser: v2
 ## Intro
 Action is a feature in **SAP Build Process Automation** to connect processes with external systems, be it SAP or non-SAP systems. This is an important piece of the puzzle especially if you want to automate or extend your business processes for any available LoB processes like S/4HANA, `Ariba`, SuccessFactors etc. These extensions can be easily build using SAP Build Process Automation, and using actions you can connect to your given S/4HANA, `Ariba` or other SAP LoB systems for any kind of GET, POST, PATCH and other calls.
 
-In this tutorial, you will create an action project based on Business Partner API. The [Business Partner (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) API is already available in API Business Hub. For this workshop you will leverage **Customer - GET API** which will be used to fetch the customer details from S/4HANA system.
+In this tutorial, you will create an action project based on Business Partner API. The [Business Partner (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) API is already available in Business Accelerator Hub. For this workshop you will leverage **Customer - GET API** which will be used to fetch the customer details from S/4HANA Cloud System.
 
 ### Download open API specification
 
 1.  [Download and extract](https://www.sap.com/registration/trial.f47300f6-63b8-4f22-b189-dbadd3c903d6.html?id=0055000000004992023) **Open API Specification** zip file for **Business Partner (A2X)** API in your local file system.
 
-> Open API specification of 2.x or 3.x or higher is needed for creating action project. For APIs that are available in [SAP API Business Hub](https://api.sap.com), you can directly download the specification from the API overview section. For example: The API specification that will be used for fetching customer details in this exercise is downloaded from [here](https://api.sap.com/api/API_BUSINESS_PARTNER/overview).
+> Open API specification of 2.x or 3.x or higher is needed for creating action project. For APIs that are available in [SAP Business Accelerator Hub](https://api.sap.com), you can directly download the specification from the API overview section. For example: The API specification that will be used for fetching customer details in this exercise is downloaded from [here](https://api.sap.com/api/API_BUSINESS_PARTNER/overview).
 
 
 ### Create action project
 
-2.	Open **SAP Build** lobby with your username and password:
+1.	Open **SAP Build** lobby with your username and password, then do the following
 
-    - then click **Create**.
+    - Under **Connectors**, select **Actions**.
 
     <!-- border -->![Action Project](ActionProject_02.png)
 
-3. In the popup, choose **Build an Automated Process** and then select **Actions**.
+2. Choose **Create**.
 
     <!-- border -->![Action Project](ActionProject_02a.png)
 
-4. In the popup, do the following:
-    - Enter the **Project Name** as **Business Partner**.
-    - Enter the **Short Description** as **Fetch customer details from the Business Partner API**.
-    - Click to **Browse** the open specification file downloaded in step above.
-    - Click **Create**.
+3. In the **Choose an API Source** popup, under **API Specification**, select **Upload API Specification**.
+
+    <!-- border -->![Action Project](ActionProject_02b.png)
+
+4. Drag and drop or click **Browse Files** to upload open specification file downloaded in step above.
+   
+5. Choose **Next**.
 
     <!-- border -->![Action Project](ActionProject_03.png)
 
-5. Wait for the action project to be created in the Lobby.
+6. In the **Create an Action project** popup, do the following:
+   
+    - Enter the **Project Name** as **Business Partner**.
+    - Enter the **Description** as **Fetch customer details from the Business Partner API**.
+    - Click **Create**.
 
-    <!-- border -->![Action Project](ActionProject_04.png)
+    <!-- border -->![Action Project](ActionProject_03a.png)
+
+7. Wait until the action project gets created.
+
+    <!-- border -->![Action Project](ActionProject_03b.png)
+    
+    As soon as the **Business Partner** Action gets created, SAP Build Actions will automatically open and the **Add Actions From Business Partner** pop up will appear.
+
+    <!-- border -->![Action Project](ActionProject_03c.png)
 
 
 ### Configure action project
 
-1. Once the action project is created, select it to open the Action Editor. The **Add Actions From Business Partner** pop up will automatically open. In the popup, you have to select *GET* method of `/A_Customer` API. You can either directly search from the given list of APIs or follow the steps below:
+1. In the popup, you have to select *GET* method of `/A_Customer` API. You can either directly search from the given list of APIs or follow the steps below:
 
     - Select **filter** option.
 
     <!-- border -->![Action Project](ActionProject_05.png)
 
-    - Select **Actions Type** >> **GET**.
+    - Select **GET**.
 
     <!-- border size:540px -->![Action Project](ActionProject_06.png)
 
@@ -82,7 +96,7 @@ In this tutorial, you will create an action project based on Business Partner AP
 
     <!-- border -->![Action Project](ActionProject_07.png)
 
-    The Action Editor will open with the selected APIs which can be further configured based on the requirements.
+    SAP Build Actions will open with the selected APIs which can be further configured based on the requirements.
 
 2. The Action supports JSON files and the file size is limited to 5 MB, you need to fetch a specific number of records from your data source. This can be done using the `$top` input parameter. For this use case, you will be setting the parameter to 150. This will enable us to fetch the first 150 records and display their details. 
 
@@ -94,7 +108,6 @@ In this tutorial, you will create an action project based on Business Partner AP
     <!-- border -->![Action Project](ActionProject_23.png)
 
     With this you have configured the action project name and API input fields.
-
 
 3. Similarly, configure the output fields. Do the following:
 
