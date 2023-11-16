@@ -13,7 +13,7 @@ parser: v2
 <!-- description --> Create an action project from OpenAPI specification
 
 ## Prerequisites
-- [SAP BTP Free Trial Account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/)  **OR**
+- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
   [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
 - S/4HANA Cloud system where Sales Order (Customer?) business module is available. 
 - A communication user to access S/4HANA Sales Order inbound services based on `SAP_COM_0109` communication scenario ID
