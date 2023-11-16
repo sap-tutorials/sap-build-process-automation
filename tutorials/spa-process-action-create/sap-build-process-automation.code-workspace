@@ -11,6 +11,15 @@
 		},
 		{
 			"path": "../../../Tutorials"
+		},
+		{
+			"path": "../../../TechEd/teched2023-AD163"
+		},
+		{
+			"path": "../../../TechEd/teched2022-AD160"
+		},
+		{
+			"path": "../../../TechEd/teched2023-AD180v"
 		}
 	]
 }
