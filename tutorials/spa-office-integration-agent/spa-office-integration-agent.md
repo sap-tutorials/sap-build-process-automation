@@ -378,4 +378,38 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
     <!-- border -->![Office](041.png)
 
+    
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store. For more information on the **Automate Microsoft Office 365 applications** sample, please visit [SAP Business Accelerator Hub](https://hub.sap.com/package/eu10.storecontentdev.automatemicrosoftoffice365applications/overview).
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Automate Microsoft Office 365 applications**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Office](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Office](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Office](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Office](lobby.png)
+
+
+
+
+
+
 ---
