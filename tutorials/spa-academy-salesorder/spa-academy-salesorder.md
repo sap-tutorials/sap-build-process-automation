@@ -108,7 +108,7 @@ In this option, you will be importing an excel file to create the data type. Bas
 
     <!-- border -->![Create data type](6.6.png)
 
-2.  Navigate to your project. Click on **+** > **Create** > **Data Type**.
+2.  Navigate to your project. Click on the **Project Content** icon on the top left corner > **+** > **Create** > **Data Type** .
 
     <!-- border -->![Create data type](6.png)
 
@@ -143,7 +143,7 @@ You have two options to create the fields in data type. You can either import an
 
 In this option you will be defining each field with field name and type of field manually.
 
-1.  Click on **+** > **Create** > **Data Type**.
+1.  Click on the **Project Content** icon on the top left corner > **+** > **Create** > **Data Type**.
 
     <!-- border -->![Create data type](6.png)
 
