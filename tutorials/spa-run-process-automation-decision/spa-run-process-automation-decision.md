@@ -121,25 +121,39 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     <!-- border -->![Monitor](012.png)
 
-4. Choose the **Warning** icon (if applicable) to learn more about the Automation.
+4. Choose the **Warning** icon (if applicable) to learn more about the Automation:
 
     > If this is the case, go to the [Settings](spa-run-agent-settings) section and add your agent in order to run the Automation Job.
 
     <!-- border -->![Monitor](013.png)
 
-5. You will see the automation ran successfully as below:
+    > In this case, the Desktop agent version installed locally is less than the desktop agent version configured in the project settings.
+
+      <!-- border -->![Monitor](013a.png)
+
+    > **CAUTION: Desktop agent version installed locally should be greater than or equal to the minimum desktop agent version maintained in the project settings**
+
+5. To fix this, please go the **Editable** version of your project and select **Settings > Configure Agent Version** and choose the agent version that is registered on your local machine. 
+
+    As you can see in the screenshot below, the configured agent version is 3.20 which is greater than the local registered version of 3.19. You will need to choose a version that is less or equal to 3.19
+
+      <!-- border -->![Monitor](013b.png)
+
+6. Once you have configured an agent version that is less or equal to the desktop agent version installed locally, you will then need to release and deploy your project.
+
+7. You will see the automation ran successfully as below:
 
     <!-- border -->![Monitor](014.png)
 
     The process instance progresses further to the approval step in the business process as you complete the tasks. Once the tasks are completed, the instance will be completed successfully.
 
-6. Go to **Monitor** > **Process and Workflow Instances**.
+8. Go to **Monitor** > **Process and Workflow Instances**.
 
-7. Under **Status**, select **Completed**.
+9. Under **Status**, select **Completed**.
 
     <!-- border -->![Monitor](014b.png)
 
-8. Select your completed **Order Processing** instance.
+10. Select your completed **Order Processing** instance.
 
     <!-- border -->![Monitor](014c.png)
 
