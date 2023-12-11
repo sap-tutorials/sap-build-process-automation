@@ -20,6 +20,7 @@ primary_tag: software-product>sap-build-process-automation
   - How to create Table in the Form.
   - How to use List in Decision.
   - How to bind List in Decision to Table in Form.
+  - How to retrieve the sample project from the Store.
 
 ## Intro
 In this tutorial, you will be creating a Decision to validate the Purchase Order Details extracted from excel. If the Purchase Order Details has errors, the errors will be displayed in a table in a form.
@@ -293,5 +294,33 @@ Once you have completed the prerequisite mission, your process should look somet
 5. You will get a notification with the error details in a table.
 
     <!-- border -->![Automation](053.png)
+
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Sales Order Management (TU05)**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobby.png)
 
 ---
