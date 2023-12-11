@@ -17,6 +17,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## You will learn
  - How to create and send Mail notification
+ - How to retrieve the sample project from the Store
 
 ---
 **Mail** feature allows you to add mail notifications to your business process via the process builder, allowing you to send preconfigured emails to recipients while a process is running.
@@ -111,5 +112,34 @@ Now that you have designed the process with forms, you can define the mail notif
 
   This completes the Mail notification addition to the business process for manual approval flow.
 
+
+    
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Sales Order Management (TU02)**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Office](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Office](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Office](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Office](lobby.png)
 
 ---
