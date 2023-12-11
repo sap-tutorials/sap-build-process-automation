@@ -19,6 +19,7 @@ primary_tag: software-product>sap-build-process-automation
   - How to run the process
   - How to monitor the process
   - How to access the tasks
+  - How to retrieve the sample project from the Store
 
 ---
 
