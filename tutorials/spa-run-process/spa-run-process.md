@@ -47,7 +47,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](004.png)
 
-    > Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different artifacts it has. Any errors during the deployment will be shown in the Design Console.
+    > Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different artefacts it has. Any errors during the deployment will be shown in the Design Console.
 
 2. Run the deployment.
 
@@ -73,7 +73,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](007.png)
 
-3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has started.
+3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has been started.
 
     <!-- border -->![Run](008.png)
 
@@ -84,7 +84,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 Monitoring business process is one of the key aspect of the automated processes. Technical monitoring is an administrator job where a process admin proactively and consistently monitors the process performance, identifies any issues in the process and takes necessary actions to ensure business process continuity.
 
-**SAP Build** provides different applications to monitor and manage different process artifacts. These applications are available under the **Monitor** tab.
+**SAP Build** provides different applications to monitor and manage different process artefacts. These applications are available under the **Monitor** tab.
 
 1. Choose Home, then Monitor.
 
@@ -95,7 +95,7 @@ Monitoring business process is one of the key aspect of the automated processes.
     <!-- border -->![Run](009.png)
 
 
-2. In there, you will see all the running, erroneous and canceled process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, canceled, erroneous etc.
+2. In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated etc.
 
 3. Choose your process instance that was just triggered via the start form.
    
@@ -121,6 +121,34 @@ Monitoring business process is one of the key aspect of the automated processes.
 
     <!-- border -->![Run](014.png)
 
+    
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Sales Order Management (MI01)**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Office](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Office](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Office](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Office](lobby.png)
 
 
 ---
