@@ -22,6 +22,7 @@ primary_tag: software-product>sap-build-process-automation
   - How to work on the Tasks
   - How to monitor Process and Automation
   - How to gain visibility into the Business Process
+  - How to retrieve the sample project from the Store
 ---
 
 ### Release and deploy the business process
@@ -178,4 +179,33 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     <!-- border -->![Browse Scenario](018.png)
 
+
+    
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Sales Order Management (MI03)**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobby.png)
 ---
