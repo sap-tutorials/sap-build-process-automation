@@ -208,4 +208,5 @@ To retrieve this sample, please follow these steps:
     You can see your project is available in the lobby.
   
     <!-- border -->![Lobby](lobby.png)
+    
 ---

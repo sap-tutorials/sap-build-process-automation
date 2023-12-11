@@ -19,6 +19,7 @@ primary_tag: software-product>sap-build-process-automation
   - How to view the Triggers.
   - How to trigger the process with API Trigger.
   - How to access the tasks in Inbox of SAP Build Lobby.
+  - How to retrieve the sample project from the Store.
   
 
 ---
@@ -32,8 +33,6 @@ To run the process you have to first release and then deploy the business proces
 Releasing a project creates a version or snapshot of the changes and deploying the project makes it available in runtime to be consumed. You can only deploy a released version of the project, and at a given time there can be multiple deployed versions of the same project.
 
 1. In the Process Builder, to release a project, click  **Release** button on the top-right corner of the screen and provide a description in the popup dialog.
-
-    <!-- border -->![released](1.png)
 
     > Versions have x.y.z format where x is a major version number, y is minor and z is the patch number. Every time you release, a new version will be created. The version is incremented automatically based on how you want to store the changes in the repository like major or minor update or just as a patch.
 
@@ -227,5 +226,36 @@ Repeat the testing above twice more:
 
 
 You have successfully built Sales order Approval Business process and is now ready to integrate with SAP Build Apps.
+
+    
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Sales Order Management (GR04)**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobby.png)
+
+---
 
 
