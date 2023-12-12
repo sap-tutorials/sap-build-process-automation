@@ -18,6 +18,7 @@ parser: v2
 ## You will learn
 - to release and deploy the project
 - to filter data in a dropdown
+- to retrieve sample project from the Store
 
 ## Intro
 In this tutorial, you will release and deploy the project created in the previous tutorial and test the dropdown filtering in the form.
@@ -71,3 +72,35 @@ In this tutorial, you will release and deploy the project created in the previou
     > The filtering is implemented only on the number of records mentioned in $top parameter of actions project, since only those records are fetched and shown. 
 
     You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing form.
+
+    
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Sales Order Management (GR07)**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobby.png)
+
+---
+
