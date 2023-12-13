@@ -39,7 +39,7 @@ The very first time you launch the Desktop Agent on your workstations, you will 
 ### Install the Desktop Agent
 
 
-When you install the Desktop Agent, this will automatically set up the SAP Intelligent RPA web browser extension for Google Chrome and Edge.
+When you install the Desktop Agent, this will automatically set up the SAP Build Process Automation web browser extension for Google Chrome and Edge.
 
 >To prevent issues during the installation, please close all the Chrome tabs opened on your machine. The setup program is provided in the form of an industry standard Windows MSI installer. You can download it from the SAP Software Center.
 
@@ -85,7 +85,7 @@ When you install the Desktop Agent, this will automatically set up the SAP Intel
 
     <!-- border -->![Desktop Agent Installation](enable-extension.png)
 
-9. If the message and question (above) do not appear, open this URL in your Google Chrome: chrome://extensions/ and enable the "SAP Intelligent RPA Extension" if it is disabled.
+9. If the message and question (above) do not appear, open this URL in your Google Chrome: chrome://extensions/ and enable the "SAP Build Process Automation Extension" if it is disabled.
 
     <!-- border -->![Desktop Agent Installation](chrome-extensions.png)
 
