@@ -20,14 +20,14 @@ primary_tag: software-product>sap-build-process-automation
   - How to register a tenant in the Desktop Agent
 
 ## Intro  
-The Desktop Agent is a component of SAP Intelligent Robotic Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
+The Desktop Agent is a component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
 
 ---
 
 ### About the Desktop Agent
 
 
-The Desktop Agent is an on-premise component of SAP Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
+The Desktop Agent is an on-premise component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
 
 Projects are assigned to tenants running on a Desktop Agent. You can see what your Desktop Agent is doing at all times thanks to the convenient system tray, or `Systray`, that is always accessible while your Desktop Agent is ready or active.
 
@@ -43,7 +43,7 @@ When you install the Desktop Agent, this will automatically set up the SAP Build
 
 >To prevent issues during the installation, please close all the Chrome tabs opened on your machine. The setup program is provided in the form of an industry standard Windows MSI installer. You can download it from the SAP Software Center.
 
->The minimum version of the Desktop Agent supported by SAP Process automation is **2.0.20**.
+>The minimum version of the Desktop Agent supported by SAP Build Process automation is **2.0.20**.
 
 1. Download the **latest version**  of the [MSI file extension](https://tools.hana.ondemand.com/#cloud).
 
@@ -95,7 +95,7 @@ When you install the Desktop Agent, this will automatically set up the SAP Build
 ### Register the Desktop Agent Tenant
 
 
-Once you've completed the installation steps of the SAP Robotic Process Automation setup wizard, you need to register your agent and connect it to a SAP Process Automation tenant in order to execute automations.
+Once you've completed the installation steps of the SAP Build Process Automation setup wizard, you need to register your agent and connect it to a SAP Build Process Automation tenant in order to execute automations.
 
 > Once the Desktop Agent is installed, the icon will be available on your System Tray.
 
@@ -107,7 +107,7 @@ Once you've completed the installation steps of the SAP Robotic Process Automati
 
     <!-- border -->![Desktop Agent Installation](09-desktop-agent-installation.png)
 
-3.  On the SAP Process Automation homepage, go to **Settings**, choose **Agents List** and then select the **Register new agent...** button on the right-hand side of the screen.
+3.  On the SAP Build Process Automation homepage, go to **Settings**, choose **Agents List** and then select the **Register new agent...** button on the right-hand side of the screen.
 
     <!-- border -->![Tenant Registration](10-tenant-registration.png)
 
