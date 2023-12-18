@@ -124,11 +124,11 @@ SAP Build Process Automation provides different applications for monitoring and 
 
 4. Choose the **Warning** icon (if applicable) to learn more about the Automation:
 
-    > If this is the case, go to the [Settings](spa-run-agent-settings) section and add your agent in order to run the Automation Job.
+    > If this is the case, go to the [Control Tower](spa-run-agent-settings) section and add your agent in order to run the Automation Job.
 
     <!-- border -->![Monitor](013.png)
 
-    > In this case, the Desktop agent version installed locally is less than the desktop agent version configured in the project settings.
+    > In the case below, the Desktop agent version installed locally is less than the desktop agent version configured in the project settings.
 
       <!-- border -->![Monitor](013a.png)
 
