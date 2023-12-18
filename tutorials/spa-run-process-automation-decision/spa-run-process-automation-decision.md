@@ -102,9 +102,9 @@ Monitoring business processes is one of the key aspects of successful automation
 
 SAP Build Process Automation provides different applications for monitoring and managing different process skills. The applications include Process and Workflow Instances, Automation Jobs, Acquired Events etc. These applications are available under the **Monitor** tab in SAP Build.
 
-> All deployed processes can be accessed by following **Manage** > **Processes and Workflows application**.
+> All deployed processes can be accessed by following **Monitoring** > **Manage** > **Processes and Workflows application**.
 
-1. To monitor all the running instances of the process, navigate to **Monitor** > **Process and Workflow Instances**.
+1. To monitor all the running instances of the process, navigate to **Monitoring** > **Monitor**> **Process and Workflow Instances**.
 
     <!-- border -->![Monitor](010.png)
 
@@ -118,7 +118,7 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     <!-- border -->![Monitor](011.png)
 
-3. Go to **Automation Jobs** under **Monitor**.
+3. Go to **Automation Jobs** under **Monitoring**.
 
     <!-- border -->![Monitor](012.png)
 
@@ -134,9 +134,9 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     > **CAUTION: Desktop agent version installed locally should be greater than or equal to the minimum desktop agent version maintained in the project settings**
 
-5. To fix this, please go the **Editable** version of your project and select **Settings > Configure Agent Version** and choose the agent version that is registered on your local machine. 
+5. To fix this, please go the **Editable** version of your project and select **Settings > Agent Version** and choose the agent version that is registered on your local machine. 
 
-    As you can see in the screenshot below, the configured agent version is 3.20 which is greater than the local registered version of 3.19. You will need to choose a version that is less or equal to 3.19
+    As you can see in the screenshot below, the configured agent version is 3.22 which is greater than the local registered version of 3.19. You will need to choose a version that is less or equal to 3.19
 
       <!-- border -->![Monitor](013b.png)
 
@@ -148,7 +148,7 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     The process instance progresses further to the approval step in the business process as you complete the tasks. Once the tasks are completed, the instance will be completed successfully.
 
-8. Go to **Monitor** > **Process and Workflow Instances**.
+8. Go to **Monitoring** > **Monitor** > **Process and Workflow Instances**.
 
 9. Under **Status**, select **Completed**.
 
