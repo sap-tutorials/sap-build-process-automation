@@ -13,7 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
- - [Configure Service Account in Google Cloud Platform](https://help.sap.com/docs/IRPA/1154f48dd7ab430ea52badeb4359e4b4/40baf1a31fad4e86892795f7fe59d971.html)
+ - [Configure Service Account in Google Cloud Platform](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configure-service-account-in-google-cloud-platform)
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
 
 ## You will learn
