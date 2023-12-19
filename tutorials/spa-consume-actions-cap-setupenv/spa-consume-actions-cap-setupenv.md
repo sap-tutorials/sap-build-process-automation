@@ -17,8 +17,8 @@ parser: v2
   - How to add the destination to SAP Build Process Automation
   
 ## Prerequisites
-- [SAP BTP Free Trial Account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/)  **OR**
-  [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
+- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
+- [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
 
 ---
 ### Create Destination in SAP BTP Cockpit
@@ -41,7 +41,7 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
 5. Click **Destinations** to show the available Destinations
 
-     - Click **New Destination** 
+     - Click **Create Destination** 
   
      - enter **URL** **`<Application Routes url>/api/v1`** (paste Routes URL from the clipboard)
 
@@ -60,11 +60,11 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
 1. Open **SAP Build Process Automation**
 
-2. Click **Settings**
+2. Click **Control Tower**
 
-     - Click **Destinations** 
+     - Select **Destinations** 
 
-     - Click **New Destination** 
+     - Choose **New Destination** 
 
      - From the popup, select **`Demo_CAP_Sample_Library`**
 
@@ -73,9 +73,9 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
     <!-- border -->![add destination](AddDestination.png)
 
 
-    >Destination is added to the list and can be used in SAP Build Process Automation
+    Destination is added to the list and can be used in SAP Build Process Automation.
 
-    ><!-- border -->![destinations](Destinations.png)
+    <!-- border -->![destinations](Destinations.png)
     
 
 ### Test yourself

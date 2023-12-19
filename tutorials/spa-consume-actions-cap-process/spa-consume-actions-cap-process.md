@@ -23,19 +23,19 @@ parser: v2
 ---
 ### Create Business Process
 
-1. From the Lobby select **Create**
+1. From the Lobby, select **Create**
 
 2. Select **Build an Automated Process**, on next screen click **Business Process**
 
 3. Enter Project Name **`CAP Sample`** and click **Create**
 
-4. On the **Create Process Dialog**, enter the Process Name **`myCAP Sample`** and click **Create**, the canvas will be shown
+4. On the **Create Process** dialog, enter the Process Name **`myCAP Sample`** and click **Create**, the canvas will be shown
 
 6. Click the canvas to display the **Process Details**
 
-       - Click **Inputs** to define the process inputs
+       - Click **Variables** to define the process inputs
 
-       - Click **Configure** to define to open popup **Configure Process Inputs** 
+       - Click **Configure** to open popup **Configure Process Inputs** 
   
        - Click **Add Input**
 
@@ -71,11 +71,11 @@ parser: v2
 
 3. Click **+** next to **End** and repeat the **Actions** > **Browse Library** steps to add the action **`listToString`**
 
-4.  Select **`get list of Todos`** in the canvas and create Destination variable **`capService`**
+4.  Select **`get list of Todos`** on the canvas and create Destination variable **`capService`**
    
     <!-- border -->![todo destination](TodosDestination.png)
    
-5. Select **`listToString`** in the canvas and select Destination variable **`capService`**
+5. Select **`listToString`** on the canvas and select Destination variable **`capService`**
    
     <!-- border -->![listToString destination](ListToStringDestination.png)
 
@@ -83,7 +83,7 @@ parser: v2
 
     - Click **Select Item** next to **field**
 
-    -  Select **field** from **Process Start Inputs**
+    -  Select **field** from **Process Inputs**
   
     <!-- border -->![field](SelectField.png)
 
@@ -93,9 +93,9 @@ parser: v2
   
     <!-- border -->![list](SelectList.png)
 
-    >The **Inputs** for **`listToString`** should show the following values:
+    The **Inputs** for **`listToString`** should show the following values:
 
-    ><!-- border -->![list inputs](ListToStringInputs.png)<div>&nbsp;</div>
+    <!-- border -->![list inputs](ListToStringInputs.png)
 
 
 ### Release and Deploy
@@ -121,11 +121,11 @@ parser: v2
 
 ### Test Business Process
 
-1. From **SAP Build**, click **Monitor**
+1. From **SAP Build**, click **Monitoring**
 
-2. Select **Manage** > **Process and Workflow Definitions**
+2. Select **Manage** > **Processes and Workflows**
    
-3. Click **`myCAPSample`**
+3. Select **`myCAPSample`**
 
     <!-- border -->![process](MonitorCAP.png)
 
@@ -140,7 +140,7 @@ parser: v2
 
     <!-- border -->![start](StartInstance-1.png)
 
-5. Select **Monitor** > **Process and Workflow Instances**, make sure your instance is in the list, **clear** all filters
+5. Select **Monitoring** > **Process and Workflow Instances**, make sure your instance is in the list, **clear** all filters
 
     <!-- border -->![run](RunInstances.png)
 
@@ -149,4 +149,6 @@ parser: v2
     >The result of the action `listToString` is shown as comma separated value string    
 
     <!-- border -->![result](RunInstanceResults.png)
+
+---
 

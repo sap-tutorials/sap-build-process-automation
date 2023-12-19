@@ -9,8 +9,8 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Create Action Project for simple CAP Service in Lobby
-<!-- description --> Create an action project from the Lobby using the OpenAPI specification of a simple CAP Service
+# Create Action Project for simple CAP Service in SAP Build Actions
+<!-- description --> Create an action project using the OpenAPI specification of a simple CAP Service
 
 ## You will learn
   - to modify the generated OpenAPI specification of a CAP Service
@@ -19,61 +19,137 @@ parser: v2
   - to release and publish the action project to be consumed in a process of SAP Build Process Automation
   
 ## Prerequisites
-- [SAP BTP Free Trial Account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/)  **OR**
-  [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
+- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
+- [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
 
 ---
-### Adjust the OpenAPI specification
+### Generate the OpenAPI specification
 
-The OpenAPI spec was generated as part of the previous tutorial [Create simple CAP Service with Node.js using the SAP Business Application Studio](cap-simple-nodejs-service). This definition will be used to create the Action Project in SAP Build and needs some manual changes.
+You will generate the openAPI specification for the service used to create the Action project in SAP Build.
 
-1. In the subfolder **`docs`** folder, open the file **`sap_build_cap_sample_library.openapi3.json`**
+1. Navigate back to the Business Application Studio. Open your CAP project and run the following command in the Terminal window:
+
+    ```Shell / Bash
+    cds compile srv --service all -o docs --to openapi
+    ```
+
+2. In the subfolder `docs` folder, open the file `sap_build_cap_sample_library.openapi3.json`.
 
     <!-- border -->![api spec](OpenAPIspecEditor.png)
 
-2. Update the following **paths** definitions, add the missing quotes (just replace the lines in the generated file)
 
-    ```JSON
-    "/toInteger(value='{value}')": {
-    ```
-    ```JSON
-    "/toNumber(value='{value}')": {
-    ```
+### Adjust the OpenAPI specification
+
+ The generated OpenAPI specification needs some manual changes.
+
+1. Update the following **paths** definitions (just replace the lines in the generated file):
+
     ```JSON
     "/addQuotes(value='{value}')": {    
+      "get": {
+        "summary": "addQuotes",
+        "tags": [
+          "Service Operations"
+        ],
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "name": "value",
+            "description": "String value needs to be enclosed in single quotes",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
     ```
 
-3. Update the **paths** and **schema** definition for `getListOfTodos` (just replace the lines in the generated file)
 
-    >The output for this action must be set as required, this needs two modifications
+    ```JSON
+    "/getListOfTodos()": { 
+    ```
 
-       - remove **allOf** for the **paths** definition
-  
-        ```JSON
-        "/getListOfTodos()": {
-        "get": {
-            "summary": "get list of Todos",
-            "tags": [
-            "Service Operations"
-            ],
-            "parameters": [],
-            "responses": {
-            "200": {
-                "description": "Success",
-                "content": {
-                "application/json": {
-                    "schema": {
-                        "$ref": "#/components/schemas/sap_build_cap_sample_library.DataListArray"
-                    }
+
+    ```JSON
+    "/toInteger(value='{value}')": {    
+      "get": {
+        "summary": "toInteger",
+        "tags": [
+          "Service Operations"
+        ],
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "name": "value",
+            "description": "String value needs to be enclosed in single quotes",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+    ```
+
+    ```JSON
+    "/toNumber(value='{value}')": {    
+      "get": {
+        "summary": "toNumber",
+        "tags": [
+          "Service Operations"
+        ],
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "name": "value",
+            "description": "String value needs to be enclosed in single quotes",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+    ```
+
+    ```JSON
+    "/toStr(value={value})": {
+      "get": {
+        "summary": "toString",
+        "tags": [
+          "Service Operations"
+        ],
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "name": "value",
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "format": "double,null"
+                },
+                {
+                  "type": "string"
                 }
-                }
-            },
-            "4XX": {
-        ```
+              ],
+              "example": 3.14,
+              "nullable": true,
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+    ```
 
-       - add **required: true** for **components/schemas** schema definition of **DataListArray**
-  
-        ```JSON
+2. Add **required: true** for **components/schemas** schema definition of **DataListArray**.
+
+    ```JSON
         "sap_build_cap_sample_library.DataListArray": {
         "title": "DataListArray",
         "type": "object",
@@ -84,98 +160,53 @@ The OpenAPI spec was generated as part of the previous tutorial [Create simple C
             "items": {
                 "$ref": "#/components/schemas/sap_build_cap_sample_library.DataList"
             }
-        ```
+    ```
 
-4. Update the **responses** > **schema** definition
-   
-    >To get correct output information for the actions just replace the lines in the generated file in each of the following sections
+3. Select the file content **Ctrl-a** in the editor and copy to your clipboard **Ctrl-c**.
 
-       - `/toInteger(value='{value}'): {`
+4. Create a new file called **demo.json** in a local folder of your desktop.
 
-        ```JSON
-        "200": {
-        "description": "Success",
-        "content": {
-            "application/json": {
-            "schema": {
-                    "$ref": "#/components/schemas/sap_build_cap_sample_library.DataInteger"
-            }
-            }
-        }
-        },
-        "4XX": {    
-        ```
+5. Open the file, paste the content and save the file. You will use the file later to create the Action Project.
 
-       - `/toNumber(value='{value}'): {`
+    Here below, a screenshot with parts how the file will look like:
 
-        ```JSON
-        "200": {
-        "description": "Success",
-        "content": {
-            "application/json": {
-            "schema": {
-                    "$ref": "#/components/schemas/sap_build_cap_sample_library.DataNumber"
-            }
-            }
-        }
-        },
-        "4XX": {    
-        ```
-
-       - `/toStr(value={value}): {` and
-  
-       -  `/addQuotes(value='{value}'): {` and
-  
-       -  `/listToString: {`
-
-        ```JSON
-        "200": {
-        "description": "Success",
-        "content": {
-            "application/json": {
-            "schema": {
-                    "$ref": "#/components/schemas/sap_build_cap_sample_library.DataString"
-            }
-            }
-        }
-        },
-        "4XX": {
-        ```
-
-
-5. Select the file content **Ctrl-a** in the editor and copy to your clipboard **Ctrl-c**
-
-6. Create a new file called **demo.json** in a local folder of your desktop
-
-7. Open the file, paste the content and save the file. You will use the file later to create the Action Project.
-
-
-    >Here a screenshot with parts how the file will look like:
-
-    ><!-- border -->![api spec](NotepadOpenAPI.png)<div>&nbsp;</div>
+    <!-- border -->![api spec](NotepadOpenAPI.png)<div>&nbsp;</div>
 
 
 ### Create action project
 
-1. From the Lobby of SAP Build click **Create**
+1. Open **SAP Build** Lobby, under **Connectors**, select **Actions**.
 
-    <!-- border -->![create](LobbyCreate.png)
+    <!-- border -->![create](ConnectorsActions.png)
 
-2. In the popup, choose **Build an Automated Process** and then select type **Actions**.
+2. Choose **Create**.
 
     <!-- border -->![createActions](CreateActionProject.png)
 
-3. Specify the name **`CAP Sample Actions`** and upload the API spec **demo.json**, click **Create**
+3. In the **Choose an API Source** popup, under API Specification, select **Upload API Specification**.
+
+    <!-- border -->![createActions](UploadAPI.png)
+
+4. Drag and drop or click **Browse Files** to upload open specification file downloaded in step above.
+   
+5. Choose **Next**.
+
+    <!-- border -->![createActions](UploadAPI2.png)
+
+6. In the **Create an Action project** popup:
+   
+    - Specify the name **`CAP Sample Actions`**
+    - Click **Create**
 
     <!-- border -->![createActionProject](CreateCAPSampleActions.png)
 
-4. Once the action project is created, the action editor will automatically open. In the popup select all actions from the list, click **Add**
+7. Once the action project is created, the action editor will automatically open. In the popup select all actions from the list, click **Add**.
 
     <!-- border -->![add actions](AddActions.png)
 
->Your Action Project will contain the actions for the CAP service
+    Your Action Project will contain the actions for the CAP service.
 
-><!-- border -->![final project](ActionProject.png)<div>&nbsp;</div>
+    <!-- border -->![final project](ActionProject.png)<div>&nbsp;</div>
 
 
 ### Test actions
@@ -214,7 +245,7 @@ You can test the execution of your action in the Action Editor.
 
        - Select **toNumber** from the list, enter value **`10.9`** and click **Test**
 
-       - Select **adQuotes** from the list, enter value **`abc`** and click **Test**
+       - Select **addQuotes** from the list, enter value **`abc`** and click **Test**
 
 
 
@@ -233,5 +264,7 @@ To be able to use the Actions in a Process, you have to release and publish the 
 3. Click **Publish to Library**
 
     <!-- border -->![publish](ReleasePublish.png)
+
+---
 
 
