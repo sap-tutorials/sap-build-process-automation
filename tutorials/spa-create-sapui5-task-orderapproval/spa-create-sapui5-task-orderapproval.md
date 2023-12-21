@@ -29,13 +29,13 @@ An SAP UI5 Task is a user task that could be integrated in a workflow or in a bu
 Let's start our journey by creating a dedicated Dev Space for our project.
 
 1. Open your SAP Business Application Studio
-   
+
     - choose the **Create Dev Space** button
-  
+
     <!-- border -->![Process](000.png)
 
 2. Customize your Dev Space
-   
+
     - enter a name for the **Dev Space**
     - select **SAP Fiori** application type and **Workflow Module** as additional SAP Extension
     - choose the **Create Dev Space** button
@@ -47,14 +47,14 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     <!-- border -->![Process](000b.png)
 
 4. Once the link of the Dev Space is available, click on it to open the SAP Business Application Studio
-   
+
     <!-- border -->![Process](000c.png)
 
 ### Create a new project
 
 
 1. Choose the project template
-   
+
     - open the **File Explorer**
     - choose the **Create Project** button
     - select **Basic Multitarget Application** tile
@@ -63,24 +63,24 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     <!-- border -->![Process](001.png)
 
 2. Choose the project template
-   
+
     - provide a **Name**
     - choose the **Finish** button
-  
+
     <!-- border -->![Process](002.png)
 
 3. Create an MTA Module: Approuter Configuration
-   
+
     - in the File Explorer, locate the **mta.yaml** file and right-click on it
     - select **Create MTA Module from Template**
 
     <!-- border -->![Process](003.png)
 
 4. Choose the Module template
-   
+
     - select the **Approuter Configuration** tile
     - choose the **Start** button
-  
+
     <!-- border -->![Process](004.png)
 
     - provide a **Name** for the business solution of the project
@@ -89,57 +89,57 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     <!-- border -->![Process](004a.png)
 
 5. Create a second MTA Module: Workflow UI
-   
+
     - in the File Explorer, locate the **mta.yaml** file and right-click on it
     - select **Create MTA Module from Template**
 
     <!-- border -->![Process](005.png)
 
 6. Select the Module Template
-   
-    - select the **Workflow UI** tile 
+
+    - select the **Workflow UI** tile
     - choose the **Start** button
-   
+
     <!-- border -->![Process](006.png)
 
-7. Choose the **Next** button to set the default basic properties 
+7. Choose the **Next** button to set the default basic properties
 
     <!-- border -->![Process](007.png)
 
 8. Select the UI Type
-   
+
     - select the **Task UI** tile
     - choose the **Next** button
 
     <!-- border -->![Process](008.png)
 
 9.  Module Customization
-    
+
     - provide the required module information
     - choose the **Finish** button
-  
-    > The **application namespace** is needed to customize the code. 
+
+    > The **application namespace** is needed to customize the code.
 
     <!-- border -->![Process](009.png)
 
 ### Code customization
 
 
-1.  Upgrade the package.json version 
-   
+1.  Upgrade the package.json version
+
     - in the File Explorer, locate and open the *package.json* file under  `../workflow-ui-module/`
     - change the version of the `"@ui5/cli"` value under `devDependencies` to **^3.0.0**
 
     <!-- border -->![Process](010.png)
 
 2.  Customize your *manifest.json* file
-   
-    - in the File Explorer, locate and open the *manifest.json* 
+
+    - in the File Explorer, locate and open the *manifest.json*
     - customize it by adding the code bellow (including the comma in the beginning) after the **sap.cloud** node in the json file. (line 125 to 198)
 
     <!-- border -->![Process](011.png)
 
-    
+
     ```JSON
         ,
         "sap.bpa.task": {
@@ -220,9 +220,28 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 
     > For the sales order approval use case, you need the following sales order details as **inputs** and a comment from the approver as **output** of the task.
 
-3.  Customize your **App.view.xml** file
-   
-    - in the File Explorer, under `../webapp/view/` folder, locate and open the `App.view.xml` file 
+3.  Customize your *xs-app.json* file
+
+        - in the File Explorer, locate and open the *xs-app.json* in your workflow-ui-module folder
+        - it must be the *first entry of routes entry*
+
+    ```JSON
+
+      {
+      "source": "^/api/(.*)$",
+      "target": "$1",
+      "service": "com.sap.spa.processautomation",
+      "endpoint": "api",
+      "csrfProtection": true,
+      "authenticationType": "xsuaa"
+     },
+
+    ```
+    <!-- border -->![Routes](011a.png)
+
+4.  Customize your **App.view.xml** file
+
+    - in the File Explorer, under `../webapp/view/` folder, locate and open the `App.view.xml` file
     - customize it with your needed page layout
 
     <!-- border -->![Process](012.png)
@@ -249,17 +268,17 @@ Let's start our journey by creating a dedicated Dev Space for our project.
                 <form:content>
                     <core:Title id="vacation-timerange-heading" text="A new order has been received. Please review and confirm whether the requirements can be met or not."/>
                     <Label id="customer-name-label" text="Customer Name" labelFor="customer-name-field"/>
-                    <Input id="customer-name-field" value="{context>/customerName}" editable="false"/> 
+                    <Input id="customer-name-field" value="{context>/customerName}" editable="false"/>
                     <Label id="order-number-label" text="Order Number" labelFor="order-number-field"/>
-                    <Input id="order-number-field" value="{context>/orderNumber}" editable="false"/> 
+                    <Input id="order-number-field" value="{context>/orderNumber}" editable="false"/>
                     <Label id="order-amount-label" text="Order Amount" labelFor="order-amount-field"/>
-                    <Input id="order-amount-field" value="{context>/orderAmount}" editable="false"/> 
+                    <Input id="order-amount-field" value="{context>/orderAmount}" editable="false"/>
                     <Label id="order-date-label" text="Order Date" labelFor="order-date-field"/>
-                    <Input id="order-date-field" value="{context>/orderDate}" editable="false"/> 
+                    <Input id="order-date-field" value="{context>/orderDate}" editable="false"/>
                     <Label id="shipping-country-label" text="Shipping Country" labelFor="shipping-country-field"/>
                     <Input id="shipping-country-field" value="{context>/shippingCountry}" editable="false"/>
                     <Label id="expected-delivery-date-label" text="Expected Delivery Date" labelFor="expected-delivery-date-field"/>
-                    <Input id="expected-delivery-date-field" value="{context>/expectedDeliveryDate}" editable="false"/> 
+                    <Input id="expected-delivery-date-field" value="{context>/expectedDeliveryDate}" editable="false"/>
                 </form:content>
             </form:SimpleForm>
 
@@ -275,8 +294,8 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 </mvc:View>
     ```
 
-4.  Customize your *Component.js* file
-   
+5.  Customize your *Component.js* file
+
     - in the File Explorer, under `../webapp/` folder, create or modify the *Component.js* file with the following code
 
     <!-- border -->![Process](012b.png)
@@ -363,12 +382,12 @@ Let's start our journey by creating a dedicated Dev Space for our project.
                 );
                 },
 
-                _getWorkflowRuntimeBaseURL: function () {
-                var appId = this.getManifestEntry("/sap.app/id");
-                var appPath = appId.replaceAll(".", "/");
-                var appModulePath = jQuery.sap.getModulePath(appPath);
+                _getWorkflowRuntimeBaseURL: function () {  
+                  var ui5CloudService = this.getManifestEntry("/sap.cloud/service").replaceAll(".", "");  
+                  var ui5ApplicationName = this.getManifestEntry("/sap.app/id").replaceAll(".", "");  
+                  var appPath = `${ui5CloudService}.${ui5ApplicationName}`;
+                  return `/${appPath}/api/public/workflow/rest/v1`
 
-                return appModulePath + "/bpmworkflowruntime/v1";
                 },
 
                 getTaskInstanceID: function () {
@@ -384,7 +403,7 @@ Let's start our journey by creating a dedicated Dev Space for our project.
                 this.getModel("context").setProperty("/approved", approvalStatus);
                 this._patchTaskInstance(outcomeId);
                 },
-            
+
                 _patchTaskInstance: function (outcomeId) {
                 const context = this.getModel("context").getData();
                 var data = {
@@ -433,8 +452,8 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     );
     ```
 
-5.  Last check in the *mta.yaml* file
-   
+6.  Last check in the *mta.yaml* file
+
     In the **File Explorer**, under your project main folder, check *mta.yaml* file with the following code and make sure that the node under `modules:parameters:content` is named `subaccount` instead of `instance`
 
     <!-- border -->![Process](012c.png)
@@ -459,8 +478,8 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     - from the menu, select **Terminal --> New Terminal**
     - connect to your account using **cf login** command. (In case of 2FA, you may need to append the One-time password code to your password)
     - select the **Org** if asked
-    - select the **Space** if asked 
-    
+    - select the **Space** if asked
+
     <!-- border -->![Process](013.png)
 
 
@@ -468,23 +487,25 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 
     - in the File Explorer, locate the **mta.yaml** file and right-click on it
     - select **Build MTA Project**
-  
+
     <!-- border -->![Process](015.png)
 
 4. Build the application
 
+    Use the `npm run build` command to build your application.
+
     <!-- border -->![Process](016.png)
 
 5. Deploy the application
-   
+
     Use the `npm run deploy` command to deploy your application.
-    
+
     > You may use the command `cf deploy mta_archives/ordersmanagement_0.0.1.mtar` replacing the `mtar` file name with your generated one.
 
     <!-- border -->![Process](017.png)
-   
 
-6. Once deployed, your application should be visible in the **BTP Cockpit** under **HTML5 Applications** if you're subscribed to SAP Build Work Zone. 
+
+6. Once deployed, your application should be visible in the **BTP Cockpit** under **HTML5 Applications** if you're subscribed to SAP Build Work Zone.
 
     <!-- border -->![Process](018.png)
 
