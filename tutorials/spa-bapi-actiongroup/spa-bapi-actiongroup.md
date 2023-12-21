@@ -119,7 +119,7 @@ Each Action Group artifact can have multiple actions. Each Action corresponds to
     <!-- border -->![Action Project](013.png)
 
 3. In the next popup,
-    - Enter the BAPI module name as `RFC_READ_TABLE`.
+    - Enter the BAPI module name exactly as `RFC_READ_TABLE`.
     - Select the search icon.
     - Select the BAPI module from the search results.
     - Select **Create**.
