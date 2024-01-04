@@ -109,11 +109,11 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     <!-- border -->![Run](4.11.png)
 
-4. Since you have created an API Trigger for the Business process, let's test the process with API Trigger in **Monitor** section before you start the process from SAP Build Apps.
+4. Since you have created an API Trigger for the Business process, let's test the process with API Trigger in **Monitoring** section before you start the process from SAP Build Apps.
 
-    `definitionId` of the process can be seen in Monitor section or in the API trigger section as shown in the above step.
+    `definitionId` of the process can be seen in Monitoring section or in the API trigger section as shown in the above step.
 
-    - From the Build lobby, Navigate to Monitoring tab and within the tab, under **Manage** section, access **Process and Workflow**.
+    - From the Build lobby, navigate to Monitoring tab and within the tab, under **Manage** section, access **Processes and Workflows**.
     - Search for the project `Sales Order Management_<your unique identifier>` that you have created in previous tutorial.
     - Click on **Start New Instance**.
 
@@ -145,7 +145,7 @@ Once you have successfully deployed the business process with an API trigger, yo
     ``` 
     >Common issues when you are unable to start the instance:
 
-    >1. SAP Build Process Automation supports the ISO 8601 format for date and time: YYYY-MM-DD (2023-03-16) and hh:mm:ss (15:33:16).Hence make sure to enter `expectedDeliveryDate` in the supported format as shown above.
+    >1. SAP Build Process Automation supports the ISO 8601 format for date and time: YYYY-MM-DD (2023-03-16) and hh:mm:ss (15:33:16). Hence make sure to enter `expectedDeliveryDate` in the supported format as shown above.
     >2. There is no mismatch in the field names.
     >3. Data type mismatch. For example, if you enter order amount as a string instead of a number ("orderAmount":"120000").
 
@@ -188,11 +188,9 @@ Monitoring business process is one of the key aspect of the automated processes.
 
     In the **Logs** section, expand the top activity. Notice the **Recipients** list. This is the same as configured in the **General** section of the **Approval Form**. The task will go into the inboxes of all the recipients.
 
-    ![Recipients](recipients.png)
+    <!-- border -->![Recipients](recipients.png)
 
     You will open the **My Inbox** in the next step.
-
-
 
 
 ### Accessing the tasks
@@ -200,7 +198,7 @@ Tasks are the request for the users to participate in an approval or review proc
 
 Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon in the upper right.
 
-![My Inbox](MyInbox.png)
+ <!-- border -->![My Inbox](MyInbox.png)
 
 
 1.  Open the **My Inbox**, and find the task for the process you just triggered.
