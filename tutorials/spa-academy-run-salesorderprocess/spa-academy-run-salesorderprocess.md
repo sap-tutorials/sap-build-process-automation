@@ -200,7 +200,6 @@ Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon i
 
 <!-- border -->![My Inbox](MyInbox.png)
 
-
 1.  Open the **My Inbox**, and find the task for the process you just triggered.
 
 2. Click **Approve**.
