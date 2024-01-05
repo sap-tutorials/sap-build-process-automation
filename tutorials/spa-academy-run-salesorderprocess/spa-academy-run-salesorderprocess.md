@@ -199,7 +199,7 @@ Tasks are the request for the users to participate in an approval or review proc
 
 Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon in the upper right.
 
-<!-- border -->![My Inbox](MyInbox.png)
+<!-- border -->![My Inbox](10.png)
 
 1. Open the **My Inbox**, and find the task for the process you just triggered.
 
