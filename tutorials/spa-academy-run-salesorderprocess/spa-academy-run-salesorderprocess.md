@@ -194,19 +194,20 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 
 ### Accessing the tasks
+
 Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. Users can claim, approve and reject the task from their inbox.
 
 Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon in the upper right.
 
 <!-- border -->![My Inbox](MyInbox.png)
 
-1.  Open the **My Inbox**, and find the task for the process you just triggered.
+1. Open the **My Inbox**, and find the task for the process you just triggered.
 
 2. Click **Approve**.
 
     <!-- border -->![Inbox](8.png)
 
-3.  Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken.
+3. Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken.
    
 4. Click on **Submit** to complete the process.
 
@@ -216,13 +217,13 @@ Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon i
 
     <!-- border -->![Run](9.png)
 
-Repeat the testing above twice more:
+    Repeat the testing above twice more:
 
-- Amount above 100000 and reject the request. You should get an email.
-- Amount below 100000. This should send the auto-approval form to the **My Inbox**.
+   - Amount above 100000 and reject the request. You should get an email.
+   - Amount below 100000. This should send the auto-approval form to the **My Inbox**.
 
 
-You have successfully built Sales order Approval Business process and is now ready to integrate with SAP Build Apps.
+    You have successfully built Sales order Approval Business process and is now ready to integrate with SAP Build Apps.
 
     
 ### Retrieve sample project from the store
