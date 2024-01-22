@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Use Custom Variables for the global process
+# Use Advanced Custom Variables for the global process
 <!-- description --> Add, modify and use custom variables in the process. 
 
 
@@ -80,7 +80,7 @@ In this step we will create data types that will be used for custom variables.
 
     <!-- border -->![CGV](dt003.png)
 
-    > In case you have more data types to create, you can use the Excel file import option. The link to the document is [here.](x)
+    > In case you have more data types to create, you can use the Excel file import option. 
 
 4. Close the tab.
 
