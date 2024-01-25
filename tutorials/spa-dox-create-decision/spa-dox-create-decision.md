@@ -29,11 +29,19 @@ primary_tag: software-product>sap-build-process-automation
 
 You will now add a decision to the flow of your process. With this you are able to include business logic.
 
-1. Choose **+** following the automation **Extract Invoice Data**. In the menu select **Decision**, then **New Decision** to add a new one.
+1. Choose **+** following the automation **Extract Invoice Data**.
+   
+    <!-- border -->![Add decision](001a.png)
 
-    <!-- border -->![Add decision](001.png)
+2. In the menu select **Decision**.
 
-2. In the **Create Decision** window:
+    <!-- border -->![Add decision](001b.png)
+
+3. Click on **Blank Decision**.
+
+    <!-- border -->![Add decision](001c.png)
+
+4. In the **Create Decision** window:
     - Maintain the Name: **Determine Approver**,
     - Description: **Decision to determine who could approve the invoice**,
     - Choose **Create**.
@@ -42,13 +50,17 @@ You will now add a decision to the flow of your process. With this you are able 
 
     <!-- border -->![Decision Name](002.png)
 
-3. The **Determine Approver** Decision is now in the process. Choose the three dots and select **Open Editor**.
+5. The **Determine Approver** Decision is now in the process and should open automatically in the **Decision Editor**. 
+   
+6. Navigate back to the **Get Invoice Details** process and save your process. 
+   
+7. Select the decision in the process, choose the three dots and select **Open Editor**.
 
     <!-- border -->![Open Editor](003.png)
 
-4. You see a **Decision Diagram** showing the flow of the data within the Decision, and also the **Input and Output Parameters**.
+8. You see a **Decision Diagram** showing the flow of the data within the Decision, and also the **Input and Output Parameters**.
 
-5. Add an input parameter with the following information:
+9.  Add an input parameter with the following information:
     - Name: **Invoice Parameter**,
     - Description: **Invoice Details**,
     - Type: **Invoice**.
@@ -57,11 +69,15 @@ You will now add a decision to the flow of your process. With this you are able 
 
     <!-- border -->![Change Input](099a.png)
 
-6. The data type for **Output** needs to be created. Therefore, select **+** on the left-hand side to create one. Select **Create** > **Data Type**.
+10. The data type for **Output** needs to be created. Therefore, select the **Folder Icon**. 
+   
+    <!-- border -->![Create new Data Type](007a.png)
+
+11. Select **+** and choose **Create** > **Data Type**.
 
     <!-- border -->![Create new Data Type](007.png)
 
-7. In the new pop-up window:
+12. In the new pop-up window:
     - Define the Name: **Approver**,
     - Add a Description: **Including the approvers email address**,
     - Choose **Create**.
@@ -70,26 +86,26 @@ You will now add a decision to the flow of your process. With this you are able 
 
     <!-- border -->![Name data type](008.png)
 
-8. Create a **New Field**:
+13. Create a **New Field**:
     - Maintain the **Name** `eMail`,
     - Choose the **Type** as `String`.
 
     <!-- border -->![eMail](009.png)
 
-9. The new data type containing the email address of the approver is now created.
+14. The new data type containing the email address of the approver is now created.
 
-10. **Save** your work.
+15. **Save** your work.
 
     <!-- border -->![Save new data type](011.png)
 
-11. Go back to your **Determine Approver** Decision. Add an **Output Parameter**:
+16. Go back to your **Determine Approver** Decision. Add an **Output Parameter**:
     - Name: **Approver Output**,
     - Description: **Invoice Approver**,
     - Select Type: the newly created data type **Approver**.
 
     <!-- border -->![Select new data type](098.png)
 
-12. **Save** your work.
+17. **Save** your work.
 
 
 ### Create a decision table
@@ -98,8 +114,6 @@ You will now add a decision to the flow of your process. With this you are able 
 There are many ways to express a business rule, in this case you will create a decision table to determine the approver of the invoice based on certain criteria.
 
 1. Open the **Rules** tab.
-
-    <!-- border -->![Open Rules tab](097a.png)
 
 2. Choose **Add Rule**.
 
@@ -170,13 +184,14 @@ Though the Decision is ready, you need to connect it to the data flow of your pr
     > Please refer to [the Knowledge Base Article](https://launchpad.support.sap.com/#/notes/3207153) for the complete workaround.
 
 2. Define the Inputs:
-    - Select `DocumentNumber`: map with `DocumentNumber` from **Invoice Details**,
-    - Select `GrossAmount`: map with `GrossAmount` from **Invoice Details**,
-    - Select `SenderName`: map with `SenderName` from **Invoice Details**.
-
+    - Under **Bind Object**, click on `Select item` field
+    - Select `Invoice details` to map the `Invoice Parameter`
+  
     The input mapping is done.
 
     <!-- border -->![Invoice Details](031.png)
+
+    <!-- border -->![Invoice Details](031a.png)
 
 3. Check the **Output**, it is **eMail**, as you have defined it in the decision itself.
 

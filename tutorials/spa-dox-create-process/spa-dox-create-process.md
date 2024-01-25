@@ -44,7 +44,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Business Process](01b.png)
 
-2. In the wizard enter:
+4. In the wizard enter:
     - under the **Project Name**: Invoice Approval
     - under the **Short Description**: The process to extract information from an invoice and get the needed approvals
     - choose **Create**.
@@ -77,11 +77,19 @@ The process with a start and end event is now available for you.
 
    To trigger the process, you will create a form to provide the most relevant inputs.
 
-1. In the canvas, select **+** in the Trigger, then **Forms** and **New Form**.
+1. In the canvas, select **Add a Trigger** in the Trigger.
 
-    <!-- border -->![New Form](004.png)
+    <!-- border -->![New Form](004a.png)
 
-2. In the **Create Form** window enter:
+2. Select **Submit a Form**.
+   
+    <!-- border -->![New Form](004b.png)
+
+3. Choose **Blank form**.
+
+    <!-- border -->![New Form](004c.png)
+
+4. In the **Create Form** window enter:
     - in the **Name**: Invoice Request Form,
     - in the **Description**: Form to start the process,
     - choose **Create**.
@@ -90,17 +98,17 @@ The process with a start and end event is now available for you.
 
     <!-- border -->![Create Form Wizard](05.png)
 
-3. Open the form editor.
+5. Open the form editor.
 
     <!-- border -->![Open editor](005c.png)
 
-4. In the form you have multiple elements.
+6. In the form you have multiple elements.
 
     <!-- border -->![Elements](005b.png)
 
-5. To add elements, drag and drop them or click on the element to enter them in the form.
+7. To add elements, drag and drop them or click on the element to enter them in the form.
 
-6. Add the following layout elements:
+8. Add the following layout elements:
 
     |  **Type**       | **Name**
     |  :------------- | :-------------
@@ -109,7 +117,7 @@ The process with a start and end event is now available for you.
 
     <!-- border -->![Add Layout](006.png)
 
-7. Add the following input elements:
+9.  Add the following input elements:
 
     |  **Field Type** | **Name**       | **Settings**
     |  :------------- | :------------- | :------------
@@ -121,7 +129,7 @@ The process with a start and end event is now available for you.
 
     <!-- border -->![Add Input](007.png)
 
-8. **Save** the Form.
+10. **Save** the Form.
 
     <!-- border -->![Save](008.png)
 

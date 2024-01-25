@@ -25,21 +25,28 @@ primary_tag: software-product>sap-build-process-automation
 ### Create automation
 
 
-1. In the process **Get Invoice Details**:
-    - Choose **+**,
-    - Select **Automation**,  **New Automation**.
+1. In the process **Get Invoice Details**, choose **+**.
+   
+    <!-- border -->![Automation](001a.png)
 
-    <!-- border -->![Automation](001.png)
+2. Select **Automation**.
 
-2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
+    <!-- border -->![Automation](001b.png)
+
+3. Click on **Blank Automation**.
+
+    <!-- border -->![Automation](001c.png)
+
+4. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
     - From the dropdown, select the version of the Desktop Agent installed on your machine.
+    - Under **Platforms**, choose **Windows** or **Mac** depending on the Platforms you are working on.
     - Choose **Confirm**.
 
-    > It would be with suffix as **Registered**.
+    > The version of the Desktop Agent would be with suffix as **Registered**.
 
     <!-- border -->![Automation](002.png)
 
-3. A new pop-up will appear to create the automation. Do the following in the pop-up:
+5. A new pop-up will appear to create the automation. Do the following in the pop-up:
 
     -  Enter **Name** of the automation: **Extract Invoice Data**,
     -  Enter **Description** of your choice,
@@ -49,7 +56,10 @@ primary_tag: software-product>sap-build-process-automation
 
     An automation **Extract Invoice Data** will be created successfully.
 
+6. Choose **Save**.
+
     <!-- border -->![Automation](004.png)
+
 
 
 ### Create data types
@@ -117,10 +127,8 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](013.png)
 
-2. In the **Add Document Template** window, under **Start**:
-    - Choose **Create a new template**,
-    - Enter the **Name** of the template,
-    - Upload the invoice document which you have downloaded from prerequisites,
+2. In the **Add a Document Template** window, under **Start**:
+    - Choose **Create a New Template**,
     - Choose **Next**.
 
     <!-- border -->![Automation](014.png)
@@ -147,7 +155,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](045.png)
 
-7. Under **Define information to extract**:
+7. Under **Define information**:
     - Select the **Add** option to add **Header Fields**. For this scenario you will be adding `documentNumber` of Type String, `grossAmount` of Type Number and `senderName` of Type String.
 
     <!-- border -->![Automation](044.png)
@@ -218,7 +226,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Automation](046.png)
 
-5. In the **Add Document Template** window:
+5. In the **Add a Document Template** window:
 
     - Select **Choose a template from the current project**,
     - Choose **Next**.
@@ -227,7 +235,7 @@ primary_tag: software-product>sap-build-process-automation
 
 6. Under **Select Template**:
 
-    - Choose the `ABCSchema_1` template, you created in the previous steps,
+    - Choose the `ABCSchema` template, you created in the previous steps,
     - Choose **Next**.
 
     <!-- border -->![Automation](048.png)
@@ -307,17 +315,19 @@ primary_tag: software-product>sap-build-process-automation
 ### Test the automation
 
 
-1. Select Test button and enter the `Filepath` where the invoice document is stored locally on your machine.
+1. Navigate to the **Extract Invoice Data** automation.
+   
+2. Select Test button and enter the `Filepath` where the invoice document is stored locally on your machine.
 
     <!-- border -->![Test](038.png)
 
-2. The automation opens the Invoice Document, extracts data and prints the details i.e Document number, Gross amount and Sender name.
+3. The automation opens the Invoice Document, extracts data and prints the details i.e Document number, Gross amount and Sender name.
 
     <!-- border -->![Test](039.png)
 
-3. Your automation is built successfully.
+4. Your automation is built successfully.
 
-4. Once this tutorial is completed, the process will look like this:
+5. Once this tutorial is completed, the process will look like this:
 
     <!-- border -->![Mapping](041.png)
 
