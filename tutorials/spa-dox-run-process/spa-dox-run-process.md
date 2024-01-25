@@ -152,7 +152,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Monitor](01_Monitor.png)
 
-2. Choose **Get Invoice Details** instance to check the status of the **CONTEXT** and **EXECUTION LOG**.
+2. Choose **Get Invoice Details** instance to check the status of the **Logs** and the **Context**.
 
     <!-- border -->![Monitor](02_Process_and_Workflow.png)
 
