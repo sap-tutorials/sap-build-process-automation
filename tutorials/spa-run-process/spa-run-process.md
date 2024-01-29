@@ -48,7 +48,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](004.png)
 
-    > Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different artefacts it has. Any errors during the deployment will be shown in the Design Console.
+    > Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different artifacts it has. Any errors during the deployment will be shown in the Design Console.
 
 2. Run the deployment.
 
@@ -74,7 +74,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](007.png)
 
-3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has been started.
+3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has started.
 
     <!-- border -->![Run](008.png)
 
@@ -85,17 +85,21 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 Monitoring business process is one of the key aspect of the automated processes. Technical monitoring is an administrator job where a process admin proactively and consistently monitors the process performance, identifies any issues in the process and takes necessary actions to ensure business process continuity.
 
-**SAP Build** provides different applications to monitor and manage different process artifacts. These applications are available under the **Monitoring** tab.
+**SAP Build** provides different applications to monitor and manage different process artifacts. These applications are available under the **Monitor** tab.
 
-1. Choose Home, then Monitoring.
+1. Choose Home.
 
-    <!-- border -->![Run](010.png)
+    <!-- border -->![Run](010a.png)
 
-2. All deployed processes can be accessed under Processes and Workflows under Manage. To monitor all the running instances of the process, you have to go to Monitoring then **Process and Workflow Instances**.
+2. Choose Monitoring.
+
+    <!-- border -->![Run](010b.png)
+
+3. All deployed processes can be accessed under Processes and Workflows under Manage. To monitor all the running instances of the process, you have to go to Monitor then **Process and Workflow Instances**.
 
     <!-- border -->![Run](009.png)
 
-3. In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated etc.
+    In there, you will see all the running, erroneous and canceled process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, canceled, erroneous etc.
 
 4. Choose your process instance that was just triggered via the start form.
    
@@ -112,15 +116,18 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 ### Accessing the tasks
 
+1. Choose the **My Inbox** icon from the lobby.
 
-1. Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. User can claim, approve and reject the task from their inbox.
+    <!-- border -->![Run](012a.png)
+
+2. Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. User can claim, approve and reject the task from their inbox.
 
     <!-- border -->![Run](013.png)
 
-2. Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken. Once you acknowledge the notification sent via the approval process, the process will be completed.
+3. Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken. Once you acknowledge the notification sent via the approval process, the process will be completed.
 
     <!-- border -->![Run](014.png)
-
+    
     
 ### Retrieve sample project from the store
 
