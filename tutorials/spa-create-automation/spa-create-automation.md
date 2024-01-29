@@ -33,7 +33,7 @@ An Automation is a succession of steps to orchestrate multiple activities and ap
 
 In this exercise, you will automate the process to read the **sales order** details from an Excel and select the specific sales order details based on the input from the submitted form. To design the automation, you will need an Excel file filled with the sales order data. You can:
 
-- Download [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-create-automation/Orders.xlsx) **OR**
+- Download [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/50c942bbd0a7612e1cb672134578e517786e7b0e/tutorials/spa-create-automation/Orders.xlsx) **OR**
 
 - Create the file yourself using the following data:
 
@@ -52,20 +52,29 @@ In this exercise, you will automate the process to read the **sales order** deta
 |  PO8282     | 436955.64	   | 1/30/2022	| United States of America | 3/30/2022	            | In Time
 
 1. In the **Lobby** from the **editable version** of your project, do the following:
+
     - Select the process **Order Processing**.
     - Choose **+**.
-    - Select **Automation**, **New Automation**.
 
-    <!-- border -->![001](001.png)
+    <!-- border -->![001](001a.png)
 
-2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
+2. Select **Automation**.
+   
+    <!-- border -->![001](001b.png)
+
+3. Choose **Blank Automation**.
+
+    <!-- border -->![001](001c.png)
+
+4. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
 
     - From the dropdown, select the version of the Desktop Agent installed on your machine. It would be displayed with suffix as **Registered**.
+    - Under **Platforms**, choose **Windows** or **Mac** depending on the Platforms you are working on.
     - Choose the **Confirm** button.
 
-    ![001](002a.png)
+    <!-- border -->![001](002a.png)
 
-3. A new pop-up will appear to create the automation. Do the following in the pop-up:
+5. A new pop-up will appear to create the automation. Do the following in the pop-up:
 
     -  Under Name enter: **Get Order Details**.
     -  Under Description enter: **Automation for Order Process**.
@@ -73,7 +82,7 @@ In this exercise, you will automate the process to read the **sales order** deta
 
     > Identifier will be auto-filled.
 
-    ![001](003.png)
+    <!-- border -->![001](003.png)
 
     An automation **Get Order Details** will be created successfully.
 
@@ -89,11 +98,11 @@ Business projects usually need to use parameters and variables at runtime. These
 
 1. Select **Settings**.
 
-    ![001](005.png)
+    <!-- border -->![001](005.png)
 
 2. In the Project Properties window, select **Environment Variables**, then **+ Create**.
 
-    ![001](006.png)
+    <!-- border -->![001](006.png)
 
 3. In the create an environment variable screen:
 
@@ -101,11 +110,11 @@ Business projects usually need to use parameters and variables at runtime. These
     - Under Type select **String**.
     - Choose the **Create** button.
 
-    ![001](007.png)
+    <!-- border -->![001](007.png)
 
 4. After the Environment Variable is created successfully, **close** the project properties window.
 
-    ![001](008.png)
+    <!-- border -->![001](008.png)
 
 
 
@@ -116,7 +125,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 1. Select three dots next to **Get Order Details**, choose **Open Editor**, which navigates to the Design Studio to build the automation.
 
-    ![001](009.png)
+    <!-- border -->![001](009.png)
 
     > Since Excel is used in this automation, you have to open an Excel instance. Open Excel Instance is a mandatory activity to use when using Excel. Once you open an Excel instance, you can use other Excel activities.
 
@@ -124,7 +133,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
     -  In the Automation Details section on the right, search for the **Open Excel Instance** activity,
     -  **Drag and drop** the activity into the canvas.
 
-    ![001](010.png)
+    <!-- border -->![001](010.png)
 
     > Next, Excel Data Mapping is done with the Excel Cloud Link activity. Excel Data Mapping allows you to transform columns-based data from an Excel sheet into data that can be used in the automation. The data from the Excel sheet stays the same but the structure becomes a data type structure, making it possible to use throughout your project.
 
@@ -133,27 +142,27 @@ You will now design the automation in the Automation Editor by dragging-and-drop
     -  In the Automation Details search for the activity **Excel Cloud Link**,
     -  Drag and drop the activity into the canvas.
 
-    ![001](011.png)
+    <!-- border -->![001](011.png)
 
 4. Select Excel Cloud Link, in the details on the right side, choose the **Edit activity** button.
 
-    ![001](012.png)
+    <!-- border -->![001](012.png)
 
 5. In the Excel File screen:
     - Select **Browse**.
     - Choose the **Orders.xlsx** file which is saved on your machine.
 
-    ![001](013.png)
+    <!-- border -->![001](013.png)
 
     > The Excel file is mapped automatically.
 
 6.  In the Workbook Path field enter the Environment Variable as `OrderFilePath`, which was created above as the parameter value for **Workbook path**.
 
-    ![001](014.png)
+    <!-- border -->![001](014.png)
 
 7. Select the button **+ From Excel data**.
 
-    ![001](015.png)
+    <!-- border -->![001](015.png)
 
     > A pop up appears to create a data type. A **Sales Order** variable is needed to collect the data from the Excel sheet columns. In this step, a variable is automatically created from the Excel file columns.
 
@@ -181,15 +190,10 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 12. To close the opened instance of the Excel file:
     - In the Automation Details search for the activity **Close Excel Instance**.
-    -  Drag and drop the activity into the canvas.
+    - Drag and drop the activity into the canvas and save your automation.
 
     <!-- border -->![001](021.png)
-
-13. **Save** the automation.
-
-    <!-- border -->![001](022.png)
-
-
+    
 
 ### Add input and output parameters
 
@@ -230,7 +234,7 @@ Variables that are used, build your automation, and are data storage that have a
 
     > A variable of the data type **Sales Order** is created.
 
-2. Select **Create Sales Order variable**. Under Output Parameters enter the value of as `selectedOrderDetails`.
+2. Select **Create Sales Order variable**. Under Output Parameters enter the value as `selectedOrderDetails`.
 
     <!-- border -->![001](027.png)
 
@@ -277,7 +281,7 @@ This control has the following loop parameters:
 
     <!-- border -->![001](032.png)
 
-    > If the order number is found in Excel, i.e. the condition is **True**, set the variable using **Set Variable Value** activity that is a **Data Management Activity**.
+    > If the order number is found in Excel, i.e. the condition is **True**, set the variable using **Set Variable Value** activity that is a **Data Management** activity.
 
 6. To add Set Variable Value:
     - Click on the canvas.
@@ -303,7 +307,7 @@ This control has the following loop parameters:
     <!-- border -->![001](035.png)
 
 
-9. Use **Log message** activity to print your results. To add Log Message:
+9. Use **Log Message** activity to print your results. To add Log Message:
      - In Automation Details search for the activity **Log message**,
      - Drag and Drop the activity into the canvas outside the **For Each** loop.
 
@@ -382,7 +386,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 After the design of the automation that retrieves the data form the Excel file, simplify the start form by deleting the not needed fields.
 
-1. In the Order Processing tab:
+1. In the Order Processing tab :
     - Select three dots next to **Order Processing Form**.
     - Select **Open Editor**.
 

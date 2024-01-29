@@ -27,17 +27,21 @@ The process is created where several forms are defined, an automation to extract
 
 Before creating a **Visibility Scenario**, you need to prepare the process.
 
-1.  In the **Process Builder** open the process and on the right-hand side, select the tab **Visibility**.
+1. In the **Process Builder** open the process and on the right-hand side, select ![Process Details icon](icon.png) icon to view the process details.
 
     <!-- border -->![Find Visibility tab](Step1-1.png)
 
-    > Here you define the connection between the process context and the newly to be created visibility scenario.
+2. Then, select the tab **Visibility**.
 
-2.  Select **+** on the right panel to add the relevant attributes from the process.
+    <!-- border -->![Find Visibility tab](Step1-1b.png)
+
+    > Here you define the connection between the process context and the newly to be created visibility scenario.   
+
+3. Select **+** on the right panel to add the relevant attributes from the process.
 
     <!-- border -->![Plus Sign to add attributes](Step1-2.png)
 
-3.  Add the following attributes:
+4. Add the following attributes:
 
     - `expectedDeliveryDate`
     - `orderAmount`
@@ -50,16 +54,20 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
 
     > The relevant attributes are the ones that could be used to measure, calculate, or derive some meaningful information in the visibility dashboard.
 
-4.  **Save** your work.
+5. **Save** your work.
 
 
 ### Create Visibility Scenario
 
-1.  Create a new **Visibility Scenario**.
+1.  Select the **Open Project Content** icon as below.
 
     <!-- border -->![New visibility scenario](Step2-1.png)
 
-2.  Set **Name** to **Sales Order Visibility Scenario** then click **Create**.
+2. Select **+**. Choose **Create** > **Visibility Scenario**.
+
+    <!-- border -->![New visibility scenario](Step2-1b.png)
+
+3.  Set **Name** to **Sales Order Visibility Scenario** then click **Create**.
 
     <!-- border -->![Details visibility scenario](Step2-2.png)
 
@@ -67,7 +75,7 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
 
     The **Visibility Scenario** is created.
 
-3.  Move to **General** tab in **Sales Order Visibility Scenario** and change: **Instances** to **Sales Orders** and **Instance** to **Sales Order**.
+4.  Move to **General** tab in **Sales Order Visibility Scenario** and change: **Instances** to **Sales Orders** and **Instance** to **Sales Order**.
 
     > To make it better understandable what the instances are processing: Sales Orders.
 
@@ -79,7 +87,7 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
 
 This step involves adding a process to the visibility scenario we created.
 
-1.  Select **+**, then **Add Process** in **Process** tab in **Sales Order Visibility Scenario**.
+1.  Select **+**, then **Add Process** in **Processes** tab in **Sales Order Visibility Scenario**.
 
     <!-- border -->![Add Process to visibility scenario](Step3-1.png)
 

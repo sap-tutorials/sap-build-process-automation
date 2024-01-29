@@ -32,13 +32,19 @@ A **decision** consists of one or more policies. Each policy consists of a colle
 
 In this section, you will create and configure a decision which will be used to determine the relevant approvers based on the sales order fields.
 
-1. In the process builder:
-    - Choose **+** of the **default conditional flow**,
-    - Select **Decision** then **New Decision**.
+1. In the process builder, choose **+** of the **default conditional flow**.
 
     <!-- border -->![001](001.png)
 
-2. In the Create Decision window, do the following:
+2. Select **Decision**.
+
+    <!-- border -->![001b](001b.png)
+
+3. Click on **Blank Decision**.
+
+    <!-- border -->![001c](001c.png)
+
+4. In the Create Decision window, do the following:
 
     -	In the Name field enter **Determine Approver**,
     -	In the Description field enter **Rule to identify the potential approvers for sales order**,
@@ -46,11 +52,11 @@ In this section, you will create and configure a decision which will be used to 
 
     <!-- border -->![002](002.png)
 
-3. Now you have to model the decision. For that, choose the 3 dots next to **Determine Approver** decision, to open the menu and choose **Open Editor**.
+5. Now you have to model the decision. For that, choose the 3 dots next to **Determine Approver** decision, to open the menu and choose **Open Editor**.
 
     <!-- border -->![002](003.png)
 
-4. A decision editor opens. You can see the decision diagram on the left panel and configuration option for Input and Output on the right panel. Notice the default policy that is pre-created with the decision.
+6. A decision editor opens. You can see the decision diagram on the left panel and configuration option for Input and Output on the right panel. Notice the default policy that is pre-created with the decision.
 
     A **Decision Diagram** is a flow chart that describes the execution flow of the decision logic from the input to the output. Using a decision diagram, you can view the input, output, policies of a decision and the rules of the policies. You can also access each component of a decision, like a policy or a rule, via the decision diagram itself.
 
@@ -62,38 +68,42 @@ In this section, you will create and configure a decision which will be used to 
 ### Create Data Types
 
 
-A data type describes the data structure that can be used as an input and/or output parameter in an automation, a decision or processes. Data types enable you to formalize the data used as input/output parameters for steps, activities, skills processes, scenarios, triggers, or notifiers. Data types facilitate the manipulation and validation of data.
+A data type describes the data structure that can be used as an input and/or output parameter in an automation, a decision or processes. Data types enable you to formalize the data used as input/output parameters for steps, activities, skills, processes, scenarios, triggers, or notifiers. Data types facilitate the manipulation and validation of data.
 
 > You can create a data type manually, but some data types can also be created automatically when SDK packages or pre-packaged scenarios are imported or after running an automation.
 
 Now, you have to map the Input and Output of the decision to the actual data object available with the process. In this section, you will use Sales Order as the Input data object and Approver as the Output data object. While the Sales Order was already created in the automation step, you will create an Approver data object for decision output.
 
-1. Go back to the **Overview** tab, choose **Create** and select **Data Type**.
+1. Click on the **Open Project Content** icon as below.
 
     <!-- border -->![002](005.png)
 
-2. In the Create Data Type window, do the following:
+2. Select **+**. Choose **Create** > **Data Type**.
+
+    <!-- border -->![002](005b.png)
+
+3. In the Create Data Type window, do the following:
     - In the Name field enter **Approver**,
     - In the Description field enter **Approver details who will approve the order from supplier side**,
     - Choose **Create** button.   
 
     <!-- border -->![002](006.png)
 
-3. In the **Approver** data type screen, choose **New Field** to add a new attribute to the data object.
+4. In the **Approver** data type screen, choose **New Field** to add a new attribute to the data object.
 
     <!-- border -->![002](007.png)
 
-4. In the Field Details section on the right, in the **Name** field enter `Email`. Keep the **Type** as **String**.
+5. In the Field Details section on the right, in the **Name** field enter `Email`. Keep the **Type** as **String**.
 
     > You can choose the **Type** dropdown list to see the different kind of data types that are supported like Number, Password, Date, Time, Boolean etc.
 
     <!-- border -->![002](008.png)
 
-5. Similarly, add another attribute `UserGroup` of **Type** **String** to the data type.
+6. Similarly, add another attribute `UserGroup` of **Type** **String** to the data type.
 
     <!-- border -->![002](009.png)
 
-6. **Save** changes.
+7. **Save** changes.
 
     <!-- border -->![002](010.png)
 
@@ -240,13 +250,18 @@ First, add this newly created data object as the decision output.
 
 After you have created and configured the decision, next you have to map the input fields of the decision with the actual process content fields from the process builder.
 
-1. Open the process builder, choose **Determine Approver** decision and do the following. Choose **Inputs** tab.
+1. Open the process builder
+   
+    - Choose **Determine Approver** decision 
+    - Choose **Inputs** tab
+    - Map the **Sales Order Input** choosing the `SelectedOrder` with **Bind Object** option  
 
     > You might not see entries in the Input, please refer to [the Knowledge Base Article](https://launchpad.support.sap.com/#/notes/3207153) for the complete workaround.
 
-    <!-- border -->![002](029.png)
 
-2. Map the following decision table input with the process content:
+    <!-- border -->![002](030.png)
+
+    > You can choose to map the Single Properties from the selected order following decision table input with the process content:
 
     |  Decision Input Field   | Process Content
     |  :------------- | :-------------
@@ -257,7 +272,6 @@ After you have created and configured the decision, next you have to map the inp
     | `orderStatus` | `selectedOrder` > `orderStatus`
     | `shippingCountry` | `selectedOrder` > `shippingCountry` |
 
-    <!-- border -->![002](030.png)
 
 2. **Save** the process.    
 
