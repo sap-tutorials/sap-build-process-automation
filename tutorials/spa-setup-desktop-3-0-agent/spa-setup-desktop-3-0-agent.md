@@ -157,12 +157,14 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
 [OPTION BEGIN [Automatically]]
 
-1. After Step 3 completed, open the **Download Page** and choose **Register Agent** if it is not enabled.
+1. After installation is completed and browser extension allowed, open the **Download Page** and choose **Refresh Page**.
+
+2. Once the extension is enabled, you may register your agent to your tenant. Choose **Register Agent**.
 
     <!-- border -->![Register Agent](agent3-037.png)
 
-2. Once the Agent is registered, you may refresh the page.
-
+3. The Agent is registered:
+   
     <!-- border -->![Refresh Page](agent3-037a.png)
 
 3. Once the process is completed, open the **Desktop Agent 3**.
