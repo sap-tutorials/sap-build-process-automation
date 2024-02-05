@@ -51,7 +51,7 @@ In this tutorial, you will release and deploy the project created in the previou
 
 ### Test the dropdown filtering in the form
 
-1. From the artifacts list in the left menu, select **Order Processing** process.
+1. Open the project content on the left menu and select **Order Processing** process.
 
     <!-- border -->![Action Project](007.png)
 
