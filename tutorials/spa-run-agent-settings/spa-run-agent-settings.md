@@ -7,7 +7,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-# Agent Management Settings to Execute the Process with an Automation
+# Agent Management Settings to Execute the Process With an Automation
 <!-- description --> Create an agent attribute in the tenant to add it to your agent and project
 
 ## Prerequisites
