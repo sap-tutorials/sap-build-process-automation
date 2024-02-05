@@ -27,7 +27,7 @@ In this tutorial, you will be creating a Decision to validate the Purchase Order
 
 ---
 
-### Create Decision Artifact
+### Create decision artifact
 
 Once you have completed the prerequisite mission, your process should look something like below. 
 
@@ -76,7 +76,7 @@ Once you have completed the prerequisite mission, your process should look somet
 4. Choose **Save**.
 
 
-### Configure Decision
+### Configure decision
 
 
 1. Navigate to the **Order Processing** process.Select the decision **Order Validity Check** menu option and choose **Open Editor**.
@@ -148,7 +148,7 @@ Once you have completed the prerequisite mission, your process should look somet
     <!-- border -->![Automation](022.png)
 
 
-### Bind Parameters To Decision
+### Bind parameters to decision
 
 
 1. Go to the **Order Processing** process.Select the **Order Validity Check** decision and choose **Inputs** in decision details.
@@ -159,7 +159,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](024.png)
 
-### Create Rejection Notification Form with Tables
+### Create rejection notification form with tables
 
 1. In the **Overview** tab, click the **Create** dropdown and choose **Form** under **Process** section.
 
@@ -191,7 +191,7 @@ Once you have completed the prerequisite mission, your process should look somet
     <!-- border -->![Automation](031.png)
 
 
-### Create Condition And Add Rejection Form
+### Create condition and add rejection form
 
 1. In the **Order Processing** process choose the **+** sign and select **Condition** under **Controls**.
 
@@ -240,7 +240,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](042.png)
 
-### Release and Deploy
+### Release and deploy
 
 1. In the **Order Processing** process, choose the **Release** button in the top right corner.
 
@@ -271,7 +271,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](049.png)
 
-### Test the Process
+### Test the process
 
 1. In the **Order Processing** process, choose the **Order Processing Form** artifact. In the right panel that appears, select the **Copy Link** icon under **Form Link** field.
 
