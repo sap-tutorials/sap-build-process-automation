@@ -56,16 +56,11 @@ parser: v2
 
 ### Monitor sales order approval process
 
-1. Return to the lobby and select **Monitor** tab to monitor the process execution.
+1. Return to the lobby and select **Monitoring** then choose **Process and Workflow Instances** under **Monitor** to monitor the process execution.
 
     <!-- border -->![Run Process](RunProcess-03.jpg)
 
-
-2. In the **Monitor** section, click **Process and Workflow Instances** to see process instances details.
-
-    <!-- border -->![Run Process](RunProcess-04.jpg)
-
-3. In process instance detail page, select your process instance to inspect the instance details.
+2. In process instance detail page, select your process instance to inspect the instance details.
 
     - Look at the context section. In the context, you will see the order details that you entered in the form.
 
@@ -108,7 +103,7 @@ parser: v2
 
 ### Check action log
 
-1. Go back to the **Monitor** application, select your process instance and observe the **Logs**.
+1. Go back to **Monitoring > Process and Workflow Instances**, select your process instance and observe the **Logs**.
 
     - **Refresh** the logs from top-right corner of the screen.
     - You will see the log entry for **Action** execution which informs you that a POST API for Sales Order has been executed, with the given destination configuration.
