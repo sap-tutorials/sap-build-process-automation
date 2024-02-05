@@ -25,19 +25,36 @@ Agent attributes allow you to sort agents registered within the same tenant and 
 ---
 
 
-### Add your agent
+### Create an environment to add your agent
 
 After you have installed the desktop agent, you need to add your agent so that it is able to run an automation.
 
-1. Navigate to **SAP Build** page. Select **Settings**. Choose **Agents Management** then **Add Agent**.
+1. Navigate to **SAP Build** lobby. Select **Control Tower** and **Environments** under **Tenant Configuration**.
+    
+    <!-- border -->![Environment](agent3-020b.png)
+   
+2. Choose **Create Environment**.
+   
+3. In the **Create Environment** window do the following:
 
-    <!-- border -->![Agent Management](agent3-020.png)
+    - Give your environment a name
+    - Select a color
+    - You may enter a short description
+    - Choose **Create**
 
-2. When the pop-up window opens, select your agent and choose **Add agent**.
+    <!-- border -->![Create Environment](agent3-020.png)
+
+4. Select the created environment to add your agent in it.
+
+    <!-- border -->![Select environment](agent3-020a.png)
+
+5. Select **Agent Management > Add Agent**.
+
+6. In the **Add Agent** window, select your agent and choose **Add agent**.
 
     <!-- border -->![Agent Management Add](agent3-021.png)
 
-3. Your agent is now added and ready to run.
+7.  Your agent is now added and ready to run.
 
     <!-- border -->![Agent Management List](agent3-022.png)
 
@@ -49,22 +66,22 @@ Now that you have your project free of errors, ready to be released, you need to
 
 To do so, please follow these steps:
 
-1. Navigate to the **Build** page, select **Settings**.
+1. In **SAP Build** lobby, select **Control Tower > Agent Attributes**.
 
-2. Choose **Agent Attributes**.
+    <!-- border -->![Agent Attribute](02.png)  
 
-3. Choose **Create Attribute**.
+2. Choose **Create Attribute**.
 
-4. In the **Create Agent Attribute** dialog box, please enter **My Agent Attribute** in the **Name** field.
+3. In the **Create Agent Attribute** dialog box, please enter **My Agent Attribute** in the **Name** field.
 
-5. From the **Type** dropdown list, select **Predefined** if you wish to add values or else leave **Free** as **Type**.
+4. From the **Type** dropdown list, select **Predefined** if you wish to add values or else leave **Free** as **Type**.
 
     > - **Free** – With this type of attribute, you won't be able to add any predefined value. Whenever you want to use this attribute, you will be able to parametrize the value of this attribute.
     > - **Predefined** – With this type of attribute, you will be able to populate values for any specific attribute.
 
-6. In the **Values** field, you may enter any value you wish (i.e. employee ID).
+5. In the **Values** field, you may enter any value you wish (i.e. employee ID).
 
-7. Choose **Create**.
+6. Choose **Create**.
 
     <!-- border -->![Create Agent Attribute](01-Settings-create-agent-attribute.png)  
 
@@ -72,17 +89,27 @@ To do so, please follow these steps:
 ### Add the attribute to your agent
 
 
-1. Choose **Agent List**, then search for your agent and verify that it is idle or ready and connected in unattended mode then click on it.
+1. Navigate back to **Control Tower** and choose **Agents** under **Agent Configuration**.
+
+    <!-- border -->![Agents](03.png)
+   
+2. Search for your agent.
 
     <!-- border -->![Settings Agents List](01-Settings.png)
 
-2. Choose **Manage Attributes**.
+3. Verify that it is idle or ready and connected in unattended mode.
 
-3. In the **Manage Matching Attributes** dialog box, add your attribute:
+    > If your agent is not in unattended mode, you will be able to set it to unattended mode at step 5.
+   
+4. Select the three dots and choose **Manage Attributes**.
 
-      - From the drop-down list, select **My Agent Attribute**
-      - Enter the value you selected previously in the **Values** field and press **ENTER**
-      - Choose **Confirm**
+    <!-- border -->![Manage attributes](04.png)
+
+5. In the **Manage Matching Attributes** dialog box, add your attribute:
+
+    - From the drop-down list, select **My Agent Attribute**
+    - Enter the value you selected previously in the **Values** field and press **ENTER**
+    - Choose **Confirm**
 
     <!-- border -->![Settings Add Attribute](01-Settings-agent-attributes-add.png)
 
@@ -117,13 +144,15 @@ When you are running the process make sure to have the Desktop Agent in unattend
 
     <!-- border -->![Release](04-open-agent.png)
 
-2. Select **Settings** in the Menu and choose **Mode Settings**.
+2. Select **Settings** in the Menu and choose **Mode**.
 
     <!-- border -->![Release](04-open-settings-mode.png)
-
+    
 3. Set the Desktop Agent 3 to Unattended mode by selecting **Activate**.
 
     <!-- border -->![Release](04-unattended-mode.png)
+
+  
 
 
 
