@@ -55,15 +55,13 @@ In this first option, you will learn how to use OAuth Client ID authorization me
 
 To configure External Authentication in SAP Build Process Automation, please follow the below steps:
 
-1. From the **Lobby**, select **Settings**.
+1. From **SAP Build** Lobby, select **Control Tower > External Authentication**.
 
     <!-- border -->![Settings](21.png)
 
-2. Select **External Authentication**.
+2. Choose **Create New Authentication**.
 
-3. Choose **Create New Authentication**.
-
-4. In the **Create Authentication** window, provide the following:
+3. In the **Create Authentication** window, provide the following:
 
     - Name: Google Workspace Authentication,
     - Description: Google Account for Google Workspace Automation,
@@ -75,17 +73,17 @@ To configure External Authentication in SAP Build Process Automation, please fol
     
     If you need to add other scopes, you need to delete the existing scope and create a new one. Hence, let's add all the scopes which can be used to automate any of your Google Applications.
 
-    <!-- border -->![Create Authentication](22.png)
+4. Choose **Create**.
 
-5. Choose **Create**.
+    <!-- border -->![Create Authentication](22.png)
     
     This configuration can be identified using the name. As shown in the above diagram, the configuration is stored on the cloud and identified as Google Workspace Authentication.
 
     Once you have configured the Tenant-Specific configuration, it will be shared to all the connected agent machines. These details will be available on External Authentication section of Desktop Agent 3.0 settings. Here you will have to register by providing the email id and can mark it as default Authentication. You can also undo the registered authentication.
 
-6. To register your External Authentication to the Desktop Agent 3.0. follow these steps:
+4. To register your External Authentication to the Desktop Agent 3.0. follow these steps:
 
-    - On your Desktop Agent, select **Settings>External Authentication**,
+    - On your Desktop Agent, select **Settings > External Authentication**,
     - Choose your Google Workspace Authentication,
     - Enter the email address with which you want to connect and click on the save icon,
     - Choose **Register**.
