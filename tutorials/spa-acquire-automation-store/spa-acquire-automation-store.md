@@ -13,7 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Acquire Orders Management package from the SAP Build store and reuse the package in SAP Build Process Automation.
 
 ## Prerequisites
-- [Trial account](https://blogs.sap.com/2022/09/09/sap-process-automation-now-available-in-your-trail-account/) with the SAP Build Process Automation enabled **OR**
+- [Trial account](spa-subscribe-free-trial) with the SAP Build Process Automation enabled **OR**
 - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
 
 ## You will learn
@@ -25,9 +25,9 @@ primary_tag: software-product>sap-build-process-automation
 ### Explore the store
 
 
-The Store offers predefined content for your automation. Packages are categorized by catalog which let you choose between Business Content, Learning Content and SAP Intelligent RPA SDK.
+The Store offers predefined content for your automation. Packages are categorized by catalog which let you choose between Automation SDK, Business Content and Learning Content.
 
-1. Navigate to the store in your SPA Tenant.
+1. Navigate to the store in your SAP Build Process Automation Tenant.
 
     <!-- border -->![Navigate Store](01.png)
 
@@ -35,9 +35,9 @@ The Store offers predefined content for your automation. Packages are categorize
 
     > **Business Content** provides pre-built automations for concrete business problems.
 
-    > **SAP Intelligent RPA SDK** provides all the Software Developments Kits that can be acquired from the store.
+    > **Automation SDK** provides all the Software Developments Kits that can be acquired from the store.
 
-2. Select one or more filters on the left to filter the available Store projects by Project Type (for example Live Process and Process Automation), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
+2. Select one or more filters on the left to filter the available Store projects by Project Type (for example Process and Actions), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
 
     <!-- border -->![Store View](02-StoreView.png)
 
@@ -49,17 +49,17 @@ The Store offers predefined content for your automation. Packages are categorize
 
     <!-- border -->![Learning Catalog](03-Learning.png)
 
-2. In the search bar, type Orders Management, hit enter and choose **More Information**.
+2. In the search bar, type Orders Management, hit enter and click on the project for more information.
 
     <!-- border -->![Orders Management](04-OrdersManagement.png)
 
-    This sample package presents a way to deal with Excel and a web application using the SAPUI5 framework. Each sample package comes with a description, documents about the sample, and artifacts.
+    This sample package presents a way to deal with Excel and a web application using the SAPUI5 framework. Each sample package comes with a description, documents about the sample, artifacts, version history and dependencies.
 
     <!-- border -->![Explore](05-Explore.png)
 
 3. To add the package, you have two options:
 
-    - From the **More Information** section, choose **Add** and select **Create from Template**.
+    - From the project information section, choose **Add** and select **Create from Template**.
 
     <!-- border -->![Add Create Template](06-AddCreateTemplate.png)
 
@@ -73,7 +73,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
     <!-- border -->![Create Project](08.png)
 
-5. To see the newly created project, navigate back to **Lobby** from the top menu.
+5. To see the newly created project, navigate back to the **Lobby** from the top menu.
 
     <!-- border -->![Created Project](09.png)
 
