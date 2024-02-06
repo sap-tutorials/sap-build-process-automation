@@ -24,15 +24,15 @@ Learn how to add the action in the business process to connect to backend system
 
 ### Import sample process as template
 
-1. From the **SAP Build Lobby**, click on the **Store** tab.
+1. From the **SAP Build** Lobby, click on the **Store** tab.
 
     <!-- border -->![Import Project](ImportProject_31.png)
 
-2. On the **Store** page, search for **Sales Order Approvals - Sample** and once it loads, click **Create from Template**.
+2. On the **Store** page, search for **Sales Order Management (MI01)** and once it loads, click **Create from Template**.
 
     <!-- border -->![Import Project](ImportProject_32.png)
 
-3. In the **Project Name** field, enter **Sales Order Approvals**.
+3. In the **Project Name** field, enter **Sales Order Approval**.
     > You can keep the default description or enter the description of your choice
 
     - click **Create**.
@@ -46,7 +46,7 @@ Learn how to add the action in the business process to connect to backend system
 
 ### Add environment variable to access destination
 
-1. Click to open **Sales Order Approvals** business process project from the **Lobby**.
+1. Click to open **Sales Order Approval** business process project from the **Lobby**.
     > When you open for the first time then you might get an option to Accept.
 
     <!-- border -->![Import Project](ImportProject_35.png)
