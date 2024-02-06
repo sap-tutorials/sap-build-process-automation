@@ -37,9 +37,12 @@ To configure action in business process, you will need to create an environment 
 2. Set this destination, created in BTP cockpit, in SAP Build Process Automation. To do so:
 
     - Open **SAP Build** development workbench.
-    - Click **Settings**.
-    - Go to **Destinations** section, and click **New Destination**.
-    - From **Add Destination** pop-up, select *S4HANACloud* destination.
+    - Click **Control Tower > Destinations**.
+  
+    <!-- border -->![Destination](destination_02a.png)
+
+    - Click **New Destination**.
+    - From **Add Destination** pop-up, select `S4HANACloud` destination.
     - Click **Add** to add a new destination in SAP Build Process Automation.
 
     <!-- border -->![Destination](destination_02.png)
@@ -50,4 +53,4 @@ To configure action in business process, you will need to create an environment 
 
     > This destination will be associated with the environment variable while deploying the business process.
 
-You have successfully created and configured the destination to be accessed while configuring business process.
+    You have successfully created and configured the destination to be accessed while configuring business process.
