@@ -138,7 +138,7 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Build
 
     <!-- border -->![Manage extensions](agent3-005.png)
 
-5. Enable SAP Process Automation extension.
+5. Enable SAP BUild Process Automation extension.
 
     <!-- border -->![Enable extension](agent3-006.png)
 
@@ -196,7 +196,7 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
 
 
-1. Navigate to **SAP Build** lobby. Select **Control Tower> Agents**.
+1. Navigate to **SAP Build** lobby. Select **Control Tower > Agents**.
    
     <!-- border -->![Agents](agent3-013.png)
 
