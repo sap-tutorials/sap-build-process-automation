@@ -10,7 +10,7 @@ parser: v2
 ---
 
 # Setup Environment
-<!-- description --> Create destination in BTP cockît and set it in SAP Build Process Automation
+<!-- description --> Create destination in BTP cockpit and set it in SAP Build Process Automation
 
 ## You will learn
   - to add destination in SAP BTP Cockpit to connect to backend system
@@ -43,8 +43,11 @@ To configure action in business process, you will need to create an environment 
 1. Now that your destination is created in SAP BTP cockpit, you may set it in SAP Build Process Automation. To do so:
 
     - Open **SAP Build** development workbench.
-    - Click **Settings**.
-    - Go to **Destinations** section, and click **New Destination**.
+    - Click **Control Tower > Destinations**.
+  
+    <!-- border -->![Destination](002a.png)
+
+    - Click **New Destination**.
     - From **Add Destination** pop-up, select `S4_Business_Partner` destination.
     - Click **Add** to add a new destination in SAP Build Process Automation.
 
