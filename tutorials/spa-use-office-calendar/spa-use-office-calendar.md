@@ -34,7 +34,7 @@ Once you have successfully configured the Azure application as mentioned in Prer
 
 1. Log in to SAP Build Process Automation tenant.
 
-2. Navigate to **Settings > External Authentication**.
+2. Navigate to **Control Tower > External Authentication**.
 
     <!-- border -->![External authentication](01.png)
 
@@ -100,7 +100,7 @@ Once the external authentication is created, it will be visible on your Desktop 
 
 ### Create a project
 
-1. Go the SAP Build lobby. Choose **Create** button.
+1. Navigate to the SAP Build lobby. Choose **Create** button.
 
     <!-- border -->![Create](09.png)
 
@@ -112,9 +112,9 @@ Once the external authentication is created, it will be visible on your Desktop 
 
     <!-- border -->![Task automation](11.png)
 
-4. Provide a **Name** for the project such as **Calendar activities for Microsoft 365**.
+4. Provide a **Name** for the project such as: **Calendar activities for Microsoft 365**.
 
-5. Provide a **Short Description** for the project such as **This project sends a meeting request for an interview depending on a candidate's and a list of interviewers' availability. It will then update the meeting request that was sent and finally delete the meeting from the calendars.** 
+5. Provide a **Short Description** for the project such as: **This project sends a meeting request for an interview depending on a candidate's and a list of interviewers' availability. It will then update the meeting request that was sent and finally delete the meeting from the calendars.** 
 
 6. Choose **Create**.
 
