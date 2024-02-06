@@ -138,7 +138,7 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Build
 
     <!-- border -->![Manage extensions](agent3-005.png)
 
-5. Enable SAP BUild Process Automation extension.
+5. Enable SAP Build Process Automation extension.
 
     <!-- border -->![Enable extension](agent3-006.png)
 
