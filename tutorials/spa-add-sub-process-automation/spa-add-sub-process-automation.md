@@ -8,7 +8,6 @@ tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tu
 primary_tag: software-product>sap-build-process-automation
 ---
 
-
 # Add a Subprocess to an Automation
 <!-- description --> Learn how to use a subprocess in SAP Build Process Automation.
 
@@ -24,7 +23,6 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 ## Intro
-
 Using subprocess in your automation enables you to easily reuse existing code segments in various processes. This re-usability eliminates the need for duplicating the same code multiple times, saving you valuable time and development efforts.
 
 Furthermore, incorporating subprocess in your automation allows you to divide your tasks into smaller and more manageable units. This simplifies the comprehension and maintenance of your automated system.
@@ -148,7 +146,6 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](11.png)
 
-
 2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
 
     - From the dropdown, select the version of the Desktop Agent installed on your machine. It would be displayed with suffix as **Registered**.
@@ -160,13 +157,13 @@ After completing the steps above, your process will look like this:
 
     -  Under Name enter: **Assign Learning Journey**.
     -  Choose the **Create** button.
-
+    
     <!-- border -->![subprocess](13.png)
 
     An automation **Assign Learning Journey** will be created successfully.
 
 4. Choose **Save**.
-
+  
     <!-- border -->![subprocess](13_1.png)
 
 
@@ -181,7 +178,6 @@ After completing the steps above, your process will look like this:
     - Choose **Create**.
 
     <!-- border -->![subprocess](15.png)
-
 
 3.  In the Data Type **Learner** add 3 new fields as such:.
 
@@ -205,13 +201,11 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](18.png)
 
-
 6. A new pop-up will appear.
     - Enter **Name** of the data type: **dataset**.
     - Choose **Create**.
 
     <!-- border -->![subprocess](19.png)
-
 
 7.  In the Data Type **dataset** add a new field such as:
 
@@ -221,14 +215,11 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](19_1.png)
 
-
 8. Check List. 
 
 9. Choose **Save**.
 
-
     <!-- border -->![subprocess](20.png)
-
 
 
 ### Configure the automation
@@ -244,7 +235,6 @@ After completing the steps above, your process will look like this:
 3. Click on the canvas and select the **Input/Output** section in Automation Details. 
 
     <!-- border -->![subprocess](23.png)
-
 
 4. Add Input parameters as following:
 
@@ -266,7 +256,6 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](27.png)
 
-
 8. **Save** your work.
 
 
@@ -286,14 +275,12 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](31_2.png)
 
-
 4. Configure the **Process Input** as such: 
 
     - In Inputs Name enter: `learners`.
     - In Inputs Type choose: **Learner**. 
 
 5. Select **Apply**.
-
 
     <!-- border -->![subprocess](32.png)
 
@@ -313,7 +300,6 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](38.png)
 
-
 10. **Save** your work.
 
 11. Go to the **Overview** tab. Click on the **Assign Learning Journey** automation.
@@ -324,7 +310,6 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](38_2.png)
 
-
 13. **Save** your work.
 
 14. Navigate back to **Manage Trainees Learning Journey**, select **Assign Learning Journey** automation to configure the **Inputs** parameters.
@@ -334,7 +319,6 @@ After completing the steps above, your process will look like this:
 15. In the **Inputs** section, in **Select list** field, choose **Learners**.
 
     <!-- border -->![subprocess](38_4.png)
-
 
 16. **Save** your work.
 
@@ -375,7 +359,6 @@ After completing [Agent Management Settings to Execute the Process with an Autom
 2. In a new tab in your browser, paste the form link. Enter the information of the learners in the table for whom you intend to send the learning path and choose **Submit**.
 
     <!-- border -->![subprocess](47.png)
-
    
     > After clicking on **Submit**, all the learners you have added to the table will receive the project tasks in their Inbox.
 
@@ -394,7 +377,6 @@ After completing [Agent Management Settings to Execute the Process with an Autom
 6. Similarly, refresh the inbox again to get the third mission. Once the mission is completed, click on **Done**.
 
     <!-- border -->![subprocess](51.png)
-
 
 
 

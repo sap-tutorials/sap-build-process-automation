@@ -14,17 +14,17 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
   - Either complete the mission [Create Tables in the Form](https://developers.sap.com/tutorials/spa-forms-table.html).
-  - Set up the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings).
+  - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings).
   - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-add-list-input-in-decision/Orders%20.xlsx) in your local machine. 
 
 ## You will learn
   - How to use a List as an input/output to your Decision.
-  - How to use reusable text rules. 
+  - How to use a reusable text rules. 
   - How to bind List in Decision to Table in Form.
 
 ## Intro
 
-In this tutorial, you will automate the process where the Sales executive is notified about erroneous or error-free Orders through a Task in the Inbox of SAP Build Process Automation.
+In this tutorial, you will automate the process where the Sales executive is notified about the erroneous or error-free Orders through a Task in the Inbox of SAP Build Process Automation.
 
 The process is designed to have the following artifacts:
 

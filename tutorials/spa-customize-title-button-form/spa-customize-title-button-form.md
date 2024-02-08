@@ -106,7 +106,7 @@ After completing the prerequisites, your process will look like this:
 
     <!-- border -->![Button](22.png)
 
-3. In the SAP Build Lobby, choose **My Inbox** icon.
+3. In the **SAP Build** Lobby, choose **My Inbox** icon.
 
     <!-- border -->![Button](23.png)
 
