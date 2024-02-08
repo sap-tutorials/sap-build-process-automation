@@ -53,7 +53,7 @@ You will create a new project in **SAP Build Process Automation** application.
 
     <!-- border -->![Task Automation](04.png)
 
-4. In the **Create Task Automation** window, please give the project the name: **Create Alarms** and the description: **Automate alarms creation in the desktop clock** and choose **Create**.
+4. In the **Create a Task Automation project** window, please give the project the name: **Create Alarms** and the description: **Automate alarms creation in the desktop clock** and choose **Create**.
 
     <!-- border -->![Create Task Automation](05.png)
 
