@@ -46,7 +46,7 @@ You will create a new project in SAP Build Process Automation application.
 
     <!-- border -->![Task Automation](03.png)
 
-4. In the **Create Task Automation** window, please give the project the name: **Upload Purchase Order** and choose **Create**.
+4. In the **Create a Task Automation project** window, please give the project the name: **Upload Purchase Order** and choose **Create**.
 
     <!-- border -->![Create Task Automation](02a.png)
 
