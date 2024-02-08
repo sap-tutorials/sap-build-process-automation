@@ -45,7 +45,7 @@ Make sure your screen display settings (Scale and layout) are set to 100%.
 
 ### Create your project 
 
-1. Navigate to **SAP Build** application and create a project by choosing **Create**.
+1. Navigate to **SAP Build** lobby and create a project by choosing **Create**.
 
     <!-- border -->![Create a project](01.png)
 
