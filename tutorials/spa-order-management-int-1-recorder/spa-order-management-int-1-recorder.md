@@ -29,7 +29,7 @@ In this tutorial, you will record SAPUI5 application screens using SAP Build Pro
 
 Navigate to SAP Build Process Automation tenant to create a new project for this specific automation.
 
-1.  In the SAP Build Process Automation Lobby, select **Create**.
+1.  In the **SAP Build** Lobby, select **Create**.
 
     <!-- border -->![007_CreateProject](images/1.png)
 
