@@ -51,7 +51,7 @@ You will create a new project in **SAP Build Process Automation** application.
 
     <!-- border -->![Task Automation](03.png)
 
-4. In the **Create Task Automation** window, please give the project the name: **Create Computations** and the description: **Automate computation creation in the desktop calculator** and choose **Create**.
+4. In the **Create a Task Automation project** window, please give the project the name: **Create Computations** and the description: **Automate computation creation in the desktop calculator** and choose **Create**.
 
     <!-- border -->![Create Task Automation](04.png)
 
