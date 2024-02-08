@@ -41,7 +41,7 @@ After completing the prerequisites, you will create a project.
 
     <!-- border -->![Create](create3.png)
 
-4. In the **Create a Business Process** dialog box, do the following:
+4. In the **Create a Business Process project** dialog box, do the following:
     - Enter a **Project Name** such as Tutorials Learning Path.
     - Choose **Create**.
 
