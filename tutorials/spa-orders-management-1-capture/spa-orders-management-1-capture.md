@@ -49,7 +49,7 @@ Open the application you will automate by choosing the link [Browse Orders](http
 
     <!-- border -->![Projects](4.png)
 
-5. Enter the **Project Name** and a **Short Description** as given below. Select **Create**.
+5. Enter the **Project Name** and a **Description** as given below. Select **Create**.
 
     <!-- border -->![New Project popup](5.png)
 
