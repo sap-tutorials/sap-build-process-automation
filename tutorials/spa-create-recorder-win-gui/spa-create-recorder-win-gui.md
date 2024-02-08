@@ -57,7 +57,7 @@ Make sure your screen display settings (Scale and layout) are set to 100%.
 
     <!-- border -->![Task Automation](03.png)
 
-4. In the **Create Task Automation** window, please give the project the name: **Create Sales Order** and the description: **Automate sales order creation in SAP GUI for Windows** and choose **Create**.
+4. In the **Create a Task Automation project** window, please give the project the name: **Create Sales Order** and the description: **Automate sales order creation in SAP GUI for Windows** and choose **Create**.
 
     <!-- border -->![Create Task Automation](04.png)
 
