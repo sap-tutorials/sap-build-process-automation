@@ -42,7 +42,7 @@ The Outlook SDK in SAP Build Process Automation, is a collection of activities a
 ### Create an automation project
 
 
-1.  To create an automation project from SAP Build Process Automation Lobby, choose **Create**.
+1.  To create an automation project from **SAP Build** lobby, choose **Create**.
 
     <!-- border -->![Create an automation Project](01-CreateNewProject.png)
 
@@ -52,25 +52,25 @@ The Outlook SDK in SAP Build Process Automation, is a collection of activities a
 
 3. You can get started with a **Business Process** and include automation within that.
 
-    For this tutorial, please select **Task Automation**  option.
+    For this tutorial, please select **Task Automation** option.
 
     <!-- border -->![Task Automation](01-TaskAutomation.png)
 
-2. Project used in this tutorial is called as **Outlook Sample**.
+4. In the **Create a Task Automation project** window, name the project: **Outlook Sample**.
 
-3. Fill in the description as follows: **A demo to create outlook SDK integration using SAP Build Process Automation**.
+5. Fill in the description as follows: **A demo to create outlook SDK integration using SAP Build Process Automation**.
 
     > Feel free to name your project and give a description as per your convenience.
 
     <!-- border -->![Name your project appropriately](02-CreateAutomationProject.png)
 
-3.  Subsequently it will ask you to select your desktop agent. You can pick your active, preferably latest desktop agent version.
+6.  Subsequently it will ask you to select your desktop agent. You can pick your active, preferably latest desktop agent version.
 
     > By the time you follow these scripts, newer Desktop agent versions may have been introduced. Install the latest version of desktop components and select the latest version of agent in this step.
 
     <!-- border -->![Link to your active desktop agent version](03-SelectAgentVersion.png)
 
-4.  A dialog box is displayed to create a new automation. You can give a name to your automation, for example `searchInOutlook`. You can follow your own naming convention and name for your automation.
+7.  A dialog box is displayed to create a new automation. You can give a name to your automation, for example `searchInOutlook`. You can follow your own naming convention and name for your automation.
 
     <!-- border -->![Add an automation to your project](04-CreateNewAutomation.png)
 
@@ -80,15 +80,15 @@ The Outlook SDK in SAP Build Process Automation, is a collection of activities a
 
     A new tab will open and display an empty automation for you to get started.
 
-5.  It adds mandatory core dependencies as part of automation addition to your project.
+8.  It adds mandatory core dependencies as part of automation addition to your project.
 
     <!-- border -->![Core SDK and Excel SDK are standard core dependencies added](06-CoreDependencies.png)
 
-6.  Once an empty project is created, you need to include Outlook SDK dependency to this project. Locate the settings wheel icon in your project.
+9.  Once an empty project is created, you need to include Outlook SDK dependency to this project. Locate the settings wheel icon in your project.
 
     <!-- border -->![Locate the settings Icon in your projects](07-SettingsIcon.png)
 
-7.  From the dependency section, locate Outlook SDK and include it as a dependency to your project. At the time of this tutorial creation, Outlook SDK `Version 1.32.41` was used.
+10. From the dependency section, locate Outlook SDK and include it as a dependency to your project. At the time of this tutorial creation, Outlook SDK `Version 1.32.41` was used.
 
     > Always update Outlook SDK to the latest version.
 
