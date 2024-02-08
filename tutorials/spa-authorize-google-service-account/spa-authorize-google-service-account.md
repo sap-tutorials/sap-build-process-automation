@@ -51,7 +51,7 @@ Before you can authorize Google applications, you will need to create an automat
 
     <!-- border -->![Task Automation](02a.png)
 
-4. In the **Create Task Automation project** window, enter the project name: **Google Workspace**  and as a description: **A demo to automate Google Applications using Google SDK**.
+4. In the **Create a Task Automation project** window, enter the project name: **Google Workspace**  and as a description: **A demo to automate Google Applications using Google SDK**.
 
 5. Choose **Create**.
 
