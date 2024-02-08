@@ -25,7 +25,7 @@ primary_tag: software-product>sap-build-process-automation
 
 The first step consists in creating a project.
 
-1. In the **Lobby** of **Build**, choose **Create**.
+1. In the **Lobby** of **SAP Build**, choose **Create**.
 
     <!-- border -->![Create Business Process](01-create-business-process.png)
 
@@ -37,7 +37,7 @@ The first step consists in creating a project.
 
     <!-- border -->![Task Automation](01b-task-automation.png)
 
-4. In the **Create Task Automation** window, name the project **Get Order Details** and choose **Create**.
+4. In the **Create a Task Automation project** window, name the project **Get Order Details** and choose **Create**.
 
     <!-- border -->![Create Task Automation](02-create-task-automation.png)
 
