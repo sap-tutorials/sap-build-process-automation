@@ -24,7 +24,7 @@ Once the business process is successfully executed, a sales order will be create
 ### Get sales order number
 
 1. Once the action is completed successfully, copy the sales order from **Process and Workflow Instances**.
-    - Go to **Monitor** section and click **Process and Workflow Instances**.
+    - Go to **Monitoring** section and click **Process and Workflow Instances** under **Monitor**.
 
     <!-- border -->![Access System](AccessSystem_02c.png)
 
