@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ---
 
-# Acquire a Template Project from the Store
+# Acquire Orders Management Using UI5 Application Project From the Store
 <!-- description --> Acquire Orders Management package from the SAP Build store and reuse the package in SAP Build Process Automation.
 
 ## Prerequisites
