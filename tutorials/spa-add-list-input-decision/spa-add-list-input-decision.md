@@ -561,7 +561,7 @@ After completing the prerequisites, you will create a new process.
 
     <!-- border -->![decision](81.png)
 
-Once the form is submitted successfully, the BOT opens the **Sales order Excel** file which is stored in your system, reads the data, and passes the data to the Decision. The Business rules are executed and the list of orders with/without errors are displayed in the Tables in the Form. You can notice the steps of execution in the **Monitoring** section.
+    Once the form is submitted successfully, the BOT opens the **Sales order Excel** file which is stored in your system, reads the data, and passes the data to the Decision. The Business rules are executed and the list of orders with/without errors are displayed in the Tables in the Form. You can notice the steps of execution in the **Monitoring** section.
 
 3. Navigate back to **SAP Build** Lobby and select **Monitoring** tab. Then choose **Process and Workflow Instances** under **Monitor**.
 
