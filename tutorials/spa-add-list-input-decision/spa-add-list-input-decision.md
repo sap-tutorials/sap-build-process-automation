@@ -15,7 +15,7 @@ primary_tag: software-product>sap-build-process-automation
 ## Prerequisites
   - Either complete the mission [Create Tables in the Form](https://developers.sap.com/tutorials/spa-forms-table.html).
   - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings).
-  - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-add-list-input-decision/Orders.xlsx) in your local machine. 
+  - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-add-list-input-decision/Orders.xlsx) in your local machine. 
 
 ## You will learn
   - How to use a List as an input/output to your Decision.
