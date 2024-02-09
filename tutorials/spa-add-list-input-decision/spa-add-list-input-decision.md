@@ -15,7 +15,7 @@ primary_tag: software-product>sap-build-process-automation
 ## Prerequisites
   - Either complete the mission [Create Tables in the Form](https://developers.sap.com/tutorials/spa-forms-table.html).
   - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings).
-  - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-add-list-input-in-decision/Orders%20.xlsx) in your local machine. 
+  - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-add-list-input-decision/Orders.xlsx) in your local machine. 
 
 ## You will learn
   - How to use a List as an input/output to your Decision.
@@ -561,20 +561,21 @@ After completing the prerequisites, you will create a new process.
 
     <!-- border -->![decision](81.png)
 
-3. Once the form is submitted successfully, the BOT opens the **Sales order Excel** file which is stored in your system reads the data, and passes the data to the Decision. The Business rules are executed and the list of orders with/without errors are displayed in the Tables in the Form. 
-    You can notice the steps of execution in the **Monitor** section.
+Once the form is submitted successfully, the BOT opens the **Sales order Excel** file which is stored in your system, reads the data, and passes the data to the Decision. The Business rules are executed and the list of orders with/without errors are displayed in the Tables in the Form. You can notice the steps of execution in the **Monitoring** section.
+
+3. Navigate back to **SAP Build** Lobby and select **Monitoring** tab. Then choose **Process and Workflow Instances** under **Monitor**.
 
     <!-- border -->![decision](monitor.png)
 
-4. Now, the process indicates that the Task is available in **My Inbox**.
+3. Now, the process indicates that the Task is available in **My Inbox**.
 
     <!-- border -->![decision](monitor2.png)
 
-5. In the **SAP Build** lobby, choose **My Inbox** icon.
+4. In the **SAP Build** lobby, choose **My Inbox** icon.
 
     <!-- border -->![decision](82.png)
 
-6. You will get a notification with the error details in a table.
+5. You will get a notification with the error details in a table.
 
     <!-- border -->![decision](83.png)
 
