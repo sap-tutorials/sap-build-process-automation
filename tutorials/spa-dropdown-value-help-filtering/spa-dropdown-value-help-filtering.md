@@ -12,7 +12,6 @@ parser: v2
 # Connect Action Project to Dropdown in Form
 <!-- description -->Use and  add a data source to the Form dropdown field in order to display information from external systems.
 
-
 ## Prerequisites
 - Complete the tutorial [Create Action Project in Lobby](spa-business-partner-action-create)
 
@@ -22,24 +21,27 @@ parser: v2
 ## Intro
 In this tutorial, you will create a project using a template from the store and edit the trigger form to create a dropdown and populate it with the values from the Actions Project.
 
-
 ### Import sample process as template
 
-1.  In **SAP Build**, select the **Store** tab.
+1.  From the **SAP Build** lobby, select the **Store** tab.
 
-    <!-- border -->![Action Project](001.png)
+    <!-- border -->![Import Project](ImportProject_31.png)
 
-1.  Search for **Sales Order** in the search bar.
+2. On the **Store** page, search for **Sales Order Management (MI01)** and once it loads, click **Create from Template**.
 
-    <!-- border -->![Action Project](002.png)
+    <!-- border -->![Import Project](ImportProject_32.png)
 
-1.  In the search results, select the **Create From Template** option for the **Sales Order Approvals - Sample** project.
+3. In the **Project Name** field, enter **Sales Order Approvals Project**.
+   
+    > You can keep the default description or enter the description of your choice
 
-    <!-- border -->![Action Project](003.png)
+    - click **Create**.
 
-1.  Enter the name of your choice in the Project Name text box and select **Create**.
+    <!-- border -->![Import Project](ImportProject_33.png)
 
-    <!-- border -->![Action Project](004.png)
+4. Open **Lobby** and you will see your project created.
+
+    <!-- border -->![Import Project](ImportProject_34.png)
 
 ### Create a dropdown in order processing form
 
