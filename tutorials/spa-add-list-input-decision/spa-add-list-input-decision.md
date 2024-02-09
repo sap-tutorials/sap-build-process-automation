@@ -13,7 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Use a list as an input to your Decision artifact, process the data and extract the details to a table in a Form.
 
 ## Prerequisites
-  - Either complete the mission [Create Tables in the Form](https://developers.sap.com/tutorials/spa-forms-table.html).
+  - Either complete the mission [Create Tables in the Form](spa-forms-table).
   - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings).
   - Download the [Orders.xlsx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-add-list-input-decision/Orders.xlsx) in your local machine. 
 
