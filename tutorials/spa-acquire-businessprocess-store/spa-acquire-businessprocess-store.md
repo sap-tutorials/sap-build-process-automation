@@ -29,8 +29,8 @@ The store is available for everyone and can be accessed directly from the home p
 Packages are categorized by catalog, which let you choose between Automation SDK, Business Content and Learning Content. It also offers a variety of filters, a search feature, and content descriptions to help users find what they are looking for quickly.
 
 1. Navigate to the store in your SAP Build Process Automation tenant.
-   
-    &nbsp;
+    
+    <!-- border -->![Navigate Store](01.png)
 
     > **Learning Content** offers learning packages to get started with the Application Development tool. These packages allow you to learn best practices by reusing the most common flows to design your first projects.
 
@@ -38,30 +38,30 @@ Packages are categorized by catalog, which let you choose between Automation SDK
 
     > **Automation SDK** provides all the Software Developments Kits that can be acquired from the store.
 
-    <!-- border -->![Navigate Store](1.Store.png)
+2. You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Business Process), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
 
-    You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Business Process), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
+    <!-- border -->![Store View](1.Store.png)
 
 
-### Import sales order approvals business process
+### Import sales order management business process
 
-You will import the business process titled **Sales Order Approvals**.
+You will import the business process titled **Sales Order Management (MI03)**.
 
-1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Approvals**  in the search bar and hit **Enter**.
+1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Management (MI03)**  in the search bar and hit **Enter**.
 
-    > This sample content is designed to help users get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
+    > This sample content improves process efficiency by automating repetitive processes, integrating decision logic with business rules and configuring Process Visibility to get insight on the performance of your processes.
 
     <!-- border -->![Import Business Process](2.ImportBusinessProcess.png)
 
-2. To add the entire package, select **Create from Template**.
+1. To add the entire package, select **Create from Template**.
 
     <!-- border -->![Create Project](3.Createfromtemplate.png)
    
-3. Name the project **Sales Order Approvals Dev Tutorial** and choose **Create**.
+2. Name the project **Sales Order Management Dev Tutorial** and choose **Create**.
 
     <!-- border -->![Create Project](3a.png)
 
-4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** by clicking on the SAP logo on the top left corner.
+3. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** by clicking on the SAP logo on the top left corner.
 
     <!-- border -->![Lobby](4.Lobby.png)
 
