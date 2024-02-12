@@ -38,6 +38,8 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
      If you are releasing for the first time, then the version will start with **1.0.0**. Next time you release, the version numbers will be automatically updated.
 
+    <!-- border -->![Release](1.png)
+
 2. Click **Release**.
 
     <!-- border -->![Release](2.png)
@@ -46,25 +48,21 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 ### Deploy released project
 
 
-1. Once the project is released successfully, you will find a **Deploy** option on the top-right corner of the screen.
+1. Once the project is released successfully:
+   
+    - Click on **Deploy** option on the top-right corner of the screen
+    - Choose the **Public** environment
+    - Deploy the project
 
     <!-- border -->![Deploy](3.png)
 
-    On the Overview tab, you will see a list of your artifacts. Click **Next**.
-
-    <!-- border -->![Deploy](3.1.png)
-
-    The Runtime Variables tab is empty as you haven't defined any variables. Click **Next**. 
-
-    <!-- border -->![Deploy](3.2.png)
-
     Since you have created an **API trigger** in your process, you can see **Sales Order Trigger** in the list of triggers.
-
-    <!-- border -->![Deploy](3.3.png)
 
 2. Click **Deploy**.
 
-    >Deployment will take a couple of seconds/minutes depending upon how big your project is and how many different artifacts it has. Any errors during the deployment will be shown in the Design Console at the bottom of the screen.
+    <!-- border -->![Deploy](3.3.png)
+
+    > Deployment will take a couple of seconds/minutes depending upon how big your project is and how many different artifacts it has. Any errors during the deployment will be shown in the Design Console at the bottom of the screen.
 
     Once the deployment is successful, you will see a changed status. You can also see all your deployed and/or released project versions from the project status list next to the project name.
 
@@ -78,17 +76,25 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 ### Run business process
 
-Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the **Overview** section by clicking the **Triggers** tab.
+Once you have successfully deployed the business process with an API trigger, you can view the API trigger. 
 
-1. Click **View** to see context of the workflow API.
+In the **Lobby**, under **Control Tower**, choose **Environment**.
 
-    <!-- border -->![Triggers](4.png)
+<!-- border -->![Triggers](4a.png)
+
+1. Open the **Public** environment.
+   
+    <!-- border -->![Triggers](4b.png)
+
+2. Under the **Unattended Triggers**, open the trigger View
+
+    <!-- border -->![Triggers](4c.png)
 
 2. You can view the API URL and the payload that must be sent to start the process. Copy the payload, which will be used in later steps. If you go into the deployed view of the process, you can see the API details of how you can call the API Trigger:
 
     1. The API triggers can be called via the public REST API and are available in SAP Business Accelerator Hub.
     2. The URL shown in the screenshot below is the complete API URL where:
-        - `https://spa-api-gateway-bpi-eu-prod.cfapps.sap.hana.ondemand.com` is the host URL and will change depending upon the system you have deployed the process.
+        - `https://spa-api-gateway-bpi-eu-prod.cfapps.eu10.hana.ondemand.com` is the host URL and will change depending upon the system you have deployed the process.
         - `/workflow/rest/v1/workflow-instances` is the relative URL to start the workflow and remains static.
     3. Method: POST
     4. The payload in the screenshot is the body of the POST API call. 
@@ -113,7 +119,7 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     `definitionId` of the process can be seen in Monitoring section or in the API trigger section as shown in the above step.
 
-    - From the Build lobby, navigate to Monitoring tab and within the tab, under **Manage** section, access **Processes and Workflows**.
+    - From the Build lobby, navigate to **Monitoring** tab and within the tab, under **Manage** section, access **Processes and Workflows**.
     - Search for the project `Sales Order Management_<your unique identifier>` that you have created in previous tutorial.
     - Click on **Start New Instance**.
 
