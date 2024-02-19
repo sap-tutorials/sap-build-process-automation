@@ -179,7 +179,11 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
     <!-- border -->![Tenant Activate](agent3-039.png)
 
-5.  The Agent should be in **Idle** state, waiting to start a project. To check, go to **Control Tower**, and select **Agents**.
+5. Once you completed the previous actions, log in to your tenant with your user name or e-mail and password.
+
+    <!-- border -->![Activate Tenant](agent3-014.png)
+
+6.  The Agent should be in **Idle** state, waiting to start a project. To check, go to **Control Tower**, and select **Agents**.
 
     <!-- border -->![Agent](agent3-013.png)
 
