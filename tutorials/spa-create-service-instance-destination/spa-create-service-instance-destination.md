@@ -13,8 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create a destination to trigger a business process by creating a service instance and service key of SAP Build Process Automation.
 
 ## Prerequisites
-- Subscribe to [SAP Build Process Automation using booster in SAP BTP Free Tier](spa-subscribe-booster) **OR**
-- Subscribe to [SAP Build Process Automation using SAP BTP Free Trial](spa-subscribe-free-trial)
+- Subscribe to [SAP Build Process Automation](spa-subscribe-booster)
 - Proper roles to create service instance, service key and destinations in SAP BTP Cockpit
 
 ## You will learn
@@ -28,19 +27,19 @@ In this tutorial, you will create a service instance and service key for SAP Bui
 
 ### Create an instance for SAP Build Process Automation
 
-Once you have successfully subscribed to SAP Build Process Automation in SAP BTP Cockpit, you can find the Subscription in  your subaccount view, under **Instances and Subscriptions**.
+Once you have successfully subscribed to SAP Build Process Automation in SAP BTP Cockpit, you can find the subscription in your sub account view, under **Instances and Subscriptions**.
 
 <!-- border --> ![SBPA Service](1.png)
 
-> **IMPORTANT:** If you are using a SAP BTP Free Trial account, the Instance **SPA-instance** and the Key **SBPA key** get automatically created when you subscribe to SAP Build Process Automation in SAP BTP Cockpit. You will find the Instance under **Instances and Subscriptions > Instances**. Please skip to step 2.3 to retrieve the credentials of your key. 
+> **IMPORTANT:** If you are using a SAP BTP Free Tier account, the Instance `sap_process_automation` and the Key get automatically created when you subscribe to SAP Build Process Automation in SAP BTP Cockpit. You will find the Instance under **Instances and Subscriptions > Instances**. Please skip to step 2.3 to retrieve the credentials of your key. 
 
 1. Let's create an **Instance** for SAP Build Process Automation. Choose **Create**.
 
-2. Select the Service as **SAP Build Process Automation** and plan as **standard instance**.
+2. Select the Service as **SAP Build Process Automation** and Plan as **standard instance**. 
 
-    <!-- border --> ![Create](2.png)
+    <!-- border --> ![Create](2a.png)
 
-3. Enter the values for other fields as shown below and give an instance name as **spa-adoption-us**. Choose **Create**.
+3. Enter the values for other fields as shown below and give an instance name as **spa-instance**. Choose **Create**.
 
     | Field|Value
     | --- | :---
@@ -48,13 +47,14 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Plan | standard - Instance
     | Runtime Environment | Cloud Foundry
     | Space | dev
-    | Instance Name | any name   (spa-adoption-us)
+    | Instance Name | any name   (spa-instance)
 
-    <!-- border --> ![Create](3.png)  
-
+    <!-- border --> ![Create](3.png)
+    
 4. Once the instance is created successfully, you can find it in **Instances** section.
 
     <!-- border --> ![Create](6.png)  
+
 
 ### Create a service key for the instance of SAP Build Process Automation  
 
@@ -105,7 +105,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Token Service User| Blank
     | Token Service Password| Blank
 
-    > Additionally, enable the following Properties when you would like to integrate with SAP Build Apps.
+    > Additionally, enable the following properties when you would like to integrate with SAP Build Apps.
 
     - `AppgyverEnabled`
     - `HTML5.DynamicDestination`
