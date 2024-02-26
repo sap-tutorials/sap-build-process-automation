@@ -13,7 +13,7 @@ primary_tag: software-product>sap-build-process-automation
  
 
 ## You will learn
-  - How to activate SAP Build Process Automation 
+  - How to activate SAP Build Process Automation in SAP BTP Free Trial or SAP BTP Free Tier account
 
 ## Intro
 SAP Build Process Automation in the SAP Business Technology Platform combines the capabilities of SAP Workflow Management and SAP Intelligent RPA in an easy-to-use, no-code AI-powered experience. It increases organizations' capacity to drive process automation by empowering business experts to become citizen developers. Leveraging the power of no-code, citizen developers can build, adapt, improve, and innovate business processes with minimum assistance from scarce IT resources.
@@ -26,66 +26,77 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 [OPTION BEGIN [Free Trial]]
 
-> Complete [Get a Free Account on SAP BTP Trial tutorial](hcp-create-trial-account)
-  and make sure to create an account in US East (VA) - AWS trial region
+> Complete [Get a Free Account on SAP BTP Trial](hcp-create-trial-account) tutorial and make sure to create an account in US East (VA) - AWS trial region
 
-1. Select **Entitlements**. Search for **SAP Build Process Automation**. 
-   If it is available, navigate to step-3
-   <!-- border -->![Trial](049.png)
-
+1. After successful creation of SAP BTP account using Free Trial, click on your trial sub account. 
    
+    <!-- border -->![Trial](049a.png)
 
-2. Choose **Configure Entitlements**.
-    - Select **Add Service Plans**.
-    - Look for **SAP Build Process Automation** Entitlement.
-    - Select **free** plan.
-    - Click on **Add Service Plans**.
+2. Select **Entitlements**. Search for **SAP Build Process Automation**. 
+   
+    > If it is available, please navigate to sub-step 7.
 
-    <!-- border -->![Trial](050.png)
-    
-    <!-- border -->![Trial](051.png)
+    <!-- border -->![Trial](049b.png)
 
-    <!-- border -->![Trial](052.png)
+3. Choose **Edit**.
 
-3. After successful creation of SAP BTP account using Free Trial, select **Services**> **Service Marketplace**. In the search field, type **SAP Build Process Automation** and select the tile.
+    <!-- border -->![Trial](50a.png)
+
+4. Select **Add Service Plans**.
+
+    <!-- border -->![Trial](51a.png)
+
+5. Search for **SAP Build Process Automation** service and click on **SAP Build Process Automation**.
+    - Select plans: **standard** and **free (Application)**.
+    - Click on **Add 2 Service Plans**.   
+
+    <!-- border -->![Trial](52b.png)
+
+6. SAP Build Process Automation entitlement has been added, Choose  **Save**.
+
+    <!-- border -->![Trial](053b.png)
+
+7. Select **Services** > **Service Marketplace**. In the search field, type **SAP Build Process Automation** and select the tile.
 
     <!-- border -->![Trial](001.png)
 
-4. Choose **Create** button.
+8. Choose **Create** button.
 
     <!-- border -->![Trial](002.png)
 
-5.  In the **New Instance or Subscription** window, choose the **free subscription** plan and select **Create** button.
+9.  In the **New Instance or Subscription** window, as **Plan**, choose the **free subscription** and select **Create** button.
 
     <!-- border -->![Trial](003freeplan.png)
 
-6. In the **Creation in Progress** pop-up, select **View Subscription**.
+10. In the **Creation in Progress** pop-up, select **View Subscription**.
 
     <!-- border -->![Trial](003creation.png)
 
-7. Check if it is processed and created successfully. The status should be set to **Subscribed**.
+11. Check if it is processed and created successfully. The status should be set to **Subscribed**.
 
-    <!-- border -->![Trial](004freeplan.png)
+    <!-- border -->![Trial](004c.png)
 
-8. In order to have access, you will have to assign the role collections to your user.Go to the **Users**, under **Security**, and select your user.
+12.  In order to have access, you will have to assign the role collections to your user. 
+   
+13. Go to **Users** tab, under **Security**, and select your user.
 
-9. In **Role Collections** section, choose **Assign Role Collection**.
+14. In **Role Collections** section, choose **Assign Role Collection**.
 
     <!-- border -->![Trial](005.png)
 
-10. In the **Assign Role Collection** window, in the search bar, type **process** to find Process Automation Roles.
+15. In the **Assign Role Collection** window, in the search bar, type **process** to find Process Automation Roles.
 
-11. Select 3 roles: `ProcessAutomationAdmin`, `ProcessAutomationDeveloper` and `ProcessAutomationParticipant`.
+16. Select 3 roles: `ProcessAutomationAdmin`, `ProcessAutomationDeveloper` and `ProcessAutomationParticipant`.
 
-12. Choose **Assign Role Collection** button.
+17. Choose **Assign Role Collection** button.
 
      <!-- border -->![Trial](006.png)   
 
-13. After assigning roles, your **Role Collections** section should look like this:
+18. After assigning roles, your **Role Collections** section should look like this:
 
     <!-- border -->![Trial](007.png)
 
-14. Navigate to **Instances and Subscriptions** and choose the **Go to Application** icon.
+19. Navigate to **Instances and Subscriptions** and choose the **Go to Application** icon.
 
     <!-- border -->![Trial](008.png)
 
@@ -100,7 +111,7 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 > Complete [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account). 
   
 
-1. After successful creation of SAP BTP account using Free Tier, navigate to Boosters and search for **free** to find the **SAP Build Process Automation** booster. Once the tile is shown, select the tile.
+1. After successful creation of SAP BTP account using Free Tier, navigate to Boosters and search for **SAP Build Process Automation** to find the SAP Build Process Automation booster. Once the tile is shown, select the tile.
 
     > Booster is a guided set of automatic instructions to achieve a specific goal. SAP Build Process Automation automates the onboarding of SAP Build Process Automation service in your account without the need of any manual configurations. It will configure entitlement, enable SAP Build Process Automation subscription, and will assign all the relevant role collections to the given users for administrator or developer personas.
 
@@ -134,7 +145,7 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 8. The booster starts the deployment which can take up to five minutes to get the service ready.
 
-    SAP Build Process Automation is available either in SAP BTP Free Tier Account as
+
     <!-- border -->![8.PNG](8.png)
 
     >A pop-up will inform you that the Booster was successfully executed.
@@ -159,10 +170,3 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 [OPTION END]
 
-
-
-
-
-
-
----
