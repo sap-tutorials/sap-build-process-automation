@@ -54,7 +54,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
     <!-- border -->![Default Value Field](11a.png)
 
-8. Navigate back to your deployed project in the **SAP Build Process Automation**.
+8. Navigate back to your deployed project in **SAP Build Process Automation**.
 
 9. Select the **Order Processing Form**.
 
@@ -97,11 +97,9 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
     You will now assign the **Sales Order Management** trigger to your group.
 
-4. Select the search bar.
+4. Click on the **On/Off Button** to add the **Sales Order Management** item.
 
-5. Click on the **On/Off Button** to add the **Sales Order Management** item.
-
-6. Choose **Save**.
+5. Choose **Save**.
 
     <!-- border -->![Save](05.png)
 
