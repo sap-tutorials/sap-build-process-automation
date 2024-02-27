@@ -109,25 +109,52 @@ primary_tag: software-product>sap-build-process-automation
     <!-- border -->![Process](038.png)
 
 
-### Inbox checking and process monitoring
+### Check task in Inbox
 
+[OPTION BEGIN [SAP Build Process Automation]]       
 1. Open your **Inbox**
 
-    <!-- border -->![Process](039a.png)
+    <!-- border -->![Process](14.png)
 
-2. Review your approval task and take a decision
+2. Review your approval task and take a decision.
 
-    <!-- border -->![Process](040.png)
+    <!-- border -->![Process](15.png)
 
 3. Complete your process:
 
-    - refresh your tasks
-    - check that the decision is reflected with the right notification task
+    - Refresh your tasks
+    - Check that the decision is reflected with the right notification task
 
-    <!-- border -->![Process](041.png)
+    <!-- border -->![Process](16b.png)
+[OPTION END]
 
-4. Monitor the business process
+[OPTION BEGIN [SAP Build Work Zone(Standard Edition)]]        
+>Pre-requisite: Complete [Configure SAP Build Work Zone, Standard Edition ](spa-configure-workzone)tutorial
 
-    <!-- border -->![Process](042.png)
+1. Once you have subscribed to SAP Build Work Zone, Standard Edition navigate to **Site Directory** and go to the site.
+
+    <!-- border -->![Process](43.png)
+
+2. Choose the **Inbox** tile.
+
+    <!-- border -->![Process](44.png) 
+
+3. Review your approval task and take a decision.
+
+    <!-- border -->![Process](45b.png)
+
+4. Complete your process:
+    - Refresh your tasks
+    - Check that the decision is reflected with the right notification task
+    <!-- border -->![Process](46b.png)
+
+[OPTION END]
+
+### Process monitoring
+
+1. Monitor the business process
+
+    <!-- border -->![Process](17.png)
 
 You have successfully completed the tutorial, integrating an SAP UI5 application in the order approval business process.
+
