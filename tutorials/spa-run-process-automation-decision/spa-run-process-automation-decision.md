@@ -169,7 +169,7 @@ SAP Build Process Automation provides different applications for monitoring and 
 
     <!-- border -->![Visibility Scenarios](016.png)
 
-2. Click on the icon on the top right corner to navigate to the dashboard.
+2. Select the **Sales Order Visibility Scenario** and click on the icon on the top right corner to navigate to the dashboard.
 
     <!-- border -->![Dashboard link](017.png)
 
