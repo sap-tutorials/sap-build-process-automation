@@ -126,7 +126,7 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 
 [OPTION BEGIN[Import Project]]
 
-1. Download project here (attach link)
+1. Download project [ordersmanagement.tar](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-create-sapui5-task-orderapproval/ordersmanagement.tar)
 
 2. Click on the Menu button and navigate to **File** > **Import Project**.
 
