@@ -50,9 +50,9 @@ Let's start our journey by creating a dedicated Dev Space for our project.
 
     <!-- border -->![Process](000c.png)
 
-### Create a new project
+### Create a project
 
-
+[OPTION BEGIN[New Project]]
 1. Choose the project template
 
     - open the **File Explorer**
@@ -121,6 +121,25 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     > The **application namespace** is needed to customize the code.
 
     <!-- border -->![Process](009.png)
+
+[OPTION END]
+
+[OPTION BEGIN[Import Project]]
+
+1. Download project here (attach link)
+
+2. Click on the Menu button and navigate to **File** > **Import Project**.
+
+    <!-- border -->![Process](023.png)
+
+3. Choose the downloaded project **ordersmanagement.tar**.
+   After importing successfully, it can be viewed in the file explorer in the workspace.
+
+    <!-- border -->![Process](024.png)
+
+4. Please navigate to **Step 4: Build and deploy your application**.
+   
+[OPTION END]
 
 ### Code customization
 
@@ -491,6 +510,8 @@ Let's start our journey by creating a dedicated Dev Space for our project.
     <!-- border -->![Process](015.png)
 
 4. Build the application
+
+    > **IMPORTANT: Skip this step if you have imported the project. Your project will run into an error as the application is already included in the `mtar` file.**
 
     Use the `npm run build` command to build your application.
 
