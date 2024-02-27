@@ -165,7 +165,7 @@ SAP Build Process Automation provides different applications for monitoring and 
 
 ### Gain visibility into the business process
 
-1. From **Monitoring** tab, select **Visibility Scenarios** tile.
+1. From the **Monitoring** tab, select **Visibility Scenarios** tile.
 
     <!-- border -->![Visibility Scenarios](016.png)
 
