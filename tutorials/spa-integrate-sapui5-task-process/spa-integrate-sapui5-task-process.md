@@ -13,7 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - Complete [Create an SAP UI5 Task in for a Business Process](spa-create-sapui5-task-orderapproval) tutorial
- - Complete [Subscribe to SAP Build Process Automation Using SAP BTP Free Trial](spa-subscribe-free-trial) tutorial
+ - Complete [Subscribe to SAP Build Process Automation](spa-subscribe-booster) tutorial
  - Complete [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation) mission
 
 ## You will learn
