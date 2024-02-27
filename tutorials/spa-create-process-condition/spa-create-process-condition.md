@@ -169,11 +169,11 @@ Once the process with forms is designed, define which process flow should run ba
 
 8. Choose **Controls and Events**.
 
-    <!-- border -->![Process Condition](013b.png)
+    <!-- border -->![Process Condition](13b.png)
 
 9. Choose **End**.
 
-    <!-- border -->![Process Condition](013c.png)
+    <!-- border -->![Process Condition](13c.png)
 
 10.  **Save** your work.
 
