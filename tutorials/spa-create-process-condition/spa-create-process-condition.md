@@ -35,9 +35,9 @@ Once the process with forms is designed, define which process flow should run ba
 
     <!-- border -->![Process Condition](001a.png)
 
-2. Choose **Flow Logic**.
+2. Choose **Controls and Events**.
 
-    <!-- border -->![Process Condition](001b.png)
+    <!-- border -->![Process Condition](001d.png)
    
 3. Choose **Condition**.
 
@@ -167,7 +167,7 @@ Once the process with forms is designed, define which process flow should run ba
     
     <!-- border -->![Process Condition](013a.png)
 
-8. Choose **Flow Logic**.
+8. Choose **Controls and Events**.
 
     <!-- border -->![Process Condition](013b.png)
 
