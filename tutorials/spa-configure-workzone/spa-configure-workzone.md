@@ -65,25 +65,23 @@ Hence you need to manually add SAP Build Work Zone, standard edition entitlement
 
     <!-- border -->![Add service plans](080c.png)
 
-3. Search for SAP Build Work Zone, standard edition.
+3. Search and select **SAP Build Work Zone, standard edition**.
 
-4. Select **SAP Build Work Zone, standard edition**.
+4. Choose **free (Application)**.
 
-5. Choose **free (Application)**.
-
-6. Click on **Add 1 Service Plan**.
+5. Click on **Add 1 Service Plan**.
 
     <!-- border -->![Select SAP Build Work Zone](080d.png)
 
-7. Choose **Save**.
+6. Choose **Save**.
 
     <!-- border -->![Select SAP Build Work Zone](080e.png)
 
-8. Select **Instances and Subscriptions** under Services. Choose **Create**.
+7. Select **Instances and Subscriptions** under Services. Choose **Create**.
 
     <!-- border -->![Create subscription](080f.png)
 
-9. For the new subscription:
+8. For the new subscription:
 
     - Under Service, select **SAP Build Work Zone, standard edition**.
     
@@ -93,7 +91,7 @@ Hence you need to manually add SAP Build Work Zone, standard edition entitlement
 
     <!-- border -->![Subscription](082.png)
 
-10. The subscription is created.
+9.  The subscription is created.
    
     <!-- border -->![Subscription](083.png) 
 
