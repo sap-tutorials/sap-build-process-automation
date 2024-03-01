@@ -48,19 +48,19 @@ You will import the business process titled **Sales Order Management (MI03)**.
 
 1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Management (MI03)**  in the search bar and hit **Enter**.
 
-    > This sample content improves process efficiency by automating repetitive processes, integrating decision logic with business rules and configuring Process Visibility to get insight on the performance of your processes.
+    > TThis learning content is designed to help users to get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
 
     <!-- border -->![Import Business Process](2.ImportBusinessProcess.png)
 
-1. To add the entire package, select **Create from Template**.
+2. To add the entire package, select **Create from Template**.
 
     <!-- border -->![Create Project](3.Createfromtemplate.png)
    
-2. Name the project **Sales Order Management Developer Tutorial** and choose **Create**.
+3. Name the project **Sales Order Management Developer Tutorial** and choose **Create**.
 
     <!-- border -->![Create Project](3a.png)
 
-3. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** by clicking on the SAP logo on the top left corner.
+4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** by clicking on the SAP logo on the top left corner.
 
     <!-- border -->![Lobby](4.Lobby.png)
 
