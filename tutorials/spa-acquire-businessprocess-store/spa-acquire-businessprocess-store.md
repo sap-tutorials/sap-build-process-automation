@@ -44,11 +44,11 @@ Packages are categorized by catalog, which let you choose between Automation SDK
 
 ### Import sales order management business process
 
-You will import the business process titled **Sales Order Management (MI03)**.
+You will import the business process titled **Sales Order Management (MI01)**.
 
-1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Management (MI03)**  in the search bar and hit **Enter**.
+1. Set the following parameters: under **Project Type**, select **Process** > **Business Process** and under **Catalog**, select **Learning Content** and type **Sales Order Management (MI01)**  in the search bar and hit **Enter**.
 
-    > TThis learning content is designed to help users to get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
+    > This learning content is designed to help users to get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
 
     <!-- border -->![Import Business Process](2.ImportBusinessProcess.png)
 
