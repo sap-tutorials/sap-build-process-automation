@@ -56,7 +56,7 @@ You will import the business process titled **Sales Order Management (MI03)**.
 
     <!-- border -->![Create Project](3.Createfromtemplate.png)
    
-2. Name the project **Sales Order Management Dev Tutorial** and choose **Create**.
+2. Name the project **Sales Order Management Developer Tutorial** and choose **Create**.
 
     <!-- border -->![Create Project](3a.png)
 
