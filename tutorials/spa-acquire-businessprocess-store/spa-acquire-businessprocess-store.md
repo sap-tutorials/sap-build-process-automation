@@ -12,8 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Import a sample business process from the SAP Build store.
 
 ## Prerequisites
-- [Trial account](spa-subscribe-free-trial) with the SAP Build Process Automation enabled **OR**
-- Account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
+- [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
   - How to explore content in the SAP Build Store

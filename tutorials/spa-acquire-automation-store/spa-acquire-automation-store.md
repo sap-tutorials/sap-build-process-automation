@@ -13,8 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Acquire Orders Management package from the SAP Build store and reuse the package in SAP Build Process Automation.
 
 ## Prerequisites
-- [Trial account](spa-subscribe-free-trial) with the SAP Build Process Automation enabled **OR**
-- A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
+- [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
   - How to explore content in the SAP Build Store.
