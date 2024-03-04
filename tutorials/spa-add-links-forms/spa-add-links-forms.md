@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Learn how to add links in the forms of SAP Build Process Automation.
 
 ## Prerequisites
-- Complete [Subscribe to SAP Build Process Automation](https://developers.sap.com/tutorials/spa-subscribe-booster.html)
+- [Subscribe to SAP Build Process Automation](https://developers.sap.com/tutorials/spa-subscribe-booster.html)
 
 ## You will learn
   - How to add interactive forms to the process.
