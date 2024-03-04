@@ -115,7 +115,7 @@ In this option you will be defining each field with field name and type of field
 
     <!-- border -->![Process](29.png)
 
-2. From the **Editable** version of the project, choose the three dots of the **Order Processing Form** and select **Remove** to delete the form.
+2. From the **Editable** version of the **Sales Order Approvals Dev Tutorial** project, choose the three dots of the **Order Processing Form** and select **Remove** to delete the form.
 
     <!-- border -->![Delete Form](30.png)
 
