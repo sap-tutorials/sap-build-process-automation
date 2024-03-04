@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Automate the process of creating a purchase order in Manage Purchase Orders application in SAP S/4 HANA Cloud.
 
 ## Prerequisites
- - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
  - Register to [SAP S/4 HANA Cloud Trial](https://www.sap.com/products/erp/s4hana/trial.html) account
  - Manage Purchase Orders application must run in the background

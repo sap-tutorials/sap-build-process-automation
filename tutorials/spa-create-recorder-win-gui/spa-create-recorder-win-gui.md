@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Automate sales order creation in SAP GUI for Windows
 
 ## Prerequisites
-  - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
+  - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
   - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
   - [Scripting enabled for SAP GUI for Windows](https://help.sap.com/viewer/8e71b41b9ea043c8bccee01a10d6ba72/Cloud/en-US/f0fe92f292c946bca1269f826cd682b3.html) on the Client and the Server
   - Only use 32-bit SAP GUI for Windows Application

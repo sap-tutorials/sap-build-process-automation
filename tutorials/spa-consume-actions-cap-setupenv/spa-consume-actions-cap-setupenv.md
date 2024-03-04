@@ -17,8 +17,7 @@ parser: v2
   - How to add the destination to SAP Build Process Automation
   
 ## Prerequisites
-- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
-- [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
+- Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
 
 ---
 ### Create Destination in SAP BTP Cockpit

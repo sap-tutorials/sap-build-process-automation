@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Automate the creation of alarms in the windows clock application with set and get activities
 
 ## Prerequisites
- - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
  - Basic understanding of how to record applications in SAP Build Process Automation
 

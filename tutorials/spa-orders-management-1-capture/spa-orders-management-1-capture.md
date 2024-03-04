@@ -12,8 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> You will capture Orders Management application using SAP Build Process Automation.
 
 ## Prerequisites
-- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
-  [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation enabled
+- Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 - You have enabled SAP Build Process Automation browser extension
 

@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create an automation to retrieve details on an excel spreadsheet
 
 ## Prerequisites
- - [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+ - [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
   - How to design an automation that will retrieve order details from an application and read them on excel.

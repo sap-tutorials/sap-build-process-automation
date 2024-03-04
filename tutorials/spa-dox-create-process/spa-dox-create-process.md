@@ -12,8 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create the project and the first form for the Invoice Approval Process
 
 ## Prerequisites
- - A [SAP BTP Free Trial account](spa-subscribe-free-trial) with the enabled SAP Build Process Automation **OR**,
- - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster.
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
 
 
 ## You will learn

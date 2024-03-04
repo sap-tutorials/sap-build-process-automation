@@ -15,8 +15,7 @@ parser: v2
 ## Prerequisites
  - A Windows PC
  - If you are using a MAC, please install a VDI
- - [Trial account](spa-subscribe-free-trial) with SAP Build Process Automation enabled **OR**
- - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
  - Configure [Azure Application](https://help.sap.com/docs/intelligent-robotic-process-automation/cloud-studio-user-guide/configure-azure-application-and-use-with-microsoft-365-sdk#loio8d47b169478a46bd91c506c51e0872b3) 
  - Download and save [Sales Order Data](https://github.com/sap-tutorials/sap-build-process-automation/blob/50c942bbd0a7612e1cb672134578e517786e7b0e/tutorials/spa-create-automation/Orders.xlsx) on your SharePoint or OneDrive.

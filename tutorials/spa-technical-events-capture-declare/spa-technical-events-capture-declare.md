@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Capture and declare an order detail application to retrieve details on an excel spreadsheet
 
 ## Prerequisites
- - [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+ - [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
     - How to capture and declare a Sales Orders application

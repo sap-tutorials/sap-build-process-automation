@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> In this tutorial, you will be developing a basic automation using Outlook SDK of SAP Build Process Automation. In the end, by using the activities in Outlook SDK, you will learn how to search outlook inbox or a specific email folder and download any attachments found in the email to a specific local folder.
 
 ## Prerequisites
-- [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+- [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 - Basic understanding of SAP Process Automation. You may review the below missions:
     - [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation)

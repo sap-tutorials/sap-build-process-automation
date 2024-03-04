@@ -14,7 +14,7 @@ primary_tag: software-product>sap-build-process-automation
 
 
 ## Prerequisites
-- Complete the tutorial: [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+- Complete the tutorial: [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 - Basic understanding of SAP Build Process Automation
 
@@ -44,10 +44,10 @@ To design your automation, you will need an Excel file filled with the sales ord
 |  PO7918     | 150935.13	   | 1/22/2022	| United Kingdom           | 1/27/2022	            | Urgent
 |  PO7375     | 313977.82	   | 1/23/2022	| United Kingdom	         | 2/20/2022              | In Time
 |  PO7311     | 755055.4	   | 1/24/2022	| United Kingdom	         | 3/30/2022              | In Time
-|  PO6858     | 429358.4     | 1/25/2022	| United Kingdom	         | 2/20/2022	            | In Time
-|  PO6368     | 43739.82	   | 1/26/2022	| United Kingdom	         | 3/25/2022	            | In Time
+|  PO6858     | 429358.4       | 1/25/2022	| United Kingdom	         | 2/20/2022	            | In Time
+|  PO6368     | 43739.82	   | 1/26/2022	| India	                     | 3/25/2022	            | In Time
 |  PO6189     | 483574.12	   | 1/27/2022	| Germany	                 | 2/5/2022	              | In Time
-|  PO3115     | 2739956	     | 1/28/2022	| Germany	                 | 3/10/2022	            | In Time
+|  PO3115     | 2739956	       | 1/28/2022	| Germany	                 | 3/10/2022	            | In Time
 |  PO2686     | 220887.56	   | 1/29/2022	| Germany	                 | 3/5/2022	              | In Time
 |  PO8282     | 436955.64	   | 1/30/2022	| United States of America | 3/30/2022	            | In Time
 
