@@ -181,7 +181,7 @@ You can deploy business process projects from each released version of the proje
 
 2. Choose the environment and select **Deploy**.
 
-  <!-- border -->![Start Deploy](environment.png)
+    <!-- border -->![Start Deploy](environment.png)
 
 3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Deploy**.
 
