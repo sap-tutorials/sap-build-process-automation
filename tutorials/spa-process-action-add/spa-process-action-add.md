@@ -179,21 +179,17 @@ You can deploy business process projects from each released version of the proje
 
     <!-- border -->![Start Deploy](deploy1.png)
 
-2. In the **Deploy Sales Order Approvals version 1.0.0** window, choose **Next**.
+2. Choose the environment and select **Deploy**.
 
-    <!-- border -->![Start Deploy](deploy1a.png)
+  <!-- border -->![Start Deploy](environment.png)
 
-3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Next**.
+3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Deploy**.
 
     > Variables allow you to reuse certain information for a given business process project deployment.
 
     > You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the business process project. For example, in the current use case, you have created a *Destination* variable. Please use the same destination *S4HANACloud*.
 
     <!-- border -->![Deploy confirm first](deploy2.png)
-
-4. Click **Deploy**.
-
-    <!-- border -->![Deploy](deploy3.png)
 
     The successfully deployed project is ready for running and monitoring.
 
