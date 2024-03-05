@@ -32,13 +32,13 @@ Furthermore, incorporating subprocess in your automation allows you to divide yo
 
 You will incorporate a subprocess within a primary process.
 
-After completing the [prerequisites](https://developers.sap.com/tutorials/spa-add-links-forms.html), your process will look like this:
+After completing the [prerequisites](spa-add-links-forms), your process will look like this:
     
-<!-- border -->![subprocess](1.png)
+<!-- border -->![subprocess](1a.png)
 
-1. Navigate to the **Overview** tab, from the editable version of your project, click the **Create** dropdown and choose **Process**.
+1. Navigate to the **Overview** tab. From the editable version of your project, click the **Create** dropdown and choose **Process**.
 
-    <!-- border -->![subprocess](2.png)
+    <!-- border -->![subprocess](2a.png)
 
 2. In the **Create Process** dialog box, do the following:
 
@@ -49,111 +49,144 @@ After completing the [prerequisites](https://developers.sap.com/tutorials/spa-ad
 
     Your new process opens in the process builder. You will now create a trigger form that will start the process. 
 
-    <!-- border -->![subprocess](4.png)
+    <!-- border -->![subprocess](4a.png)
 
-3. Choose **+** in the **Trigger** settings, then select **Forms** and choose **Registration Form**.
+3. Choose **Add a Trigger** in the **Trigger** settings.
+   
+    <!-- border -->![subprocess](4b.png)
 
-4. Choose **Save**.
+4. Select **Submit a Form**.
 
-    <!-- border -->![subprocess](5.png)
+    <!-- border -->![subprocess](4c.png)
 
-5. Navigate back to the **Overview** tab. Select the **Learning Path** process.
+5. Choose **Registration Form**.
 
-    <!-- border -->![subprocess](sub1.png)
+    <!-- border -->![subprocess](4d.png)
 
-6. Choose the three dots of the Trigger form and select **Remove**.
+6. Choose **Save**.
 
-7. Choose **Save**.
+    <!-- border -->![subprocess](5a.png)
 
-    <!-- border -->![subprocess](30.png)
+7. Navigate back to the **Overview** tab. Select the **Learning Path** process.
 
-8. Go back to **Manage Trainees Learning Journey** process, select **+** and choose **Subprocesses>Learning Path**.
+    <!-- border -->![subprocess](sub1a.png)
 
-9. **Save** the process.
+8. Choose the three dots of the Trigger form and select **Remove**.
 
-    <!-- border -->![subprocess](sub2.png)
+9.  Choose **Save**.
+
+    <!-- border -->![subprocess](30a.png)
+
+10. Go back to **Manage Trainees Learning Journey** process, select **+** under **Registration Form**.
+
+    <!-- border -->![subprocess](sub2a.png)
+
+11. Choose **Subprocess**.
+
+    <!-- border -->![subprocess](sub2b.png)
+
+12. Choose **Learning Path**.
+
+    <!-- border -->![subprocess](sub2c.png)
+
+13. **Save** the process.
 
     Now you have an optimized process that incorporates a subprocess, making it more efficient and streamlined.
 
-    <!-- border -->![subprocess](sub3.png)
+    <!-- border -->![subprocess](sub3a.png)
 
 
 ### Release, deploy and run the process project
 
-1. To release and deploy a process, please refer to step 1 and 2 of the tutorial on how to release and deploy a process [Run the Business Process](https://developers.sap.com/tutorials/spa-run-process.html).
+1. To release and deploy a process, please refer to step 1 and 2 of the tutorial on how to release and deploy a process [Run the Business Process](spa-run-process).
 
-2. In the **Overview** section, open the process **Manage Trainees Learning Journey** process of the deployed version, choose **Registration Form** and select the **Copy Link** icon under the **Form Link** field.
+2. In the **Overview** section, open the process **Manage Trainees Learning Journey** process of the deployed version, choose **Registration Form** and select the **Copy Link** icon next to the **Form Link** field.
 
-    <!-- border -->![subprocess](sub4.png)
+    <!-- border -->![subprocess](sub4a.png)
 
 3. Now paste the **Form Link** into a browser. When the form opens in the browser, you will have the course presentation fields that you defined in the Registration Form. Click on **Start**.    
 
     <!-- border -->![subprocess](sub5.png)
 
-    Now, you will receive the training materials directly in your inbox, just like you did in the [Add Links to Forms](https://developers.sap.com/tutorials/spa-add-links-forms.html) tutorial.
+    Now, you will receive the training materials directly in your inbox, just like you did in the [Add Links to Forms](spa-add-links-forms) tutorial.
 
     >In the next steps, you will cover the usage of a subprocess within an automation and also demonstrate how to distribute the learning path to multiple learners simultaneously.
 
 
-### Add a table to the Registration Form
+### Add a table to the registration form
 
 After completing the steps above, your process will look like this:
     
-   <!-- border -->![subprocess](sub3.png)
+   <!-- border -->![subprocess](sub3b.png)
 
-1. From the editable version of your project, choose the three dots and select **Open Editor**.
+1. From the editable version of your project, select the **Registration Form**, choose the three dots and select **Open Editor**.
 
-     <!-- border -->![subprocess](6.png)
+     <!-- border -->![subprocess](6a.png)
 
 2. Add a **Table** with **Learners** as title.
 
-     <!-- border -->![subprocess](7.png)
+     <!-- border -->![subprocess](7a.png)
 
-3. Choose the **+** icon in the table and select **Text**. Enter **First Name** as the field name.
+3. Choose the **+** icon in the table and select **Text**. 
 
-    <!-- border -->![subprocess](8.png)
+    <!-- border -->![subprocess](8a.png)
 
-    <!-- border -->![subprocess](8_1.png)
+4. Enter **First Name** as the field name.
 
-4. Choose the **+** icon next to the First Name field and select **Text**. Enter **Last Name** as a field name.
+    <!-- border -->![subprocess](8_1a.png)
 
-    <!-- border -->![subprocess](9.png)
-    <!-- border -->![subprocess](9_1.png)
+5. Choose the **+** icon next to the First Name field and select **Text**. 
 
+    <!-- border -->![subprocess](9a.png)
 
-5. Similarly choose the **+** icon next to the Last Name field and select **Text**. Enter **Emails** as a field name.
+6. Enter **Last Name** as a field name.
+   
+    <!-- border -->![subprocess](9_1a.png)
 
-    <!-- border -->![subprocess](10.png)
-    <!-- border -->![subprocess](10_1.png)
+7. Similarly choose the **+** icon next to the Last Name field and select **Text**. 
 
-6. **Save** the form.
+    <!-- border -->![subprocess](10a.png)
+
+8. Enter **Emails** as a field name.
+   
+    <!-- border -->![subprocess](10_1a.png)
+
+9.  **Save** the form.
 
 
 ### Create the automation
 
-1. Navigate back to the **Manage Trainees Learning Journey** process and do the following:
+1. Navigate back to the **Manage Trainees Learning Journey** process.
 
-    - Select the three dots next to the **Learning Path** subprocess and choose **Remove**.
+2. Select the three dots next to the **Learning Path** subprocess and choose **Remove**.
     
-    <!-- border -->![subprocess](11_0.png)
+    <!-- border -->![subprocess](11_0a.png)
 
     > ### What's going on?
     >
     > You will remove the subprocess from the main process. Our objective is to create an automation that utilizes the **Learning Path** subprocess to send the learning path to multiple users at once.
 
-    - Now choose **+**.
-    - Select **Automation**, **New Automation**.
+1. Now choose **+**.
+  
+    <!-- border -->![subprocess](11_0b.png)
 
-    <!-- border -->![subprocess](11.png)
+2. Select **Automation**.
 
-2. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
+    <!-- border -->![subprocess](11_0c.png)
+
+3. Select **Blank Automation**.
+
+    <!-- border -->![subprocess](11a.png)
+
+4. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
 
     - From the dropdown, select the version of the Desktop Agent installed on your machine. It would be displayed with suffix as **Registered**.
+    - Select your platform.
     - Choose the **Confirm** button.
 
-    <!-- border -->![subprocess](12.png)
+    <!-- border -->![subprocess](12a.png)
 
-3. A new pop-up will appear to create the automation. Do the following in the pop-up:
+5. A new pop-up will appear to create the automation. Do the following in the pop-up:
 
     -  Under Name enter: **Assign Learning Journey**.
     -  Choose the **Create** button.
@@ -162,16 +195,16 @@ After completing the steps above, your process will look like this:
 
     An automation **Assign Learning Journey** will be created successfully.
 
-4. Choose **Save**.
+6. Choose **Save**.
   
-    <!-- border -->![subprocess](13_1.png)
+    <!-- border -->![subprocess](13_1a.png)
 
 
 ### Create data types
 
 1. Go to the **Overview** Tab. Choose the **Create** button. Create an artifact of the type **Data Type**.
 
-    <!-- border -->![subprocess](14.png)
+    <!-- border -->![subprocess](14a.png)
 
 2. A new pop-up will appear.
     - Enter **Name** of the data type: **Learner**.
@@ -195,11 +228,13 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](17_1.png)
 
+    Your data type gets created and you can view it in the list of artifacts in the **Overview** page.
+
     Now you will create a second data type.
 
 5. Similarly, go to the **Overview** tab. Choose the **Create** button. Create an artifact of the type **Data Type**.
 
-    <!-- border -->![subprocess](18.png)
+    <!-- border -->![subprocess](18a.png)
 
 6. A new pop-up will appear.
     - Enter **Name** of the data type: **dataset**.
@@ -226,17 +261,17 @@ After completing the steps above, your process will look like this:
 
 1. Navigate back to the **Manage Trainees Learning Journey** process and select the three dots next to **Assign Learning Journey** automation, choose **Open Editor**.
 
-    <!-- border -->![subprocess](21.png)
+    <!-- border -->![subprocess](21a.png)
 
 2. In the Automation Details section on the right, search for the **For Each** activity and drag and drop the activity into the automation flow.
 
     <!-- border -->![subprocess](22.png)
 
-3. Click on the canvas and select the **Input/Output** section in Automation Details. 
+3. Select the **Input/Output** section in Automation Details. 
 
-    <!-- border -->![subprocess](23.png)
+    <!-- border -->![subprocess](23a.png)
 
-4. Add Input parameters as following:
+4. Add an input parameter as following:
 
     - In Parameter Name enter: `learner`.
     - In Data Type choose: **Learner**.
@@ -265,62 +300,62 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](29.png)
 
-2. Select the **Input/Output** section in Process Details.
+2. Open the **Process Details** side panel.
+   
+    <!-- border -->![subprocess](29a.png)
+   
+3. Select the **Variables** tab in Process Details.
 
-    <!-- border -->![subprocess](31.png)
+4. For **Process Inputs**, select **Configure**.
 
-3. Select **Configure** and click on **add input**.
+    <!-- border -->![subprocess](31_1a.png)
 
-    <!-- border -->![subprocess](31_1.png)
+5. Click on **add input**.
 
     <!-- border -->![subprocess](31_2.png)
 
-4. Configure the **Process Input** as such: 
+5. Configure the **Process Input** as such: 
 
     - In Inputs Name enter: `learners`.
     - In Inputs Type choose: **Learner**. 
 
-5. Select **Apply**.
+6. Select **Apply**.
 
     <!-- border -->![subprocess](32.png)
 
-6. Now, click on **Build Your First Business Process** form and configure the **General** section.
+7. Now, click on **Build Your First Business Process** form and configure the **General** section.
 
-    <!-- border -->![subprocess](35.png)
+8.  In the **Recipients** section, under **Users** select **email** from Process Inputs.
 
-7. In the **Recipients** section, under **Users** select **email**.
+    <!-- border -->![subprocess](36a.png)
 
-    <!-- border -->![subprocess](36.png)
+9.  Select the **Boost Your Business Process with Automation** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
 
-8. Select the **Boost your Business Process with Automation** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
+    <!-- border -->![subprocess](37a.png)
 
-    <!-- border -->![subprocess](37.png)
+10. Similarly, select the **Create Tables in the Form** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
 
-9. Similarly, select the **Create Tables in the Form** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
+    <!-- border -->![subprocess](38a.png)
 
-    <!-- border -->![subprocess](38.png)
+11. **Save** your work.
 
-10. **Save** your work.
-
-11. Go to the **Overview** tab. Click on the **Assign Learning Journey** automation.
+12. Go to the **Overview** tab. Click on the **Assign Learning Journey** automation.
 
     <!-- border -->![subprocess](38_1.png)
 
-12. Select **Learning Path** and enter the value of learners as `currentMember`.
+13. Select **Learning Path** and enter the value of learners as `currentMember`.
 
     <!-- border -->![subprocess](38_2.png)
 
-13. **Save** your work.
+14. **Save** your work.
 
-14. Navigate back to **Manage Trainees Learning Journey**, select **Assign Learning Journey** automation to configure the **Inputs** parameters.
+15. Navigate back to **Manage Trainees Learning Journey**, select **Assign Learning Journey** automation to configure the **Inputs** parameters.
 
-    <!-- border -->![subprocess](38_3.png)
+16. In the **Inputs** section, in **Select list** field, choose **Learners**.
 
-15. In the **Inputs** section, in **Select list** field, choose **Learners**.
+    <!-- border -->![subprocess](38_4a.png)
 
-    <!-- border -->![subprocess](38_4.png)
-
-16. **Save** your work.
+17. **Save** your work.
 
 
 ### Release and deploy the project
@@ -329,38 +364,36 @@ After completing [Agent Management Settings to Execute the Process with an Autom
 
 1. In the **Manage Trainees Learning Journey** process, choose the **Release** button on the top right corner.
 
-    <!-- border -->![subprocess](39.png)
+    <!-- border -->![subprocess](39a.png)
 
 2. In the **Release Project** popup, select **Release**.
 
     <!-- border -->![subprocess](40.png)
 
-3. On the **Overview** section that appears, choose **Deploy**.
+3. In the **Overview** section that appears, choose **Deploy**.
 
-    <!-- border -->![subprocess](41.png)
+    <!-- border -->![subprocess](41a.png)
 
-4. In the popup that appears, run the deployment.
+4. Choose an Environment and click on **Upgrade**.
+   
+    <!-- border -->![subprocess](41b.png)
 
-    <!-- border -->![subprocess](42.png)
-    <!-- border -->![subprocess](43.png)
-    <!-- border -->![subprocess](44.png)
+    Your project is deployed.
 
-5. After project deployment, a confirmation popup will appear. Choose **Close**.
-
-    <!-- border -->![subprocess](45.png)
+    <!-- border -->![subprocess](45a.png)
 
 
 ### Run the process
 
-1. In the **Overview** section, open the process **Manage Trainees Learning Journey** of the deployed version, choose **Registration Form** and select the **Copy Link** icon under **Form Link** field.
+1. In the **Overview** section, open the process **Manage Trainees Learning Journey** of the deployed version, select **Registration Form** and choose the **Copy Link** icon next to **Form Link** field.
 
-    <!-- border -->![subprocess](46.png)
+    <!-- border -->![subprocess](46a.png)
 
-2. In a new tab in your browser, paste the form link. Enter the information of the learners in the table for whom you intend to send the learning path and choose **Submit**.
+2. In a new tab in your browser, paste the form link. Enter the information of the learners in the table for whom you intend to send the learning path and choose **Start**.
 
-    <!-- border -->![subprocess](47.png)
+    <!-- border -->![subprocess](47a.png)
    
-    > After clicking on **Submit**, all the learners you have added to the table will receive the project tasks in their Inbox.
+    > After clicking on **Start**, all the learners you have added to the table will receive the project tasks in their Inbox.
 
 3. Navigate to **SAP Build** lobby, choose **My Inbox** icon.
 
@@ -370,7 +403,7 @@ After completing [Agent Management Settings to Execute the Process with an Autom
 
     <!-- border -->![subprocess](49.png)
 
-5. Refresh the inbox again to get the second notification for the second mission. Now you can see task **Second Learning Mission** appear in My Inbox. After finishing the mission, click on **Next**.
+5. Refresh the inbox again to get the second notification to the second mission. Now you can see task **Second Learning Mission** appear in My Inbox. After finishing the mission, click on **Next**.
 
     <!-- border -->![subprocess](50.png)
 
@@ -379,4 +412,31 @@ After completing [Agent Management Settings to Execute the Process with an Autom
     <!-- border -->![subprocess](51.png)
 
 
+### Retrieve sample project from the store
+
+This sample project can be downloaded from the SAP Build Store.
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Learning Journey**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Give your project a name and choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](project.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobby.png)
 
