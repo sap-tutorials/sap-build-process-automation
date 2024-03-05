@@ -24,7 +24,7 @@ primary_tag: software-product>sap-build-process-automation
 ### Explore the store
 
 
-The Store offers predefined content for your automation. Packages are categorized by catalog which let you choose between Automation SDK, Business Content and Learning Content.
+The Store offers predefined content for your automation. Packages are categorized by catalog which let you choose between Automation SDK, Business Content and Learning Content. 
 
 1. Navigate to the store in your SAP Build Process Automation Tenant.
 
