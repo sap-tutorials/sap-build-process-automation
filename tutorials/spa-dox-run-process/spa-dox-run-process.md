@@ -47,7 +47,7 @@ primary_tag: software-product>sap-build-process-automation
 
 4. The project released successfully and is ready to be deployed.
 
-    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/bcb638ecb98d4e1db8267ecccd8ffdf3.html?version=Cloud).
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/releasing-project?version=Cloud).
 
     <!-- border -->![Released](03_Released_first_version.png)
 
@@ -68,6 +68,8 @@ primary_tag: software-product>sap-build-process-automation
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
 3. The project deployed successfully and is now ready for running and monitoring.
+
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/deploy-project?version=Cloud).
 
     <!-- border -->![Deployed](03_Deployed_first_version.png)
 
