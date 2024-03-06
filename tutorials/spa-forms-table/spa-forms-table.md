@@ -254,20 +254,15 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](045.png)
 
-4. In the popup that appears, choose **Next**.
+4. Choose the **Environment** and select **Deploy**.
 
-    <!-- border -->![Automation](046.png)
+    <!-- border -->![Automation](environment.png)
 
-
-5. In the **Runtime Variables** section, enter the `filePath` for the excel file you downloaded in the prerequisites section. Choose **Next**
+5. In the **Define Variables** section, enter the `filePath` for the excel file you downloaded in the prerequisites section. Choose **Deploy**.
 
     <!-- border -->![Automation](047.png)
     
-6. In the **Triggers** section, choose **Deploy**.
-
-    <!-- border -->![Automation](048.png)
-    
-7. After project deployment, a confirmation popup will appear. Choose **Close**.
+    Your project is deployed.
 
     <!-- border -->![Automation](049.png)
 
@@ -303,7 +298,7 @@ To retrieve this sample, please follow these steps:
     
 1. From the SAP Build Lobby, navigate to Store.
    
-2. Search for the sample project: **Sales Order Management (TU05)**.
+2. Search for the sample project: **Sales Order Management (MI05)**.
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
