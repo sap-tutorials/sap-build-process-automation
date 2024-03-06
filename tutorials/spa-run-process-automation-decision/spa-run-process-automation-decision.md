@@ -35,15 +35,16 @@ Once you have taken care of the agent management settings, you can release and d
 
   <!-- border -->![Deploy](002.png)
 
-1. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
+1. Choose an **Environment** and select **Deploy**.
 
-2. Choose **Next**.
+    <!-- border -->![Environment](environment.png)
+
+2. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
+
+3. Choose **Deploy**.
 
     <!-- border -->![OrderFilePath](003.png)
 
-3. Choose **Deploy**.
- 
-    <!-- border -->![Deploy](003b.png)
 
 
 ### Run the business process

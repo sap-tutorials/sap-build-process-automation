@@ -31,20 +31,19 @@ Before releasing and deploying your business process, please make sure you have 
 
 Once you have taken care of the agent management settings, you can release and deploy the business process project to run the process.
 
+  <!-- border -->![Release](001.png)
 
-<!-- border -->![Release](001.png)
+  <!-- border -->![Deploy](002.png)
 
-<!-- border -->![Deploy](002.png)
+1. Choose an **Environment** and select **Deploy**.
 
-1. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
+    <!-- border -->![Environment](environment.png)
 
-2. Choose **Next**.
-
-    <!-- border -->![OrderFilePath](003.png)
+2. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
 
 3. Choose **Deploy**.
- 
-    <!-- border -->![Deploy](003b.png)
+
+    <!-- border -->![OrderFilePath](003.png)
 
 
 ### Run the business process
