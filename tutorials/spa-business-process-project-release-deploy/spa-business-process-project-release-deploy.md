@@ -38,7 +38,7 @@ Before you run the process, ensure that the process is saved and that there are 
 
 4. The project released successfully and is ready to be deployed.
 
-    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/5ec3714e12ce487da35c009505eaf3a5.html?version=Cloud).
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/releasing-project?version=Cloud).
 
     <!-- border -->![Released](03_Released_first_version.png)
 
@@ -67,7 +67,7 @@ Before you run the process, ensure that the process is saved and that there are 
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
 
-
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/deploy-project?version=Cloud).
 
 ### Run the business process
 
