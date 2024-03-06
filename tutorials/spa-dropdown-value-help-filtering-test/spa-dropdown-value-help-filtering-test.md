@@ -29,23 +29,23 @@ In this tutorial, you will release and deploy the project created in the previou
 
     <!-- border -->![Action Project](001.png)
 
-1.  In the Release Project popup, select **Release**.
+2.  In the Release Project popup, select **Release**.
 
     <!-- border -->![Action Project](002.png)
 
-1.  Select the **Deploy** option in the top-right corner.
+3.  Select the **Deploy** option in the top-right corner.
 
     <!-- border -->![Action Project](003.png)
 
-1.  In the deploy popup, select **Next**.
+4. Choose an **Environment** and select **Deploy**.
 
-    <!-- border -->![Action Project](004.png)
+    <!-- border -->![Action Project](environment.png)
 
-1.  Select the destination variable `S4_Business_Partner` and select **Next**.
+5.  In the **Define Variables** section, select the destination variable `S4_Business_Partner` and select **Deploy**.
 
     <!-- border -->![Action Project](005.png)
 
-1.  Select the **Deploy** option.
+    Your project is deployed.
 
     <!-- border -->![Action Project](006.png)
 
@@ -82,7 +82,7 @@ To retrieve this sample, please follow these steps:
     
 1. From the SAP Build Lobby, navigate to Store.
    
-2. Search for the sample project: **Sales Order Management (GR07)**.
+2. Search for the sample project: **Sales Order Management (MI07)**.
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
