@@ -61,23 +61,13 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Start Deploy](01_Released_first_version.png)
 
-2. Choose **Next**.
+2. Choose an **Environment** and select **Deploy**.
 
-    <!-- border -->![Deploy confirm  first](01_Deploy_first_version_confirm.png)
-
-3. In this case there are no **Variables** to set. Choose **Next**
-
-    > Variables allow you to reuse certain information for a given Business Process project deployment. You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the Business Process project.
-
-    <!-- border -->![Deploy confirm  first](02_Deploy_first_version_confirm.png)
-
-4. Choose **Deploy**.
-
-    <!-- border -->![Deploy](02_Deploy_first_version_deploy.png)
+    <!-- border -->![Choose environment](environment.png)
 
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
-5. The project deployed successfully and is now ready for running and monitoring.
+3. The project deployed successfully and is now ready for running and monitoring.
 
     <!-- border -->![Deployed](03_Deployed_first_version.png)
 
