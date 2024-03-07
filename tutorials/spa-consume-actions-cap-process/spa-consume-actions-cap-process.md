@@ -104,19 +104,19 @@ parser: v2
 
 2. On popup **Release Project**, click **Release**
     
-3. Click **Deploy**
-
-    - On **1 - Overview**, click **Next** 
+3. Click **Deploy**.
+   
+4. Choose an **Environment** and select **Deploy**.
      
-    <!-- border -->![overview](Deploy-1.png)
+    <!-- border -->![Choose environment](environment.png)
 
-    - On **2 - Runtime Variables**, for **`capService`** select Destination **`Demo_CAP_Sample_Library`**, click **Next** 
+5. You can see your trigger in the list, click **Deploy**.
+
+    <!-- border -->![deploy](trigger.png)
+
+6. In the **Define Variables** window, select Destination **`Demo_CAP_Sample_Library`** and click **Deploy**.
 
     <!-- border -->![variables](Deploy-2.png)
-
-    - On **3 - Triggers**, you can see your trigger in the list, click **Deploy** 
-
-    <!-- border -->![deploy](DeployWithTrigger.png)
 
 
 ### Test Business Process
