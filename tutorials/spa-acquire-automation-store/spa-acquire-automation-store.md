@@ -24,7 +24,7 @@ primary_tag: software-product>sap-build-process-automation
 ### Explore the store
 
 
-The Store offers predefined content for your automation. Packages are categorized by catalog which let you choose between Automation SDK, Business Content and Learning Content. 
+The Store offers predefined content for your automation. Packages are categorized by catalog which let you choose between Automation SDK, Business Content and Learning Content.
 
 1. Navigate to the store in your SAP Build Process Automation Tenant.
 
@@ -88,7 +88,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
     For instance, you can create a process artifact and add an automation to the Business Process.
 
-3. Select the +, choose **Create** and then **Process**.
+3. Select **Create** and then **Process**.
 
     <!-- border -->![Create Process](13-CreateProcess.png)
 
@@ -98,65 +98,79 @@ The Store offers predefined content for your automation. Packages are categorize
 
     **SAP Build Process Automation** with the just created process opens.
 
-5. Now right click on the + icon and select **Automation**.
+5. Now click on the **+** below **Trigger**.
+
+    <!-- border -->![Add](Add.png)
+   
+6. Select **Automation**.
+
+    <!-- border -->![Automation](Automation.png)
 
     You have a list of all the automations available in the bot you just acquired. For this tutorial, you will use the **Get Processors Details** automation.
 
     <!-- border -->![Add Automation](15-AddAutomation.png)
 
-    Now your automation is successfully added to the process. You can further continue modifying your process to get rid of the errors by adding a trigger to the start event and filling in the missing mandatory inputs.
+    Now your automation is successfully added to the process. You can further continue modifying your process by adding a trigger to the start event and getting rid of the errors by filling in the missing mandatory inputs.
 
-6. Choose **Select a Start Trigger**, in **Trigger Settings**, select **+ New Form**.
+7. Choose **Add a Trigger**.
 
-    <!-- border -->![Automation Added](16-AutomationAdded.png)
+    <!-- border -->![Trigger](Trigger.png)
+   
+8. Select **Submit a Form**.
 
-7. In the **Create Form** pop-up, choose **Order Processing Form** for **Name**.
+    <!-- border -->![Form](Form.png)
 
-8. Choose **Create**.
+9. Choose **Blank Form**.
+
+    <!-- border -->![Blank Form](BlankForm.png)
+
+10. In the **Create Form** pop-up, choose **Order Processing Form** for **Name**.
+
+11. Choose **Create**.
 
     <!-- border -->![Create Form](17-createForm.png)
 
-9. Double click on **Order Processing Form is submitted**.
+12. Select the three dots and choose **Open Editor**.
 
     <!-- border -->![Order Processing](18-orderProcessing.png)
 
     You will be navigated to the Order Processing Form.
 
-10. Drag and drop the **Text** input. Enter **Order Number** as name and check **Required**.
+13. Drag and drop the **Text** input. Enter **Order Number** as name and check **Required**.
 
-11. Choose **Save**.
+14. Choose **Save**.
 
     <!-- border -->![Order Processing Form](19-orderProcessing2.png)
 
     You will now map the Inputs of the **Get Processors Details** automation.
 
-11. Navigate back to the Order Processing process.
+15. Navigate back to the Order Processing process.
 
-12. Select the **Get Processors Details** automation. Choose `orderReference` input and select **Order Number > Order Processing Form**.
+16. Select the **Get Processors Details** automation. Choose `orderReference` input and select **Order Number > Order Processing Form**.
 
     <!-- border -->![Input Mapping](20-InputMapping.png)
 
-13. Choose **Save**.
+17. Choose **Save**.
 
-14. You may now add forms, approvals, decisions, conditions, etc... to design your process based on your needs.
+18. You may now add forms, approvals, decisions, conditions, etc... to design your process based on your needs.
 
     <!-- border -->![Process Final](21-process.png)
 
     Lets test the automation.
 
-15. Double click on **Get Processors Details** automation.
+19. Double click on **Get Processors Details** automation.
 
-16. The automation opens in a new tab.
+20. The automation opens in a new tab.
 
-17. Select the test icon.
+21. Select the test icon.
 
     <!-- border -->![Test Automation](22-testAutomation.png)
 
-18. In the **Test Automation** window, enter **order 7991** as `orderReference`. No need to fill the Environment Variables.
+22. In the **Test Automation** window, enter **order 7991** as `orderReference`. No need to fill the Environment Variables.
 
     <!-- border -->![Test Automation2](23-testAuto2.png)
 
-19. This is the final result. To end the testing of the automation, you will have to select **OK**.
+23. This is the final result.
 
     <!-- border -->![Test Automation3](24-testAuto3.png)
 
