@@ -100,9 +100,9 @@ parser: v2
 
 ### Release and Deploy
 
-1. **Save** the process **`myCAP Sample`**, click **Release**
+1. **Save** the process **`myCAP Sample`**, click **Release**.
 
-2. On popup **Release Project**, click **Release**
+2. On popup **Release Project**, click **Release**.
     
 3. Click **Deploy**.
    
@@ -114,7 +114,7 @@ parser: v2
 
     <!-- border -->![deploy](trigger.png)
 
-6. In the **Define Variables** window, select Destination **`Demo_CAP_Sample_Library`** and click **Deploy**.
+6. In the **Define Variables** section, select Destination **`Demo_CAP_Sample_Library`** and click **Deploy**.
 
     <!-- border -->![variables](Deploy-2.png)
 
