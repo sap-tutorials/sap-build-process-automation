@@ -40,7 +40,7 @@ Once you have successfully created an account in the SAP gateway demo system, us
 ### Create business process and automation
 
 
-1.  Create a **Business Process** named **Sales Order**.
+1.  Create a **Process** named **Sales Order**.
 
 2.  Create an **Automation** named **Get Sales Order Details**.
 
@@ -87,7 +87,7 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 5. Map the parameters as shown below.
 
-    > The value of for destination parameter can be maintained after successful completion of the tutorial Create Destination as mentioned in Prerequisites  
+    > The value for destination parameter can be maintained after successful completion of the tutorial Create Destination as mentioned in Prerequisites  
 
 6. Choose **Save**.
 
@@ -108,13 +108,14 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 
 1. Refer to the tutorial on how to release and deploy the Process.
+   
 2.  When you deploy the Process, enter the value for the Destination.
 
     > The value for the destination parameter would appear only after successful completion of the tutorial [Configure BTP Destinations in SAP Build Process Automation](spa-create-destination) as mentioned in Prerequisites.
 
 3. Enter the values as shown below.
 
-<!-- border -->![Deploy](deploy.png)
+    <!-- border -->![Deploy](deploy.png)
 
 
 ### Test the automation
