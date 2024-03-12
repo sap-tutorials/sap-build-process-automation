@@ -66,7 +66,7 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 1. Open the process builder of the deployed version, and choose **Order Processing Form** to get the form URL which can be directly opened from the web browser.
 
-    <!-- border -->![Run](006.png)
+    <!-- border -->![Run](06.png)
 
 2. When you open the form in the browser, you will have all the input fields as you have defined in the process trigger form. Fill the form and choose **Submit**.
 
