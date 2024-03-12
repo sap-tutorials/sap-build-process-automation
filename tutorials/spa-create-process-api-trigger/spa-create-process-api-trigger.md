@@ -40,7 +40,7 @@ Once you have acquired the Template Project from the Store, your process looks a
 
 In this option, you will be importing an excel file to create the data type. Based on the values present in the excel, the type of field is determined automatically and the fields are created accordingly. For example `orderAmount` is maintained as 19000, hence the type of the field `orderAmount` is determined as Number.
 
-1.  Download [add link](add link) excel file for Sales Order datatype.
+1.  Download [SalesorderDatatype.xlsx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-create-process-api-trigger/SalesorderDatatype.xlsx) excel file for Sales Order datatype.
 
     <!-- border -->![Create data type](excelFile.png)
 
