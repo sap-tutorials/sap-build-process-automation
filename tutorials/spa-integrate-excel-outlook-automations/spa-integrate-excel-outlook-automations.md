@@ -135,7 +135,7 @@ SAP Build Process Automation has native integration to several Microsoft Office 
 8. After the automaton is executed, it has filtered the data (Town starting with a), hidden a column (Column F with title `storey_range`) and resultant Excel will look like this:
   <!-- border -->![Final Excel Data](27-AfterAutomationProcessing.png)
 
-### Learn Microsoft Office Best Practices
+### Learn Microsoft Office Best Practices (Optional)
 
 > To learn more about Excel and Outlook SDKs of SAP Build Process Automation, refer to the samples available in the store.
 
