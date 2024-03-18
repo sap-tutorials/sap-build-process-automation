@@ -154,7 +154,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](018b.png)
 
-    > Remember that for all String type data object attributes, you must add a single quote (’) before and after the text.
+    > Remember that for all String type data object attributes, you must add a single quote (') before and after the text.
 
 18. To add a new row to the decision table:
     - Choose the check-box of the first row
