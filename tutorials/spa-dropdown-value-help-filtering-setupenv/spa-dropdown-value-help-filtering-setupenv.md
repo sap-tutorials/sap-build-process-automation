@@ -18,6 +18,8 @@ parser: v2
 
 
 ## Intro
+> **IMPORTANT:** Please refer to sample **Sales Order Management (MI07)** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 3** of [Deploy and Test the Project](spa-dropdown-value-help-filtering-test).
+
 To configure action in business process, you will need to create an environment variable to access the destination that is created in SAP Business Technology Platform. A destination is needed to connect to the S/4HANA system to execute the APIs. The destination-based environment variable will be used to configure the action of the business process.
 
 

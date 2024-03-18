@@ -19,6 +19,8 @@ primary_tag: software-product>sap-build-process-automation
  - How to configure a OAuth Client ID in Google Cloud Platform
 
 ## Intro
+> **IMPORTANT:** Please refer to sample **How to use Google Workspace** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 4** of [Use Google Workspace to create Google Slides](spa-use-google-workspace-slides).
+
 OAuth 2.0 is an industry standard, token-based user authorization mechanism. The client must be registered through Google cloud console and the JSON credential file which contains Client ID and Client secret should be downloaded to a safe location. 
 
 In this tutorial, you will configure OAuth Client ID credentials in Google Cloud Platform and enable the Google APIs to automate all the Google Applications in SAP Build Process Automation.

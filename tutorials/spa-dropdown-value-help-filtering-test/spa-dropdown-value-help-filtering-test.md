@@ -33,19 +33,19 @@ In this tutorial, you will release and deploy the project created in the previou
 
     <!-- border -->![Action Project](002.png)
 
-1.  Select the **Deploy** option in the top-right corner.
+3.  Select the **Deploy** option in the top-right corner.
 
     <!-- border -->![Action Project](003.png)
 
-1.  In the deploy popup, select **Next**.
+4. Choose an **Environment** and select **Deploy**.
 
-    <!-- border -->![Action Project](004.png)
+    <!-- border -->![Action Project](environment.png)
 
-1.  Select the destination variable `S4_Business_Partner` and select **Next**.
+5.  In the **Define Variables** section, select the destination variable `S4_Business_Partner` and select **Deploy**.
 
     <!-- border -->![Action Project](005.png)
 
-1.  Select the **Deploy** option.
+    Your project is deployed.
 
     <!-- border -->![Action Project](006.png)
 
@@ -74,7 +74,9 @@ In this tutorial, you will release and deploy the project created in the previou
     You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing form.
 
     
-### Retrieve sample project from the store
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
 
 This sample project can be downloaded from the SAP Build Store.
 
@@ -82,25 +84,24 @@ To retrieve this sample, please follow these steps:
     
 1. From the SAP Build Lobby, navigate to Store.
    
-2. Search for the sample project: **Sales Order Management (GR07)**.
+2. Search for the sample project: **Sales Order Management (MI07)**.
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    <!-- border -->![Store](store1.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    <!-- border -->![Create](create1.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project.png)
+    <!-- border -->![Project](project1.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    <!-- border -->![Lobby](lobby1.png)
 
 ---
-
