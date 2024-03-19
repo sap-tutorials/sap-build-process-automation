@@ -110,8 +110,7 @@ Once you have completed the prerequisite mission, your process should look somet
 7. For **Hit Policy**, select **All Match**.
 
     > ### What is going on?
-    > With a **First Match** hit policy, the rule engine fetches the first occurrence that matches the condition and returns it as the result. 
-    > On the other hand, with a **All Match** hit policy, the rule engine fetches all the occurrences that matches the condition and returns them as the result.
+    > With a **First Match** hit policy, the rule engine fetches the first occurrence that matches the condition and returns it as the result. On the other hand, with a **All Match** hit policy, the rule engine fetches all the occurrences that matches the condition and returns them as the result.
     
 8. Choose **Next Step**.
 
