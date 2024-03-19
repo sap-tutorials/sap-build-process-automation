@@ -17,7 +17,7 @@ primary_tag: software-product>sap-build-process-automation
  - Setup the desktop agent to run automation as explained in [this tutorial](spa-run-agent-settings)
 
 ## You will learn
-  - How to create Table in the Form.
+  - How to create a Table in the Form.
   - How to use List in Decision.
   - How to bind List in Decision to Table in Form.
   - How to retrieve the sample project from the Store.
@@ -97,7 +97,7 @@ Once you have completed the prerequisite mission, your process should look somet
     |  `Input Sales Order`      | Sales Order     | Input          | Input Sales Order
     |  `Validity Check Output`    | Error Output| Output         | Validity Check Output
 
-    > **CAUTION:** Select the **List** checkbox to make the output type as list of Error Outputs.
+    > **CAUTION:** Select the **List** checkbox to make the output type as list of Error Output.
 
     <!-- border -->![Automation](009.png)
 
@@ -109,6 +109,8 @@ Once you have completed the prerequisite mission, your process should look somet
    
 7. For **Hit Policy**, select **All Match**.
 
+    > **What is going on?:** With a **First Match** hit policy, the rule engine fetches the first occurrence that matches the condition and returns it as the result. On the other hand, with a **All Match** hit policy, the rule engine fetches all the occurrences that matches the condition and returns them as the result.
+    
 8. Choose **Next Step**.
 
     <!-- border -->![Automation](012.png)
@@ -146,7 +148,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](018a.png)
 
-16. Type `<TODAY`, and choose **TODAY** from Array Operators. When finished, press Enter key or click outside the input field to confirm.
+16. Type `<TODAY`, and choose **TODAY** from Array Operators. When finished, click outside the input field to confirm.
 
     <!-- border -->![Automation](018.png)
 
