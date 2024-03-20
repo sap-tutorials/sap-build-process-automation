@@ -109,7 +109,8 @@ Once you have completed the prerequisite mission, your process should look somet
    
 7. For **Hit Policy**, select **All Match**.
 
-    > **What is going on?:** With a **First Match** hit policy, the rule engine fetches the first occurrence that matches the condition and returns it as the result. On the other hand, with a **All Match** hit policy, the rule engine fetches all the occurrences that matches the condition and returns them as the result.
+    > ### **What is going on?:** 
+    With a **First Match** hit policy, the rule engine fetches the first occurrence that matches the condition and returns it as the result. On the other hand, with a **All Match** hit policy, the rule engine fetches all the occurrences that matches the condition and returns them as the result.
     
 8. Choose **Next Step**.
 
@@ -259,7 +260,7 @@ Once you have completed the prerequisite mission, your process should look somet
 10. In the **General** section of form details:
     
     - Enter as **Subject**: Order Rejected due to errors
-    - Choose **Process Started By** as **users** under **Recipients**.
+    - Choose **Process Started By** as **users** under **Recipients**
 
     <!-- border -->![Automation](037.png)
     
@@ -308,7 +309,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](environment.png)
 
-5. In the **Define Variables** section, enter the `filePath` for the excel file you downloaded in the prerequisites section. Choose **Deploy**.
+5. In the **Define Variables** section, enter the `orderfilePath` for the excel file you downloaded in the prerequisites section. Choose **Deploy**.
 
     <!-- border -->![Automation](047.png)
     
