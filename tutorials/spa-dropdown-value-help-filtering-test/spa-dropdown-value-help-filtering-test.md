@@ -88,20 +88,20 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store1.png)
+    <!-- border -->![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create1.png)
+    <!-- border -->![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project1.png)
+    <!-- border -->![Project](project.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby1.png)
+    <!-- border -->![Lobby](lobby.png)
 
 ---
