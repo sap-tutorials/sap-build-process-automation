@@ -166,7 +166,7 @@ There are two possible situations:
 
 3. The successfully released project is ready to be deployed.
 
-    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/bcb638ecb98d4e1db8267ecccd8ffdf3.html?version=Cloud).
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/releasing-project?version=Cloud).
 
     <!-- border -->![Released](release4.png)
 
@@ -179,11 +179,11 @@ You can deploy business process projects from each released version of the proje
 
     <!-- border -->![Start Deploy](deploy1.png)
 
-2. In the **Deploy Sales Order Approvals version 1.0.0** window, choose **Next**.
+2. Choose an environment and select **Deploy**.
 
-    <!-- border -->![Start Deploy](deploy1a.png)
+    <!-- border -->![Start Deploy](environment.png)
 
-3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Next**.
+3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Deploy**.
 
     > Variables allow you to reuse certain information for a given business process project deployment.
 
@@ -191,13 +191,9 @@ You can deploy business process projects from each released version of the proje
 
     <!-- border -->![Deploy confirm first](deploy2.png)
 
-4. Click **Deploy**.
+4. The successfully deployed project is ready for running and monitoring.
 
-    <!-- border -->![Deploy](deploy3.png)
-
-    The successfully deployed project is ready for running and monitoring.
-
-    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/d1e6a2d496f24ef1be43c2da8716c3b6.html?version=Cloud).
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/deploy-project?version=Cloud).
 
     <!-- border -->![Deployed](deploy4.png)
 

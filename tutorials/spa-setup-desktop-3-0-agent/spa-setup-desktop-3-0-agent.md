@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Install and Set Up the Desktop Agent 3
+# Install and Set Up Desktop Agent 3
 <!-- description --> Install and set up the Desktop Agent 3 to run your automations
 
 
@@ -27,9 +27,9 @@ parser: v2
 ### About the Desktop Agent 3
 
 
-The Desktop Agent 3 is an on-premise component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
+The Desktop Agent 3 is an on-premise component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, reads information from screens, enters data, clicks options, and processes data.
 
-The very first time you launch the Desktop Agent 3 on your workstations, you will be prompted to log in. If you are unsure of your login details, please ask an administrator.
+The very first time you launch the Desktop Agent 3 on your workstation, you will be prompted to log in. If you are unsure of your login details, please ask an administrator.
 
 
 ### Download the Desktop Agent 3
@@ -134,7 +134,7 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Build
 
     >A Google Chrome extension and an Edge add-on are installed when you install the Desktop Agent but you have to enable them (at least the Google Chrome extension).
 
-4. On Google Chrome select the manage extensions under Extensions.
+4. On Google Chrome, select **Manage extensions** under Extensions.
 
     <!-- border -->![Manage extensions](agent3-005.png)
 
@@ -179,11 +179,13 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
     <!-- border -->![Tenant Activate](agent3-039.png)
 
+
 5. Once you completed the previous actions, log in to your tenant with your user name or e-mail and password.
 
     <!-- border -->![Activate Tenant](agent3-014.png)
 
 6.  The Agent should be in **Idle** state, waiting to start a project. To check, go to **Control Tower**, and select **Agents**.
+
 
     <!-- border -->![Agent](agent3-013.png)
 

@@ -13,12 +13,11 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - Space in BTP Cockpit subaccount created (with a Free Tier and a Free Trial account, space is automatically created)
- - [Trial account](spa-subscribe-free-trial) with SAP Build Process Automation enabled **OR**
- - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
+ - [A SAP BTP Free Trial or Free Tier account](spa-subscribe-booster) with SAP Build Process Automation enabled
 
 
 ## You will learn
-  - How to configure SAP Build Work Zone, standard edition in **SAP BTP Cockpit** to gain visibility in your dashboard
+- How to configure SAP Build Work Zone, standard edition in **SAP BTP Cockpit** to gain visibility in your dashboard
 
 ## Intro
 In this tutorial, you will configure everything needed for the creation of a SAP Build Work Zone, standard edition in **SAP BTP Cockpit** to gain visibility of your processes.
@@ -27,33 +26,38 @@ In this tutorial, you will configure everything needed for the creation of a SAP
 
 ### Subscribe to SAP Build Work Zone, standard edition
 
-[OPTION BEGIN [FreeTrial]]
+[OPTION BEGIN [Free Trial]]
 
-1.  Navigate to **SAP BTP Cockpit** subaccount and select **Instances and Subscriptions** under Services. Choose **Create**.
+1.  Navigate to **SAP BTP Cockpit** subaccount and select **Service Marketplace** under Services.
+   
+2.  Search for **SAP Build Work Zone, standard edition** and click on the tile.
+    
+    <!-- border -->![Create subscription](080a.png)
+
+3.  Choose **Create**.
 
     <!-- border -->![Create subscription](080.png)
 
-2. For the new subscription:
-    - Under Service, select **SAP Build Work Zone, standard edition**.
+4. For the new subscription:
     - Under Plan, select **standard** as subscription.
     - Choose **Create**.
 
     <!-- border -->![Subscription](081.png)
 
-3. The subscription is created.
+5. The subscription is created.
    
     <!-- border -->![Subscription](006b.png) 
 
 [OPTION END]
 
 
-[OPTION BEGIN [FreeTier]]
+[OPTION BEGIN [Free Tier]]
 
-When you subscribe to SAP Build Process Automation with Free tier, SAP Build Work Zone, standard edition is not available in your instances by default unlike the Trial account.
+When you subscribe to SAP Build Process Automation with Free tier, SAP Build Work Zone, standard edition is not available in **Service Marketplace** by default unlike the Trial account.
 
 Hence you need to manually add SAP Build Work Zone, standard edition entitlement to your subaccount.
 
-1. Navigate to **SAP BTP Cockpit** subaccount and select **Entitlements** under Security. Choose **Configure Entitlements**.
+1. Navigate to **SAP BTP Cockpit** subaccount and select **Entitlements**. Choose **Edit**.
 
     <!-- border -->![Configure entitlements](080b.png)
 
@@ -61,25 +65,23 @@ Hence you need to manually add SAP Build Work Zone, standard edition entitlement
 
     <!-- border -->![Add service plans](080c.png)
 
-3. Search for SAP Build Work Zone, standard edition.
+3. Search and select **SAP Build Work Zone, standard edition**.
 
-4. Select **SAP Build Work Zone, standard edition**.
+4. Choose **free (Application)**.
 
-5. Choose **free (Application)**.
-
-6. Click on **Add 1 Service Plan**.
+5. Click on **Add 1 Service Plan**.
 
     <!-- border -->![Select SAP Build Work Zone](080d.png)
 
-7. Choose **Save**.
+6. Choose **Save**.
 
     <!-- border -->![Select SAP Build Work Zone](080e.png)
 
-8. Select **Instances and Subscriptions** under Services. Choose **Create**.
+7. Select **Instances and Subscriptions** under Services. Choose **Create**.
 
     <!-- border -->![Create subscription](080f.png)
 
-9. For the new subscription:
+8. For the new subscription:
 
     - Under Service, select **SAP Build Work Zone, standard edition**.
     
@@ -89,7 +91,7 @@ Hence you need to manually add SAP Build Work Zone, standard edition entitlement
 
     <!-- border -->![Subscription](082.png)
 
-10. The subscription is created.
+9.  The subscription is created.
    
     <!-- border -->![Subscription](083.png) 
 
@@ -108,7 +110,7 @@ Since there are two products for SAP Build Work Zone, make sure to mention stand
 
 After creating a subscription for SAP Build Work Zone, standard edition in your subaccount, you must now create an SAP BTP service instance for SAP Build Work Zone, standard edition to run in.
 
-1.  Navigate to **SAP BTP Cockpit** subaccount. Select **Services** > **Instances and Subscriptions**. Choose **Create**.
+1.  Navigate to **SAP BTP Cockpit** subaccount. Select **Services > Instances and Subscriptions**. Choose **Create**.
 
     <!-- border -->![Create instance](014.png)  
 
@@ -134,11 +136,11 @@ You can use service keys to generate credentials to communicate directly with a 
   
 <!-- border -->![Service key](085.png) 
 
-1. In your SAP BTP subaccount, under **Services**> **Instances and Subscriptions**, select the instance that you created above.
+1. In your SAP BTP subaccount, under **Services > Instances and Subscriptions**, select the instance that you created above.
 
     <!-- border -->![Select instance](016c.png)
 
-2. On the details screen that opens, choose **Service Keys**> **Create**.
+2. On the details screen that opens, choose **Service Keys > Create**.
 
     <!-- border -->![Create service key](016d.png)
 
@@ -162,19 +164,19 @@ You can use service keys to generate credentials to communicate directly with a 
 
 ### Configure SAP Build Process Automation Destination
 
-[OPTION BEGIN [FreeTrial]]
+[OPTION BEGIN [Free Trial]]
 
 Before developing with SAP Build Process Automation or for configuring SAP Build Work, standard edition for use with SAP Build Process Automation, you must create an SAP BTP destination for your subaccount.
 
 > You have created a service instance and service key for SAP Build Process Automation and noted down the service key credentials for configuring this destination.
 
-1. Choose **Connectivity**> **Destinations**> **New Destination**.
+1. Choose **Connectivity > Destinations > Create Destination**.
 
     <!-- border -->![New destination](01a.png)
 
 2. Choose **Blank Template**, and enter the following details from the downloaded json file:
 
-    > CAUTION: When copying the values for URL, Client ID, Client Secret and Token Service URL, please select the values without the quotes and paste them in the destination template. 
+    > **CAUTION:** When copying the values for URL, Client ID, Client Secret and Token Service URL, please select the values without the quotes and paste them in the destination template. 
 
     |  **Field**    | **Value**
     |  :------------- | :-------------
@@ -194,7 +196,7 @@ Before developing with SAP Build Process Automation or for configuring SAP Build
 
 3. Add additional properties copied from the service key:
 
-    > CAUTION: When copying the values for`saasregistryenabled`, `sap.cloud.service` and `sap.cloud.service.alias`, please select the values without the quotes.
+    > **CAUTION:** When copying the values for`saasregistryenabled`, `sap.cloud.service` and `sap.cloud.service.alias`, please select the values without the quotes.
 
     |  **Field**    | **Value**
     |  :------------- | :-------------
@@ -220,11 +222,11 @@ Before developing with SAP Build Process Automation or for configuring SAP Build
 [OPTION END]
 
 
-[OPTION BEGIN [FreeTier]]
+[OPTION BEGIN [Free Tier]]
 
 With a Free Tier account, if you have subscribed with SAP Build Process automation using Booster, the destination needed is automatically created.
 
-1. Choose **Connectivity**> **Destinations**.
+1. Choose **Connectivity > Destinations**.
 
 2. Select the destination called `sap_process_automation_service`. This destination authenticates with `OAuth2ClientCredentials`.
 
@@ -237,7 +239,7 @@ With a Free Tier account, if you have subscribed with SAP Build Process automati
 
 ### Assign roles for SAP Build Work Zone, standard edition
 
-Once you have created a destination, you must now assign roles to any users who need access to that destination (including your own user account).
+Once you have created a destination, you must now assign roles to any user who needs access to that destination (including your own user account).
 
 1. Navigate to **SAP BTP Cockpit** subaccount > **Security** > **Users**.
 
@@ -270,48 +272,59 @@ Once you have created a destination, you must now assign roles to any users who 
 
     <!-- border -->![SBWSE](018.png) 
 
-2. The Site Manager is now ready to use. Select **Channel Manager**.
+2. In the Site Directory, click the **+ Create Site** button.
+   
+3. Enter a site name of your liking such as **SPA Launchpad**.
+
+    <!-- border -->![Create New Site](018a.png) 
+   
+4. The Site Editor opens. Navigate back to **Settings**.
+
+    <!-- border -->![Site Editor](018b.png) 
+   
+5. Your site gets created in the Site Directory.
+   
+6. The Site Manager is now ready to use. Select **Channel Manager**.
 
     <!-- border -->![SBWSE](031.png)
 
-3.  Choose **Update Content**.
+7.  Choose **Update Content**.
 
     <!-- border -->![SBWSE](032.png)
     
     > The content updates and the status changes to Updated.
 
-4.  Select **Content Manager**. On the top tabs select **Content Explorer** and then select **HTML5 Apps**.
+8.  Select **Content Manager**. On the top tabs select **Content Explorer** and then select **HTML5 Apps**.
 
     <!-- border -->![SBWSE](033.png)
     
     <!-- border -->![SBWSE](033b.png)
 
-5.  Select all items and click **Add**.
+9.  Select all items and choose **Add**.
 
     <!-- border -->![SBWSE](034.png)
 
-6.  Navigate to **Content Manager**. Choose **Create** and select **Group**.
+10. Navigate to **Content Manager**. Choose **Create** and select **Group**.
 
     <!-- border -->![SBWSE](040.png)
     
     <!-- border -->![SBWSE](040a.png)
 
-7.  Manage the Group:
+11. Manage the Group:
     - Set **Title** to **SAP Build Process Automation**.
-    - Click on the search field to display item results.
     - Assign **My Inbox** and **Process Workspace** to the group.
     - Choose **Save**.
     - Go back to **Content Manager**. 
 
     <!-- border -->![SBWSE](041.png)
 
-8.  Select **Everyone** item to edit it. Select **Edit** to edit role.
+12. Select **Everyone** item to edit it. Select **Edit** to edit role.
 
     <!-- border -->![SBWSE](042.png)
 
     <!-- border -->![SBWSE](043.png)
 
-9.  Manage changes:
+13. Manage changes:
 
     - Assign **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role.
     - Choose **Save**.

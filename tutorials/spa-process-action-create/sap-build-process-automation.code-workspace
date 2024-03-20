@@ -1,24 +1,31 @@
 {
 	"folders": [
 		{
+			"name": "sap-build-process-automation",
 			"path": "../../../sap-build-process-automation"
 		},
 		{
+			"name": "sap-build-process-automation-Contribution",
 			"path": "../.."
 		},
 		{
-			"path": "../../../Tutorials-Contribution"
-		},
-		{
+			"name": "Tutorials",
 			"path": "../../../Tutorials"
 		},
 		{
+			"name": "Tutorials-Contribution",
+			"path": "../../../Tutorials-Contribution"
+		},
+		{
+			"name": "teched2023-AD163",
 			"path": "../../../TechEd/teched2023-AD163"
 		},
 		{
+			"name": "teched2022-AD160",
 			"path": "../../../TechEd/teched2022-AD160"
 		},
 		{
+			"name": "teched2023-AD180v",
 			"path": "../../../TechEd/teched2023-AD180v"
 		}
 	]

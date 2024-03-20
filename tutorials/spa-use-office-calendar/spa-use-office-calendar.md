@@ -13,8 +13,7 @@ parser: v2
 <!-- description --> Use Microsoft 365 Cloud SDK to automate calendar activities in SAP Build Process Automation.
 
 ## Prerequisites
- - [Trial account](spa-subscribe-free-trial) with SAP Build Process Automation enabled **OR**
- - A regular account with [SAP BTP Free Tier](spa-subscribe-booster) service plan for SAP Build Process Automation
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
  - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent) to run the automation
  - Configure [Azure Application](https://help.sap.com/docs/intelligent-robotic-process-automation/cloud-studio-user-guide/configure-azure-application-and-use-with-microsoft-365-sdk#loio8d47b169478a46bd91c506c51e0872b3)
 

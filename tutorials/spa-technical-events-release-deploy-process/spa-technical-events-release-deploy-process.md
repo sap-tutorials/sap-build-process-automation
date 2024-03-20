@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Release and deploy the Process to retrieve details on an excel spreadsheet
 
 ## Prerequisites
-- [Subscribe to SAP Build Process Automation Using Booster in SAP BTP Free Tier](spa-subscribe-booster)
+- [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 - [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
 

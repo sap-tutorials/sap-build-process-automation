@@ -35,15 +35,16 @@ Once you have taken care of the agent management settings, you can release and d
 
   <!-- border -->![Deploy](002.png)
 
-1. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
+1. Choose an **Environment** and select **Deploy**.
 
-2. Choose **Next**.
+    <!-- border -->![Environment](environment.png)
+
+2. While deploying, the `OrderFilePath` data type should be the path to the excel workbook saved on your machine.
+
+3. Choose **Deploy**.
 
     <!-- border -->![OrderFilePath](003.png)
 
-3. Choose **Deploy**.
- 
-    <!-- border -->![Deploy](003b.png)
 
 
 ### Run the business process
@@ -165,15 +166,15 @@ SAP Build Process Automation provides different applications for monitoring and 
 
 ### Gain visibility into the business process
 
-1. From the deployed version of the business process project, select **Sales Order Visibility Scenario** to open the artifact.
+1. From the **Monitoring** tab, select **Visibility Scenarios** tile.
 
-    <!-- border -->![open](016.png)
+    <!-- border -->![Visibility Scenarios](016.png)
 
-2. In **General** section, choose the **Copy** icon aside the **Dashboard Link**.
+2. Select the **Sales Order Visibility Scenario** and click on the icon on the top right corner to navigate to the dashboard.
 
-    <!-- border -->![copy](017.png)
+    <!-- border -->![Dashboard link](017.png)
 
-3. Open the **Visibility Scenario Dashboard** by pasting the **Dashboard Link** in a browser window.
+3. You will be navigated to the **Sales Order Visibility Scenario** dashboard.
 
     The dashboard is there. The performance indicators are filling up, depending on the time it has taken, there might be different results. Please now feel free to explore the details and discover what is included in each tile. You could even navigate into single instances.
 

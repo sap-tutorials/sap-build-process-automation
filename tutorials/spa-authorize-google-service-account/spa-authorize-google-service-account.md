@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Authorize SAP Build Process Automation to automate Google Applications with Google Authorization SDK
 
 ## Prerequisites
- - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
  - [Configure Service Account in Google Cloud Platform](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configure-service-account-in-google-cloud-platform)
  - Install and set up the [Desktop Agent 3](spa-setup-desktop-3-0-agent) to run the automation
 

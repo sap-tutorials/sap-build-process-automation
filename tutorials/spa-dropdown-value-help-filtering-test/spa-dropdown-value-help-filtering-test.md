@@ -29,7 +29,7 @@ In this tutorial, you will release and deploy the project created in the previou
 
     <!-- border -->![Action Project](001.png)
 
-1.  In the Release Project popup, select **Release**.
+2.  In the Release Project popup, select **Release**.
 
     <!-- border -->![Action Project](002.png)
 

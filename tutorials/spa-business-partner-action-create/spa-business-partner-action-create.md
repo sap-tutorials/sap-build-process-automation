@@ -13,8 +13,7 @@ parser: v2
 <!-- description --> Create an action project from Open API specification
 
 ## Prerequisites
-- [SAP BTP Free Trial Account](spa-subscribe-free-trial)  **OR**
-  [SAP BTP Free Tier Account](spa-subscribe-booster) with the SAP Build Process Automation enabled
+- Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
 - Complete the tutorial [Setup Environment](spa-dropdown-value-help-filtering-setupenv)
 - S/4HANA Cloud system where Business Partner module is available
 - A communication user to access S/4HANA Business Partner inbound services based on `SAP_COM_0008` communication scenario ID

@@ -38,7 +38,7 @@ Before you run the process, ensure that the process is saved and that there are 
 
 4. The project released successfully and is ready to be deployed.
 
-    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/PROCESS_AUTOMATION/a331c4ef0a9d48a89c779fd449c022e7/5ec3714e12ce487da35c009505eaf3a5.html?version=Cloud).
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/releasing-project?version=Cloud).
 
     <!-- border -->![Released](03_Released_first_version.png)
 
@@ -51,21 +51,15 @@ Before you run the process, ensure that the process is saved and that there are 
 
     <!-- border -->![Start Deploy](01_Released_first_version.png)
 
-2. In this case there are no **Variables** to set.
+2. Choose an **Environment** and select **Deploy**.
 
-    > Variables allow you to reuse certain information for a given Business Process project deployment. You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the Business Process project.
-
-3. Choose **Confirm**.
-
-    <!-- border -->![Deploy confirm  first](02_Deploy_first_version_confirm.png)
-
-4. Choose **Deploy**.
-
-    <!-- border -->![Deploy](02_Deploy_first_version_deploy.png)
+    <!-- border -->![Deploy](environment.png)
 
     The Deploy action will take a couple of seconds/minutes, depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
-5. The project deployed successfully and is now ready for running and monitoring.
+3. The project deployed successfully and is now ready for running and monitoring.
+
+    > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/deploy-project?version=Cloud).
 
     <!-- border -->![Deployed](03_Deployed_first_version.png)
 
@@ -74,8 +68,6 @@ Before you run the process, ensure that the process is saved and that there are 
     <!-- border -->![Deploy successful](01_Deployed_process.png)
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
-
-
 
 ### Run the business process
 

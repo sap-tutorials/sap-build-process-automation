@@ -58,9 +58,9 @@ Once you have completed the prerequisite mission, your process should look somet
     <!-- border -->![Automation](003.png)
 
 2. A new pop-up will appear.
-    - Enter **Name** of the data type: **Error Output**.
-    - Enter **Description** of your choice.
-    - Choose **Create**.
+    - Enter **Name** of the data type: **Error Output**
+    - Enter **Description** of your choice
+    - Choose **Create**
 
     <!-- border -->![Automation](004.png)
 
@@ -109,7 +109,7 @@ Once you have completed the prerequisite mission, your process should look somet
    
 7. For **Hit Policy**, select **All Match**.
 
-    > ### What is going on? 
+    > ### What is going on?
     > With a **First Match** hit policy, the rule engine fetches the first occurrence that matches the condition and returns it as the result. On the other hand, with a **All Match** hit policy, the rule engine fetches all the occurrences that matches the condition and returns them as the result.
     
 8. Choose **Next Step**.
@@ -324,7 +324,7 @@ Once you have completed the prerequisite mission, your process should look somet
 
     <!-- border -->![Automation](050.png)
 
-2. Before executing the process, make sure your desktop agent is in unattended mode. You can refer the prerequisites to Execute the Process with an Automation.
+2. Before executing the process, make sure your desktop agent is in unattended mode. You can refer to the prerequisites to [Execute the Process with an Automation](spa-run-agent-settings).
 
     <!-- border -->![Automation](054.png)
 

@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create a business project and process to build and extend business processes.
 
 ## Prerequisites 
-  - A [SAP BTP Free Tier Account](spa-subscribe-booster) with SAP Build Process Automation booster. If you rather use a SAP BTP Trial account, please follow [Subscribe to SAP Build Process Automation Using SAP BTP Free Trial](spa-subscribe-free-trial)
+  - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
   - [Configure SMTP Destination](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configuring-smtp-mail-destination) to send mail notifications.
 
 

@@ -7,59 +7,61 @@ time: 15
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
 primary_tag: software-product>sap-build-process-automation
 ---
-
-# Install and Set Up the Desktop Agent
-<!-- description --> Install and Set Up the Desktop Agent to run your automation
+ 
+# Install and Set Up Desktop Agent 2
+<!-- description --> Install and set up the Desktop Agent 2 to run your automation
 
 ## Prerequisites
  - A Windows PC
  - If you are using a MAC, please install a VDI
+ - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
-  - How to install the Desktop Agent
-  - How to register a tenant in the Desktop Agent
-
-## Intro  
-The Desktop Agent is a component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
+  - How to install the Desktop Agent 2
+  - How to register a tenant in the Desktop Agent 2
 
 ---
 
 ### About the Desktop Agent
 
 
-The Desktop Agent is an on-premise component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, read information from screens, enter data, click options, and process data.
+The Desktop Agent is a component of SAP Build Process Automation that is installed locally on user desktops. It executes automation projects that launch and run applications of various kinds, reads information from screens, enters data, clicks options, and processes data.
 
 Projects are assigned to tenants running on a Desktop Agent. You can see what your Desktop Agent is doing at all times thanks to the convenient system tray, or `Systray`, that is always accessible while your Desktop Agent is ready or active.
 
 When it is installed, the Desktop Agent is configured to start at Windows logon automatically. You should not change this setting because your Agent might be assigned background (unattended) jobs at any time.
 
-The very first time you launch the Desktop Agent on your workstations, you will be prompted to log in. If you are unsure of your login details, please ask an administrator.
+The very first time you launch the Desktop Agent on your workstation, you will be prompted to log in. If you are unsure of your login details, please ask an administrator.
 
 
-### Install the Desktop Agent
+### Download the Desktop Agent
+
+The setup program is provided in the form of an industry standard Windows MSI installer. You can download it from the SAP Software Center [page](https://me.sap.com/softwarecenter/search/Intelligent%20Robotic%20Process%20Automation).
+
+1. Download the **latest version** of the MSI file extension.
+
+<!-- border -->![Link text e.g., Destination screen](tools.png)
 
 
-When you install the Desktop Agent, this will automatically set up the SAP Build Process Automation web browser extension for Google Chrome and Edge.
+### Install the Desktop Agent 2
 
->To prevent issues during the installation, please close all the Chrome tabs opened on your machine. The setup program is provided in the form of an industry standard Windows MSI installer. You can download it from the SAP Software Center.
+When you install the Desktop Agent 2, this will automatically set up the web browser extension for Google Chrome and Microsoft Edge.
 
->The minimum version of the Desktop Agent supported by SAP Build Process automation is **2.0.20**.
+> To prevent issues during the installation, please close all the Chrome and Edge tabs opened on your machine. 
 
-1. Download the **latest version**  of the [MSI file extension](https://tools.hana.ondemand.com/#cloud).
+> The minimum version of the Desktop Agent supported by SAP Build Process automation is **2.0.20**.
 
-    > MSI version will be updated for every new release. Always download the latest version.
-
-    <!-- border -->![Link text e.g., Destination screen](tools.png)
-
+1. Launch the MSI file execution.
+   
 2. Select **Next** to begin the installation process.
 
     <!-- border -->![Desktop Agent Installation](02-desktop-agent-installation.png)
 
-3. In the **Installation type** pop-up, select the **Desktop Agent** option.
+3. On the **Installation type** pop-up, select the **Desktop Agent** option and choose **Next**.
 
     <!-- border -->![Desktop Agent Installation](03-desktop-agent-installation.png)
 
-4. Optional: choose **Browse** to change the destination of the installation folder.
+4. Optional: choose **Browse** to change the destination of the installation folder, choose **Next**.
 
     <!-- border -->![Desktop Agent Installation](04-desktop-agent-installation.png)
 
@@ -67,29 +69,37 @@ When you install the Desktop Agent, this will automatically set up the SAP Build
 
     <!-- border -->![Desktop Agent Installation](05-desktop-agent-installation.png)
 
-6. The installation process may take a few seconds to complete. An authorization request to bring change to the computer might appear, choose **OK** if so.
+    An authorization request to bring change to the computer might appear, choose **OK** if so.
 
     <!-- border -->![Desktop Agent Installation](06-desktop-agent-installation.png)
 
+    The installation process may take a few seconds to complete.
+
     <!-- border -->![Desktop Agent Installation](06-desktop-agent-installation2.png)
 
-7. Once the installation has been successfully completed, choose **Finish** and launch your Desktop Agent.
+6. Once the installation is successfully completed, choose **Finish** and launch your Desktop Agent.
 
     <!-- border -->![Desktop Agent Installation](07-desktop-agent-installation.png)
 
-    >Microsoft Edge and Chromium are used for the rendering of the Desktop Agent. If you use Edge, the Edge 'WebView2' component is mandatory: if not already installed on your machine, please install Edge WebView2 from the Microsoft website.
+    > Microsoft Edge and Google Chrome are used for the rendering of the Desktop Agent. If you use Edge, the Edge 'WebView2' component is mandatory: if not already installed on your machine, please install Edge WebView2 from the Microsoft website.
 
-    A Google Chrome extension and an Internet Explorer add-on are installed when you install the Desktop Agent but you have to enable them (at least the Google Chrome extension).
+    > A Google Chrome extension and a Microsoft Edge add-on are installed when you install the Desktop Agent but you have to enable them (at least the Google Chrome extension).
 
-8. Launch your Google Chrome then select the "Enable extension" button.
+7.  On Google Chrome, select **Manage extensions** under Extensions.
+   
+    <!-- border -->![Manage extensions](agent3-005.png)
 
-    <!-- border -->![Desktop Agent Installation](enable-extension.png)
+8.  Enable **SAP Build Process Automation Extension** if it is disabled.
 
-9. If the message and question (above) do not appear, open this URL in your Google Chrome: chrome://extensions/ and enable the "SAP Build Process Automation Extension" if it is disabled.
+    <!-- border -->![Desktop Agent Installation](chrome-extension2.png)
+    
+9.  Do the same for the Edge extension.
 
-    <!-- border -->![Desktop Agent Installation](chrome-extensions.png)
+    <!-- border -->![Enable extension](agent3-006a.png)
 
-    >You now need to register the Desktop Agent to finalize the installation.
+    
+    You now need to register the Desktop Agent to finalize the installation.
+
 
 
 ### Register the Desktop Agent Tenant
@@ -107,7 +117,7 @@ Once you've completed the installation steps of the SAP Build Process Automation
 
     <!-- border -->![Desktop Agent Installation](09-desktop-agent-installation.png)
 
-3.  On the SAP Build Process Automation homepage, go to **Settings**, choose **Agents List** and then select the **Register new agent...** button on the right-hand side of the screen.
+3.  Navigate to **SAP Build** lobby, go to **Control Tower > Agents** then choose **Register new agent** button on the right-hand side of the screen.
 
     <!-- border -->![Tenant Registration](10-tenant-registration.png)
 
@@ -131,28 +141,43 @@ Once you've completed the installation steps of the SAP Build Process Automation
 
     <!-- border -->![Tenant Registration](15-tenant-registration.png)
 
-
-
-### Add your agent
-
-
-1. Navigate back to the **Application Development**.
-
-2. Select **Settings**.
-
-3. Choose **Agents Management** then **Add Agent**.
-
-5. Select your agent.
-
-6. Choose **Add agent**.
-
-    <!-- border -->![Settings Agents Management](01-Settings-Agent-Management-Add-Agent-selected.png)
-
-7. Your agent is now added and ready to run.
+9. To check, go to **Control Tower** and select **Agents**.
 
     <!-- border -->![Settings Agent add](01-Settings-Agent-Management-Add-Agent-Added.png)
 
 
+### Create an environment to add your agent
+
+After you have installed the desktop agent, you need to add your agent so that it is able to run an automation.
+
+1. Navigate back to **Control Tower**. Select **Environments** under **Tenant Configuration**.
+    
+    <!-- border -->![Environment](agent3-020b.png)
+   
+2. Choose **Create Environment**.
+   
+3. In the **Create Environment** window do the following:
+
+    - Give your environment a name
+    - Select a color
+    - You may enter a short description
+    - Choose **Create**
+
+    <!-- border -->![Create Environment](agent3-020.png)
+
+4. Select the created environment to add your agent in it.
+
+    <!-- border -->![Select environment](agent3-020a.png)
+
+5. Select **Agent Management > Add Agent**.
+
+6. In the **Add Agent** window, select your agent and choose **Add agent**.
+
+    <!-- border -->![Agent Management Add](agent3-021.png)
+
+7.  Your agent is now added and ready to run.
+
+    <!-- border -->![Agent Management List](agent3-022.png)
 
 
 ---

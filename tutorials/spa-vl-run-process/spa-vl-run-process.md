@@ -47,8 +47,10 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
     <!-- border -->![Run](004.png)
 
+    
 
-2. Choose the environment and select **Deploy**
+2. Choose the environment and select **Deploy**.
+   
     <!-- border -->![Run](100.png)
 
     > Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different artifacts it has. Any errors during the deployment will be shown in the Design Console.
