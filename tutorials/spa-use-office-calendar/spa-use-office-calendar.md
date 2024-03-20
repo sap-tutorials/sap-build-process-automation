@@ -23,6 +23,9 @@ parser: v2
 - How to update, search for and delete a calendar event
 
 ## Intro
+
+> **IMPORTANT:** Please refer to sample **Manage calendar events with Microsoft Office 365** in the SAP Build Store if you face any issues while following the tutorial. To retrieve the sample refer to **step 13** of this tutorial
+
 In this tutorial, you will build an automation that will check availabilities of a candidate and a list of interviewers. Depending on attendees' availabilities, a meeting request for an interview is sent. You will then update the meeting request sent. Finally, you will search for the meeting request sent and delete it from the calendars.
 
 ---
@@ -728,9 +731,9 @@ As a last step, you will now delete the meeting request from the calendar.
     <!-- border -->![Test](76.png)
 
 
-### Retrieve sample project from the store
+### Retrieve sample project from the store (Optional)
 
-This sample project can be downloaded from the SAP Build Store. For more information on the **Manage calendar events with Microsoft Office 365** sample, please visit [SAP Business Accelerator Hub](https://hub.sap.com/package/eu10.storecontentdev.managecalendareventswithmicrosoft365/overview).
+This sample project can be downloaded from the SAP Build Store.
 
 To retrieve this sample, please follow these steps:
     

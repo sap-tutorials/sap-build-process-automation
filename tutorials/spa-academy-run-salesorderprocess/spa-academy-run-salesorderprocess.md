@@ -232,7 +232,9 @@ Tasks are the request for the users to participate in an approval or review proc
     You have successfully built Sales order Approval Business process and is now ready to integrate with SAP Build Apps.
 
     
-### Retrieve sample project from the store
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
 
 This sample project can be downloaded from the SAP Build Store.
 
@@ -240,25 +242,25 @@ To retrieve this sample, please follow these steps:
     
 1. From the SAP Build Lobby, navigate to Store.
    
-2. Search for the sample project: **Sales Order Management (GR04)**.
+2. Search for the sample project: **Sales Order Management (MI04)**.
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    <!-- border -->![Store](store1.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    <!-- border -->![Create](create1.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project.png)
+    <!-- border -->![Project](project1.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    <!-- border -->![Lobby](lobby1.png)
 
 ---
 
