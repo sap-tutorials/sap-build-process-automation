@@ -20,6 +20,8 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Intro
 
+> **IMPORTANT:** Please refer to sample **Sales Order Management (MI08)** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 6** of [Integrate an SAP UI5 Task in a Business Process](spa-integrate-sapui5-task-process).
+
 An SAP UI5 Task is a user task that could be integrated in a workflow or in a business process in SAP Build Process Automation. It's developed with SAP UI5 framework, thus it allows a big flexibility to use custom code.
 
 ---
