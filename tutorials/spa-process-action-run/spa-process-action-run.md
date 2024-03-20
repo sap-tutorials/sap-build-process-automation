@@ -123,7 +123,9 @@ parser: v2
 You've successfully built and executed an automated sales order approval process where the sales order is created in the backend S/4HANA Cloud system once the approval is done.
 
 
-### Retrieve sample project from the store
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
 
 This sample project can be downloaded from the SAP Build Store.
 
@@ -131,24 +133,24 @@ To retrieve this sample, please follow these steps:
     
 1. From the SAP Build Lobby, navigate to Store.
    
-2. Search for the sample project: **Sales Order Management (GR06)**.
+2. Search for the sample project: **Sales Order Management (MI06)**.
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    <!-- border -->![Store](store1.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    <!-- border -->![Create](create1.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project.png)
+    <!-- border -->![Project](proj.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    <!-- border -->![Lobby](lobby1.png)
 
 ---

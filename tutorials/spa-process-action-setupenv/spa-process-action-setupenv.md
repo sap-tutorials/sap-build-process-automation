@@ -17,6 +17,8 @@ parser: v2
   - How to add destination based environment variable in business process for action configuration
 
 ## Intro
+> **IMPORTANT:** Please refer to sample **Sales Order Management (MI06)** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 5** of [Run Business Process](spa-process-action-run).
+
 To configure action in business process, you will need to create an environment variable to access the destination that is created in SAP Business Technology Platform. A destination is needed to connect to the S/4HANA system to execute the APIs. The destination-based environment variable will be used to configure the action of the business process.
 
 

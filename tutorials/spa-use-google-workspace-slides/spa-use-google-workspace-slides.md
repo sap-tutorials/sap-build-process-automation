@@ -228,3 +228,34 @@ You will now test your automation.
 5. After opening it, you will see that two slides were successfully created in the presentation. The first with a header and a list, the other with the image.
 
     <!-- border -->![Test](21.png)
+
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
+
+
+To retrieve this sample, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **How to use Google Workspace**.
+   
+3. Choose **Add** > **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](proj.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobby.png)
+
+---

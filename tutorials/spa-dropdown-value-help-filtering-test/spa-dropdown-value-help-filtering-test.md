@@ -74,7 +74,9 @@ In this tutorial, you will release and deploy the project created in the previou
     You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing form.
 
     
-### Retrieve sample project from the store
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
 
 This sample project can be downloaded from the SAP Build Store.
 
@@ -86,21 +88,20 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    <!-- border -->![Store](store1.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    <!-- border -->![Create](create1.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project.png)
+    <!-- border -->![Project](project1.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    <!-- border -->![Lobby](lobby1.png)
 
 ---
-

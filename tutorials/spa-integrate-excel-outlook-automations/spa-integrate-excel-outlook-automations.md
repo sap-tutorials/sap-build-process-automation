@@ -134,3 +134,36 @@ SAP Build Process Automation has native integration to several Microsoft Office 
 
 8. After the automaton is executed, it has filtered the data (Town starting with a), hidden a column (Column F with title `storey_range`) and resultant Excel will look like this:
   <!-- border -->![Final Excel Data](27-AfterAutomationProcessing.png)
+
+### Learn Microsoft Office Best Practices (Optional)
+
+> To learn more about Excel and Outlook SDKs of SAP Build Process Automation, refer to the samples available in the store.
+
+To retrieve these samples, please follow these steps:
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Excel Best Practices**.
+   
+3. Choose **Add** > **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](excelSearch.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](createExcel.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](proj.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](lobbyExcel.png)
+
+6. Similarly, you can add **Outlook Best Practices(calendar)** and **Outlook Best Practices(mail)** from the Store to your lobby.
+    <!-- border -->![Lobby](outlookBoth.png)
+
+---
