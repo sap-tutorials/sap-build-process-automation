@@ -27,15 +27,29 @@ primary_tag: software-product>sap-build-process-automation
 
 Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the **Overview** section under the tab **Triggers**.
 
-1. Click **View** to see context of the workflow API.
+<!-- border -->![Trigger](viewTrigger.png)
 
-    <!-- border -->![Triggers](1.png)
+1. To view the context of the workflow API, navigate to the Lobby by clicking on the SAP logo.
+
+    <!-- border -->![Lobby](goToLobby.png)
+
+2. Choose **Control Tower** > **Environments**.
+
+    <!-- border -->![Environments](lobbyTower.png)
+
+3. Choose the environment in which the project is deployed.
+
+    <!-- border -->![Environment](public.png)
+
+3. You can view the trigger in the **Unattended Triggers** tab. Click on **View**.
+    
+    <!-- border -->![View](unattended.png)
 
 2. You can view the API URL and the payload to start the process.
 
 3. Copy the payload which would be used in the later steps.
 
-    <!-- border -->![Trigger Payload](2.png)  
+    <!-- border -->![Trigger Payload](apiContext.png)  
 
     Details of the payload:
 
