@@ -182,7 +182,9 @@ SAP Build Process Automation provides different applications for monitoring and 
 
 
     
-### Retrieve sample project from the store
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
 
 This sample project can be downloaded from the SAP Build Store.
 

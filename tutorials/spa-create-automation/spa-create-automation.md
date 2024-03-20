@@ -24,6 +24,9 @@ primary_tag: software-product>sap-build-process-automation
 
 
 ## Intro
+
+> **IMPORTANT:** Please refer to sample **Sales Order Management (MI03)** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 6** of [Run the Process With an Automation](spa-run-process-automation-decision).
+
 An Automation is a succession of steps to orchestrate multiple activities and applications on a local machine.
 
 ---
