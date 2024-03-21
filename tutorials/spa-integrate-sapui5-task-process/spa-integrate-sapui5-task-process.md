@@ -27,7 +27,7 @@ primary_tag: software-product>sap-build-process-automation
 
     > **CAUTION**: If you are using a SAP BTP Free Trial account, you are limited to a quota of 5 forms within your project. Please delete the **Approval Form** before you import your SAP UI5 form.
 
-    <!-- border -->![Process](001.png)
+    <!-- border -->![Process](01.png)
 
 2. Perform the following steps:
 
@@ -35,7 +35,7 @@ primary_tag: software-product>sap-build-process-automation
     - choose the **Import** button.
     - select **Form** from the contextual menu
 
-    <!-- border -->![Process](022a.png)
+    <!-- border -->![Process](02.png)
 
 3. Fill the Import Form details:
 
@@ -44,54 +44,54 @@ primary_tag: software-product>sap-build-process-automation
     - provide a **Name**, an identifier and a description for your approval form
     - choose the **Import** button
 
-    <!-- border -->![Process](022.png)
+    <!-- border -->![Process](03.png)
 
 4. The form should open in the **Forms Editor**:
 
     - if you want to open the *manifest.json*, choose the **hyper link** button
     - close the **Forms Editor**
 
-    <!-- border -->![Process](023.png)
+    <!-- border -->![Process](04.png)
 
 ### Update your Business Process
 
 1. Open your **Order Processing** business process
 
-    <!-- border -->![Process](024.png)
+    <!-- border -->![Process](05.png)
 
 2. Remove the current **Approval Form** designed by with **Forms Builder**
 
-    <!-- border -->![Process](025.png)
+    <!-- border -->![Process](06.png)
 
 3. Add your imported **Order Approval UI Task** as approval into your business process
 
-    <!-- border -->![Process](026.png)
+    <!-- border -->![Process](07.png)
 
 4. Connect the **reject** branch into the **Order Rejection Notification** form
 
-    <!-- border -->![Process](026a.png)
+    <!-- border -->![Process](08.png)
 
-5. Select the Oder Approval UI Task, fill and map the required fields:
+5. Select the Order Approval UI Task, fill and map the required fields:
 
     - in the **Subject** field, enter **Review and approve order**, select **Order Number** from Order Processing Form, enter **and**, select **Ship To Party** from Order Processing Form
     - set the **Users** under **Recipients** with **Process Started By** from Process Metadata
     - choose the **Inputs** tab
 
-    <!-- border -->![Process](027.png)
+    <!-- border -->![Process](09.png)
 
 6. Map the required form **Inputs** accordingly
 
-    <!-- border -->![Process](028.png)
+    <!-- border -->![Process](10.png)
 
 7. Select the **Order Confirmation Form** and map the required missing input accordingly
 
-    <!-- border -->![Process](029.png)
+    <!-- border -->![Process](11.png)
 
 8. Select the **Order Rejection Notification** form
 
     - map the required missing input accordingly
 
-    <!-- border -->![Process](030a.png)
+    <!-- border -->![Process](18.png)
 
 9. Save your project
 
@@ -102,11 +102,11 @@ primary_tag: software-product>sap-build-process-automation
 
 1. Deploy your **Project** and retrieve the **Form Trigger** link for testing
 
-    <!-- border -->![Process](037.png)
+    <!-- border -->![Process](12.png)
 
 2. Provide **Sales Order** data and test your process going through the approval process branch
 
-    <!-- border -->![Process](038.png)
+    <!-- border -->![Process](13.png)
 
 
 ### Check task in Inbox
