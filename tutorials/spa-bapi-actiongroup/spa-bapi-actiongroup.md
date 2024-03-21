@@ -24,6 +24,9 @@ parser: v2
 - How to configure the Action Group
 
 ## Intro
+
+> **IMPORTANT:** Please refer to sample **Connect BAPI using Action Group** in the SAP Build Store if you face any issues while following the tutorial. To retrieve the sample, refer to **step 7** of this tutorial.
+
 BAPI is a standard interface to the business object model in SAP products. BAPIs are the primary methods through which customer code and third-party applications interact with SAP products. An Action Group is collection of actions that once executed, return some response. BAPI is part of an Action Group whose actions help you to construct the parameters to execute the BAPI module and return the BAPI response.
 
 In this tutorial, you will create an Action Group Artifact and connect to `BAPI RFC_GET_TABLE` and query the **MAKT-Material Master** related table.
@@ -225,3 +228,29 @@ Each Action Group artifact can have multiple actions. Each Action corresponds to
     <!-- border -->![Action Project](031.png)
 
 With this, you have successfully created a BAPI Action Group that uses BAPI Action and retrieves the data from the backend in your automation.
+
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Connect BAPI using Action Group**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](lobby.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](project.png)
