@@ -115,7 +115,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     <!-- border -->![Action Project](ActionProject_10.png)
 
-    - Select All the fields by clicking on the checkbox of **Key** column.
+    - Select all the fields by clicking on the checkbox of **Key** column.
     - Uncheck the following fields so that they are added as *Input*.
 
     
