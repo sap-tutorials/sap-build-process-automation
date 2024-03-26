@@ -157,5 +157,30 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Monitor](05_Monitor_Process_and_Workflow.png)
 
+### Retrieve sample project from the store (Optional)
+
+   > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
+    
+1. From the SAP Build Lobby, navigate to Store.
+   
+2. Search for the sample project: **Invoice Approval Process - Sample**.
+   
+3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
+
+    <!-- border -->![Store](store.png)
+
+4. Choose **Create**.
+
+    <!-- border -->![Create](create.png)
+
+    Your project gets created in editable version. You may release and deploy it and run the project.
+    
+5. Navigate back to the lobby by clicking on the SAP logo.
+  
+    <!-- border -->![Project](lobby.png)
+
+    You can see your project is available in the lobby.
+  
+    <!-- border -->![Lobby](project.png)
 
 ---
