@@ -20,6 +20,9 @@ primary_tag: software-product>sap-build-process-automation
   - How to add a form to trigger this process
 
 ## Intro
+
+> **IMPORTANT:** Please refer to sample **Invoice Approval Process - Sample** in the SAP Build Store if you face any issues while following the tutorial. To retrieve the sample, refer to **step 6** of [Release, Deploy and Run the Process](spa-dox-run-process).
+
   You work in the finance department of the company and need to regularly process incoming scanned invoices.
   This is actually causing a lot of manual effort in order to extract the data out of the pdf or image, send to the approval of the manager before the data would be actually entered into the system.
   This needs to be automated since we are talking about multiple invoices which are coming every single day. Also we need to define the approval flow depending on the specific criteria (in this tutorial series, company is considered as criteria).
