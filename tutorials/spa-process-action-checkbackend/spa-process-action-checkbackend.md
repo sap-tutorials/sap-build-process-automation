@@ -46,7 +46,7 @@ Once the business process is successfully executed, a sales order will be create
 
 1. Open your S/4HANA Cloud System and select **Sales Orders** tab, and then click to open **Manage Sales Order** tile.
 
-    <!-- border -->![Access System](AccessSystem_01.png)
+<!-- border -->![Access System](AccessSystem_01.png)
 
 ### Check sales order created
 
