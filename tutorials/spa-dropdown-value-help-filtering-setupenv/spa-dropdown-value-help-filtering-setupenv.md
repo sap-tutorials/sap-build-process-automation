@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Setup Environment
+# Setup Environment for S/4HANA Business Partner API
 <!-- description --> Create destination in BTP cockpit and set it in SAP Build Process Automation
 
 ## You will learn
@@ -28,7 +28,7 @@ To configure action in business process, you will need to create an environment 
 1. To add the destination in your BTP Cockpit, do the following:
 
     - [Download](https://www.sap.com/registration/trial.f47300f6-63b8-4f22-b189-dbadd3c903d6.html?id=0050000000420272023) the S4 Business Partner destination file.
-    - Go to **Connectivity** >> **Destinations** in your **BTP Cockpit**.
+    - Go to **Connectivity > Destinations** in your **BTP Cockpit**.
     - Click **Import Destination** and select the downloaded destination file.
     - Update the **URL**, **User** and the **Password** based on your **S4HANACloud** setup.
     - **Save** the changes.
