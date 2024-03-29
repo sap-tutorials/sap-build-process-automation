@@ -9,8 +9,8 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Create Action Project in SAP Build Actions
-<!-- description --> Create an action project from OpenAPI specification
+# Create Sales Order Action Project in SAP Build Actions
+<!-- description --> Create an action project from Open API specification
 
 ## Prerequisites
 - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)

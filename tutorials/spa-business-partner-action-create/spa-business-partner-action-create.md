@@ -9,12 +9,12 @@ primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
-# Create Action Project in SAP Build Actions
+# Create Business Partner Action Project in SAP Build Actions
 <!-- description --> Create an action project from Open API specification
 
 ## Prerequisites
 - Access to a [SAP BTP tenant with SAP Build Process Automation](spa-subscribe-booster)
-- Complete the tutorial [Setup Environment](spa-dropdown-value-help-filtering-setupenv)
+- Complete the tutorial [Setup Environment for S/4HANA Business Partner API](spa-dropdown-value-help-filtering-setupenv)
 - S/4HANA Cloud system where Business Partner module is available
 - A communication user to access S/4HANA Business Partner inbound services based on `SAP_COM_0008` communication scenario ID
 
@@ -116,10 +116,10 @@ In this tutorial, you will create an action project based on Business Partner AP
     - In the side menu, select the **Tags** dropdown and choose **Main Output Array**.
     - Choose **Save**.
 
-    <!-- border -->![Action Project](ActionProject_17.png)
-
     > ### What is going on?
     > If this array is not marked as Main Output Array, the Actions Project will not be visible in the Form Editor as a data source.
+
+    <!-- border -->![Action Project](ActionProject_17.png)
 
 ### Test action project
 
