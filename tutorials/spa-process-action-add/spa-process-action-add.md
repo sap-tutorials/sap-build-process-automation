@@ -32,10 +32,13 @@ Learn how to add the action in the business process to connect to backend system
 
     <!-- border -->![Import Project](ImportProject_32.png)
 
-3. In the **Project Name** field, enter **Sales Order Approval**.
+3. In the **Create a Business Process project** pop-up:
+   
+    - In the Project Name field, enter **Sales Order Approval**.
+  
     > You can keep the default description or enter the description of your choice
 
-    - click **Create**.
+    - Click **Create**.
 
     <!-- border -->![Import Project](ImportProject_33.png)
 
@@ -44,24 +47,70 @@ Learn how to add the action in the business process to connect to backend system
     <!-- border -->![Import Project](ImportProject_34.png)
 
 
-### Add environment variable to access destination
+
+### Update Order Processing Form
 
 1. Click to open **Sales Order Approval** business process project from the **Lobby**.
+   
     > When you open for the first time then you might get an option to Accept.
+
+2. Select the **Order Processing Form**.
+
+    <!-- border -->![Order Processing Form](01.png)
+
+3. The form editor opens. Do the following changes:
+
+    - In the paragraph field, add **Purchase Order Details:**
+  
+    - Choose the three dots next to **Customer Name** field and select **delete**.
+  
+    <!-- border -->![Order Processing Form](02.png)
+
+    - Add a paragraph after **Order Date** and enter **Sales Order Details:**
+   
+    - Just below the **Sales Order Details** paragraph and before **Shipping Country** and **Expected Delivery Date** inputs, add the following input fields and enter the labels and select the **Required** checkbox:
+
+    |  **Form Fields**   |  **Field Settings with Label**
+    |  :------------- | :-------------
+    | Text     | Ship to Party (Customer)
+    | Dropdown | Sales Order Type
+    | Dropdown | Sales Organization
+    | Dropdown | Distribution Channel
+    | Dropdown | Division
+  
+    <!-- border -->![Order Processing Form](03.png)
+
+    - Now enter values in the dropdown fields such as:
+
+    |  **Dropdowns**   |  **Option value(s)**
+    |  :------------- | :-------------
+    | Sales Order Type    | OR
+    | Sales Organization | 1010/1110/1710
+    | Distribution Channel | 10
+    | Division | 00
+
+    <!-- border -->![Order Processing Form](04.png)
+
+    > You may enter any option of your liking depending on your available data set in your `S/4HANA system`.
+
+4. Save and close the form.
+
+
+### Add environment variable to access destination
+
+1. In the **Overview** tab, click to open **Order Processing** process.
 
     <!-- border -->![Import Project](ImportProject_35.png)
 
-1. Click to open **Order Processing** process.
-    - From your project overview section,
-        - In the process builder, click to open **Project Properties** from top-right corner of the page.
+2. In the process builder, click to open **Project Properties** from top-right corner of the page.
 
     <!-- border -->![Destination](destination_04.png)
 
-2. In the **Project Properties** pop-up, select **Environment Variables** and choose **Create** to create an environment variable for this business processes.
+3. In the **Project Properties** pop-up, select **Environment Variables** and choose **Create** to create an environment variable for this business process.
 
     <!-- border -->![Destination](destination_05.png)
 
-3. Enter the following to create an environment variable:
+4. Enter the following to create an environment variable:
 
     - **S4HANACloud** as **Identifier**.
     - Any **Description** of your choice.
@@ -71,32 +120,46 @@ Learn how to add the action in the business process to connect to backend system
 
     - Click **Create**.
 
-4. Once the environment variable is created, **Close** the project properties' pop-up.
+5. Once the environment variable is created, **Close** the project properties' pop-up.
 
     <!-- border -->![Destination](destination_06.png)
 
+
+### Configure Approval Form
+
+1. Select the **Approval Form**.
+
+2. In the **General** section, under **Subject** map the company to Order Processing Form > Ship to Party (Customer).
+   
+    <!-- border -->![Map input](06.png)
+  
+3. Choose **Inputs**, map **Customer Name** input with Order Processing Form > Ship to Party (Customer).
+   
+4. Choose **Save**.
+
+   <!-- border -->![Map input](05.png)
+
+
 ### Add action
 
-1. In the Process Builder canvas, click the **+** in output connector of **Auto Approval Notification**.
+1. In the Process Builder canvas, click the **+** in output connector of **Order Confirmation Form**.
 
     <!-- border -->![Add Artifact](action1.png)
 
-2. In the list, choose **Actions** > **Browse library**.
+2. In the list, choose **Action**.
 
     <!-- border -->![Browse Action](action2.png)
 
-3. In the action library pop up, enter the action name like Sales Order, to find the list of actions on sales order published by you in the library.
+3. In the **Browse library** pop up, click **Add** on the action you just created.
 
     <!-- border -->![Search Action](action3.png)
 
-4. From the filtered list of actions, click **Add** on the action which is to create sales order.
-
     > This will add the action to connect process to the backend system in your business process.
-
-    <!-- border -->![Add Action](action4.png)
 
 
 ### Configure action
+
+The action gets added to your process.
 
 1. In **General** tab of action parameters, choose the corresponding **Destination variable** that you previously created.
 
@@ -111,33 +174,41 @@ Learn how to add the action in the business process to connect to backend system
     |  `OrganizationDivision` |  Order Processing Form > Division
     |  `PurchaseOrderByCustomer` |  Order Processing Form > Order Number
     |  `SalesOrderType` |  Order Processing Form > Sales Order Type
-    |  `SalesOrganization` |  Order Processing Form > Sales Organisation
+    |  `SalesOrganization` |  Order Processing Form > Sales Organization
     |  `SoldToParty` |  Order Processing Form > Ship To Party (Customer)
 
 
     <!-- border -->![Map Inputs](action6.png)
 
 3. In **Outputs** tab, check to make sure all outputs are same as defined in the action project.
+   
+4. Save your work.
 
     <!-- border -->![Check Outputs](action7.png)
 
-4. Finally, update the connections of **Order Confirmation Form** activity in the business process such that once the order is confirmed the sales order is created in the backend system.
+5. Update the connections of **Auto Approval Notification** activity in the business process such that once the order is auto approved, the sales order is created in the backend system:
 
-    - select and delete the output connector from **Order Confirmation Form** to **End** activity.
+    - Select **+** below **Auto Approval Notification**.
 
     <!-- border -->![Select and delete connector](action9.png)
 
-    - Drag and drop the **+** in the output connector of **Order Confirmation Form** to the action activity.
+    - Select **Controls and Events**.
+  
+    <!-- border -->![Select and delete connector](action9a.png)
 
-    <!-- border -->![Drag and drop connector](action10.png)
+    - Select **Go to Step**.
 
-    > You can connect these nodes by simply dragging and dropping the lines. If a connected line can't be moved, simply click and delete the line, then drag and drop the resulting unconnected line to the proper node.
+    <!-- border -->![Select and delete connector](action9b.png)
+  
+    - Choose **Creates a sales order in S/4HANA cloud system**.
 
-    The final process should be same as shown below. Ensure that you have the right connections such that *Auto Approval Notification Form* and *Order Confirmation Form* connects to *Action* activity.
+    <!-- border -->![Select and delete connector](action9c.png)
+    
+    The final process should be same as shown below. Ensure that you have the right connections such that *Auto Approval Notification* and *Order Confirmation Form* connects to *Action* activity.
 
     <!-- border -->![Deployed](action11.png)
 
-5. Click **Save** to save your work.
+6. Click **Save** to save your work.
 
 ### Release business process project
 
@@ -160,7 +231,7 @@ There are two possible situations:
 
     <!-- border -->![Release first](release2.png)
 
-    - For the additional version, choose the type of version, add a **Version Annotation** if needed and click **Release**.
+    - For the additional version, choose the type of version, add a **Version Comment** if needed and click **Release**.
 
     <!-- border -->![Release new](release3.png)
 
@@ -173,7 +244,7 @@ There are two possible situations:
 
 ### Deploy released project
 
-You can deploy business process projects from each released version of the project in the Process Builder or through Lobby.
+You can deploy business process projects from each released version of the project in the Process Builder.
 
 1. From the released version of the business process project in the Process Builder, click **Deploy**.
 
