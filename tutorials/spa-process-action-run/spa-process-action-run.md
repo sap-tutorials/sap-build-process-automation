@@ -23,10 +23,11 @@ parser: v2
 
     <!-- border -->![Run Process](RunProcess-01b.png)
 
-2. In the process editor,
-    - select **Order Processing Form**.
-    - copy the **Form Link**.
-    - open it in new browser tab/window.
+2. In the process builder:
+   
+    - Select **Order Processing Form**.
+    - Copy the **Form Link**.
+    - Open it in new browser tab/window.
 
     <!-- border -->![Run Process](RunProcess-01a.png)
 
@@ -42,13 +43,13 @@ parser: v2
     | Order Date | select any previous date from date-selector |
     | Ship To Party | 17100006 <br> note: this is a customer ID in the <br> backend S/4HANA System|
     | Sales Order Type | OR <br> note: this stands for Standard Order  in the <br> backend S/4HANA System|
-    | Sales Organization | 1710 <br> note: this is the organisation ID already <br> existing in the backend S/4HANA System|
+    | Sales Organization | 1710 <br> note: this is the organization ID already <br> existing in the backend S/4HANA System|
     | Distribution Channel | 10 <br> note: this stands for Direct Sales distribution channel <br> in the backend S/4HANA System|
     | Division | 00 <br> note: this stands for Product Division <br> in the backend S/4HANA System|
-    | Shipping Country | any country name like India, Germany etc. |
+    | Shipping Country | any country name like France, India, Germany etc. |
     | Expected Delivery Date |  select any later date from the date-selector |
 
-    > As per the process, if the order amount is > 100000 then it will go for approval or else it will auto-approved.
+    > As per the process, if the order amount is > 100000 then it will go for approval or else it will be auto-approved.
 
     > The sales order information in the form has to be filled based on the available business object values in the backend system such that the sales order gets created successfully in S/4HANA system.
 
@@ -62,7 +63,7 @@ parser: v2
 
 2. In process instance detail page, select your process instance to inspect the instance details.
 
-    - Look at the context section. In the context, you will see the order details that you entered in the form.
+    - Look at the **Context** section. In the context, you will see the order details that you entered in the form.
 
     <!-- border -->![Run Process](RunProcess-04a.png)
 
@@ -137,11 +138,11 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store1.png)
+    <!-- border -->![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create1.png)
+    <!-- border -->![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
@@ -151,6 +152,6 @@ To retrieve this sample, please follow these steps:
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby1.png)
+    <!-- border -->![Lobby](lobby.png)
 
 ---
