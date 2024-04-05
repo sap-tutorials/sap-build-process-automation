@@ -154,7 +154,7 @@ primary_tag: software-product>sap-build-process-automation
 
 1. Monitor the business process
 
-    <!-- border -->![Process](17.png)
+<!-- border -->![Process](17.png)
 
 You have successfully completed the tutorial, integrating an SAP UI5 application in the order approval business process.
 
