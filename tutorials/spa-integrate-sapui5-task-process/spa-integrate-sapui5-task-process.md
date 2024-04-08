@@ -32,7 +32,7 @@ primary_tag: software-product>sap-build-process-automation
 2. Perform the following steps:
 
     - under the **Editable** version of your project
-    - choose the **Import** button.
+    - choose the **Import** button
     - select **Form** from the contextual menu
 
     <!-- border -->![Process](02.png)
@@ -55,19 +55,19 @@ primary_tag: software-product>sap-build-process-automation
 
 ### Update your Business Process
 
-1. Open your **Order Processing** business process
+1. Open your **Order Processing** business process.
 
     <!-- border -->![Process](05.png)
 
-2. Remove the current **Approval Form** designed by with **Forms Builder**
+2. Remove the current **Approval Form** designed by with **Forms Builder**.
 
     <!-- border -->![Process](06.png)
 
-3. Add your imported **Order Approval UI Task** as approval into your business process
+3. Add your imported **Order Approval UI Task** as approval into your business process.
 
     <!-- border -->![Process](07.png)
 
-4. Connect the **reject** branch into the **Order Rejection Notification** form
+4. Connect the **reject** branch into the **Order Rejection Notification** form.
 
     <!-- border -->![Process](08.png)
 
@@ -79,32 +79,32 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Process](09.png)
 
-6. Map the required form **Inputs** accordingly
+6. Map the required form **Inputs** accordingly.
 
     <!-- border -->![Process](10.png)
 
-7. Select the **Order Confirmation Form** and map the required missing input accordingly
+7. Select the **Order Confirmation Form** and map the required missing input accordingly.
 
     <!-- border -->![Process](11.png)
 
-8. Select the **Order Rejection Notification** form
+8. Select the **Order Rejection Notification** form.
 
     - map the required missing input accordingly
 
     <!-- border -->![Process](18.png)
 
-9. Save your project
+9. Save your project.
 
-10. Release your project
+10. Release your project.
 
 
 ### Deploy your project
 
-1. Deploy your **Project** and retrieve the **Form Trigger** link for testing
+1. Deploy your **Project** and retrieve the **Form Trigger** link for testing.
 
     <!-- border -->![Process](12.png)
 
-2. Provide **Sales Order** data and test your process going through the approval process branch
+2. Provide **Sales Order** data and test your process going through the approval process branch.
 
     <!-- border -->![Process](13.png)
 
@@ -112,7 +112,7 @@ primary_tag: software-product>sap-build-process-automation
 ### Check task in Inbox
 
 [OPTION BEGIN [SAP Build Process Automation]]       
-1. Open your **Inbox**
+1. Open your **Inbox**.
 
     <!-- border -->![Process](14.png)
 
@@ -128,7 +128,7 @@ primary_tag: software-product>sap-build-process-automation
     <!-- border -->![Process](16b.png)
 [OPTION END]
 
-[OPTION BEGIN [SAP Build Work Zone(Standard Edition)]]        
+[OPTION BEGIN [SAP Build Work Zone (Standard Edition)]]        
 >Pre-requisite: Complete [Configure SAP Build Work Zone, Standard Edition ](spa-configure-workzone)tutorial
 
 1. Once you have subscribed to SAP Build Work Zone, Standard Edition navigate to **Site Directory** and go to the site.
@@ -144,15 +144,17 @@ primary_tag: software-product>sap-build-process-automation
     <!-- border -->![Process](45b.png)
 
 4. Complete your process:
+   
     - Refresh your tasks
     - Check that the decision is reflected with the right notification task
+  
     <!-- border -->![Process](46b.png)
 
 [OPTION END]
 
 ### Process monitoring
 
-1. Monitor the business process
+1. Monitor the business process.
 
 <!-- border -->![Process](17.png)
 
