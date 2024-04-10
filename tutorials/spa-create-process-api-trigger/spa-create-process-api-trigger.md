@@ -12,7 +12,7 @@ primary_tag: software-product>sap-build-process-automation
 <!-- description --> Create an API trigger for the business process.
 
 ## Prerequisites
- - Acquire the template - Sales Order Management(MI01) by referring to tutorial [Acquire a Template Project From the Store](spa-acquire-businessprocess-store) **OR**
+ - Acquire the template - Sales Order Management (MI01) by referring to tutorial [Acquire a Template Project From the Store](spa-acquire-businessprocess-store) **OR**
  - Complete the mission [Build Your First Business Process with SAP Build Process Automation](mission.sap-process-automation)
 
 ## You will learn
@@ -30,11 +30,11 @@ You may also start the instance with an event trigger which on-boards and listen
 
 ### Create a data type
 
-A data type is an artifact describing a data structure that can be used as an input and/or an output parameter in automations or processes.
-You have two options to create the fields in data type. You can either import an excel file or define the fields manually.
+A data type is an artifact describing a data structure that can be used as an input and/or an output parameter in automations or processes. You have two options to create the fields in the data type. You can either import an excel file or define the fields manually.
 
-Once you have acquired the Template Project from the Store, your process looks as below.
-    <!-- border -->![template](28.png)
+Once you have acquired the Template Project from the Store, your process looks as below:
+
+<!-- border -->![template](28.png)
 
 [OPTION BEGIN [Import Excel File]]
 
@@ -115,7 +115,7 @@ In this option you will be defining each field with field name and type of field
 
     <!-- border -->![Process](29.png)
 
-2. From the **Editable** version of the **Sales Order Approvals Dev Tutorial** project, choose the three dots of the **Order Processing Form** and select **Remove** to delete the form.
+2. From the **Editable** version of the project, choose the three dots of the **Order Processing Form** and select **Remove** to delete the form.
 
     <!-- border -->![Delete Form](30.png)
 
@@ -125,9 +125,8 @@ In this option you will be defining each field with field name and type of field
 
 3. **Save** the project.
 
-4.  To add an API trigger for the process, click on the **Add a Trigger** > **Call an API**
-
-    >Since the bindings are lost, all the artifacts are in error state. Once the API trigger is created, the bindings will be updated.  
+4.  To add an API trigger for the process, click on the **Add a Trigger** > **Call an API**.
+ 
 
     <!-- border -->![New API Trigger](31a.png)
     <!-- border -->![New API Trigger](31b.png)
@@ -137,31 +136,38 @@ In this option you will be defining each field with field name and type of field
 
     <!-- border -->![Create API Trigger Pop Up](5.png)
 
+6. **Save** your project.
+
 
 ### Create inputs for the process
 
 1. Open the **Process Details** by clicking on the Canvas.
+   
     <!-- border -->![Process Details](45.png)
 
 2. Choose **Variables**. Then choose **Configure** to configure process inputs.
+   
     <!-- border -->![Configure](46.png)
 
 3. Delete the existing inputs by clicking on the delete button. 
-    >The existing inputs were configured from the **Order Processing Form**. Since we have removed it, we will need to configure new input parameters for the **Sales Order Trigger**.
-
+   
+    >The existing inputs were configured from the **Order Processing Form**. Since you have removed it, you will need to configure new input parameters for the **Sales Order Trigger**.
 
     <!-- border -->![Delete](47.png)
 
-4. Choose **Add Input** to add parameters.
-    Add the following parameter:
+4. Choose **Add Input** and add the following parameter:
 
     |  **Name**    | **Type**
     |  :------------- | :-------------
     |  `salesOrderDetails`       | `SalesOrder`
 
-   <!-- border -->![Delete](48.png)
+    Check the **Required** box and choose **Apply**.
 
-5. Once the trigger is created successfully, you can view the trigger under the **Triggers**  section in the **Overview** page.
+    <!-- border -->![Delete](49.png)
+
+5. **Save** your project.
+
+6. Once the trigger is created successfully, you can view the trigger under the **Triggers**  section in the **Overview** page.
 
     <!-- border -->![Triggers Overview](32.png)  
 
@@ -177,52 +183,97 @@ In this option you will be defining each field with field name and type of field
 
 ### Modify the process
 
-Since you have created an API trigger, the bindings were lost as mentioned in **Step 1**. Let's adjust the process with the new inputs configured for the API trigger.
+Since you have created an API trigger, the bindings were lost. Let's adjust the process with the new inputs configured for the API trigger.
 
 1. Choose the condition artifact and click on **Open Condition Editor**.
 
     <!-- border -->![Condition](33.png)
 
-2. Choose **Approval Form** to adjust the bindings.
+2. Enter the condition for `orderAmount`.
 
-    Modify the **General** section. Since the process would be started through an API, remove the Users **Process Started by** and enter your `EmailID` that was configured for the tenant.
+    <!-- border -->![Condition](8.3.png)
+
+    <!-- border -->![Condition](9.2.png)
+
+3. Enter the condition for `shippingCountry`.
+     
+    <!-- border -->![Condition](50.png)
+    
+    <!-- border -->![Condition](51.png)
+
+3. Click on **Apply**.
+
+4. Choose **Approval Form** to adjust the bindings. Modify the **General** section.
+  In the Subject field, do the following:
+
+    - Enter **Review and approve order**
+    - Select **Order Number** from Process Inputs
+    - Enter **from**
+    - Select **Customer Name** from Process Inputs
+    - Enter **company**
+
+    <!-- border -->![Condition](35a.png)
+
+    Since the process would be started through an API, remove the Users **Process Started by** and enter your `EmailID` that was configured for the tenant.
 
     <!-- border -->![Condition](35.png)
 
-3. Modify the **Inputs** section.
+5. Modify the **Inputs** section.
 
     <!-- border -->![Condition](36.png)
 
-4. Choose **Order Confirmation Form** to adjust the bindings.
+6. Choose **Order Confirmation Form** to adjust the bindings. Modify the **General** section.
+  In the Subject field, do the following:
 
-    Modify the **General** section. Since the process would be started through an API, remove the Users **Process Started by** and enter your `EmailID` that was configured for the tenant.
+    - Enter **Your order**
+    - Select **Order Number** from Process Inputs
+    - Enter **has been successfully received**
+
+    <!-- border -->![Condition](37a.png)
+
+    Since the process would be started through an API, remove the Users **Process Started by** and enter your `EmailID` that was configured for the tenant.
 
     <!-- border -->![Confirmation](37.png)
 
-5. Modify the **Inputs** section.
+1. Modify the **Inputs** section.
 
-    <!-- border -->![Inputs](38.png)
+    <!-- border -->![Inputs](38b.png)
 
-6. Choose **Order Rejection Notification Form** to adjust the bindings.
+2. Choose **Order Rejection Notification Form** to adjust the bindings. Modify the **General** section.
+  In the Subject field, do the following:
 
-    Modify the **General** Section. Since the process would be started through an API, remove the Users **Process Stared by** and enter your `EmailID` that was configured for the tenant.
+    - Enter **Your order**
+    - Select **Order Number** from Process Inputs
+    - Enter **is rejected by the supplier**
+
+    <!-- border -->![Condition](39a.png)
+
+    Since the process would be started through an API, remove the Users **Process Stared by** and enter your `EmailID` that was configured for the tenant.
 
     <!-- border -->![Rejection Form](39.png)
 
-7. Modify **Inputs** section.
+1. Modify **Inputs** section.
 
-    <!-- border -->![Inputs](40.png)
+    <!-- border -->![Inputs](40b.png)
 
-8. Choose **Auto Approval Notification Form** to adjust the bindings.
+2.  Choose **Auto Approval Notification Form** to adjust the bindings. Modify the **General** section.
+  In the Subject field, do the following:
 
-    Modify the **General** section. Since the process would be started through an API, remove the Users **Process Started by** and enter your `EmailID` that was configured for the tenant.
+    - Enter **Your order**
+    - Select **Order Number** from Process Inputs
+    - Enter **has been successfully received**
+
+    <!-- border -->![Condition](41a.png)
+
+    Since the process would be started through an API, remove the Users **Process Started by** and enter your `EmailID` that was configured for the tenant.
+
     <!-- border -->![Approval Notification](41.png)
 
-9. Modify the **Inputs** section.
+1.  Modify the **Inputs** section.
 
     <!-- border -->![Inputs](42.png)
 
-10. **Save** your project.
+2.  **Save** your project.
 
 
 
@@ -231,8 +282,6 @@ Since you have created an API trigger, the bindings were lost as mentioned in **
 1. **Release** the project.
 
     <!-- border -->![Release](43.png)
-
-    > **CAUTION:** If you have acquired the Sales Order Approvals template from the Store, you will need to delete the forms and processes that are above the quota limit and not being actively used in the tutorial to successfully release the Process with an API trigger.
 
 
 2. After successful release of the project, **deploy** the project.
