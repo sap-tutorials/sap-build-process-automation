@@ -10,16 +10,16 @@ parser: v2
 ---
 
 # Connect Action Project to Dropdown in Form
-<!-- description -->Use and  add a data source to the Form dropdown field in order to display information from external systems.
+<!-- description --> Use and add a data source to the form dropdown field in order to display information from external systems
 
 ## Prerequisites
-- Complete the tutorial [Create Action Project in Lobby](spa-business-partner-action-create)
+- Complete the tutorial [Create Business Partner Action Project in SAP Build Actions](spa-business-partner-action-create)
 
 ## You will learn
-- use Action Project to retrieve data from data source and show in dropdown in Form
+- How to use action project to retrieve data from data source and show in dropdown in form
 
 ## Intro
-In this tutorial, you will create a project using a template from the store and edit the trigger form to create a dropdown and populate it with the values from the Actions Project.
+In this tutorial, you will create a project using a template from the store and edit the trigger form to create a dropdown and populate it with the values from the action project.
 
 ### Import sample process as template
 
@@ -35,17 +35,21 @@ In this tutorial, you will create a project using a template from the store and 
    
     > You can keep the default description or enter the description of your choice
 
-    - click **Create**.
+    - Click **Create**.
 
     <!-- border -->![Import Project](ImportProject_33.png)
 
 4. Open **Lobby** and you will see your project created.
+   
+5. Click on the **Sales Order Approvals Project** to open it.
 
     <!-- border -->![Import Project](ImportProject_34.png)
 
+
 ### Create a dropdown in order processing form
 
-1.	Once the project is created, select the **Order Processing Form** from the side menu of artifacts.
+
+1.  Select the **Order Processing Form**.
 
     <!-- border -->![Action Project](005.png)
 
@@ -53,22 +57,28 @@ In this tutorial, you will create a project using a template from the store and 
 
     <!-- border -->![Action Project](006.png)
 
-3. Drag and drop the **Dropdown** artifact in the form and enter the name as **Customer Name**.
+    You will now replace the text field with a dropdown field.
+
+3. Drag and drop a **Dropdown** field in the form and enter the name as **Customer Name**.
+   
+4. Check the required box on the right side panel.
+   
+5. Choose **save**.
 
     <!-- border -->![Action Project](007.png)
 
+
 ### Add environment variable to access destination
 
-4. Select the **Settings** icon at the top-right corner.
+1. Select the **Settings** icon at the top-right corner.
 
     <!-- border -->![Action Project](009.png)
 
-
-4. In the **Environment Variables** tab select **Create**.
+2. In the **Project Properties** pop-up, select **Environment Variables** and choose **+ Create**.
 
     <!-- border -->![Action Project](010.png)
 
-4. In the popup that appears, enter the following details.
+3. Fill in the information:
 
     - Enter `S4_Business_Partner` as identifier.
     - Enter **Description** of your choice.
@@ -77,33 +87,39 @@ In this tutorial, you will create a project using a template from the store and 
 
     <!-- border -->![Action Project](011.png)
 
-4. Once the environment variable is created, close the popup.
+4. Once the environment variable is created, close the pop-up.
 
     <!-- border -->![Action Project](012.png)
 
 
 ### Add action project to dropdown
 
-1. For the **Customer Name** dropdown, choose **From data set** and select the value-helper for the **Data Source**.
+1. Select the **Customer Name** dropdown.
+   
+2. As **Data to display**, choose **Data Source**.
+   
+3. Select the value-help option for **Data Source** field.
 
     <!-- border -->![Action Project](008.png)
 
-1. In the **Browse Library** popup, choose **GET** as **Action Type**. Select the **Add** option for the action project you created earlier.
+4. In the **Browse Library** pop-up, choose **GET** as **Action Type**. 
+   
+5. Select the **Add** option for the action project you created earlier.
 
     <!-- border -->![Action Project](013.png)
 
-    > The action project will only be visible in the Browse Library popup if the Main Output Array is marked in the action response as described in previous tutorial.
+    > **CAUTION:** The action project will only be visible in the Browse Library pop-up if the Main Output Array is marked in the action response as described in previous tutorial.
 
-1. Select the `S4_Business_Partner` as the **Destination Variable** and select the value-help option for **Available Data** field.
+6. Select the `S4_Business_Partner` as the **Destination Variable** and select the value-help option for **Available Data** field.
 
     <!-- border -->![Action Project](014.png)
 
-1. Choose the **Customer Name** option from the dropdown.
+7. Choose the **Customer Name** option from the dropdown.
 
     <!-- border -->![Action Project](015.png)
 
-1. **Save** the form.
+8. **Save** the form.
 
     <!-- border -->![Action Project](016.png)
 
-With this, you have created a form with dropdown as input field and connected your action project to the dropdown.
+    With this, you have created a form with dropdown as input field and connected your action project to the dropdown.

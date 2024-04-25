@@ -13,7 +13,7 @@ parser: v2
 <!-- description --> Deploy the project and test the dropdown filtering
 
 ## Prerequisites
-- Complete the tutorial [Create a Project and add a Dropdown](spa-dropdown-value-help-filtering)
+- Complete the tutorial [Connect Action Project to Dropdown in Form](spa-dropdown-value-help-filtering)
 
 ## You will learn
 - to release and deploy the project
@@ -29,7 +29,7 @@ In this tutorial, you will release and deploy the project created in the previou
 
     <!-- border -->![Action Project](001.png)
 
-2.  In the Release Project popup, select **Release**.
+2.  In the **Release Project** popup, select **Release**.
 
     <!-- border -->![Action Project](002.png)
 
@@ -51,7 +51,7 @@ In this tutorial, you will release and deploy the project created in the previou
 
 ### Test the dropdown filtering in the form
 
-1. Open the project content on the left menu and select **Order Processing** process.
+1. Select the **Order Processing** process.
 
     <!-- border -->![Action Project](007.png)
 
@@ -69,9 +69,9 @@ In this tutorial, you will release and deploy the project created in the previou
 
     <!-- border -->![Action Project](010.png)
 
-    > The filtering is implemented only on the number of records mentioned in $top parameter of actions project, since only those records are fetched and shown. 
+    > The filtering is implemented only on the number of records mentioned in **$top** parameter of action project, since only those records are fetched and shown. 
 
-    You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing form.
+    You have successfully completed releasing and deploying your project and tested the dropdown filtering in the Order Processing Form.
 
     
 ### Retrieve sample project from the store (Optional)
@@ -105,3 +105,4 @@ To retrieve this sample, please follow these steps:
     <!-- border -->![Lobby](lobby.png)
 
 ---
+
