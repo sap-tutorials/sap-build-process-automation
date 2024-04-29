@@ -4,8 +4,8 @@ author_profile: https://github.com/pbujnicka
 keywords: tutorial
 auto_validation: true
 time: 60
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
-primary_tag: software-product>sap-build-process-automation
+tags: [ tutorial>beginner, sap-conversational-ai>sap-business-technology-platform]
+primary_tag: sap-conversational-ai>sap-build-process-automation
 parser: v2
 ---
 
@@ -439,20 +439,20 @@ Now, you will create a form for a requester, in case the changes will be necessa
 
 3. Provide changes in the form. At the beginning:
     
-    - Change the **Headline** to: **Innovation Ideas Form: Modify your form**
+    - Change the **Headline** to: **Innovation Ideas Form: Modify your request**
     - Change the **Paragraph** to: **Please make changes to the form based on the comments from the Council below:**
     - Add a **Text Area**, name it **Comments from the Approval Council**, and select **Read only** configuration
     - Add a **Headline 2**, name it **Data from your initial innovation form**
     - For the Inputs: Name of the Idea, Idea Description, Estimated Cost of the Innovation, Select the Category, select **Read only** configuration
   
-    <!-- border -->![CGV](042.png)
+    <!-- border -->![CGV](042aa.png)
 
     
 4. Add additional inputs at the end:
 
     | **Form Field**    | **Value** | **Option** |
     | -------- | ------- | ------- |
-    | Paragraph | Please modify your form below, based on the comments from the Council and your initial form. After that submit the form.   | |
+    | Paragraph | Please modify your request below, based on the comments from the Council and your initial form. After that submit the form.   | |
     | Text    |  Name of the Idea - Edited     | Required |
     | Number | Estimated Cost of the Innovation - Edited | Required |
     | Text Area | Idea Description - Edited | Required |
