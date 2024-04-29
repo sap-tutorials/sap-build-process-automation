@@ -4,8 +4,8 @@ author_profile: https://github.com/aviral-agarwal-sap
 keywords: tutorial
 auto_validation: true
 time: 10
-tags: [ tutorial>beginner, sap-conversational-ai>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: sap-conversational-ai>sap-build-process-automation
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
+primary_tag: software-product>sap-build-process-automation
 parser: v2
 ---
 
