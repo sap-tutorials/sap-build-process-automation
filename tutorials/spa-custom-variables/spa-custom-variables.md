@@ -10,7 +10,7 @@ parser: v2
 ---
 
 # Use Custom Variables for the Global Process
-<!-- description --> Add, modify and use custom variables in the process. 
+<!-- description --> Add, modify and use custom variables in the process
 
 
 ## Prerequisites
