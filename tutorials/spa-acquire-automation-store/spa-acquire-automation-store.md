@@ -177,6 +177,12 @@ The Store offers predefined content for your automation. Packages are categorize
     Once you are done designing your process, you may release and deploy your project.
 
 
+### Set the agent in unattended mode
+
+
+You need to create a matching agent attribute at this step. Please follow these steps to create an agent attribute in the tenant to add it to your agent and project: [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
+
+
 ### Release and deploy the business process project
 
 
@@ -205,12 +211,6 @@ Now you may release and deploy it in unattended mode.
     <!-- border -->![Deployed Project](17-deployed-project.png)
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
-
-
-### Set the agent in unattended mode
-
-
-You need to create a matching agent attribute at this step. Please follow these steps to create an agent attribute in the tenant to add it to your agent and project: [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
 
 
 ### Run the business process
