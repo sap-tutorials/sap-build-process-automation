@@ -4,8 +4,8 @@ author_name: Céline Audin
 author_profile: https://github.com/celineaudinsap
 auto_validation: true
 time: 15
-tags: [ tutorial>beginner, sap-conversational-ai>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: sap-conversational-ai>sap-build-process-automation
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
+primary_tag: software-product>sap-build-process-automation
 
 ---
 
