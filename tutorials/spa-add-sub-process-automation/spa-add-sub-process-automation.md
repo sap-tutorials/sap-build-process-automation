@@ -4,8 +4,8 @@ author_name: Djamai Hania
 author_profile: https://github.com/Haniadjamai
 auto_validation: true
 time: 40
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier ]
-primary_tag: software-product>sap-build-process-automation
+tags: [ tutorial>beginner, sap-conversational-ai>sap-business-technology-platform, tutorial>free-tier ]
+primary_tag: sap-conversational-ai>sap-build-process-automation
 ---
 
 # Add a Subprocess to an Automation
@@ -273,13 +273,13 @@ After completing the steps above, your process will look like this:
 
 4. Add an input parameter as following:
 
-    - In Parameter Name enter: `learner`.
+    - In Parameter Name enter: `learners`.
     - In Data Type choose: **Learner**.
     - Check **List**.
 
     <!-- border -->![subprocess](24.png)
 
-5. Click on the **For Each**, enter the value of Set looping List as `learner`.
+5. Click on the **For Each**, enter the value of Set looping List as `learners`.
 
     <!-- border -->![subprocess](25.png)
 
@@ -314,48 +314,48 @@ After completing the steps above, your process will look like this:
 
     <!-- border -->![subprocess](31_2.png)
 
-5. Configure the **Process Input** as such: 
+6. Configure the **Process Input** as such: 
 
-    - In Inputs Name enter: `learners`.
+    - In Inputs Name enter: `learner`.
     - In Inputs Type choose: **Learner**. 
 
-6. Select **Apply**.
+7. Select **Apply**.
 
     <!-- border -->![subprocess](32.png)
 
-7. Now, click on **Build Your First Business Process** form and configure the **General** section.
+8. Now, click on **Build Your First Business Process** form and configure the **General** section.
 
-8.  In the **Recipients** section, under **Users** select **email** from Process Inputs.
+9.  In the **Recipients** section, under **Users** select **email** from Process Inputs.
 
     <!-- border -->![subprocess](36a.png)
 
-9.  Select the **Boost Your Business Process with Automation** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
+10.  Select the **Boost Your Business Process with Automation** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
 
     <!-- border -->![subprocess](37a.png)
 
-10. Similarly, select the **Create Tables in the Form** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
+11. Similarly, select the **Create Tables in the Form** form to configure the **General** section. In the **Recipients** section, under **Users** select **email**.
 
     <!-- border -->![subprocess](38a.png)
 
-11. **Save** your work.
+12. **Save** your work.
 
-12. Go to the **Overview** tab. Click on the **Assign Learning Journey** automation.
+13. Go to the **Overview** tab. Click on the **Assign Learning Journey** automation.
 
     <!-- border -->![subprocess](38_1.png)
 
-13. Select **Learning Path** and enter the value of learners as `currentMember`.
+14. Select **Learning Path** and enter the value of learner as `currentMember`.
 
     <!-- border -->![subprocess](38_2.png)
 
-14. **Save** your work.
+15. **Save** your work.
 
-15. Navigate back to **Manage Trainees Learning Journey**, select **Assign Learning Journey** automation to configure the **Inputs** parameters.
+16. Navigate back to **Manage Trainees Learning Journey**, select **Assign Learning Journey** automation to configure the **Inputs** parameters.
 
-16. In the **Inputs** section, in **Select list** field, choose **Learners**.
+17. In the **Inputs** section, in **Select list** field, choose **Learners**.
 
     <!-- border -->![subprocess](38_4a.png)
 
-17. **Save** your work.
+18. **Save** your work.
 
 
 ### Release and deploy the project
