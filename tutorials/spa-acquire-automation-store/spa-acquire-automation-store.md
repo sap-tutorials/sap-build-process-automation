@@ -4,8 +4,8 @@ author_name: Céline Audin
 author_profile: https://github.com/celineaudinsap
 auto_validation: true
 time: 15
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform, tutorial>free-tier]
-primary_tag: software-product>sap-build-process-automation
+tags: [ tutorial>beginner, sap-conversational-ai>sap-business-technology-platform, tutorial>free-tier]
+primary_tag: sap-conversational-ai>sap-build-process-automation
 
 ---
 
@@ -96,7 +96,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
     <!-- border -->![Create Process Window](14-CreateProcessWindow.png)
 
-    **SAP Build Process Automation** with the just created process opens.
+    The Process builder opens with the just created process.
 
 5. Now click on the **+** below **Trigger**.
 
@@ -156,7 +156,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
     <!-- border -->![Process Final](21-process.png)
 
-    Lets test the automation.
+    Let's test the automation.
 
 19. Double click on **Get Processors Details** automation.
 
@@ -174,62 +174,13 @@ The Store offers predefined content for your automation. Packages are categorize
 
     <!-- border -->![Test Automation3](24-testAuto3.png)
 
-    Once you are done designing your process, you may release and deploy your project. Please make sure to run the project in attended mode as the automation **Get Processors Details** has a dialog that needs to be closed by the user and may put on hold the rest of the automation if the **OK** button is not clicked.
-
-
-### Execute the automation in attended mode
-
-
-Since the automation requires a human intervention, with a popup dialog, the automation has to be executed in **attended mode**. This means that the user must be present for the automation to run.
-
-You will trigger the automation using the project launcher.
-
->The project launcher allows you to launch your automation in attended mode in two different ways:
-
-> - You can launch your automations manually in attended mode from the agent using the Launch manually from the agent section.
-- You can configure events to trigger and launch your automations automatically using the Launch automatically by events section.
-
-In this tutorial, you will manually launch your automation from the agent by adding it in the Launch manually from the agent section of the project launcher.
-
-1. Navigate back to **SAP Build** lobby, choose the project.
-
-2. In the **SAP Build Process Automation** overview page, you can see all the artifacts that are part of the project. The project is **Editable** which means you can modify it.
-
-3. Select the **Get Processors Details** automation.
-
-    <!-- border -->![Overview Automation](25-automation.png)
-
-4. In the **Automation Details** panel, select **Info** and uncheck **Can only be started from another automation**.
-
-5. Choose **Save**.
-
-    <!-- border -->![Uncheck](26-uncheck.png)
-
-6. Now go back to the **SAP Build Process Automation** overview page, and select **p** which is the already created **Project Launcher**.
-
-    <!-- border -->![Project Launcher](27-project-launcher.png)
-
-    The project launcher **p** editor opens in the main panel of the SAP Build Process Automation.
-
-7. Select the three automations that are in the **Launch manually from the agent** section and choose the delete icon.
-
-    <!-- border -->![Delete automations](28-delete-automations.png)
-
-    On the **Project Launcher details** information right-hand side panel, you can see the automations available in your project.
-
-    >In order to execute the automation in attended mode you will need to add the automation to the project launcher
-
-7. In the **Project Launcher Details**, drag the automation **Get Processors Details** and drop it in the **Launch manually from the agent** section of the project launcher.
-
-8. Choose **Save**.
-
-    <!-- border -->![Drag automation](29-drag-automation.png)
+    Once you are done designing your process, you may release and deploy your project.
 
 
 ### Release and deploy the business process project
 
 
-Now you may release and deploy it in attended mode. You need to select this trigger type since the user needs to click on **OK**.
+Now you may release and deploy it in unattended mode.
 
 1. Choose **Release** and again **Release**.
 
@@ -237,57 +188,35 @@ Now you may release and deploy it in attended mode. You need to select this trig
 
 2. Now your project is released and you can deploy it. You can choose **Deploy**.
 
-    <!-- border -->![Release](12-Deploy.png)
+    <!-- border -->![Deploy](12-Deploy.png)
 
-    >Since this automation has to be executed in attended mode, you need to create a Trigger.
+3. Choose the environment and select **Deploy**.
 
-3. Select **Create a Trigger** and then **Next**.
+    <!-- border -->![Deploy](02.png)
 
-    <!-- border -->![Deploy Project](13-deploy-project.png)
+4. No need to **Define variables**, choose **Deploy**.
 
-4. Select **Attended** as a trigger type and **Next**.
-
-    <!-- border -->![Trigger type](14-trigger-type.png)
-
-5. Enter the configuration details and choose **Next**.
-
-    <!-- border -->![Configure trigger](15-configure-trigger.png)
-
-6. You may add an attribute, choose **Confirm** and then **Deploy**.
-
-    <!-- border -->![Advanced Settings](16-advanced-settings.png)
+    <!-- border -->![Deploy](03.png)  
 
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
-7. The project deployed successfully and is now ready to be executed.
+5.  The project deployed successfully and is now ready to be executed.
 
     <!-- border -->![Deployed Project](17-deployed-project.png)
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
 
 
-### Set the agent in attended mode
+### Set the agent in unattended mode
 
 
 You need to create a matching agent attribute at this step. Please follow these steps to create an agent attribute in the tenant to add it to your agent and project: [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
-
-1. Go to your System Tray and choose **Projects**.
-
-    <!-- border -->![Projects](18-systray-projects.png)
-
-2. Set the agent in attended mode.
-
-    <!-- border -->![Projects](19.png)
-
-3. Now your project is ready to be launched in attended mode. 
-
-    <!-- border -->![Start Project](19-start.png)
 
 
 ### Run the business process
 
 
-1. Navigate back to the **SAP Build Process Automation** overview page and select the **Order Processing** process.
+1. In the **Overview** page, select the **Order Processing** process.
 
     >Make sure you select the deployed version of the project.
 
@@ -309,18 +238,18 @@ You need to create a matching agent attribute at this step. Please follow these 
 
     <!-- border -->![Form submitted](25-form-submitted.png)
 
-7. Go back to your Desktop Agent, choose your project and **Activate**.
+7. Navigate to **SAP Build > Monitoring > Process and Workflow Instances**.
 
-    <!-- border -->![Activate Project](19-activate-project.png)
+    <!-- border -->![Monitoring](24.png)
 
-8. Now choose **Get Processors Details**.
+8. Select Status as Completed and choose **Order Processing**.
 
-    <!-- border -->![Get Processors Details](20-get-processors-details.png)
+    <!-- border -->![Monitoring](25.png)
 
-9. In the dialog popup window, enter **order 7991** as Order Reference.
-
-    <!-- border -->![Order 7991](21-order.png)
+9. Check the **Logs**. 
 
     The process has successfully ended.
+
+    <!-- border -->![Monitoring](26.png)
 
 ---
