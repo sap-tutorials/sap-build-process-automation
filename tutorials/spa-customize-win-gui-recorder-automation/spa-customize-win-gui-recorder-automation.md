@@ -131,7 +131,7 @@ You will create two **environment variables** (Password and Excel file path).
 
 3. **Create an Excel file with the order details**:
 
-    You may download the excel file used in this tutorial [here](https://github.com/sap-tutorials/sap-build-process-automation-Contribution/blob/main/tutorials/spa-customize-win-gui-recorder-automation/SalesOrder.xlsx).
+    You may download the excel file used in this tutorial [here](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-customize-win-gui-recorder-automation/SalesOrder.xlsx).
 
     > This data is used to create the **Sales order** in SAP ERP. You may change this data according to your **SAP ERP** system.
 
