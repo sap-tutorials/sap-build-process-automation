@@ -33,11 +33,11 @@ Action is a feature in SAP Build Process Automation to connect processes with ex
 2. Search for the sample project: **SAC HR Position Planning**.
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](.png)
+    <!-- border -->![Store](store1.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](.png)
+    <!-- border -->![Create](create1.png)
 
     Your project gets created in editable version.
 
