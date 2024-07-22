@@ -13,6 +13,7 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
  - [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
+ - Complete [Capture and Declare an Application to Trigger Technical Events](spa-technical-events-capture-declare)
 
 ## You will learn
   - How to design an automation that will retrieve order details from an application and read them on excel.
@@ -32,7 +33,7 @@ primary_tag: software-product>sap-build-process-automation
 
     <!-- border -->![Create Automation](04-create-automation.png)
 
-4. You will be navigated to the **Get Order Details Assistant** page.
+4. You will be navigated to the **Get Order Details Assistant** automation editor.
 
 
 ### Create the user task
@@ -76,7 +77,7 @@ You will now design the automation **Get Order Details Assistant**.
 
     <!-- border -->![Choose Automation](38-choose-automation.png)
 
-2. You will be navigated to the automation page where you can start dragging and dropping activities into the workflow.
+2. You will be navigated to the automation editor where you can start dragging and dropping activities into the workflow.
 
 3. In the **Automation Details** panel, under **User tasks**, choose the **Order Details Assistant** user task you just created and drag and drop it into the workflow.
 
@@ -183,7 +184,7 @@ Now you will create the Shipping Address Group that will group all the Shipping 
 
 8. Now perform the same actions for :
     - Shipping Address Street, setting the **Output Parameters** to `9 addressStreet`.
-    - Shipping Address Zip Code city, setting the **Output Parameters** to `10 addressZipCodeCity`.
+    - Shipping Address Zip Code City, setting the **Output Parameters** to `10 addressZipCodeCity`.
     - Shipping Address Region, setting the **Output Parameters** to `11 addressRegion`.
     - Shipping Address Country, setting the **Output Parameters** to `12 addressCountry`.
 
@@ -198,7 +199,7 @@ Now you will create the Shipping Address Group that will group all the Shipping 
 
 Download the [Order Details Assistant](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-technical-events-automation-user-task/OrderDetailsAssistant.xlsx) excel file.
 
-Once you have downloaded your excel template file, you will it to your artifacts.
+Once you have downloaded your excel template file, you will add it to your artifacts.
 
 1. Go back to the **Overview** tab.
 
@@ -262,9 +263,9 @@ You will now create the Excel Group that will group all the excel activities tha
 
     >This action opens the excel template that was just imported so that it can receive the details that need to be set in it.
 
-     This is the excel template **Order Details Assistant** that was just imported. You will now set the values of a specified cells range (order details) in the worksheet: Customer Name (E6), Order Amount (E7) and Order Number (E5).
+     This is the excel template **Order Details Assistant** that was just imported. You will now set the values of a specified cells range (order details) in the worksheet: Order Reference (D5), Customer Name (D6), and Order Amount (D7).
 
-     <!-- border -->![Set Values Order Details](59bis-set-values-order-details.png)
+     <!-- border -->![Set Values Order Details](02.png)
 
 11. Under **Automation Details**, search for the **Set Values (Cells)** activity.
 
@@ -274,7 +275,7 @@ You will now create the Excel Group that will group all the excel activities tha
 
 13. Select the activity and change the **Step Name** to **Set Values - Customer Name**.
 
-14. Under **Input Parameters**, set the **range Definition** to E6 and select the text in quotation marks.
+14. Under **Input Parameters**, set the **range Definition** to D6 and select the text in quotation marks.
 
 15. For the **values** select `5 customerName`.
 
@@ -284,8 +285,8 @@ You will now create the Excel Group that will group all the excel activities tha
 
     | Activity    | Step Name | range Definition | values
     | :-----------| :---------| :--------- | :-------
-    | Set Values  | Set Values - Order Amount | E7 | `6 orderAmount`
-    | Set Values  | Set Values - Order Reference | E5 | `7 orderReference`
+    | Set Values  | Set Values - Order Amount | D7 | `6 orderAmount`
+    | Set Values  | Set Values - Order Reference | D5 | `7 orderReference`
 
 17. Save your work.
 
@@ -299,9 +300,9 @@ You will now create the Excel Group that will group all the excel activities tha
 
   Now that you have set the values for Customer Name, Order Amount and Order Reference, you will set the values for the Shipping Address Details.
 
-  <!-- border -->![Set Values Shipping Address Details](62bis-set-values-shipping-address-details.png)
+  <!-- border -->![Set Values Shipping Address Details](03.png)
 
-1. Under **Automaton Details**, search for the **Group** control.
+1. Under **Automation Details**, search for the **Group** control.
 
 2. Drag and drop it into the workflow in the **Group Excel** just below **Set Values-Order Reference** activity.
 
@@ -317,7 +318,7 @@ You will now create the Excel Group that will group all the excel activities tha
 
 7. Select the activity and change the **Step Name** to **Set Values - Address Name**.
 
-8. Under **Input Parameters**, set the `rangeDefinition` to D12 and choose the text in quotation mark.
+8. Under **Input Parameters**, set the `rangeDefinition` to C12 and choose the text in quotation mark.
 
 9. For the **values**, select `8 addressName`.
 
@@ -327,10 +328,10 @@ You will now create the Excel Group that will group all the excel activities tha
 
     | Activity    | Step Name | range Definition | values
     | :-----------| :---------| :--------- | :-------
-    | Set Values  | Set Values - Street | D13 | `9 addressStreet`
-    | Set Values  | Set Values - Zip Code City | D14 | `10 addressZipCodeCity`
-    | Set Values  | Set Values - Region | D15 | `11 addressRegion`
-    | Set Values  | Set Values - Country | D16 | `12 addressCountry`
+    | Set Values  | Set Values - Street | C13 | `9 addressStreet`
+    | Set Values  | Set Values - Zip Code City | C14 | `10 addressZipCodeCity`
+    | Set Values  | Set Values - Region | C15 | `11 addressRegion`
+    | Set Values  | Set Values - Country | C16 | `12 addressCountry`
 
 11. Save your work.
 
@@ -356,116 +357,102 @@ You will now retrieve the values in the Line Items table and set them in excel.
 
 5. Double click on the **Order Details** screen to have a view of the screen.
 
-6. Under the **Screen** panel, search for the **For Each** control.
+6. Under the **Screen** panel, search for the **For Each** control. 
 
-7. Drag and drop the control on the Table Data that you previously declared.
-
-8. Select the Item: Table Data.
+7. Drag and drop the control on the Table Row that you previously declared.
+   
+8.  Select the Item: Table Row with Index: all.
 
     <!-- border -->![For Each](66-automation-for-each.png)
 
-    >Two **For Each** loops are created because the Line Items table is two dimensional.
+9.  Drag the **For Each** control inside the **Group Line Items**.
 
-9. Drag the **For Each** controls inside the **Group Line Items**.
-
-10. Change the **Step Names** of the first For Each loop to: **For Each Line Items Row** and the second loop to: **For Each Line Items Data**.
+10. Change the **Step Name** of the For Each loop to: **For Each Line Items Row**.
 
     <!-- border -->![For Each](67-automation-for-each.png)
 
-11. Now you will get the item values inside the table. To do so, search for a **Get element** activity.
+11. Now you will get the item values inside the table. Double click on the **Order Details** screen.
+    
+12. Search for the **Get Element** activity.
+    
+13. Drag and drop it into the workflow, just below the **For Each Line Items Row**.
 
-12. Drag and drop it into the workflow, just below the **For Each Line Items Data**.
+    <!-- border -->![Get element](67a.png)
 
-13. Change the **Step name** to **Get Line Items**.
+14. Change the **Step name** to **Get Line Items Table Product**.
+    
+15. Open the target editor to set the target element.
+    
+16. Select **Table Product** element.
+    
+17. Choose `23 index` as index of the element.
+    
+18. Choose **Confirm**.
 
-14. Under **Parameters** select the **Target** `24 currentMember`.
+    <!-- border -->![Get element](67b.png)
 
-15. For **Output Parameters**, change the text to `25 tableData`.
+19. For **Output Parameters**, change the text to `25 tableProduct`.
 
     <!-- border -->![Get Line Items](68-automation-get-line-items.png)
-
-16. Now under **Automation Details**, search for the **Condition** control.
-
-17. Drag and drop it into the workflow just below the **Get Line Items** activity.
-
-    <!-- border -->![Condition](69-automation-condition.png)
-
-18. Select the **Condition** to set the parameters.
-
-19. Choose the three little dots next to the **Condition Expression** field and then **Edit Formula**.
-
-    <!-- border -->![Condition](70-automation-edit-condition.png)
-
-20. Set the value of the **Edit Expression** window to `Step24.index === 0`.
-
-21. Choose **Save Expression**.
-
-    <!-- border -->![Condition](71-automation-edit-condition.png)
-
-22. Now choose **Add Condition** to add another condition.
-
-    <!-- border -->![Condition](72-automation-add-condition.png)
-
-23.  Choose the three little dots next to the **Condition Expression** field and then **Edit Formula**.
-
-24. Set the value of the **Edit Expression** to `Step24.index === 1`.
-
-25. Similarly, add 2 other conditions with the following values:
-
-    - `Step24.index === 2`
-    - `Step24.index === 3`
-
-26. Save your work.
-
-    > Please make sure not to copy and paste the above values directly in the Condition Expression field but to follow the steps mentioned above.
-
-    <!-- border -->![Condition](73-automation-condition.png)
 
     The last step will be to set these Line Items values in the Excel spreadsheet.
 
     <!-- border -->![Set Values Line Items](74bis-set-values-line-items.png)  
 
-27. To do so, under **Automation Details**, search for the **Set Values (cells)** activity.
+20. To do so, under **Automation Details**, search for the **Set Values (cells)** activity.
 
-28. Drag and drop the activity into the workflow, just below the first condition.
+21. Drag and drop the activity into the workflow, just below **Get Line Items Table Product**.
 
      <!-- border -->![Set Values](74-automation-set-values.png)
 
-29. Now select the activity and change the **Step name** to **Set Product Name**.
+22. Now select the activity and change the **Step name** to **Set Table Product**.
 
-30. Under **Input Parameters**, choose the three dots next to **range Definition**.
+23. Under **Input Parameters**, open the expression editor to set the **range Definition**.
 
-31. In the **Edit Expression** window, set the following expression: `"B" + (Step23.index + 23)`
+24. In the **Edit Expression** window, set the following expression: `"B" + (Step23.index + 23)`
 
      <!-- border -->![Set Values](75-automation-set-values.png)
 
-32. Under **Input Parameters**, set the **values** to `25 tableData`.
+25. Under **Input Parameters**, set the **values** to `24 tableProduct`.
 
-33. Save your work.
+26. Save your work.
 
      <!-- border -->![Set Values](76-automation-set-values.png)
 
-     You have set the values of the Product Name into the excel spreadsheet. Now you will do the same for the other Line Items such as Unit Price, Product Quantity and Total Price.
+     You have set the values of the Product Name into the excel spreadsheet. Now you will repeat the above steps for the other Line Items such as Unit Price, Product Quantity and Total Price.
 
-34. Similarly, drag and drop **Set Values (Cells)** activity under each condition branch.
+27. Similarly, drag and drop **Get Element** activities and **Set Values (Cells)** activities respectively into the workflow and for each Line Items: Unit Price, Product Quantity and Total Price.
+    
+28. For **Get Element** activities, perform the same actions using the details in the table below:
 
-35. Now perform the same actions using the details in the table below :
+    | Activity      | Step Name | target | Output Parameters
+    | :------------| :---------| :--------- | :-------
+    | Get Element  | Get Line Items Table Unit Price | Browse Orders > Order Details > Table Unit Price > index | `26 tableUnitPrice`
+    | Get Element  | Get Line Items Table Quantity | Browse Orders > Order Details > Table Quantity > index   | `28 tableQuantity`
+    | Get Element  | Get Line Items Table Total | Browse Orders > Order Details > Table Total > index  | `30 tableTotal`
+
+    > Please make sure not to copy and paste the `target` values directly in the field but to follow the steps mentioned above.
+
+29. For **Set Values (Cells)** activities, perform the same actions using the details in the table below :
 
     | Activity    | Step Name | range Definition | values
     | :-----------| :---------| :--------- | :-------
-    | Set Values  | Set Unit Price | `"C" + (Step23.index + 23)` | `25 tableData`
-    | Set Values  | Set Product Quantity | `"D" + (Step23.index + 23)` | `25 tableData`
-    | Set Values  | Set Total Price | `"E" + (Step23.index + 23)` | `25 tableData`
+    | Set Values (cells) | Set Table Unit Price | `"C" + (Step23.index + 23)` | `26 tableUnitPrice`
+    | Set Values (cells) | Set Table Quantity | `"B" + (Step23.index + 29)` | `28 tableQuantity`
+    | Set Values (cells) | Set Table Total | `"C" + (Step23.index + 29)` | `30 tableTotal`
 
     > Please make sure not to copy and paste the `rangeDefinition` values directly in the field but to follow the steps mentioned above.
+    
+    Your automation should look like this:
 
+    <!-- border -->![Final automation](76a.png)
 
 ### Design the automation - Save and release
 
 
 The last step consists in saving the workbook you created and releasing the excel instance.
 
-1. To do so, under **Automation Details**, search for the **Save Workbook** activity.
+1. To do so, under **Automation Details**, search for the **Save As Workbook** activity.
 
 2. Drag and drop the activity into the workflow in the **Group Excel** just below the **Group Line Items**.
 
@@ -475,9 +462,11 @@ The last step consists in saving the workbook you created and releasing the exce
 
 3. Now search for the **Release Excel Instance** activity.
 
-4. Drag and drop it into the workflow, just below **Save Workbook** activity.
+4. Drag and drop it into the workflow, just below **Save As Workbook** activity.
 
 5. Save your work.
+
+    <!-- border -->![Release Excel Instance](77a.png)
 
     This is what your final automation should look like:
 

@@ -13,6 +13,8 @@ primary_tag: software-product>sap-build-process-automation
 
 ## Prerequisites
 - [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
+- Complete [Capture and Declare an Application to Trigger Technical Events](spa-technical-events-capture-declare)
+- Complete [Create an Automation to Trigger Technical Events](spa-technical-events-automation-user-task)
 - [Install and Setup the Desktop Agent](spa-setup-desktop-3-0-agent)
 - [Agent Management Settings to Execute the Process with an Automation](spa-run-agent-settings)
 
@@ -24,7 +26,7 @@ primary_tag: software-product>sap-build-process-automation
 ### Create the project launcher
 
 
-Since the automation requires a human intervention, with a popup dialog, the automation has to be executed in attended mode. This means that the user must be present for the automation to run.
+Since the automation requires human intervention, with a popup dialog, the automation has to be executed in attended mode. This means that the user must be present for the automation to run.
 
 You will trigger the automation using the project launcher.
 
@@ -43,7 +45,7 @@ In this tutorial, you will manually launch your automation from the agent by add
 
     <!-- border -->![Project Launcher](85-project-launcher.png)
 
-    A project launcher editor opens in the main panel of **Build Process Automation**. On the Project Launcher details information right-hand side panel, you can see the automations available in your project.
+    A project launcher editor opens in the main panel of **Build Process Automation**. On the **Project Launcher details** right-hand side panel, you can see the automations available in your project.
 
 3. In the **Project Launcher Details**, drag the automation and drop it in the **Launch manually from agent** section of the project launcher.
 
@@ -75,24 +77,10 @@ Now you may release and deploy it in attended mode. You need to select this trig
     You can deploy Business Process projects from each released version of the project in the Process Builder or through the Lobby. Deploying the project makes it available for others to use it. Bare in mind that you can only deploy a released version of the project.
 
 4. From the released version of the Business Process project in the Process Builder, choose **Deploy**.
+   
+5. Select an **Environment** and choose **Deploy**.
 
     <!-- border -->![Deploy Project](82-deploy-project.png)
-
-5. Select **Create a Trigger** and then **Next**.
-
-    <!-- border -->![Deploy Project](83-deploy-project.png)
-
-6. Select **Attended** as a trigger type and **Next**.
-
-    <!-- border -->![Trigger type](84-trigger-type.png)
-
-7. Enter the configuration details and choose **Next**.
-
-    <!-- border -->![Configure trigger](85-configure-trigger.png)
-
-8. You may add an attribute, choose **Confirm** and then **Deploy**.
-
-    <!-- border -->![Advanced Settings](86-advanced-settings.png)
 
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
@@ -102,13 +90,54 @@ Now you may release and deploy it in attended mode. You need to select this trig
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
 
-7. Go to your System Tray and choose **Projects**.
+ ### Create an attended trigger 
 
-    <!-- border -->![Projects](88-systray-projects.png)
+1. Navigate back to **SAP Build > Control Tower > Environments**.
+   
+    <!-- border -->![Trigger](87a.png)
 
-8. Your project is ready to be launched in attended mode. Choose **Start**.
+2. Select your environment.
+ 
+    <!-- border -->![Environment](87b.png)
+
+3. Go to **Attended Triggers > Create Attended Trigger**.
+
+    <!-- border -->![Project](87c.png)
+
+4. In the **Create Attended Trigger** box, do the following:
+
+    - Select **Get Order Details** project
+    - Name the trigger `Attended_Trigger`
+    - Enter the **Schedule** details
+
+    <!-- border -->![Create attended trigger](83.png)
+
+5. Choose **Distribution** tab and configure the **Distribution restriction policy** to **Agents matching attributes**.
+   
+6. Choose **+ Add** and set your attribute and value.
+   
+7. Choose **Create**.
+
+    <!-- border -->![Distribution](84.png)
+
+8. Your Attended Trigger is created.
+
+    <!-- border -->![Attended Trigger](85.png)
+
+9. Go to your **Desktop Agent > Settings > Mode**  and make sure the agent is in attended mode. If not, activate the Attended Mode.
+
+    <!-- border -->![Attended mode](86.png)
+
+10. Choose **Projects**.
+   
+11.  Your project is ready to be launched in attended mode. Choose **Activate**. 
+
+    <!-- border -->![Projects](88.png)
+
+12. Choose **Start**.
 
     <!-- border -->![Start Project](89-start-project.png)
 
+    > **CAUTION:** Please make sure your **Browse Orders** application is open.
 
 ---
