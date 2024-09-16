@@ -24,7 +24,6 @@ parser: v2
 - How to use Microsoft 365 Cloud Office SDK activities
 
 ## Intro
-
 > **IMPORTANT:** Please refer to sample **Automate Microsoft Office 365 applications** in the SAP Build Store if you face any issues while following the tutorial. To retrieve the sample refer to **step 9** of this tutorial.
 
 After completing this tutorial, you will be able to search for an Excel file on SharePoint or OneDrive, download it and store it on your local machine, read Excel data for a given range and send an email via Outlook Online with the new Excel file as an attachment. 
@@ -383,7 +382,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
     
 ### Retrieve sample project from the store (Optional)
 
-This sample project can be downloaded from the SAP Build Store.
+This sample project can be downloaded from the SAP Build Store. 
 
 To retrieve this sample, please follow these steps:
     
