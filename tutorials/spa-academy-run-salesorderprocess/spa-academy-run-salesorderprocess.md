@@ -237,16 +237,16 @@ In order to trigger a process from SAP Build Apps, you must first publish the pr
 
 1. Open the SAP Build lobby.
 
-2. In the 3 dots menu next to your project, select Publish to Library.
+2. Select the Process row,  click the 3 dots menu, go to the **Versions** tab, select Publish to Library.
 
     A dialog lets you specify the version and other parameters. No need to change anything.
 
     Click **Publish**.
+    <!-- border -->![Publish to Library](publish-to-library.png)
 
 3. You should get a dialog that the process was published.
 
-     <!-- border -->![Publish to Library](publish-to-library.png)
-
+   
 
 ### Retrieve sample project from the store (Optional)
 
