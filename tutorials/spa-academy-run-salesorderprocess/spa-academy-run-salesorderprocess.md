@@ -231,7 +231,23 @@ Tasks are the request for the users to participate in an approval or review proc
 
     You have successfully built Sales order Approval Business process and is now ready to integrate with SAP Build Apps.
 
-    
+### Publish your process
+
+In order to trigger a process from SAP Build Apps, you must first publish the process – which makes the process discoverable from an SAP Build Apps project.
+
+1. Open the SAP Build lobby.
+
+2. In the 3 dots menu next to your project, select Publish to Library.
+
+    A dialog lets you specify the version and other parameters. No need to change anything.
+
+    Click **Publish**.
+
+3. You should get a dialog that the process was published.
+
+     <!-- border -->![Publish to Library](publish-to-library.png)
+
+
 ### Retrieve sample project from the store (Optional)
 
    > The entire project is available in the SAP Build Store as a sample and you can follow the below steps to retrieve the project and use it for reference.
