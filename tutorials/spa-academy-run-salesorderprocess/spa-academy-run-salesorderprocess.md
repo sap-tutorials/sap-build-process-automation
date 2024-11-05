@@ -86,7 +86,7 @@ In the **Lobby**, under **Control Tower**, choose **Environment**.
    
     <!-- border -->![Triggers](4b.png)
 
-2. Under the **Unattended Triggers**, open the trigger View
+2. Under the **Triggers**, open the trigger View
 
     <!-- border -->![Triggers](4c.png)
 
