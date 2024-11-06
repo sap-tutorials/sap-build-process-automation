@@ -9,7 +9,7 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 # Run the Sales Order Business Process
-<!-- description --> Release, deploy and run the business process
+<!-- description --> In this tutorial, you will release your Business Process project and test the process with an API trigger and get ready to integrate with SAP Build Apps.
 
 ## Prerequisites
   - Complete [Create Sales Order Business Process](spa-academy-salesorder) tutorial
@@ -21,9 +21,6 @@ primary_tag: software-product>sap-build-process-automation
   - How to access the tasks in Inbox of SAP Build Lobby.
   - How to retrieve the sample project from the Store.
   
-
----
-In this tutorial, you will release your Business Process project and test the process with an API trigger and get ready to integrate with SAP Build Apps.
 
 ### Release business process project
 
