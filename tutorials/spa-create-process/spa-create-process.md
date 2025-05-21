@@ -22,7 +22,6 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 ## Intro
-
 > **IMPORTANT:** Please refer to sample **Sales Order Management (MI01)** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 6** of [Run the Business Process](spa-run-process).
 
 With the new citizen automation user experience, you will get access to a new scope of opportunities for running your day-to-day workflows. In this tutorial, you will learn how a low-code and no-code tool can help you build the apps you need at the speed your business demands, using visual drag and drop tools for application development.
@@ -38,27 +37,36 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Build. You can access business application processes, company configured templates, and other resources for your end-to-end business process.
 
-    <!-- border -->![Lobby](001.png)
+    <!-- border -->
+    ![Lobby](001.png)
 
-2. Pick **Build an Automated Process**.
+2. Pick **Automated Process**, then choose **Next**.
 
-    <!-- border -->![Create a Project](002.png)
+    <!-- border -->
+    ![Create a Project](002.png)
 
-3. Select **Business Process**.
+3. Select **Process**, and then choose **Next**.
 
     > Business Process Projects are a collection of skills in SAP Build Process Automation. Projects are part of the internal business processes of a company and are defined based on business scenarios. A project can contain a set of processes, forms, automations and decisions, which are reusable artifacts.
 
-    <!-- border -->![Create a Project](003.png)
+    <!-- border -->
+    ![Create a Project](003.png)
 
 
-4. In the **Create a Business Process Project** dialog box, do the following:
+4. In the **Create Project** dialog box, do the following:
    
     - Enter a **Project Name**: Sales Orders Management
     - Enter a **Short Description**: Sales Orders Management Project
-    - Choose **Create**
+    - Choose **Review**
 
-    <!-- border -->![Project information](004.png)
+    <!-- border -->
+    ![Project information](004.png)
 
+
+5. In the **Create Project** dialog box, choose **Create**:
+
+    <!-- border -->
+    ![Project information](004b.png)
 
 ### Create a business process
 
@@ -73,7 +81,8 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > Inside a project, you can create a process. This process is equivalent to a workflow in any business scenario. You can create this process from different skills such as forms, decisions, automations.
 
-    <!-- border -->![Create Process](005.png)
+    <!-- border -->
+    ![Create Process](005.png)
 
     > Note that the form **Identifier** field is auto-filled.
 
