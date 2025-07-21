@@ -74,7 +74,7 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
     |  :------------- | :-------------
     |  **`sap.processautomation.enabled`**                         | **`true`**
     |  **`sap.applicationdevelopment.actions.enabled`**            | **`true`**
-    |  **`sap.applicationdevelopment.actions.enabled`**            | **`odata_gen`**
+    |  **`sap.build.usage`**            | **`odata_gen`**
 
  
 
