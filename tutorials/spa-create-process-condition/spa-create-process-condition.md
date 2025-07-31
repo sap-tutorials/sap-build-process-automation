@@ -33,19 +33,23 @@ Once the process with forms is designed, define which process flow should run ba
 
 1. To add a condition to a process open the **Process Builder**. Choose **+** below the Trigger. 
 
-    <!-- border -->![Process Condition](001a.png)
+    <!-- border -->
+    ![Process Condition](001a.png)
 
 2. Choose **Controls and Events**.
 
-    <!-- border -->![Process Condition](001d.png)
+    <!-- border -->
+    ![Process Condition](001b.png)
    
 3. Choose **Condition**.
 
-    <!-- border -->![Process Condition](001c.png)
+    <!-- border -->
+    ![Process Condition](001c.png)
 
 4. To configure the condition, choose **Open Condition Editor**.
 
-    <!-- border -->![Process Condition](002.png)
+    <!-- border -->
+    ![Process Condition](002.png)
 
     > Process content will contain a list of attributes that have been defined in previous skills. For example: in the screenshot below, you can see attributes from the trigger form. You will use this process content to configure different skills during business process modelling.
 
@@ -55,7 +59,8 @@ Once the process with forms is designed, define which process flow should run ba
     - Select **is less than**
     - Enter **100000** as the value
 
-    <!-- border -->![Process Condition](003.png)
+    <!-- border -->
+    ![Process Condition](003.png)
 
     You have configured your **if** branch to: **if Order Amount is less than 100000**.
 
@@ -72,11 +77,13 @@ Once the process with forms is designed, define which process flow should run ba
 
     > You can expand the **Summary** section to see how the process conditions are designed
 
-    <!-- border -->![Process Condition](004.png)
+    <!-- border -->
+    ![Process Condition](004.png)
 
 9. Both **If** and **Default** link branches are connected to the **Approval Form**.
 
-    <!-- border -->![Process Condition](006.png)
+    <!-- border -->
+    ![Process Condition](006.png)
 
     With this process condition, only the sales order above a specific amount will be sent for approval and the rest will be auto-approved. 
     
@@ -84,15 +91,18 @@ Once the process with forms is designed, define which process flow should run ba
 
 10. To create the new form, choose **+** below the **If**.
 
-    <!-- border -->![Process Condition](008a.png)
+    <!-- border -->
+    ![Process Condition](008a.png)
 
 11.  Choose **Form**.
 
-    <!-- border -->![Process Condition](008b.png)
+     <!-- border -->
+     ![Process Condition](008b.png)
 
 12. Choose **Blank form**.
 
-    <!-- border -->![Process Condition](008c.png)
+    <!-- border -->
+    ![Process Condition](008c.png)
 
 13. In the **Create Form** window:
 
@@ -100,11 +110,13 @@ Once the process with forms is designed, define which process flow should run ba
     - Enter a Description: **Notification form to inform auto approval of the sales order**
     - Choose **Create**
 
-    <!-- border -->![Process Condition](009.png)
+    <!-- border -->
+    ![Process Condition](009.png)
 
 14. Select **Open Editor** of the form.
 
-    <!-- border -->![Process Condition](009c.png)
+    <!-- border -->
+    ![Process Condition](009c.png)
 
 15. Design the notification form, the same way as in the previous chapter, to send another notification to the requester about auto-approval. Add **Layout fields**:
 
@@ -114,7 +126,8 @@ Once the process with forms is designed, define which process flow should run ba
     | Paragraph  | Your order has been received and we will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request:
     | Paragraph  | Your Sales Order Details:
 
-    <!-- border -->![Process Condition](009a.png)
+    <!-- border -->
+    ![Process Condition](009a.png)
 
 16. For all below **Input Fields**, enter the labels and select the **Read Only** checkbox.
 
@@ -132,7 +145,8 @@ Once the process with forms is designed, define which process flow should run ba
 
 18. **Save** your work.
 
-       <!-- border -->![Process Condition](009b.png)
+       <!-- border -->
+       ![Process Condition](009b.png)
 
 
 ### Configure auto-approval form
@@ -149,7 +163,8 @@ Once the process with forms is designed, define which process flow should run ba
 
 4. In the **Users** section, under **Recipients** select **Process Started By** from Process Metadata.
 
-    <!-- border -->![Process Condition](011.png)
+    <!-- border -->
+    ![Process Condition](011.png)
 
 5. Select **Inputs** section and configure the following inputs:
 
@@ -161,23 +176,28 @@ Once the process with forms is designed, define which process flow should run ba
 
 6. Choose **Save**.
 
-    <!-- border -->![Process Condition](012.png)
+    <!-- border -->
+    ![Process Condition](012.png)
 
 7. Below **Auto Approval Notification**, select **+**.
     
-    <!-- border -->![Process Condition](013a.png)
+    <!-- border -->
+    ![Process Condition](013a.png)
 
 8. Choose **Controls and Events**.
 
-    <!-- border -->![Process Condition](13b.png)
+    <!-- border -->
+    ![Process Condition](013b.png)
 
 9. Choose **End**.
 
-    <!-- border -->![Process Condition](13c.png)
+    <!-- border -->
+    ![Process Condition](013c.png)
 
 10.  **Save** your work.
 
-    <!-- border -->![Process Condition](014.png)
+     <!-- border -->
+     ![Process Condition](014.png)
 
     This completes the process design with condition criteria that will decide what process flow is executed and whether there will be an auto-approval or a one-step approval route.
 
