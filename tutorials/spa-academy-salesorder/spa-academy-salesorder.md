@@ -25,7 +25,6 @@ primary_tag: software-product>sap-build-process-automation
 ---
 
 ## Intro
-
 > **IMPORTANT:** Please refer to sample **Sales Order Management (MI04)** in the SAP Build Store if you face any issues while following the tutorials. To retrieve the sample refer to **step 6** of [Run the Sales Order Business Process](spa-academy-run-salesorderprocess).
 
 With the new citizen automation user experience, you will get access to a new scope of opportunities for running your day-to-day workflows. In this tutorial, you will learn how a low-code and no-code tool can help you build the business process you need at the speed your business demands, using visual drag-and-drop tools for application development.
@@ -41,17 +40,20 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Build. You can access business application processes, company configured templates, and other resources for your end-to-end business process.
 
-    <!-- border -->![Lobby](001.png)
+    <!-- border -->
+    ![Lobby](001.png)
 
-2. Pick **Build an Automated Process**.
+2. Select **Automated Process** and choose **Next**.
 
-    <!-- border -->![Create a Project](002.png)
+    <!-- border -->
+    ![Create a Project](002.png)
 
-3. Select **Business Process**.
+3. Select **Process** and choose **Next**.
 
     > Business Process Projects are a collection of skills in SAP Build Process Automation. Projects are part of the internal business processes of a company and are defined based on business scenarios. A project can contain a set of processes, forms, automations and decisions, which are reusable artifacts.
 
-    <!-- border -->![Create a Project](003.png)
+    <!-- border -->
+    ![Create a Project](003.png)
 
 
 4. In the **Create a Business Process project** dialog box, do the following:
@@ -60,13 +62,14 @@ There are many use cases where you can make a difference using SAP Build Process
 
         >Tip: Always use a name that would help users distinguish your workspace from others.
 
-    - Enter a **Short Description**: Sales Orders Management Project.
+    - Enter a **Description**: Sales Orders Management Project.
   
-    - Choose **Create**.
+    - Choose **Review**.
 
-    <!-- border -->![Project information](004.png)
+    <!-- border -->
+    ![Project information](004.png)
 
-
+5. In the **Create Project** dialog box, choose **Create**.
 
 ### Create a business process
 
@@ -84,7 +87,8 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > Inside a project, you can create a process. This process is equivalent to a workflow in any business scenario. You can create this process from different skills such as forms, decisions, automations.
 
-    <!-- border -->![Create Process](005.png)
+    <!-- border -->
+    ![Create Process](005.png)
 
     > The form **Identifier** field is auto-filled.
 
@@ -92,7 +96,8 @@ There are many use cases where you can make a difference using SAP Build Process
 
      This is a visual canvas on which you map out your business process from start to finish. Other process artifacts are then added to this canvas, with process controls and connectors used to decide how information flows when the process is running.
 
-    <!-- border -->![Canvas](6.11.png)
+     <!-- border -->
+     ![Canvas](6.11.png)
 
     In the next step, you will create a data type  which would be used to integrate with SAP Build Apps and SAP Build Process Automation.   
 
@@ -109,34 +114,38 @@ In this option, you will be importing an excel file to create the data type. Bas
 
 1.  Download [this](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/spa-academy-salesorder/SalesorderDatatype.xlsx) excel file for Sales Order datatype.
 
-    <!-- border -->![Create data type](6.6.png)
+    <!-- border -->
+    ![Create data type](6.6.png)
 
 2.  Navigate to your project. Click on the **Project Content** icon on the top left corner > **+** > **Create** > **Data Type** .
 
-    <!-- border -->![Create data type](6.png)
+    <!-- border -->
+    ![Create data type](6.png)
 
 3.  Name the data type **Sales Order**.
 
-    <!-- border -->![6.1](6.1.png)
+    <!-- border -->
+    ![6.1](6.1.png)
 
 4. Click on **Import Excel File**.
 
-    <!-- border -->![6.2](6.2.png)
+    <!-- border -->
+    ![6.2](6.2.png)
 
 5. Click on **Browse** to select the excel file.
 
-    <!-- border -->![6.4](6.4.png)
-
 6. Select **Import an Excel File**.
 
-    <!-- border -->![6.5](6.5.png)
+    <!-- border -->
+    ![6.5](6.5.png)
 
 
     Your final data type looks as below.
 
-    <!-- border -->![DataType](6.3.png)
+    <!-- border -->
+    ![DataType](6.3.png)
 
-5. Click **Save** to save the data type.
+
 
 [OPTION END]
 
@@ -148,15 +157,18 @@ In this option you will be defining each field with field name and type of field
 
 1.  Click on the **Project Content** icon on the top left corner > **+** > **Create** > **Data Type**.
 
-    <!-- border -->![Create data type](6.png)
+    <!-- border -->
+    ![Create data type](6.png)
 
 2.  Name the data type **Sales Order**.
 
-    <!-- border -->![6.1](6.1.png)
+    <!-- border -->
+    ![6.1](6.1.png)
 
 3. Click on **New Field** to add new fields to the data type **Sales Order**.
 
-    <!-- border -->![6.7](6.7.png)
+    <!-- border -->
+    ![6.7](6.7.png)
 
 
 4.  Repeat the process to add all the fields of the type as shown below.
@@ -177,7 +189,8 @@ In this option you will be defining each field with field name and type of field
 
     Your final data type looks as below.
 
-    <!-- border -->![DataType](6.3.png)
+    <!-- border -->
+    ![DataType](6.3.png)
 
 5. Click **Save** to save the data type.
 
@@ -192,23 +205,28 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
 1.  Back on your Order Processing process page, in the process builder canvas, click on **Add a Trigger**.
 
-    <!-- border -->![New API Trigger](7.png)
+    <!-- border -->
+    ![New API Trigger](7.png)
 
-2.  Choose **Call an API**.
+2.  Choose **API Trigger**.
 
-    <!-- border -->![New API Trigger](7a.png)
+    <!-- border -->
+    ![New API Trigger](7a.png)
 
-3.  Enter the name as **Sales Order Trigger**. The identifier is generated based on the name.
+3.  Enter the name as **Sales Order Trigger** and choose **Create**. The identifier is generated based on the name.
 
-    <!-- border -->![7.1](7.1.png)
+    <!-- border -->
+    ![7.1](7.1.png)
 
 4.  Open the **Process Details** side panel.
     
-    <!-- border -->![7.1](7.1a.png)
+    <!-- border -->
+    ![7.1](7.1a.png)
  
 5.  Choose **Variables**. Then choose **Configure** to configure inputs.
 
-    <!-- border -->![Inputs](7.2.png)
+    <!-- border -->
+    ![Inputs](7.2.png)
 
 6.  In the **Configure Process Inputs** window, choose **Add Input** to add parameters.
 
@@ -216,7 +234,7 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
     |  **Name**    | **Type**
     |  :------------- | :-------------
-    |  `salesorderdetails`       | `Sales Order`
+    |  `Sales Order Details`       | `Sales Order`
 
     Note: Type is a dropdown field which contains "Sales Order" as datatype.
 
@@ -224,7 +242,8 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
 8. **Apply** changes.
 
-    <!-- border -->![Add Inputs](7.3.png)
+    <!-- border -->
+    ![Add Inputs](7.3.png)
 
 9.  **Save**  the project.
 
@@ -232,13 +251,15 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
     >These input fields will be mapped to fields in SAP Build Apps.
 
-    <!-- border -->![Add Inputs](7.3a.png)
+    <!-- border -->
+    ![Add Inputs](7.3a.png)
   
 10. Select the **Sales Order Trigger** to view the outputs.
 
     The API trigger outputs are synchronized from the process inputs.
 
-    <!-- border -->![Add Inputs](7.31.png)
+    <!-- border -->
+    ![Add Inputs](7.31.png)
 
 ### Create and configure approval form
 
@@ -257,42 +278,48 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
 1. Go to the **Order Processing** process and choose **+** below the Trigger.
 
-    <!-- border -->![Approval](8a.png)
+    <!-- border -->
+    ![Approval](8a.png)
 
 2. Choose **Approval**.
 
-    <!-- border -->![Approval](8b.png)
+    <!-- border -->
+    ![Approval](8b.png)
 
 3. Choose **Blank Approval**.
 
-    <!-- border -->![Approval](8c.png)
+    <!-- border -->
+    ![Approval](8c.png)
 
 4. In the **Create Approval** dialog box, do the following:
     - In the Name field enter: **Approval Form**
     - In the Description field enter: **Form to approve or reject the sales order**
     - Choose **Create**
 
-    <!-- border -->![Approval Form](8.1.png)
+    <!-- border -->
+    ![Approval Form](8.1.png)
 
 4. Click on **Open Editor** to edit the form.
 
-    <!-- border -->![Edit form](8.3.png)
+    <!-- border -->
+    ![Edit form](8.3.png)
 
 5. Design the form by dragging and dropping the corresponding form elements as shown below.
 
+    |  **Field Settings with Label**                                                                      | **Form Fields** | **Configuration (Read Only)**
+    |  :-------------                                                                                     | :-------------  | :-------------
+    | Approve Sales Order                                                                                 | HeadLine 1      |   |
+    | A new order has been received. Please review and confirm whether the requirements can be met or not.| Paragraph       |   |
+    | Material                                                                                            | Text            | X |
+    | Order Amount                                                                                        | Number          | X |
+    | Customer Name                                                                                       | Text            | X |
+    | Expected Delivery Date                                                                              | Date            | X |
+    | I acknowledge that we have received your order and will process it based on the availability        | Checkbox        |   |
+    | Message to Buyer                                                                                    | Text Area       |   |
 
-    |  **Field Settings with Label**    | **Form Fields** | **Configuration (Read Only)**
-    |  :------------- | :-------------
-    | Approve Sales Order   | HeadLine 1 | |
-    | A new order has been received. Please review and confirm whether the requirements can be met or not.| Paragraph | |
-    | Material | Text | X |
-    | Order Amount | Number | X|
-    | Customer Name | Text | X
-    | Expected Delivery Date | Date | X|
-    | I acknowledge that we have received your order and will process it based on the availability | Checkbox | |
-    | Message to Buyer | Text Area | |
 
-    <!-- border -->![8.4](8.4.png)
+    <!-- border -->
+    ![8.4](8.4.png)
 
 
 6. **Save** the form.
@@ -304,20 +331,21 @@ Navigate back to the Process Builder canvas to create an Approval Form.
     - Enter **Please review**
     - Select **Material** from the sales order details
 
-    <!-- border -->![8.5](8.5.png)
+    <!-- border -->
+    ![8.5](8.5.png)
 
     In the **Recipients** section, enter your login ID (the email you used to sign into the SAP Build lobby).
 
-    <!-- border -->![8.5](8.41.png)
+    <!-- border -->
+    ![8.5](8.41.png)
     
-    > Don't copy and paste the email ID. Enter the email ID manually.
 
 8. Configure the inputs of the **Approval Form**. Navigate to Inputs and map the fields accordingly.
-   
+
+    <!-- border -->
+    ![8.6](8.6.png)
+
 9.  Choose **Save**.
-
-    <!-- border -->![8.6](8.6.png)
-
 
 ### Create and configure order approval notification form
 
@@ -327,15 +355,18 @@ In this step, you will create and design a form which will be sent as notificati
 
 1. To add a confirmation to the process, select **+** below the **Approve** option.
    
-    <!-- border -->![Notifications](9a.png)
+    <!-- border -->
+    ![Notifications](9a.png)
 
 2. Choose **Form**.
 
-    <!-- border -->![Notifications](9b.png)
+    <!-- border -->
+    ![Notifications](9b.png)
 
 3. Choose **Blank Form**.
 
-    <!-- border -->![Notifications](9c.png)
+    <!-- border -->
+    ![Notifications](9c.png)
 
 4. In the **Create Form** dialog box, do the following:
    
@@ -343,26 +374,29 @@ In this step, you will create and design a form which will be sent as notificati
     - In the Description field, enter **Notification form to inform whether the sales order is approved by the supplier**
     - Choose **Create**
 
-    <!-- border -->![Order confirmation form](9.1.png)
+    <!-- border -->
+    ![Order confirmation form](9.1.png)
 
 5. Click on **Open Editor** to edit the form.
 
-    <!-- border -->![9.2](9.2.png)
+    <!-- border -->
+    ![9.2](9.2.png)
 
 5. Design the form by dragging and dropping the corresponding Form elements as shown below.
 
-    |  **Form Fields**    | **Field Settings with Label** | **Configuration (Read Only)**
-    |  :------------- | :-------------
-    | Headline 1 | Order Confirmation | |
-    | Paragraph  |Your order has been received and accepted for delivery. We will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request: | |
-    | Text Area  | Message from the supplier: | X
-    | Text | Material | X
-    | Text | Customer Name | X
-    | Number | Order Amount | X
-    | Date | Expected Delivery Date | X
-    | Paragraph | Please press the SUBMIT button to acknowledge the order status.| |
+    |  **Form Fields**  | **Field Settings with Label**                                                                                                                                                                                                              | **Configuration (Read Only)**
+    |  :-------------   | :-------------                                                                                                                                                                                                                             | :-------------
+    | Headline 1        | Order Confirmation                                                                                                                                                                                                                         |   
+    | Paragraph         | Your order has been received and accepted for delivery. We will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request:                                 |   |
+    | Text Area         | Message from the supplier:                                                                                                                                                                                                                 | X |
+    | Text              | Material                                                                                                                                                                                                                                   | X |
+    | Text              | Customer Name                                                                                                                                                                                                                              | X |
+    | Number            | Order Amount                                                                                                                                                                                                                               | X |
+    | Date              | Expected Delivery Date                                                                                                                                                                                                                     | X |
+    | Paragraph         | Please press the SUBMIT button to acknowledge the order status.                                                                                                                                                                            |   |
 
-    <!-- border -->![9.3](9.3.png)
+    <!-- border -->
+    ![9.3](9.3.png)
 
 6. **Save** the form.
 
@@ -379,13 +413,15 @@ In this step, you will create and design a form which will be sent as notificati
     In this tutorial, to complete the process, you will play the dual role of Supplier and Seller. Hence, you would map your email ID in the Notification Form as well.
 
 
-    <!-- border -->![9.4](9.4.png)
+    <!-- border -->
+    ![9.4](9.4.png)
 
 8. Configure the inputs of **Order Confirmation Form**. Navigate to Inputs and map the fields accordingly.
    
 9. Choose **Save**.
 
-    <!-- border -->![9.5](9.5.png)
+    <!-- border -->
+    ![9.5](9.5.png)
 
 
 ### Create and configure order rejection notification through an email
@@ -396,34 +432,39 @@ In this step, you will send out an email notification to the Seller if the Sales
 
 1. To add an email notification to the process, select **+** below the **Reject** option.
    
-    <!-- border -->![Notifications](Mail_1a.png)
+    <!-- border -->
+    ![Notifications](Mail_1a.png)
 
 2. Choose **Email**.
 
-    <!-- border -->![Notifications](Mail_1b.png)
+    <!-- border -->
+    ![Notifications](Mail_1b.png)
 
-3.  Once you have successfully added Mail, you will configure **Mail Header** and **Mail Body**.
+3.  Once you have successfully added Email, you will configure **Mail Header** and **Mail Body**.
     
-    In the **To** section, enter your personal or work email address – **NOT** the email of the user you used to sign into the lobby.
+    In the **To** section, enter your personal or work email address.
 
-    >Our SAP Build Process Automation is connected to a SMTP (i.e., mail) server and this process will send out a real email, so you want to enter an email address that you can check – **NOT** the email of the user you used to sign into the lobby.
+    >Our SAP Build Process Automation is connected to a SMTP (i.e., mail) server and this process will send out a real email, so you want to enter an email address that you can check.
 
     In the **Subject** section, enter **Order Rejection Notification**.
     
-    <!-- border -->![Mail_2](mail_2.png)   
+    <!-- border -->
+    ![Mail_2](mail_2.png)   
 
 4. Click on **Open Mail Body Editor**.
 
     - Enter **Your order**
-    - Select **material** from the `salesorderDetails`
-    - Enter **has been rejected**
+    - Select **material** from the `Sales Order Details`
+    - Enter **has been rejected.**
     - Click on **Apply**
 
-    <!-- border -->![Mail_3](mail_3.png)  
+    <!-- border -->
+    ![Mail_3](mail_3.png)  
 
 5. Click on **Save**.
 
-    <!-- border -->![Mail_4](mail_4.png)  
+    <!-- border -->
+    ![Mail_4](mail_4.png)  
 
 ### Create and configure process condition
 
@@ -431,19 +472,23 @@ Once the process with forms is designed, define which process flow should run ba
 
 1. To add a condition to a process open the **Process Builder**. Choose **+** below the Trigger. 
 
-    <!-- border -->![Process Condition](11a.png)
+    <!-- border -->
+    ![Process Condition](11a.png)
 
 2. Choose **Controls and Events**.
 
-    <!-- border -->![Process Condition](11b.png)
+    <!-- border -->
+    ![Process Condition](11b.png)
    
 3. Choose **Condition**.
 
-    <!-- border -->![Process Condition](11c.png)
+    <!-- border -->
+    ![Process Condition](11c.png)
 
 4. To configure the condition, choose **Open Condition Editor**.
 
-    <!-- border -->![Process Condition](11.1.png)
+    <!-- border -->
+    ![Process Condition](11.1.png)
 
     > Process content will contain a list of attributes that have been defined in previous skills. For example: in the screenshot, you can see attributes from the API trigger. You will use this process content to configure different skills during business process modelling.
 
@@ -454,35 +499,35 @@ Once the process with forms is designed, define which process flow should run ba
     - Enter **100000** as the value
     - Choose **Apply**
 
-    <!-- border -->![Process Condition](11.2.png)
+    <!-- border -->
+    ![Process Condition](11.2.png)
 
-    You have configured your **if** branch to: **if Order Amount is greater than 100000**.
-
-4. Both **If** and **Default** link branches are connected to the **Approval Form**.
+    You have configured your **if** branch to: **if Order Amount is greater than 100000**. Both **If** and **Default** link branches are connected to the **Approval Form**.
    
-5. Choose **Save**.
+4. Choose **Save**.
 
-    <!-- border -->![Process Condition](11.3.png)
+    <!-- border -->
+    ![Process Condition](11.3.png)
 
-    With this process condition, only the sales order above a specific amount will be sent for approval and the rest will be auto-approved. 
-    
-    You have to add a notification form in the **If** connection to notify the requester of the auto-approval and terminate the process.
+    With this process condition, only the sales order above a specific amount will be sent for approval and the rest will be auto-approved. You have to add a notification form in the **If** connection to notify the requester of the auto-approval and terminate the process.
 
 ### Create and configure auto approval notification form
 
 In this step, you will create a notification form which would be received by supplier if the order is approved automatically without any approvals. With the Low-code capabilities, you need not to re-design the Form. Let's explore the **Duplicate** feature in SAP Build Process Automation.
 
-1. To add the new form, you will use the **Duplicate** feature. Select the **Overview**.
-    - Find **Order Confirmation Form** under the Artifacts section and select three dots **(...)**.
-    - Choose **Duplicate**.
+1. To add the new form, you will use the **Duplicate** feature. 
+    - Select the **Overview**.
+    - Find **Order Confirmation Form** under the Artifacts section and choose **Duplicate**.
 
-    <!-- border -->![Duplicate](10.png)
+    <!-- border -->
+    ![Duplicate](10.png)
 
     > Copy functionality is used to copy the artifacts between two different projects.
 
 2. In the **Duplicate Artifact** pop-up window, change the name to **Auto Approval Notification** and select **Duplicate**.
 
-    <!-- border -->![10.1](Autoapproval_1.png)
+    <!-- border -->
+    ![10.1](Autoapproval_1.png)
 
 3. The form is automatically opened in the form builder. Change the Auto approval form in the form builder to reflect the data for auto approval use case.
    
@@ -491,7 +536,7 @@ In this step, you will create a notification form which would be received by sup
     Modify the  **Layout fields**:
 
     | **Form Fields** | **Field Settings with Label** | **Configuration(Read Only)**
-    |  :------------- | :-------------
+    |  :------------- | :------------- | :-------------
     | Headline 1 | Automatic Order Confirmation | |
     | Paragraph  | Your order has been received and we will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request:| |
     | Paragraph  | Your Sales Order Details: | |
@@ -501,34 +546,39 @@ In this step, you will create a notification form which would be received by sup
     | Date | Expected Delivery Date | X
     | Paragraph | Please press the SUBMIT button to acknowledge the order status| |
 
-    
+       
+    <!-- border -->
+    ![Auto Approval](autoapproval_2.png)
+
 4. **Save** your work.
-   
-    <!-- border -->![Auto Approval](autoapproval_2.png)
 
 5. Go back to the Process Builder and add the auto approval form, choose **+** below the **Default** branch.
 
-    <!-- border -->![Auto Approval](Autoapproval_3a.png)
+    <!-- border -->
+    ![Auto Approval](Autoapproval_3a.png)
 
 6.   Choose **Form**.
 
-    <!-- border -->![Auto Approval](Autoapproval_3b.png)
+     <!-- border -->
+     ![Auto Approval](Autoapproval_3b.png)
 
 7.  Choose **Auto Approval Notification**.
 
-    <!-- border -->![Auto Approval](Autoapproval_3c.png)
+    <!-- border -->
+    ![Auto Approval](Autoapproval_3c.png)
 
 8. Configure the **General** section.
    
     Under Subject:
 
     - Enter: **Your order**
-    - Choose: **material** from `salesorderdetails`
+    - Choose: **material** from `Sales Order Details`
     - Enter: **has been approved automatically**
 
     Under **Recipients**, enter your login ID (email).
 
-    <!-- border -->![Auto Approval](11.7.png)
+    <!-- border -->
+    ![Auto Approval](11.7.png)
 
 9. Configure the **Inputs** section.
 
@@ -539,21 +589,26 @@ In this step, you will create a notification form which would be received by sup
     | Material | `material`
     | Order Amount | `orderAmount`
    
-8. Click on **Save**.
    
-    <!-- border -->![Auto Approval](11.8.png)
+    <!-- border -->
+    ![Auto Approval](11.8.png)
+
+8. Click on **Save**.
 
 9.  Below **Auto Approval Notification**, select **+**.
     
-    <!-- border -->![Process Condition](11.9a.png)
+    <!-- border -->
+    ![Process Condition](11.9a.png)
 
 10. Choose **Controls and Events**.
 
-    <!-- border -->![Process Condition](11.9b.png)
+    <!-- border -->
+    ![Process Condition](11.9b.png)
 
 11. Choose **End**.
 
-    <!-- border -->![Process Condition](11.9c.png)
+    <!-- border -->
+    ![Process Condition](11.9c.png)
 
 ### Save the project    
 
@@ -561,6 +616,8 @@ In this step, you will create a notification form which would be received by sup
 
     Once you have successfully completed the project, your final process looks as below.
 
-    <!-- border -->![Final Process](FinalProcess.png)
+    <!-- border -->
+    ![Final Process](FinalProcess.png)
 
     This completes the process design with condition criteria that will decide what process flow is executed and whether there will be an auto-approval or a one-step approval route. Now the business process is ready to integrate with SAP Build Apps.
+
