@@ -333,6 +333,16 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 
 9. Enter **User Name**: **`code`**, **Password**: **`me??Jam7`**, then choose **Continue**.
 
+    >**CREDENTIALS LOCKED?:** Please note that the credentials are used by multiple people, and can lead to the credentials being locked. If they are locked, you can skip the rest of the step for viewing the creation of the badge within the UI.
+    >
+    >You can view the newly created badge in the OData service manually, by opening a browser and entering the following URL and replacing with your badge ID:
+    >
+    >`https://badges.cfapps.eu10.hana.ondemand.com/service/BadgeRequests/Badges?$filter=badgeId%20eq%2034`
+    >
+    >You will see the details about the badge.
+    >
+    >![Badge in Odata service](CheckBadgeOdata.png)
+ 
 10. Find your Badge ID in the list of requests.
 
     <!-- border -->
