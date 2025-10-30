@@ -11,8 +11,6 @@ primary_tag: software-product>sap-build-process-automation
 # Acquire a Template Project From the Store
 <!-- description --> Import a sample business process from the SAP Build store.
 
-## Prerequisites
-- [Subscribe to SAP Build Process Automation](spa-subscribe-booster)
 
 ## You will learn
   - How to explore content in the SAP Build Store
