@@ -279,14 +279,23 @@ Since you have created an API trigger, the bindings were lost. Let's adjust the 
 
 ### Release and deploy the process with an API trigger
 
-1. **Release** the project.
+1. **Release** the project (button is in the upper right).
 
     <!-- border -->![Release](43.png)
 
+    Select the new released version by clicking **Show project version**.
 
-2. After successful release of the project, **deploy** the project.
+    <!-- border -->![Release](43a.png)
+
+2. After successful release of the project, click **Deploy** and deploy the project to the **Public** environment.
 
     <!-- border -->![Deploy](44.png)
+
+    >The **Public** environment is deprecated and soon you will have to create "shared" or your own environments and set permissions and other configurations.
+
+    On the **Triggers** dialog, click **Deploy** again.
+
+    <!-- border -->![Deploy](44a.png)
 
     You have successfully released and deployed the process and it is ready to consume via APIs.
 

@@ -56,7 +56,11 @@ You will import the business process titled **Sales Order Management (MI01)**.
 
     <!-- border -->![Create Project](3.Createfromtemplate.png)
    
-3. Name the project **Sales Order Management Developer Tutorial** and choose **Create**.
+3. Name the project starting with **Sales Order Management Developer Tutorial** and appending a unique string such as your initials (at least 3 letters).
+
+    >**IMPORTANT:** In a large organization, or large workshop or event, you will have many projects so it is vital to name your project uniquely, as projects much have a unique name.
+
+    Choose **Create**.
 
     <!-- border -->![Create Project](3a.png)
 
