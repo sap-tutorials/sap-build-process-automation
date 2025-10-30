@@ -26,7 +26,7 @@ primary_tag: software-product>sap-build-process-automation
 ### View an API trigger for the process
 
 Once you have successfully deployed the business process with an API trigger, you can view the API trigger in the **Overview** section under the tab **Triggers**.
-
+ 
 <!-- border -->![Trigger](viewTrigger1.png)
 
 1. To view the context of the workflow API, navigate to the Lobby by clicking on the SAP logo.
