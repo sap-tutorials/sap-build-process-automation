@@ -1,0 +1,13 @@
+{
+    "exportTime": "2025-12-01 11:36:21.427356474",
+    "destination": {
+        "Name": "sample-maintenance-service",
+        "Type": "HTTP",
+        "Description": "CAP Application",
+        "URL": "https://sample-maintenance-srv-sweet-nyala-od.cfapps.us10.hana.ondemand.com/odata/v4/maintenance-order",
+        "ProxyType": "Internet",
+        "Authentication": "BasicAuthentication",
+        "User": "TECHNICAL_USER",
+        "Password": "TECHNICAL_PASS"
+    }
+}
