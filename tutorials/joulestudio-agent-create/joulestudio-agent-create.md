@@ -130,7 +130,7 @@ Joule Studio's dedicated private environments provide safe, isolated spaces for 
 
 ### Configure the Agent Behavior
 
-For the first pass through this tutorial, simply use the texts provided below. Later, when you are experimenting, refer to [Best Practices for Creating Joule Agents](https://help.sap.com/docs/Joule_Studio).
+For the first pass through this tutorial, simply use the texts provided below. Later, when you are experimenting, refer to [Best Practices for Creating Joule Agents](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/880eb67d649247cf9c127dd37d168855.html).
 
 1. Add the following text to **Expertise**:
 
