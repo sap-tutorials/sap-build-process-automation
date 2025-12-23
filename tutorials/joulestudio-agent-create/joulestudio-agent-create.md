@@ -169,31 +169,26 @@ For the first pass through this tutorial, simply use the texts provided below. L
     <!-- border -->
     ![Expertise instruction context](expertise_instructions_context.png)
 
-4. Select **Model**.
+4. Select **Model Settings**.
 
     You can leave the defaults as they are. You can experiment with these later.
 
     <!-- border -->
     ![Model](model.png)
+    
+    > The Agent Execution Steps allow you to add pre-processing steps and post-processing steps. This forces the agent to decompose the steps to improve planning, reasoning and optimizes the response the agent will output.
 
-5. In **Advanced Configuration**, leave the check boxes unchecked. You can experiment with these later. 
-
-    <!-- border -->
-    ![Advanced configuration](advanced_configuration.png)
-
-    > The Advanced Configuration allows you to add pre-processing steps and post-processing steps. This forces the agent to decompose the steps to improve planning, reasoning and optimizes the response the agent will output.
-
-6. Scroll down to the **Tools** section, and select **Joule Skill** from the **Add Tool** dropdown.
+5. Scroll down to the **Tools** section, and select **Joule Skill** from the **Add Tool** dropdown.
 
     <!-- border -->
     ![Add tool Joule skill](add_tool_joule_skill.png)
 
-7. Select all the skills and choose **Add**.
+6. Select all the skills and choose **Add**.
 
     <!-- border -->
     ![Seöect skills](select_skills.png)
 
-8. Save the agent
+7. Save the agent
 
     <!-- border -->
     ![Save agent](save_agent.png)
