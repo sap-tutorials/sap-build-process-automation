@@ -49,7 +49,8 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 1. If you do not have an environment already, go to **Control Tower** **->** **Environments** and create one.
 
     <!-- border -->
-    ![Run](environments.png)
+    ![Run](101.png)  
+    ![Run](102.png)
 
 2. Once the project is released successfully, change to the released version and choose **Deploy** in the top-right corner of the screen.
 

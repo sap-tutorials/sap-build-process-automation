@@ -33,12 +33,12 @@ There are many use cases where you can make a difference using SAP Build Process
 ### Create a business process project
 
 
-1. In the **Lobby**, choose **Create**.
+1. In the **Lobby**, click on **Create**. Then choose **Create**.
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Build. You can access business application processes, company configured templates, and other resources for your end-to-end business process.
 
     <!-- border -->
-    ![Lobby](001.png)
+    ![Lobby](006.png)
 
 2. Pick **Automated Process**, then choose **Next**.
 
@@ -66,7 +66,12 @@ There are many use cases where you can make a difference using SAP Build Process
 5. In the **Create Project** dialog box, choose **Create**:
 
     <!-- border -->
-    ![Project information](004b.png)
+    ![Project information](004b.png)  
+
+6. If a **Disclaimer** page appears after the project is created, click on **Accept**.  
+
+     <!-- border -->  
+     ![Disclaimer](007.png)
 
 ### Create a business process
 

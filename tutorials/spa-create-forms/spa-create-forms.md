@@ -170,7 +170,7 @@ You can create these different forms using the **Form Builder** embedded in the 
 9.	**Save** the form.
 
     <!-- border -->
-    ![Approval](013.png)
+    ![Approval](036.png)
 
 
 ### Configure an approval form
@@ -294,7 +294,7 @@ After the user approves or rejects the request, the next step is to create notif
 8.	**Save** the form.
 
     <!-- border -->
-    ![Notifications](025.png)
+    ![Notifications](037.png)
 
 8. Go back to the process builder to map the process content with the form input fields.
 
@@ -408,6 +408,6 @@ After the user approves or rejects the request, the next step is to create notif
     With this you have completed the process design of your business process. You have experienced building a process in a completely no-code environment and with no technical know-how. You used the process builder to create a one-step approval process with trigger form, approval form and notification forms.
     
     <!-- border -->
-    ![Notifications](035.png)
+    ![Notifications](038.png)
 
 ---
