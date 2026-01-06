@@ -64,7 +64,11 @@ Once the process with forms is designed, define which process flow should run ba
 
     You have configured your **if** branch to: **if Order Amount is less than 100000**.
 
-6. Similarly, add one more condition. Select  **Add Group**.
+6. Similarly, add one more condition. Select  **Add Group**.  
+
+    <!-- border -->
+    ![Add Groupe](015.png)
+
 
 7. In the group section select **Any** to make it **OR** conditional group. Select conditions:
 
@@ -197,7 +201,7 @@ Once the process with forms is designed, define which process flow should run ba
 10.  **Save** your work.
 
      <!-- border -->
-     ![Process Condition](014.png)
+     ![Process Condition](016.png)
 
     This completes the process design with condition criteria that will decide what process flow is executed and whether there will be an auto-approval or a one-step approval route.
 
