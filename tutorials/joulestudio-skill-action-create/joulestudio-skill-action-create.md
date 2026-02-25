@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant with Joule and Joule Studio
+- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 
 
@@ -29,7 +29,7 @@ Actions are used in **SAP Build Process Automation** to connect processes with e
 
 In this tutorial, you will create an action project for accessing business partner information from an OData service representing an SAP system. You will also create an action project for creating a badge request via an OData service representing a third-party system.
 
-
+ 
 
 
 ### Create action project for BusinessPartner service
@@ -99,20 +99,22 @@ In this tutorial, you will create an action project for accessing business partn
 
 14. Choose the **Test** tab, then choose **Test**.
 
-    <!-- border -->
-    ![Action response](joulestudio-actions-mock-response-2.png)
-
 15. Inspect the response and then choose **Save**.
 
     <!-- border -->
-    ![Action release](joulestudio-actions-mock-release.png)
+    ![Action response](joulestudio-actions-mock-response-2.png)
 
 16. Choose **Release**, then in the popup choose **Release**.
 
     <!-- border -->
-    ![Action publish](joulestudio-actions-mock-publish.png)
+    ![Action release](joulestudio-actions-mock-release.png)
 
 17. Choose **Publish**, and then in the popup choose **Publish**.
+
+    <!-- border -->
+    ![Action publish](joulestudio-actions-mock-publish.png)
+
+
 
 ### Create action project for Badge Service
 
@@ -129,42 +131,42 @@ In this tutorial, you will create an action project for accessing business partn
 
 5. Choose **Next**.
 
+6. Enter a name and description, then choose **Create**.
+
     <!-- border -->
     ![Enter a name and description](joulestudio-actions-browse-name-2.png)
 
-6. Enter a name and description, then choose **Create**.
+7. Select the five actions shown below, then choose **Add**.
 
     <!-- border -->
     ![Select operations](joulestudio-actions-badge-select.png)
 
-7. Select the five actions shown.
 
-8. Choose **Add**.
 
-9. Choose the action **POST Invoke action createBadge** and then choose the **Output** tab.
+8. Choose the action **POST Invoke action createBadge** and then choose the **Output** tab.
 
-10. Change the **Type** of **badgeId** to **number**.
+9. Change the **Type** of **badgeId** to **number**.
 
     <!-- border -->
     ![Adjust the output](joulestudio-actions-badge-output-change.png)
 
-11. On the **Input** tab, remove the **processInstanceId** field by selecting it then choosing **Remove**.
+10. On the **Input** tab, remove the **processInstanceId** field by selecting it then choosing **Remove**.
 
     <!-- border -->
     ![Adjust the input](joulestudio-actions-badge-input-change.png)
 
-12. Choose **Save**.
+11. Choose **Save**.
 
-13. Choose **Release**.
+12. Choose **Release**.
 
-14. Choose **Publish**, and then in the popup choose **Publish**.
+13. Choose **Publish**, and then in the popup choose **Publish**.
 
-15. Choose action **POST Invoke action createBadge** and then choose the **Test** tab.
+14. Choose action **POST Invoke action createBadge** and then choose the **Test** tab.
 
     <!-- border -->
     ![Test the action](joulestudio-actions-badge-test.png)
 
-16. Enter the following in the Test Input Values fields.
+15. Enter the following in the Test Input Values fields.
 
     |  Name                    | Value         
     |  :-------------          | :-------------      
@@ -174,12 +176,12 @@ In this tutorial, you will create an action project for accessing business partn
     |  **`communityid`**       | **`john.doe@bestrunsap.com`**
     |  **`businesspartnerid`** | **`1003764`**
 
-17. Make sure the correct destination has been selected, then choose **Test**.
+16. Make sure the correct destination has been selected, then choose **Test**.
 
     <!-- border -->
     ![Action test response](joulestudio-actions-badge-response.png)
 
-18. Inspect the response.
+17. Inspect the response.
 
 ### Test yourself
 
