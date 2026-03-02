@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant with Joule and Joule Studio
+- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - Email has been configured for Process Automation
 
 
@@ -40,29 +40,32 @@ In this tutorial, you will create a simple automated process for sending an emai
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Build.
 
+2. Choose **Create**.
+
     <!-- border -->
     ![Lobby](joulestudio-skill-process-create1.png)
-
-2. Choose **Create**.
-    <!-- border -->
-    ![Create automated process](joulestudio-skill-process-create2.png)
 
 3. Choose **Automated Process** then choose **Next**.
 
     <!-- border -->
-    ![Create process](joulestudio-skill-process-create3.png)
+    ![Create automated process](joulestudio-skill-process-create2.png)
 
 4. Choose **Process**, then choose **Next**.
 
     <!-- border -->
-    ![Name and description](joulestudio-skill-process-create4.png)
+    ![Create process](joulestudio-skill-process-create3.png)
 
 5. Enter **`InitiateSecurityChecksViaEmail`** for the **Name**, and **`When a badge is reported as lost or stolen, contact security via email`** for the **Description**. Choose **Review**.
 
     <!-- border -->
-    ![Create project](joulestudio-skill-process-create5.png)
+    ![Name and description](joulestudio-skill-process-create4.png)
 
 6. Choose **Create**.
+
+    <!-- border -->
+    ![Create project](joulestudio-skill-process-create5.png)
+
+
 
 ### Create an Automated Process
 
