@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio
+- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 - You have [created and configured the action projects](joulestudio-skill-action-create)
 
@@ -33,15 +33,13 @@ parser: v2
 
 2. Choose **Connectors**, then choose **Actions**.
 
-    <!-- border -->
-    ![Actions save as new project](joulestudio-skill-action1.png)
-
 3. Select your API_BUSINESS_PARTNER action project, then choose **Versions**.
 
 4. Choose **…** by the **Published to Library** version, then choose **Save As New Project**.
 
+
     <!-- border -->
-    ![Save as new project popup](joulestudio-skill-action2.png)
+    ![Actions save as new project](joulestudio-skill-action1.png)
 
 5. Enter:
     - **`FilterBusinessPartners`** for the **Project Name**.
@@ -50,35 +48,40 @@ parser: v2
 6. Choose **Save As New**.
 
     <!-- border -->
-    ![Actions](joulestudio-skill-action3.png)
+    ![Save as new project popup](joulestudio-skill-action2.png)
 
 7. Choose the new project.
 
     <!-- border -->
-    ![Actions add input](joulestudio-skill-action4.png)
+    ![Actions](joulestudio-skill-action3.png)
 
 8. Choose the **GET Retrieves business partner general data** action.
 
 9. On the **Input** tab, choose **Add**.
 
     <!-- border -->
-    ![Actions add new field](joulestudio-skill-action5.png)
+    ![Actions add input](joulestudio-skill-action4.png)
 
 10. Choose **New Field**.
 
 11. Enter **`FirstName`** as the **Key** and the **Label**, then choose **Add**.
 
+    <!-- border -->
+    ![Actions add new field](joulestudio-skill-action5.png)
+
+
 12. Choose the **Value** field of **$filter**.
+
+13. In the side panel **$filter**, choose the **Value** field to open the **Condition Editor**.
 
     <!-- border -->
     ![Filter popup](joulestudio-skill-action7.png)
 
-13. In the side panel **$filter**, choose the **Value** field to open the **Condition Editor**.
+14. For **Column**, **Condition**, and **Criteria**, select **`FirstName`**, **`equal to`**, and **`${FirstName}`** respectively. Then choose choose **OK**.
 
      <!-- border -->
      ![Condition Editor](joulestudio-skill-action9.png)
 
-14. For **Column**, **Condition**, and **Criteria**, select **`FirstName`**, **`equal to`**, and **`${FirstName}`** respectively. Then choose choose **OK**.
 
 15. Choose the **Test** tab.
 
