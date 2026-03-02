@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant with Joule and Joule Studio
+- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 - You have [created and configured the action projects](joulestudio-skill-action-create)
 
@@ -36,32 +36,33 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Build.
 
-    <!-- border -->
-    ![Lobby](joulestudio-skill-lobby.png)
-
 2. Choose **Create**.
 
     <!-- border -->
-    ![Select Joule Skill](joulestudio-skill-lobby-create.png)
+    ![Lobby](joulestudio-skill-lobby.png)
 
 3. Select the **Joule Skill** tile, then choose **Next**.
 
     <!-- border -->
-    ![Enter name and description](joulestudio-skill-create-project.png)
+    ![Select Joule Skill](joulestudio-skill-lobby-create.png)
 
 4. Enter name **`CreateBadge`** and description **`Create a badge for an employee given the employee's ID`**, then choose **Review**.
 
-5. On the following screen choose **Create**.
-
     <!-- border -->
-    ![Joule Studio create](joulestudio-skill-create-skill.png)
+    ![Enter name and description](joulestudio-skill-create-project.png)
+
+5. On the following screen choose **Create**.
 
 6. Choose **Create** **>** **Joule Skill**.
 
     <!-- border -->
-    ![Joule Studio create popup](joulestudio-skill-create-skill-2.png)
+    ![Joule Studio create](joulestudio-skill-create-skill.png)
 
 7. Enter name **`CreateBadge`** and description **`Create a badge for an employee given the employee's ID`**, then choose **Create**.
+
+    <!-- border -->
+    ![Joule Studio create popup](joulestudio-skill-create-skill-2.png)
+
 
     > The description is important because Joule will use it to identify the correct skill to select during a conversation.
 
@@ -73,18 +74,16 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 
 1. Choose **Trigger** (or **<<**) to open the side panel.
 
-    <!-- border -->
-    ![Open side panel for trigger](joulestudio-skill-trigger.png)
-
 2. Disable **Allow Joule to generate a response**.
 
     <!-- border -->
-    ![Open side panel for trigger](joulestudio-skill-parameters.png)
+    ![Open side panel for trigger](joulestudio-skill-trigger.png)
 
 3. Choose **Parameters**, then choose **Configure** beside **Skill Inputs**.
 
     <!-- border -->
-    ![Configure inputs](joulestudio-skill-inputs-configure.png)
+    ![Open side panel for trigger](joulestudio-skill-parameters.png)
+
 
 4. Choose **Add Input** three times and enter:
 
@@ -93,6 +92,10 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
     |  **`EmployeeID`**   | **`Employee ID`**   | select
     |  **`Status`**       | **`Status`**        | 
     |  **`CommunityID`**    | **`Community ID`** | 
+
+
+    <!-- border -->
+    ![Configure inputs](joulestudio-skill-inputs-configure.png)
 
 7. Choose **Apply**.
 
@@ -330,6 +333,8 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
     ![Conversation result](joulestudio-skill-conversation-end.png)
 
 8. Choose the **Go to Badge System** button.
+
+    The logon screen for the application will appear.
 
 9. Enter **User Name**: **`code`**, **Password**: **`me??Jam7`**, then choose **Continue**.
 
