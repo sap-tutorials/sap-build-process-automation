@@ -44,7 +44,7 @@ This scenario simulates a real-world challenge faced by maintenance planners: de
     <!-- border -->
     ![Imported destination](imported_destination.png)
 
-    If the service is not available, or you simply what to run your own, you can [install your own service](https://github.tools.sap/csd-cis-brazil/sample-maintenance-srv) and modify the destination accordingly.
+    If the service is not available, or you simply want to run your own, you can [install your own service](https://github.tools.sap/csd-cis-brazil/sample-maintenance-srv) and modify the destination accordingly.
 
 ### Create a Private Environment
 
@@ -100,7 +100,7 @@ Joule Studio's dedicated private environments provide safe, isolated spaces for 
     <!-- border -->
     ![Five skills](five_skills.png)
 
-    In addition to the Joule Studio project, an action project has also been imported and is ready to use - if you check under **Connectors** > **Actions** in the **Lobby**, you will find the project and can see that it is published.
+    In addition to the Joule Studio project, an action project (**Maintenance Fulfillment Agent API**) has also been imported and is ready to use - if you check under **Connectors** > **Actions** in the **Lobby**, you will find the project and can see that it is published.
 
 ### Create an Agent
 
@@ -115,10 +115,13 @@ Joule Studio's dedicated private environments provide safe, isolated spaces for 
     - Name: **`Maintenance Fulfillment Validator`**
     - Description: **`Agent to check if maintenance orders can proceed based on material stock levels.`**
 
+
     > Just like for Joule skills, the description plays a crucial role in how Joule identifies and activates the right agent during runtime. A clear, business-oriented description helps Joule understand when this agent should be called and for which type of user requests. By describing the agent’s purpose precisely you ensure that Joule can automatically match user intents to this specific agent, improving relevance and accuracy across enterprise scenarios.
 
     <!-- border -->
     ![Agent description](agent_description.png)
+
+    Adjust the identifier if it is too long.
 
 3. Choose **Create**.
 
@@ -216,7 +219,7 @@ After you have created your Joule agent, you can test its functionalities and wo
     ![Test parameters](test_chat_initial.png)
 
 
-3. Enter the prompt: **`Hello, I would like to check whether Maintenance Order 1 can be fulfilled based on current material availability`** and choose **Send**.
+3. Enter the prompt: **`Hello, I would like to check whether Maintenance Order ID 1 can be fulfilled based on current material availability`** and choose **Send**.
 
     <!-- border -->
     ![Prompt](prompt.png)
