@@ -20,7 +20,7 @@ parser: v2
 - You have successfully completed the tutorial [Use Joule Studio to Create an Agent](https://developers.sap.com/tutorials/joulestudio-agent-create.html).
 - SAP AI Core and an S3 Object Store for document grounding. See the tutorial [Orchestration with Grounding Capabilities in SAP AI Core](https://developers.sap.com/tutorials/ai-core-orchestration-grounding.html).
     - You do not need to create any resource groups or pipelines. This will be done for you when you configure document grounding in this tutorial. If you want to understand what is going on behind the scenes, see [Joule Studio: How to Create Document Grounding](https://community.sap.com/t5/tooling-sap-build-blog-posts/joule-studio-how-to-create-document-grounding/ba-p/14306631)
-    - Documents for grounding uploaded to the object store. Use files [guidelines1.docx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/joulestudio-document-grounding/guidelines1.docx) and [guidelines1.docx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/joulestudio-document-grounding/guidelines2.docx)
+    - Documents for grounding uploaded to the object store. Use files [guidelines1.docx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/joulestudio-document-grounding/guidelines1.docx) and [guidelines2.docx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/joulestudio-document-grounding/guidelines2.docx)
 
 
 
@@ -74,7 +74,7 @@ If your Joule Studio is not already configured to use SAP AI Core and your objec
     <!-- border -->
     ![Destination json](spba-s3-object-store-destination-json.png) 
 
-2. Edit the destination using the key of your SAP AI Core instance.
+2. Edit the destination using the key of your Object Store instance.
 
     <!-- border -->
     ![S3 Object Store key](s3-object-store.png)
