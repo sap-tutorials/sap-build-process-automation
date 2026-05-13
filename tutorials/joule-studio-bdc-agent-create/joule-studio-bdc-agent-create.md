@@ -98,6 +98,31 @@ In this demo landscape, you have to enter the following promt for data preview: 
 
 Congratulations, you have created your first data product using Data Product Creation Agent and Joule Studio!
 
-For the Agent Lab at SAPPHIRE, you will not be deploying your agent. However, the code that has been generated follows SAP best practices and would be deployable to the runtime by choosing **Deploy**.
+### Test
+
+For the Agent Lab at SAPPHIRE, you will not be deploying an agent. Instead, you can try out an agent we have pre-deployed which shows how analytics can be created on an analytic model which is built on top of the derived data product from the previous section.
+
+1. Navigate into the existing Solutions in Joule Studio and search for one called "Billing completeness and revenue recognition agent".
+
+    <!-- border -->
+    ![Test](test-00.png)
 
 
+The following steps demonstrate how the **Billing Completeness and Revenue Recognition Agent** helps finance and operations users analyze billing completeness, identify partially billed sales orders, and detect potential revenue leakage across SAP S/4HANA order-to-cash processes.
+
+1. The **Billing Completeness and Revenue Recognition Agent** is available in Joule Studio. The user selects **Try now** to launch the conversational analytics experience :
+
+    <!-- border -->
+    ![Test](test-01.png)
+
+2. The agent overview displays available analytical skills and business questions that can be answered using SAP S/4HANA order-to-cash data. The user selects the skill **What is the breakdown of our ordered value by billing completion status?**
+
+    <!-- border -->
+    ![Test](test-02.png)
+
+3. The agent generates a bar chart showing the breakdown of ordered value by billing completion status, helping users quickly identify the health of billing pipeline, how much is fully billed vs what’s stuck.
+
+    <!-- border -->
+    ![Test](test-03.png)
+
+Users can continue the conversation with follow-up analytical questions to further investigate billing gaps, revenue recognition issues, and operational performance across sales organizations, channels, plants, and profit centers.
