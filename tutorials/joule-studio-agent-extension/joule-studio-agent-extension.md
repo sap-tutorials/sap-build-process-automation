@@ -155,20 +155,23 @@ You can also extend the agent by connecting to agent to additional MCP servers a
 
 12. In the **Design** tab, click on **Add Server** button under **Extensions** -> **MCP Servers**.
 
+
     <!-- border -->
     ![Requirement](solution-05.png)
 
 
-You can see the available MCP servers. 
+    You can see the available MCP servers. 
 
 13. Click on **View Details**.
+
 
     <!-- border -->
     ![Requirement](solution-06.png)
 
-You will see the available tools in the MCP server with their descriptions. 
+    You will see the available tools in the MCP server with their descriptions. 
 
 14. Click **Add MCP Server**.
+
 
     <!-- border -->
     ![Requirement](solution-07.png)
@@ -179,7 +182,7 @@ You will see the available tools in the MCP server with their descriptions.
     <!-- border -->
     ![Requirement](solution-08.png)
 
-For the Agent Lab at SAPPHIRE, you will not be deploying your agent. However, the code that has been generated follows SAP best practices and would be deployable to the runtime by choosing **Deploy**.
+For the Agent Lab at SAPPHIRE, you will not be deploying your agent. However, the code that has been generated follows SAP best practices and would be deployable to the runtime by choosing **Deploy**. 
 
 
 
