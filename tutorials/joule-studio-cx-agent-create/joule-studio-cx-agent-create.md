@@ -55,9 +55,17 @@ Sales Representatives want an AI assistant to suggest 2–3 ranked discount stra
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`AI Sales Assistant`**
+    Agent Name: 
+    
+    ```COPY
+    AI Sales Assistant
+    ```
 
-    Intent statement: **`AI-powered discount strategy suggestion agent that analyzes customer orders and margin targets from SAP S/4HANA SD, providing sales reps with contextualized discount recommendations.`**
+    Intent statement: 
+    
+    ```COPY
+    AI-powered discount strategy suggestion agent that analyzes customer orders and margin targets from SAP S/4HANA SD, providing sales reps with contextualized discount recommendations.
+    ```
 
     Select **Quick create**.
 

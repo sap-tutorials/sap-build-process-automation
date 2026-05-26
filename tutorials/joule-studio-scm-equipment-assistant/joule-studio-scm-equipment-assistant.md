@@ -48,9 +48,17 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`Equipment Troubleshooting Agent`**
+    Agent Name:
 
-    Intent Statement: **`Create an AI agent that helps maintenance technicians quickly access equipment history and troubleshooting guidance.`** |
+    ```COPY
+        Equipment Troubleshooting Agent
+    ```
+
+    Intent Statement:
+
+    ```COPY
+       Create an AI agent that helps maintenance technicians quickly access equipment history and troubleshooting guidance.
+    ```
 
     Select **Quick create**.
 

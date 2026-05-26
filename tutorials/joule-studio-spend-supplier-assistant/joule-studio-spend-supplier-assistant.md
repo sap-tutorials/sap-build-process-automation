@@ -49,9 +49,16 @@ Using Joule Studio’s intent‑based development, you can create an intelligent
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`Supplier Performance Assistant`**
+    ```COPY
+        Supplier Performance Assistant
+    ```
 
-    Intent Statement: **`Create an AI agent that monitors supplier performance, identifies at-risk suppliers, and recommends approved alternative suppliers using simulated    procurement data.`** |
+    Intent Statement:
+
+    ```COPY
+       Create an AI agent that monitors supplier performance, identifies at-risk suppliers, 
+       and recommends approved alternative suppliers using simulated procurement data.
+    ```
 
     Select **Quick create**.
 
@@ -59,7 +66,6 @@ Using Joule Studio’s intent‑based development, you can create an intelligent
     ![Enter agent name and intent statement](030-define-solution-details.png)
 
 4. Choose **OK**.
-
 
 ### Intent
 

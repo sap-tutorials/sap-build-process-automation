@@ -48,16 +48,24 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`IT Incident Triage + Auto Routing Agent`**
+    Agent Name: 
+    
+    ```COPY
+    IT Incident Triage + Auto Routing Agent
+    ```
 
-    Intent Statement & instructions: **`You are an IT operations AI agent built using N8N workflows to analyze incoming incident reports from multiple sources (webhook payloads, JSON logs) and classify them into severity levels (P1–P4), detect probable root cause category (application, infrastructure, integration, user error), and generate a structured incident ticket payload.`**
+    Intent Statement & instructions: 
+    
+    ```COPY
+    You are an IT operations AI agent built using N8N workflows to analyze incoming incident reports from multiple sources (webhook payloads, JSON logs) and classify them into severity levels (P1–P4), detect probable root cause category (application, infrastructure, integration, user error), and generate a structured incident ticket payload.
 
-    **`You must:`**
+    You must:
 
-- **`Normalize unstructured incident text into structured JSON`**
-- **`Identify urgency and impact based on keywords and patterns`**
-- **`Suggest next best action (restart service, escalate, ignore, collect logs)`**
-- **`Route output to appropriate n8n workflow nodes (e.g., “high-priority-escalation”, “auto-resolution”, “log-analysis”)`**
+    - Normalize unstructured incident text into structured JSON
+    - Identify urgency and impact based on keywords and patterns
+    - Suggest next best action (restart service, escalate, ignore, collect logs)
+    - Route output to appropriate n8n workflow nodes (e.g., “high-priority-escalation”, “auto-resolution”, “log-analysis”)
+    ```
 
     Select **Quick create**
 

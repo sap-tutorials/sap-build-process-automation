@@ -50,9 +50,17 @@ Collections specialists spend significant time manually crafting dunning and col
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`AR Collection Email`**
+    Agent Name:
 
-    Intent statement: **`Create an agent which drafts personalized collection emails based on payment history and outstanding items.`**
+    ```COPY
+        AR Collection Email
+    ```
+
+    Intent Statement:
+
+    ```COPY
+        Create an agent which drafts personalized collection emails based on payment history and outstanding items.
+    ```
 
     Select **Quick create**.
 
