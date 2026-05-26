@@ -48,14 +48,24 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`HR Virtual Assistant`**
+    Agent Name:
 
-    Intent Statement: **`Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.`** |
+    ```COPY
+        HR Virtual Assistant
+    ```
+
+    Intent Statement:
+
+    ```COPY
+        Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, 
+        analyzes workforce data, predicts attrition risks, and generates actionable insights and development 
+        recommendations using simulated HCM data.
+    ```
 
     Select **Quick create**.
 
-    <!-- border -->
-    ![Enter agent name and intent statement](030-define-solution-details.png)
+   <!-- border -->
+   ![Enter agent name and intent statement](030-define-solution-details.png)
 
 4. Choose **OK** to launch Joule Studio.
 

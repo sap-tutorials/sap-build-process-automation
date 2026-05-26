@@ -42,7 +42,13 @@ Collections specialists are losing productive hours manually monitoring overdue 
 
 1. Open **Joule Work** and choose **+ Create**.
 
-2. Enter the following prompt (delete **Quick Create** option if presented): **`I need a collections workbench that shows overdue customer receivables. Set up automated payment reminder sequences, and create an AI assistant that can draft personalized collection emails based on the customer's payment history and outstanding invoices.`**
+2. Enter the following prompt (delete **Quick Create** option if presented):
+
+    ```COPY
+        I need a collections workbench that shows overdue customer receivables. 
+        Set up automated payment reminder sequences, and create an AI assistant that can draft personalized 
+        collection emails based on the customer's payment history and outstanding invoices.
+    ```
 
     <!-- border -->
     ![Click + to open the new solution dialog](010-create-solution.png)
@@ -116,6 +122,3 @@ When the specification is complete you could pass it on to another team to do th
     ![Agent local test](107-agent-test-preview.png)
 
 For the Agent Lab at SAPPHIRE, you will not be deploying your solution. However, the code that has been generated follows SAP best practices and would be deployable to the runtime.
-
-
-

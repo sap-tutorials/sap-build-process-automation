@@ -23,7 +23,6 @@ author_profile:
 - How Joule Studio generates data products and conversational agents from business intent
 - How SAP Domain Models and SAP Knowledge Graph contextualize generated solutions
 
-
 ## Intro
 
 > **IMPORTANT**
@@ -44,12 +43,14 @@ In this tutorial, you will use Joule Studio to generate a data product and AI ag
 
 ### Getting Started
 
-
 1. Go to **Joule Work** and choose **<> Develop**.
 
-2. Use the chat directly and enter the following promt: 
+2. Use the chat directly and enter the following prompt:
 
-    **`Create a data product combining Sales Orders and Billing Documents to create a real‑time Order‑to‑Cash data foundation that protects revenue, accelerates cash flow, and eliminates manual reporting.`**
+    ```COPY
+       Create a data product combining Sales Orders and Billing Documents to create a real‑time Order‑to‑Cash 
+       data foundation that protects revenue, accelerates cash flow, and eliminates manual reporting.
+    ```
 
     Select **Quick create**
 
@@ -58,13 +59,12 @@ In this tutorial, you will use Joule Studio to generate a data product and AI ag
 
     Quick-create will allow you to experience the power of the tool without investing much time.
 
-4. Choose **Enter**.
+3. Choose **Enter**.
 
     In the panel on the right, you can see that your intent statement has been taken as the starting prompt. Quick create has added **Fast Track** to the prompt.
 
     <!-- border -->
     ![Joule Work](joule-work-03.png)
-
 
 ### Intent
 
@@ -83,7 +83,7 @@ Once the intent document is created, we will skip the Requirement and Specificat
 
 ### Solution
 
-Once you have approved all steps and transformations, you will see the data product in view mode. You might also be asked whether you would like to see a preview of your created data. 
+Once you have approved all steps and transformations, you will see the data product in view mode. You might also be asked whether you would like to see a preview of your created data.
 In this demo landscape, you have to enter the following promt for data preview: **`show a data preview of the first 10 rows in md format`**
 
 1. You will automatically jump to **Solution** and see the DPD (Data Product Definition) File and be offered a data preview.
@@ -106,7 +106,6 @@ For the Agent Lab at SAPPHIRE, you will not be deploying an agent. Instead, you 
 
     <!-- border -->
     ![Test](test-00.png)
-
 
 The following steps demonstrate how the **Billing Completeness and Revenue Recognition Agent** helps finance and operations users analyze billing completeness, identify partially billed sales orders, and detect potential revenue leakage across SAP S/4HANA order-to-cash processes.
 

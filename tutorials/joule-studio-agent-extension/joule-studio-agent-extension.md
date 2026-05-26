@@ -61,9 +61,17 @@ AP Invoice agent supports AP Invoice Automation receiving Invoices from EDI chan
 
 4. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
-    Agent Name: **`AP Notification`**
+    Agent Name: 
+    
+    ```COPY
+    AP Notification
+    ```
 
-    Intent statement: **`Create an extension to the AP Invoice Agent. Add a post-hook n8n workflow. For any invoice that cannot be matched: Create a SAP Task Center task. Send a notification to the responsible AP team member via SAP Task Center.`**
+    Intent statement: 
+    
+    ```COPY
+    Create an extension to the AP Invoice Agent. Add a post-hook n8n workflow. For any invoice that cannot be matched: Create a SAP Task Center task. Send a notification to the responsible AP team member via SAP Task Center.
+    ```
 
     <!-- border -->
     ![Joule Work](joule-work-02.png)
@@ -140,7 +148,7 @@ You can also extend the agent by providing additional instructions and context.
 
 12. Add the following instruction:
 
-    ```
+    ```COPY
     Tax Validation Policy: ALWAYS validate tax on pending invoices using the validate-tax tool before recommending approval. Response Handling: 
     - ERROR/BLOCK: Flag as non-approvable 
     - WARNING: Note discrepancy, allow with warning 
