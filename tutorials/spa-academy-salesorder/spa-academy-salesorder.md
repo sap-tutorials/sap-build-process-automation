@@ -92,7 +92,7 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > The form **Identifier** field is auto-filled.
 
-  3. You are navigated to the Process Builder canvas.
+3. You are navigated to the Process Builder canvas.
 
      This is a visual canvas on which you map out your business process from start to finish. Other process artifacts are then added to this canvas, with process controls and connectors used to decide how information flows when the process is running.
 
