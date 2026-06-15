@@ -1,0 +1,15 @@
+{
+    "exportTime": "2025-12-09 11:35:43.536123239",
+    "destination": {
+        "Name": "aicore-destination",
+        "Type": "HTTP",
+        "Description": "Connection to AI Core",
+        "URL": "<AI_API_URL>",
+        "ProxyType": "Internet",
+        "Authentication": "OAuth2ClientCredentials",
+        "clientId": "<clientid>",
+        "clientSecret": "<clientsecret>",
+        "tokenServiceURL": "<url>/oauth/token",
+        "tokenServiceURLType": "Dedicated"
+    }
+}

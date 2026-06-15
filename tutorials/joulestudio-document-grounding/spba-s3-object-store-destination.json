@@ -1,0 +1,20 @@
+{
+    "exportTime": "2026-01-13 12:25:12.02764587",
+    "destination": {
+        "Name": "S3-object-store",
+        "Type": "HTTP",
+        "Description": "S3 Object Store",
+        "URL": "https://<host>",
+        "ProxyType": "Internet",
+        "Authentication": "OAuth2ClientCredentials",
+        "clientId": "<access_key_id>",
+        "clientSecret": "<secret_access_key>",
+        "tokenServiceURL": "https://<host>",
+        "tokenServiceURLType": "Dedicated",
+        "region": "<region>",
+        "bucket": "<bucket>",
+        "username": "<username>",
+        "type": "S3",
+        "sap-joule-studio-document-grounding-object-store": "true"
+    }
+}
