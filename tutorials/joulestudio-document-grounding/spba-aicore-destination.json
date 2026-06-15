@@ -1,0 +1,16 @@
+{
+    "exportTime": "2026-01-13 11:57:12.203683142",
+    "destination": {
+        "Name": "aicore-destination",
+        "Type": "HTTP",
+        "Description": "Connection to AI Core",
+        "URL": "<AI_API_URL>",
+        "ProxyType": "Internet",
+        "Authentication": "OAuth2ClientCredentials",
+        "clientId": "<clientid>",
+        "clientSecret": "<clientsecret>",
+        "tokenServiceURL": "<url>/oauth/token",
+        "tokenServiceURLType": "Dedicated",
+        "sap-joule-studio-document-grounding-ai-core": "true"
+    }
+}
