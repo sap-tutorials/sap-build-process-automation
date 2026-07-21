@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- Access to an SAP BTP tenant configured for Joule and Joule Studio, classic edition. See [Set Up Joule Studio, classic edition](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - Email has been configured for Process Automation
 
 
@@ -29,7 +29,7 @@ parser: v2
 ## Details
 You will create an automated process but existing content for SAP Build Process Automation can also be used within Joule skills. In the current release,  you can pass values to the input parameters of a process triggered from a Joule skill but you cannot use the output parameters of the process to return values to the Joule skill - it is "fire and forget".
 
-In order for a process to be visible in Joule Studio, the process must have been published to the library - you need to remember to release, deploy, and then publish. You publish from within the Lobby.
+In order for a process to be visible in Joule Studio classic, the process must have been published to the library - you need to remember to release, deploy, and then publish. You publish from within the Lobby.
 
 In this tutorial, you will create a simple automated process for sending an email. The example extends the badge scenario used in the previous tutorials but the Joule skill is not dependent on the other skills.
 
@@ -168,7 +168,7 @@ In this tutorial, you will create a simple automated process for sending an emai
     <!-- border -->
     ![Lobby published](joulestudio-skill-process-publish3.png)
 
-### Create a Joule Studio Project
+### Create a Joule Studio, Classic Edition Project
 
 1. Open the **SAP Build Lobby**.
 
