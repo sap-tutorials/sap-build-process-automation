@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- Access to an SAP BTP tenant configured for Joule and Joule Studio, classic edition. See [Set Up Joule Studio, classic edition](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 
 ## You will learn
   - How to create a test environment

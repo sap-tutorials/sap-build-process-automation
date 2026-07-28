@@ -15,17 +15,17 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- Access to an SAP BTP tenant configured for Joule and Joule Studio, classic edition. See [Set Up Joule Studio, classic edition](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 
 
 ## You will learn
   - to adjust actions to fit the needs of your Joule skill
-  - to release and publish the actions so that they can be consumed in Joule Studio
+  - to release and publish the actions so that they can be consumed in Joule Studio, classic edition.
 
 
 ## Intro
-Actions are used in **SAP Build Process Automation** to connect processes with external systems, be it SAP or non-SAP systems, and to make GET, POST, PATCH and other calls. Actions created here can be consumed directly in a Joule skill created in **Joule Studio**.
+Actions are used in **SAP Build Process Automation** to connect processes with external systems, be it SAP or non-SAP systems, and to make GET, POST, PATCH and other calls. Actions created here can be consumed directly in a Joule skill created in **Joule Studio, classic edition**.
 
 In this tutorial, you will create an action project for accessing business partner information from an OData service representing an SAP system. You will also create an action project for creating a badge request via an OData service representing a third-party system.
 
