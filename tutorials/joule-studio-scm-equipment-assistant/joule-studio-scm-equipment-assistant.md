@@ -44,7 +44,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 2. Select the **Agent** tile and then choose **Create**.
 
     <!-- border -->
-    ![Click + to open the new solution dialog](010-create-solution.png)
+    ![Click + to open the new solution dialog](010-create-solution.jpg)
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
