@@ -43,35 +43,33 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 2. Select the **N8N Workflow** type and then choose **+ Create**.
 
-    <!-- border -->
     ![Click + to open the new solution dialog](010-Create-Solution.png)
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
     Agent Name: 
     
-    ```COPY
-    IT Incident Triage + Auto Routing Agent
-    ```
+   ```COPY
+   IT Incident Triage + Auto Routing Agent
+   ```
 
     Intent Statement & instructions: 
     
-    ```COPY
-    You are an IT operations AI agent built using N8N workflows to analyze incoming incident reports from multiple sources
-    (webhook payloads, JSON logs) and classify them into severity levels (P1–P4), detect probable root cause category
-    (application, infrastructure, integration, user error), and generate a structured incident ticket payload.
+   ```COPY
+   You are an IT operations AI agent built using N8N workflows to analyze incoming incident reports from multiple sources
+   (webhook payloads, JSON logs) and classify them into severity levels (P1–P4), detect probable root cause category
+   (application, infrastructure, integration, user error), and generate a structured incident ticket payload.
 
-    You must:
+   You must:
 
-    - Normalize unstructured incident text into structured JSON
-    - Identify urgency and impact based on keywords and patterns
-    - Suggest next best action (restart service, escalate, ignore, collect logs)
-    - Route output to appropriate n8n workflow nodes (e.g., “high-priority-escalation”, “auto-resolution”, “log-analysis”)
-    ```
+   - Normalize unstructured incident text into structured JSON
+   - Identify urgency and impact based on keywords and patterns
+   - Suggest next best action (restart service, escalate, ignore, collect logs)
+   - Route output to appropriate n8n workflow nodes (e.g., “high-priority-escalation”, “auto-resolution”, “log-analysis”)
+   ```
 
     Select **Quick create**
 
-    <!-- border -->
     ![Enter agent name and intent statement](030-Define-Solution-Details1.png)
 
 1. Choose **OK** to launch Joule Studio.
@@ -80,7 +78,6 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 1. This is where the tool tries to understand your intentions. The tool will attempt to understand your prompt and will likely ask you clarifying questions if you have not chosen quick-create as recommended above. Once it decides it understands enough, it will map the challenge to SAP's Reference Business Architecture and performs a fit-gap analysis. It has access to SAP Knowledge Graph, SAP LeanIX, and SAP Domain Models to help it create the intent document. Intent fit indicates how closely the proposed solution corresponds to your requirement.
 
-    <!-- border -->
     ![intent-tools](040-Intent-Ready-Tools.png)
 
     > Answer the questions set by the tool. The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that some landscapes such as S/4HANA or Success Factors as backends so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution.
@@ -89,7 +86,6 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 3. While the requirements are being generated, you can explore the intent on the **Idea Board**.
 
-    <!-- border -->
     ![intent-tools](040-Intent-Ready-Now.png)
 
 ### Requirements
@@ -98,32 +94,27 @@ When the requirement is ready, you have the opprotunity to review and refine it.
 
 Depending on your role in your company, you might be finished at this point and make the PRD available to a different team to take further. However, in this tutorial, you are taking the project forward with the generation of a technical specification. Similar to the previous step, this might happen automatically if you have selected quick-create at the start.
 
-<!-- border -->
 ![Requirement saved](060-Create-PRD.png)
 
 At this stage, you can see the your PRD similar to the one below in markdown format.
 If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in thededicated code tab.
 
-<!-- border -->
 ![Technical  overview](060-PRD-Ready1.png)
 
 ### Specification
 
 When the specification is complete you could pass it on to another team to do the implementation. However, here you are going to get the tool to implement the agent.  This might happen automatically if you have selected quick-create at the start.
 
-<!-- border -->
 ![Spec creation](070-Create-Spec.png)
 
 While the solution is being generated, you can explore the specification in the **Code**** tab. You'll find it as **specification/specification.md** and also under n8n/workflows.
 
-<!-- border -->
 ![Spec ready](070-Spec-Ready.png)
 
 If processing is waiting for your input, enter **Implement the Solution**
 
    The tool will work through the tasks defined in the specification. When it is finished, it will update the status in the specification to show the tasks have been done.
 
-<!-- border -->
 ![Generated solution code](070-Spec-Ready2.png)
 
 ### Solution

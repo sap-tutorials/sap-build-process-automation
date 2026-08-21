@@ -36,7 +36,7 @@ The process is designed to have the following artifacts:
 
 The process looks as below:
 
-   <!-- border -->![decision](process.png)
+   ![decision](process.png)
 
 ---
 
@@ -46,39 +46,39 @@ After completing the prerequisites, you will create a new process.
 
 1. Navigate to the **Overview** tab, from the editable version of your project, click the **Create** dropdown and choose **Process**.
 
-    <!-- border -->![decision](2.png)
+    ![decision](2.png)
 
 2. In the **Create Process** dialog box, do the following:
 
     - Enter a **Process Name** such as Order Processing Error Table
     - Choose **Create**
 
-    <!-- border -->![decision](2-1.png)
+    ![decision](2-1.png)
 
     Your new process opens in the process builder. You will now create a trigger form that will start the process. 
 
 3. Choose **Add a Trigger**.
    
-    <!-- border -->![decision](3.png)
+    ![decision](3.png)
 
 4. Select **Submit a Form**.
 
-    <!-- border -->![decision](3a.png)
+    ![decision](3a.png)
 
 5. Choose **Blank Form**.
 
-    <!-- border -->![decision](3b.png)
+    ![decision](3b.png)
 
 6. In the **Create Form** dialog box, do the following:
 
     - Enter a **Form Name** such as Order File Path Form
     - Choose **Create**
 
-    <!-- border -->![decision](4.png)
+    ![decision](4.png)
 
 7. Choose the three dots and select **Open Editor**.
 
-    <!-- border -->![decision](5.png)
+    ![decision](5.png)
 
 8. Now, you will edit the form by using the available layout and input field options. Start by dragging and dropping the form layout fields, then enter the given names and field settings as shown in the example below:
 
@@ -90,43 +90,43 @@ After completing the prerequisites, you will create a new process.
 
 9. For the input label **Text** select the **Required** checkbox, and **Save**. 
 
-    <!-- border -->![decision](7.png)
+    ![decision](7.png)
 
 ### Create a new automation
 
 1. Navigate to the **Overview** tab, from the editable version of your project, search for **Get Order Details** automation. Choose the three dots and select **Duplicate**.
 
-    <!-- border -->![decision](8.png)
+    ![decision](8.png)
 
 2. In the **Duplicate Artifact** dialog box, enter an **Automation Name** such as Get Order Details For Error.
 
-    <!-- border -->![decision](9.png)
+    ![decision](9.png)
 
     Your new automation opens in the automation editor.
 
 3. Now, select all activities from **Create Sales Order variable** to **End** as shown in the image below, pressing Ctrl and selecting the requested activities.
 
-    <!-- border -->![decision](10.png)
+    ![decision](10.png)
 
 4. Right-click and select **Delete** from the context menu.
    
-    <!-- border -->![decision](11.png)
+    ![decision](11.png)
 
 5. In the **Automation Details** section on the right, select **Input/Output**, and in the inputs section rename `OrderNumber` to `FilePath`. In the output parameter section rename `SelectedOrder` to `SalesOrderDetails` and select **List**.
 
-    <!-- border -->![decision](12.png)
+    ![decision](12.png)
 
 6. Select **Excel Cloud Link**, in the details on the right side, choose the **Edit Activity** button.
 
-    <!-- border -->![decision](13.png)
+    ![decision](13.png)
 
 7. In the Workbook Path field, select `FilePath`.
 
-    <!-- border -->![decision](16.png)
+    ![decision](16.png)
 
 8. Select **End**, in the configuration screen on the right, under the Output Parameters, in the `SalesOrderDetails` field enter ` Orders`.
 
-    <!-- border -->![decision](13_2.png)
+    ![decision](13_2.png)
 
 9.  **Save** your automation.
 
@@ -134,19 +134,19 @@ After completing the prerequisites, you will create a new process.
     
 11. Choose **+** below the **Trigger** form.
 
-    <!-- border -->![decision](14.png)
+    ![decision](14.png)
 
 12. Select **Automation**.
 
-    <!-- border -->![decision](14a.png)
+    ![decision](14a.png)
 
 13. Choose **Get Order Details For Error** automation from **Available Automations**.
 
-    <!-- border -->![decision](15.png)
+    ![decision](15.png)
 
 14. Map the input parameter `FilePath` of the automation with the **File Path** of Order File Path Trigger Form.
 
-    <!-- border -->![decision](15a.png)
+    ![decision](15a.png)
 
 15. **Save** your process.
 
@@ -155,15 +155,15 @@ After completing the prerequisites, you will create a new process.
 
 1. Go back to the **Overview** tab, select **Error Output** data type.
 
-    <!-- border -->![decision](data1.png)
+    ![decision](data1.png)
 
 2. In the **Error Output** data type screen, choose **New Field** to add a new attribute to the data object.
 
-    <!-- border -->![decision](data3.png)
+    ![decision](data3.png)
 
 3. In the Field Details section on the right, in the **Name** field enter **Order Number**. Keep the type as **String**.
 
-    <!-- border -->![decision](data4.png)
+    ![decision](data4.png)
 
 4. **Save** your work.
    
@@ -176,63 +176,63 @@ Since you have updated the **Error Output** data type with a new field **Order N
    
 2. Choose **Order Validity Check** decision.
    
-    <!-- border -->![decision](01.png)
+    ![decision](01.png)
 
 3. Select **Rules** and choose **Error Check**.
 
-    <!-- border -->![decision](02.png)
+    ![decision](02.png)
 
 4. Select the pencil icon on the top right to re-configure the rule.
 
-    <!-- border -->![decision](03.png)
+    ![decision](03.png)
 
 5. Choose **Next Step** until **Configure Result** section.
 
-    <!-- border -->![decision](04.png)
+    ![decision](04.png)
 
 6. In the **Configure Results** section, click on **Validity Check Output** to update the outputs to add `OrderNumber`.
    
 7. Choose **Next Step**.
    
-    <!-- border -->![decision](05.png)
+    ![decision](05.png)
 
 8. Choose **finish** to update the decision table.
 
-    <!-- border -->![decision](06.png)
+    ![decision](06.png)
 
 9. Choose **Save** and close the window.
 
-    <!-- border -->![decision](07.png)
+    ![decision](07.png)
 
 
 ### Create a new decision
 
 1. Navigate to the **Order Processing Error Table** process. Choose **+** below the automation.
 
-    <!-- border -->![decision](17.png)
+    ![decision](17.png)
 
 2. Select **Decision**.
    
-    <!-- border -->![decision](17a.png)
+    ![decision](17a.png)
 
 3. Choose **Blank Decision**.
 
-    <!-- border -->![decision](17b.png)
+    ![decision](17b.png)
 
 4. In the **Create Decision** window, enter a **Decision Name** such as **Order Error Checking** and choose **Create** button.
 
-    <!-- border -->![decision](18.png)
+    ![decision](18.png)
 
     The decision editor will open where you can start modeling the decision. 
    
-    <!-- border -->![decision](19.png)
+    ![decision](19.png)
 
 
 ### Configure input/output of decision
 
 You will select **Add Input Parameter** button and **Add Output Parameter** button to configure input and output parameters.
 
-<!-- border -->![decision](20.png)
+![decision](20.png)
 
 1. Configure Input Parameter:
 
@@ -240,7 +240,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In Description enter: **Order List Input**
     - In Type choose: **Sales Order**, and select **List**
 
-    <!-- border -->![decision](21.png)
+    ![decision](21.png)
 
 2. Configure Output Parameter:
 
@@ -248,7 +248,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In Description enter: **Order Error List**
     - In Type choose: **Error Output** and select **List**
 
-    <!-- border -->![decision](22.png)
+    ![decision](22.png)
 
 3. **Save** your decision.
 
@@ -257,7 +257,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
 
 1. Now, you will add intermediate variables that you will use to store the results of the rules. Select **Variables** and choose **Add Variable**.
 
-    <!-- border -->![decision](23.png)
+    ![decision](23.png)
 
 2. In the Decision Variable window:
     
@@ -266,13 +266,13 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - Under Type select **Sales Order**
     - Choose **Save**
 
-    <!-- border -->![decision](24.png)
+    ![decision](24.png)
 
     > Here, you will use an intermediate variable to store the inputs, which can be utilized later in reusable text rules, thus avoiding overwriting the original inputs.
 
 3. Similarly, for the second variable select **Add Variable**.
 
-    <!-- border -->![decision](25.png)
+    ![decision](25.png)
 
 4. In the **Decision Variable** window:
     
@@ -281,20 +281,20 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - Under Type select **Error Output**
     - Choose **Save**
 
-    <!-- border -->![decision](26.png)
+    ![decision](26.png)
 
     > This intermediate variable will serve to temporarily store the outputs of the text rules for each error test, without overwriting the results of the initial tests. Additionally, it allows appending the result of each test to the variable, preserving the information from previous tests.
 
 5. **Save** your decision.
 
-    <!-- border -->![decision](26-1.png)
+    ![decision](26-1.png)
 
 
 ### Configure text rules of decision
 
 1. Now, you are going to add reusable text rules, which are validation or error detection rules. Therefore, you will create a reusable rule for each error search in the command. Select **Rules** and choose **Add Rule**.
 
-    <!-- border -->![decision](27.png)
+    ![decision](27.png)
 
 2. The first text rule you will create is a test for the delivery date of the order. In the **Create Rule** window: 
 
@@ -304,7 +304,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - Active **Reusable Rule**
     - Choose **Next Step** button
 
-    <!-- border -->![decision](28.png)
+    ![decision](28.png)
 
 3. Configure the output or result of the decision table. Under **Result Vocabulary**:
 
@@ -312,11 +312,11 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In the Vocabulary section choose **Error Output** to add the Result Attributes
     - Choose **Next Step** button
   
-    <!-- border -->![decision](30.png)
+    ![decision](30.png)
 
 4. Review and choose **Create** button to create the rule.
 
-    <!-- border -->![decision](31.png)
+    ![decision](31.png)
 
 5. In the newly created **Text Rule**, add values to condition and result columns:
 
@@ -327,21 +327,21 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
 
     > Do not copy and paste the values, use the suggestions pop up (Ctrl+Space) as shown in the picture below. When entering the error code and its description, please remember to put two singles quotes first and then type the code and description inside them.
 
-    <!-- border -->![decision](32-1.png)
+    ![decision](32-1.png)
 
     Once you have successfully entered the values, your rule looks as below.
 
 6. **Save** your work.
 
-    <!-- border -->![decision](32-2.png)
+    ![decision](32-2.png)
 
 7. Go back to **Rules**, click on **Back Button**.
 
-    <!-- border -->![decision](33-1.png)
+    ![decision](33-1.png)
 
 8. Click on the three dots next to **Date Error Test** rule and choose **Duplicate**.
 
-    <!-- border -->![decision](33.png)
+    ![decision](33.png)
 
 9. The second text rule you will create is a test for the order amount. In the Duplicate Rule window: 
 
@@ -349,11 +349,11 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In the Rule Description enter **Test the order amount**
     - Choose **OK** button
 
-    <!-- border -->![decision](34.png)
+    ![decision](34.png)
 
 10. Click on the **Order Amount Error test** rule.
 
-    <!-- border -->![decision](35.png)
+    ![decision](35.png)
 
 11. In the newly created **Text Rule**, change the values to condition and result columns:
 
@@ -362,17 +362,17 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In `ErrorDescription` enter : 'Fraudulent Request'  
     - In `ErrorCode` enter : 'ERR02'
 
-    <!-- border -->![decision](37.png)
+    ![decision](37.png)
 
 12. **Save** your rule.
 
 13. Go back to **Rules**, click on **Back Button**.
 
-    <!-- border -->![decision](33-2.png) 
+    ![decision](33-2.png) 
 
 14. Now, you will create three more text rules to perform three additional tests. To do this, repeat the same steps: click on the three dots next to text rule and select **Duplicate** to create the three new text rules.
 
-    <!-- border -->![decision](33-3.png) 
+    ![decision](33-3.png) 
 
 15. The third text rule you will create is a test for shipping country. So similarly **Duplicate** a new text rule and in the Duplicate Rule window: 
 
@@ -380,7 +380,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In the Rule Description enter **check the Shipping Country**
     - Choose **OK** button
 
-    <!-- border -->![decision](38.png)
+    ![decision](38.png)
 
 16. Click on the newly created **Text Rule** and change values to condition and result columns:
 
@@ -390,7 +390,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In `ErrorCode` enter : 'ERR03'
     - **Save** your rule and click on **Back Button**.
 
-    <!-- border -->![decision](41.png)
+    ![decision](41.png)
 
 17. The same goes for the fourth text rule, what you will create is a test for the order status. **Duplicate** a new text rule and in the Duplicate Rule window: 
 
@@ -398,7 +398,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In the Rule Description enter **test order status**
     - Choose **OK** button
 
-    <!-- border -->![decision](42.png)
+    ![decision](42.png)
 
 18. Click on the newly created **Text Rule**, change values to condition and result columns:
 
@@ -408,7 +408,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In `ErrorCode` enter : 'ERR04'
     - **Save** your rule and click on **Back Button**.
 
-    <!-- border -->![decision](45.png)
+    ![decision](45.png)
 
 19. Similarly for the final text rule, you will verify if the order has no errors. In the **Duplicate Rule** window: 
 
@@ -416,7 +416,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In the Rule Description enter **test if the order has no errors**
     - Choose **OK** button
 
-    <!-- border -->![decision](46.png) 
+    ![decision](46.png) 
 
 20. Click on the newly created **Text Rule**, change values to condition and result columns:
 
@@ -425,7 +425,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In `ErrorDescription` enter : 'No Error'   
     - **Save** your rule and click on **Back Button**.
 
-    <!-- border -->![decision](49.png)
+    ![decision](49.png)
 
 ### Configure main rule of decision
 
@@ -433,7 +433,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
 
 1. Go back to **Rules** and click on **Add Rule**.
 
-    <!-- border -->![decision](50-1.png)
+    ![decision](50-1.png)
 
 2. In the Create Rule window: 
 
@@ -442,23 +442,23 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - In the Rule Description enter **A rule that executes all error-testing rules in a loop for each order**
     - Choose **Next Step** button
 
-    <!-- border -->![decision](50.png)
+    ![decision](50.png)
 
 3. In the **Configure Results** step, under **Result Vocabulary** choose `No Result` and click on **Next Step** button.
 
-    <!-- border -->![decision](51.png)
+    ![decision](51.png)
 
 4. Review and choose **Create** button to create the rule.
 
-    <!-- border -->![decision](53.png)
+    ![decision](53.png)
 
 5. In the newly created **Text Rule**, in the **If** statement, assign `true` to represent the absence of any specific condition.
 
-    <!-- border -->![decision](54.png)
+    ![decision](54.png)
 
 6. In the **Then** statement, press **Ctrl+Space** on your keyboard and select **Loop Functions**.
 
-    <!-- border -->![decision](55.png)
+    ![decision](55.png)
 
 7. A window for configuring loop functions opens. Configure the function as follows: 
 
@@ -468,17 +468,17 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
 
 8. Click on **Apply**.
 
-    <!-- border -->![decision](56.png) 
+    ![decision](56.png) 
 
     > With this function, you iterate through each element, which represents each order, and perform the delivery date test. Then, it appends the test output to the **Order Error List**.  So, the objective is to repeat the same process for each reusable text error rule that you have previously created and gradually add the collected errors for each order to the **Order Error List**.
 
 9. Click on the **Then** expression.
 
-    <!-- border -->![decision](57.png)
+    ![decision](57.png)
     
 10. In the **Configure Loop Functions** window, select **+** to add a new expression box and enter : APPEND (Order Error List, Order Amount Error Error test)
 
-    <!-- border -->![decision](57a.png)
+    ![decision](57a.png)
 
 11. Similarly, add three more expression box and enter the following in each box: 
 
@@ -487,7 +487,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     - Third box: APPEND (Order Error List, No Error Test)
     - Choose **Apply** button.
 
-    <!-- border -->![decision](58.png)
+    ![decision](58.png)
 
     > So, here you will iterate through all the reusable text error rules that you have created earlier, one by one, for each order. The result obtained from each rule, whether there is an error or not, will be added to the **Order Error List** without overwriting the previous results. That is why you have used an intermediate variable.
 
@@ -495,7 +495,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     
 13. Navigate back.
 
-    <!-- border -->![decision](59.png)
+    ![decision](59.png)
 
 
 ### Configure decision in process builder
@@ -504,7 +504,7 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     
     - Choose **Inputs** tab, under the select list click on the `List - SalesOrderDetails` to bind the properties for `SalesOrderDetails` list.
 
-    <!-- border -->![decision](60.png)
+    ![decision](60.png)
 
 2. **Save** the process.
    
@@ -513,20 +513,20 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
 
 1. Go back to the **Overview** tab and under the **Artifacts**, search for **Order Rejection Notification with Errors** form. Choose the three dots and select **Duplicate**.
 
-    <!-- border -->![decision](61.png)
+    ![decision](61.png)
 
 2. In the **Duplicate Artifact** dialog box, enter a **Form Name** such as  **Order Error Table Form** and click on **Duplicate**.
 
-    <!-- border -->![decision](62.png)
+    ![decision](62.png)
 
     Your new form opens in the form editor.
 
-    <!-- border -->![decision](63.png)
+    ![decision](63.png)
 
 3. Click on the three buttons next to **Customer Name** and next to **Order Number**, then choose **Delete** to remove them.
 
-    <!-- border -->![decision](64.png)
-    <!-- border -->![decision](65.png)
+    ![decision](64.png)
+    ![decision](65.png)
 
 4. Now, change the **Headline** and the **Paragraph** following the table below..
 
@@ -535,52 +535,52 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
     | Headline 1 | Order Error Summary Table
     | Paragraph  | The table below represents your processed order list with details of the errors found. 
 
-    <!-- border -->![decision](66.png)
+    ![decision](66.png)
 
 5. Modify the table to add a cell for the **Order Number**. Click on the **+** icon beside Error Output field and select **Text** and enter **Order Number** as field name.
 
-    <!-- border -->![decision](67.png)
-    <!-- border -->![decision](68.png)
+    ![decision](67.png)
+    ![decision](68.png)
 
 6. Click on the three dots next to **Order Number** and choose **Move Left** to shift the cell to the left, and repeat the operation to move the cell all the way to the left of the table.
 
-    <!-- border -->![decision](69.png)
-    <!-- border -->![decision](70.png)
+    ![decision](69.png)
+    ![decision](70.png)
 
 7. Finally, change the name of **Error Output** field to **Error Description**.
 
 7. **Save** your form.
 
-    <!-- border -->![decision](71.png)
+    ![decision](71.png)
 
 8. Navigate to the **Order Processing Error Table** process.
 
 9. Choose **+** below the decision.
 
-    <!-- border -->![decision](72.png)
+    ![decision](72.png)
   
 10. Select **Form**.
     
-    <!-- border -->![decision](72a.png)
+    ![decision](72a.png)
 
 11. Choose **Order Error Table** from **Available Forms**.
    
-    <!-- border -->![decision](72b.png)
+    ![decision](72b.png)
 
 12. Configure the **General** information section:
 
     - In the **Subject** section, enter **Order Error**
     - In the **Recipients** section, under Users, select **Process Started By** from Process Metadata
 
-    <!-- border -->![decision](73.png)
+    ![decision](73.png)
 
 13. Now, configure the **Inputs** information section. In the select list field, choose `List - Order Error List`.
 
-    <!-- border -->![decision](74.png)
+    ![decision](74.png)
 
 14. **Save** the process.
 
-    <!-- border -->![decision](75.png)
+    ![decision](75.png)
 
 
 ### Release and deploy
@@ -589,68 +589,68 @@ You will select **Add Input Parameter** button and **Add Output Parameter** butt
 
 1. In the **Order Processing Error Table** process, choose the **Release** button on the top right corner
 
-    <!-- border -->![decision](76.png)
+    ![decision](76.png)
 
 2. In the **Release Project** popup, select **Release**.
 
-    <!-- border -->![decision](77.png)
+    ![decision](77.png)
 
 3. In the **Overview** section that appears, choose **Deploy**.
 
-    <!-- border -->![decision](78.png)
+    ![decision](78.png)
 
 4. Select an **Environment** and choose **Deploy**.
 
-    <!-- border -->![decision](78-1.png)
+    ![decision](78-1.png)
 
 5. In the **Define Variables** section, choose **Deploy**. You will enter the `orderFilePath` as you would provide the path of excel in the trigger form which is explained in **Step 13: Test the process**.
 
-    <!-- border -->![decision](78-2.png)
+    ![decision](78-2.png)
 
     Your project successfully deployed.
 
-    <!-- border -->![decision](78-4.png)
+    ![decision](78-4.png)
 
     > **CAUTION:** Before executing the process, make sure your desktop agent is in unattended mode.
 
-    <!-- border -->![decision](80-1.png)
+    ![decision](80-1.png)
   
 
 ### Test the process
 
 1. Open the **Order Processing Error Table** process of the deployed version and choose **Order File Path Form**, select the **Copy Link** icon next to the **Form Link**.
 
-    <!-- border -->![decision](80.png)
+    ![decision](80.png)
 
 2. In a new tab in your browser, paste the form link and enter your file path and select **Submit**.
 
-    <!-- border -->![decision](81.png)
+    ![decision](81.png)
 
     Once the form is submitted successfully, the BOT opens the **Sales Order Excel** file which is stored in your system, reads the data, and passes the data to the decision. The Business Rules are executed and the list of orders with/without errors are displayed in the tables in the form. You can follow the steps of execution in the **Monitoring** section.
 
 3. Navigate back to **SAP Build** Lobby and select **Monitoring** tab. Then choose **Process and Workflow Instances** under **Monitor**.
 
-    <!-- border -->![decision](monitor.png)
+    ![decision](monitor.png)
 
 3. Now, select the **Order Processing Error Table** process. The process indicates that the **Order Error** task is available in **My Inbox**.
 
-    <!-- border -->![decision](monitor2.png)
+    ![decision](monitor2.png)
 
 4. In the **SAP Build** lobby, choose **My Inbox** icon.
 
-    <!-- border -->![decision](82.png)
+    ![decision](82.png)
 
 5. You will receive a notification with the error details in a table.
    
 6. Choose **Submit** to complete the process.
 
-    <!-- border -->![decision](83.png)
+    ![decision](83.png)
 
 7. You can navigate back to **Monitoring > Process and Workflow Instances**.
 
     Your process completed successfully.
 
-    <!-- border -->![decision](83a.png)
+    ![decision](83a.png)
 
     Congratulations! You have successfully completed the tutorial. With this process, sales executive is notified of erroneous and error free orders.
 

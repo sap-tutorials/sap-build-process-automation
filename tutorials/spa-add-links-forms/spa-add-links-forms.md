@@ -31,27 +31,27 @@ After completing the prerequisites, you will create a project.
 
 1. In **SAP Build** lobby, choose **Create**.
 
-    <!-- border -->![create](create.png)
+    ![create](create.png)
 
 2. Pick **Build an Automated Process**.
 
-    <!-- border -->![Create](create2.png)
+    ![Create](create2.png)
 
 3. Select **Business Process**.
 
-    <!-- border -->![Create](create3.png)
+    ![Create](create3.png)
 
 4. In the **Create a Business Process project** dialog box, do the following:
     - Enter a **Project Name** such as Tutorials Learning Path.
     - Choose **Create**.
 
-    <!-- border -->![create](create4.png)
+    ![create](create4.png)
 
 5. In the **Create Process** dialog box, provide the following:
     - Enter a **Name** such as Learning Path.
     - Choose **Create**.
 
-    <!-- border -->![create](create5.png)
+    ![create](create5.png)
 
 ### Create a form to trigger the business process
 
@@ -59,15 +59,15 @@ After completing the prerequisites, you will create a project.
 
 1. Choose **Add a Trigger** in the Trigger settings.
    
-    <!-- border -->![Form](1a.png)
+    ![Form](1a.png)
 
 2. Choose **Submit a Form**.
    
-    <!-- border -->![Form](1b.png)
+    ![Form](1b.png)
 
 3. Choose **Blank form**.
 
-    <!-- border -->![Form](1c.png)
+    ![Form](1c.png)
 
 
 4. In the **Create Form** pop-up window, enter:
@@ -75,11 +75,11 @@ After completing the prerequisites, you will create a project.
     - A description to describe the task of the form.
     - Choose **Create**.
 
-    <!-- border -->![Form](3.png)
+    ![Form](3.png)
 
 5. Choose the three dots and select **Open Editor**.
 
-    <!-- border -->![Form](4.png)
+    ![Form](4.png)
 
 6. Now, you will edit the form by using the available layout and input field options. Start by dragging and dropping the form layout fields, then enter the given names and field settings as shown in the example below:
 
@@ -88,7 +88,7 @@ After completing the prerequisites, you will create a project.
     |  Headline 1         | Welcome to your SAP Build Process Automation online training
     |  Paragraph          | This training has been designed to assist you in completing specific courses that are necessary for your job. It contains links to online training tutorials that will guide you through the different steps of the automation process using SAP Build Process Automation. We hope that this training will be useful for you in understanding the benefits of SAP Build Process Automation and how to use it to improve the efficiency of our company.
     
-    <!-- border -->![Form](5.png)
+    ![Form](5.png)
 
 7. Customize the **Submit** button.
 
@@ -96,7 +96,7 @@ After completing the prerequisites, you will create a project.
     
     For example, here the button of the trigger form has been set to **Start**.
 
-    <!-- border -->![Form](button.png)
+    ![Form](button.png)
 
 8. Save the form using the **Save** button on the top-right corner of the screen.
 
@@ -105,26 +105,26 @@ After completing the prerequisites, you will create a project.
 
 1. Go to your **Learning Path** process. Select **+** next to the Trigger.
 
-    <!-- border -->![Form](5a.png)
+    ![Form](5a.png)
 
 2. Choose **Form**.
 
-    <!-- border -->![Form](5b.png)
+    ![Form](5b.png)
 
 3. Choose **Blank Form**.
 
-    <!-- border -->![Form](5c.png)
+    ![Form](5c.png)
 
 4. In the pop-up window for **Create form**: 
     - Enter the name of your mission: **Build Your First Business Process**.
     - Enter a description to describe the task of the form.
     - Choose **Create**.
 
-    <!-- border -->![Form](6.png)
+    ![Form](6.png)
 
 5. A new form is added to the process. Choose **Open Editor**. 
 
-    <!-- border -->![Form](7.png)
+    ![Form](7.png)
 
 6. Design the **Build Your First Business Process** form in the form builder by dragging-and-dropping fields into the form editor and configuring respective field settings, as shown in the example below:
 
@@ -144,7 +144,7 @@ After completing the prerequisites, you will create a project.
      - How to enable SAP Build Process Automation in SAP BTP Free Tier account.                                                                               
      - How to create interactive forms that can be used as triggers for processes or as approval steps within a business process.
 
-    <!-- border -->![Form](8.png)
+    ![Form](8.png)
 
 7.  Now insert a **Link** field before the **Checkbox** field and configure the field settings. For example, in this tutorial, you will link the form to the **Build Your First Business Process with SAP Build Process Automation** mission.
 
@@ -152,7 +152,7 @@ After completing the prerequisites, you will create a project.
     | Link | <https://developers.sap.com/mission.sap-process-automation.html>
     | Link Text | Start First Mission
 
-    <!-- border -->![Form](9.png)
+    ![Form](9.png)
 
     > You can choose any link and put it here, depending on your project.
 
@@ -162,7 +162,7 @@ After completing the prerequisites, you will create a project.
     
     Here, the button has been set to **Next**.
 
-    <!-- border -->![Form](button2.png)
+    ![Form](button2.png)
 
 9. **Save** the form.
 
@@ -174,7 +174,7 @@ After completing the prerequisites, you will create a project.
     - In the **Subject** section, enter **First Learning Mission**.
     - In the **Recipients** section, under **Users**, select **Process Started By** from Process Metadata.
 
-    <!-- border -->![Form](10.png)
+    ![Form](10.png)
 
     > The subject configuration will be displayed when the form appears as a task in the recipient's `MyInbox`.
     
@@ -182,7 +182,7 @@ After completing the prerequisites, you will create a project.
     - Select **Static Duration** as **type of due date**.
     - Enter **3 Days** as the duration.
 
-    <!-- border -->![Form](13_2.png)
+    ![Form](13_2.png)
 
 4. **Save** the process.
 
@@ -191,26 +191,26 @@ After completing the prerequisites, you will create a project.
 
 1. To add the second mission form to the process, select **+** next to the **Build Your First Business Process** form. 
    
-    <!-- border -->![Form](11a.png)
+    ![Form](11a.png)
 
 2. Choose **Form**. 
 
-    <!-- border -->![Form](11b.png)
+    ![Form](11b.png)
 
 3. Choose **Blank Form**.
 
-    <!-- border -->![Form](11c.png)
+    ![Form](11c.png)
 
 4. In the **Create Form** dialog box, do the following.  
     - Enter the name of your mission: **Boost Your Business Process with Automation**.
     - Enter a description to describe the task of the form.
     - Choose **Create**.
  
-    <!-- border -->![Form](12.png)
+    ![Form](12.png)
 
 5. Choose the three dots of the new form and select **Open Editor**. 
 
-    <!-- border -->![Form](13a.png)
+    ![Form](13a.png)
 
 6. Design the **Boost Your Business Process with Automation** form in the form builder.
 
@@ -232,7 +232,7 @@ After completing the prerequisites, you will create a project.
      - Configuring SAP Build Work Zone, standard edition for the visibility scenario. "30min"                                                                                      
      - Configuring a form trigger in the SAP Business Site to run a business process. "35min"
 
-    <!-- border -->![Form](14a.png)
+    ![Form](14a.png)
 
 7.  Now insert a **Link** field before the **Checkbox** field and configure the field settings. For example, in this tutorial, you will link the form to the **Boost your Business Process with Automation, Decision and Process Visibility** mission.
 
@@ -240,7 +240,7 @@ After completing the prerequisites, you will create a project.
     | Link | <https://developers.sap.com/mission.sap-process-automation-boost.html>
     | Link Text | Start Second Mission 
 
-    <!-- border -->![Form](15a.png)
+    ![Form](15a.png)
 
 8. Customize the **Submit** button.
 
@@ -248,7 +248,7 @@ After completing the prerequisites, you will create a project.
     
     Similarly, here for the second mission, the button has been set to **Next**.
 
-    <!-- border -->![Form](button3a.png)
+    ![Form](button3a.png)
 
 8. **Save** the form.
 
@@ -260,13 +260,13 @@ After completing the prerequisites, you will create a project.
     - In the **Subject** section, enter **Second Learning Mission**.
     - In the **Recipients** section, under **Users**, select **Process Started By** from Process Metadata.
   
-    <!-- border -->![Form](16a.png)
+    ![Form](16a.png)
 
 3. In the **Due Date** section:
     - Select **Static Duration** as **type of due date**.
     - Enter **3 Days** as the duration.
 
-    <!-- border -->![Form](16b.png)
+    ![Form](16b.png)
 
 4. **Save** the process.
 
@@ -275,26 +275,26 @@ After completing the prerequisites, you will create a project.
 
 1. Similarly, select **+** next to the **Boost Your Business Process with Automation** form. 
 
-    <!-- border -->![Form](17a.png)
+    ![Form](17a.png)
 
 2. Choose **Form**.
    
-    <!-- border -->![Form](17b.png)
+    ![Form](17b.png)
    
 3. Choose **Blank Form**.
 
-    <!-- border -->![Form](17c.png)
+    ![Form](17c.png)
 
 4. In the **Create Form** dialog box, do the following: 
     - Enter the name of your mission: **Create Tables in the Form**.
     - Enter a description to describe the task of the form.
     - Choose **Create**.
 
-    <!-- border -->![Form](18.png)
+    ![Form](18.png)
 
 5. Choose the three dots of the new form and select **Open Editor**. 
 
-    <!-- border -->![Form](19a.png)
+    ![Form](19a.png)
 
 6. Design the **Create Tables in the Form** form in the form builder.
 
@@ -309,7 +309,7 @@ After completing the prerequisites, you will create a project.
 
     In this training, you will learn how to create a table in a form, validate the order details extracted from the automation, and display any error details in the table.
 
-    <!-- border -->![Form](19b.png)
+    ![Form](19b.png)
 
 7. Similarly insert a **Link** field before the **Checkbox** field and configure the field settings. For example, in this tutorial, you will link the form to the **Create Tables in the Form** tutorial.
 
@@ -317,7 +317,7 @@ After completing the prerequisites, you will create a project.
     | Link | <https://developers.sap.com/tutorials/spa-forms-table.html>
     | Link Text | Start Third Mission
 
-    <!-- border -->![Form](20a.png)
+    ![Form](20a.png)
 
 8. Customize the **Submit** button.
    
@@ -325,7 +325,7 @@ After completing the prerequisites, you will create a project.
     
     Here for the last mission, the button has been set to **Done**.
 
-    <!-- border -->![Form](button4a.png)
+    ![Form](button4a.png)
 
 9.  **Save** the form.
 
@@ -338,13 +338,13 @@ After completing the prerequisites, you will create a project.
     - In the **Subject** section, enter **Third Learning Mission**.
     - In the **Recipients** section, under **Users**, select **Process Started By** from Process Metadata.
 
-    <!-- border -->![Form](21a.png)
+    ![Form](21a.png)
 
 3. In the **Due Date** section:
     - Select **Static Duration** as **type of due date**.
     - Enter **3 Days** as the duration.
 
-    <!-- border -->![Form](21b.png)
+    ![Form](21b.png)
 
 4. **Save** the process.
 
@@ -358,24 +358,24 @@ After completing the prerequisites, you will create a project.
 
 1. Open the process builder of the deployed version and choose **Registration Form**, select the **Copy Link** icon next to **Form Link**.
 
-    <!-- border -->![Form](22a.png)
+    ![Form](22a.png)
 
 2. When you open the form in the browser, you will have the course presentation fields that you defined in the process trigger form. Click on **Start**.    
 
-    <!-- border -->![Form](23.png)
+    ![Form](23.png)
 
 3. In the **SAP Build** lobby, choose **My Inbox** icon.
 
-    <!-- border -->![Form](24.png)
+    ![Form](24.png)
 
 4. You will see the first task **First Learning Mission** appear in the My Inbox application that ships with SAP Build. The task will have the description of the training to be followed and the link to the tutorial. After finishing the mission, click on **Next**.
 
-    <!-- border -->![Form](25.png)
+    ![Form](25.png)
 
 5. Refresh the inbox again to get the second notification for the second mission. Now you can see task **Second Learning Mission** appear in My Inbox. After finishing the mission, click on **Next**.
 
-    <!-- border -->![Form](26.png)
+    ![Form](26.png)
 
 6. Similarly, refresh the inbox again to get the third mission. Once the mission is completed, click on **Done**.
 
-    <!-- border -->![Form](27.png)
+    ![Form](27.png)

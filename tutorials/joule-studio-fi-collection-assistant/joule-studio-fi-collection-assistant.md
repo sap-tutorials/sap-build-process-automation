@@ -52,15 +52,15 @@ Collections specialists spend significant time manually crafting dunning and col
 
     Agent Name:
 
-    ```COPY
-        AR Collection Email
-    ```
+   ```COPY
+       AR Collection Email
+   ```
 
     Intent Statement:
 
-    ```COPY
-        Create an agent which drafts personalized collection emails based on payment history and outstanding items.
-    ```
+   ```COPY
+       Create an agent which drafts personalized collection emails based on payment history and outstanding items.
+   ```
 
     Select **Quick create**.
 
