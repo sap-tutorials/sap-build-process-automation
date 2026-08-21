@@ -33,9 +33,9 @@ To configure action in business process, you will need to create an environment 
     - Update the **URL**, **User** and the **Password** based on your **S4HANACloud** setup.
     - **Save** the changes.
 
-    <!-- border -->![Destination](001.png)
+    ![Destination](001.png)
 
-    <!-- border -->![Destination](002.png)
+    ![Destination](002.png)
 
     > Note that there is a property **sap.processautomation.enabled** added to the destination. The destinations which have this property set as true can be discovered and added in SAP Build Process Automation.
 
@@ -47,17 +47,17 @@ To configure action in business process, you will need to create an environment 
     - Open **SAP Build** development workbench.
     - Click **Control Tower > Destinations**.
   
-    <!-- border -->![Destination](002a.png)
+    ![Destination](002a.png)
 
     - Click **New Destination**.
     - From **Add Destination** pop-up, select `S4_Business_Partner` destination.
     - Click **Add** to add a new destination in SAP Build Process Automation.
 
-    <!-- border -->![Destination](003.png)
+    ![Destination](003.png)
 
     A new destination will be added.
 
-    <!-- border -->![Destination](004.png)
+    ![Destination](004.png)
 
     > This destination will then be associated with the environment variable while deploying the business process.
 

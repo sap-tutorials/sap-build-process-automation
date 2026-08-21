@@ -29,7 +29,7 @@ In this tutorial, you will use the sales order project you created in the previo
 
 1. Select the **Create Sales Order** application.
 
-    <!-- border -->![Generated application](01.png)
+    ![Generated application](01.png)
 
 2.  Select the capture containing the order details.
 
@@ -39,43 +39,43 @@ In this tutorial, you will use the sales order project you created in the previo
 
 5.  Select **Remove** the **Id** **Criteria**.
 
-    <!-- border -->![Modify application fields](02.png)
+    ![Modify application fields](02.png)
 
 6.  Select **Name** to add it as a **Criteria**.
 
 7.  Select **Is a collection**.
 
-    <!-- border -->![Is a Collection icon](03c.png)
+    ![Is a Collection icon](03c.png)
 
     >**Is a collection** is used to declare a field as a column containing multiple fields rather than just one field.
 
-    <!-- border -->![Modify application fields](03.png)
+    ![Modify application fields](03.png)
 
 8. Repeat the steps 3-7 for the remaining five fields *Order Quantity Field*, *Customer Group Field*, *Price Group Field*, *Price List Field* and *Storage Location Field*.
 
     The application now recognizes *Material*, *Order Quantity*, *Customer Group Field*, *Price Group Field*, *Price List Field* and *Storage Location Field* as columns and not as fields.
 
-    <!-- border -->![Modify application fields](03b.png)
+    ![Modify application fields](03b.png)
 
 9. Now select on capture 3 the GUI table and choose **Declare Element**.
 
-    <!-- border -->![Declare table](04.png)
+    ![Declare table](04.png)
 
     The GUI table is declared and can be used to access certain activities necessary to customize your automation such as **Get visible row count**.
  
-    <!-- border -->![Table declared](05.png)
+    ![Table declared](05.png)
 
 10. Now select on the capture the **Create Item** button and choose **Declare Element**.
 
-    <!-- border -->![Declare Create Item](05b.png)
+    ![Declare Create Item](05b.png)
 
     The **Create Item** button is declared and can be used in your customized automation.
   
-    <!-- border -->![Create Item declared](05c.png)
+    ![Create Item declared](05c.png)
 
 11. Finally, select the **Standard Order xxx has been saved** status bar, change the name to **Saved standard order number** and choose **Declare Element**.
 
-    <!-- border -->![Status bar declared](05d.png)
+    ![Status bar declared](05d.png)
 
 12. Choose **Save** to save your work.
 
@@ -96,7 +96,7 @@ You will create two **environment variables** (Password and Excel file path).
 
 3.  Select **Create**.
 
-    <!-- border -->![Create Environment Variable 1](09.png)
+    ![Create Environment Variable 1](09.png)
 
 4.  Fill in the *password* environment variable's **Identifier**, **Description** (optional) and **Type** then select **Create**.
 
@@ -112,7 +112,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     The two **environment variables** are created.
 
-    <!-- border -->![Create Environment Variable 2](10.png)
+    ![Create Environment Variable 2](10.png)
 
 
 ### Customize the automation
@@ -125,9 +125,9 @@ You will create two **environment variables** (Password and Excel file path).
 
     - Under **Input Parameters** for value, select the *password* **environment variable**.
 
-    > **Environment Variables** have the letter **E** on the left side to distinguish them. <!-- border -->![Distinguish Environment Variables](step4-E.png)
+    > **Environment Variables** have the letter **E** on the left side to distinguish them. ![Distinguish Environment Variables](step4-E.png)
 
-    <!-- border -->![Use password Environment Variable](30.png)
+    ![Use password Environment Variable](30.png)
 
 3. **Create an Excel file with the order details**:
 
@@ -151,7 +151,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     -  Choose browse and select the Excel file.
 
-    <!-- border -->![Configure ECL](06.png)
+    ![Configure ECL](06.png)
 
     The file is loaded to the activity.
 
@@ -159,21 +159,21 @@ You will create two **environment variables** (Password and Excel file path).
 
     -  Select **+ From Excel Data** to create the Order details **Data Type**.
 
-    <!-- border -->![Excel_ file_ path Environment Variable](07.png)
+    ![Excel_ file_ path Environment Variable](07.png)
 
     A pop-up window opens.
 
     - Set a name and a description for the **Data Type**.
 
-    <!-- border -->![Order Data Type](08.png)
+    ![Order Data Type](08.png)
 
     The Data Type Order Details has been created.
 
-    <!-- border -->![Order Data Type](08b.png)
+    ![Order Data Type](08b.png)
 
     You may go to **Overview** tab and see that a new Data Type artifact has been created.
 
-    <!-- border -->![Order Data Type](08c.png)
+    ![Order Data Type](08c.png)
 
 6. **Get the visible rows count of your GUI table**:
 
@@ -183,13 +183,13 @@ You will create two **environment variables** (Password and Excel file path).
 
     - On the capture, double click on the table you previously declared and drag and drop the activity on the selected table.
 
-    <!-- border -->![Get visible rows count activity](11.png)
+    ![Get visible rows count activity](11.png)
 
     The activity will get added at the bottom of **Create Standard Order: Overview** screen.
 
     - In the automation, drag and drop the activity just below **Set Element Sold-To-Party**.
 
-    <!-- border -->![Get visible rows count activity](12.png)
+    ![Get visible rows count activity](12.png)
   
     > ### What is going on?
     > **Get visible rows count** activity retrieves the number of visible rows in a SAP GUI table. Depending on your display, the number of visible rows of your table may vary.
@@ -198,11 +198,11 @@ You will create two **environment variables** (Password and Excel file path).
 
     - Under **Data Types**, drag a **Number** data type and drop it below the **Get Visible Rows Count (GUI Table)**.
 
-    <!-- border -->![Create number variable](13.png)
+    ![Create number variable](13.png)
 
 8. Select the activity and under **Input Parameters** as a value enter 0.
 
-    <!-- border -->![Create number variable](14.png)
+    ![Create number variable](14.png)
 
     > ### What is going on?
     > You have created a variable of type number that has a starting count value of 0. 
@@ -215,7 +215,7 @@ You will create two **environment variables** (Password and Excel file path).
 
      - Search for the **For each** control and drag and drop it below the **Create number variable** just above the fields that need to be included in the repetitive process ( *Material*, *Order Quantity*, *Customer Group*, *Price Group*, *Price* and *Storage Location* ).
 
-    <!-- border -->![For each Activity](15.png)
+    ![For each Activity](15.png)
 
     - Drag and drop the three **Set Element - X** activities as well as the three **Set Key (GUI Combo Box)** activities inside the **For each** activity.
 
@@ -225,7 +225,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     > **returned Values** references the data returned from the **Excel Cloud link** activity.
 
-    <!-- border -->![Setup For each Activity](16.png)
+    ![Setup For each Activity](16.png)
 
     Map the excel data of the current row to the corresponding field.
 
@@ -235,7 +235,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     > **current Member** references the excel row used in the iteration of the **For each** loop.
 
-    <!-- border -->![Set material Value](17.png)
+    ![Set material Value](17.png)
 
     -  Select **Open the target editor**.
 
@@ -245,7 +245,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     -  Select **Confirm**.
 
-    <!-- border -->![Set Target index](18.png)
+    ![Set Target index](18.png)
 
     Some fields are stored as numbers in excel such as **Order Quantity**. Convert them to strings (succession of characters).
 
@@ -259,7 +259,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     > *Step29* references the **For each** **activity**.
 
-      <!-- border -->![Set orderQuantity Value](19.png)
+      ![Set orderQuantity Value](19.png)
 
     -  Select **Open the target editor**.
 
@@ -269,7 +269,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     -  Choose **Confirm**.
 
-    <!-- border -->![Set orderQuantity Value](20.png)  
+    ![Set orderQuantity Value](20.png)  
 
     > Repeat the same steps for *Customer Group*, *Price Group*, *Price List* and *Storage Location* fields as for the *Material* field in the previous steps.
 
@@ -281,20 +281,20 @@ You will create two **environment variables** (Password and Excel file path).
 
     - Select the control and choose the three dots. From the dropdown, select **Edit Formula**.
 
-    <!-- border -->![Condition control](21.png)  
+    ![Condition control](21.png)  
 
     - In the Expression Editor, enter : `Step28.myVariable == Step27.count - 1`
 
     - Choose **Save Expression**.
     
-    <!-- border -->![Edit expression](22.png)  
+    ![Edit expression](22.png)  
 
     > ### What is going on?
     > The my variable you created starts at 0. This means that the For Each loop will loop through the excel data from 0 to 19. (the Sales Order excel file, you are using for this exercise has 20 rows) The first visible row of a SAP GUI table starts at 0. So you need to subtract 1 to the count of visible rows. Hence, the formula reads: *If my variable is equal to the number of visible rows in the GUI table - 1*
 
     - Search for **Set Variable Value** and drag and drop it in the condition below the first branch.
 
-    <!-- border -->![Set variable value](23.png)  
+    ![Set variable value](23.png)  
 
     - Select the activity under the condition branch.
 
@@ -303,7 +303,7 @@ You will create two **environment variables** (Password and Excel file path).
         - variable: my Variable
         - value: 1
 
-    <!-- border -->![Set variable value](24.png)  
+    ![Set variable value](24.png)  
     
     - Double click on the **Create Standard Order: Overview** screen. 
     
@@ -311,11 +311,11 @@ You will create two **environment variables** (Password and Excel file path).
     
     - Search for the **Click Sync (GUI Button)** activity and drag and drop it on the **Create Item** element.
     
-    <!-- border -->![Click Create Item](25.png)  
+    ![Click Create Item](25.png)  
 
     - Drag the **Click Sync (GUI Button)** activity and drop it below **Set Variable Value**.
 
-    <!-- border -->![Create Item](26.png) 
+    ![Create Item](26.png) 
 
     > ### What is going on?
     > If the value of my variable is equal to the number of visible rows in the GUI table -1, a new row needs to be created in order to add the other rows from the excel data. However, when a new row is created, GUI table registers the previous row created hence the value needs to start at 1. 0 being the previously recorded row.
@@ -328,14 +328,14 @@ You will create two **environment variables** (Password and Excel file path).
 
         - For value, open the expression editor and enter: `Step28.myVariable + 1`
 
-    <!-- border -->![Default branch](27.png) 
+    ![Default branch](27.png) 
 
     > ### What is going on?
     > If the value of my variable is not equal to the number of visible rows in the GUI table - 1, meaning the data from excel can be set on the visible rows of the GUI table then the value of my variable is set from 0 until 19.
 
     You may delete unnecessary activities such as **Set Focus Element Storage Location** and **Set Caret Position (GUI Text Field) Storage Location**.
 
-    <!-- border -->![Deleting unecessary activities](28.png)
+    ![Deleting unecessary activities](28.png)
 
 11. **Retrieving the sale's order number**:
 
@@ -345,7 +345,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     - Search for the **Get Element** activity and drag and drop it on the status bar element.
 
-    <!-- border -->![Get element](31.png)
+    ![Get element](31.png)
 
     - Close the screen and search for a **Log Message** activity.
 
@@ -357,7 +357,7 @@ You will create two **environment variables** (Password and Excel file path).
 
     - Save your automation.
 
-    <!-- border -->![Log message](32.png)
+    ![Log message](32.png)
 
 
 ### Test your automation
@@ -365,7 +365,7 @@ You will create two **environment variables** (Password and Excel file path).
 
 Choose **Test** and you will be prompted to put in values for the **environment variables**.
 
-<!-- border -->![Test Application](33.png)
+![Test Application](33.png)
 
 The process operates as follows:
 
