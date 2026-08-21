@@ -33,11 +33,11 @@ In this tutorial, you will use Google Authorization SDK and Google Workspace SDK
 
 2. In **Build Process Automation**, choose **Create** and then select **Automation**.
 
-    <!-- border -->![Create Automation](00.png)
+    ![Create Automation](00.png)
 
 3. In the **Create Automation** window, enter **Google Workspace-Gmail** as name and **An automation to use Gmail** as a description.
 
-    <!-- border -->![Create Automation](00a.png)
+    ![Create Automation](00a.png)
 
     You will be navigate to the automation editor of the newly created Automation.
 
@@ -53,7 +53,7 @@ In the previous [tutorial](spa-authorize-google-service-account), you have added
 
 4. The dependency is successfully added. You may close the **Project Properties** window.
 
-    <!-- border -->![Google Workspace SDK](01.png)
+    ![Google Workspace SDK](01.png)
 
 ### Add input parameters
 
@@ -69,31 +69,31 @@ You will add two input parameters.
 |  Type           | String            | String
 
 
-<!-- border -->![Input Parameters](01a.png)
+![Input Parameters](01a.png)
 
 ### Build an automation to use Gmail
 
 1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-service-account) automation you created in the previous tutorial. This will allow you to authorize SAP Build Process Automation to automate your Google Applications.
 
-    <!-- border -->![Google Authorization Automation](01b.png)
+    ![Google Authorization Automation](01b.png)
 
 2. In the **Automation Details** panel, under **Tools**, search for the **Try** activity.
 
 3. Drag and drop the activity into the workflow just below **Google Authorization** automation.
 
-    <!-- border -->![Try](02.png)
+    ![Try](02.png)
 
 4. Select the **Try** activity.
 
 5. Under the activity parameters, as **Errors to catch** select **`GmailError`**.
 
-    <!-- border -->![Parameters](03.png)
+    ![Parameters](03.png)
 
 6. Now search for the **Search Emails (Gmail)** activity and drag and drop it into the workflow, just below the **Try**.
 
     > Add Search Emails (Gmail) activity to search for a specific email in your Gmail account. This activity uses GMAIL API to search for emails based on the search filters as specified in the search query Parameters. You can optionally also specify if the search should include spam and trash folders or not. Output of this activity is a list of Metadata of the emails that match search criteria.
 
-    <!-- border -->![Search Emails](04.png)
+    ![Search Emails](04.png)
 
 7. Select the activity.
 
@@ -105,11 +105,11 @@ You will add two input parameters.
 
 10. Choose **Save Expression**.
 
-    <!-- border -->![query](05.png)
+    ![query](05.png)
 
 11. For the **`includeSpamTrash`** field, select **false**. This indicates that you do not want to search emails in your Spam and Trash folders.
 
-    <!-- border -->![includeSpamTrash](06.png)
+    ![includeSpamTrash](06.png)
 
 12. Now search for the **Condition** control and drag and drop it into the workflow below **Search Emails** activity.
 
@@ -119,7 +119,7 @@ You will add two input parameters.
 
 15. Under **Parameters** for **Condition Expression**, choose the three dots and select **Edit Formula**.
 
-    <!-- border -->![Condition Expression](07.png)
+    ![Condition Expression](07.png)
 
 16. In the expression editor, copy and paste the following code:
 
@@ -127,7 +127,7 @@ You will add two input parameters.
 
 17. Choose **Save Expression**.
 
-    <!-- border -->![Expression Editor](08.png)
+    ![Expression Editor](08.png)
 
 18. Now search for the **Read Email (Gmail)** activity and drag and drop it into the workflow just below the condition control.
 
@@ -141,19 +141,19 @@ You will add two input parameters.
 
 21. Choose **Save Expression**.
 
-    <!-- border -->![Message ID](09.png)
+    ![Message ID](09.png)
 
 22. For **location** field, select **drive**.
 
 23. Finally, for **`markAsRead`** field, select **true**.
 
-    <!-- border -->![Input Parameters](10.png)
+    ![Input Parameters](10.png)
 
 24. Search for the **Send Reply** activity and drag and drop it into the workflow just below the **Read Email** activity.
 
 25. Select the activity and under **Input Parameters**, for the **`replyParameters`** field, select **Create Custom Data**.
 
-    <!-- border -->![Send Reply](11.png)
+    ![Send Reply](11.png)
 
 26. Select the pencil next to the **`threadId`** field.
 
@@ -163,7 +163,7 @@ You will add two input parameters.
 
 28. Choose **Save Expression**.
 
-    <!-- border -->![threadId](12.png)
+    ![threadId](12.png)
 
 29. Select the pencil next to the **`messageId`** field.
 
@@ -173,13 +173,13 @@ You will add two input parameters.
 
 31. Choose **Save Expression**.
 
-    <!-- border -->![messagedId](13.png)
+    ![messagedId](13.png)
 
 32. For **body** field, enter: **Thanks for sending the list. I will look into it** and select the quotes option.
 
 33. Choose **Save**.
 
-    <!-- border -->![body](14.png)
+    ![body](14.png)
 
 34. Search for **Disconnect** activity and drag and drop it into the workflow just below **Send reply** activity.
 
@@ -187,11 +187,11 @@ You will add two input parameters.
 
 35. Search for a **Log Message** activity and drag and drop it into the workflow just below the **Catch**.
 
-    <!-- border -->![Log Message](15.png)
+    ![Log Message](15.png)
 
 36. Select the activity and under **Input Parameters**, for **message** select `2 error`, for **type** select **error** and for **label** enter **Normal workflow has interrupted due to some error(s). Please check.**, selecting the expression in quotes.
 
-    <!-- border -->![Log Message](16.png)
+    ![Log Message](16.png)
 
 37. Search for **Disconnect** activity and drag and drop it into the workflow just below **Log Message** activity.
 
@@ -199,7 +199,7 @@ You will add two input parameters.
 
 39. Select the **Stop** control and under **Parameters** select the option **`Rethrow caught error`**.
 
-    <!-- border -->![Stop](18.png)
+    ![Stop](18.png)
 
 ### Test Google Workspace for Gmail
 
@@ -215,13 +215,13 @@ You will add two input parameters.
 
 4. Choose **Test**.
 
-    <!-- border -->![Test](19.png)
+    ![Test](19.png)
 
     The testing was successful.
 
-    <!-- border -->![Test result](20.png)
+    ![Test result](20.png)
 
     After searching in Gmail for the email(s), the automation will read the email(s) found, store the attachment(s) if any in your Drive and send a reply to a specified recipient from your gmail account.
 
-    <!-- border -->![Test result](21.png)
+    ![Test result](21.png)
 ---

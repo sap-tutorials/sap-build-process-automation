@@ -42,55 +42,55 @@ Follow these steps once and your Desktop Agent 3 will be regularly updated to th
 
 1. You can install the Desktop Agent 3 from SAP Build. Navigate to the **Control Tower** in **SAP Build** lobby, choose **Agent Update** under **Agent Configuration**. 
 
-    <!-- border -->![Agent Update](agent3-031a.png)
+    ![Agent Update](agent3-031a.png)
 
     >The following steps are required if you have not set up your Secret ID yet. 
 
 2. Select **Go to RBSC Portal**.
 
-    <!-- border -->![RBSC Portal](agent3-031.png)
+    ![RBSC Portal](agent3-031.png)
 
 3. Select **Add User**.
 
-    <!-- border -->![Add User](agent3-023.png)
+    ![Add User](agent3-023.png)
 
     > Please make sure you assign the `ProcessAutomationAdmin` role when you subscribe to SAP Build Process Automation in your BTP account. If you do not do so you will not be able to add a user.
 
 4. Set the name of the user and choose **Add user**.
 
-    <!-- border -->![Set username](agent3-024.png)
+    ![Set username](agent3-024.png)
 
 5. Confirm with **OK** button.
 
-    <!-- border -->![Create user](agent3-025.png)
+    ![Create user](agent3-025.png)
 
 6. To generate a new Secret ID, choose **Generate** and then select **OK**.
 
     > Note the full username as it will be needed later.
 
-    <!-- border -->![Generate a new key](agent3-026.png)
+    ![Generate a new key](agent3-026.png)
 
 7. When the Secret ID is generated, copy its value and click **OK**.
 
-    <!-- border -->![Generate a new key](agent3-028.png)
+    ![Generate a new key](agent3-028.png)
 
 8. Go back to SAP Build, and select the **Enter Secret ID** button.
 
-    <!-- border -->![Enter Secret ID](agent3-029a.png)
+    ![Enter Secret ID](agent3-029a.png)
 
 9.  Set the Name and the Secret ID.
     
 10. Choose **Confirm**.
 
-    <!-- border -->![Set the secret id](agent3-030.png)
+    ![Set the secret id](agent3-030.png)
 
 11. Choose the **Go to Download Page** button.
 
-    <!-- border -->![Go to Download Page](agent3-032.png)
+    ![Go to Download Page](agent3-032.png)
 
 12. Download the file.
 
-    <!-- border -->![Download file](agent3-004.png)
+    ![Download file](agent3-004.png)
 
 [OPTION END]
 
@@ -107,7 +107,7 @@ You will download the setup program from the SAP Development Tools. It is provid
    
 3. Select the desktop agent available for your operating system.
 
-    <!-- border -->![Desktop Agent 3 Trial download](tools.png)
+    ![Desktop Agent 3 Trial download](tools.png)
 
 [OPTION END]
 
@@ -122,13 +122,13 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Build
 
 1. Open the downloaded file. Select **Next** to begin the installation process.
 
-    <!-- border -->![Desktop Agent 3 Installation](agent3-002.png)
+    ![Desktop Agent 3 Installation](agent3-002.png)
 
     > You can open the file with **administrator rights**, and install the service, only if your use case requires it. For example, using the agent in unattended mode in production. It is not required for following the tutorials.
 
 2. Wait for the installation process to complete.
 
-    <!-- border -->![Desktop Agent 3 Installation](agent3-034.png)
+    ![Desktop Agent 3 Installation](agent3-034.png)
 
 3. Once the installation is successfully completed, choose **Finish** and launch the Desktop Agent 3.
 
@@ -136,15 +136,15 @@ When you install the Desktop Agent 3, it will automatically set up the SAP Build
 
 4. On Google Chrome, select **Manage extensions** under Extensions.
 
-    <!-- border -->![Manage extensions](agent3-005.png)
+    ![Manage extensions](agent3-005.png)
 
 5. Enable SAP Build Process Automation extension.
 
-    <!-- border -->![Enable extension](agent3-006.png)
+    ![Enable extension](agent3-006.png)
 
 6. Do the same for the Edge extension.
 
-    <!-- border -->![Enable extension](agent3-006a.png)
+    ![Enable extension](agent3-006a.png)
 
 
 ### Register the Desktop Agent on your tenant
@@ -161,35 +161,35 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
 2. Once the extension is enabled, you may register your agent to your tenant. Choose **Register Agent**.
 
-    <!-- border -->![Register Agent](agent3-037.png)
+    ![Register Agent](agent3-037.png)
 
 3. The Agent is registered:
    
-    <!-- border -->![Refresh Page](agent3-037a.png)
+    ![Refresh Page](agent3-037a.png)
 
 3. Once the process is completed, open the **Desktop Agent 3**.
 
-    <!-- border -->![Desktop Agent 3 Installation](agent3-008.png)
+    ![Desktop Agent 3 Installation](agent3-008.png)
 
 4.  Confirm the tenant configuration.
 
-    <!-- border -->![Configure Tenant](agent3-038.png)
+    ![Configure Tenant](agent3-038.png)
 
     The tenant is active.
 
-    <!-- border -->![Tenant Activate](agent3-039.png)
+    ![Tenant Activate](agent3-039.png)
 
 
 5. Once you completed the previous actions, log in to your tenant with your user name or e-mail and password.
 
-    <!-- border -->![Activate Tenant](agent3-014.png)
+    ![Activate Tenant](agent3-014.png)
 
 6.  The Agent should be in **Idle** state, waiting to start a project. To check, go to **Control Tower**, and select **Agents**.
 
 
-    <!-- border -->![Agent](agent3-013.png)
+    ![Agent](agent3-013.png)
 
-    <!-- border -->![Agent Idle](agent3-013a.png)
+    ![Agent Idle](agent3-013a.png)
 
 
 [OPTION END]
@@ -200,19 +200,19 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
 1. Navigate to **SAP Build** lobby. Select **Control Tower > Agents**.
    
-    <!-- border -->![Agents](agent3-013.png)
+    ![Agents](agent3-013.png)
 
 2. Select **Register new agent**.
 
-    <!-- border -->![Register new agent](agent3-007a.png)  
+    ![Register new agent](agent3-007a.png)  
 
 3. In the **Register New Agent** window, select **Copy and Close**.
 
-    <!-- border -->![Register agent](agent3-010.png)
+    ![Register agent](agent3-010.png)
 
 4. Select the **Desktop Agent 3** icon.
 
-    <!-- border -->![Desktop Agent 3 Installation](agent3-008.png)
+    ![Desktop Agent 3 Installation](agent3-008.png)
 
 5. Choose **Tenants**, select **Add Tenant** button.
 
@@ -222,19 +222,19 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
     - In the **Domain** field paste the URL you copied previously,
     - Choose **Save**.
 
-    <!-- border -->![Tenant data](agent3-011.png)
+    ![Tenant data](agent3-011.png)
 
 7. Select the tenant, choose the three dots and select **Activate**.
 
-    <!-- border -->![Activate Tenant](agent3-012.png)
+    ![Activate Tenant](agent3-012.png)
 
 8.  Once you completed the previous actions, log in to your tenant with your user name or e-mail and password.
 
-    <!-- border -->![Activate Tenant](agent3-014.png)
+    ![Activate Tenant](agent3-014.png)
 
 9.  The Agent should be in **Idle** state, waiting to start a project. To check, go to **Control Tower**, and select **Agents**.
 
-    <!-- border -->![Activate Tenant](agent3-013a.png)
+    ![Activate Tenant](agent3-013a.png)
 
 [OPTION END]
 
@@ -244,7 +244,7 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
 
 1. Navigate back to **Control Tower**. Select **Environments** under **Tenant Configuration**.
     
-    <!-- border -->![Environment](agent3-020b.png)
+    ![Environment](agent3-020b.png)
    
 2. Choose **Create Environment**.
    
@@ -255,21 +255,21 @@ Once the installation steps of the SAP Build Process Automation setup wizard are
     - You may enter a short description
     - Choose **Create**
 
-    <!-- border -->![Create Environment](agent3-020.png)
+    ![Create Environment](agent3-020.png)
 
 4. Select the created environment to add your agent in it.
 
-    <!-- border -->![Select environment](agent3-020a.png)
+    ![Select environment](agent3-020a.png)
 
 5. Select **Agent Management > Add Agent**.
 
 6. In the **Add Agent** window, select your agent and choose **Add agent**.
 
-    <!-- border -->![Agent Management Add](agent3-021.png)
+    ![Agent Management Add](agent3-021.png)
 
 7.  Your agent is now added and ready to run.
 
-    <!-- border -->![Agent Management List](agent3-022.png)
+    ![Agent Management List](agent3-022.png)
 
 
 ---

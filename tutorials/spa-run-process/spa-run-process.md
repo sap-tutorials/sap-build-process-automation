@@ -32,14 +32,12 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 1. In the Process Builder, to release a project, choose the **Release** button on the top-right corner of the screen and provide a description.
 
-    <!-- border -->
     ![Run](001.png)
 
     > Version have x.y.z format where x is a major version number, y is minor and z is the patch number. Every time you release, a new version will be created. Version is incremented automatically based on how you want to store the changes in the repository like major or minor update or just as a patch.
 
 2. If you are releasing for the first time, then the version will start with 1.0.0. Next time you release, the version numbers will be automatically updated.
 
-    <!-- border -->
     ![Run](003.png)
 
 
@@ -48,25 +46,21 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 1. If you do not have an environment already, go to **Control Tower** **->** **Environments** and create one.
 
-    <!-- border -->
     ![Run](101.png)  
     ![Run](102.png)
 
 2. Once the project is released successfully, change to the released version and choose **Deploy** in the top-right corner of the screen.
 
-    <!-- border -->
     ![Run](004.png)
 
 3. Choose the environment and select **Deploy**.
    
-    <!-- border -->
     ![Run](100.png)
 
     > Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different artifacts it has. Any errors during the deployment will be shown in the Design Console.
 
 4. Once the deployment is successful, you will see a changed status. You can also see all your deployed and/or released project versions from the project status list next to the project name.
 
-    <!-- border -->
     ![Run](005.png)
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option.
@@ -77,17 +71,14 @@ Releasing a project creates a version or snapshot of the changes and deploying t
 
 1. Open the process builder of the deployed version, and choose **Order Processing Form** to get the form URL which can be directly opened from the web browser.
 
-    <!-- border -->
     ![Run](006.png)
 
 2. When you open the form in the browser, you will have all the input fields as you have defined in the process trigger form. Fill the form and choose **Submit**.
 
-    <!-- border -->
     ![Run](007.png)
 
 3. After you select the submit button, you will be notified that the form has been successfully submitted. This means that the workflow has been triggered and the approval process has started.
 
-    <!-- border -->
     ![Run](008.png)
 
 
@@ -101,17 +92,14 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 1. Choose the SAP logo to go to the lobby.
 
-    <!-- border -->
     ![Run](010a.png)
 
 2. Choose Monitoring.
 
-    <!-- border -->
     ![Run](010b.png)
 
 3. To monitor all the running instances of the process, you have to go to Monitor then **Process and Workflow Instances**.
 
-    <!-- border -->
     ![Run](009.png)
 
     In there, you will see all the running, erroneous and canceled process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, canceled, erroneous etc.
@@ -120,14 +108,12 @@ Monitoring business process is one of the key aspect of the automated processes.
    
 5.  As you can see the process is waiting for the task to be completed. These tasks are generated from the forms that are added in the process and can be accessed via the **My Inbox** application. In logs, you can see the entire trace of how the process has been progressing with some basic runtime information of each activity.
 
-    <!-- border -->
     ![Run](011.png)
 
     > Notice the **Recipients** list. This is the same as configured in the **General** section of the **Approval Form**. The task will go into the inboxes of all the recipients.
 
 6. Observe the process context which is the actual process data flowing across different activities in the process. This option contains the information that you entered in the **Order Approval Request Form**.
 
-    <!-- border -->
     ![Run](012.png)
 
 
@@ -135,17 +121,14 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 1. Choose the **My Inbox** icon from the lobby.
 
-    <!-- border -->
     ![Run](012a.png)
 
 2. Tasks are the request for the users to participate in an approval or review process. These tasks appear in the **My Inbox** application shipped with **SAP Build**. User can claim, approve and reject the task from their inbox.
 
-    <!-- border -->
     ![Run](013.png)
 
 3. Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken. Once you acknowledge the notification sent via the approval process, the process will be completed.
 
-    <!-- border -->
     ![Run](014.png)
     
     
@@ -163,24 +146,20 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->
     ![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->
     ![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->
     ![Project](project.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->
     ![Lobby](lobby.png)
 
 
