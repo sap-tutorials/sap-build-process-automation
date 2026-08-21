@@ -45,36 +45,36 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - Under **Connectors**, select **Actions**.
 
-    <!-- border -->![Action Project](ActionProject_02.png)
+    ![Action Project](ActionProject_02.png)
 
 2. Choose **Create**.
 
-    <!-- border -->![Action Project](ActionProject_02a.png)
+    ![Action Project](ActionProject_02a.png)
 
 3. In the **Choose an API Source** popup, under **API Specification**, select **Upload API Specification**.
 
-    <!-- border -->![Action Project](ActionProject_02b.png)
+    ![Action Project](ActionProject_02b.png)
 
 4. Drag and drop or click **Browse Files** to upload open specification file downloaded in step above.
    
 5. Choose **Next**.
 
-    <!-- border -->![Action Project](ActionProject_03.png)
+    ![Action Project](ActionProject_03.png)
 
 6. In the **Create an Action project** popup, do the following:
     - Enter the **Project Name** as **Sales Order**.
     - Enter the **Description** as **API to create sales order in S/4HANA cloud system**.
     - Click **Create**.
 
-    <!-- border -->![Action Project](ActionProject_03a.png)
+    ![Action Project](ActionProject_03a.png)
 
 7. Wait until the action project gets created.
 
-    <!-- border -->![Action Project](ActionProject_03b.png)
+    ![Action Project](ActionProject_03b.png)
     
     As soon as the **Sales Order** Action gets created, SAP Build Actions will automatically open and the **Add Actions From Sales Order** pop up will appear.
 
-    <!-- border -->![Action Project](ActionProject_03c.png)
+    ![Action Project](ActionProject_03c.png)
 
 
 
@@ -84,36 +84,36 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - Select **filter** option.
 
-    <!-- border -->![Action Project](ActionProject_05.png)
+    ![Action Project](ActionProject_05.png)
 
     - Select **POST**.
 
-    <!-- border size:540px -->![Action Project](ActionProject_06.png)
+    ![Action Project](ActionProject_06.png)
 
     - From the filtered list of APIs, choose **Sales Order Header** and select **POST** option for `/A_SalesOrder` API.
 
     - Click **Add**.
 
-    <!-- border -->![Action Project](ActionProject_07.png)
+    ![Action Project](ActionProject_07.png)
 
 2. SAP Build Actions will open with the selected APIs which can be further configured based on the requirements:
 
     - To update the project name, click on the **pencil icon** next to the project name.
     > This action project name will help you search your action project from your API list, once published in action repository.
 
-    <!-- border -->![Action Project](ActionProject_08.png)
+    ![Action Project](ActionProject_08.png)
 
     - Change the name to **Creates a sales order in S/4HANA cloud system**.
     - Once done, select **Update** to submit the changes.
 
-    <!-- border -->![Action Project](ActionProject_09.png)
+    ![Action Project](ActionProject_09.png)
 
 
 3. Now, you will update the input/output fields of the action project to keep only the mandatory fields that are needed to create the sales order. To select the  **Input** fields, do the following:
 
     - Under **Body**, sort **Key** in ascending order by clicking on the key column and select the **Sort Ascending** option.
 
-    <!-- border -->![Action Project](ActionProject_10.png)
+    ![Action Project](ActionProject_10.png)
 
     - Select all the fields by clicking on the checkbox of **Key** column.
     - Uncheck the following fields so that they are added as *Input*.
@@ -131,15 +131,15 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - Click on **Remove** to delete rest of the unwanted fields.
 
-    <!-- border -->![Action Project](ActionProject_12.png)
+    ![Action Project](ActionProject_12.png)
 
     - In the confirmation popup, click **Remove**.
 
-    <!-- border -->![Action Project](ActionProject_13.png)
+    ![Action Project](ActionProject_13.png)
 
     > If you get message like *The following parameter(s) can't be added because they have unsupported definition* in the pop up then scroll down to add the individual attributes.
         
-    <!-- border -->![Action Project](ActionProject_24a.png)
+    ![Action Project](ActionProject_24a.png)
 
     - Enter the default value for each of the input fields.
 
@@ -156,11 +156,11 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     > You can also change the Labels of the fields.
 
-    <!-- border -->![Action Project](ActionProject_24.png)
+    ![Action Project](ActionProject_24.png)
 
     - **Save** the changes.
 
-    <!-- border -->![Action Project](ActionProject_24b.png)
+    ![Action Project](ActionProject_24b.png)
 
     > If you get Gateway Timeout issue while saving, then close the error dialog and refresh the browser.  
 
@@ -168,7 +168,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - Close the side panel.
 
-    <!-- border -->![Action Project](ActionProject_24c.png)
+    ![Action Project](ActionProject_24c.png)
 
 4. As S/4HANA APIs need CSRF token, you need to enable it. Select **Settings** icon.
 
@@ -180,11 +180,11 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     > Action project uses Destination service to execute the API. In the destination you have already created the URL Path as `https://my-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SALES_ORDER_SRV` to call the API. So, while configuring CSRF token path you do not have to enter any explicit path rather use standard URL configured in the destination.
 
-    <!-- border -->![Action Project](ActionProject_15.png)
+    ![Action Project](ActionProject_15.png)
 
 6. With this you have configured the action project name, CSRF token and API input fields. **Save** the work.
 
-    <!-- border -->![Action Project](ActionProject_16.png)
+    ![Action Project](ActionProject_16.png)
 
 7. Similarly, configure the **output** fields. Do the following:
    
@@ -216,7 +216,7 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - **Save** the changes.
 
-    <!-- border -->![Action Project](ActionProject_17.png)
+    ![Action Project](ActionProject_17.png)
 
     > If you get Gateway Timeout issue while saving, then close the error dialog and refresh the browser.  
 
@@ -236,11 +236,11 @@ The same scenario can be used for posting an invoice to the S/4HANA system after
 
     - Click **Test**.
 
-    <!-- border -->![Action Project](ActionProject_18.png)
+    ![Action Project](ActionProject_18.png)
 
     - Once the execution is successful, you see **201 Created** response with the details of the new sales order being created in the backend S/4HANA Cloud system.
 
-    <!-- border -->![Action Project](ActionProject_19.png)
+    ![Action Project](ActionProject_19.png)
 
 
 ### Release action project
@@ -249,19 +249,19 @@ You will now release the action project to create version(s) and then publish a 
 
 - To release a version of the action project, click **Release** from top-right corner.
 
-<!-- border -->![Action Project](ActionProject_20.png)
+![Action Project](ActionProject_20.png)
 
 - In the release popup, enter the **Release Notes** of your choice and click **Release**.
 
 > Notice the version of the project. It is in `majorVersionNumber.minorVersionNumber.patchNumber` format.
 
-<!-- border -->![Action Project](ActionProject_21.png)
+![Action Project](ActionProject_21.png)
 
 ### Publish action project
 
 Once the action project is released, you can then publish any release version of the action by clicking **Publish to Library** from top-right corner.
 
-<!-- border -->![Action Project](ActionProject_22.png)
+![Action Project](ActionProject_22.png)
 
 With this you have successfully completed creating, configuring, releasing and publishing of action project. Now you will use these published actions to connect process to external systems via APIs.
 

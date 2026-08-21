@@ -31,15 +31,15 @@ You will now add a decision to the flow of your process. With this you are able 
 
 1. Choose **+** following the automation **Extract Invoice Data**.
    
-    <!-- border -->![Add decision](001a.png)
+    ![Add decision](001a.png)
 
 2. In the menu select **Decision**.
 
-    <!-- border -->![Add decision](001b.png)
+    ![Add decision](001b.png)
 
 3. Click on **Blank Decision**.
 
-    <!-- border -->![Add decision](001c.png)
+    ![Add decision](001c.png)
 
 4. In the **Create Decision** window:
     - Maintain the Name: **Determine Approver**,
@@ -48,7 +48,7 @@ You will now add a decision to the flow of your process. With this you are able 
 
     > The Identifier will be created automatically.
 
-    <!-- border -->![Decision Name](002.png)
+    ![Decision Name](002.png)
 
 5. The **Determine Approver** Decision is now in the process and should open automatically in the **Decision Editor**. 
    
@@ -56,7 +56,7 @@ You will now add a decision to the flow of your process. With this you are able 
    
 7. Select the decision in the process, choose the three dots and select **Open Editor**.
 
-    <!-- border -->![Open Editor](003.png)
+    ![Open Editor](003.png)
 
 8. You see a **Decision Diagram** showing the flow of the data within the Decision, and also the **Input and Output Parameters**.
 
@@ -67,15 +67,15 @@ You will now add a decision to the flow of your process. With this you are able 
 
     > "Invoice" is the data type which has been created in the Automation and contains all relevant extracted data.
 
-    <!-- border -->![Change Input](099a.png)
+    ![Change Input](099a.png)
 
 10. The data type for **Output** needs to be created. Therefore, select the **Folder Icon**. 
    
-    <!-- border -->![Create new Data Type](007a.png)
+    ![Create new Data Type](007a.png)
 
 11. Select **+** and choose **Create** > **Data Type**.
 
-    <!-- border -->![Create new Data Type](007.png)
+    ![Create new Data Type](007.png)
 
 12. In the new pop-up window:
     - Define the Name: **Approver**,
@@ -84,26 +84,26 @@ You will now add a decision to the flow of your process. With this you are able 
 
     > The Identifier will be created automatically.
 
-    <!-- border -->![Name data type](008.png)
+    ![Name data type](008.png)
 
 13. Create a **New Field**:
     - Maintain the **Name** `eMail`,
     - Choose the **Type** as `String`.
 
-    <!-- border -->![eMail](009.png)
+    ![eMail](009.png)
 
 14. The new data type containing the email address of the approver is now created.
 
 15. **Save** your work.
 
-    <!-- border -->![Save new data type](011.png)
+    ![Save new data type](011.png)
 
 16. Go back to your **Determine Approver** Decision. Add an **Output Parameter**:
     - Name: **Approver Output**,
     - Description: **Invoice Approver**,
     - Select Type: the newly created data type **Approver**.
 
-    <!-- border -->![Select new data type](098.png)
+    ![Select new data type](098.png)
 
 17. **Save** your work.
 
@@ -117,36 +117,36 @@ There are many ways to express a business rule, in this case you will create a d
 
 2. Choose **Add Rule**.
 
-    <!-- border -->![Add Decision Table](014.png)
+    ![Add Decision Table](014.png)
 
 3. In the Create Rule window:
     - Set the Rule Name to **DT Determine Approver**,
     - Set the Description to **Decision Table to determine approver**,
     - Choose **Next Step**.
 
-    <!-- border -->![Decision Table Name](015.png)
+    ![Decision Table Name](015.png)
 
 4. You will now configure the conditions:
     - Under **Vocabulary**, choose **Invoice Parameter**,
     - Select **Sender Name**,
     - Choose **Next Step** to configure the results.
 
-    <!-- border -->![Determine Approver Input](016.png)
+    ![Determine Approver Input](016.png)
 
 5. You will now configure the results:
     - Under **Result Vocabulary**, select **Approver Output**,
     - Select **eMail**,
     - Select **Next Step** to review.
 
-    <!-- border -->![Determine Approver Output](017.png)
+    ![Determine Approver Output](017.png)
 
 6. Review and choose **Create** to create the rule.
 
-    <!-- border -->![Create](021.png)
+    ![Create](021.png)
 
 7. If you need to edit the rule you just created, you may do so by selecting the pencil icon.
 
-    <!-- border -->![Edit](018.png)
+    ![Edit](018.png)
 
 8. Define the attributes:
     - for **Sender Name**: `EXISTSIN['ABC Communication']`
@@ -156,17 +156,17 @@ There are many ways to express a business rule, in this case you will create a d
 
     This means, if the company name in the invoice is "ABC Communication", then the approval request will be sent to you. Otherwise, follow the next step.
 
-    <!-- border -->![If Then](096a.png)
+    ![If Then](096a.png)
 
 9. Select the first row and **Add Row** to **Insert After**. In case the **Sender Name** is defined as `EXISTSIN['Telecommunications']`, the approval request should be sent to any recipient you might want to choose. e.g. `'jane.doe@sap.com'`.
 
     > When inserting emails please do not forget the simple quotes otherwise you will end up with an error when you save the decision artifact.
 
-    <!-- border -->![Add Row](023.png)
+    ![Add Row](023.png)
 
 10. **Save** your work. The decision table is ready.
 
-    <!-- border -->![Decision ready](095a.png)
+    ![Decision ready](095a.png)
 
 
 
@@ -177,7 +177,7 @@ Though the Decision is ready, you need to connect it to the data flow of your pr
 
 1. Go back to the process and select the Decision.
 
-    <!-- border -->![Error](028.png)
+    ![Error](028.png)
 
     > You might not see entries in the Input. This is due to a bug. As a workaround, click on the three-vertical-dot and remove the decision. Add the decision again in the process.
 
@@ -189,13 +189,13 @@ Though the Decision is ready, you need to connect it to the data flow of your pr
   
     The input mapping is done.
 
-    <!-- border -->![Invoice Details](031.png)
+    ![Invoice Details](031.png)
 
-    <!-- border -->![Invoice Details](031a.png)
+    ![Invoice Details](031a.png)
 
 3. Check the **Output**, it is **eMail**, as you have defined it in the decision itself.
 
-    <!-- border -->![Decision Output](032.png)
+    ![Decision Output](032.png)
 
 4. **Save** your work.
 

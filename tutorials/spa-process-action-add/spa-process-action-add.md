@@ -26,11 +26,11 @@ Learn how to add the action in the business process to connect to backend system
 
 1. From the **SAP Build** Lobby, click on the **Store** tab.
 
-    <!-- border -->![Import Project](ImportProject_31.png)
+    ![Import Project](ImportProject_31.png)
 
 2. On the **Store** page, search for **Sales Order Management (MI01)** and once it loads, click **Create from Template**.
 
-    <!-- border -->![Import Project](ImportProject_32.png)
+    ![Import Project](ImportProject_32.png)
 
 3. In the **Create a Business Process project** pop-up:
    
@@ -40,11 +40,11 @@ Learn how to add the action in the business process to connect to backend system
 
     - Click **Create**.
 
-    <!-- border -->![Import Project](ImportProject_33.png)
+    ![Import Project](ImportProject_33.png)
 
 4. Open **Lobby** and you will see your project created.
 
-    <!-- border -->![Import Project](ImportProject_34.png)
+    ![Import Project](ImportProject_34.png)
 
 
 
@@ -56,7 +56,7 @@ Learn how to add the action in the business process to connect to backend system
 
 2. Select the **Order Processing Form**.
 
-    <!-- border -->![Order Processing Form](01.png)
+    ![Order Processing Form](01.png)
 
 3. The form editor opens. Do the following changes:
 
@@ -64,7 +64,7 @@ Learn how to add the action in the business process to connect to backend system
   
     - Choose the three dots next to **Customer Name** field and select **delete**.
   
-    <!-- border -->![Order Processing Form](02.png)
+    ![Order Processing Form](02.png)
 
     - Add a paragraph after **Order Date** and enter **Sales Order Details:**
    
@@ -78,7 +78,7 @@ Learn how to add the action in the business process to connect to backend system
     | Dropdown | Distribution Channel
     | Dropdown | Division
   
-    <!-- border -->![Order Processing Form](03.png)
+    ![Order Processing Form](03.png)
 
     - Now enter values in the dropdown fields such as:
 
@@ -89,7 +89,7 @@ Learn how to add the action in the business process to connect to backend system
     | Distribution Channel | 10
     | Division | 00
 
-    <!-- border -->![Order Processing Form](04.png)
+    ![Order Processing Form](04.png)
 
     > You may enter any option of your liking depending on your available data set in your `S/4HANA system`.
 
@@ -100,15 +100,15 @@ Learn how to add the action in the business process to connect to backend system
 
 1. In the **Overview** tab, click to open **Order Processing** process.
 
-    <!-- border -->![Import Project](ImportProject_35.png)
+    ![Import Project](ImportProject_35.png)
 
 2. In the process builder, click to open **Project Properties** from top-right corner of the page.
 
-    <!-- border -->![Destination](destination_04.png)
+    ![Destination](destination_04.png)
 
 3. In the **Project Properties** pop-up, select **Environment Variables** and choose **Create** to create an environment variable for this business process.
 
-    <!-- border -->![Destination](destination_05.png)
+    ![Destination](destination_05.png)
 
 4. Enter the following to create an environment variable:
 
@@ -116,13 +116,13 @@ Learn how to add the action in the business process to connect to backend system
     - Any **Description** of your choice.
     - **Destination** as variable type.
 
-    <!-- border -->![Destination](destination_05a.png)
+    ![Destination](destination_05a.png)
 
     - Click **Create**.
 
 5. Once the environment variable is created, **Close** the project properties' pop-up.
 
-    <!-- border -->![Destination](destination_06.png)
+    ![Destination](destination_06.png)
 
 
 ### Configure Approval Form
@@ -131,28 +131,28 @@ Learn how to add the action in the business process to connect to backend system
 
 2. In the **General** section, under **Subject** map the company to Order Processing Form > Ship to Party (Customer).
    
-    <!-- border -->![Map input](06.png)
+    ![Map input](06.png)
   
 3. Choose **Inputs**, map **Customer Name** input with Order Processing Form > Ship to Party (Customer).
    
 4. Choose **Save**.
 
-   <!-- border -->![Map input](05.png)
+   ![Map input](05.png)
 
 
 ### Add action
 
 1. In the Process Builder canvas, click the **+** in output connector of **Order Confirmation Form**.
 
-    <!-- border -->![Add Artifact](action1.png)
+    ![Add Artifact](action1.png)
 
 2. In the list, choose **Action**.
 
-    <!-- border -->![Browse Action](action2.png)
+    ![Browse Action](action2.png)
 
 3. In the **Browse library** pop up, click **Add** on the action you just created.
 
-    <!-- border -->![Search Action](action3.png)
+    ![Search Action](action3.png)
 
     > This will add the action to connect process to the backend system in your business process.
 
@@ -163,7 +163,7 @@ The action gets added to your process.
 
 1. In **General** tab of action parameters, choose the corresponding **Destination variable** that you previously created.
 
-    <!-- border -->![Add Destination Variable](action5.png)
+    ![Add Destination Variable](action5.png)
 
 2. Click **Inputs** tab, and map each input to the actual process content.
 
@@ -178,35 +178,35 @@ The action gets added to your process.
     |  `SoldToParty` |  Order Processing Form > Ship To Party (Customer)
 
 
-    <!-- border -->![Map Inputs](action6.png)
+    ![Map Inputs](action6.png)
 
 3. In **Outputs** tab, check to make sure all outputs are same as defined in the action project.
    
 4. Save your work.
 
-    <!-- border -->![Check Outputs](action7.png)
+    ![Check Outputs](action7.png)
 
 5. Update the connections of **Auto Approval Notification** activity in the business process such that once the order is auto approved, the sales order is created in the backend system:
 
     - Select **+** below **Auto Approval Notification**.
 
-    <!-- border -->![Select and delete connector](action9.png)
+    ![Select and delete connector](action9.png)
 
     - Select **Controls and Events**.
   
-    <!-- border -->![Select and delete connector](action9a.png)
+    ![Select and delete connector](action9a.png)
 
     - Select **Go to Step**.
 
-    <!-- border -->![Select and delete connector](action9b.png)
+    ![Select and delete connector](action9b.png)
   
     - Choose **Creates a sales order in S/4HANA cloud system**.
 
-    <!-- border -->![Select and delete connector](action9c.png)
+    ![Select and delete connector](action9c.png)
     
     The final process should be same as shown below. Ensure that you have the right connections such that *Auto Approval Notification* and *Order Confirmation Form* connects to *Action* activity.
 
-    <!-- border -->![Deployed](action11.png)
+    ![Deployed](action11.png)
 
 6. Click **Save** to save your work.
 
@@ -225,21 +225,21 @@ There are two possible situations:
 
 1. In the Process Builder, click **Release**.
 
-    <!-- border -->![Release](release1.png)
+    ![Release](release1.png)
 
 2. For the first version, add a **Version Comment** if needed and click **Release**.
 
-    <!-- border -->![Release first](release2.png)
+    ![Release first](release2.png)
 
     - For the additional version, choose the type of version, add a **Version Comment** if needed and click **Release**.
 
-    <!-- border -->![Release new](release3.png)
+    ![Release new](release3.png)
 
 3. The successfully released project is ready to be deployed.
 
     > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/releasing-project?version=Cloud).
 
-    <!-- border -->![Released](release4.png)
+    ![Released](release4.png)
 
 
 ### Deploy released project
@@ -248,11 +248,11 @@ You can deploy business process projects from each released version of the proje
 
 1. From the released version of the business process project in the Process Builder, click **Deploy**.
 
-    <!-- border -->![Start Deploy](deploy1.png)
+    ![Start Deploy](deploy1.png)
 
 2. Choose an environment and select **Deploy**.
 
-    <!-- border -->![Start Deploy](environment.png)
+    ![Start Deploy](environment.png)
 
 3. Now you will set the runtime variables. From the drop-down select the destination **S4HANACloud** and click **Deploy**.
 
@@ -260,12 +260,12 @@ You can deploy business process projects from each released version of the proje
 
     > You use variables to pass parameters to automations. You can create variables in the Process Builder for which you can later set values when deploying the business process project. For example, in the current use case, you have created a *Destination* variable. Please use the same destination *S4HANACloud*.
 
-    <!-- border -->![Deploy confirm first](deploy2.png)
+    ![Deploy confirm first](deploy2.png)
 
 4. The successfully deployed project is ready for running and monitoring.
 
     > If needed, you can refer to the [Documentation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/deploy-project?version=Cloud).
 
-    <!-- border -->![Deployed](deploy4.png)
+    ![Deployed](deploy4.png)
 
     You've successfully imported a sample process, added an action to create a sales order and configure the action with the environment variable to get the connection details from destination in SAP BTP cockpit.
