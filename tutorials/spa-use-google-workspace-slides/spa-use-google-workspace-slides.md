@@ -31,11 +31,11 @@ In this tutorial, you will build an automation that will create a presentation w
 
 2. In **Build Process Automation**, choose **Create** and then select **Automation**.
 
-    <!-- border -->![Create Automation](01.png)
+    ![Create Automation](01.png)
 
 3. In the **Create Automation** window, enter **Google Workspace-Slides** as name and **An automation to use Google Slides** as a description.
 
-    <!-- border -->![Create Automation](02.png)
+    ![Create Automation](02.png)
 
     You will be navigated to the automation editor of the newly created automation.
 
@@ -43,7 +43,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
 1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-service-account) automation you created.
 
-    <!-- border -->![Google Authorization Automation](03.png)
+    ![Google Authorization Automation](03.png)
 
 2. You will automate the creation of a new Google presentation in Google Slides. In the **Automation Details** panel, under **Tools**, search for the activity **Create Presentation (Google Slides)** and drag and drop it into the workflow.
 
@@ -51,7 +51,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
 3. Select the activity. Under **Input Parameters** as a **title** type **Automation Presentation** and select the expression in quotes.
 
-    <!-- border -->![Create Presentation](04.png)
+    ![Create Presentation](04.png)
 
 4.  You will now add a slide to the presentation you created. In the **Automation Details** panel, under **Tools**, search for the activity **Add Slide (Google Slides)** and drag and drop it into the workflow.
 
@@ -63,7 +63,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Add Slides](05.png)
+    ![Add Slides](05.png)
 
 9. Now you will add a header to the slide you added. In the **Automation Details** panel, under **Tools**, search for the  activity **Add Slide Header (Google Slides)** and drag and drop it into the workflow.
 
@@ -75,7 +75,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Presentation ID](06.png)
+    ![Presentation ID](06.png)
 
     > Now you will set the parameter for `slideId`, the id of the slide in which you want to add a header.
 
@@ -85,11 +85,11 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Slide ID](07.png)
+    ![Slide ID](07.png)
 
 15. For **text** enter the text to be added in the slide header, here: **Hello SAP Build Process Automation!** and select the expression in quotes.
 
-    <!-- border -->![Text](08.png)
+    ![Text](08.png)
 
 16. Next, you will create a list in the slide you added. In the **Automation Details** panel, under **Tools**, search for the activity **Create list (Google Slides)** and drag and drop it into the workflow.
 
@@ -101,7 +101,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Presentation ID](09.png)
+    ![Presentation ID](09.png)
 
     > Now you will set the parameter for `slideID`, the id of the slide in which you want to add a list.
 
@@ -111,11 +111,11 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Slide ID](10.png)
+    ![Slide ID](10.png)
 
 22. For **text** enter the description of the list, here: **Welcome to SAP Build Process Automation, you will learn:** and select the expression in quotes.
 
-    <!-- border -->![Text](10b.png)
+    ![Text](10b.png)
 
 23. For **values** you will enter the array of values to be added as the list items. Choose the pencil to open the expression editor.
 
@@ -123,7 +123,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
 21. Choose **Save Expression**.
 
-    <!-- border -->![Values](11.png)
+    ![Values](11.png)
 
     You will add a slide to the presentation.
 
@@ -141,7 +141,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Add Slide](12.png)
+    ![Add Slide](12.png)
 
     You will now add an image in this slide.
 
@@ -155,7 +155,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Add Slide](13.png)
+    ![Add Slide](13.png)
 
     > Now you will set the parameter for `slideID`, the id of the slide in which you want to add an image.
 
@@ -167,7 +167,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Slide ID](14.png)
+    ![Slide ID](14.png)
 
 29. Finally you will insert the image. For **link** you will insert the link of the image to be added in the slide.
 
@@ -175,7 +175,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     > **CAUTION:** The URL should start with http:// or https://. The image must be less than 50MB in size, cannot exceed 25 megapixels and must be in PNG, JPEG or GIF format.
 
-    <!-- border -->![Link](15.png)
+    ![Link](15.png)
 
     > You will now retrieve the details of your Google Presentation and log them in a message.
 
@@ -189,7 +189,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
     - Choose **Save Expression**.
 
-    <!-- border -->![Get Presentation Details](16.png)
+    ![Get Presentation Details](16.png)
 
 26. In the **Automation Details** panel, under **Tools**, search for the **Log Message** and drag and drop it into the workflow.
 
@@ -201,7 +201,7 @@ In this tutorial, you will build an automation that will create a presentation w
 
 29. Save the automation.
 
-    <!-- border -->![Disconnect and Save](17.png)
+    ![Disconnect and Save](17.png)
 
 ### Test Google Workspace for Slides
 
@@ -213,21 +213,21 @@ You will now test your automation.
     - For `userEmail`: your Gmail user email
     - For `serviceAccountKeyPath`: the full path to the json file
 
-    <!-- border -->![Test](18.png)
+    ![Test](18.png)
 
 3. Choose **Test**.
 
-    <!-- border -->![Test](19.png)
+    ![Test](19.png)
 
     The testing was successful. You may see the details of the presentation in the test console.
 
 4. You may go to your Google Slides and you will see that a presentation called Automation Presentation was successfully created.
 
-    <!-- border -->![Test](20.png)
+    ![Test](20.png)
 
 5. After opening it, you will see that two slides were successfully created in the presentation. The first with a header and a list, the other with the image.
 
-    <!-- border -->![Test](21.png)
+    ![Test](21.png)
 
 ### Retrieve sample project from the store (Optional)
 
@@ -242,20 +242,20 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Add** > **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    ![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    ![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](proj.png)
+    ![Project](proj.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    ![Lobby](lobby.png)
 
 ---

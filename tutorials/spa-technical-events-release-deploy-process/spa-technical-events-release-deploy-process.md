@@ -39,11 +39,11 @@ In this tutorial, you will manually launch your automation from the agent by add
 
 1. In **Build Process Automation** overview page, choose **Create** and **Project Launcher**.
 
-    <!-- border -->![Project Launcher](84-project-launcher.png)
+    ![Project Launcher](84-project-launcher.png)
 
 2. In the **Create Project Launcher** window, name the project **Get Order Details** and choose **Create**.
 
-    <!-- border -->![Project Launcher](85-project-launcher.png)
+    ![Project Launcher](85-project-launcher.png)
 
     A project launcher editor opens in the main panel of **Build Process Automation**. On the **Project Launcher details** right-hand side panel, you can see the automations available in your project.
 
@@ -51,7 +51,7 @@ In this tutorial, you will manually launch your automation from the agent by add
 
 4. Choose **Save**.
 
-    <!-- border -->![Project Launcher](86-project-launcher.png)
+    ![Project Launcher](86-project-launcher.png)
 
 
 ### Release and deploy the business process project
@@ -61,18 +61,18 @@ Now you may release and deploy it in attended mode. You need to select this trig
 
 1. In the Process Builder, choose **Release**.
 
-    <!-- border -->![Release Automation](79-release.png)
+    ![Release Automation](79-release.png)
 
 2. Add a **Version Comment** if needed and choose **Release**.
 
-    <!-- border -->![Release Project](80-release-project.png)
+    ![Release Project](80-release-project.png)
 
     > ### What's going on?
     > Every time you release, a new version will be created. Versions are incremented automatically based on how you want to store the changes in the repository (that is as major or minor updates or as a patch). Versions use an x.y.z format where x is a major version number, y is minor, and z is the patch number. For instance, if you are releasing your process project for the first time, then the version will start with 1.0.0. The next time you release there will be options to choose from – that is, if the new version is a major, minor, or patch update; version numbers will be automatically updated.
 
 3. The project released successfully and is ready to be deployed.
 
-    <!-- border -->![Released Project](81-released-project.png)
+    ![Released Project](81-released-project.png)
 
     You can deploy Business Process projects from each released version of the project in the Process Builder or through the Lobby. Deploying the project makes it available for others to use it. Bare in mind that you can only deploy a released version of the project.
 
@@ -80,13 +80,13 @@ Now you may release and deploy it in attended mode. You need to select this trig
    
 5. Select an **Environment** and choose **Deploy**.
 
-    <!-- border -->![Deploy Project](82-deploy-project.png)
+    ![Deploy Project](82-deploy-project.png)
 
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
 6. The project deployed successfully and is now ready to be executed.
 
-    <!-- border -->![Deployed Project](87-deployed-project.png)
+    ![Deployed Project](87-deployed-project.png)
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
 
@@ -94,15 +94,15 @@ Now you may release and deploy it in attended mode. You need to select this trig
 
 1. Navigate back to **SAP Build > Control Tower > Environments**.
    
-    <!-- border -->![Trigger](87a.png)
+    ![Trigger](87a.png)
 
 2. Select your environment.
  
-    <!-- border -->![Environment](87b.png)
+    ![Environment](87b.png)
 
 3. Go to **Attended Triggers > Create Attended Trigger**.
 
-    <!-- border -->![Project](87c.png)
+    ![Project](87c.png)
 
 4. In the **Create Attended Trigger** box, do the following:
 
@@ -110,7 +110,7 @@ Now you may release and deploy it in attended mode. You need to select this trig
     - Name the trigger `Attended_Trigger`
     - Enter the **Schedule** details
 
-    <!-- border -->![Create attended trigger](83.png)
+    ![Create attended trigger](83.png)
 
 5. Choose **Distribution** tab and configure the **Distribution restriction policy** to **Agents matching attributes**.
    
@@ -118,25 +118,25 @@ Now you may release and deploy it in attended mode. You need to select this trig
    
 7. Choose **Create**.
 
-    <!-- border -->![Distribution](84.png)
+    ![Distribution](84.png)
 
 8. Your Attended Trigger is created.
 
-    <!-- border -->![Attended Trigger](85.png)
+    ![Attended Trigger](85.png)
 
 9. Go to your **Desktop Agent > Settings > Mode**  and make sure the agent is in attended mode. If not, activate the Attended Mode.
 
-    <!-- border -->![Attended mode](86.png)
+    ![Attended mode](86.png)
 
 10. Choose **Projects**.
    
 11.  Your project is ready to be launched in attended mode. Choose **Activate**. 
 
-    <!-- border -->![Projects](88.png)
+   ![Projects](88.png)
 
 12. Choose **Start**.
 
-    <!-- border -->![Start Project](89-start-project.png)
+    ![Start Project](89-start-project.png)
 
     > **CAUTION:** Please make sure your **Browse Orders** application is open.
 

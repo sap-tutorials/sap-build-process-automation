@@ -32,11 +32,11 @@ In this tutorial, you will build an automation that will import data from an exc
 
 2. In **Build Process Automation**, choose **Create** and then select **Automation**.
 
-    <!-- border -->![Create Automation](00.png)
+    ![Create Automation](00.png)
 
 3. In the **Create Automation** window, enter **Google Workspace-Sheets** as name and **An automation to use Google Sheets** as a description.
 
-    <!-- border -->![Create Automation](01.png)
+    ![Create Automation](01.png)
 
     You will be navigate to the automation editor of the newly created automation.
 
@@ -53,12 +53,12 @@ You will add one input parameter.
 |  Name           | `excelPath`    
 |  Type           | String           
 
-<!-- border -->![Input Parameters](02.png)
+![Input Parameters](02.png)
 
 ### Build an automation to use Google Sheets
 
 1. In the **Automation Details** panel, under **Automations**, drag and drop the [Google Authorization](spa-authorize-google-service-account) automation you created.
-    <!-- border -->![Google Authorization Automation](03.png)
+    ![Google Authorization Automation](03.png)
 
     You will import data and create a new Google spreadsheet.
 
@@ -68,7 +68,7 @@ You will add one input parameter.
 
     > The location parameter refers to the type of location from which to pick the data to import and the path or drive field parameter refers to the path to the excel file stored on your local machine.
 
-    <!-- border -->![Import and Create](04.png)
+    ![Import and Create](04.png)
 
 4. Now search for the **Rename Spreadsheet (Google Sheet)** and drag and drop it into the workflow.
 
@@ -78,13 +78,13 @@ You will add one input parameter.
 
 6. In the expression editor, copy and paste the following expression: `Step2.spreadSheetDetails.spreadSheetId`.
 
-    <!-- border -->![Rename Spreadsheet](05.png)
+    ![Rename Spreadsheet](05.png)
 
 7. In the `newTitle` parameter field, enter `OrderDetails`.
 
     > This will rename the Google spreadsheet that you previously created to `OrderDetails`.
 
-    <!-- border -->![Rename Spreadsheet](06.png)
+    ![Rename Spreadsheet](06.png)
 
 8. Search for **Get Spreadsheet Details (Google Sheet)** activity. Drag and drop it into the workflow.
 
@@ -92,7 +92,7 @@ You will add one input parameter.
 
 10. In the expression editor, copy and paste the following expression: `Step2.spreadSheetDetails.spreadSheetId`.
 
-    <!-- border -->![Get Spreadsheet Details](07.png)
+    ![Get Spreadsheet Details](07.png)
 
     > Now that you retrieved the details of the Google spreadsheet, you can get the details of a specific row.
 
@@ -102,7 +102,7 @@ You will add one input parameter.
 
 13. In the expression editor, copy and paste the following expression: `Step2.spreadSheetDetails.spreadSheetId`.
 
-    <!-- border -->![Get Last Row](08.png)
+    ![Get Last Row](08.png)
 
 14. For the `sheetTitle` parameter, select the pencil next to the field to open the expression editor.
 
@@ -110,7 +110,7 @@ You will add one input parameter.
 
     > This specifies the name of the sheet in which you want to get the last row.
 
-    <!-- border -->![Get Last Row](09.png)
+    ![Get Last Row](09.png)
 
 16. Search for the **Get Cell Values (Google Sheet)** activity.  Drag and drop it into the workflow.
 
@@ -120,7 +120,7 @@ You will add one input parameter.
 
 18. In the expression editor, copy and paste the following expression: `Step2.spreadSheetDetails.spreadSheetId`.
 
-    <!-- border -->![Get Cell Values](09a.png)
+    ![Get Cell Values](09a.png)
 
 19. Under the **range** parameter field, select **Custom Data**.
 
@@ -128,7 +128,7 @@ You will add one input parameter.
 
 21. In the expression editor, copy and paste the following expression: `Step2.spreadSheetDetails.sheets[0].title`.
 
-    <!-- border -->![Get Cell Values](10.png)
+    ![Get Cell Values](10.png)
 
 22. For the `startRange` parameter, enter **A1**.
 
@@ -138,7 +138,7 @@ You will add one input parameter.
 
 25. Finally, for the `majorDimension` parameter, select **rows**.
 
-    <!-- border -->![Get Cell Values](11.png)
+    ![Get Cell Values](11.png)
 
 26. You will now add a sheet. To do so, search for the **Add Sheet (Google Sheet)** activity. Drag and drop it into the workflow.
 
@@ -156,11 +156,11 @@ You will add one input parameter.
 
 32. In the expression editor, copy and paste the following expression: `Step7.sheetDetails.sheetId`.
 
-    <!-- border -->![Rename Sheet](12.png)
+    ![Rename Sheet](12.png)
 
 33. For the `newTitle` parameter, enter `UpdatedOrderStatus`and select the text in quotes.
 
-    <!-- border -->![Rename Sheet](13.png)
+    ![Rename Sheet](13.png)
 
 34. Search for the **Set Cell Values (Google Sheet)** activity. Drag and drop it into the workflow.
 
@@ -184,11 +184,11 @@ You will add one input parameter.
 
 43. In the expression editor, copy and paste the following expression: `Step6.cellsData.values`.
 
-    <!-- border -->![Set Cell Values](14.png)
+    ![Set Cell Values](14.png)
 
 44. For `majorDimension` parameter, select **rows** and for `valueInputOption` parameter, select `userEntered`.
 
-    <!-- border -->![Set Cell Values](15.png)
+    ![Set Cell Values](15.png)
 
 45. Drag and drop another **Set Cell Values (Google Sheet)** activity.
 
@@ -206,13 +206,13 @@ You will add one input parameter.
 
 52. In the expression editor, copy and paste the following expression: `"B" + Step5.lastRow`.
 
-    <!-- border -->![Set Cell Values](16.png)
+    ![Set Cell Values](16.png)
 
 53. For the **values** parameter, select the pencil next to the field to open the expression editor.
 
 54. In the expression editor, copy and paste the following expression: `['Order Status', 'Delivered', 'Delivered', 'In Time', 'In Time', 'Delivered', 'In Time', 'Delivered', 'In Time', 'In Time', 'Delivered']`.
 
-    <!-- border -->![Set Cell Values](17.png)
+    ![Set Cell Values](17.png)
 
 55. For the `majorDimension` parameter, select **rows**.
 
@@ -222,7 +222,7 @@ You will add one input parameter.
 
 57. Save your work.
 
-    <!-- border -->![Disconnect Google](18.png)
+    ![Disconnect Google](18.png)
 
 ### Test Google Workspace for Google Sheets
 
@@ -237,15 +237,15 @@ You will add one input parameter.
 
 4. Choose **Test**.
 
-    <!-- border -->![Test](19.png)
+    ![Test](19.png)
 
     The testing was successful.
 
-    <!-- border -->![Test result](20.png)
+    ![Test result](20.png)
 
     If you go to your Google Account>Google Apps>Sheets you will see the created `OrderDetails` spreadsheet. Upon opening it, you will see the values from the excel file were imported on sheet1 and a new sheet was created named `updatedOrderStatus` with the corresponding values that were set in your automation.
 
-    <!-- border -->![Test result](21.png)
+    ![Test result](21.png)
 
 
 ---
