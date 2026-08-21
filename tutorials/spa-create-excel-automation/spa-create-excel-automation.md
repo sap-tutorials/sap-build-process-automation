@@ -72,37 +72,37 @@ You can also use an Excel sample of your choice.
 
 5.  As a first step, locate and add **Open Excel Instance** activity to the automation flow.
 
-    <!-- border -->![Add Open Excel Instance](01-AddOpenExcelInstance.png)
+    ![Add Open Excel Instance](01-AddOpenExcelInstance.png)
 
 6.  Similarly locate and add **Excel Cloud Link** from the activity pane.
 
-    <!-- border -->![Add Excel Cloud Link](02-AddExcelCloudLink.png)
+    ![Add Excel Cloud Link](02-AddExcelCloudLink.png)
 
 7.  Now edit the properties of **Excel Cloud Link** activity. In the flow chart, select the **Excel Cloud Link** activity, on the right side menu, choose **Edit Activity** button.
 
-    <!-- border -->![Edit Excel Cloud Activity](03-ExcelLinkEditActivity.png)
+    ![Edit Excel Cloud Activity](03-ExcelLinkEditActivity.png)
 
 8.  Within the edit activity screen, you can either use the file picker or drag and drop your test Excel.
 
-    <!-- border -->![Import Excel](04-ExcelCloudLink_AddExcel.png)
+    ![Import Excel](04-ExcelCloudLink_AddExcel.png)
 
 9.  As you can see, with the Excel cloud link capabilities, it already pre-selects the first sheet, it groups data by column names, it also finds out in few seconds the complete range of the Excel.
 
-    <!-- border -->![Browse the data](05-ExcelData.png)
+    ![Browse the data](05-ExcelData.png)
 
     While Excel cloud link is great in processing the data, it still needs for runtime reference, the path of your Excel. Typically, you need the full path of the Excel.
     
 10. Under **Workbook Path**, provide the path of the workbook that will be used during the automation execution.
 
-    <!-- border -->![Provide Excel path](06-ExcelCloudLink_pasteExcelPath.png)
+    ![Provide Excel path](06-ExcelCloudLink_pasteExcelPath.png)
 
 11. SAP Build Process Automation has data type functionality to logically group and process your data. You can create a data type out of the added Excel by using the Excel data structure.
 
-    <!-- border -->![Create Data type out of Excel](07-ExcelCloudLink_AddExcel.png)
+    ![Create Data type out of Excel](07-ExcelCloudLink_AddExcel.png)
 
 12. Provide a data type name such as Sales Orders and choose **Create**.
 
-    <!-- border -->![Provide Data type](08-ExcelCloudLink_DataType.png)
+    ![Provide Data type](08-ExcelCloudLink_DataType.png)
 
     **Excel Cloud Link** will identify field names using the first row of each column in your Excel and will determine the field type based on the type of data present in each column below the first row.
 
@@ -112,21 +112,21 @@ You can also use an Excel sample of your choice.
 
 14. Save and close the activity screen.
 
-    <!-- border -->![Edit Output Parameter](09-EditOutputParameter.png)
+    ![Edit Output Parameter](09-EditOutputParameter.png)
 
 15. Now you will see the benefit of using Excel cloud link by printing output parameters. For this you will use a loop activity **For Each**. 
 
-    <!-- border -->![Add For Each](10-AddForEach.png)
+    ![Add For Each](10-AddForEach.png)
 
 16. As a loop variable, add the **Output Parameter** `salesOrders` from the **Excel Cloud Link** activity.
 
-    <!-- border -->![Add Loop Variable](11-AddLoopVariable.png)
+    ![Add Loop Variable](11-AddLoopVariable.png)
 
     If you are using the sample data provided in this tutorial you can print **Order Number**.  
     
 17. Drag and drop a **Log Message** activity into the workflow.
 
-    <!-- border -->![Add Log Message](12-AddLogMessage.png)
+    ![Add Log Message](12-AddLogMessage.png)
 
 18. Select the **Log Message** activity and change the **Step name** to **Log Order Number**.
 
@@ -138,17 +138,17 @@ You can also use an Excel sample of your choice.
 
 22. Choose **Save Expression**.
 
-    <!-- border -->![Add currentMember OrderNumber](13.png)
+    ![Add currentMember OrderNumber](13.png)
 
 23. Add **Close Excel Instance** after the **For Each** loop as you added **Open Excel Instance** in the first step.
 
 24. Choose **Save** to save your project.
 
-    <!-- border -->![Add Close Excel Instance](14-1-AddCloseExcelInstance.png)
+    ![Add Close Excel Instance](14-1-AddCloseExcelInstance.png)
 
 25. Now you can test the output.
 
-    <!-- border -->![Save and Run project to validate result](15-Output.png)
+    ![Save and Run project to validate result](15-Output.png)
 
 > - SAP Help Documentation [IRPA SDK V2] (https://help.sap.com/doc/b8b5c9bbac3846a0a57aedab3f412880/Cloud/en-US/modules/helper.html) on Excel Cloud Link
 > - Excel Cloud Link [How to use the Excel Cloud Link activity helper](https://www.vimeo.com/458204726?embedded=true&source=video_title&owner=122956519)
@@ -163,11 +163,11 @@ In the next step, you will take a more traditional approach to process the Excel
 
 1. Start by adding a new automation to the **Excel Sample** project. Name the new automation **Process Excel Data** and add **Open Excel Instance** to the flow.
 
-    <!-- border -->![Add Open Excel Instance](16-AddOpenExcelInstance.png)
+    ![Add Open Excel Instance](16-AddOpenExcelInstance.png)
 
 2. You will create two string variables. Search for **String** and drag and drop it into the flow twice.
 
-    <!-- border -->![Create String Variables FolderPath & FileName](17-CreateStringVariable.png)
+    ![Create String Variables FolderPath & FileName](17-CreateStringVariable.png)
 
 3. Select the first **Create String Variable** and change the **Step name** to **Create Workbook Path Variable**.
 
@@ -175,7 +175,7 @@ In the next step, you will take a more traditional approach to process the Excel
 
 5. Under **Output Parameters**, change the name to `WorkbookPath`.
 
-    <!-- border -->![Create String Variable Workbook Path](18-Created2VariableNames.png)
+    ![Create String Variable Workbook Path](18-Created2VariableNames.png)
 
 6. Select the second **Create String Variable** and change the **Step name** to **Create Excel File Name Variable**.
 
@@ -183,34 +183,34 @@ In the next step, you will take a more traditional approach to process the Excel
 
 8. Under **Output Parameters**, change the name to `FileName`.
 
-    <!-- border -->![Create String Variable FileName](18-Created2VariableNames2.png)
+    ![Create String Variable FileName](18-Created2VariableNames2.png)
 
     > Creating the variable in this form, helps to use them in subsequent activity types.
 
 9. Now add an **Open Workbook** activity.
 
-    <!-- border -->![Add Open Workbook](20-AddOpenWorkbook.png)
+    ![Add Open Workbook](20-AddOpenWorkbook.png)
 
 10. Under `workbookPath` input parameter, select the full path `2 WorkbookPath` of the Excel file. This will open the specific Excel file.
 
-    <!-- border -->![Add Open Workbook](20-AddOpenWorkbook2.png)
+    ![Add Open Workbook](20-AddOpenWorkbook2.png)
 
 11. To activate the workbook and the first worksheet, do the following:
    
     -  In the **Automation Details** panel, search for the activities **Activate Workbook** and **Activate Worksheet**.
     -  Drag and drop the activities into the canvas.
 
-    <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet.png) 
+    ![Activate Worksheet](21-ActivateWorkbookWorksheet.png) 
 
     -  Under `workbookName` input parameter, select `3 FileName`.
  
-    <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet2.png)
+    ![Activate Worksheet](21-ActivateWorkbookWorksheet2.png)
 
     -  Under `worksheetName` input parameter, enter `Sheet1` and select the expression in quotes.
 
     - Save your work.
 
-    <!-- border -->![Activate Worksheet](21-ActivateWorkbookWorksheet4.png)
+    ![Activate Worksheet](21-ActivateWorkbookWorksheet4.png)
 
     > You can use variables or hard coded values for now. If you are trying a different Excel, use these values appropriately.
  
@@ -218,7 +218,7 @@ In the next step, you will take a more traditional approach to process the Excel
 
 12. Drag and drop a **Filter Range** activity into the workflow.
 
-    <!-- border -->![Add Filter Range](24-FilterColumn.png)
+    ![Add Filter Range](24-FilterColumn.png)
 
 13. Select the **Filter Range** activity. 
 
@@ -230,33 +230,33 @@ In the next step, you will take a more traditional approach to process the Excel
     
     - a filter condition such as `<1000000`
 
-    <!-- border -->![Add Filter Range](24-FilterColumn2.png)
+    ![Add Filter Range](24-FilterColumn2.png)
 
     > You add a new Excel sheet to your workbook and copy this filtered data onto that, just for demonstration purpose.
 
 15. Subsequently add a **Hide columns** activity to hide a specific column in the result.
 
-    <!-- border -->![Add Hide Column](25-AddHideColumns.png)
+    ![Add Hide Column](25-AddHideColumns.png)
 
 16. Select the activity and under `rangeReference` input parameter, enter `C1`.
 
-    <!-- border -->![Add Hide Column](25-AddHideColumns2.png)
+    ![Add Hide Column](25-AddHideColumns2.png)
 
     You will then copy the result of filter to a new sheet. For this you add a sheet through **Add Worksheet** activity.
 
 17. Drag and drop a **Add Worksheet** activity into the workflow.
    
-    <!-- border -->![Add Worsheet](26-AddWorksheet1.png)
+    ![Add Worsheet](26-AddWorksheet1.png)
 
 18. Under `worksheetName` input parameter, enter the name **Result**.
 
-    <!-- border -->![Add a New Worksheet](26-AddAddWorksheet.png)
+    ![Add a New Worksheet](26-AddAddWorksheet.png)
 
 19. Add **Activate Worksheet** activity to activate the new worksheet.
 
 20. Select the activity and under `worksheetName` input parameter, enter the name of the first sheet of your original excel file such as `Sheet1`.
 
-    <!-- border -->![Activate original sheet](27-ActivateBackFirstSheet.png)
+    ![Activate original sheet](27-ActivateBackFirstSheet.png)
 
 21. Add a **Copy Range** activity, select the activity and provide the following input parameters:
 
@@ -268,33 +268,33 @@ In the next step, you will take a more traditional approach to process the Excel
     
     - the `destinationWorkbook` as `3 FileName`.
 
-    <!-- border -->![Add Copy Range](28-AddCopyRange.png)
+    ![Add Copy Range](28-AddCopyRange.png)
 
 22. Now add **Save As Workbook** activity to save the new sheet as another file. 
 
     You have the option to save workbook as an Excel file or a CSV file. In order to save as a new CSV file, you will need a file path to store this CSV file. This will be of the format `folderName` + `fileName` without extension where it needs to be saved.
 
-    <!-- border -->![Save As Workbook](30-SaveAsWorkbook.png)
+    ![Save As Workbook](30-SaveAsWorkbook.png)
 
 23. Finally, you need to include **Close Excel Instance** to conclude the step.
 
-    <!-- border -->![Add Close Instance](31-AddCloseExcelInstance.png)
+    ![Add Close Instance](31-AddCloseExcelInstance.png)
 
 24. Save the project and test it to validate the result.
 
-    <!-- border -->![Run the project to test and validate](32-ValidationResult.png)
+    ![Run the project to test and validate](32-ValidationResult.png)
 
 25. At the end, when this tutorial will be tested, for example the below source data will be used:
 
-    <!-- border -->![Source Excel Data](33-OriginalExcelData.png)
+    ![Source Excel Data](33-OriginalExcelData.png)
 
 26. After the automaton is executed, it has filtered the data, hidden a column (Column C) and resultant Excel will look like this.
 
-    <!-- border -->![Final Excel Data](34-AfterAutomationProcessing.png)
+    ![Final Excel Data](34-AfterAutomationProcessing.png)
 
     A new worksheet named Result will be created:
 
-    <!-- border -->![Final Excel Data](35-Result.png)
+    ![Final Excel Data](35-Result.png)
 
     Excel SDK of SAP Build Process Automation offers a wide variety of activities you can consider for business processes.
 

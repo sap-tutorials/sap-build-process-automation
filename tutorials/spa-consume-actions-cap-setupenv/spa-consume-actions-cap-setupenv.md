@@ -28,15 +28,15 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
 2. Get the Application Routes URL from the service which is running in your Cloud Foundry space, click on the Name
 
-    <!-- border -->![service name](ServiceStarted.png)
+    ![service name](ServiceStarted.png)
 
 3. Copy the URL into the clipboard to use it in the Destination definition (next item)
 
-    <!-- border -->![service route](ApplicationRoute-1.png)
+    ![service route](ApplicationRoute-1.png)
 
 4. Navigate back to your Subaccount - Overview
 
-    <!-- border -->![overview](SubaccountOverview.png)
+    ![overview](SubaccountOverview.png)
 
 5. Click **Destinations** to show the available Destinations
 
@@ -52,7 +52,7 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
      - click **Save**
 
-    <!-- border -->![new destination](CAPDestination-1.png)
+    ![new destination](CAPDestination-1.png)
 
 
 ### Add Destination in SAP Build Process Automation
@@ -69,12 +69,12 @@ In the SAP BTP Cockpit, you will create a destination that will be used in the A
 
      - Click **Add** 
 
-    <!-- border -->![add destination](AddDestination.png)
+    ![add destination](AddDestination.png)
 
 
     Destination is added to the list and can be used in SAP Build Process Automation.
 
-    <!-- border -->![destinations](Destinations.png)
+    ![destinations](Destinations.png)
     
 
 ### Test yourself

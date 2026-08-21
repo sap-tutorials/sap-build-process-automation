@@ -43,23 +43,23 @@ parser: v2
 
        - Click **Apply**
 
-    <!-- border -->![inputs](Inputs.png)
+    ![inputs](Inputs.png)
 
 ### Add Trigger
 
 1. Click **+** to add a new API trigger to your process
 
-    <!-- border -->![trigger](AddAPITrigger.png)
+    ![trigger](AddAPITrigger.png)
 
 2. Enter Trigger Name **`myCAP Trigger`** and click **Create**
 
-    <!-- border -->![name](APITriggerName.png)
+    ![name](APITriggerName.png)
 
 ### Add Actions
 
 1. Click **+** to add a step to your process, from the context menu select **Actions** > **Browse Library**
 
-    <!-- border -->![add action](AddActionsToProcess.png)
+    ![add action](AddActionsToProcess.png)
 
 2. From **Browse Library**
    
@@ -67,17 +67,17 @@ parser: v2
   
     - Click **Add** on the action **`get list of Todos`** 
   
-    <!-- border -->![browse](BrowseActions.png)
+    ![browse](BrowseActions.png)
 
 3. Click **+** next to **End** and repeat the **Actions** > **Browse Library** steps to add the action **`listToString`**
 
 4.  Select **`get list of Todos`** on the canvas and create Destination variable **`capService`**
    
-    <!-- border -->![todo destination](TodosDestination.png)
+    ![todo destination](TodosDestination.png)
    
 5. Select **`listToString`** on the canvas and select Destination variable **`capService`**
    
-    <!-- border -->![listToString destination](ListToStringDestination.png)
+    ![listToString destination](ListToStringDestination.png)
 
 6. Select **Inputs** to define the input values for the action
 
@@ -85,17 +85,17 @@ parser: v2
 
     -  Select **field** from **Process Inputs**
   
-    <!-- border -->![field](SelectField.png)
+    ![field](SelectField.png)
 
     - Click **Select list** next to **Bind List**
 
     -  Select **`list responseArray`** from **`get list of Todos`**
   
-    <!-- border -->![list](SelectList.png)
+    ![list](SelectList.png)
 
     The **Inputs** for **`listToString`** should show the following values:
 
-    <!-- border -->![list inputs](ListToStringInputs.png)
+    ![list inputs](ListToStringInputs.png)
 
 
 ### Release and Deploy
@@ -108,15 +108,15 @@ parser: v2
    
 4. Choose an **Environment** and select **Deploy**.
      
-    <!-- border -->![Choose environment](environment.png)
+    ![Choose environment](environment.png)
 
 5. You can see your trigger in the list, click **Deploy**.
 
-    <!-- border -->![deploy](trigger.png)
+    ![deploy](trigger.png)
 
 6. In the **Define Variables** section, select Destination **`Demo_CAP_Sample_Library`** and click **Deploy**.
 
-    <!-- border -->![variables](Deploy-2.png)
+    ![variables](Deploy-2.png)
 
 
 ### Test Business Process
@@ -127,28 +127,28 @@ parser: v2
    
 3. Select **`myCAPSample`**
 
-    <!-- border -->![process](MonitorCAP.png)
+    ![process](MonitorCAP.png)
 
 4. Click **Start New Instance** 
    
     - Enter the JSON as input parameter values
-    ```JSON
-    { "field" : "id" }    
-    ```
+   ```JSON
+   { "field" : "id" }    
+   ```
 
     - Click **Start New Instance and Close**
 
-    <!-- border -->![start](StartInstance-1.png)
+    ![start](StartInstance-1.png)
 
 5. Select **Monitoring** > **Process and Workflow Instances**, make sure your instance is in the list, **clear** all filters
 
-    <!-- border -->![run](RunInstances.png)
+    ![run](RunInstances.png)
 
 6. Click the line to display the details of the instance
 
     >The result of the action `listToString` is shown as comma separated value string    
 
-    <!-- border -->![result](RunInstanceResults.png)
+    ![result](RunInstanceResults.png)
 
 ---
 

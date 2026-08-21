@@ -42,17 +42,14 @@ First, you will create a trigger form that will start the business process. For 
 
 1. Choose **Add a Trigger** in the Trigger settings.
    
-    <!-- border -->
     ![Form](001a.png)
 
 2. Choose **Submit a Form**.
    
-    <!-- border -->
     ![Form](001b.png)
 
 3. Choose **Blank form**.
 
-    <!-- border -->
     ![Form](001c.png)
 
 4. In the pop-up window for new form:
@@ -61,14 +58,12 @@ First, you will create a trigger form that will start the business process. For 
     - Enter a Description: **Form to collect order details**
     - Choose **Create**.
 
-    <!-- border -->
     ![Form](002.png)
 
     The form will be added as the **Start Trigger**.
 
 5. To design the form, choose the three dots and select **Open Editor**.
 
-    <!-- border -->
     ![Form](003.png)
 
 6. You will now design the **Form** with available layout and input fields options. First, drag-and-drop the form layout fields and enter the given names and field settings as below:
@@ -78,7 +73,6 @@ First, you will create a trigger form that will start the business process. For 
     |  Headline 1         | Order Approval Request Form
     |  Paragraph          |Please provide the necessary information of your order and submit for approvals.
 
-    <!-- border -->
     ![Form](004.png)
 
 7. Now, add **Input Fields**, enter the labels and select the **Required** checkbox.
@@ -94,7 +88,6 @@ First, you will create a trigger form that will start the business process. For 
 
 8. The trigger form is ready. Save the form using the **Save** button on the top-right corner of the screen.
 
-    <!-- border -->
     ![Form](005.png)
 
     Now, you will design the process with more activities related to approval of the sales order.
@@ -110,17 +103,14 @@ You can create these different forms using the **Form Builder** embedded in the 
 
 1. Go to the **Order Processing** process and choose **+** below the Trigger.
 
-    <!-- border -->
     ![Approval](008a.png)
 
 2. Choose **Approval**.
 
-    <!-- border -->
     ![Approval](008b.png)
 
 3. Choose **Blank Approval**.
 
-    <!-- border -->
     ![Approval](008c.png)
 
 4. In the **Create Approval** dialog box, do the following:
@@ -128,12 +118,10 @@ You can create these different forms using the **Form Builder** embedded in the 
     - In the Description field enter: **Form to approve or reject the sales order**
     - Choose **Create**
 
-    <!-- border -->
     ![Approval](009.png)
 
 5. Choose **Open Editor** of the Approval Form.
 
-    <!-- border -->
     ![Approval](010.png)
 
 6. Design the **Approval Form** in the form builder by dragging-and-dropping fields into the form editor and configuring respective field settings.
@@ -144,7 +132,6 @@ You can create these different forms using the **Form Builder** embedded in the 
     | Paragraph  | A new order has been received. Please review and confirm whether the requirements can be met or not.
     | Paragraph  | Sales Order Details:
 
-    <!-- border -->
     ![Approval](011.png)
 
 7. Add **Input Fields**, enter the labels and select the **Read Only** checkbox.
@@ -156,7 +143,6 @@ You can create these different forms using the **Form Builder** embedded in the 
     | Number | Order Amount
     | Date | Order Delivery Date
 
-    <!-- border -->
     ![Approval](012.png)
 
 8.  Add **Input Fields** and enter **only** the labels.
@@ -169,7 +155,6 @@ You can create these different forms using the **Form Builder** embedded in the 
   
 9.	**Save** the form.
 
-    <!-- border -->
     ![Approval](036.png)
 
 
@@ -179,7 +164,6 @@ You can create these different forms using the **Form Builder** embedded in the 
    
 2. Select the **Approval Form** to configure the **General** information section.
 
-    <!-- border -->
     ![Approval](014.png)
 
 3. In the **Subject** field, do the following:
@@ -190,14 +174,12 @@ You can create these different forms using the **Form Builder** embedded in the 
     - Select **Customer Name** from Order Processing Form (Trigger)
     - Enter **company**
 
-    <!-- border -->
     ![Approval](015a.png)
 
     > The Subject configuration of the form will be shown when this task appears in the `MyInbox`.
 
 4. In the **Recipients** section, under **Users** select **Process Started By** from Process Metadata.
 
-    <!-- border -->
     ![Approval](016.png)
 
     > This form will appear as the task in the `MyInbox` of the given Recipients to take action.
@@ -209,7 +191,6 @@ You can create these different forms using the **Form Builder** embedded in the 
     > ### What is going on?
     > This means that the due date to approve or reject the form will be set to 2 days.
 
-    <!-- border -->
     ![Approval](017.png)
 
     As the task appears in the `MyInbox`, there will be duration information shown to the recipients like Overdue if the task was not completed in 2 days, or within 1 day if the task is supposed to be completed in 1 day etc.
@@ -228,12 +209,10 @@ You can create these different forms using the **Form Builder** embedded in the 
 
 7. **Save** the process. 
 
-    <!-- border -->
     ![Approval](018.png)
 
     The process should look like the following:
 
-    <!-- border -->
     ![Approval](020.png)
 
 
@@ -244,17 +223,14 @@ After the user approves or rejects the request, the next step is to create notif
 
 1. To add a confirmation to the process, select **+** below the **Approve** option.
    
-    <!-- border -->
     ![Notifications](021a.png)
 
 2. Choose **Form**.
 
-    <!-- border -->
     ![Notifications](021b.png)
 
 3. Choose **Blank Form**.
 
-    <!-- border -->
     ![Notifications](021c.png)
 
 4. In the **Create Form** dialog box, do the following:
@@ -263,12 +239,10 @@ After the user approves or rejects the request, the next step is to create notif
     - In the Description field, enter **Notification form to inform whether the sales order is approved by the supplier**
     - Choose **Create**
 
-    <!-- border -->
     ![Notifications](022.png)
 
 5. Choose **Open Editor** of the form.
 
-    <!-- border -->
     ![Notifications](023.png)
 
 6. In the form builder, design the form to notify the requester of the order confirmation. Add the following **Layout Fields**:
@@ -280,7 +254,6 @@ After the user approves or rejects the request, the next step is to create notif
     | Text Area  | Message from the supplier:
     | Paragraph  | Your Sales Order Details:
 
-    <!-- border -->
     ![Notifications](024.png)
 
 7. Add below **Input Fields**, enter the labels and select the **Read Only** checkbox.
@@ -293,7 +266,6 @@ After the user approves or rejects the request, the next step is to create notif
 
 8.	**Save** the form.
 
-    <!-- border -->
     ![Notifications](037.png)
 
 8. Go back to the process builder to map the process content with the form input fields.
@@ -308,7 +280,6 @@ After the user approves or rejects the request, the next step is to create notif
 
 11. In the **Users** section, under **Recipients**, select **Process Started By** from Process Metadata.
 
-    <!-- border -->
     ![Notifications](026.png)
 
 12. Go to the **Inputs** section and map the different input fields, which were marked as read-only, with the respective process content entries.
@@ -324,7 +295,6 @@ After the user approves or rejects the request, the next step is to create notif
 
 13. **Save** the process. 
 
-    <!-- border -->
     ![Notifications](027.png)  
 
     With this you completed designing and configuring the confirmation notification form.
@@ -335,14 +305,12 @@ After the user approves or rejects the request, the next step is to create notif
 
     > **Duplicate** feature is used to copy artifacts within the Business Process whereas **Copy** feature is used to copy artifacts across the Business Processes.
 
-    <!-- border -->
     ![Notifications](028.png)
 
 15. Find **Order Confirmation Form** under the Artifacts section and choose **Duplicate**.
 
 16. In the Duplicate Artifact pop-up window, change the name to **Order Rejection Form** and select **Duplicate**.
 
-    <!-- border -->
     ![Notifications](030.png)
 
 17. The form is automatically opened in the form builder. Change the order rejection form in the form builder to reflect the data for rejection case.
@@ -360,22 +328,18 @@ After the user approves or rejects the request, the next step is to create notif
     
 19. **Save** the form.
 
-    <!-- border -->
     ![Notifications](031a.png)
 
 20. Go back to the process builder and add the order rejection notification form to the process. Select **+** below the **Reject** option.
 
-    <!-- border -->
     ![Notifications](032a.png)   
 
 21. Choose **Form**.
     
-    <!-- border -->
     ![Notifications](032b.png)
 
 22. Choose **Order Rejection Form**.
 
-    <!-- border -->
     ![Notifications](032c.png)
 
 24.	Configure the **Order Rejection Form**. In the General section configure in the **Subject** box:
@@ -388,7 +352,6 @@ After the user approves or rejects the request, the next step is to create notif
 
 26. Under Recipients, for **Users**, select **Process Started By**.
 
-    <!-- border -->
     ![Notifications](033.png)
 
 27. Configure the **Inputs** section.
@@ -400,14 +363,12 @@ After the user approves or rejects the request, the next step is to create notif
     | Order Amount | Order Amount
     | Order Number | Order Number
 
-    <!-- border -->
     ![Notifications](034.png)
 
 28. **Save** your work.
 
     With this you have completed the process design of your business process. You have experienced building a process in a completely no-code environment and with no technical know-how. You used the process builder to create a one-step approval process with trigger form, approval form and notification forms.
     
-    <!-- border -->
     ![Notifications](038.png)
 
 ---
