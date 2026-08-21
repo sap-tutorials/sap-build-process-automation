@@ -28,13 +28,13 @@ You will generate the openAPI specification for the service used to create the A
 
 1. Navigate back to the Business Application Studio. Open your CAP project and run the following command in the Terminal window:
 
-    ```Shell / Bash
-    cds compile srv --service all -o docs --to openapi
-    ```
+   ```Shell / Bash
+   cds compile srv --service all -o docs --to openapi
+   ```
 
 2. In the subfolder `docs` folder, open the file `sap_build_cap_sample_library.openapi3.json`.
 
-    <!-- border -->![api spec](OpenAPIspecEditor.png)
+    ![api spec](OpenAPIspecEditor.png)
 
 
 ### Adjust the OpenAPI specification
@@ -43,123 +43,123 @@ You will generate the openAPI specification for the service used to create the A
 
 1. Update the following **paths** definitions (just replace the lines in the generated file):
 
-    ```JSON
-    "/addQuotes(value='{value}')": {    
-      "get": {
-        "summary": "addQuotes",
-        "tags": [
-          "Service Operations"
-        ],
-        "parameters": [
-          {
-            "required": true,
-            "in": "path",
-            "name": "value",
-            "description": "String value needs to be enclosed in single quotes",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
-          }
-        ],
-        "responses": {
-    ```
+   ```JSON
+   "/addQuotes(value='{value}')": {    
+     "get": {
+       "summary": "addQuotes",
+       "tags": [
+         "Service Operations"
+       ],
+       "parameters": [
+         {
+           "required": true,
+           "in": "path",
+           "name": "value",
+           "description": "String value needs to be enclosed in single quotes",
+           "schema": {
+             "type": "string",
+             "default": ""
+           }
+         }
+       ],
+       "responses": {
+   ```
 
 
-    ```JSON
-    "/getListOfTodos()": { 
-    ```
+   ```JSON
+   "/getListOfTodos()": { 
+   ```
 
 
-    ```JSON
-    "/toInteger(value='{value}')": {    
-      "get": {
-        "summary": "toInteger",
-        "tags": [
-          "Service Operations"
-        ],
-        "parameters": [
-          {
-            "required": true,
-            "in": "path",
-            "name": "value",
-            "description": "String value needs to be enclosed in single quotes",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
-          }
-        ],
-        "responses": {
-    ```
+   ```JSON
+   "/toInteger(value='{value}')": {    
+     "get": {
+       "summary": "toInteger",
+       "tags": [
+         "Service Operations"
+       ],
+       "parameters": [
+         {
+           "required": true,
+           "in": "path",
+           "name": "value",
+           "description": "String value needs to be enclosed in single quotes",
+           "schema": {
+             "type": "string",
+             "default": ""
+           }
+         }
+       ],
+       "responses": {
+   ```
 
-    ```JSON
-    "/toNumber(value='{value}')": {    
-      "get": {
-        "summary": "toNumber",
-        "tags": [
-          "Service Operations"
-        ],
-        "parameters": [
-          {
-            "required": true,
-            "in": "path",
-            "name": "value",
-            "description": "String value needs to be enclosed in single quotes",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
-          }
-        ],
-        "responses": {
-    ```
+   ```JSON
+   "/toNumber(value='{value}')": {    
+     "get": {
+       "summary": "toNumber",
+       "tags": [
+         "Service Operations"
+       ],
+       "parameters": [
+         {
+           "required": true,
+           "in": "path",
+           "name": "value",
+           "description": "String value needs to be enclosed in single quotes",
+           "schema": {
+             "type": "string",
+             "default": ""
+           }
+         }
+       ],
+       "responses": {
+   ```
 
-    ```JSON
-    "/toStr(value={value})": {
-      "get": {
-        "summary": "toString",
-        "tags": [
-          "Service Operations"
-        ],
-        "parameters": [
-          {
-            "required": true,
-            "in": "path",
-            "name": "value",
-            "schema": {
-              "anyOf": [
-                {
-                  "type": "number",
-                  "format": "double,null"
-                },
-                {
-                  "type": "string"
-                }
-              ],
-              "example": 3.14,
-              "nullable": true,
-              "default": ""
-            }
-          }
-        ],
-        "responses": {
-    ```
+   ```JSON
+   "/toStr(value={value})": {
+     "get": {
+       "summary": "toString",
+       "tags": [
+         "Service Operations"
+       ],
+       "parameters": [
+         {
+           "required": true,
+           "in": "path",
+           "name": "value",
+           "schema": {
+             "anyOf": [
+               {
+                 "type": "number",
+                 "format": "double,null"
+               },
+               {
+                 "type": "string"
+               }
+             ],
+             "example": 3.14,
+             "nullable": true,
+             "default": ""
+           }
+         }
+       ],
+       "responses": {
+   ```
 
 2. Add **required: true** for **components/schemas** schema definition of **DataListArray**.
 
-    ```JSON
-        "sap_build_cap_sample_library.DataListArray": {
-        "title": "DataListArray",
-        "type": "object",
-        "properties": {
-            "responseArray": {
-            "type": "array",
-            "required": true,
-            "items": {
-                "$ref": "#/components/schemas/sap_build_cap_sample_library.DataList"
-            }
-    ```
+   ```JSON
+       "sap_build_cap_sample_library.DataListArray": {
+       "title": "DataListArray",
+       "type": "object",
+       "properties": {
+           "responseArray": {
+           "type": "array",
+           "required": true,
+           "items": {
+               "$ref": "#/components/schemas/sap_build_cap_sample_library.DataList"
+           }
+   ```
 
 3. Select the file content **Ctrl-a** in the editor and copy to your clipboard **Ctrl-c**.
 
@@ -169,43 +169,43 @@ You will generate the openAPI specification for the service used to create the A
 
     Here below, a screenshot with parts how the file will look like:
 
-    <!-- border -->![api spec](NotepadOpenAPI.png)<div>&nbsp;</div>
+    ![api spec](NotepadOpenAPI.png)<div>&nbsp;</div>
 
 
 ### Create action project
 
 1. Open **SAP Build** Lobby, under **Connectors**, select **Actions**.
 
-    <!-- border -->![create](ConnectorsActions.png)
+    ![create](ConnectorsActions.png)
 
 2. Choose **Create**.
 
-    <!-- border -->![createActions](CreateActionProject.png)
+    ![createActions](CreateActionProject.png)
 
 3. In the **Choose an API Source** popup, under API Specification, select **Upload API Specification**.
 
-    <!-- border -->![createActions](UploadAPI.png)
+    ![createActions](UploadAPI.png)
 
 4. Drag and drop or click **Browse Files** to upload open specification file downloaded in step above.
    
 5. Choose **Next**.
 
-    <!-- border -->![createActions](UploadAPI2.png)
+    ![createActions](UploadAPI2.png)
 
 6. In the **Create an Action project** popup:
    
     - Specify the name **`CAP Sample Actions`**
     - Click **Create**
 
-    <!-- border -->![createActionProject](CreateCAPSampleActions.png)
+    ![createActionProject](CreateCAPSampleActions.png)
 
 7. Once the action project is created, the action editor will automatically open. In the popup select all actions from the list, click **Add**.
 
-    <!-- border -->![add actions](AddActions.png)
+    ![add actions](AddActions.png)
 
     Your Action Project will contain the actions for the CAP service.
 
-    <!-- border -->![final project](ActionProject.png)<div>&nbsp;</div>
+    ![final project](ActionProject.png)<div>&nbsp;</div>
 
 
 ### Test actions
@@ -226,17 +226,17 @@ You can test the execution of your action in the Action Editor.
 
        - Click **Test** 
 
-    <!-- border -->![test action](TestListToString.png)
+    ![test action](TestListToString.png)
 
     >In the Test you can specify only one value for a list. In the Response View you can see that the values are converted to a string (with more than one value they will be comma separated). You can also try **title** as field and check the result.
 
 3. Select `get list of Todos` from the list, click **Output** tab to check that the array is marked as required with `red asterix`
 
-    <!-- border -->![output getListOfTodos](ActionGetListOfTodosOutput.png)
+    ![output getListOfTodos](ActionGetListOfTodosOutput.png)
 
 4. Select **Test** tab and click **Test**
 
-    <!-- border -->![test getListOfTodos](TestGetListOfTodos.png)
+    ![test getListOfTodos](TestGetListOfTodos.png)
 
 5. You can test the other actions (optional)
 
@@ -254,15 +254,15 @@ To be able to use the Actions in a Process, you have to release and publish the 
 
 1. Click **Release**
 
-    <!-- border -->![release](Release.png)
+    ![release](Release.png)
 
 2. Enter release information, click **Release**
 
-    <!-- border -->![releaseInfo](ReleaseInfo.png)
+    ![releaseInfo](ReleaseInfo.png)
 
 3. Click **Publish to Library**
 
-    <!-- border -->![publish](ReleasePublish.png)
+    ![publish](ReleasePublish.png)
 
 ---
 

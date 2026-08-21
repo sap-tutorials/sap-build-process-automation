@@ -41,27 +41,27 @@ Before you can authorize Google applications, you will need to create an automat
 
 1. From the **Lobby**, choose **Create**.
 
-    <!-- border -->![Create](01.png)
+    ![Create](01.png)
 
 2. In the pop-up, select **Build an Automated Process**.
 
-    <!-- border -->![Automated Process](02.png)
+    ![Automated Process](02.png)
 
 3. Select **Task Automation**.
 
-    <!-- border -->![Task Automation](02a.png)
+    ![Task Automation](02a.png)
 
 4. In the **Create a Task Automation project** window, enter the project name: **Google Workspace**  and as a description: **A demo to automate Google Applications using Google SDK**.
 
 5. Choose **Create**.
 
-    <!-- border -->![Automated Process](02b.png)
+    ![Automated Process](02b.png)
 
     You will be asked to configure your agent version.
 
 6. Select the agent version that is registered on your system.
 
-    <!-- border -->![Configure Agent Version](03.png)
+    ![Configure Agent Version](03.png)
 
     A pop-up window will prompt you to create an automation.
 
@@ -71,11 +71,11 @@ Before you can authorize Google applications, you will need to create an automat
 
 9. Choose **Create**.
 
-    <!-- border -->![Create automation](04.png)
+    ![Create automation](04.png)
 
     A new automation named **Google Authorization** will be successfully created. You will be navigated to the automation editor where you can start building your automation.
 
-    <!-- border -->![Create automation](05.png)
+    ![Create automation](05.png)
 
 ### Create environment variables
 
@@ -83,11 +83,11 @@ Environment Variables allow you to reuse certain information for a given environ
 
 1. Select **Settings**.
 
-    <!-- border -->![Settings](settings.png)
+    ![Settings](settings.png)
 
 2. In the Project Properties window, select **Environment Variables**, then **+ Create**.
 
-    <!-- border -->![Create Environment Variable](createEnvVar.png)
+    ![Create Environment Variable](createEnvVar.png)
 
 3. In the create an environment variable screen:
 
@@ -96,15 +96,15 @@ Environment Variables allow you to reuse certain information for a given environ
     - Under Type select **String**,
     - Choose the **Create** button.
 
-    <!-- border -->![Create](create.png)
+    ![Create](create.png)
 
 4. In the same way, you will create a second variable named `userEmail` also of type **String**. Choose **+ Create**.
 
-    <!-- border -->![Create User Email](createUserEmail.png)
+    ![Create User Email](createUserEmail.png)
 
 5. After the Environment Variables are created successfully, **close** the project properties window.
 
-    <!-- border -->![Close](close.png)
+    ![Close](close.png)
 
 
 ### Add the Google authorization SDK
@@ -113,7 +113,7 @@ The Google Authorization SDK is a collection of activities allowing you to acqui
 
 1. Select Settings.
 
-    <!-- border -->![Settings](06.png)
+    ![Settings](06.png)
 
 2. In the **Project Properties** window, select **Dependencies**.
 
@@ -121,25 +121,25 @@ The Google Authorization SDK is a collection of activities allowing you to acqui
 
 3. Choose **Add Dependency** and select **Add a Business Process project dependency**.
 
-    <!-- border -->![Add Dependency](07.png)
+    ![Add Dependency](07.png)
 
 4. Under **Package**, select **Google Authorization SDK** and choose a version.
 
 5. Choose **Add**.
 
-    <!-- border -->![Google Authorization SDK](08.png)
+    ![Google Authorization SDK](08.png)
 
     The Google Authorization SDK has been added successfully.
 
 6. You may close the **Project Properties** window.
 
-    <!-- border -->![Google Authorization SDK](09.png)
+    ![Google Authorization SDK](09.png)
 
 7. In the **Automation Details** panel, under **Tools**, search for Google.
 
     The Google Authorization activities will be displayed.
 
-    <!-- border -->![Google Authorization SDK](10.png)
+    ![Google Authorization SDK](10.png)
 
 
 ### Authorize Google using service account
@@ -158,21 +158,21 @@ To perform actions on behalf of the user, Domain Wide Delegation must be enabled
 
 2. Drag and drop the activity into the workflow.
 
-    <!-- border -->![Authorize Google](11.png)
+    ![Authorize Google](11.png)
 
 3. Choose the activity.
 
 4. Under **Input Parameters**, for `serviceAccountKeyPath` field enter the environment variable `E serviceAccountKeyPath` previously created.
 
-    <!-- border -->![Service Account Key Path](12.png)
+    ![Service Account Key Path](12.png)
 
 5. Choose the field of the input parameter **Scopes** and select **Create Custom Data**.
 
-    <!-- border -->![Create Custom Data](13.png)
+    ![Create Custom Data](13.png)
 
     Select `GmailScope` and `GoogleDriveScope` if the automation contains Gmail and Drive Activities for instance.
 
-    <!-- border -->![Scopes](14.png)
+    ![Scopes](14.png)
 
     `userEmail` is the user's email address to perform actions on behalf of them. Domain-wide delegation is mandatory if user's email is provided.
 
@@ -180,7 +180,7 @@ To perform actions on behalf of the user, Domain Wide Delegation must be enabled
 
 7. Choose **Save**.
 
-    <!-- border -->![User Email](15.png)
+    ![User Email](15.png)
 
 ### Test Google authorization
 
@@ -194,11 +194,11 @@ You can test if the Google Authorization has been set up correctly.
 
 3. Choose **Test**.
 
-    <!-- border -->![Test](16.png)
+    ![Test](16.png)
 
     The testing was successful.
 
-    <!-- border -->![Test result](17.png)
+    ![Test result](17.png)
 
     Now that you have set the Authorize activity, you may add Google Workspace SDK to automate Google applications such as Google Drive, Gmail, Google Docs, Google Sheets and Google Slides. Once you are done building your automation, you may use the Disconnect activity at the end of the automation.
 
