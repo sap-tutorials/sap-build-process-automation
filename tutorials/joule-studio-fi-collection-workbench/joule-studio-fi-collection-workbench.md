@@ -44,18 +44,16 @@ Collections specialists are losing productive hours manually monitoring overdue 
 
 2. Enter the following prompt (delete **Quick Create** option if presented):
 
-    ```COPY
-        I need a collections workbench that shows overdue customer receivables. 
-        Set up automated payment reminder sequences, and create an AI assistant that can draft personalized 
-        collection emails based on the customer's payment history and outstanding invoices.
-    ```
+   ```COPY
+       I need a collections workbench that shows overdue customer receivables. 
+       Set up automated payment reminder sequences, and create an AI assistant that can draft personalized 
+       collection emails based on the customer's payment history and outstanding invoices.
+   ```
 
-    <!-- border -->
     ![Click + to open the new solution dialog](010-create-solution.png)
 
 3. Choose **OK**. In the panel on the right, you can see that your intent statement has been taken as the starting prompt.
 
-    <!-- border -->
     ![Intent generation](033-start-creation.png)
 
 ### Intent
@@ -66,12 +64,10 @@ Once it decides it understands enough, it will map the challenge to SAP’s Refe
 
 1. If required, answer the questions set by the tool. The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that the landscape has S/4HANA as a backend so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution. The screenshot below is just an indication of what you might see. Joule might provide a selection of answers that you can choose from.
 
-    <!-- border -->
     ![Joule asking clarifying questions](040-question-examples.png)
 
 2. Once the intent document is created, proceed to the next phase, which is requirement generation. This might happen automatically if you have selected quick-create at the start. If processesing is waiting for your input to proceed, enter Create Requirement or similar. While the requirements are being generated, you can explore the intent on the Idea Board.
 
-    <!-- border -->
     ![Joule generates the PRD](055-intent-is-ready.png)
 
 ### Requirement
@@ -82,12 +78,10 @@ Depending on your role in your company, you might be finished at this point and 
 
 1. Enter **Create Specification**. This might happen automatically if you have selected quick-create at the start. While the specification is being generated, you can explore the **Requirement**.
 
-    <!-- border -->
     ![Requirement](065-prd-is-ready.png)
 
 2. In particular, look at the **Solution Architecture** section to see what will be created.
 
-    <!-- border -->
     ![Architecture](067-solution-architecture-section.png)
 
 ### Specification
@@ -96,29 +90,24 @@ When the specification is complete you could pass it on to another team to do th
 
 1. If processesing is waiting for your input, enter **Implement the Solution** (alternatively use **Build Solution** button). The tool will work through the tasks defined in the specification. When it is finished, it will update the specification to show the tasks have been done. While the solution is being generated, you can explore the **Specification**.
 
-    <!-- border -->
     ![Generated solution code](070-spec-is-ready.png)
 
 ### Solution
 
 1. Wait until the solution is implemented successfully. You can then preview your solution.
 
-    <!-- border -->
     ![Code was generated](085-solution-code.png)
 
 2. Go to **Solution** in select the **View** mode. Choose a CAP application in the artifacts list. You will see the app with its UI built on top of the CAP application.
 
-    <!-- border -->
     ![CAP Preview](103-cap-preview.png)
 
 3. Choose a workflow in the artifacts list. You will see the **n8n** workflow and can test it directly from the UI using the **Execute workflow** button.
 
-    <!-- border -->
     ![CAP Preview](105-n8n-preview.png)
 
 4. Choose an agent in the artifacts list. You can talk to your agent locally to test how it works.
 
-    <!-- border -->
     ![Agent local test](107-agent-test-preview.png)
 
 For the Agent Lab at SAPPHIRE, you will not be deploying your solution. However, the code that has been generated follows SAP best practices and would be deployable to the runtime.

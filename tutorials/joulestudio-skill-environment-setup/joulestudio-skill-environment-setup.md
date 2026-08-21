@@ -32,17 +32,14 @@ parser: v2
 
 2. Choose **Control Tower**, then choose **Environments**.
 
-    <!-- border -->
     ![Control tower](joulestudio-controltower.png)
 
 3. Choose **Create**. In the popup, enter a name and description, then choose **Create**.
 
-    <!-- border -->
     ![Create environment](joulestudio-environments-create.png)
 
 4. Choose your environment, then choose the **Joule** tab.
 
-    <!-- border -->
     ![Joule tab in environment](joulestudio-environments-joule.png)
 
 Since this is a new environment and you have not yet deployed a Joule skill, there is no data and you cannot launch the standalone Joule Digital Assistant. 
@@ -54,7 +51,6 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
 2. Choose **Create**.
 
-    <!-- border -->
     ![Create destination from scratch](joulestudio-destinations-s4hanamock-scratch.png)
 
 3. Choose **From Scratch** and then **Create**.
@@ -78,7 +74,6 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
  
 
-    <!-- border -->
     ![Create destination](joulestudio-destinations-s4hanamock-create.png)
 
 
@@ -86,7 +81,6 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
 8. Choose **Check Connection**.
 
-    <!-- border -->
     ![Check connection success](joulestudio-destinations-s4hanamock-check.png)
 
 9. Choose **Close**.
@@ -101,14 +95,12 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
     |  URL            | **`https://badges.cfapps.eu10.hana.ondemand.com/service/BadgeRequests`**
 
 
-    <!-- border -->
     ![Badge service destination](joulestudio-destinations-badgeservice.png)
 
 12. Choose **Create**.
 
 13. Choose **Check Connection**.
 
-    <!-- border -->
     ![Check connection success](joulestudio-destinations-badgeservice-check.png)
 
 14. Choose **Close**.
@@ -120,19 +112,16 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
 2. Choose **Control Tower**, then choose **Destinations**.
 
-    <!-- border -->
     ![Control tower destinations](joulestudio-controltower-destinations.png)
 
 4. Choose **Add**.
 
 5. Select your **Badge_Service** destination and choose **Next**.
 
-    <!-- border -->
     ![Select destination](joulestudio-controltower-destinations-select.png)
 
 6. Select **Specific Environments** and search for the environment you created earlier.
 
-    <!-- border -->
     ![Associate environments](joulestudio-controltower-destinations-associate-environments.png)
 
 7. Select your environment.
@@ -141,14 +130,12 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
 9. Choose **Add Destination**.
 
-    <!-- border -->
     ![Add destinations](joulestudio-controltower-destinations-add.png)
 
 10. Repeat the above steps to add your **S4HANA_MOCK** destination.
 
 11. Check that both destinations have been configured for both the **Public** and your own environments. 
 
-    <!-- border -->
     ![Lobby](joulestudio-controltower-destinations-check.png)
 
 ### Test yourself
