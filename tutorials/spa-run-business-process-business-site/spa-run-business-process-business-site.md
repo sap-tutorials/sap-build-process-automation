@@ -24,35 +24,35 @@ primary_tag: software-product>sap-build-process-automation
 
 You completed [Configure SAP Build Work Zone, standard edition](spa-configure-workzone) tutorial. You assigned **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role and clicked **Save**.
 
-<!-- border -->![Assignments to Everyone Role](01.png)
+![Assignments to Everyone Role](01.png)
 
 1. Go back to **Content Manager** page.
 
-    <!-- border -->![Back My Content](02.png)
+    ![Back My Content](02.png)
 
 2. Select **Process Trigger**.
 
-    <!-- border -->![Process Trigger](07.png)
+    ![Process Trigger](07.png)
 
 3. Choose **Create a Local Copy**.
 
-    <!-- border -->![Create Local Copy](08.png)
+    ![Create Local Copy](08.png)
 
 4. Choose **Edit** to make changes to the **Process Trigger** app.
 
-    <!-- border -->![Edit](09.png)
+    ![Edit](09.png)
 
 5. Change the name of the app to **Sales Order Management**.
 
-    <!-- border -->![Change Name](10.png)
+    ![Change Name](10.png)
 
 6. Select the tab **Navigation**.
 
-    <!-- border -->![Navigation](11.png)
+    ![Navigation](11.png)
 
 7. Now you need to fill the **Default Value** of the app's parameters with the **Launchpad Configuration Parameter** of your process' **Trigger Settings**.
 
-    <!-- border -->![Default Value Field](11a.png)
+    ![Default Value Field](11a.png)
 
 8. Navigate back to your deployed project in **SAP Build Process Automation**.
 
@@ -60,7 +60,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 10. Copy the **Launchpad Configuration Parameter**.
 
-    <!-- border -->![Copy Parameter](12.png)
+    ![Copy Parameter](12.png)
 
     >This is the parameter you need to configure this form trigger as a tile in the Business Site.
 
@@ -68,13 +68,13 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 12. Paste the value in the **Default Value** field of the Sales Order Management app's parameters.
 
-    <!-- border -->![Default Value](13.png)
+    ![Default Value](13.png)
 
 13. Select the tab **Translation**.
 
 14. Change the name of the **Title** to **Sales Order Management**.
 
-    <!-- border -->![Change Name](13b.png)
+    ![Change Name](13b.png)
 
 15. Choose **Save**.
 
@@ -85,15 +85,15 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 1. Navigate back to **Content Manager**.
 
-    <!-- border -->![My Content](13a.png)
+    ![My Content](13a.png)
 
 2. Select **SAP Build Process Automation** group.
 
-    <!-- border -->![SAP Process Automation](03.png)
+    ![SAP Process Automation](03.png)
 
 3. Choose **Edit** to make changes to the group.
 
-    <!-- border -->![Edit Group](04.png)
+    ![Edit Group](04.png)
 
     You will now assign the **Sales Order Management** trigger to your group.
 
@@ -101,7 +101,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 5. Choose **Save**.
 
-    <!-- border -->![Save](05.png)
+    ![Save](05.png)
 
 
 ### Assign Sales Order Management Trigger to Everyone Role
@@ -109,11 +109,11 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 1. Go back to **Content Manager**.
 
-    <!-- border -->![My Contact](06.png)
+    ![My Contact](06.png)
 
 2. Choose **Everyone**.
 
-    <!-- border -->![Everyone](16.png)
+    ![Everyone](16.png)
 
 3. Choose **Edit**.
 
@@ -123,7 +123,7 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 6. Choose **Save**.
 
-    <!-- border -->![Everyone](17.png)
+    ![Everyone](17.png)
 
 
 ### Launch the Business Site
@@ -131,11 +131,11 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 1. Navigate back to the **Site Directory**.
 
-    <!-- border -->![Site Directory](18.png)
+    ![Site Directory](18.png)
 
 2. Go to the site.
 
-    <!-- border -->![Go to site](19.png)
+    ![Go to site](19.png)
 
     You will be directed to the **Business Site** where the Sales Order Management tile has been created.
 
@@ -143,13 +143,13 @@ You completed [Configure SAP Build Work Zone, standard edition](spa-configure-wo
 
 3. Choose **Sales Order Management** tile.
 
-    <!-- border -->![Tile](20.png)
+    ![Tile](20.png)
 
     > You can also see **My Inbox** and **Process Workspace** tiles added to the **Business Site** which can be used by the business users to access the tasks and monitor the processes respectively.
 
     You will be redirected to the **Order Approval Request Form**.
 
-    <!-- border -->![Form](21.png)
+    ![Form](21.png)
 
 
 

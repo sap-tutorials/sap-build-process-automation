@@ -34,7 +34,7 @@ The Recorder allows you to record desktop applications. It enables users to spee
 
 Open the clock application on your desktop.
 
-<!-- border -->![Clock](01.png)
+![Clock](01.png)
 
 
 ### Create your project
@@ -43,27 +43,27 @@ You will create a new project in **SAP Build Process Automation** application.
 
 1. Navigate to **SAP Build** application and create a project by choosing **Create**.
 
-    <!-- border -->![Create a project](02.png)
+    ![Create a project](02.png)
 
 2. Select **Build an Automated Process**.
 
-    <!-- border -->![Build an Automated Process](03.png)
+    ![Build an Automated Process](03.png)
 
 3. Select **Task Automation**.
 
-    <!-- border -->![Task Automation](04.png)
+    ![Task Automation](04.png)
 
 4. In the **Create a Task Automation project** window, please give the project the name: **Create Alarms** and the description: **Automate alarms creation in the desktop clock** and choose **Create**.
 
-    <!-- border -->![Create Task Automation](05.png)
+    ![Create Task Automation](05.png)
 
 5. Once the project is created, a new tab will open. You will need to configure your agent version. Select the version of the agent installed on your machine and choose **Confirm**.
 
-    <!-- border -->![Select desktop version](06.png)
+    ![Select desktop version](06.png)
 
 6. A pop-up window asking you to create an automation will appear, please choose **Cancel**.
 
-    <!-- border -->![Cancel automation](07.png)
+    ![Cancel automation](07.png)
 
     > ### What is going on?
     > As you will be using the recorder feature, you do not need to create an automation but an application.
@@ -75,43 +75,43 @@ You will create a new project in **SAP Build Process Automation** application.
 
 1. In the **Overview** tab of your **Create Alarms** project, choose **Create**, then choose **Application**.
 
-    <!-- border -->![Create an application](08.png)
+    ![Create an application](08.png)
 
 2. In the **Create Application** window, name your application: **Create Alarms** and choose **Create**.
 
-    <!-- border -->![Create application](09.png)
+    ![Create application](09.png)
 
 3. From the list of open applications, under UI Automation, select **Clock** application and choose **Next**.
 
     > ### What is going on?
     > **SAP Build Process Automation** starts detecting the applications and their screens currently running on your local machine. When it's done, you'll see a list of screens in the picker panel on the left.
  
-    <!-- border -->![Select Clock](10.png)
+    ![Select Clock](10.png)
 
     > You have the option to select either **Recorder** type or **Manual Capture** type. This tutorial will show you how to use the **Recorder**.
 
 4. Select **Recorder** as type and choose **Record**.
 
-    <!-- border -->![Recorder](11.png)
+    ![Recorder](11.png)
 
     > Please note that the technology that you will be recording is **UI Automation**.
 
 5. You will notice 2 pop-ups for recording in progress and SAP Intelligent RPA Recorder.
 
-    <!-- border -->![recording_popup_1](recording_popup_1.png)  ![recording_popup_2](recording_popup_2.png)
+    ![recording_popup_1](recording_popup_1.png)  ![recording_popup_2](recording_popup_2.png)
 
 
 ### Record your application 
 
 > The Recorder records the steps you perform across the screens of an application.
 
-1. Click the **Record** <!-- border -->![record](record.png) button to start recording in the recorder widget. A green border around the **Clock** screen appears. This means that the screen is being recorded.
+1. Click the **Record** ![record](record.png) button to start recording in the recorder widget. A green border around the **Clock** screen appears. This means that the screen is being recorded.
 
 2. Select **Alarm**.
 
 3. Click on **+** to add a new alarm.
 
-    <!-- border -->![Add new alarm](12.png)
+    ![Add new alarm](12.png)
 
     The recorder detects a change of screen and starts recording this new screen. Please wait until the screen is fully captured.
 
@@ -119,7 +119,7 @@ You will create a new project in **SAP Build Process Automation** application.
 
 5. Choose **Save**.
 
-    <!-- border -->![Set alarm name](13.png)
+    ![Set alarm name](13.png)
 
     Now, the recording widget is enhanced to support the editing of input to the **Set** activity. Once the **Set** activity is generated, you can change the value of the input if required.
 
@@ -129,27 +129,27 @@ You will create a new project in **SAP Build Process Automation** application.
     - create and assign new variable which is shown with a prefixed '+' symbol.
     - select an input from a list of pre-existing variables.
    
-    <!-- border -->![Set alarm name](13a.png)
+    ![Set alarm name](13a.png)
 
 6. Create and assign a new variable by choosing the value with the prefixed '+' symbol.
        
-    <!-- border -->![Set new variable](13b.png)
+    ![Set new variable](13b.png)
 
-7. You need to capture this new screen. Choose the **New Screen Capture** <!-- border -->![capture](capture_icon.png) button.
+7. You need to capture this new screen. Choose the **New Screen Capture** ![capture](capture_icon.png) button.
 
 8. Wait until the screen is fully captured.
 
-    <!-- border -->![New screen capture](14.png)
+    ![New screen capture](14.png)
 
     You will now get the value of the alarm name element. You can read the value of an element during the recording steps only in enabled **Get** mode.
 
 9. Click the **Get Activity Mode** icon. 
 
-    <!-- border -->![Get element](15.png)
+    ![Get element](15.png)
 
     This will enable the **Get** mode. Once the mode is enabled, the icon is highlighted as shown in the following screenshot and a hint message is displayed at the bottom of the recording widget.
 
-    <!-- border -->![Get element](16.png)
+    ![Get element](16.png)
 
     > To generate the **Get** activity, place the cursor at the targeted element (Morning Alarm) and the selection is highlighted with the green bounding rectangle. 
     
@@ -157,9 +157,9 @@ You will create a new project in **SAP Build Process Automation** application.
 
     The **Get** activity is generated with the output variable as shown in the following screenshot. You can further utilize this output variable according to your use case.
 
-    <!-- border -->![Get element](17.png)
+    ![Get element](17.png)
 
-11. Stop the **Get Activity Mode** by clicking on <!-- border -->![Get icon](get_icon.png) icon.
+11. Stop the **Get Activity Mode** by clicking on ![Get icon](get_icon.png) icon.
 
 12. Now you will create a new alarm. Click on **+**.
 
@@ -175,23 +175,23 @@ You will create a new project in **SAP Build Process Automation** application.
 
 16. Choose **Save**.
 
-    <!-- border -->![Evening alarm](18.png)
+    ![Evening alarm](18.png)
 
 17. Click on the Alarm Name **Set Element**. You will assign and create an **Evening Alarm** variable.
 
 18. Select the value with a prefixed '+' symbol.
 
-    <!-- border -->![New variable](19.png)
+    ![New variable](19.png)
 
     The new variable `eveningAlarm` has been created.
 
-    <!-- border -->![New variable](20.png)
+    ![New variable](20.png)
 
-19. You need to capture this new screen. Choose the **New Screen Capture** <!-- border -->![capture](capture_icon.png) button.
+19. You need to capture this new screen. Choose the **New Screen Capture** ![capture](capture_icon.png) button.
 
 20. Wait until the screen is fully captured.
 
-    <!-- border -->![New screen capture](21.png)
+    ![New screen capture](21.png)
 
 21. Now you can create another alarm, click on **+**.
 
@@ -205,19 +205,19 @@ You will create a new project in **SAP Build Process Automation** application.
 
 25. Choose **Save**.
 
-    <!-- border -->![My alarm](22.png)
+    ![My alarm](22.png)
 
 26. Create a `myAlarm` variable by selecting the value with a prefixed '+' symbol.
 
-    <!-- border -->![My alarm variable](23.png)
+    ![My alarm variable](23.png)
 
 27. Clear the variable by selecting the **x**.
 
-    <!-- border -->![Clear variable](24.png) 
+    ![Clear variable](24.png) 
 
 28. Click on the empty **Set Element** field and you may see the list of variables that you created.
         
-    <!-- border -->![List of variable](25.png) 
+    ![List of variable](25.png) 
 
 29. Select the `alarmName` variable.
 
@@ -227,11 +227,11 @@ You will create a new project in **SAP Build Process Automation** application.
 
 ### Export your recording
 
-1. Choose <!-- border -->![stop](stop_icon.png) button to stop the recording.
+1. Choose ![stop](stop_icon.png) button to stop the recording.
 
 2. Select **Export** to move the recording to **SAP Build Process Automation**.
 
-    <!-- border -->![recorder export](26.png)
+    ![recorder export](26.png)
 
 3. Reset and close the Clock application.
 
@@ -242,17 +242,17 @@ You will create a new project in **SAP Build Process Automation** application.
 
 You can see that a **Create Alarms** application was created.
 
-<!-- border -->![Application](28.png)
+![Application](28.png)
 
 As well as a **Create Alarms Automation**.
 
 Under **Input/Output**, you may see that the created variables `morningAlarm` and `eveningAlarm` will be displayed.
 
-<!-- border -->![Automation](27.png)
+![Automation](27.png)
 
 You may select the **Get Element** activity and notice the same output parameter as shown during the time of recording in the recording widget.
 
-<!-- border -->![Get element](29.png)
+![Get element](29.png)
 
 
 ### Test your automation
@@ -269,7 +269,7 @@ You may select the **Get Element** activity and notice the same output parameter
 
 3. Choose **Test**.
 
-    <!-- border -->![Test](30.png)
+    ![Test](30.png)
 
     The automation creates three alarms:
 
@@ -277,7 +277,7 @@ You may select the **Get Element** activity and notice the same output parameter
     - **Training session** alarm for 7pm and
     - another **Prepare team meeting** alarm for 9am (This alarm sets the name to the value retrieved from the `alarmName` element (from your first alarm))
     
-    <!-- border -->![Test results](31.png)
+    ![Test results](31.png)
 
 
 

@@ -28,7 +28,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
 1. Navigate to the store in your SAP Build Process Automation Tenant.
 
-    <!-- border -->![Navigate Store](01.png)
+    ![Navigate Store](01.png)
 
     > **Learning Content** offers learning packages to get started with the Application Development tool. These packages allow you to learn best practices by reusing the most common flows to design your first projects.
 
@@ -38,7 +38,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
 2. Select one or more filters on the left to filter the available Store projects by Project Type (for example Process and Actions), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
 
-    <!-- border -->![Store View](02-StoreView.png)
+    ![Store View](02-StoreView.png)
 
 
 ### Acquire the Orders Management using SAPUI5 application package
@@ -46,35 +46,35 @@ The Store offers predefined content for your automation. Packages are categorize
 
 1. You will acquire the package titled **Orders Management using UI5 application**. Set the following parameters: under **Catalog**, check **Learning Content**.
 
-    <!-- border -->![Learning Catalog](03-Learning.png)
+    ![Learning Catalog](03-Learning.png)
 
 2. In the search bar, type Orders Management, hit enter and click on the project for more information.
 
-    <!-- border -->![Orders Management](04-OrdersManagement.png)
+    ![Orders Management](04-OrdersManagement.png)
 
     This sample package presents a way to deal with Excel and a web application using the SAPUI5 framework. Each sample package comes with a description, documents about the sample, artifacts, version history and dependencies.
 
-    <!-- border -->![Explore](05-Explore.png)
+    ![Explore](05-Explore.png)
 
 3. To add the package, you have two options:
 
     - From the project information section, choose **Add** and select **Create from Template**.
 
-    <!-- border -->![Add Create Template](06-AddCreateTemplate.png)
+    ![Add Create Template](06-AddCreateTemplate.png)
 
     - From the project list, choose **Add** and select **Create from Template**.
 
-    <!-- border -->![Add Create Template](07-AddCreateTemplate2.png)
+    ![Add Create Template](07-AddCreateTemplate2.png)
 
     You will now create a Business Process Project from this template.
 
 4. Name the project **Orders Management Dev Tutorial** and choose **Create**.
 
-    <!-- border -->![Create Project](08.png)
+    ![Create Project](08.png)
 
 5. To see the newly created project, navigate back to the **Lobby** from the top menu.
 
-    <!-- border -->![Created Project](09.png)
+    ![Created Project](09.png)
 
 
 ### Add an automation to the process
@@ -84,55 +84,55 @@ The Store offers predefined content for your automation. Packages are categorize
 
 2. The project can now be edited in **Build Process Automation**.
 
-    <!-- border -->![Application Development](10.png)
+    ![Application Development](10.png)
 
     For instance, you can create a process artifact and add an automation to the Business Process.
 
 3. Select **Create** and then **Process**.
 
-    <!-- border -->![Create Process](13-CreateProcess.png)
+    ![Create Process](13-CreateProcess.png)
 
 4. In the **Create Process** window, fill in the fields as shown in the screenshot:
 
-    <!-- border -->![Create Process Window](14-CreateProcessWindow.png)
+    ![Create Process Window](14-CreateProcessWindow.png)
 
     The Process builder opens with the just created process.
 
 5. Now click on the **+** below **Trigger**.
 
-    <!-- border -->![Add](Add.png)
+    ![Add](Add.png)
    
 6. Select **Automation**.
 
-    <!-- border -->![Automation](Automation.png)
+    ![Automation](Automation.png)
 
     You have a list of all the automations available in the bot you just acquired. For this tutorial, you will use the **Get Processors Details** automation.
 
-    <!-- border -->![Add Automation](15-AddAutomation.png)
+    ![Add Automation](15-AddAutomation.png)
 
     Now your automation is successfully added to the process. You can further continue modifying your process by adding a trigger to the start event and getting rid of the errors by filling in the missing mandatory inputs.
 
 7. Choose **Add a Trigger**.
 
-    <!-- border -->![Trigger](Trigger.png)
+    ![Trigger](Trigger.png)
    
 8. Select **Submit a Form**.
 
-    <!-- border -->![Form](Form.png)
+    ![Form](Form.png)
 
 9. Choose **Blank Form**.
 
-    <!-- border -->![Blank Form](BlankForm.png)
+    ![Blank Form](BlankForm.png)
 
 10. In the **Create Form** pop-up, choose **Order Processing Form** for **Name**.
 
 11. Choose **Create**.
 
-    <!-- border -->![Create Form](17-createForm.png)
+    ![Create Form](17-createForm.png)
 
 12. Select the three dots and choose **Open Editor**.
 
-    <!-- border -->![Order Processing](18-orderProcessing.png)
+    ![Order Processing](18-orderProcessing.png)
 
     You will be navigated to the Order Processing Form.
 
@@ -140,7 +140,7 @@ The Store offers predefined content for your automation. Packages are categorize
 
 14. Choose **Save**.
 
-    <!-- border -->![Order Processing Form](19-orderProcessing2.png)
+    ![Order Processing Form](19-orderProcessing2.png)
 
     You will now map the Inputs of the **Get Processors Details** automation.
 
@@ -148,13 +148,13 @@ The Store offers predefined content for your automation. Packages are categorize
 
 16. Select the **Get Processors Details** automation. Choose `orderReference` input and select **Order Number > Order Processing Form**.
 
-    <!-- border -->![Input Mapping](20-InputMapping.png)
+    ![Input Mapping](20-InputMapping.png)
 
 17. Choose **Save**.
 
 18. You may now add forms, approvals, decisions, conditions, etc... to design your process based on your needs.
 
-    <!-- border -->![Process Final](21-process.png)
+    ![Process Final](21-process.png)
 
     Let's test the automation.
 
@@ -164,15 +164,15 @@ The Store offers predefined content for your automation. Packages are categorize
 
 21. Select the test icon.
 
-    <!-- border -->![Test Automation](22-testAutomation.png)
+    ![Test Automation](22-testAutomation.png)
 
 22. In the **Test Automation** window, enter **order 7991** as `orderReference`. No need to fill the Environment Variables.
 
-    <!-- border -->![Test Automation2](23-testAuto2.png)
+    ![Test Automation2](23-testAuto2.png)
 
 23. This is the final result.
 
-    <!-- border -->![Test Automation3](24-testAuto3.png)
+    ![Test Automation3](24-testAuto3.png)
 
     Once you are done designing your process, you may release and deploy your project.
 
@@ -190,25 +190,25 @@ Now you may release and deploy it in unattended mode.
 
 1. Choose **Release** and again **Release**.
 
-    <!-- border -->![Release](11-Release.png)
+    ![Release](11-Release.png)
 
 2. Now your project is released and you can deploy it. You can choose **Deploy**.
 
-    <!-- border -->![Deploy](12-Deploy.png)
+    ![Deploy](12-Deploy.png)
 
 3. Choose the environment and select **Deploy**.
 
-    <!-- border -->![Deploy](02.png)
+    ![Deploy](02.png)
 
 4. No need to **Define variables**, choose **Deploy**.
 
-    <!-- border -->![Deploy](03.png)  
+    ![Deploy](03.png)  
 
     To Deploy will take a couple of seconds/minutes depending upon how big your project is and how many different skills it has. Any errors during the deployment will be shown in the Design Console.
 
 5.  The project deployed successfully and is now ready to be executed.
 
-    <!-- border -->![Deployed Project](17-deployed-project.png)
+    ![Deployed Project](17-deployed-project.png)
 
     > You cannot edit released or deployed projects. To continue working on your project, you need to select the Editable option from the list of released versions.
 
@@ -220,11 +220,11 @@ Now you may release and deploy it in unattended mode.
 
     >Make sure you select the deployed version of the project.
 
-    <!-- border -->![Order 7991](22-order-processing.png)
+    ![Order 7991](22-order-processing.png)
 
 2. Select the **Order Processing Form** and copy the link.
 
-    <!-- border -->![Order Processing Form](23.png)
+    ![Order Processing Form](23.png)
 
 3. Paste the link in your browser.
 
@@ -232,24 +232,24 @@ Now you may release and deploy it in unattended mode.
 
 5. Choose **Submit**.
 
-    <!-- border -->![Link](24-link-submit.png)
+    ![Link](24-link-submit.png)
 
 6. The form has been successfully submitted.
 
-    <!-- border -->![Form submitted](25-form-submitted.png)
+    ![Form submitted](25-form-submitted.png)
 
 7. Navigate to **SAP Build > Monitoring > Process and Workflow Instances**.
 
-    <!-- border -->![Monitoring](24.png)
+    ![Monitoring](24.png)
 
 8. Select Status as Completed and choose **Order Processing**.
 
-    <!-- border -->![Monitoring](25.png)
+    ![Monitoring](25.png)
 
 9. Check the **Logs**. 
 
     The process has successfully ended.
 
-    <!-- border -->![Monitoring](26.png)
+    ![Monitoring](26.png)
 
 ---

@@ -27,7 +27,7 @@ Packages are categorized by catalog, which let you choose between Automation SDK
 
 1. Navigate to the store in your SAP Build Process Automation tenant.
     
-    <!-- border -->![Navigate Store](01.png)
+    ![Navigate Store](01.png)
 
     > **Learning Content** offers learning packages to get started with the Application Development tool. These packages allow you to learn best practices by reusing the most common flows to design your first projects.
 
@@ -37,7 +37,7 @@ Packages are categorized by catalog, which let you choose between Automation SDK
 
 2. You can select one or more filters on the left to filter the available store projects by Project Type (for example Live Process and Business Process), Format Type (for example, Ready to use and Template), Catalog (for example, Business Content), Product (for example, SAP S/4HANA Cloud), Publisher, Line of Business, and Industry.
 
-    <!-- border -->![Store View](1.Store.png)
+    ![Store View](1.Store.png)
 
 
 ### Import sales order management business process
@@ -48,11 +48,11 @@ You will import the business process titled **Sales Order Management (MI01)**.
 
     > This learning content is designed to help users to get started in streamlining and digitalizing the processing of approvals for sales orders and can be managed and customized directly by the departments depending on their needs.
 
-    <!-- border -->![Import Business Process](2.ImportBusinessProcess.png)
+    ![Import Business Process](2.ImportBusinessProcess.png)
 
 2. To add the entire package, select **Create from Template**.
 
-    <!-- border -->![Create Project](3.Createfromtemplate.png)
+    ![Create Project](3.Createfromtemplate.png)
    
 3. Name the project starting with **Sales Order Management Developer Tutorial** and appending a unique string such as your initials (at least 3 letters).
 
@@ -60,14 +60,14 @@ You will import the business process titled **Sales Order Management (MI01)**.
 
     Choose **Create**.
 
-    <!-- border -->![Create Project](3a.png)
+    ![Create Project](3a.png)
 
 4. Once the project is imported successfully, to see the newly created project, navigate back to the **Lobby** by clicking on the SAP logo on the top left corner.
 
-    <!-- border -->![Lobby](4.Lobby.png)
+    ![Lobby](4.Lobby.png)
 
     You have now imported a sample process and are ready to test/modify it.
 
-    <!-- border -->![Lobby](5.png)
+    ![Lobby](5.png)
 
 

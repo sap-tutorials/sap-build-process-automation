@@ -29,17 +29,17 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
 
 1. In the **Process Builder** open the process and on the right-hand side, select ![Process Details icon](icon.png) icon to view the process details.
 
-    <!-- border -->![Find Visibility tab](Step1-1.png)
+    ![Find Visibility tab](Step1-1.png)
 
 2. Then, select the tab **Visibility**.
 
-    <!-- border -->![Find Visibility tab](Step1-1b.png)
+    ![Find Visibility tab](Step1-1b.png)
 
     > Here you define the connection between the process context and the newly to be created visibility scenario.   
 
 3. Select **+** on the right panel to add the relevant attributes from the process.
 
-    <!-- border -->![Plus Sign to add attributes](Step1-2.png)
+    ![Plus Sign to add attributes](Step1-2.png)
 
 4. Add the following attributes:
 
@@ -50,7 +50,7 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
     - `shippingCountry`
     - `Customer Name`
 
-    <!-- border -->![Added Attributes](Step1-3.png)
+    ![Added Attributes](Step1-3.png)
 
     > The relevant attributes are the ones that could be used to measure, calculate, or derive some meaningful information in the visibility dashboard.
 
@@ -61,15 +61,15 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
 
 1.  Select the **Open Project Content** icon as below.
 
-    <!-- border -->![New visibility scenario](Step2-1.png)
+    ![New visibility scenario](Step2-1.png)
 
 2. Select **+**. Choose **Create** > **Visibility Scenario**.
 
-    <!-- border -->![New visibility scenario](Step2-1b.png)
+    ![New visibility scenario](Step2-1b.png)
 
 3.  Set **Name** to **Sales Order Visibility Scenario** then click **Create**.
 
-    <!-- border -->![Details visibility scenario](Step2-2.png)
+    ![Details visibility scenario](Step2-2.png)
 
     > Please ensure you use a **unique name**, to make it easier to identify your scenario later on.
 
@@ -79,7 +79,7 @@ Before creating a **Visibility Scenario**, you need to prepare the process.
 
     > To make it better understandable what the instances are processing: Sales Orders.
 
-    <!-- border -->![Change Instance(s) label](Step2-3.png)
+    ![Change Instance(s) label](Step2-3.png)
 
 
 
@@ -89,11 +89,11 @@ This step involves adding a process to the visibility scenario we created.
 
 1.  Select **+**, then **Add Process** in **Processes** tab in **Sales Order Visibility Scenario**.
 
-    <!-- border -->![Add Process to visibility scenario](Step3-1.png)
+    ![Add Process to visibility scenario](Step3-1.png)
 
 2.  Select **Order Processing** process.
 
-    <!-- border -->![Select Process](Step3-2.png)
+    ![Select Process](Step3-2.png)
 
     > This will lead to the visibility scenario configuration screen, where these can be viewed and controlled:
 
@@ -102,7 +102,7 @@ This step involves adding a process to the visibility scenario we created.
 
 3.  Change within the following context data the data types. Select the pencil icon.
 
-    <!-- border -->![Change data types in context data](Step3-3.png)
+    ![Change data types in context data](Step3-3.png)
 
     | **Name**                   | **Current Data Type** | **New Data Type** |
     | ---------------------- | ----------------- | ------------- |
@@ -110,7 +110,7 @@ This step involves adding a process to the visibility scenario we created.
     | `orderAmount`          | String            | Double        |
     | `orderDate`            | String            | Date          |
 
-    <!-- border -->![Details to change data type of expected delivery date](Step3-4.png)
+    ![Details to change data type of expected delivery date](Step3-4.png)
 
 
 ### Define Visibility Scenario Status
@@ -121,11 +121,11 @@ This step involves configuring the visibility scenario's status that allows to d
 
 2.  Change **Target Type** from **None** to **Constant**.
 
-    <!-- border -->![Change Target Type to constant](Step4-1.png)
+    ![Change Target Type to constant](Step4-1.png)
 
 3.  Set **Target Value** to **10 Min** and **Threshold** to **50%**.
 
-    <!-- border -->![Change Target Value](Step4-2.png)
+    ![Change Target Value](Step4-2.png)
 
     > The means: as soon as processing duration crosses 5 minutes (50% of **Target Value**), the status will switch to "At Risk". After 10 minutes it will change to "Critical".
 
@@ -134,7 +134,7 @@ This step involves configuring the visibility scenario's status that allows to d
 
 1.  Move to **Performance Indicators** tab in **Sales Order Visibility Scenario** and add additional ones or leave them as is.
 
-    <!-- border -->![Performance Indicators](Step5-1.png)
+    ![Performance Indicators](Step5-1.png)
 
 2.  Click **Save**.
 

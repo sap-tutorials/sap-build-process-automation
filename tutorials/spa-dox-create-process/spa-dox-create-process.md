@@ -36,22 +36,22 @@ primary_tag: software-product>sap-build-process-automation
 
 1. Once you have entered the Lobby, choose **Create**.
 
-    <!-- border -->![Create Business Process Project](01.png)
+    ![Create Business Process Project](01.png)
 
 2. Select **Build an Automated Process**.
 
-    <!-- border -->![Build an Automated Process](01a.png)
+    ![Build an Automated Process](01a.png)
 
 3. Choose **Business Process**.
 
-    <!-- border -->![Business Process](01b.png)
+    ![Business Process](01b.png)
 
 4. In the wizard enter:
     - under the **Project Name**: Invoice Approval
     - under the **Short Description**: The process to extract information from an invoice and get the needed approvals
     - choose **Create**.
 
-    <!-- border -->![Define Business Process Project](02.png)
+    ![Define Business Process Project](02.png)
 
 
 
@@ -68,7 +68,7 @@ Within the newly created project **Invoice Approval**, you will be prompted to c
 
     > The identifier will be created automatically.
 
-    <!-- border -->![Maintain Process Name](03a.png)
+    ![Maintain Process Name](03a.png)
 
 The process with a start and end event is now available for you.
 
@@ -81,15 +81,15 @@ The process with a start and end event is now available for you.
 
 1. In the canvas, select **Add a Trigger** in the Trigger.
 
-    <!-- border -->![New Form](004a.png)
+    ![New Form](004a.png)
 
 2. Select **Submit a Form**.
    
-    <!-- border -->![New Form](004b.png)
+    ![New Form](004b.png)
 
 3. Choose **Blank form**.
 
-    <!-- border -->![New Form](004c.png)
+    ![New Form](004c.png)
 
 4. In the **Create Form** window enter:
     - in the **Name**: Invoice Request Form,
@@ -98,15 +98,15 @@ The process with a start and end event is now available for you.
 
     > The Identifier will be filled automatically.
 
-    <!-- border -->![Create Form Wizard](05.png)
+    ![Create Form Wizard](05.png)
 
 5. Open the form editor.
 
-    <!-- border -->![Open editor](005c.png)
+    ![Open editor](005c.png)
 
 6. In the form you have multiple elements.
 
-    <!-- border -->![Elements](005b.png)
+    ![Elements](005b.png)
 
 7. To add elements, drag and drop them or click on the element to enter them in the form.
 
@@ -117,7 +117,7 @@ The process with a start and end event is now available for you.
     |  Headline 1     | Invoice Request Form |
     |  Paragraph      | Please provide the following details to start the process |
 
-    <!-- border -->![Add Layout](006.png)
+    ![Add Layout](006.png)
 
 9.  Add the following input elements:
 
@@ -129,11 +129,11 @@ The process with a start and end event is now available for you.
 
     > Required checkbox indicates, that it is a mandatory field.
 
-    <!-- border -->![Add Input](007.png)
+    ![Add Input](007.png)
 
 10. **Save** the Form.
 
-    <!-- border -->![Save](008.png)
+    ![Save](008.png)
 
 
 

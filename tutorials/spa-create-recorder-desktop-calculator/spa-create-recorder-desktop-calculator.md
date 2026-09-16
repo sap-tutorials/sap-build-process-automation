@@ -32,7 +32,7 @@ The Recorder allows you to record desktop applications. It enables users to spee
 
 Open the calculator application on your desktop.
 
-<!-- border -->![Calculator_1](calculator_1.png)
+![Calculator_1](calculator_1.png)
 
 
 ### Create your project
@@ -41,27 +41,27 @@ You will create a new project in **SAP Build Process Automation** application.
 
 1. Navigate to **SAP Build** application and create a project by choosing **Create**.
 
-    <!-- border -->![Create a project](01.png)
+    ![Create a project](01.png)
 
 2. Select **Build an Automated Process**.
 
-    <!-- border -->![Build an Automated Process](02.png)
+    ![Build an Automated Process](02.png)
 
 3. Select **Task Automation**.
 
-    <!-- border -->![Task Automation](03.png)
+    ![Task Automation](03.png)
 
 4. In the **Create a Task Automation project** window, please give the project the name: **Create Computations** and the description: **Automate computation creation in the desktop calculator** and choose **Create**.
 
-    <!-- border -->![Create Task Automation](04.png)
+    ![Create Task Automation](04.png)
 
 5. Once the project is created, a new tab will open. You will need to configure your agent version. Select the version of the agent installed on your machine and choose **Confirm**.
 
-    <!-- border -->![Select desktop version](05.png)
+    ![Select desktop version](05.png)
 
 6. A pop-up window asking you to create an automation will appear, please choose **Cancel**.
 
-    <!-- border -->![Cancel automation](06.png)
+    ![Cancel automation](06.png)
 
     > ### What is going on?
     > As you will be using the recorder feature, you do not need to create an automation but an application.
@@ -73,43 +73,43 @@ You will create a new project in **SAP Build Process Automation** application.
 
 1. In the **Overview** tab of your **Create Computations** project, choose **Create**, then choose **Application**.
 
-    <!-- border -->![Create an application](07.png)
+    ![Create an application](07.png)
 
 2. In the **Create Application** window, name your application: **Create Computations** and choose **Create**.
 
-    <!-- border -->![Create application](08.png)
+    ![Create application](08.png)
 
 3. From the list of open applications, select **Calculator** application and choose **Next**.
 
     > ### What is going on?
     > **SAP Build Process Automation** starts detecting the applications and their screens currently running on your local machine. When it's done, you'll see a list of screens in the picker panel on the left.
  
-    <!-- border -->![Select Calculator](09.png)
+    ![Select Calculator](09.png)
 
     > You have the option to select either **Recorder** type or **Manual Capture** type. This tutorial will show you how to use the **Recorder**.
 
 4. Select **Recorder** as type and choose **Record**.
 
-    <!-- border -->![Recorder](10.png)
+    ![Recorder](10.png)
 
     > Please note that the technology that you will be recording is **UI Automation**.
 
 5. You will notice 2 pop-ups for recording in progress and SAP Intelligent RPA Recorder.
 
-    <!-- border -->![recording_popup_1](recording_popup_1.png)  ![recording_popup_2](recording_popup_2.png)
+    ![recording_popup_1](recording_popup_1.png)  ![recording_popup_2](recording_popup_2.png)
 
 
 ### Record your application - Part 1
 
 > The Recorder records the steps you perform across the screens of an application.
 
-1. Click the **Record** <!-- border -->![record](record.png) button to start recording in the recorder widget.
+1. Click the **Record** ![record](record.png) button to start recording in the recorder widget.
 
 2. Perform a simple calculation by adding `10` and `5` to get result `15`. Click `10`, `+`, `5` and `=`. You will notice that the steps are getting recorded in the recorder.
 
 3. Click the result `15` in the Calculator so that it gets recorded too. You will later use this result in the automation.
 
-    <!-- border -->![recorder calculation simple](11.png)
+    ![recorder calculation simple](11.png)
 
 
 ### Record your application - Part 2
@@ -121,9 +121,9 @@ You will now convert the time and record the results. To do so you need to selec
 
 1. Select **Capture on Hover** mode.
 
-    <!-- border -->![Capture on hover](12.png)
+    ![Capture on hover](12.png)
 
-2. In the Calculator application, select the **Open Navigation** icon <!-- border -->![Open Navigation](open_navigation.png)
+2. In the Calculator application, select the **Open Navigation** icon ![Open Navigation](open_navigation.png)
 
 3. To capture on hover, you need to hover the mouse over the screen which needs to be captured and then hold the `Ctrl` key till the capture begins. 
 
@@ -133,25 +133,25 @@ You will now convert the time and record the results. To do so you need to selec
 
 4. Select **Time**.
 
-    <!-- border -->![Capture on hover](13.png)
+    ![Capture on hover](13.png)
 
     You need to capture the new screen. To do so you will need to switch to manual capture mode.
 
 5. Select **Manual Capture Mode**.
 
-    <!-- border -->![Manual capture](14.png)
+    ![Manual capture](14.png)
 
-6. To record the new screen, click the **New Capture** button <!-- border -->![capture icon](capture_icon.png)
+6. To record the new screen, click the **New Capture** button ![capture icon](capture_icon.png)
 
 7. Wait until the recorder has recorded all the elements of the screen.
 
-    <!-- border -->![calculator hour](15.png)
+    ![calculator hour](15.png)
 
     You need to convert **Hours** to **Seconds**. To do so you will have to select the **Hours** dropdown and select **Seconds**. Since you will be capturing a dropdown you need to change the capture mode to Capture on Hover.
 
 8. Select **Capture on Hover** mode.
 
-    <!-- border -->![calculator hour](16.png)
+    ![calculator hour](16.png)
 
 9. Click the **Hours** dropdown.
 
@@ -163,34 +163,34 @@ You will now convert the time and record the results. To do so you need to selec
 
 11. Select **Seconds**.
 
-    <!-- border -->![calculator seconds](17.png)
+    ![calculator seconds](17.png)
 
     The Calculator shows **Seconds** and **Minutes**. You need to capture the new screen. To do so you will need to switch to Manual Capture mode.
 
 12. Select **Manual Capture Mode**.
 
-    <!-- border -->![Manual capture](18.png)
+    ![Manual capture](18.png)
 
-13. Now click the **New Capture** <!-- border -->![capture icon](capture_icon.png) button to record the new screen.
+13. Now click the **New Capture** ![capture icon](capture_icon.png) button to record the new screen.
 
 14. Wait until the recorder has recorded all the elements of the screen.
 
-    <!-- border -->![Capture icon](19.png)
+    ![Capture icon](19.png)
 
 15. Select `0` value for **Minutes** and then, type `10`.
 
 16. Select the resultant value `600` in **Seconds**. You will use this value later in automation. You will see the following steps added to the recorder widget.
 
-    <!-- border -->![recorder complete](20.png)
+    ![recorder complete](20.png)
 
 
 ### Export your recording
 
-1. Choose <!-- border -->![stop](stop_icon.png) button to stop the recording.
+1. Choose ![stop](stop_icon.png) button to stop the recording.
 
 2. Click **Export** to move the recording to **SAP Build Process Automation**.
 
-    <!-- border -->![recorder export](21.png)
+    ![recorder export](21.png)
 
 3. Reset and close the Calculator application.
 
@@ -201,11 +201,11 @@ You will now convert the time and record the results. To do so you need to selec
 
 You can see that a **Create Computations Automation** was created.
 
-<!-- border -->![Automation](22.png)
+![Automation](22.png)
 
 As well as a **Create Computations** application.
 
-<!-- border -->![Application](23.png)
+![Application](23.png)
 
 1. Open the **Create Computations Automation**. 
 
@@ -221,7 +221,7 @@ As well as a **Create Computations** application.
 
     - Choose **Save**.
 
-    <!-- border -->![Get element](24.png)
+    ![Get element](24.png)
 
     > The activity will be added at the bottom of the automation and you will need to position it accordingly.
 
@@ -231,7 +231,7 @@ As well as a **Create Computations** application.
 
         - Output Parameters : **addition**
 
-    <!-- border -->![Get element](25.png)
+    ![Get element](25.png)
 
     - Search for a **Log Message** activity and drag and drop it below the **Get Element Calculator Results** activity to display the result. 
 
@@ -239,7 +239,7 @@ As well as a **Create Computations** application.
 
     - Choose **Save**.
 
-    <!-- border -->![automation add result](26.png)
+    ![automation add result](26.png)
 
 3. **Get Conversion Result**
 
@@ -253,7 +253,7 @@ As well as a **Create Computations** application.
 
     - Choose **Save**.
 
-    <!-- border -->![Get element](27.png)
+    ![Get element](27.png)
 
     > The activity will be added at the bottom of the automation and you will need to position it accordingly.
 
@@ -264,7 +264,7 @@ As well as a **Create Computations** application.
         - Step Name : **Get Element Conversion Results**
         - Output Parameters : **seconds**
 
-    <!-- border -->![Get element](28.png)
+    ![Get element](28.png)
 
     - Search for a **Log Message** activity and drag and drop it below the **Get Element Conversion Results** activity to display the result. 
 
@@ -272,24 +272,24 @@ As well as a **Create Computations** application.
 
     - Choose **Save**.
 
-    <!-- border -->![automation get seconds](29.png)
+    ![automation get seconds](29.png)
 
     Your automation looks like the following one:
 
-    <!-- border -->![automation complete](30.png)
+    ![automation complete](30.png)
 
 
 ### Test your automation
 
 Before testing the automation, please make sure you reset the Time screen from 0 Hours to 0 Minutes as well as the the Standard screen. Set your Calculator to the Standard screen before closing it.
 
-<!-- border -->![Time](33.png) ![Standard](32.png)
+![Time](33.png) ![Standard](32.png)
 
 1. Click **Test** to test the automation.
 
 2. Results will be displayed in the log area.
 
-<!-- border -->![test](31.png)
+![test](31.png)
 
 
 

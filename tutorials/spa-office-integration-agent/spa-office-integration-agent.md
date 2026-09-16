@@ -38,11 +38,11 @@ Once you have successfully configured the Azure Application as mentioned in Pre-
 
 2. Navigate to **Control Tower > External Authentication**.
 
-    <!-- border -->![Office](1a.png)
+    ![Office](1a.png)
 
 3. On the External Authentication page, click **Create New Authentication**.
 
-    <!-- border -->![Office](02.png)
+    ![Office](02.png)
 
 4. On the **Create Authentication** popup window, select Microsoft 365.
 
@@ -60,7 +60,7 @@ Once you have successfully configured the Azure Application as mentioned in Pre-
 
 11. Choose **Create**.
 
-    <!-- border -->![Office](03.png)
+    ![Office](03.png)
 
 
 ### Register External Authentication
@@ -69,63 +69,63 @@ Once the external authentication is created, you can see it on Agent 3.
 
 1. Open the Desktop Agent. Once you are connected to the tenant, choose **Settings > External Authentication**. 
 
-    <!-- border -->![Office](2.png)
+    ![Office](2.png)
 
     > The agent receives and shows a list of registration items defined in SAP Build Process Automation External Authentication settings.
 
 2. Select Office 365 Authentication.
 
-    <!-- border -->![Office](1.png)
+    ![Office](1.png)
 
 3. Enter the email address of the identity in the **Email** field to authenticate the identity. 
     > The authentication of the activities is done with that identity.
     
 4. Choose **save**.
 
-    <!-- border -->![Office](8.png)
+    ![Office](8.png)
 
     > Each registration item can be registered or unregistered given a user email address.
 
 5. Select **Register** button. 
 
-    <!-- border -->![Office](9.png)
+    ![Office](9.png)
 
 6. In the newly opened window, consent for agent to use your ID with the activities.
 
 7.  The confirmation of registration will appear. 
 
-    <!-- border -->![Office](7.png)
+    ![Office](7.png)
 
 
 ### Create a project
 
 1. Go the SAP Build lobby. Choose **Create** button.
 
-    <!-- border -->![Office](6.png)
+    ![Office](6.png)
 
 2. Select **Build an Automated Process**.
 
-    <!-- border -->![Office](3.png)
+    ![Office](3.png)
 
 3. Choose **Task Automation**.
 
-    <!-- border -->![Office](5.png)
+    ![Office](5.png)
 
 4. Provide a **Name** for the project such as **Microsoft 365** and choose **Create**.
 
-    <!-- border -->![Office](4.png)
+    ![Office](4.png)
 
 5. Choose **Create > Automation**.
    
-    <!-- border -->![Office](4a.png)
+    ![Office](4a.png)
    
 6. Select the agent version that is registered on your system.
 
-    <!-- border -->![Office](010.png)
+    ![Office](010.png)
 
 7. Provide a name for the automation such as **Automation send email**, and choose **Create**.
 
-    <!-- border -->![Office](011.png)
+    ![Office](011.png)
 
 ### Set up the dependency
 
@@ -133,15 +133,15 @@ You will be navigated to the automation editor where you can build your automati
 
 1. Choose **Settings**.
 
-    <!-- border -->![Office](012.png)
+    ![Office](012.png)
 
 2. In the **Project Properties** window, select **Dependencies > Add dependency > Add a Business Process project dependency**.
 
-    <!-- border -->![Office](014.png)
+    ![Office](014.png)
 
 3. Under Add Dependency search for **Microsoft 365 Cloud SDK** and **Add** it.
 
-    <!-- border -->![Office](015.png)
+    ![Office](015.png)
 
 4. **Close** the window.
 
@@ -153,7 +153,7 @@ You will be navigated to the automation editor where you can build your automati
 
 2. Drag and drop the activity into the workflow below Start.
 
-    <!-- border -->![Office](016.png)
+    ![Office](016.png)
 
 3. Under **Automation Details** panel, under **Tools**, look for **Get Remote File Information** activity. Drag and drop the activity into the workflow.
 
@@ -161,7 +161,7 @@ You will be navigated to the automation editor where you can build your automati
 
     > It will generate a log message within the tester and the trace file.
 
-    <!-- border -->![Office](020.png)
+    ![Office](020.png)
 
 4. Select the **Get Remote File Information** activity. In **Input Parameters**, under `sourceURL`, you need to copy and paste the URL provided by Microsoft to open the file. You will retrieve the file URL in the step below.
 
@@ -175,27 +175,27 @@ You will be navigated to the automation editor where you can build your automati
 
     > **What's going on?:** This is the URL you will copy and paste under `sourceURL` input parameter.
 
-    <!-- border -->![Office](017.png)
+    ![Office](017.png)
 
 6. Now that you have copied the URL, you may paste it under `sourceURL` input parameter.
 
-    <!-- border -->![Office](018.png)
+    ![Office](018.png)
 
 7. Under **Automation Details** panel, under **Tools**, look for **Log Message** activity. Add it to the workflow under **Get Remote File Information**.
 
 8. Select the **Log Message** activity. In the Input Parameters, under message choose `fileInformation`.
 
-    <!-- border -->![Office](022.png)
+    ![Office](022.png)
 
 9.  **Save** the automation. **Test** the automation.
 
-    <!-- border -->![Office](021.png)
+    ![Office](021.png)
 
 10.  Once the Test is done, go to **Info** in the **Test Console** where you will find the `driveId` and `fileId` values.
 
-    > The `driveId` is the ID of the remote SharePoint Drive where the file is located and the `fileId` is the ID of the workbook.
+   > The `driveId` is the ID of the remote SharePoint Drive where the file is located and the `fileId` is the ID of the workbook.
 
-    <!-- border -->![Office](024.png)
+   ![Office](024.png)
 
 
 ### Create Input Parameter
@@ -206,7 +206,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
 1. In your automation, on the right-hand side panel, go the **Input/Output** section and click **Add new input parameter**.
 
-    <!-- border -->![Office](07.png)
+    ![Office](07.png)
 
 2. Perform the following:
    
@@ -216,7 +216,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
 3. Choose **Save**.
    
-    <!-- border -->![Office](08.png)
+    ![Office](08.png)
 
 
 ### Build the automation to send an email
@@ -225,7 +225,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
     > This activity opens Excel Workbook.
 
-    <!-- border -->![Office](023.png)
+    ![Office](023.png)
 
 2. Select the **Open Workbook** activity.
 
@@ -236,7 +236,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
     - Select the variable `fileInformation` from Step 2 and choose `driveId` 
     - Choose **Save Expression**
 
-    <!-- border -->![Office](04.png)
+    ![Office](04.png)
 
 4. In the same way, for `pathOrFileId`, perform the following steps:
 
@@ -245,13 +245,13 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
     - Select the variable `fileInformation` from Step 2 and choose `fileIdId` 
     - Choose **Save Expression**
  
-    <!-- border -->![Office](05.png)
+    ![Office](05.png)
 
 5. Under **Automation Details** panel, under **Tools**, look for **Get Values** activity. Drag & drop it into the workflow.
 
     > This activity retrieves the values, formulas or `numberFormats` from the current worksheet.
 
-    <!-- border -->![Office](026.png)
+    ![Office](026.png)
 
 6. Select the **Get Values** activity. Under **Input Parameters** for:
 
@@ -259,33 +259,33 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
     > **What's going on?:** The range definition of the excel file has values up to this range therefore you need to specify those values.
 
-    <!-- border -->![Office](026b.png)
+    ![Office](026b.png)
 
     - format choose: `objectsHeadersOnFirstRow`.
 
     > This corresponds to the format of the result that will appear in the Test Console.
 
-    <!-- border -->![Office](027.png)
+    ![Office](027.png)
 
 7.  Under **Automation Details** panel, under **Tools**, look for **For Each** control. Drag & drop it into the workflow.
 
-    <!-- border -->![Office](028.png)
+    ![Office](028.png)
 
 8.  Select the **For Each** control. Under **Parameters** in **Set looping list**, choose **result**.
 
-    <!-- border -->![Office](030.png)
+    ![Office](030.png)
 
 9.  Under **Automation Details** panel, under **Tools**, look for **Log Message** activity. Drag & drop it into the workflow inside the **For Each** loop.
 
-    <!-- border -->![Office](029.png)
+    ![Office](029.png)
 
 10. Select the **Log Message** activity. Under Input Parameters in **message** choose `currentMember`.
 
-    <!-- border -->![Office](031.png)
+    ![Office](031.png)
 
 11. Under **Automation Details** panel, under **Tools**, look for **Download File** activity. Drag & drop it into the workflow outside the **For Each** loop.
 
-    <!-- border -->![Office](032.png)
+    ![Office](032.png)
 
 12. Select the **Download File** activity. 
 
@@ -296,7 +296,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
     - Select the variable `fileInformation` from Step 2 and choose `driveId` 
     - Choose **Save Expression**
 
-    <!-- border -->![Office](06.png)
+    ![Office](06.png)
 
 14. In the same way, for `pathOrFileId`, perform the following steps:
 
@@ -305,23 +305,23 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
     - Select the variable `fileInformation` from Step 2 and choose `fileIdId` 
     - Choose **Save Expression**
 
-    <!-- border -->![Office](06a.png)
+    ![Office](06a.png)
 
 15. For `localFilePath`: select parameter `path`.
 
     > `localFilePath` corresponds to the path to the file which will store the data on your machine.
 
-    <!-- border -->![Office](06b.png)
+    ![Office](06b.png)
 
 16. Under **Automation Details** panel, under **Tools**, look for **Send E-mail** activity under **Outlook Online**. Drag & drop it into the workflow just below **Download File** activity.
 
     > This activity will send an email using Outlook Online.
 
-    <!-- border -->![Office](034.png)
+    ![Office](034.png)
 
 17. Select the **Send E-mail** activity. In Input Parameters under `mailDescription` choose **Create Custom Data**.
 
-    <!-- border -->![Office](035.png)
+    ![Office](035.png)
 
 18. Customize the Email:
     
@@ -329,7 +329,7 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
     - Under body enter: **Hello, Your list of orders is ready for you.** and select expression in quotes.
     - Under `toRecipients`, select **+** and add your email address. Select the expression in quotes.
 
-    <!-- border -->![Office](036.png)
+    ![Office](036.png)
 
     - Under attachments, select **+** next to **Description of a mail.attachments**
     - Under attachments, select **Create Custom Data** to add the name and `path` parameter:
@@ -338,11 +338,11 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
     > `path` corresponds to the path of the file which will be added to the email message.
   
-    <!-- border -->![Office](040.png)
+    ![Office](040.png)
 
 19. Under **Automation Details** panel, under **Tools**, look for **Remove File/Folder** activity. Drag & drop it into the workflow.
 
-    <!-- border -->![Office](037.png)
+    ![Office](037.png)
 
 20. Select the **Remove File/Folder** activity. 
 
@@ -352,14 +352,14 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
 22. **Save** your work.
 
-    <!-- border -->![Office](038.png)
+    ![Office](038.png)
 
 
 ### Test the automation
 
 1. Once the automation is saved and ready you can test it. Choose **Test** button.
 
-    <!-- border -->![Office](039.png)
+    ![Office](039.png)
 
     You will be prompted to enter the value of **Input parameters**.
 
@@ -369,15 +369,15 @@ For the purpose of this tutorial, you will create an input parameter for the `pa
 
 2. Choose **Test**.
 
-    <!-- border -->![Office](098.png)
+    ![Office](098.png)
 
     The BOT opens the **Orders** excel file in your share point, reads the value from the excel, downloads the file to you system and sends an email with `ListOfOrders` excel file as an attachment via Outlook Online.
 
-    <!-- border -->![Office](042.png)
+    ![Office](042.png)
 
 3. Check your Outlook Inbox to see the email that was send with the attachment.
 
-    <!-- border -->![Office](041.png)
+    ![Office](041.png)
 
     
 ### Retrieve sample project from the store (Optional)
@@ -392,21 +392,21 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Office](store.png)
+    ![Office](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Office](create.png)
+    ![Office](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Office](project.png)
+    ![Office](project.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Office](lobby.png)
+    ![Office](lobby.png)
 
 
 

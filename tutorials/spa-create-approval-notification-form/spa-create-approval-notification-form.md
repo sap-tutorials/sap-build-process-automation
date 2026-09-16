@@ -23,18 +23,18 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
 
 1. In the process builder, choose **+** of the **Determine Approver** conditional flow and select **Form > New Approval Form**.
 
-    <!-- border -->![New Approval Form](images/03-001.png)
+    ![New Approval Form](images/03-001.png)
 
 2. In the **Create Form** dialog box, do the following:
     - Enter **Approval Form (Supplier)** in the **Name** field.
     - Enter **Supplier will approve or reject the purchase order** in the **Description** field.
     - Choose **Create**.
 
-    <!-- border -->![Create Form](images/03-002.png)
+    ![Create Form](images/03-002.png)
 
 3. Now you have to model the form. For that, select the *three-vertical-dots* on **Approval Form (Supplier)** form to open the menu and choose **Open Editor**.
 
-    <!-- border -->![Open Editor](images/03-003.png)
+    ![Open Editor](images/03-003.png)
 
 4. In the **Form Editor**, choose or drag-and-drop the following layout and input fields in the given sequence on the form editor:
 
@@ -51,7 +51,7 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
   | 6 | Number | Name: Order Amount <br /> Read Only : checked |
   | 7 | Date | Name: Delivery Date <br /> Read Only : checked |
 
-    <!-- border -->![Approval Form](images/03-003a.png)
+    ![Approval Form](images/03-003a.png)
 
   | Sequence| Layout   | Text |
   | ---- |----------|---|
@@ -62,7 +62,7 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
   | 9 | Checkbox   | Name: I acknowledge that we have received your purchase order and will deliver on or before scheduled date|
   | 10 | Text Area  | Name: Message to buyer: |
 
-    <!-- border -->![Approval Form](images/03-003b.png)
+    ![Approval Form](images/03-003b.png)
 
 5. Once done, choose **Save**.
 
@@ -84,7 +84,7 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
 
     > note: the recipients are determined by the decision and the output after the decision execution is collected in the `determineApprover_Output` data type
 
-    <!-- border -->![Approval Form General](images/03-006.png)  
+    ![Approval Form General](images/03-006.png)  
 
 13. Select the **Inputs** tab.
 
@@ -97,11 +97,11 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
     | Order Amount | `selectedOrder` > `orderAmount` |
     | Order Number | `selectedOrder` > `orderNumber` |
 
-    <!-- border -->![Approval Form Inputs](images/03-007.png)  
+    ![Approval Form Inputs](images/03-007.png)  
 
 15. Once completed, choose **Save** to save the process.
 
-    <!-- border -->![Approval Form Save](images/03-008.png)
+    ![Approval Form Save](images/03-008.png)
 
 
 ### Create and Configure a Notification Form
@@ -109,18 +109,18 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
 
 1. In the process builder, choose **+** of the **Approve** conditional flow of **Approval Form (Supplier)** and select **Form > New Form**.
 
-    <!-- border -->![New Form](images/03-009.png)
+    ![New Form](images/03-009.png)
 
 2. In the **Create Form** dialog box, do the following:
     - Enter **Sales Order Notification (Approved)** in the **Name** field.
     - Enter **Notification form to inform customer of the sales order approval by the supplier** in the **Description** field.
     - Choose **Create**.
 
-    <!-- border -->![Create Form](images/03-010.png)
+    ![Create Form](images/03-010.png)
 
 3. Now you have to model the form. For that, select the *three-vertical-dots* on **Sales Order Notification (Approved)** form to open the menu and choose **Open Editor**.
 
-    <!-- border -->![Open Editor](images/03-011.png)
+    ![Open Editor](images/03-011.png)
 
 4. In the **Form Editor**, choose or drag-and-drop the following layout and input fields in the given sequence on the form editor:
 
@@ -137,7 +137,7 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
   | ---- |----------|---|
   | 4 | Paragraph  |Your Sales Order Details:|
 
-    <!-- border -->![Sales Order Notification Approved](images/03-012.png)
+    ![Sales Order Notification Approved](images/03-012.png)
 
   | Sequence | Input Field   | Field Settings |
   | ---- |----------|---|
@@ -150,7 +150,7 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
   | ---- |----------|---|
   | 9 | Paragraph  |Please press the SUBMIT button, so that the process can be finalized.|
 
-    <!-- border -->![Sales Order Notification Approved](images/03-013.png)
+    ![Sales Order Notification Approved](images/03-013.png)
 
 5. Once done, choose **Save**.
 
@@ -168,7 +168,7 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
 
 11. Select **Process Metadata >> Process Started By** from process content as **Users** in **Recipients**.
 
-      <!-- border -->![Process Content General](images/03-014.png)  
+      ![Process Content General](images/03-014.png)  
 
 12. Select the  **Inputs** tab.
 
@@ -183,11 +183,11 @@ primary_tag: software-product>sap-intelligent-robotic-process-automation
     | Order Status | Order Processing Form > Order Status |
 
 
-      <!-- border -->![Process Content Inputs](images/03-015.png)
+      ![Process Content Inputs](images/03-015.png)
 
 14. Drag and drop the connection flow from **Submit** action to **End** step in the process.
 
-      <!-- border -->![End Process](images/03-016.png)
+      ![End Process](images/03-016.png)
 
 15. Once completed, choose **Save** to save the process.
 
@@ -195,14 +195,14 @@ Repeat the above steps to create one more notification form to inform the reques
 
 1. In the process builder, choose **+** of the **Reject** conditional flow of **Approval Form (Supplier)** and select **Form > New Form**.
 
-      <!-- border -->![New Form](images/03-017.png)
+      ![New Form](images/03-017.png)
 
 2. In the **Create Form** dialog box, do the following:
         - Enter **Sales Order Notification (Rejected)** in the **Name** box.
         - Enter **Notification form to inform that the sales order is rejected by the supplier** in the **Description** box.
         - Click **Create**.
 
-      <!-- border -->![Create Form](images/03-018.png)
+      ![Create Form](images/03-018.png)
 
 3. Now you have to model the form. For that, select the *three-vertical-dots* on **Sales Order Notification (Rejected)** form to open the menu and choose **Open Editor**.
 
@@ -221,7 +221,7 @@ Repeat the above steps to create one more notification form to inform the reques
       | ---- |----------|---|
       | 4 | Paragraph  |Your Sales Order Details:|
 
-      <!-- border -->![Sales Order Notification Rejected](images/03-019.png)
+      ![Sales Order Notification Rejected](images/03-019.png)
 
       | Sequence | Input Field   | Field Settings |
       | ---- |----------|---|
@@ -234,7 +234,7 @@ Repeat the above steps to create one more notification form to inform the reques
       | ---- |----------|---|
       | 9 | Paragraph  |please press the SUBMIT button, so that the process can be finalized.|
 
-      <!-- border -->![Sales Order Notification Rejected](images/03-020.png)
+      ![Sales Order Notification Rejected](images/03-020.png)
 
 5. Once done, choose **Save**.
 
@@ -254,7 +254,7 @@ Repeat the above steps to create one more notification form to inform the reques
 
 12. Select **Process Metadata >> Process Started By** from process content as **Users** in **Recipients**.
 
-        <!-- border -->![Process Content General](images/03-021.png)  
+        ![Process Content General](images/03-021.png)  
 
 13. Select the **Inputs** tab.
 
@@ -268,13 +268,13 @@ Repeat the above steps to create one more notification form to inform the reques
         | Order Delivery Date | selectedOrder > expectedDeliveryDate |
         | Message from supplier | Approval Form > Message to buyer |
 
-        <!-- border -->![Process Content Inputs](images/03-022.png)
+        ![Process Content Inputs](images/03-022.png)
 
 15. Drag and drop the connection flow from **Submit** action to **End** step in the process.
 
 16. Once completed, choose **Save** to save the process.
 
-        <!-- border -->![End Process](images/03-023.png)
+        ![End Process](images/03-023.png)
 
 
 
