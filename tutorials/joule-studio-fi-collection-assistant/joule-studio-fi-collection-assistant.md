@@ -12,7 +12,7 @@ parser: v2
 
 # Use Joule Studio to Create an FI Collection Email Drafting Assistant
 
-<!-- description -->Use Joule Studio to create and test an agent for an intelligent finance Assistant
+<!-- description -->Use Joule Studio to create and test an agent for an intelligent finance Assistant.
 
 ## Prerequisites
 
