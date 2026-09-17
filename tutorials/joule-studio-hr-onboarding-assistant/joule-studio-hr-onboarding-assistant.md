@@ -11,7 +11,7 @@ parser: v2
 
 # Use Joule Studio to Create an HR Onboarding Assistant
 
-<!-- description -->Use Joule Studio to create and test an agent for an Onboarding Assistant for human capital management.
+<!-- description -->Use Joule Studio to create and test an agent for an Onboarding Assistant for human capital management
 
 ## Prerequisites
 
