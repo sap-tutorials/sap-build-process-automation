@@ -11,7 +11,7 @@ parser: v2
 
 # Use Joule Studio to Create an HR Onboarding Assistant
 
-<!-- description -->Use Joule Studio to create and test an agent for an Onboarding Assistant for human capital management
+<!-- description -->Use Joule Studio to create and test an agent for an Onboarding Assistant for human capital management.
 
 ## Prerequisites
 
@@ -161,7 +161,7 @@ Depending on your role in your company, you might be finished at this point and 
 At this stage, you can see the your PDR similar to the one below in markdown format.
 If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in the dedicated code tab.
 
-![Technical overview](060-prd-ready.png)
+![Technical  overview](060-prd-ready.png)
 
 [OPTION END]
 
