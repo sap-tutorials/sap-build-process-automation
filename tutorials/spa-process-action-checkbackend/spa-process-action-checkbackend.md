@@ -26,11 +26,11 @@ Once the business process is successfully executed, a sales order will be create
 1. Once the action is completed successfully, copy the sales order from **Process and Workflow Instances**.
     - Go to **Monitoring** section and click **Process and Workflow Instances** under **Monitor**.
 
-    <!-- border -->![Access System](AccessSystem_02c.png)
+    ![Access System](AccessSystem_02c.png)
 
     - Click to filter **Completed** instances.
 
-    <!-- border -->![Access System](AccessSystem_02a.png)
+    ![Access System](AccessSystem_02a.png)
 
     - Search for your Order Processing Instance.
     - Click **Logs** tab.
@@ -40,21 +40,21 @@ Once the business process is successfully executed, a sales order will be create
 
     > This is the sales order that is newly created in the backend S/4HANA system.
 
-    <!-- border -->![Access System](AccessSystem_02b.png)
+    ![Access System](AccessSystem_02b.png)
 
 ### Open S/4HANA system
 
 1. Open your S/4HANA Cloud System and select **Sales Orders** tab, and then click to open **Manage Sales Order** tile.
 
-<!-- border -->![Access System](AccessSystem_01.png)
+![Access System](AccessSystem_01.png)
 
 ### Check sales order created
 
 1. Enter the sales order number in **Sales Order**, click **Go**.
     - once you find the sales order, click **>** to navigate to the sales order.  
 
-    <!-- border -->![Access System](AccessSystem_03a.png)
+    ![Access System](AccessSystem_03a.png)
 
 2. You can now explore the sales order to check Ship to Party, Expected Delivery Date etc.
 
-    <!-- border -->![Access System](AccessSystem_03.png)
+    ![Access System](AccessSystem_03.png)

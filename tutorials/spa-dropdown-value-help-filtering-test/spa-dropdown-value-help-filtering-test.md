@@ -27,47 +27,47 @@ In this tutorial, you will release and deploy the project created in the previou
 
 1. In the project overview tab, select the **Release** option.
 
-    <!-- border -->![Action Project](001.png)
+    ![Action Project](001.png)
 
 2.  In the **Release Project** popup, select **Release**.
 
-    <!-- border -->![Action Project](002.png)
+    ![Action Project](002.png)
 
 3.  Select the **Deploy** option in the top-right corner.
 
-    <!-- border -->![Action Project](003.png)
+    ![Action Project](003.png)
 
 4. Choose an **Environment** and select **Deploy**.
 
-    <!-- border -->![Action Project](environment.png)
+    ![Action Project](environment.png)
 
 5.  In the **Define Variables** section, select the destination variable `S4_Business_Partner` and select **Deploy**.
 
-    <!-- border -->![Action Project](005.png)
+    ![Action Project](005.png)
 
     Your project is deployed.
 
-    <!-- border -->![Action Project](006.png)
+    ![Action Project](006.png)
 
 ### Test the dropdown filtering in the form
 
 1. Select the **Order Processing** process.
 
-    <!-- border -->![Action Project](007.png)
+    ![Action Project](007.png)
 
 2. Select the **Order Processing Form** artifact and copy the deployed form link.
 
-    <!-- border -->![Action Project](008.png)
+    ![Action Project](008.png)
 
 3. Paste the link into a new browser tab/window to open it.
 
 4. Select the dropdown button for the **Customer Name** field. You can see all the customer names fetched by the action project from the S4/HANA database.
 
-    <!-- border -->![Action Project](009.png)
+    ![Action Project](009.png)
 
 5. In the **Customer Name** field, if you enter anything, the records will get filtered accordingly.
 
-    <!-- border -->![Action Project](010.png)
+    ![Action Project](010.png)
 
     > The filtering is implemented only on the number of records mentioned in **$top** parameter of action project, since only those records are fetched and shown. 
 
@@ -88,21 +88,21 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    ![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    ![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project.png)
+    ![Project](project.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    ![Lobby](lobby.png)
 
 ---
 

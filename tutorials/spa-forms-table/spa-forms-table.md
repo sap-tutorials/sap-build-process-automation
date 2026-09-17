@@ -31,38 +31,38 @@ In this tutorial, you will be creating a Decision to validate the Purchase Order
 
 Once you have completed the prerequisite mission, your process should look something like below. 
 
-<!-- border -->![Automation](001c.png)
+![Automation](001c.png)
 
 1. In the  **Order Processing** process:
     - Choose **+** after the **Get Order Details**.
 
-    <!-- border -->![Automation](001a.png)
+    ![Automation](001a.png)
 
     - Select **Decision**.
 
-    <!-- border -->![Automation](001.png)
+    ![Automation](001.png)
 
     - Select **Blank Decision**.
 
-    <!-- border -->![Automation](001b.png)
+    ![Automation](001b.png)
 
 2. A pop up will appear to configure the decision. Enter **Order Validity Check** as decision name and choose **Create**.
 
-    <!-- border -->![Automation](002.png)
+    ![Automation](002.png)
 
    
 ### Create data types
 
 1. Go to the **Overview** Tab. Choose the **Create** button. Create an artifact of the type **Data Type**.
 
-    <!-- border -->![Automation](003.png)
+    ![Automation](003.png)
 
 2. A new pop-up will appear.
     - Enter **Name** of the data type: **Error Output**
     - Enter **Description** of your choice
     - Choose **Create**
 
-    <!-- border -->![Automation](004.png)
+    ![Automation](004.png)
 
 3.  In the Data Type **Error Output** add new fields as following.
 
@@ -71,9 +71,9 @@ Once you have completed the prerequisite mission, your process should look somet
     |  `ErrorCode`          | String
     |  `ErrorDescription`   | String
 
-    <!-- border -->![Automation](005.png)
+    ![Automation](005.png)
 
-    <!-- border -->![Automation](006.png)
+    ![Automation](006.png)
 
 4. Choose **Save**.
 
@@ -84,11 +84,11 @@ Once you have completed the prerequisite mission, your process should look somet
    
 2. Select the decision **Order Validity Check** menu option and choose **Open Editor**.
 
-    <!-- border -->![Automation](007.png)
+    ![Automation](007.png)
 
 3. Add Input and Output parameters.
 
-    <!-- border -->![Automation](008.png)
+    ![Automation](008.png)
 
 4. Edit Input and Output parameters as follows.
 
@@ -99,11 +99,11 @@ Once you have completed the prerequisite mission, your process should look somet
 
     > **CAUTION:** Select the **List** checkbox to make the output type as list of Error Output.
 
-    <!-- border -->![Automation](009.png)
+    ![Automation](009.png)
 
 5. Select the **Rules** tab. Choose **Add Rule**.
 
-    <!-- border -->![Automation](011.png)
+    ![Automation](011.png)
 
 6. Enter **Rule Name** as Error Check and **Rule Description** of your choice.
    
@@ -114,27 +114,27 @@ Once you have completed the prerequisite mission, your process should look somet
     
 8. Choose **Next Step**.
 
-    <!-- border -->![Automation](012.png)
+    ![Automation](012.png)
 
 9.  In the **Configure Conditions** section, expand the **Input Sales Order** parameter.
 
-    <!-- border -->![Automation](013.png)
+    ![Automation](013.png)
 
 10. For this scenario you will be choosing `expectedDeliveryDate`, `orderAmount`, `shippingCountry` and `orderStatus`. Choose **Next Step**.
 
-    <!-- border -->![Automation](014.png)
+    ![Automation](014.png)
 
 11. In the **Configure Results** section, enter Validity Check Output (List) in **Result Vocabulary**. Choose **Validity Check Output** parameter. Choose **Next Step**.
 
-    <!-- border -->![Automation](016.png)
+    ![Automation](016.png)
 
 12. In the **Review** section, a summary of the rule to be added is displayed. Choose **Create**.
 
-    <!-- border -->![Automation](017.png)
+    ![Automation](017.png)
 
 13. **Enter Full Screen Mode** by clicking on the icon on the top right corner.
 
-    <!-- border -->![Automation](017a.png)
+    ![Automation](017a.png)
    
 14. In the **Decision Table**, add the below mentioned conditions.
 
@@ -147,15 +147,15 @@ Once you have completed the prerequisite mission, your process should look somet
 
 15. Click on the first column.
 
-    <!-- border -->![Automation](018a.png)
+    ![Automation](018a.png)
 
 16. Type `<TODAY`, and choose **TODAY** from Array Operators. When finished, click outside the input field to confirm.
 
-    <!-- border -->![Automation](018.png)
+    ![Automation](018.png)
 
 17. Proceed in the same way for Error Code and Error Description (or **Then** section):
 
-    <!-- border -->![Automation](018b.png)
+    ![Automation](018b.png)
 
     > Remember that for all String type data object attributes, you must add a single quote (') before and after the text.
 
@@ -164,13 +164,13 @@ Once you have completed the prerequisite mission, your process should look somet
     - Choose **Add Row**
     - From the dropdown options, select **Insert After**
 
-    <!-- border -->![Automation](019.png)
+    ![Automation](019.png)
 
 19. Similarly, enter the above values for the next rows.
 
 20. Choose **Save**.
 
-    <!-- border -->![Automation](021.png)
+    ![Automation](021.png)
 
 
 ### Bind parameters to decision
@@ -183,164 +183,164 @@ Once you have completed the prerequisite mission, your process should look somet
    
 4. Choose **save**.
 
-    <!-- border -->![Automation](024.png)
+    ![Automation](024.png)
 
 
 ### Create rejection notification form with tables
 
 1. In the **Overview** tab, click the **Create** dropdown and choose **Form**.
 
-    <!-- border -->![Automation](025.png)
+    ![Automation](025.png)
 
 2. In the **Create Form** popup, enter the form name and choose **Create**.
 
-    <!-- border -->![Automation](026.png)
+    ![Automation](026.png)
 
 3. Add a **Headline** and **Paragraph** to provide necessary details. Add two **Text** fields and name them **Customer Name** and **Order Number**.
    
 4. Check both **Text** fields as read only.
 
-    <!-- border -->![Automation](027.png)
+    ![Automation](027.png)
 
 5. Add a **Table** with **Error Details** as title. Mark it as Read Only.
 
-    <!-- border -->![Automation](028.png)
+    ![Automation](028.png)
 
 6. Choose the **+** icon in the table and select **Text**. Enter **Error Code** as field name.
 
-    <!-- border -->![Automation](029.png)
+    ![Automation](029.png)
     
 7. Choose the **+** icon beside Error Code field and select **Text**.
 
-    <!-- border -->![Automation](030.png)
+    ![Automation](030.png)
     
 8. Enter **Error Description** as field name and choose **Save**.
 
-    <!-- border -->![Automation](031.png)
+    ![Automation](031.png)
 
 
 ### Create condition and add rejection form
 
 1. In the **Order Processing** process choose the **+** sign after the **Order Visibility Check** decision.
 
-    <!-- border -->![Automation](032.png)
+    ![Automation](032.png)
 
 2. Choose **Controls and Events**.
    
-    <!-- border -->![Automation](032a.png)
+    ![Automation](032a.png)
   
 3. Select **Condition**.
 
-    <!-- border -->![Automation](032b.png)
+    ![Automation](032b.png)
 
 4. Choose the **Open Condition Editor** for the new condition.
 
-    <!-- border -->![Automation](033.png)
+    ![Automation](033.png)
 
 5. In the **Edit Branch Condition** popup select the `list-Validity Check Output` parameter.
 
-    <!-- border -->![Automation](034.png)
+    ![Automation](034.png)
 
 6. Put **0** as value and select **Apply**.
 
-    <!-- border -->![Automation](035.png)
+    ![Automation](035.png)
 
 7. In the **If** branch of the new condition, choose **+** to add a new artifact.
   
-    <!-- border -->![Automation](035a.png)
+    ![Automation](035a.png)
 
 8. Select **Form**.
 
-    <!-- border -->![Automation](035b.png)
+    ![Automation](035b.png)
 
 9. Select **Order Rejection Notification With Errors** under **Available Forms**.
 
-    <!-- border -->![Automation](036.png)
+    ![Automation](036.png)
     
 10. In the **General** section of form details:
     
     - Enter as **Subject**: Order Rejected due to errors
     - Choose **Process Started By** as **users** under **Recipients**
 
-    <!-- border -->![Automation](037.png)
+    ![Automation](037.png)
     
 11. Under **Inputs** section, choose **Select list** and bind `list-Validity Check Output` to it.
 
-    <!-- border -->![Automation](038.png)
+    ![Automation](038.png)
 
 12. Choose the **Order Number** and **Customer Name** from trigger form to map them with the respective input fields.
 
-    <!-- border -->![Automation](039.png)
+    ![Automation](039.png)
     
 13. Select the **+** after **Order Rejection Notification with Errors** form.
     
-    <!-- border -->![Automation](039a.png)
+    ![Automation](039a.png)
 
 14. Choose **Controls and Events**.
     
-    <!-- border -->![Automation](039b.png)
+    ![Automation](039b.png)
 
 15. Choose **End**.
 
-    <!-- border -->![Automation](040.png)
+    ![Automation](040.png)
 
     At the end, your process will look like this.
     
 16. Save your work.
 
-    <!-- border -->![Automation](042.png)
+    ![Automation](042.png)
 
 
 ### Release and deploy
 
 1. In the **Order Processing** process, choose the **Release** button on the top right corner.
 
-    <!-- border -->![Automation](043.png)
+    ![Automation](043.png)
 
 2. In the **Release Project** popup, select **Release**.
 
-    <!-- border -->![Automation](044.png)
+    ![Automation](044.png)
 
 3. In the **Overview** section that appears, choose **Deploy**.
 
-    <!-- border -->![Automation](045.png)
+    ![Automation](045.png)
 
 4. Choose the **Environment** and select **Deploy**.
 
-    <!-- border -->![Automation](environment.png)
+    ![Automation](environment.png)
 
 5. In the **Define Variables** section, enter the `OrderfilePath` for the excel file you downloaded in the prerequisites section. Choose **Deploy**.
 
-    <!-- border -->![Automation](047.png)
+    ![Automation](047.png)
     
     Your project is deployed.
 
-    <!-- border -->![Automation](049.png)
+    ![Automation](049.png)
 
 
 ### Test the process
 
 1. In the **Order Processing** process, choose the **Order Processing Form** artifact. On the right panel that appears, select the **Copy Link** icon next to **Form Link** field.
 
-    <!-- border -->![Automation](050.png)
+    ![Automation](050.png)
 
 2. Before executing the process, make sure your desktop agent is in unattended mode. You can refer to the prerequisites to [Execute the Process with an Automation](spa-run-agent-settings).
 
-    <!-- border -->![Automation](054.png)
+    ![Automation](054.png)
 
 3. In a new tab in your browser, enter the form link. Enter the details required in the form and select **Submit**.
 
-    <!-- border -->![Automation](051.png)
+    ![Automation](051.png)
 
     When you enter the order number in the form, the automation fetches the order details from excel stored in your machine. The details are validated according to the rules in the decision table and the respective errors are shown in a table in the form.
 
 4. In the SAP Build Lobby, choose the **Inbox** icon on the top right.
 
-    <!-- border -->![Automation](052.png)
+    ![Automation](052.png)
 
 5. You will get a notification with the error details in a table.
 
-    <!-- border -->![Automation](053.png)
+    ![Automation](053.png)
 
 
 ### Retrieve sample project from the store
@@ -355,20 +355,20 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    ![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    ![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](project.png)
+    ![Project](project.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    ![Lobby](lobby.png)
 
 ---

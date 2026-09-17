@@ -29,7 +29,7 @@ In this tutorial you will open the Orders Management application in a browser, c
 
 Open the application you will automate by choosing the link [Browse Orders](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html).
 
-<!-- border -->![Web Application](WebApplication.png)
+![Web Application](WebApplication.png)
 
 
 ### Create a new project
@@ -38,46 +38,46 @@ Open the application you will automate by choosing the link [Browse Orders](http
 
 2. Select **Create** button to create a new project.
 
-    <!-- border -->![Projects](2.png)
+    ![Projects](2.png)
 
 3. Select **Build an Automated Process** option.
 
-    <!-- border -->![Projects](3.png)
+    ![Projects](3.png)
 
 4. Select the **Task Automation** option.
 
-    <!-- border -->![Projects](4.png)
+    ![Projects](4.png)
 
 5. Enter the **Project Name** and a **Description** as given below. Select **Create**.
 
-    <!-- border -->![New Project popup](5.png)
+    ![New Project popup](5.png)
 
 6. The project opens in a new tab. In the Configure Agent Version dialog box, select the agent version. Choose Confirm.
 
-    <!-- border -->![New Project popup](6.png)
+    ![New Project popup](6.png)
 
 
 ### Create application artifact
 
 1. Choose Create and in the dropdown, select Application.
 
-    <!-- border -->![New Project popup](7.png)
+    ![New Project popup](7.png)
 
 2. In the Create Application dialog, enter Application Name as Record Orders. Select Create.
 
-    <!-- border -->![New Project popup](8.png)
+    ![New Project popup](8.png)
 
 3. The system starts detecting the applications and their screens currently running on your local machine. You'll see a list of screens on the left-hand side. Select the Browse Orders window and select Next.
 
-    <!-- border -->![New Project popup](9.png)
+    ![New Project popup](9.png)
 
 4. Select Manual Capture and choose Capture.
 
-    <!-- border -->![New Project popup](10.png)
+    ![New Project popup](10.png)
 
 5. Once the screen has been recorded, select Go to Application.
 
-    <!-- border -->![New Project popup](11.png)
+    ![New Project popup](11.png)
 
 > ### What's going on?
 To automate a web application, you need to: capture, declare and test the application, screens, and UI elements.
@@ -98,16 +98,16 @@ To automate a web application, you need to: capture, declare and test the applic
      - **Operator** `contains`
      - **URL** `https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/orderbrowser/webapp/test/mockServer.html`
 
-    <!-- border -->![Select View](12.png)
+    ![Select View](12.png)
 
 
-    <!-- border -->![Select View](13.png)
+    ![Select View](13.png)
 
 2. Save your changes.
 
     The Recognition Criteria should look like this:
 
-    <!-- border -->![Screen Declaration](14.png)
+    ![Screen Declaration](14.png)
 
 
 ### Declare screen elements
@@ -116,11 +116,11 @@ To automate a web application, you need to: capture, declare and test the applic
 
     You can take help from the **Both** view to drill-down to the specific element.
 
-    <!-- border -->![Select View](15.png)
+    ![Select View](15.png)
 
 2. In the Element Details panel, enter `Order Number` for the name of the element. The Identifier and Element are automatically detected.
 
-    <!-- border -->![Element Information](16.png)
+    ![Element Information](16.png)
 
 3. Remove any already existing criterion by choosing the **X**.
 
@@ -130,15 +130,15 @@ To automate a web application, you need to: capture, declare and test the applic
 
 5. Once Recognition Criteria is green, it indicates that the bot has recognized your element. You can choose **Declare Element** now.
 
-    <!-- border -->![Declare Element Order number](17.png) 
+    ![Declare Element Order number](17.png) 
 
 6. From the **Declared Elements** area, choose the Order Number element. 
     
-7. In the right panel under Recognition Criteria, choose the **Is a Collection** button <!-- border -->![Is a Collection](Is a Collection.png)
+7. In the right panel under Recognition Criteria, choose the **Is a Collection** button ![Is a Collection](Is a Collection.png)
 
 8. This converts **Order Number** element into a collection of elements.
 
-    <!-- border -->![Declaration Order Number](18.png)
+    ![Declaration Order Number](18.png)
 
 9. Repeat steps 1-7 to further declare the element **Status**. Use the below criteria to declare:
 
@@ -146,7 +146,7 @@ To automate a web application, you need to: capture, declare and test the applic
 
      Make sure to declare the status as **Collection**.
 
-    <!-- border -->![Final Application](19.png)
+    ![Final Application](19.png)
 
 10. Save your work.
 
@@ -160,11 +160,11 @@ To automate a web application, you need to: capture, declare and test the applic
 
 2. Choose **Test**.
 
-    <!-- border -->![Choose Environment](20.png)
+    ![Choose Environment](20.png)
 
     The system launches the **Application Tester**.
 
-    <!-- border -->![Application Tester_1](21.png)
+    ![Application Tester_1](21.png)
 
     The applications declared in your project are displayed in **Declared Applications**.
 
@@ -172,7 +172,7 @@ To automate a web application, you need to: capture, declare and test the applic
 
     The declared elements found on the selected screen are listed in the **Declared Elements** section. Choose the arrow next to a declared element to display its collection.
 
-    <!-- border -->![Application Tester Declared Elements](22.png)
+    ![Application Tester Declared Elements](22.png)
 
 4. To test the elements select the element `Order Number(0)` from the list.
 
@@ -180,7 +180,7 @@ To automate a web application, you need to: capture, declare and test the applic
 
 6. The result can be seen in **Output parameters** as **Order 7991**. This way you can test that the elements are getting recognized correctly.
 
-    <!-- border -->![Application Tester Declared Elements](23.png)
+    ![Application Tester Declared Elements](23.png)
 
 Congratulations! You have successfully captured and declared the application for orders management.
 

@@ -11,7 +11,7 @@ parser: v2
 
 # Use Joule Studio to Create an HR Onboarding Assistant
 
-<!-- description -->Use Joule Studio to create and test an agent for an Onboarding Assistant for humain capital management.
+<!-- description -->Use Joule Studio to create and test an agent for an Onboarding Assistant for human capital management
 
 ## Prerequisites
 
@@ -20,8 +20,8 @@ parser: v2
 
 ## You will learn
 
-- How to use intent-based development to create AI solutions.
-- How SAP Domain Models and other resources are levergaed to contextualize the generated solution
+- How to use intent-based development to create AI solutions
+- How SAP Domain Models and other resources are leveraged to contextualize the generated solution
 
 ## Intro
 
@@ -190,7 +190,7 @@ When the specification is complete you could pass it on to another team to do th
 
 ![Spec creation](070-create-spec.png)
 
-While the solution is being generated, you can explore the specification in the **Code** tab. You will find in the **specification** folder and in sub-folders, **specificaton.md** files.
+While the solution is being generated, you can explore the specification in the **Code** tab. You will find in the **specification** folder and in sub-folders, **specification.md** files.
 
 ![Spec ready](070-spec-ready.png)
 
@@ -215,7 +215,7 @@ The tool will work through the tasks defined in the specification. When it is fi
 
     ![Spec creation](070iap-create-spec.png)
 
-3. When the specification is ready, review it in the **Code** tab. You will find in the **specification** folder and in sub-folders, **specificaton.md** files. If you'd like to adjust any part of it, you can edit the files directly before moving on. Once you're satisfied, proceed to building the solution.
+3. When the specification is ready, review it in the **Code** tab. You will find in the **specification** folder and in sub-folders, **specification.md** files. If you'd like to adjust any part of it, you can edit the files directly before moving on. Once you're satisfied, proceed to building the solution.
 
     ![Spec ready](070iap-spec-ready.png)
 
@@ -237,7 +237,7 @@ The tool will work through the tasks defined in the specification. When it is fi
 
     ![Solution test](085-solution-test.png)
 
-    What you can do will depend on what has been implemented. You could start with a promt like "How can I test this agent", which should provide some example prompts that you can use. For example, "Show me the profile for employee E0001".
+    What you can do will depend on what has been implemented. You could start with a prompt like "How can I test this agent", which should provide some example prompts that you can use. For example, "Show me the profile for employee E0001".
 
     ![Solution test](085-solution-test-2.png)
 
@@ -269,7 +269,7 @@ When all tasks are complete, you can review the generated solution.
 
     ![Try Your Agent](090iap-try-your-agent.png)
 
-    What you can do will depend on what has been implemented. You could start with a promt like "**How can I test this agent**", which should provide some example prompts that you can use. For example, "**How many vacation days do I get?**".
+    What you can do will depend on what has been implemented. You could start with a prompt like "**How can I test this agent**", which should provide some example prompts that you can use. For example, "**How many vacation days do I get?**".
 
     The agent processes your request and responds. What it can do depends on what was implemented — the right-hand panel shows a summary of the agent's capabilities. The **Traces** panel at the bottom shows how the agent handled each request.
 

@@ -37,19 +37,16 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > The lobby is a central page for creating, accessing, and managing your projects in SAP Build. You can access business application processes, company configured templates, and other resources for your end-to-end business process.
 
-    <!-- border -->
     ![Lobby](006.png)
 
 2. Pick **Automated Process**, then choose **Next**.
 
-    <!-- border -->
     ![Create a Project](002.png)
 
 3. Select **Process**, and then choose **Next**.
 
     > Business Process Projects are a collection of skills in SAP Build Process Automation. Projects are part of the internal business processes of a company and are defined based on business scenarios. A project can contain a set of processes, forms, automations and decisions, which are reusable artifacts.
 
-    <!-- border -->
     ![Create a Project](003.png)
 
 
@@ -59,18 +56,15 @@ There are many use cases where you can make a difference using SAP Build Process
     - Enter a **Short Description**: Sales Orders Management Project
     - Choose **Review**
 
-    <!-- border -->
     ![Project information](004.png)
 
 
 5. In the **Create Project** dialog box, choose **Create**:
 
-    <!-- border -->
     ![Project information](004b.png)  
 
 6. If a **Disclaimer** page appears after the project is created, click on **Accept**.  
 
-     <!-- border -->  
      ![Disclaimer](007.png)
 
 ### Create a business process
@@ -86,7 +80,6 @@ There are many use cases where you can make a difference using SAP Build Process
 
     > Inside a project, you can create a process. This process is equivalent to a workflow in any business scenario. You can create this process from different skills such as forms, decisions, automations.
 
-    <!-- border -->
     ![Create Process](005.png)
 
     > Note that the form **Identifier** field is auto-filled.

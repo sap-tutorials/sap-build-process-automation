@@ -31,7 +31,7 @@ After you have installed the desktop agent, you need to add your agent so that i
 
 1. Navigate to **SAP Build** lobby. Select **Control Tower** and **Environments** under **Tenant Configuration**.
     
-    <!-- border -->![Environment](agent3-020b.png)
+    ![Environment](agent3-020b.png)
    
 2. Choose **Create Environment**.
    
@@ -42,21 +42,21 @@ After you have installed the desktop agent, you need to add your agent so that i
     - You may enter a short description
     - Choose **Create**
 
-    <!-- border -->![Create Environment](agent3-020.png)
+    ![Create Environment](agent3-020.png)
 
 4. Select the created environment to add your agent in it.
 
-    <!-- border -->![Select environment](agent3-020a.png)
+    ![Select environment](agent3-020a.png)
 
 5. Select **Agent Management > Add Agent**.
 
 6. In the **Add Agent** window, select your agent and choose **Add agent**.
 
-    <!-- border -->![Agent Management Add](agent3-021.png)
+    ![Agent Management Add](agent3-021.png)
 
 7.  Your agent is now added and ready to run.
 
-    <!-- border -->![Agent Management List](agent3-022.png)
+    ![Agent Management List](agent3-022.png)
 
 
 ### Create an agent attribute in the tenant
@@ -68,7 +68,7 @@ To do so, please follow these steps:
 
 1. In **SAP Build** lobby, select **Control Tower > Agent Attributes**.
 
-    <!-- border -->![Agent Attribute](02.png)  
+    ![Agent Attribute](02.png)  
 
 2. Choose **Create Attribute**.
 
@@ -83,7 +83,7 @@ To do so, please follow these steps:
 
 6. Choose **Create**.
 
-    <!-- border -->![Create Agent Attribute](01-Settings-create-agent-attribute.png)  
+    ![Create Agent Attribute](01-Settings-create-agent-attribute.png)  
 
 
 ### Add the attribute to your agent
@@ -91,11 +91,11 @@ To do so, please follow these steps:
 
 1. Navigate back to **Control Tower** and choose **Agents** under **Agent Configuration**.
 
-    <!-- border -->![Agents](03.png)
+    ![Agents](03.png)
    
 2. Search for your agent.
 
-    <!-- border -->![Settings Agents List](01-Settings.png)
+    ![Settings Agents List](01-Settings.png)
 
 3. Verify that it is idle or ready and connected in unattended mode.
 
@@ -103,7 +103,7 @@ To do so, please follow these steps:
    
 4. Select the three dots and choose **Manage Attributes**.
 
-    <!-- border -->![Manage attributes](04.png)
+    ![Manage attributes](04.png)
 
 5. In the **Manage Matching Attributes** dialog box, add your attribute:
 
@@ -111,7 +111,7 @@ To do so, please follow these steps:
     - Enter the value you selected previously in the **Values** field and press **ENTER**
     - Choose **Confirm**
 
-    <!-- border -->![Settings Add Attribute](01-Settings-agent-attributes-add.png)
+    ![Settings Add Attribute](01-Settings-agent-attributes-add.png)
 
 
 ### Add the attribute to your project
@@ -131,7 +131,7 @@ To do so, please follow these steps:
 
 7. Choose **Close**.   
 
-      <!-- border -->![Release](00-adding-attribute-value.png)
+      ![Release](00-adding-attribute-value.png)
 
 
 
@@ -142,15 +142,15 @@ When you are running the process make sure to have the Desktop Agent in unattend
 
 1. Open the Desktop Agent 3 from the `systray`.
 
-    <!-- border -->![Release](04-open-agent.png)
+    ![Release](04-open-agent.png)
 
 2. Select **Settings** in the Menu and choose **Mode**.
 
-    <!-- border -->![Release](04-open-settings-mode.png)
+    ![Release](04-open-settings-mode.png)
     
 3. Set the Desktop Agent 3 to Unattended mode by selecting **Activate**.
 
-    <!-- border -->![Release](04-unattended-mode.png)
+    ![Release](04-unattended-mode.png)
 
   
 

@@ -38,11 +38,11 @@ Once you have successfully configured the Azure application as mentioned in Prer
 
 2. Navigate to **Control Tower > External Authentication**.
 
-    <!-- border -->![External authentication](01.png)
+    ![External authentication](01.png)
 
 3. On the External Authentication page, click **Create New Authentication**.
 
-    <!-- border -->![Create new authentication](02.png)
+    ![Create new authentication](02.png)
 
 4. On the **Create Authentication** popup window, select Microsoft 365.
 
@@ -62,7 +62,7 @@ Once you have successfully configured the Azure application as mentioned in Prer
 
 11. Choose **Create**.
 
-    <!-- border -->![Create authentication](03.png)
+    ![Create authentication](03.png)
 
 
 ### Register the external authentication
@@ -71,13 +71,13 @@ Once the external authentication is created, it will be visible on your Desktop 
 
 1. Open the Desktop Agent. Once you are connected to the tenant, choose **Settings > External Authentication**. 
 
-    <!-- border -->![External authentication](04.png)
+    ![External authentication](04.png)
 
     > The agent receives and shows a list of registration items defined in SAP Build Process Automation External Authentication settings.
 
 2. Select Office 365 authentication.
 
-    <!-- border -->![Select office](05.png)
+    ![Select office](05.png)
 
 3. Enter the email address of the identity in the **Email** field to authenticate the identity. 
 
@@ -85,34 +85,34 @@ Once the external authentication is created, it will be visible on your Desktop 
     
 4. Choose **save**.
 
-    <!-- border -->![Enter email](06.png)
+    ![Enter email](06.png)
 
     > Each registration item can be registered or unregistered given a user email address.
 
 5. Select **Register** button. 
 
-    <!-- border -->![Register](07.png)
+    ![Register](07.png)
 
 6. In the newly opened window, consent for agent to use your ID with the activities.
 
 7.  The confirmation of registration will appear. 
 
-    <!-- border -->![Registration confirmation](08.png)
+    ![Registration confirmation](08.png)
 
 
 ### Create a project
 
 1. Navigate to the SAP Build lobby. Choose **Create** button.
 
-    <!-- border -->![Create](09.png)
+    ![Create](09.png)
 
 2. Select **Build an Automated Process**.
 
-    <!-- border -->![Build automated process](10.png)
+    ![Build automated process](10.png)
 
 3. Choose **Task Automation**.
 
-    <!-- border -->![Task automation](11.png)
+    ![Task automation](11.png)
 
 4. Provide a **Name** for the project such as: **Calendar activities for Microsoft 365**.
 
@@ -120,11 +120,11 @@ Once the external authentication is created, it will be visible on your Desktop 
 
 6. Choose **Create**.
 
-    <!-- border -->![Name and description project](12.png)
+    ![Name and description project](12.png)
 
 7. Select the agent version that is registered on your system and choose **Confirm**.
 
-    <!-- border -->![Configure agent version](13.png)
+    ![Configure agent version](13.png)
 
 8. Provide a name for the automation such as **Check attendees availability**.
 
@@ -132,7 +132,7 @@ Once the external authentication is created, it will be visible on your Desktop 
 
 10. Choose **Create**.
 
-    <!-- border -->![Create automation](14.png)
+    ![Create automation](14.png)
 
 
 ### Add Microsoft 365 Cloud SDK
@@ -143,11 +143,11 @@ You will be navigated to the automation editor where you can build your automati
 
 2. In the **Project Properties** window, select **Dependencies > Add dependency > Add a Business Process project dependency**.
 
-    <!-- border -->![Add dependency](15.png)
+    ![Add dependency](15.png)
 
 3. Under Add dependency search for **Microsoft 365 Cloud SDK** and **Add** it.
 
-    <!-- border -->![Add microsoft 365 cloud SDK](16.png)
+    ![Add microsoft 365 cloud SDK](16.png)
 
 4. **Close** the window.
 
@@ -158,11 +158,11 @@ A data type is an artifact describing a data structure that can be used as an in
 
 1. Navigate back to the **Overview** tab.
 
-    <!-- border -->![Overview](16b.png)
+    ![Overview](16b.png)
 
 2. Choose **Create > Data Type**.
 
-    <!-- border -->![Create Data Type](16c.png)
+    ![Create Data Type](16c.png)
 
 3. In the **Create Data Type** pop-up, enter **Attendee** as name and **Contact information of user attending the meeting** as description.
 
@@ -170,7 +170,7 @@ A data type is an artifact describing a data structure that can be used as an in
 
 4. Choose **Create**.
 
-    <!-- border -->![Create Data Type](16d.png)
+    ![Create Data Type](16d.png)
 
     A new tab opens in the main panel. You can now add the fields that will be included in your data type.
     
@@ -178,7 +178,7 @@ A data type is an artifact describing a data structure that can be used as an in
 
 6. In the **Field Details** on the right, enter as name `firstName`, and select **String** as type.
 
-    <!-- border -->![Create Data Type](16e.png)
+    ![Create Data Type](16e.png)
 
 7. Repeat the above steps to add three other fields such as:
 
@@ -189,7 +189,7 @@ A data type is an artifact describing a data structure that can be used as an in
                 
 8. Choose **Save**.
    
-    <!-- border -->![Create Data Type](16f.png)
+    ![Create Data Type](16f.png)
 
     You will notice that the last field you created is of type boolean that is to differentiate if it is a candidate or an interviewer.
 
@@ -200,7 +200,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 1. Navigate back to your automation, on the right-hand side panel, go the **Input/Output** section and click **Add new input parameter**.
 
-    <!-- border -->![Add input parameter](17.png)
+    ![Add input parameter](17.png)
 
 2. Enter a **name**: `interviewers`.
 
@@ -208,13 +208,13 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 4. Start typing attendee in the type field and select **Attendee**.
 
-    <!-- border -->![Input parameter](18.png)
+    ![Input parameter](18.png)
 
 5. Check **List** since this input parameter may contain several interviewers.
 
 6. Choose **Add new input parameter**.
 
-    <!-- border -->![Input parameter](19.png)
+    ![Input parameter](19.png)
 
 7. Enter a **name**: `candidate`.
 
@@ -222,7 +222,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 9. Select **Attendee** as **type**.
 
-    <!-- border -->![Input parameter](20.png)
+    ![Input parameter](20.png)
 
 10. Similarly, create the following input parameters as follows:
 
@@ -234,7 +234,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
   
 11. Choose **Save**.
 
-    <!-- border -->![Input parameters](20b.png)
+    ![Input parameters](20b.png)
 
 
 ### Build an automation to send a meeting request
@@ -243,13 +243,13 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
     > This activity sets the authentication that will be used for the Microsoft Office 365 activities. 
 
-    <!-- border -->![Select 365 online authentication](21.png)
+    ![Select 365 online authentication](21.png)
 
     You will now create a list of string variable that will output the email addresses of the candidate and the interviewer(s).
 
 2. Under **Automation Details** panel, under **Tools**, search for **String** data type. Drag and drop the activity into the workflow.
 
-    <!-- border -->![String Data Type](22.png)
+    ![String Data Type](22.png)
 
 3. Select the activity and do the following:
 
@@ -257,21 +257,21 @@ An input or output parameter is a variable that is passed, received, or sent fro
     
     - Under **Output Parameters**, change the name to `emailAddresses`.
 
-    <!-- border -->![Create variable list](23.png)
+    ![Create variable list](23.png)
 
 4. Under **Automation Details** panel, under **Tools**, search for **For Each** control and drag and drop it into the workflow.
 
-    <!-- border -->![For each](24.png)
+    ![For each](24.png)
 
 5. Select the activity and set the looping list to input parameter **interviewers** created before.
 
-    <!-- border -->![For each](25.png)
+    ![For each](25.png)
 
 6. Under **Automation Details** panel, under **Tools**, search for **Add Item (list)**.
 
     > This will add an item to an existing list. In this use case, for each interviewers' email you will add them to the the list of emails created above.
 
-    <!-- border -->![Output parameter](26.png)
+    ![Output parameter](26.png)
 
 7. Select the activity and do the following:
 
@@ -281,15 +281,15 @@ An input or output parameter is a variable that is passed, received, or sent fro
     
     - Under `itemToAdd` input parameter, choose open the expression editor icon.
 
-    <!-- border -->![Add item](27.png)  
+    ![Add item](27.png)  
 
 8. Select **Variables > interviewers > email**.
 
-    <!-- border -->![Add item](27b.png)  
+    ![Add item](27b.png)  
 
 9. Within [0] of the formula, insert variable index and choose **Save Expression**.
 
-    <!-- border -->![Add item](27c.png)  
+    ![Add item](27c.png)  
 
     > ### What is going on?
     > The automation will loop through each interviewers' email and will be added to the list of emails. 
@@ -298,7 +298,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 10.  Under **Automation Details** panel, under **Tools**, search for **Add Item (list)** and drag and drop into the workflow outside the **For each** loop.
 
-    <!-- border -->![Add item](27d.png)  
+   ![Add item](27d.png)  
 
 11. Select the activity and do the following:
 
@@ -308,11 +308,11 @@ An input or output parameter is a variable that is passed, received, or sent fro
     
     - Under `itemToAdd` input parameter, choose open the expression editor icon.
 
-    <!-- border -->![Add item](27e.png)
+    ![Add item](27e.png)
 
 12. Select **Variables > candidate > email** and choose **Save Expression**.
 
-    <!-- border -->![Add item](27f.png)     
+    ![Add item](27f.png)     
 
     You have successfully created a list of emails including the emails of the candidate and the interviewers.
 
@@ -320,7 +320,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
     > This activity checks the availability of the attendees (candidate and interviewers).
 
-    <!-- border -->![Check users availability](28.png)
+    ![Check users availability](28.png)
 
 14. Select the activity and follow the below steps:
 
@@ -328,7 +328,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
     - Under `startDateTime` input parameter, select **Create Custom Data**.
 
-    <!-- border -->![Create custom data](29.png)
+    ![Create custom data](29.png)
 
     - Under `dateTime` input parameter, select `meetingStartTime`.
 
@@ -338,29 +338,29 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
     - Save your work.
 
-    <!-- border -->![Input parameters](30.png)
+    ![Input parameters](30.png)
 
 15. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Boolean** data type. Drag and drop the data type into the workflow.
 
     > This variable will have two possible values, true or false.
 
-    <!-- border -->![Boolean data type](31.png)
+    ![Boolean data type](31.png)
 
 16. Select the activity and change the name of the **Output Parameter** to `availabilityResult`.
 
-    <!-- border -->![Output parameter](32.png)
+    ![Output parameter](32.png)
 
 17. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **For Each** control and drag and drop it into the workflow.
 
-    <!-- border -->![For each](33.png)
+    ![For each](33.png)
 
 18. Select the activity and under **Set looping list** parameter, choose `usersAvailabilities`.
 
-    <!-- border -->![Set looping list](34.png)
+    ![Set looping list](34.png)
 
 19. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Any** data type and drag and drop it inside the **For Each** loop.
 
-    <!-- border -->![Any data type](35.png)
+    ![Any data type](35.png)
 
 20. Select the data type and change the name to **member**. 
 
@@ -370,15 +370,15 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 23. Save your work.
 
-    <!-- border -->![Member](36.png)
+    ![Member](36.png)
 
 24. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for the **Condition** control and drag and drop it into the workflow below the data type **member**.
 
-    <!-- border -->![Condition](37.png)
+    ![Condition](37.png)
 
 25. Select the control and choose the three dots next to **Condition Expression**, then select **Edit Formula**.
 
-    <!-- border -->![Edit Formula](37a.png)
+    ![Edit Formula](37a.png)
 
 26. In the expression editor, please copy and paste the following formula:
 
@@ -386,24 +386,24 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 27. Choose **Save Expression**.
 
-    <!-- border -->![Edit expression](38.png)
+    ![Edit expression](38.png)
 
 28. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Set Variable Value** and drag and drop it into the workflow below the default branch.
 
-    <!-- border -->![Set variable value](39.png)
+    ![Set variable value](39.png)
 
 29. Select the activity and under **variable** input parameter, select `availabilityResult`.
 
 30. Under **value** input parameter, choose **false**.
 
-    <!-- border -->![Set variable value](40.png)
+    ![Set variable value](40.png)
 
     > ### What is going on?
     > This sets the value of the `availabilityResult` variable to FALSE, meaning that users are NOT available or tentative on the time slot selected.
 
 31. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Log message** activity and drag and drop it into the workflow below the **Set Variable Value**.
 
-    <!-- border -->![Log message](41.png)
+    ![Log message](41.png)
 
 32. Select the activity. Under **message** input parameter, choose open the expression editor.
 
@@ -413,11 +413,11 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 34. Choose **Save Expression**.
 
-    <!-- border -->![Edit expression](42.png)
+    ![Edit expression](42.png)
 
 35. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **End** control and drag and drop it below the **Log Message** activity.
 
-    <!-- border -->![End](42b.png)
+    ![End](42b.png)
 
 36. Now you will create an output parameter. Choose **Input/Output** tab and do the following:
 
@@ -425,13 +425,13 @@ An input or output parameter is a variable that is passed, received, or sent fro
     - Enter `successfulMeetingRequest` as name.
     - Select **Boolean** as type.
     
-    <!-- border -->![Output parameter](42a.png)
+    ![Output parameter](42a.png)
 
 37. Select the **End** control.
  
 38. As `sucessfulMeetingRequest` output parameter, select **false**.
 
-    <!-- border -->![End](42c.png)
+    ![End](42c.png)
  
     > ### What is going on?
     > This ends the default condition (if users are unavailable on time slot). The meeting request will not be successful and hence will not be sent.
@@ -440,13 +440,13 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 39. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Send Meeting Request** activity and drag and drop it into the workflow outside the **For Each** loop. 
 
-    <!-- border -->![Send meeting request](43.png)
+    ![Send meeting request](43.png)
 
 40. Select the activity and follow the below steps:
 
     - Under `meetingParameters` input parameter, select **Create Custom Data**.
 
-    <!-- border -->![Input parameter](44.png)
+    ![Input parameter](44.png)
 
     - Under `mandatoryEmailAddresses` input parameter, select `emailAddresses `.
 
@@ -454,7 +454,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
     - Under **body** input parameter, enter: Congratulations! You have been selected for an <b>interview</b> and select the expression in quotes.
 
-    <!-- border -->![Input parameters](45.png)
+    ![Input parameters](45.png)
 
     - Under **start** input parameter, select **Custom Data**.
 
@@ -464,24 +464,24 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
     - Under `dateTime` input parameter, select `meetingEndTime`.
 
-     <!-- border -->![Input parameters](46.png)
+     ![Input parameters](46.png)
 
 41. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Set Variable Value** and drag and drop it into the workflow below **Send Meeting Request** activity.
 
-    <!-- border -->![Set variable value](47.png)
+    ![Set variable value](47.png)
 
 42. Select the activity and under **variable** input parameter, select `availabilityResult`.
 
 43. Under **value** input parameter, choose **true**.
 
-    <!-- border -->![Set variable value](48.png)
+    ![Set variable value](48.png)
 
     > ### What is going on?
     > This sets the value of the `availabilityResult` variable to TRUE, meaning that users are available or tentative on the time slot selected.
 
 44. Click on the canvas. Under **Automation Details** panel, under **Tools**, search for **Log message** activity and drag and drop it into the workflow below the **Set Variable Value - 2**.
 
-    <!-- border -->![Log message](49.png)
+    ![Log message](49.png)
 
 45. Select the activity. Under **message** input parameter, choose open the expression editor.
 
@@ -491,7 +491,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 47. Choose **Save Expression**.
 
-    <!-- border -->![Edit expression](50.png)
+    ![Edit expression](50.png)
 
 48. Choose the **End** control.
 
@@ -499,7 +499,7 @@ An input or output parameter is a variable that is passed, received, or sent fro
 
 50. Save your work.
 
-   <!-- border -->![Save](51.png)
+   ![Save](51.png)
 
 ### Test the automation
 
@@ -507,7 +507,7 @@ Now that you are done designing your automation, you may test it. Let's assume y
 
 1. Choose Test.
 
-    <!-- border -->![Test](52.png)
+    ![Test](52.png)
 
 2. Now fill in the required input parameters:
 
@@ -518,21 +518,21 @@ Now that you are done designing your automation, you may test it. Let's assume y
 
 3. Choose Test.
 
-    <!-- border -->![Test](53.png)
+    ![Test](53.png)
 
-    <!-- border -->![Test](54.png)
+    ![Test](54.png)
 
 4. The testing was successful. If you go to the **Test Console**, you can see the confirmation message appear: *The meeting request was successfully sent to Jane Doe*.
 
-    <!-- border -->![Test](55.png)
+    ![Test](55.png)
 
 5. Go to **Send Meeting Request**, select **Tester** and under **Output Parameters** copy the `meetingId` value and paste it in notes for example. You will need this value later to update the meeting request.
 
-    <!-- border -->![Test](55a.png)
+    ![Test](55a.png)
 
 6. On the other hand, if one or more users are not available during the availability time slot, the bot would respond in this matter:
 
-    <!-- border -->![Test](56.png)
+    ![Test](56.png)
 
 
 ### Build an automation to update the calendar event
@@ -541,7 +541,7 @@ Now you will create an automation that will update the meeting request you just 
 
 1. Go to **Overview** tab and select **Create** > **Automation**.
 
-    <!-- border -->![Automation](57.png)
+    ![Automation](57.png)
 
 2. In the **Create Automation** pop-up do the following:
 
@@ -549,7 +549,7 @@ Now you will create an automation that will update the meeting request you just 
     - Enter **Update the interview request with a change of time** as description.
     - Choose **Create**.
 
-    <!-- border -->![Create automation](58.png)
+    ![Create automation](58.png)
 
     You will be directed to the automation editor where you can start building your automation.
 
@@ -565,15 +565,15 @@ Now you will create an automation that will update the meeting request you just 
 
 5. Choose **save**.
 
-    <!-- border -->![Inputs](58a.png)
+    ![Inputs](58a.png)
 
 6. Under **Automation Details** panel, under **Tools**, search for **Select 365online Authentication** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Select authentication](59.png)
+    ![Select authentication](59.png)
 
  7. Under **Automation Details** panel, under **Tools**, search for **Update Event** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Update Event](60.png)
+    ![Update Event](60.png)
 
 8. Select the activity.
 
@@ -581,7 +581,7 @@ Now you will create an automation that will update the meeting request you just 
 
 10. Under `eventUpdateParameters` input parameter, select **Create Custom Data**.
 
-    <!-- border -->![Update Event](61.png)
+    ![Update Event](61.png)
 
 11. Under `subject` input parameter, select `updateMeetingSubject`.
 
@@ -591,7 +591,7 @@ Now you will create an automation that will update the meeting request you just 
 
 14. Choose **Save**.
 
-    <!-- border -->![Update Event](62.png)
+    ![Update Event](62.png)
 
 
 ### Test the automation 
@@ -610,11 +610,11 @@ Now you will create an automation that will update the meeting request you just 
 
 6. Choose **Test**.
 
-    <!-- border -->![Test](63.png)
+    ![Test](63.png)
 
     The testing was successful. A new meeting request is sent with the updated details above.
 
-    <!-- border -->![Test](64.png)
+    ![Test](64.png)
 
     > Please note that the `eventId` will not change its value.
 
@@ -625,7 +625,7 @@ As a last step, you will now delete the meeting request from the calendar.
 
 1. Navigate to the **Overview** tab, and choose **Create** > **Automation**.
 
-    <!-- border -->![Automation](65.png)
+    ![Automation](65.png)
 
 2. In the **Create Automation** pop-up do the following:
 
@@ -633,7 +633,7 @@ As a last step, you will now delete the meeting request from the calendar.
     - Enter **Search and delete the interview request** as description.
     - Choose **Create**.
 
-    <!-- border -->![Automation](66.png)
+    ![Automation](66.png)
 
     You will be directed to the automation editor where you can start building your automation.
 
@@ -649,15 +649,15 @@ As a last step, you will now delete the meeting request from the calendar.
 
 5. Choose **save**.
 
-    <!-- border -->![Inputs](67.png)
+    ![Inputs](67.png)
 
 6. Under **Automation Details** panel, under **Tools**, search for **Select 365online Authentication** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Select authentication](68.png)
+    ![Select authentication](68.png)
 
 7. Under **Automation Details** panel, under **Tools**, search for **Search Calendar Events** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Search calendar events](69.png)
+    ![Search calendar events](69.png)
 
 8. Select the activity.
 
@@ -674,7 +674,7 @@ As a last step, you will now delete the meeting request from the calendar.
     > ### What is going on?
     > You are setting the values of the parameters of the automation that will search a specific calendar event. In this case, the subject of the event will have as value **Interview request**.
 
-    <!-- border -->![Search calendar events](70.png)
+    ![Search calendar events](70.png)
 
     Now you will set the value of another parameter `startDateTime` to search for an event that will have a specific beginning.
 
@@ -686,13 +686,13 @@ As a last step, you will now delete the meeting request from the calendar.
 
 17. Under `value` parameter, select `startDateTime`.
 
-    <!-- border -->![Search calendar events](71.png)
+    ![Search calendar events](71.png)
 
     > Please note that the output parameter for this activity is `calendarEvents`.
 
 18. Under **Automation Details** panel, under **Tools**, search for **Delete Event** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Delete Event](72.png)
+    ![Delete Event](72.png)
 
 19. Select the activity.
 
@@ -704,7 +704,7 @@ As a last step, you will now delete the meeting request from the calendar.
 
 23. Choose **Save**.
 
-    <!-- border -->![Delete Event](73.png)
+    ![Delete Event](73.png)
     
     > ### What is going on?
     > You are setting the value of the `eventId` to the id of the `calendarEvents` output parameter from **Search Calendar Events** activity in step 2.
@@ -722,13 +722,13 @@ As a last step, you will now delete the meeting request from the calendar.
 
 4. Choose **Test**.
 
-    <!-- border -->![Test](74.png)
+    ![Test](74.png)
     
     The testing was successful. The bot searches for the calendar event that has **Interview request** as a subject and a beginning time of September 1st 2023 at 13h00. Then it outputs the corresponding Id of the event found which is called **New interview request** with a start time of 13h00 and an end time of 13h30 on September 1st 2023. Lastly, it proceeds to delete it from the calendar.
 
-    <!-- border -->![Test](75.png)
+    ![Test](75.png)
 
-    <!-- border -->![Test](76.png)
+    ![Test](76.png)
 
 
 ### Retrieve sample project from the store (Optional)
@@ -743,21 +743,21 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Office](store.png)
+    ![Office](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Office](create.png)
+    ![Office](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Office](project.png)
+    ![Office](project.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Office](lobby.png)
+    ![Office](lobby.png)
 
 
 

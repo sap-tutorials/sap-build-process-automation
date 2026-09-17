@@ -34,11 +34,11 @@ Make sure your screen display settings (Scale and layout) are set to 100%.
 
 1.  Switch to your desktop, right-click and select **Display Settings**.
 
-    <!-- border -->![Open Display Settings](step1-display-settings-1.png)
+    ![Open Display Settings](step1-display-settings-1.png)
 
 2.  Select **100%** in **Scale and layout**.
 
-    <!-- border -->![Display Settings](step1-display-settings-2.png)
+    ![Display Settings](step1-display-settings-2.png)
 
     Create a project and use **Recorder** to record a **SAP GUI for Windows** application.
 
@@ -47,25 +47,25 @@ Make sure your screen display settings (Scale and layout) are set to 100%.
 
 1. Navigate to **SAP Build** lobby and create a project by choosing **Create**.
 
-    <!-- border -->![Create a project](01.png)
+    ![Create a project](01.png)
 
 2. Select **Build an Automated Process**.
 
-    <!-- border -->![Build an Automated Process](02.png)
+    ![Build an Automated Process](02.png)
 
 3. Select **Task Automation**.
 
-    <!-- border -->![Task Automation](03.png)
+    ![Task Automation](03.png)
 
 4. In the **Create a Task Automation project** window, please give the project the name: **Create Sales Order** and the description: **Automate sales order creation in SAP GUI for Windows** and choose **Create**.
 
-    <!-- border -->![Create Task Automation](04.png)
+    ![Create Task Automation](04.png)
 
     You will be directed to the newly created project.
 
 5. Please select the version of the agent installed on machines that will execute the automation and choose **Confirm**.
 
-    <!-- border -->![Configure agent version](05.png)
+    ![Configure agent version](05.png)
 
 6. A pop-up window asking you to create an automation will appear, please choose **Cancel**.
 
@@ -81,24 +81,24 @@ Before recording the steps of a workflow, please open the SAP GUI for Windows ap
 
 1. In the **Overview** tab of your **Create Sales Order** project, choose **Create**, then choose **Application**.
 
-    <!-- border -->![Create an application](06.png)
+    ![Create an application](06.png)
 
 2. In the **Create Application** window, name your application: **Create Sales Order** and choose **Create**.
 
-    <!-- border -->![Create application](07.png)
+    ![Create application](07.png)
 
 3. Select the **SAP GUI** screen to record and choose **Next**.
 
     > ### What is going on?
     > **SAP Build Process Automation** starts detecting the applications and their screens currently running on your local machine. When it's done, you'll see a list of screens in the picker panel on the left.
 
-    <!-- border -->![Select SAP GUI](08.png)
+    ![Select SAP GUI](08.png)
 
     > You have the option to select either **Recorder** type or **Manual Capture** type. This tutorial will show you how to use the **Recorder**.
 
 4. Select **Recorder** as type and choose **Record**.
 
-    <!-- border -->![Recorder](09.png)
+    ![Recorder](09.png)
 
     > Please note that the technology that you will be recording is **SAP GUI**.
 
@@ -116,7 +116,7 @@ In earlier versions of the **Recorder**, when the screen changed in the applicat
 
     You can see the **Automatic Capture Mode** is on.
 
-    <!-- border -->![Automatic Capture Mode](12.png)
+    ![Automatic Capture Mode](12.png)
 
     You can select the drop down menu to view the different available capture modes such as:
 
@@ -124,7 +124,7 @@ In earlier versions of the **Recorder**, when the screen changed in the applicat
     - Manual Capture Mode
     - Capture on Hover
 
-    <!-- border -->![Capture Modes](12a.png)
+    ![Capture Modes](12a.png)
 
     This step involves recording the setting of the login values.
 
@@ -132,7 +132,7 @@ In earlier versions of the **Recorder**, when the screen changed in the applicat
 
     - Choose **Enter** ![Enter icon](11.png)
 
-    <!-- border -->![SAP Login](12b.png)
+    ![SAP Login](12b.png)
 
 2. **Capture: SAP Easy Access**
 
@@ -144,7 +144,7 @@ In earlier versions of the **Recorder**, when the screen changed in the applicat
 
     - Choose **Enter** ![Enter icon](11.png)
 
-    <!-- border -->![Select a transaction](13.png)
+    ![Select a transaction](13.png)
   
     > You can notice that the **Recorder** generates the corresponding activities from the previous screen.
 
@@ -161,7 +161,7 @@ In earlier versions of the **Recorder**, when the screen changed in the applicat
 
     - Choose **Enter** ![Enter icon](11.png)
 
-    <!-- border -->![Fill order type](14.png)
+    ![Fill order type](14.png)
 
     > You can notice that the **Recorder** generates the corresponding activities from the previous screen.
 
@@ -180,28 +180,28 @@ In earlier versions of the **Recorder**, when the screen changed in the applicat
     |  Price List           | Retail
     |  Storage Location     | 0001
 
-    <!-- border -->![Order detail](15.png)
+    ![Order detail](15.png)
 
     > You can notice that the **Recorder** generates the corresponding activities from the previous screen.
     
     - Choose **Enter** ![Enter icon](11.png)
 
-    <!-- border -->![Order detail](16.png)
+    ![Order detail](16.png)
 
     - Choose **Save** to complete the process of recording the sales order application.
 
-    <!-- border -->![Save](17.png)
+    ![Save](17.png)
 
     - Choose **Stop** to stop the recording.
 
-    <!-- border -->![Stop recording](18.png)
+    ![Stop recording](18.png)
 
 
 ### Export your recording
 
 Select **Export** to export the recording to your project.
 
-<!-- border -->![Export recording](19.png)
+![Export recording](19.png)
 
 As a result of your recording:
 
@@ -210,7 +210,7 @@ As a result of your recording:
 
 Your Project now consists of an application named *Create Sales Order* and an automation named *Create Sales Order Automation*.
 
-<!-- border -->![Generated automation](20.png)
+![Generated automation](20.png)
 
 In the automation you will have the choice to customize your automation as per your requirements.
 
@@ -222,7 +222,7 @@ The password is recorded as **asterisks**. You need to change its value to the r
 
 3. Save your automation.
 
-<!-- border -->![Change Password field Value](21.png)
+![Change Password field Value](21.png)
 
 >**CAUTION:** Please note that the best practice would be to create an environment variable of type password and map it to the value field. How to do this will be covered in the next [tutorial](spa-customize-win-gui-recorder-automation).
 
@@ -233,7 +233,7 @@ The automation is ready to be tested.
 
 Before testing, please log off from your SAP GUI application. To test your automation, choose **Test**.
 
-<!-- border -->![Test button](22.png)
+![Test button](22.png)
 
 **SAP Build Process Automation** starts the automation by calling the **Desktop Agent** using the **SAP Build Process Automation Extension**.
 

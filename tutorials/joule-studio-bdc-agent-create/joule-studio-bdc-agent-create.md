@@ -47,14 +47,13 @@ In this tutorial, you will use Joule Studio to generate a data product and AI ag
 
 2. Use the chat directly and enter the following prompt:
 
-    ```COPY
-       Create a data product combining Sales Orders and Billing Documents to create a real‑time Order‑to‑Cash 
-       data foundation that protects revenue, accelerates cash flow, and eliminates manual reporting.
-    ```
+   ```COPY
+      Create a data product combining Sales Orders and Billing Documents to create a real‑time Order‑to‑Cash 
+      data foundation that protects revenue, accelerates cash flow, and eliminates manual reporting.
+   ```
 
     Select **Quick create**
 
-    <!-- border -->
     ![Joule Work](joule-work-02.png)
 
     Quick-create will allow you to experience the power of the tool without investing much time.
@@ -63,7 +62,6 @@ In this tutorial, you will use Joule Studio to generate a data product and AI ag
 
     In the panel on the right, you can see that your intent statement has been taken as the starting prompt. Quick create has added **Fast Track** to the prompt.
 
-    <!-- border -->
     ![Joule Work](joule-work-03.png)
 
 ### Intent
@@ -76,7 +74,6 @@ Once it decides it understands enough, it will map your request to the correct f
 
     The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that the landscape has S/4HANA as a backend so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution. The screenshot below is just an indication of what you might see. Joule might provide a selection of answers that you can choose from.
 
-    <!-- border -->
     ![Joule Work](joule-work-04.png)
 
 Once the intent document is created, we will skip the Requirement and Specification phase, since we directly created the Data Product. This might happen automatically if you have selected quick-create at the start.
@@ -88,12 +85,10 @@ In this demo landscape, you have to enter the following promt for data preview: 
 
 1. You will automatically jump to **Solution** and see the DPD (Data Product Definition) File and be offered a data preview.
 
-    <!-- border -->
     ![Solution](solution-01.png)
 
 2. If asked, you can also publish the data product.
 
-    <!-- border -->
     ![Solution](solution-02.png)
 
 Congratulations, you have created your first data product using Data Product Creation Agent and Joule Studio!
@@ -104,24 +99,20 @@ For the Agent Lab at SAPPHIRE, you will not be deploying an agent. Instead, you 
 
 1. Navigate into the existing Solutions in Joule Studio and search for one called "Billing completeness and revenue recognition agent".
 
-    <!-- border -->
     ![Test](test-00.png)
 
 The following steps demonstrate how the **Billing Completeness and Revenue Recognition Agent** helps finance and operations users analyze billing completeness, identify partially billed sales orders, and detect potential revenue leakage across SAP S/4HANA order-to-cash processes.
 
 1. The **Billing Completeness and Revenue Recognition Agent** is available in Joule Studio. The user selects **Try now** to launch the conversational analytics experience :
 
-    <!-- border -->
     ![Test](test-01.png)
 
 2. The agent overview displays available analytical skills and business questions that can be answered using SAP S/4HANA order-to-cash data. The user selects the skill **What is the breakdown of our ordered value by billing completion status?**
 
-    <!-- border -->
     ![Test](test-02.png)
 
 3. The agent generates a bar chart showing the breakdown of ordered value by billing completion status, helping users quickly identify the health of billing pipeline, how much is fully billed vs what’s stuck.
 
-    <!-- border -->
     ![Test](test-03.png)
 
 Users can continue the conversation with follow-up analytical questions to further investigate billing gaps, revenue recognition issues, and operational performance across sales organizations, channels, plants, and profit centers.

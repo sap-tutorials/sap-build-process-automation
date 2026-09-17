@@ -28,25 +28,25 @@ Destinations are predefined endpoints used in the Business Technology Platform (
 
 1.  In **SAP Build**, navigate to **Control Tower > Destinations**.
 
-    <!-- border -->![Destinations](1.2.png)
+    ![Destinations](1.2.png)
 
 2.  Choose **Open in BTP Cockpit**.
 
     >This Button is visible if you have a Process Automation Admin role.
 
-    <!-- border -->![Open BTP Cockpit](1.png)
+    ![Open BTP Cockpit](1.png)
 
     You will be navigated to the **Destinations** page of SAP Business Technology Platform.
 
 3.  Choose **Create Destination**.
    
-    <!-- border -->![Create Destination](1.3.png)
+    ![Create Destination](1.3.png)
 
 4.  Enter the details for the Destination. Refer to [Managing Destinations](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/84e45e071c7646c88027fffc6a7bb787.html) for more information.
 
 5.  Add the property **sap.processautomation.enabled** as **true** to view the destination in the SAP Build Process Automation tenant.    
 
-    <!-- border -->![New Destination](1.1.png)
+    ![New Destination](1.1.png)
 
 
 
@@ -57,11 +57,11 @@ Destinations are predefined endpoints used in the Business Technology Platform (
 
 2.  Select the name of the destination that you created in **Step 1** and choose **Add**.
 
-    <!-- border -->![New Destination](2.png)
+    ![New Destination](2.png)
 
     The Destination is successfully added to SAP Build Process Automation Tenant.
 
-    <!-- border -->![Successful Destination](3.png)
+    ![Successful Destination](3.png)
 
 
 ### Access destination in the Business Process Project
@@ -76,7 +76,7 @@ Create a **Business Process** project from the Lobby. After creating the Project
 
 2.  Create an Environment Variable of type **Destination**.
 
-    <!-- border -->![Environment Variable](4.png)
+    ![Environment Variable](4.png)
 
     The Destination can be accessed successfully in your Business Process project.
 

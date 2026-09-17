@@ -11,11 +11,11 @@ parser: v2
 
 
 # Create a Filter in an Action Project
-<!-- description --> Create a filter in an action project to simplify the use of the OData service in Joule Studio.
+<!-- description --> Create a filter in an action project to simplify the use of the OData service in Joule Studio, classic edition.
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- Access to an SAP BTP tenant configured for Joule and Joule Studio, classic edition. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 - You have [created and configured the action projects](joulestudio-skill-action-create)
 
@@ -38,7 +38,6 @@ parser: v2
 4. Choose **…** by the **Published to Library** version, then choose **Save As New Project**.
 
 
-    <!-- border -->
     ![Actions save as new project](joulestudio-skill-action1.png)
 
 5. Enter:
@@ -47,26 +46,22 @@ parser: v2
 
 6. Choose **Save As New**.
 
-    <!-- border -->
     ![Save as new project popup](joulestudio-skill-action2.png)
 
 7. Choose the new project.
 
-    <!-- border -->
     ![Actions](joulestudio-skill-action3.png)
 
 8. Choose the **GET Retrieves business partner general data** action.
 
 9. On the **Input** tab, choose **Add**.
 
-    <!-- border -->
     ![Actions add input](joulestudio-skill-action4.png)
 
 10. Choose **New Field**.
 
 11. Enter **`FirstName`** as the **Key** and the **Label**, then choose **Add**.
 
-    <!-- border -->
     ![Actions add new field](joulestudio-skill-action5.png)
 
 
@@ -74,12 +69,10 @@ parser: v2
 
 13. In the side panel **$filter**, choose the **Value** field to open the **Condition Editor**.
 
-    <!-- border -->
     ![Filter popup](joulestudio-skill-action7.png)
 
 14. For **Column**, **Condition**, and **Criteria**, select **`FirstName`**, **`equal to`**, and **`${FirstName}`** respectively. Then choose choose **OK**.
 
-     <!-- border -->
      ![Condition Editor](joulestudio-skill-action9.png)
 
 
@@ -87,12 +80,10 @@ parser: v2
 
 16. Enter **`Jane`** in the **FirstName** field, then choose **Test**.
 
-     <!-- border -->
      ![Actions test](joulestudio-skill-action12.png)
 
 17. Choose **Save**, then **Release**, and finally **Publish**.
 
-     <!-- border -->
      ![Actions published](joulestudio-skill-action13.png)
 
 
@@ -101,34 +92,29 @@ parser: v2
 
 1. Go to the **SAP Build Lobby**
 
-    <!-- border -->
     ![Lobby](joulestudio-skill-skill1.png)
 
 
 2. Choose **Create**.
 
-    <!-- border -->
     ![Create Project](joulestudio-skill-skill2.png)
 
 3. Choose **Joule Skill**, then choose **Next**.
 
 4. Enter name **`SearchWithName`** and description **`Uses an Action containing a mapped condition to filter on the FirstName.`**.
 
-    <!-- border -->
     ![Create Project](joulestudio-skill-skill3.png)
 
 5. Choose **Review**, then choose **Create**.
 
-6. In Joule Studio, choose **Create** **>** **Joule Skill**.
+6. In Joule Studio classic, choose **Create** **>** **Joule Skill**.
 
-    <!-- border -->
     ![Joule Studio](joulestudio-skill-skill6.png)
 
 7. Enter:
     - **`SearchWithFirstName`** for **Name**.
     - **`Retrieve information about employees with a given first name. Usually John or Jane is used`** for **Description**.
 
-    <!-- border -->
     ![Create Joule Skill popup](joulestudio-skill-skill7.png)
 
 8. Choose **Create**.
@@ -137,24 +123,20 @@ parser: v2
 
 10. Enable **Allow Joule to generate a response**.
 
-    <!-- border -->
     ![Joule Studio generate responses](joulestudio-skill-skill10.png)
 
 11. Choose **Parameters**, then choose **Configure** beside **Skill Inputs**.
 
-    <!-- border -->
     ![Joule Studio parameters](joulestudio-skill-skill10c.png)
 
 12. Choose **Add Input**. Enter **`FirstName`** for **Name**, **`First name of employee`** for **Description**, and select **Required**.
 
-    <!-- border -->
     ![Joule Studio configure skill inputs](joulestudio-skill-skill12.png)
 
 13. Choose **Apply**
 
 14. Choose **Configure** beside **Skill Outputs**.
 
-    <!-- border -->
     ![Joule Studio parameters](joulestudio-skill-skill12c.png)
 
 15. Choose **Add Output**
@@ -165,7 +147,6 @@ parser: v2
     - **Type** **`Any`**
     - **List** **`Select`**
 
-    <!-- border -->
     ![Joule Studio configure skill outputs](joulestudio-skill-skill12b.png)
 
 17. Choose **Apply**.
@@ -176,17 +157,14 @@ parser: v2
 
 1. Choose the **+**.
 
-    <!-- border -->
     ![Joule Studio select action](joulestudio-skill-skill14.png)
 
 2. Choose **Action**.
 
-    <!-- border -->
     ![Joule Studio browse actions](joulestudio-skill-skill15.png)
 
 3. Choose **Browse All Actions**.
 
-    <!-- border -->
     ![Joule Studio add action](joulestudio-skill-skill16.png)
 
 4. Select the **GET Retrieves business partner general data** action of the project **FilterBusinessPartners** and choose **Add** beside it. 
@@ -195,7 +173,6 @@ parser: v2
 
 6. Enter **`S4HANA_MOCK`** and **`BusinessPartner API`**, followed by **Create**.
 
-    <!-- border -->
     ![Joule Studio destination variable](joulestudio-skill-skill17.png)
 
 7. Select the destination variable.
@@ -206,12 +183,10 @@ parser: v2
 
 10. Choose **FirstName** in the **Skill Content** pane to map to the selected **FirstName** field.
 
-    <!-- border -->
     ![Joule Studio map input](joulestudio-skill-skill20.png)
 
 11. Choose the **Outputs** tab just to see the output.
 
-    <!-- border -->
     ![Joule Studio outputs](joulestudio-skill-skill21.png)
 
 12. Close the pane and choose **Save**.
@@ -224,7 +199,6 @@ parser: v2
 
 22. Choose **{..} list - results**.
 
-    <!-- border -->
     ![Joule Studio configure end](joulestudio-skill-skill22.png)
 
 23. Choose **Save**.
@@ -235,26 +209,22 @@ parser: v2
 
 1. Choose **Release**.
 
-    <!-- border -->
     ![Joule Studio release](joulestudio-skill-release2.png)
 
 2. Choose **Release**.
 
-    <!-- border -->
     ![Joule Studio show project version](joulestudio-skill-release3.png)
 
 3. Choose **Show project version**, to change to the released version.
 
 4. Choose **Deploy**.
 
-    <!-- border -->
     ![Joule Studio deploy](joulestudio-skill-deploy1.png)
 
 5. Select your environment and choose **Deploy**.
 
 6. Select your **S4HANA_MOCK** destination and choose **Deploy**.
 
-    <!-- border -->
     ![Joule Studio deployed](joulestudio-skill-deploy2.png)
 
 
@@ -267,30 +237,25 @@ parser: v2
 
 4. Choose the **Joule** tab.
 
-    <!-- border -->
     ![Environment](joulestudio-skill-test5.png)
 
 5. Choose **Launch**.
 
-    <!-- border -->
     ![Joule conversation](joulestudio-skill-test6.png)
 
 6. Choose **New Conversation**.
 
 7. Enter **`I am at the front desk in the reception area. A person claiming to be an employee is here. Can you check if Jane is in the system?`** 
 
-    <!-- border -->
     ![Joule conversation prompt](joulestudio-skill-test8.png)
 
 
 8. Choose **Send**.
 
-    <!-- border -->
     ![Joule conversation message](joulestudio-skill-test9.png)
 
 9. Enter **`Thanks, I meant you to check if John is in the system.`**, then choose **Send**.
 
-    <!-- border -->
     ![Joule conversation](joulestudio-skill-test10.png)
 
 10. You can select any of the employees in the list to see their details.

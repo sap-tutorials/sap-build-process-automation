@@ -52,7 +52,7 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 1. Under the **Automation Details** panel, create an **Input parameter** called **Sales Order ID** of type **String**.
 
-    <!-- border -->![Input parameter Automation](01-input-parameter.png)
+    ![Input parameter Automation](01-input-parameter.png)
 
 2. Now drag and drop the activity **Custom script**.
 
@@ -67,21 +67,21 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 4. Add the code to retrieve the sales order details for a particular sales order.
 
-    ```
-    let url = "/sap/opu/odata/iwbep/GWSAMPLE_BASIC/SalesOrderSet('" + SalesOrderNumber + "')";
+   ```
+   let url = "/sap/opu/odata/iwbep/GWSAMPLE_BASIC/SalesOrderSet('" + SalesOrderNumber + "')";
 
-    return {
-      'method': 'GET',
-      'url': url ,
-      'responseType':'json', // parse the body of the result as a JSON object
-      'resolveBodyOnly':true // get only the body of the response
-    };
-    ```
-    <!-- border -->![Custom script](6.png)
+   return {
+     'method': 'GET',
+     'url': url ,
+     'responseType':'json', // parse the body of the result as a JSON object
+     'resolveBodyOnly':true // get only the body of the response
+   };
+   ```
+    ![Custom script](6.png)
 
 5. Now link the **Input parameter** of the automation **Sales Order ID** to the **Input parameter** of the Custom script **Sales Order Number**.
 
-    <!-- border -->![Input parameter Custom script](02-input-parameter.png)
+    ![Input parameter Custom script](02-input-parameter.png)
 
 4. Drag and drop the activity **Call Web Service with Destination**.
 
@@ -91,17 +91,17 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 6. Choose **Save**.
 
-    <!-- border -->![Call Webservice](7.png)
+    ![Call Webservice](7.png)
 
 7. Now add an activity **Log Message**.
 
 8. Link the **Input parameter** message of the **Log Message** activity to the **Output parameter** of the **Call Web Service with Destination** activity to see the results.
 
-    <!-- border -->![Log Message](8.png)
+    ![Log Message](8.png)
 
 9. **Save** the automation. The final automation looks as below.
 
-    <!-- border -->![Automation](9.png)
+    ![Automation](9.png)
 
 
 ### Release and Deploy the Business Process
@@ -115,7 +115,7 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 3. Enter the values as shown below.
 
-    <!-- border -->![Deploy](deploy.png)
+    ![Deploy](deploy.png)
 
 
 ### Test the automation
@@ -123,11 +123,11 @@ You will now build an automation to retrieve sales order details from SAP backen
 
 1. Test the automation with the below input data.
 
-    <!-- border -->![Test Automation](Test_Automation.png)
+    ![Test Automation](Test_Automation.png)
 
 2. You can see the results of the testing with the sales order details of the sales order you selected.
 
-    <!-- border -->![Results](results.png)
+    ![Results](results.png)
 
     Now the automation is ready and can be added to your process by adding Output parameters for the automation.
 

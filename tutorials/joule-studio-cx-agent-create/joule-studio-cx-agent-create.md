@@ -47,7 +47,6 @@ Sales Representatives want an AI assistant to suggest 2–3 ranked discount stra
 
     If you do not see the tiles, choose **<> Develop**.
 
-    <!-- border -->
     ![Joule Work](joule-work-01.png)  
 
 2. On the **Agent** tile, choose **Create**.
@@ -57,19 +56,18 @@ Sales Representatives want an AI assistant to suggest 2–3 ranked discount stra
 
     Agent Name: 
     
-    ```COPY
-    AI Sales Assistant
-    ```
+   ```COPY
+   AI Sales Assistant
+   ```
 
     Intent statement: 
     
-    ```COPY
-    AI-powered discount strategy suggestion agent that analyzes customer orders and margin targets from SAP S/4HANA SD, providing sales reps with contextualized discount recommendations.
-    ```
+   ```COPY
+   AI-powered discount strategy suggestion agent that analyzes customer orders and margin targets from SAP S/4HANA SD, providing sales reps with contextualized discount recommendations.
+   ```
 
     Select **Quick create**.
 
-    <!-- border -->
     ![Joule Work](joule-work-02.png)
 
     Quick-create will allow you to experience the power of the tool without investing much time.
@@ -78,7 +76,6 @@ Sales Representatives want an AI assistant to suggest 2–3 ranked discount stra
 
     In the panel on the right, you can see that your intent statement has been taken as the starting prompt. Quick create has added **Fast Track** to the prompt.
 
-    <!-- border -->
     ![Joule Work](joule-work-03.png)
 
 
@@ -94,7 +91,6 @@ Once it decides it understands enough, it will map the challenge to SAP's Refere
     The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that the landscape has S/4HANA as a backend so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution. The screenshot below is just an indication of what you might see. Joule might provide a selection of answers that you can choose from.
 
 
-    <!-- border -->
     ![Joule Work](joule-work-04.png)
 
 
@@ -105,7 +101,6 @@ Once the intent document is created, proceed to the next phase, which is require
 
     While the requirements are being generated, you can explore the intent on the **Idea Board**.
 
-    <!-- border -->
     ![Idea Board](idea-board-01.png)
 
 
@@ -120,14 +115,12 @@ Depending on your role in your company, you might be finished at this point and 
 
     While the specification is being generated, you can explore the **Requirement**.
 
-    <!-- border -->
     ![Requirement](requirement-01.png)
 
 
 
     In particular, look at the **Solution Architecture** section to see what will be created.
 
-    <!-- border -->
     ![Requirement](requirement-02.png)
 
 ### Specification
@@ -140,7 +133,6 @@ When the specification is complete you could pass it on to another team to do th
 
     While the solution is being generated, you can explore the **Specification**.
 
-    <!-- border -->
     ![Requirement](specification-01.png)
 
 ### Solution and Testing
@@ -151,13 +143,11 @@ Wait until the unit tests are finished successfully. You can then try out your a
 
 10. Go to **Solution** and try your agent. What you can do will depend on what has been implemented.
 
-    <!-- border -->
     ![Requirement](solution-01.png)
 
 
 11. Ask **`How can I use this solution?`**.
 
-    <!-- border -->
     ![Requirement](solution-02.png)
 
 

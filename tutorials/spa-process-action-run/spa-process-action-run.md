@@ -21,7 +21,7 @@ parser: v2
 
 1. From the deployed version of the project, click **Order Processing** process from list of **Artifacts**.
 
-    <!-- border -->![Run Process](RunProcess-01b.png)
+    ![Run Process](RunProcess-01b.png)
 
 2. In the process builder:
    
@@ -29,7 +29,7 @@ parser: v2
     - Copy the **Form Link**.
     - Open it in new browser tab/window.
 
-    <!-- border -->![Run Process](RunProcess-01a.png)
+    ![Run Process](RunProcess-01a.png)
 
 
 3. Fill the form with following details and click **Submit**.
@@ -53,29 +53,29 @@ parser: v2
 
     > The sales order information in the form has to be filled based on the available business object values in the backend system such that the sales order gets created successfully in S/4HANA system.
 
-    <!-- border -->![Run Process](RunProcess-02.png)
+    ![Run Process](RunProcess-02.png)
 
 ### Monitor sales order approval process
 
 1. Return to the lobby and select **Monitoring** then choose **Process and Workflow Instances** under **Monitor** to monitor the process execution.
 
-    <!-- border -->![Run Process](RunProcess-03.jpg)
+    ![Run Process](RunProcess-03.jpg)
 
 2. In process instance detail page, select your process instance to inspect the instance details.
 
     - Look at the **Context** section. In the context, you will see the order details that you entered in the form.
 
-    <!-- border -->![Run Process](RunProcess-04a.png)
+    ![Run Process](RunProcess-04a.png)
 
     - Go to **Logs** and you will see that the user task is waiting to be approved.
 
-    <!-- border -->![Run Process](RunProcess-05.png)
+    ![Run Process](RunProcess-05.png)
 
 ### Approve sales order from MyInbox
 
 1. Open `MyInbox` application from top-right corner of the screen.
 
-    <!-- border -->![Run Process](RunProcess-05a.png)
+    ![Run Process](RunProcess-05a.png)
 
 2. In `MyInbox` application, you will see a new task **Review and Approve order** with the given purchase order number in your inbox.
 
@@ -88,7 +88,7 @@ parser: v2
 
     - Click **Approve**.
 
-    <!-- border -->![Run Process](RunProcess-06.png)
+    ![Run Process](RunProcess-06.png)
 
 3. As per the process, once you approve the sales order - an explicit notification task is sent to the approver to inform him of the approval with the comment from the supplier.
 
@@ -99,7 +99,7 @@ parser: v2
 
     - Click **Submit** to acknowledge the response from the supplier.
 
-    <!-- border -->![Run Process](RunProcess-07.png)
+    ![Run Process](RunProcess-07.png)
 
 
 ### Check action log
@@ -109,7 +109,7 @@ parser: v2
     - **Refresh** the logs from top-right corner of the screen.
     - You will see the log entry for **Action** execution which informs you that a POST API for Sales Order has been executed, with the given destination configuration.
 
-    <!-- border -->![Run Process](RunProcess-08.png)
+    ![Run Process](RunProcess-08.png)
 
 2. Now click to open **Context** tab.
 
@@ -118,7 +118,7 @@ parser: v2
     - Copy this `SalesOrder` number from the output to validate it in
       SAP S/4HANA system.
 
-    <!-- border -->![Run Process](RunProcess-09.png)
+    ![Run Process](RunProcess-09.png)
 
 
 You've successfully built and executed an automated sales order approval process where the sales order is created in the backend S/4HANA Cloud system once the approval is done.
@@ -138,20 +138,20 @@ To retrieve this sample, please follow these steps:
    
 3. Choose **Create from Template** to retrieve the sample and save it as a new project in your lobby.
 
-    <!-- border -->![Store](store.png)
+    ![Store](store.png)
 
 4. Choose **Create**.
 
-    <!-- border -->![Create](create.png)
+    ![Create](create.png)
 
     Your project gets created in editable version. You may release and deploy it and run the project.
     
 5. Navigate back to the lobby by clicking on the SAP logo.
   
-    <!-- border -->![Project](proj.png)
+    ![Project](proj.png)
 
     You can see your project is available in the lobby.
   
-    <!-- border -->![Lobby](lobby.png)
+    ![Lobby](lobby.png)
 
 ---

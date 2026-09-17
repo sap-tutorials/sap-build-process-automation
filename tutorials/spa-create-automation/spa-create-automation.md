@@ -59,15 +59,15 @@ In this exercise, you will automate the process to read the **sales order** deta
     - Select the process **Order Processing**.
     - Choose **+**.
 
-    <!-- border -->![001](001a.png)
+    ![001](001a.png)
 
 2. Select **Automation**.
    
-    <!-- border -->![001](001b.png)
+    ![001](001b.png)
 
 3. Choose **Blank Automation**.
 
-    <!-- border -->![001](001c.png)
+    ![001](001c.png)
 
 4. A pop up will appear to configure the Desktop Agent version. Do the following in the pop up:
 
@@ -75,7 +75,7 @@ In this exercise, you will automate the process to read the **sales order** deta
     - Under **Platforms**, choose **Windows** or **Mac** depending on the Platforms you are working on.
     - Choose the **Confirm** button.
 
-    <!-- border -->![001](002a.png)
+    ![001](002a.png)
 
 5. A new pop-up will appear to create the automation. Do the following in the pop-up:
 
@@ -85,11 +85,11 @@ In this exercise, you will automate the process to read the **sales order** deta
 
     > Identifier will be auto-filled.
 
-    <!-- border -->![001](003.png)
+    ![001](003.png)
 
     An automation **Get Order Details** will be created successfully.
 
-    <!-- border -->![001](004.png)
+    ![001](004.png)
 
 
 ### Create environment variable
@@ -101,11 +101,11 @@ Business projects usually need to use parameters and variables at runtime. These
 
 1. Select **Settings**.
 
-    <!-- border -->![001](005.png)
+    ![001](005.png)
 
 2. In the Project Properties window, select **Environment Variables**, then **+ Create**.
 
-    <!-- border -->![001](006.png)
+    ![001](006.png)
 
 3. In the create an environment variable screen:
 
@@ -113,11 +113,11 @@ Business projects usually need to use parameters and variables at runtime. These
     - Under Type select **String**.
     - Choose the **Create** button.
 
-    <!-- border -->![001](007.png)
+    ![001](007.png)
 
 4. After the Environment Variable is created successfully, **close** the project properties window.
 
-    <!-- border -->![001](008.png)
+    ![001](008.png)
 
 
 
@@ -128,7 +128,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
 
 1. Select three dots next to **Get Order Details**, choose **Open Editor**, which navigates to the Design Studio to build the automation.
 
-    <!-- border -->![001](009.png)
+    ![001](009.png)
 
     > Since Excel is used in this automation, you have to open an Excel instance. Open Excel Instance is a mandatory activity to use when using Excel. Once you open an Excel instance, you can use other Excel activities.
 
@@ -136,7 +136,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
     -  In the Automation Details section on the right, search for the **Open Excel Instance** activity,
     -  **Drag and drop** the activity into the canvas.
 
-    <!-- border -->![001](010.png)
+    ![001](010.png)
 
     > Next, Excel Data Mapping is done with the Excel Cloud Link activity. Excel Data Mapping allows you to transform columns-based data from an Excel sheet into data that can be used in the automation. The data from the Excel sheet stays the same but the structure becomes a data type structure, making it possible to use throughout your project.
 
@@ -145,49 +145,49 @@ You will now design the automation in the Automation Editor by dragging-and-drop
     -  In the Automation Details search for the activity **Excel Cloud Link**,
     -  Drag and drop the activity into the canvas.
 
-    <!-- border -->![001](011.png)
+    ![001](011.png)
 
 4. Select Excel Cloud Link, in the details on the right side, choose the **Edit activity** button.
 
-    <!-- border -->![001](012.png)
+    ![001](012.png)
 
 5. In the Excel File screen:
     - Select **Browse**.
     - Choose the **Orders.xlsx** file which is saved on your machine.
 
-    <!-- border -->![001](013.png)
+    ![001](013.png)
 
     > The Excel file is mapped automatically.
 
 6.  In the Workbook Path field enter the Environment Variable as `OrderFilePath`, which was created above as the parameter value for **Workbook path**.
 
-    <!-- border -->![001](014.png)
+    ![001](014.png)
 
 7. Select the button **+ From Excel data**.
 
-    <!-- border -->![001](015.png)
+    ![001](015.png)
 
     > A pop up appears to create a data type. A **Sales Order** variable is needed to collect the data from the Excel sheet columns. In this step, a variable is automatically created from the Excel file columns.
 
 8. Under Name of the data type, enter **Sales Order** and choose the **Create** button.
 
-    <!-- border -->![001](016.png)
+    ![001](016.png)
 
     > Framework creates a data type with the columns of the Excel as the field names. You can see it in the Artifacts section in the Overview tab.
 
-    <!-- border -->![001](017.png)
+    ![001](017.png)
 
 9. Go to **Get Order Details** automation. In **Excel Cloud Link** activity on the right side, under Output Parameters, manually change the variable name to **Orders**.
 
-    <!-- border -->![001](018.png)
+    ![001](018.png)
 
 10. Close the activity.
 
-    <!-- border -->![001](019.png)
+    ![001](019.png)
 
 11. Click on the canvas.
 
-    <!-- border -->![001](020.png)
+    ![001](020.png)
 
     >Once Excel is no longer required, close the Excel instance. Close Excel Instance activity closes an instance of Excel.
 
@@ -195,7 +195,7 @@ You will now design the automation in the Automation Editor by dragging-and-drop
     - In the Automation Details search for the activity **Close Excel Instance**.
     - Drag and drop the activity into the canvas and save your automation.
 
-    <!-- border -->![001](021.png)
+    ![001](021.png)
     
 
 ### Add input and output parameters
@@ -205,21 +205,21 @@ Input and output parameters allow you to exchange data in the workflow of your a
 
 1. Click on the canvas and select the **Input/Output** section in Automation Details.
 
-    <!-- border -->![001](023.png)
+    ![001](023.png)
 
 2. Add Input parameters as following:
     - In Parameter Name enter: `OrderNumber`.
     - In Description enter: **Receives order number from the Order Processing Form**.
     - In Data type choose: **String**.
 
-    <!-- border -->![001](024.png)
+    ![001](024.png)
 
 3. Add Output parameters as following:
     - In Parameter Name enter: `SelectedOrder`.
     - In Description enter: **Selected order details are passed to the Process**.
     - In Data type choose: **Sales Order**.
 
-    <!-- border -->![001](025.png)
+    ![001](025.png)
 
 4. Save your work.
 
@@ -233,13 +233,13 @@ Variables that are used, build your automation, and are data storage that have a
     - Search for the **Sales Order** data type (created in the previous step).
     - Drag and drop the **Sales Order** data type into the canvas.
 
-    <!-- border -->![001](026.png)
+    ![001](026.png)
 
     > A variable of the data type **Sales Order** is created.
 
 2. Select **Create Sales Order variable**. Under Output Parameters enter the value as `selectedOrderDetails`.
 
-    <!-- border -->![001](027.png)
+    ![001](027.png)
 
 3. Save your work.
 
@@ -259,11 +259,11 @@ This control has the following loop parameters:
     - In Automation Details search for the control **For Each**.
     - Drag and Drop the activity into the canvas.
 
-    <!-- border -->![001](028.png)
+    ![001](028.png)
 
 2. Select **For Each** activity, enter the value of Set looping List as **Orders**.
 
-    <!-- border -->![001](029.png)
+    ![001](029.png)
 
     > To match the desired order, a control activity has to be added to search for a match to its order number. The **Condition** activity is the activity that you will add. In this condition, you will check if the order number entered in the **Form** is available in data read from Excel in **Step 2**.
 
@@ -272,17 +272,17 @@ This control has the following loop parameters:
     - In Automation Details search for the activity **Condition**.
     - Drag and Drop the activity inside the **For Each** block.
 
-    <!-- border -->![001](030.png)
+    ![001](030.png)
 
 4.  Choose **Condition**, select three dots next to Condition Expression field, select **Edit Formula**.
 
-    <!-- border -->![001](031.png)
+    ![001](031.png)
 
 5.  A pop up window appears to enter the condition expression:
     - You can enter this expression manually or you can expand the **Variables** list and select the given variables to form the expression: `Step0.OrderNumber === Step5.currentMember.orderNumber`.
     - Select the **Save Expression** button.
 
-    <!-- border -->![001](032.png)
+    ![001](032.png)
 
     > If the order number is found in Excel, i.e. the condition is **True**, set the variable using **Set Variable Value** activity that is a **Data Management** activity.
 
@@ -291,14 +291,14 @@ This control has the following loop parameters:
     - In Automation Details search for the activity **Set Variable Value**.
     - Drag and Drop the activity into the canvas below the condition you set.
 
-    <!-- border -->![001](033.png)
+    ![001](033.png)
 
 7. Select **Set Variable Value**. In the configuration screen on the right, do the following:
 
     - In the variable field enter `selectedOrderDetails`.
     - In the value field enter `currentMember`.
 
-    <!-- border -->![001](034.png)
+    ![001](034.png)
 
     > Once the order number is found in the Excel, use the control **End Loop** to stop the loop.
 
@@ -307,14 +307,14 @@ This control has the following loop parameters:
     - In Automation Details search for the activity **Loop End**,
     - Drag and Drop the activity into the canvas just below the **Set Variable Value**.
 
-    <!-- border -->![001](035.png)
+    ![001](035.png)
 
 
 9. Use **Log Message** activity to print your results. To add Log Message:
      - In Automation Details search for the activity **Log message**,
      - Drag and Drop the activity into the canvas outside the **For Each** loop.
 
-    <!-- border -->![001](036.png)
+    ![001](036.png)
 
 10. Use the activity to check `selectedOrderDetails` in testing mode. To do that:
     - Select **Log Message**,
@@ -332,23 +332,23 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
     - In the configuration screen on the right, under the Output Parameter, in the `SelectedOrder` field enter `selectedOrderDetails`.
     - **Save** the Automation.
 
-    <!-- border -->![001](037.png)
+    ![001](037.png)
 
     > Make sure to add the steps **Condition**, **Set Variable Value**, **End Loop** inside the **For Each** block.
 
 2. The complete **Get Order Details** automation looks as below.  
 
-    <!-- border -->![001](038.png)
+    ![001](038.png)
 
     Now you will map the Automation Parameters with the Form Parameters.
 
 3. Select **Order Processing** process. Choose **Get Order Details** automation in the process.
 
-    <!-- border -->![001](039.png)
+    ![001](039.png)
 
 4. In Get Order Details, map the input parameter `OrderNumber` of the automation  with the **Order Number** of Order Processing Form.
 
-    <!-- border -->![001](040.png)
+    ![001](040.png)
 
 5. Choose the **Save** button.
 
@@ -358,7 +358,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
 1. Navigate back to the automation **Get Order Details** and choose the **Test** button.
 
-    <!-- border -->![001](042.png)
+    ![001](042.png)
 
 2. In the **Test Automation** window, enter the parameters to test the Automation:
 
@@ -369,7 +369,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
 
     Select **Test** button.
 
-    <!-- border -->![001](043.png)
+    ![001](043.png)
 
 3. Test Results:
 
@@ -380,7 +380,7 @@ Apart from creating an output parameter, it is mandatory to pass the data throug
     - Ends the looping.
     - Prints the selected order details.
 
-    <!-- border -->![001](044.png)
+    ![001](044.png)
 
 
 
@@ -393,7 +393,7 @@ After the design of the automation that retrieves the data form the Excel file, 
     - Select three dots next to **Order Processing Form**.
     - Select **Open Editor**.
 
-    <!-- border -->![001](045.png)
+    ![001](045.png)
 
 2. In the form delete following inputs by selecting the 3 dots next to each input menu and selecting **Delete**:
     - Order Amount.
@@ -401,11 +401,11 @@ After the design of the automation that retrieves the data form the Excel file, 
     - Expected Delivery Date.
     - Shipping Country.
 
-    <!-- border -->![001](046.png)
+    ![001](046.png)
 
 3. **Save** the Form, close the Form Editor and go back to the Order Processing tab.
 
-    <!-- border -->![001](047.png)
+    ![001](047.png)
 
 
 
@@ -416,7 +416,7 @@ Since you have created an automation **Get Order Details** to collect `Order Amo
 
 1. Click on **Condition** and choose **Open Condition Editor**.
 
-    <!-- border -->![001](053.png)
+    ![001](053.png)
 
 2. In the **Edit Branch Condition**, select conditions :
    
@@ -428,7 +428,7 @@ Since you have created an automation **Get Order Details** to collect `Order Amo
 
     Choose **Apply** to add the condition to the business process.
 
-    <!-- border -->![Process Condition](054.png)
+    ![Process Condition](054.png)
 
 
 
@@ -437,33 +437,33 @@ Since you have created an automation **Get Order Details** to collect `Order Amo
 
 The different Forms of the process will need Inputs mapping from the automation Outputs.
 
-<!-- border -->![001](048.png)
+![001](048.png)
 
 1. Select the **Auto Approval Notification** and go to the Inputs :
    
     - In the **Order Amount** field, choose the `orderAmount` from the Automation outputs.
     - In the **Expected Delivery Date** field, choose `expectedDeliveryDate` from the Automation outputs.
 
-    <!-- border -->![001](055.png)
+    ![001](055.png)
 
 2. Select the **Approval Form** and go to the Inputs :
     
     - In the **Order Amount** field, choose the `orderAmount` from the Automation outputs.
     - In the **Expected Delivery Date** field, choose `expectedDeliveryDate` from the Automation outputs.
 
-    <!-- border -->![001](049.png)
+    ![001](049.png)
 
 3. Do the same for the **Order Confirmation Notification**.
 
-    <!-- border -->![001](050.png)
+    ![001](050.png)
 
 4. Do the same for the **Order Rejection Notification**.
 
-    <!-- border -->![001](051.png)
+    ![001](051.png)
 
 5. **Save** the Process.
 
-    <!-- border -->![001](052.png)
+    ![001](052.png)
 
 You have successfully completed creating an automation in your process.
 

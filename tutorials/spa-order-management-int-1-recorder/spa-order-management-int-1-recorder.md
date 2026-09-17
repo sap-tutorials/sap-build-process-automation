@@ -31,27 +31,27 @@ Navigate to SAP Build Process Automation tenant to create a new project for this
 
 1.  In the **SAP Build** Lobby, select **Create**.
 
-    <!-- border -->![007_CreateProject](images/1.png)
+    ![007_CreateProject](images/1.png)
 
 2.  Select **Build an Automated Process**.
 
-    <!-- border -->![007_CreateProject](images/2.png)
+    ![007_CreateProject](images/2.png)
 
 3.  Select **Task Automation**.
 
-    <!-- border -->![008_NameProject](images/3.png)
+    ![008_NameProject](images/3.png)
 
 4.  Enter the Project Name as **Order Management Using Recorder** and select **Create**.
 
-    <!-- border -->![009_NewProjectHome](images/4.png)
+    ![009_NewProjectHome](images/4.png)
 
 5.  Once the project opens in a new tab, select your agent version in the Configure agent version dialog box and select **Confirm**.
 
-    <!-- border -->![009_NewProjectHome](images/5.png)
+    ![009_NewProjectHome](images/5.png)
 
 6.  In the Create Automation dialog box, select **Cancel**.
 
-    <!-- border -->![009_NewProjectHome](images/6.png)
+    ![009_NewProjectHome](images/6.png)
 
 ### Screen recording
 
@@ -68,32 +68,32 @@ You will use these screens and elements in the automation later.
 
 2.  In the project window, click the **Create** button and then select the **Application** artifact from the artifact menu.
 
-    <!-- border -->![010_CreateApplication](images/7.png)
+    ![010_CreateApplication](images/7.png)
 
 4.  In the Create Application dialog box, enter the Application Name as **Orders Management** and select **Create**.
 
-    <!-- border -->![009_NewProjectHome](images/8.png)
+    ![009_NewProjectHome](images/8.png)
 
 3.  Select the screen named **Browse Orders**. This is your SAPUI5 application.
 
-    <!-- border -->![011_SelectApplication](images/9.png)
+    ![011_SelectApplication](images/9.png)
 
 
 4.  Choose **Next**.
 
-    <!-- border -->![013_UI5_record](images/10.png)
+    ![013_UI5_record](images/10.png)
 
 4.  Make sure the Type is set to Recorder and select **Record**.
 
-    <!-- border -->![009_NewProjectHome](images/11.png)
+    ![009_NewProjectHome](images/11.png)
 
 5. The **Browse Orders** application opens and the recording controls appear.
 
-    <!-- border -->![014_UI5_start](images/12.png)
+    ![014_UI5_start](images/12.png)
 
     > **CAUTION**: If the window with recording controls is not fully visible, click and hold on the drag section (refer to the following screenshot) and move the window. Release the left mouse button to finish.
 
-    <!-- border -->![015_UI5_recorder_window](images/13.png)
+    ![015_UI5_recorder_window](images/13.png)
 
 ### Record application
 
@@ -101,47 +101,47 @@ Now, you will record your first step.
 
 1.  Click the **Record** button. Recording starts and your first screen is captured as shown in the following screenshot.
 
-    <!-- border -->![016_UI5_first](images/14.png)
+    ![016_UI5_first](images/14.png)
 
 2.  Click on the search box in the SAPUI5 application window, type **Bottom-** and click the **Search** button. **Order 2686** appears and the new step is displayed in the recorder window as shown in the following screenshot.
 
-    <!-- border -->![017_UI5_second](images/15.png)
+    ![017_UI5_second](images/15.png)
 
 3.  Now, click the **Capture** button.
 
-    <!-- border -->![018_UI5_recorder_window_capture_button](images/16.png)
+    ![018_UI5_recorder_window_capture_button](images/16.png)
 
     You will see a second line is added to the recording steps.
 
-    <!-- border -->![019_UI5_recorder](images/17.png)
+    ![019_UI5_recorder](images/17.png)
 
 4.  Choose **Order 2686**.
 
-    <!-- border -->![020_UI5_step](images/18.png)
+    ![020_UI5_step](images/18.png)
 
     After the click, your screen must look like the following screenshot:
 
-    <!-- border -->![021_UI5_result](images/19.png)
+    ![021_UI5_result](images/19.png)
 
 5. Click again the **Capture** button.
 
-    <!-- border -->![022_UI5_recorder_window_capture_button](images/16.png)
+    ![022_UI5_recorder_window_capture_button](images/16.png)
 
     Your screen must look like the following screenshot:
 
-    <!-- border -->![023_UI5_result](images/20.png)
+    ![023_UI5_result](images/20.png)
 
 6.  Click the **Stop** button.
 
-    <!-- border -->![024_UI5_step](images/21.png)
+    ![024_UI5_step](images/21.png)
 
 7.  Click the **Export** button in the recorder window to finish the capturing activity.
 
-    <!-- border -->![025_UI5_step](images/22.png)
+    ![025_UI5_step](images/22.png)
 
     Wait until the recording is saved. The SAP Build Process Automation project opens with new automation steps that have been recorded using Recorder.
 
-    <!-- border -->![026_UI5_result](images/23.png)
+    ![026_UI5_result](images/23.png)
 
 ### Test application
 
@@ -149,15 +149,15 @@ Now, you can test the automation. This step is optional, however it is highly re
 
 1.  Close the SAPUI5 application (in a separate window) and click the **Test** button.
 
-    <!-- border -->![027_UI5_test](images/24.png)
+    ![027_UI5_test](images/24.png)
 
 2.  Click the **Test** button.
 
-    <!-- border -->![028_UI5_start_test](images/25.png)
+    ![028_UI5_start_test](images/25.png)
 
 3.  Wait until the package is generated and all **SDK**s are downloaded. You will see that the SAPUI5 application opens in a separate window, all steps are executed and the window gets closed. Test results are shown on the screen.
 
-    <!-- border -->![029_UI5_test_result](images/26.png)
+    ![029_UI5_test_result](images/26.png)
 
 
 
@@ -172,7 +172,7 @@ You do not have anything to declare for your first screen because the screen rec
 
 2.  Select **Capture 1** screen and change the name to **Order List Screen** then press enter.
 
-    <!-- border -->![031_capture_1](images/27.png)
+    ![031_capture_1](images/27.png)
 
 
 ### Adjust second screen
@@ -180,7 +180,7 @@ You do not have anything to declare for your first screen because the screen rec
 
 You will rename the second screen from **Capture 2** to **Search Result Screen**.
 
-<!-- border -->![032_capture_2](images/28.png)
+![032_capture_2](images/28.png)
 
 Next, you will rename elements on the second screen.
 
@@ -196,7 +196,7 @@ Next, you will rename elements on the second screen.
 
 6. Select **Declare Element**.
 
-    <!-- border -->![033_SelectResultItem](images/29.png)
+    ![033_SelectResultItem](images/29.png)
 
 
 ### Adjust third screen
@@ -204,7 +204,7 @@ Next, you will rename elements on the second screen.
 
 Rename the last screen from **Capture 3** to **Order Details Screen**.
 
-<!-- border -->![034_capture_3](images/30.png)
+![034_capture_3](images/30.png)
 
 Now, you need to define some new elements of the third screen that you will use in your automation to get the data from the screen.
 
@@ -218,7 +218,7 @@ Now, you need to define some new elements of the third screen that you will use 
 
     Don't choose **Declare Element** yet.
 
-    <!-- border -->![035_SelectOrder](images/31.png)
+    ![035_SelectOrder](images/31.png)
 
     As you previously did, you are going to adjust the criteria.
 
@@ -230,11 +230,11 @@ Now, you need to define some new elements of the third screen that you will use 
 
 7.  Click **Apply**.
 
-    <!-- border -->![036_AdjustOrderCriteria](images/32.png)
+    ![036_AdjustOrderCriteria](images/32.png)
 
 8.  Click **Declare Element**.
 
-    <!-- border -->![037_AdjustOrderCriteria-Declare](images/33.png)
+    ![037_AdjustOrderCriteria-Declare](images/33.png)
 
 ### Declare and set recognition criteria for price
 
@@ -244,21 +244,21 @@ Now, you need to define some new elements of the third screen that you will use 
 
 3.  Remove the **Text** criteria.
 
-    <!-- border -->![038_PriceDeleteTextCriteria](images/34.png)
+    ![038_PriceDeleteTextCriteria](images/34.png)
 
 4.  Add the **ID** of the element as criteria instead. This will uniquely identify the price.
 
-    <!-- border -->![039_SelectIdPrice](images/35.png)
+    ![039_SelectIdPrice](images/35.png)
 
 5.  Rename the element to **Price**.
 
 6.  Make sure the correct **id** criterion is selected and click **Declare Element**.
 
-    <!-- border -->![040_RenamePrice](images/36.png)
+    ![040_RenamePrice](images/36.png)
 
     Now, you have successfully declared the element Price and it is visible in the Declared Elements.
 
-    <!-- border -->![040_RenamePrice](images/54.png)
+    ![040_RenamePrice](images/54.png)
 
 ### Define shipping address on order details screen
 
@@ -267,15 +267,15 @@ Now, you will define the Shipping Address in a different way, as a collection of
 
 1.  Choose the **Name** under shipping address in the preview.
 
-    <!-- border -->![041_SelectAddress](images/37.png)
+    ![041_SelectAddress](images/37.png)
 
 2.  Remove the **Text** criteria.
 
-    <!-- border -->![042_RemoveAddressCriteria](images/38.png)
+    ![042_RemoveAddressCriteria](images/38.png)
 
 3.  Select **class** as element.
 
-    <!-- border -->![043_AddressPickClass](images/39.png)
+    ![043_AddressPickClass](images/39.png)
 
     With SAP Build Process Automation, you can also see the underlying technical document structure of the page. You use this to select more precisely the element you would like to define.
 
@@ -287,31 +287,31 @@ Now, you will define the Shipping Address in a different way, as a collection of
 
 7. Select the **DIV** (the container), instead of the **SPAN**. This way, you will be able to connect it to the other elements of the address.
 
-    <!-- border -->![044_OpenTree](images/40.png)
+    ![044_OpenTree](images/40.png)
 
 8.  **DIV** is selected. Now, remove the **Text** criteria as it is too specific.
 
-    <!-- border -->![045_PickDivAbove](images/41.png)
+    ![045_PickDivAbove](images/41.png)
 
 9.  Add the **class** criteria instead.
 
-    <!-- border -->![046_AddClassToRestrict](images/42.png)
+    ![046_AddClassToRestrict](images/42.png)
 
 10.  Class is selected. Set the name to **Shipping Address**.
 
 11.  Click **Declare Element**.
 
-    <!-- border -->![047_RenameShipping](images/43.png)
+   ![047_RenameShipping](images/43.png)
 
-    The element cannot be uniquely identified because multiple elements fulfill the same criteria. SAP Build Process Automation shows this in the warning status message in the **Declared Elements** section.
+   The element cannot be uniquely identified because multiple elements fulfill the same criteria. SAP Build Process Automation shows this in the warning status message in the **Declared Elements** section.
 
 12. Create a collection of these multiple elements, by clicking the **Is a collection** button under **Recognition Criteria**, while **Shipping Address** is selected.
 
-    <!-- border -->![048_ShippingAsCollection](images/44.png)
+    ![048_ShippingAsCollection](images/44.png)
 
     As a result, a collection is defined and the element is uniquely identified. The technical page structure shows that multiple elements are part of this collection (0, 1, 2, 3, 4).
 
-    <!-- border -->![049_ShippingResult](images/45.png)
+    ![049_ShippingResult](images/45.png)
 
 11. Don't forget to save the progress by choosing the **Save** button on the top right.
 
@@ -329,7 +329,7 @@ Now, you will define the Shipping Address in a different way, as a collection of
 
 4. Make sure you only have class as a recognition criterion.
 
-    <!-- border -->![050](images/46.png)
+    ![050](images/46.png)
 
 5.  Since **TR** is a collection, make it as a collection by clicking on the three dots.
 
@@ -337,11 +337,11 @@ Now, you will define the Shipping Address in a different way, as a collection of
 
 7.  Click **Declare Element**.
 
-    <!-- border -->![051](images/47.png)
+    ![051](images/47.png)
 
 8.  Now, you see the **Table Row** element is added to the list of declared elements and it is represented with the collection symbol since you have set it as a collection.
 
-    <!-- border -->![053](images/48.png)    
+    ![053](images/48.png)    
 
     You need to retrieve that table data now, which is a cell.
 
@@ -349,7 +349,7 @@ Now, you will define the Shipping Address in a different way, as a collection of
 
 10. Remove **Text** and add class as a recognition criterion.
 
-    <!-- border -->![054](images/49.png)
+    ![054](images/49.png)
 
     Since **TD** is also a collection, it must be set as a collection.
 
@@ -359,21 +359,21 @@ Now, you will define the Shipping Address in a different way, as a collection of
 
 13. Click **Declare Element**.
 
-    <!-- border -->![055](images/50.png)
+    ![055](images/50.png)
 
     You can see the one-dimension array added as of now. Since it is a collection, the **Table Data** is also a collection.
 
-    <!-- border -->![056](images/51.png)
+    ![056](images/51.png)
 
 14. Click on the three dots on **Table Row**, to recognize the Table Data as two-dimensional.
 
 15. Click **Add to criteria**.
 
-    <!-- border -->![057](images/52.png)
+    ![057](images/52.png)
 
     In the Element Information section, you can see that everything is added in the **Table Row**, and the **TD** is also marked as a two-dimensional array.
 
-    <!-- border -->![Multidimension](images/53.png)
+    ![Multidimension](images/53.png)
 
 16. Click **Save** to save your application.
 

@@ -57,7 +57,7 @@ To configure External Authentication in SAP Build Process Automation, please fol
 
 1. From **SAP Build** Lobby, select **Control Tower > External Authentication**.
 
-    <!-- border -->![Settings](21.png)
+    ![Settings](21.png)
 
 2. Choose **Create New Authentication**.
 
@@ -75,7 +75,7 @@ To configure External Authentication in SAP Build Process Automation, please fol
 
 4. Choose **Create**.
 
-    <!-- border -->![Create Authentication](22.png)
+    ![Create Authentication](22.png)
     
     This configuration can be identified using the name. As shown in the above diagram, the configuration is stored on the cloud and identified as Google Workspace Authentication.
 
@@ -88,19 +88,19 @@ To configure External Authentication in SAP Build Process Automation, please fol
     - Enter the email address with which you want to connect and click on the save icon,
     - Choose **Register**.
 
-    <!-- border -->![Register authentication](23.png)
+    ![Register authentication](23.png)
 
     While registering, the consent screen will be launched on the browser window automatically, where you will be prompted to enter your password and provide consent for the scopes configured on the SAP Build Process Automation Tenant.
  
-    <!-- border -->![Consent](24.png)
+    ![Consent](24.png)
 
     > **CAUTION:** If you are a free trial user, you will receive the following messages from Google:
 
-    <!-- border -->![Consent](18a.png)
+    ![Consent](18a.png)
 
     The registration was successful.
 
-    <!-- border -->![Registration](25.png)
+    ![Registration](25.png)
 
 
 ### Create an automation to authorize Google applications with Desktop Agent 3.0.
@@ -109,21 +109,21 @@ Before you can authorize Google applications, you will need to create an automat
 
 1. From the **Lobby**, choose **Create**.
 
-    <!-- border -->![Create](01.png)
+    ![Create](01.png)
 
 2. In the pop-up, select **Build an Automated Process**.
 
-    <!-- border -->![Automated Process](02.png)
+    ![Automated Process](02.png)
 
 3. Select **Task Automation**.
 
-    <!-- border -->![Task Automation](02a.png)
+    ![Task Automation](02a.png)
 
 4. In the **Create a Task Automation project** window, enter the name: **Google Workspace with OAuth**  and as a description: **A demo to automate Google Applications using Google SDK**.
 
 5. Choose **Create**.
 
-    <!-- border -->![Automated Process](02b.png)
+    ![Automated Process](02b.png)
 
     You will be asked to configure your Desktop Agent version.
 
@@ -131,7 +131,7 @@ Before you can authorize Google applications, you will need to create an automat
 
     > Please note that Agent version 3.16 or more is required for Google External Authorization.
 
-    <!-- border -->![Configure Agent Version](03.png)
+    ![Configure Agent Version](03.png)
 
     A pop-up window will prompt you to create an automation.
 
@@ -141,11 +141,11 @@ Before you can authorize Google applications, you will need to create an automat
 
 9. Choose **Create**.
 
-    <!-- border -->![Create automation](04.png)
+    ![Create automation](04.png)
 
     A new automation named **Select Google Authentication** will be successfully created. You will be navigated to the automation editor where you can start building your automation.
 
-    <!-- border -->![Create automation](05.png)
+    ![Create automation](05.png)
 
 
 ### Add the Google authorization SDK
@@ -160,25 +160,25 @@ The Google Authorization SDK is a collection of activities allowing you to acqui
 
 3. Choose **Add Dependency** and select **Add a Business Process project dependency**.
 
-    <!-- border -->![Add Dependency](07.png)
+    ![Add Dependency](07.png)
 
 4. Under **Package**, select **Google Authorization SDK** and choose version 1.38 or higher.
 
 5. Choose **Add**.
 
-    <!-- border -->![Google Authorization SDK](08.png)
+    ![Google Authorization SDK](08.png)
 
     The Google Authorization SDK has been added successfully.
 
 6. You may close the **Project Properties** window.
 
-    <!-- border -->![Google Authorization SDK](09.png)
+    ![Google Authorization SDK](09.png)
 
 7. In the **Automation Details** side panel, under **Tools**, search for Google.
 
     The Google Authorization activities will be displayed.
 
-    <!-- border -->![Google Authorization SDK](10.png)
+    ![Google Authorization SDK](10.png)
 
     Now you may use the **Select Google Authentication** activity for authorization.
 
@@ -187,11 +187,11 @@ The Google Authorization SDK is a collection of activities allowing you to acqui
 
 1. Search for the **Select Google Authentication** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Select Google Authentication](27.png)
+    ![Select Google Authentication](27.png)
 
     Here the only parameter required is name, in our case it is **Google Workspace Authentication** as configured on the SAP Build Process Automation Tenant.
     
-    <!-- border -->![Select Google Authentication](27a.png)
+    ![Select Google Authentication](27a.png)
 
     > If the parameter is not provided, the default authentication will be used. Once the execution of the activity is successful, the bot is authorized to execute any subsequent google activities.
 
@@ -201,7 +201,7 @@ The Google Authorization SDK is a collection of activities allowing you to acqui
 
 3. You may test if the Google Authentication has been set up correctly.
     
-    <!-- border -->![Test](28.png)
+    ![Test](28.png)
 
 
 ### Add Google Workspace SDK
@@ -216,11 +216,11 @@ You have added the Google Authorization SDK to authorize SAP Build Process Autom
 
 4. The dependency is successfully added. You may close the **Project Properties** window.
 
-    <!-- border -->![Google Workspace SDK](29.png)
+    ![Google Workspace SDK](29.png)
 
 5. You may search for google in the search bar and notice all activities available for Gmail, Google Docs, Google Sheets, Google Slides, Google Drive, Google Calendar.
 
-    <!-- border -->![Google Workspace SDK](29a.png)
+    ![Google Workspace SDK](29a.png)
 
 
 ### Create an environment variable
@@ -231,7 +231,7 @@ Environment Variables allow you to reuse certain information for a given environ
 
 2. In the Project Properties window, select **Environment Variables**, then **+ Create**.
 
-    <!-- border -->![Create Environment Variable](createEnvVar.png)
+    ![Create Environment Variable](createEnvVar.png)
 
 3. In the create an environment variable screen:
 
@@ -240,17 +240,17 @@ Environment Variables allow you to reuse certain information for a given environ
     - Under Type select **String**,
     - Choose the **Create** button.
 
-    <!-- border -->![Create To email](createToEmail.png)
+    ![Create To email](createToEmail.png)
 
 4. After the Environment Variable is created successfully, close the project properties window.
 
-    <!-- border -->![Close](closeEnvVar.png)
+    ![Close](closeEnvVar.png)
 
 ### Build an automation
 
 1. Search for the **Send Email (Gmail)** activity and drag and drop it into the workflow.
 
-    <!-- border -->![Send email](30.png)
+    ![Send email](30.png)
 
 2. Select the activity and under **Gmail parameters**, select **Create Custom Data**.
 
@@ -258,7 +258,7 @@ Environment Variables allow you to reuse certain information for a given environ
 
 4. Fill in the input parameters **subject** and **body**.
 
-    <!-- border -->![Send email](31.png)
+    ![Send email](31.png)
 
 5. Search for the **Disconnect (Google)** activity and drag and drop it into the workflow.
 
@@ -266,7 +266,7 @@ Environment Variables allow you to reuse certain information for a given environ
 
     > This activity is mandatory at the end of the automation.
 
-    <!-- border -->![Disconnect](32.png)
+    ![Disconnect](32.png)
 
 
 ### Test the automation
@@ -277,15 +277,15 @@ Environment Variables allow you to reuse certain information for a given environ
 
 3. Choose **Test**.
 
-    <!-- border -->![Test](17.png)
+    ![Test](17.png)
 
     The testing was successful.
 
-    <!-- border -->![Test](33.png)
+    ![Test](33.png)
 
 4. Go to the inbox where the email was sent. You should have received the email from Gmail that you configured previously. 
 
-    <!-- border -->![Test](34.png)
+    ![Test](34.png)
 
     You successfully configured your external authentication through the Desktop Agent 3.0. and authorized SBPA to automatically send an email from your Gmail account.
 
@@ -308,13 +308,13 @@ The Authorize Google (OAuth Client ID) activity is used to authorize using OAuth
 
 4. Choose **Create**.
 
-    <!-- border -->![Create Task Automation](26.png)
+    ![Create Task Automation](26.png)
 
     You will be asked to configure your Desktop Agent version.
 
 5. Select the Desktop Agent version that is registered on your system.
 
-    <!-- border -->![Configure Agent Version](35.png)
+    ![Configure Agent Version](35.png)
 
     A pop-up window will prompt you to create an automation.
 
@@ -324,11 +324,11 @@ The Authorize Google (OAuth Client ID) activity is used to authorize using OAuth
 
 9. Choose **Create**.
 
-    <!-- border -->![Create automation](36.png)
+    ![Create automation](36.png)
 
     A new automation named **Google Authorization - OAuth Client ID** will be successfully created. You will be navigated to the automation editor where you can start building your automation.
 
-    <!-- border -->![Create automation](37.png)
+    ![Create automation](37.png)
 
 
 ### Create environment variables
@@ -339,7 +339,7 @@ You will need to maintain two environment variables that will contain the fully 
 
 2. In the Project Properties window, select **Environment Variables**, then **+ Create**.
 
-    <!-- border -->![Create Environment Variable](createEnvVar1.png)
+    ![Create Environment Variable](createEnvVar1.png)
 
 3. In the create an environment variable screen:
 
@@ -348,13 +348,13 @@ You will need to maintain two environment variables that will contain the fully 
     - Under Type select **String**,
     - Choose the **Create** button.
 
-    <!-- border -->![Create](create.png)
+    ![Create](create.png)
 
 4. In the same way, you will create a second variable named `userEmail`, also of type **String**. Choose **+ Create**.
 
     > The user's email address is mandatory because the OAuth Approach is used to perform actions on their resources.
 
-    <!-- border -->![Create User Email](createUserEmail.png)
+    ![Create User Email](createUserEmail.png)
 
 
 ### Add the Google dependencies
@@ -365,13 +365,13 @@ You will need to maintain two environment variables that will contain the fully 
 
 3. Choose **Add**.
 
-    <!-- border -->![Add Google Authorization SDK](38.png)
+    ![Add Google Authorization SDK](38.png)
 
 4. Repeat the same steps to add the **Google Workspace SDK**.
 
     The dependencies are successfully added. You may close the **Project Properties** window.
 
-    <!-- border -->![Add Google Workspace SDK](39.png)
+    ![Add Google Workspace SDK](39.png)
 
 
 ### Use the Authorize Google (OAuth Client ID) activity
@@ -380,33 +380,33 @@ You will need to maintain two environment variables that will contain the fully 
 
 2. Drag and drop the activity into the workflow.
 
-    <!-- border -->![Authorize Google](11.png)
+    ![Authorize Google](11.png)
 
 3. Choose the activity.
 
 4. Under **Input Parameters**, for `clientCredentialFilePath` field enter the environment variable `E clientCredentialFilePath` previously created.
 
-    <!-- border -->![Client credential file path](12.png)
+    ![Client credential file path](12.png)
 
 5. Choose the field of the input parameter **Scopes** and select **Create Custom Data**.
 
-    <!-- border -->![Create Custom Data](13.png)
+    ![Create Custom Data](13.png)
 
     Scopes provide a way to limit the amount of access that is granted while authorizing, the corresponding scopes required for the subsequent activities should be selected. The subsequent google activities will fail, if the scopes were not appropriate.
 
 6. Under **Scopes List** input parameter, choose the **+** next to **List of Google Scopes..Scopes List** and select **Create Custom Data**.
 
-    <!-- border -->![Create Custom Data](13a.png)
+    ![Create Custom Data](13a.png)
 
     Select `GmailScope` as you would be building an automation to send an email.
 
-    <!-- border -->![Scopes](14.png)
+    ![Scopes](14.png)
 
 7.  For `userEmail` field enter the environment variable `userEmail` previously created.
 
     `userEmail` is the user's email address and it is mandatory because the OAuth Approach is used to perform actions on their resources.
 
-    <!-- border -->![User Email](15.png)
+    ![User Email](15.png)
 
 8. For the input parameter `storeRefreshToken`: the refresh tokens can be configured to be stored, in order to build unattended bots. However, the first bot run will be attended, since the user consent screen will be launched and user has to provide their consent.
 
@@ -414,7 +414,7 @@ You will need to maintain two environment variables that will contain the fully 
 
 10. Choose **Save**.
 
-    <!-- border -->![Save](16.png)
+    ![Save](16.png)
 
 
 ### Test Google authorization
@@ -429,21 +429,21 @@ You can test if the Google Authorization has been set up correctly.
 
 3. Choose **Test**.
 
-    <!-- border -->![Test](40.png)
+    ![Test](40.png)
     
     When you run the bot for the first time, the user consent screen with the scopes will be launched on the browser window. Once the user consent is given, the access token and refresh token will be generated. You can configure the activity to store these tokens and use it for subsequent bot runs without user intervention. When the refresh token expires or the scopes change, re-authentication and re-authorization are necessary. Every unique combination of client Id, email ID and scopes requires the user's consent on each system running the bot for the first time.
 
 4. While running the bot, the browser will be launched for user Authentication. After successful authentication, the consent screen will be prompted with the selected scopes, where you have to verify the scopes and provide consent:
 
-    <!-- border -->![Consent](18.png)
+    ![Consent](18.png)
 
     > **CAUTION:** If you are a free trial user, you will receive the following messages from Google:
 
-    <!-- border -->![Consent](18a.png)
+    ![Consent](18a.png)
 
     The testing was successful.
 
-    <!-- border -->![Test result](20.png)
+    ![Test result](20.png)
 
     You have set the Authorize (OAuth Client ID) activity and added the Google Workspace SDK to automate Google applications such as Google Drive, Gmail, Google Docs, Google Sheets and Google Slides. 
 
@@ -456,7 +456,7 @@ You can test if the Google Authorization has been set up correctly.
 
 You will create an environment variable for the list of direct recipients of the email you will send. Please follow step 7 to create a `toEmail` environment variable.
 
-<!-- border -->![Create to Email](43.png)
+![Create to Email](43.png)
 
 
 ### Build and test the automation
@@ -465,15 +465,15 @@ You will build an automation that will send an email from your gmail account to 
 
 Your automation will look like this:
 
-<!-- border -->![Automation](41.png)
+![Automation](41.png)
 
 You may test your automation. The testing was successful.
 
-<!-- border -->![Test](42.png)
+![Test](42.png)
 
 In the inbox where the email was sent, you will receive the email from Gmail that you configured previously. 
 
-<!-- border -->![Test](44.png)
+![Test](44.png)
 
 You successfully authorized SBPA to automatically send an email from your Gmail account.
 
