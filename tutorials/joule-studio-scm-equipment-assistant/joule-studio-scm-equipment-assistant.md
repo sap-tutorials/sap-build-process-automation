@@ -1,5 +1,5 @@
 ---
-author_name: Rebecca Yang
+author_name: Zeena Qarqash
 author_profile: 
 keywords: tutorial
 auto_validation: true
@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to Joule Work and Joule Studio in the Agent Lab at SAPPHIRE
+- Access to Joule Work and Joule Studio in the Agent Lab
 - You have been provided with the logon information
 
 ## You will learn
@@ -27,23 +27,25 @@ parser: v2
 
 >**IMPORTANT**
 >
->**Welcome to the Agent lab SAPPHIRE 2026!**
+>**Welcome to the Agent Lab**
 >
 >You are working with a pre-release version of the Joule Studio. This gives you an early look at our upcoming capabilities. Please keep the following in mind:
 >
-> - Features are subject to change: The user interface (UI), terminology, and functionalities you see in this lab may differ from the final generally available product (GA).
-> - For Educational use only: This environment is designed for learning and experimentation, not for production use.
-> - Potential instability: As a preview version, you may encounter occasional instability or minor bugs. The exercises are designed to work with the current state of the platform. If you get stuck, please notify a session instructor.
+> - **Features are subject to change:** The UI, terminology, and functionality you see may differ from the final product.
+> - **Educational use only:** This environment is designed for learning and experimentation, not for production use.
+> - **Potential instability:** As a preview version, you may encounter occasional instability or unexpected behavior.
 
 Using Joule Studio's **intent-based development**, learn to create an intelligent Supply Chain management (SCM) assistant that helps technicians quickly access equipment history and troubleshooting guidance.
 
 ### Get Started
 
-1. Open **Joule Work** and select the **Develop +** area.
+1. Open **Joule Work** and select the **Develop** area.
 
-2. Select the **Agent** tile and then choose **Create**.
+2. Select the **Agent** tile and then choose **Create**. 
+    
+    In Joule Studio, you can not only create an agent, but also n8n agentic workflows, applications & extend existing agents or assistants.
 
-    ![Click + to open the new solution dialog](010-create-solution.jpg)
+    ![Open the new solution dialog](010-create-solution.png)
 
 3. Leave the selected **New Solution** unchanged, and fill in the agent details:
 
@@ -63,7 +65,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
     ![Enter agent name and intent statement](030-define-solution-details.png)
 
-4. Choose **OK** to launch Joule Studio.
+4. Choose **Create**.
 
 ### Intent
 
@@ -71,13 +73,18 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
     ![intent-tools](040-Intent-tools.png)
 
-    > Answer the questions set by the tool. The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that some landscapes such as S/4HANA or Success Factors as backends so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution.
+    > Answer the questions set by the tool. The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that some landscapes such as S/4HANA or Success Factors are used as backends so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution.
 
 2. Once the intent document is created, proceed to the next phase, which is requirement generation. This might happen automatically if you have selected quick-create at the start. If processesing is waiting for your input to proceed, enter **Create Requirement** or similar.
 
-3. While the requirements are being generated, you can explore the intent on the **Idea Board**.
+3. While the requirements are being generated, you can explore the intent on the **Idea Board**. Using the “intent-analysis” skill, Joule generates a proposed solution displayed on the **Idea Board**. 
+Through its integration with SAP Signavio, Joule can map your intent to the relevant business process. In this tutorial, the identified business process is “Acquire to Decommission.”
 
     ![intent-tools](040-Intent-ready.png)
+
+4. **Intent Fit** indicates how closely the proposed solution corresponds to your requirement.
+
+    ![intent-fit](013-intent-fit.png)
 
 ### Requirements
 
@@ -85,10 +92,13 @@ When the requirement is ready, you have the opprotunity to review and refine it.
 
 Depending on your role in your company, you might be finished at this point and make the PRD available to a different team to take further. However, in this tutorial, you are taking the project forward with the generation of a technical specification. Similar to the previous step, this might happen automatically if you have selected quick-create at the start.
 
-At this stage, you can see the your PDR similar to the one below in markdown format.
-If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in thededicated code tab.
+At this stage, you can see the your PRD similar to the one below in markdown format.
 
 ![Technical  overview](060-prd-ready.png)
+
+If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in the dedicated code tab or even in the chat interface with Joule.
+
+![Technical  overview](014-edit-PRD.png)
 
 ### Specification
 
@@ -96,21 +106,16 @@ When the specification is complete you could pass it on to another team to do th
 
 ![Spec creation](070-create-spec.png)
 
-While the solution is being generated, you can explore the specification in the **Code**** tab. You'll find it as **specification/specification.md**
+While the solution is being generated, you can explore the specification in the **Code**** tab. You'll find it as **specification.md** under the **specification/equipment-troubleshooting-agent/**. 
 
 ![Spec ready](070-spec-ready.png)
 
-If processesing is waiting for your input, enter instruction similar to **Execute Specification** or **Implement the Solution**.
-
-![Spec ready](080-implementation.png)
-
-   The tool will work through the tasks defined in the specification. When it is finished, it will update the status in the specification to show the tasks have been done.
-
+   The tool will work through the tasks defined in the specification. When it is finished, it will start building the agent.
 ![Solution code](080-implementation-in-progress.png)
 
 ### Solution
 
-1. Wait until the implementation is finished successfully.
+1. Wait until the implementation is finished successfully. That includes the successful automated tests.
 
 ![Solution ready](080-implementation-complete.png)
 
@@ -118,6 +123,6 @@ If processesing is waiting for your input, enter instruction similar to **Execut
 
     ![Solution code](085-solution-code.png)
 
-2. Go to the **view** tab of your solution and try your agent. What you can do will depend on what has been implemented.
+2. Go to the **view** tab of your solution and try your agent. What you can do will depend on what has been implemented. Ask **How can I test this agent?** if you want to get suggestions for prompts to use.
 
-For the Agent Lab at SAPPHIRE, you will not be deploying your agent. However, the code that has been generated follows SAP best practices and would be deployable to the runtime.
+For this tutorial, you will not be deploying your agent unless your instructor says otherwise. However, the code that has been generated follows SAP best practices and would be deployable to the Joule Studio runtime.
