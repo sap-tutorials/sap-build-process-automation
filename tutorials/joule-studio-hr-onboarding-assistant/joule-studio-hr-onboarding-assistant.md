@@ -63,7 +63,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
        recommendations using simulated HCM data.
    ```
 
-    Select **Quick create**.
+    Select **Quick Create**.
 
     ![Enter agent name and intent statement](030-define-solution-details.png)
 
@@ -95,7 +95,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
        recommendations using simulated HCM data.
    ```
 
-    Deselect **Quick create**. This tells the tool to ask you clarifying questions before generating the intent, and to pause for your confirmation at each phase.
+    Deselect **Quick Create**. This tells the tool to ask you clarifying questions before generating the intent, and to pause for your confirmation at each phase.
 
     ![Enter agent name and intent statement](03iap-define-solution-details.png)
 
@@ -110,7 +110,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 This is where the tool tries to understand your intent and map the challenge to SAP's Reference Business Architecture. It has access to SAP Knowledge Graph, SAP LeanIX, and SAP Domain Models to help it create the intent document. Intent fit indicates how closely the proposed solution corresponds to your requirement.
 
-In Quick Create mode, the tool skips the clarifying questions and generates the intent document directly.
+In **Quick Create** mode, the tool skips the clarifying questions and generates the intent document directly.
 
 ![intent-tools](040-Intent-tools.png)
 
@@ -154,14 +154,14 @@ This is where the tool tries to understand your intent and map the challenge to 
 
 When the requirement is ready, you have the opportunity to review and refine it. For this tutorial, you will accept suggested product requirement document without changes. To progress to the next phase, you need to transform the PRD into a technical specification.
 
-Depending on your role in your company, you might be finished at this point and make the PRD available to a different team to take further. However, in this tutorial, you are taking the project forward with the generation of a technical specification. Similar to the previous step, this should  happen automatically if you have selected quick-create at the start.
+Depending on your role in your company, you might be finished at this point and make the PRD available to a different team to take further. However, in this tutorial, you are taking the project forward with the generation of a technical specification. Similar to the previous step, this should  happen automatically if you have selected **Quick Create** at the start.
 
 ![Requirement saved](060-create-prd.png)
 
 At this stage, you can see the your PDR similar to the one below in markdown format.
 If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in the dedicated code tab.
 
-![Technical  overview](060-prd-ready.png)
+![Technical overview](060-prd-ready.png)
 
 [OPTION END]
 
@@ -186,7 +186,7 @@ If you need to update it manually, you can just proceed clicking on the text in 
 
 [OPTION BEGIN [Quick Create]]
 
-When the specification is complete you could pass it on to another team to do the implementation. However, here you are going to get the tool to implement the agent.  This might happen automatically if you have selected quick-create at the start.
+When the specification is complete you could pass it on to another team to do the implementation. However, here you are going to get the tool to implement the agent.  This might happen automatically if you have selected **Quick Create** at the start.
 
 ![Spec creation](070-create-spec.png)
 
