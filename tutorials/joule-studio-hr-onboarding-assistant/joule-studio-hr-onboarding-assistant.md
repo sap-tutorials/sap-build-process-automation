@@ -52,15 +52,13 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
     Agent Name:
 
    ```COPY
-       HR Virtual Assistant
+    HR Virtual Assistant
    ```
 
     Intent Statement:
 
    ```COPY
-       Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, 
-       analyzes workforce data, predicts attrition risks, and generates actionable insights and development 
-       recommendations using simulated HCM data.
+    Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.
    ```
 
     Select **Quick Create**.
@@ -84,15 +82,13 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
     Agent Name:
 
    ```COPY
-       HR Virtual Assistant
+    HR Virtual Assistant
    ```
 
     Intent Statement:
 
    ```COPY
-       Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, 
-       analyzes workforce data, predicts attrition risks, and generates actionable insights and development 
-       recommendations using simulated HCM data.
+    Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.
    ```
 
     Deselect **Quick Create**. This tells the tool to ask you clarifying questions before generating the intent, and to pause for your confirmation at each phase.
@@ -158,7 +154,7 @@ Depending on your role in your company, you might be finished at this point and 
 
 ![Requirement saved](060-create-prd.png)
 
-At this stage, you can see the your PDR similar to the one below in markdown format.
+At this stage, you can see your PDR similar to the one below in markdown format.
 If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in the dedicated code tab.
 
 ![Technical overview](060-prd-ready.png)
@@ -237,7 +233,7 @@ The tool will work through the tasks defined in the specification. When it is fi
 
     ![Solution test](085-solution-test.png)
 
-    What you can do will depends on what has been implemented. You could start with a prompt like "How can I test this agent", which should provide some example prompts that you can use. For example, "Show me the profile for employee E0001".
+    What you can do will depend on what has been implemented. You could start with a prompt like "How can I test this agent", which should provide some example prompts that you can use. For example, "Show me the profile for employee E0001".
 
     ![Solution test](085-solution-test-2.png)
 
