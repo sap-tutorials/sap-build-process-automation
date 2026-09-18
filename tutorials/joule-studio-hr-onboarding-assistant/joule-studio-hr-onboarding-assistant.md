@@ -43,7 +43,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 1. Open **Joule Work** and select the **Develop** area.
 
-    ![Click + to open the new solution dialog](010-create-solution.png)
+    ![Click + to open the new solution dialog](010bis-create-solution.png)
 
 2. On the **Agent** tile, choose **Create**.
 
@@ -75,7 +75,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 1. Open **Joule Work** and select the **Develop** area.
 
-    ![Click + to open the new solution dialog](010-create-solution.png)
+    ![Click + to open the new solution dialog](010bis-create-solution.png)
 
 2. On the **Agent** tile, choose **Create**.
 
@@ -161,7 +161,7 @@ Depending on your role in your company, you might be finished at this point and 
 At this stage, you can see the your PDR similar to the one below in markdown format.
 If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in the dedicated code tab.
 
-![Technical  overview](060-prd-ready.png)
+![Technical overview](060-prd-ready.png)
 
 [OPTION END]
 
@@ -237,7 +237,7 @@ The tool will work through the tasks defined in the specification. When it is fi
 
     ![Solution test](085-solution-test.png)
 
-    What you can do will depend on what has been implemented. You could start with a prompt like "How can I test this agent", which should provide some example prompts that you can use. For example, "Show me the profile for employee E0001".
+    What you can do will depends on what has been implemented. You could start with a prompt like "How can I test this agent", which should provide some example prompts that you can use. For example, "Show me the profile for employee E0001".
 
     ![Solution test](085-solution-test-2.png)
 
