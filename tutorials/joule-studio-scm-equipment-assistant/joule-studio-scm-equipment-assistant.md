@@ -11,7 +11,7 @@ parser: v2
 
 # Use Joule Studio to Create an Assistant for Equipment Troubleshooting
 
-<!-- description -->Use Joule studio to create and test an agent for intelligent maintenance assistance in supply chain management.
+<!-- description -->Use Joule studio to create and test an agent for intelligent maintenance assistance in supply chain management
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ parser: v2
 
 ## You will learn
 
-- How to use intent-based development to create AI solutions.
+- How to use intent-based development to create AI solutions
 - How SAP Domain Models and other resources are leveraged to contextualize the generated solution
 
 ## Intro
@@ -35,7 +35,7 @@ parser: v2
 > - **Educational use only:** This environment is designed for learning and experimentation, not for production use.
 > - **Potential instability:** As a preview version, you may encounter occasional instability or unexpected behavior.
 
-Using Joule Studio's **intent-based development**, learn to create an intelligent Supply Chain management (SCM) assistant that helps technicians quickly access equipment history and troubleshooting guidance.
+Using Joule Studio's **intent-based development**, learn to create an intelligent Supply Chain Management (SCM) assistant that helps technicians quickly access equipment history and troubleshooting guidance.
 
 ### Get Started
 
@@ -43,7 +43,7 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 2. Select the **Agent** tile and then choose **Create**. 
     
-    In Joule Studio, you can not only create an agent, but also n8n agentic workflows, applications & extend existing agents or assistants.
+    In Joule Studio, you can create an agent, build n8n agentic workflows and applications, or extend existing agents and assistants.
 
     ![Open the new solution dialog](010bis-create-solution.png)
 
@@ -52,16 +52,16 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
     Agent Name:
 
    ```COPY
-       Equipment Troubleshooting Agent
+   Equipment Troubleshooting Agent
    ```
 
     Intent Statement:
 
    ```COPY
-      Create an AI agent that helps maintenance technicians quickly access equipment history and troubleshooting guidance.
+   Create an AI agent that helps maintenance technicians quickly access equipment history and troubleshooting guidance.
    ```
 
-    Select **Quick create**.
+    Select **Quick Create**.
 
     ![Enter agent name and intent statement](030bis-define-solution-details.png)
 
@@ -69,13 +69,13 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
 
 ### Intent
 
-1. This is where the tool tries to understand your intentions. The tool will attempt to understand your prompt and will likely ask you clarifying questions if you have not chosen quick-create as recommended above. Once it decides it understands enough, it will map the challenge to SAP's Reference Business Architecture and performs a fit-gap analysis. It has access to SAP Knowledge Graph, SAP LeanIX, and SAP Domain Models to help it create the intent document. Intent fit indicates how closely the proposed solution corresponds to your requirement.
+1. This is where the tool tries to understand your intentions. The tool will attempt to understand your prompt and will likely ask you clarifying questions if you have not chosen **Quick Create** as recommended above. Once it decides it understands enough, it will map the challenge to SAP's Reference Business Architecture and performs a fit-gap analysis. It has access to SAP Knowledge Graph, SAP LeanIX, and SAP Domain Models to help it create the intent document. Intent fit indicates how closely the proposed solution corresponds to your requirement.
 
     ![intent-tools](040bis-Intent-tools.png)
 
     > Answer the questions set by the tool. The questions that the tool asks cannot be predicted, so you have to use your judgement. Bear in mind that some landscapes such as S/4HANA or Success Factors are used as backends so tailor your responses accordingly. The more complex you make your scenario, the longer it will take to generate and test the solution.
 
-2. Once the intent document is created, proceed to the next phase, which is requirement generation. This might happen automatically if you have selected quick-create at the start. If processing is waiting for your input to proceed, enter **Create Requirement** or similar.
+2. Once the intent document is created, proceed to the next phase, which is requirement generation. This might happen automatically if you have selected **Quick Create** at the start. If processing is waiting for your input to proceed, enter **Create Requirement** or similar.
 
 3. While the requirements are being generated, you can explore the intent on the **Idea Board**. Using the “intent-analysis” skill, Joule generates a proposed solution displayed on the **Idea Board**. 
 Through its integration with SAP Signavio, Joule can map your intent to the relevant business process. In this tutorial, the identified business process is “Acquire to Decommission.”
@@ -88,25 +88,25 @@ Through its integration with SAP Signavio, Joule can map your intent to the rele
 
 ### Requirements
 
-When the requirement is ready, you have the opportunity to review and refine it. For this tutorial, you will accept suggested product requirement document without changes. To progress to the next phase, you need to transform the PRD into a technical specification.
+When the requirement is ready, you have the opportunity to review and refine it. For this tutorial, you will accept suggested Product Requirement Document (PRD) without changes. To progress to the next phase, you need to transform the PRD into a technical specification.
 
-Depending on your role in your company, you might be finished at this point and make the PRD available to a different team to take further. However, in this tutorial, you are taking the project forward with the generation of a technical specification. Similar to the previous step, this might happen automatically if you have selected quick-create at the start.
+Depending on your role in your company, you might be finished at this point and make the PRD available to a different team to take further. However, in this tutorial, you are taking the project forward with the generation of a technical specification. Similar to the previous step, this might happen automatically if you have selected **Quick Create** at the start.
 
-At this stage, you can see the your PRD similar to the one below in markdown format.
+At this stage, you can see the PRD similar to the one below in markdown format.
 
 ![Technical  overview](060bis-prd-ready.png)
 
-If you need to update it manually, you can just proceed clicking on the text in the view or by editing the files in the dedicated code tab or even in the chat interface with Joule.
+If you need to update the PRD manually, you can simply click on the text in the **View** tab, edit the files in the dedicated **Code** tab, or even make the changes through the chat interface with Joule.
 
 ![Technical  overview](014bis-edit-PRD.png)
 
 ### Specification
 
-When the specification is complete you could pass it on to another team to do the implementation. However, here you are going to get the tool to implement the agent.  This might happen automatically if you have selected quick-create at the start.
+Once the specification is complete, you could hand it over to another team for implementation. However, here, you can have the tool implement the agent for you. This may happen automatically if you selected **Quick Create** at the start.
 
 ![Spec creation](070bis-create-spec.png)
 
-While the solution is being generated, you can explore the specification in the **Code**** tab. You'll find it as **specification.md** under the **specification/equipment-troubleshooting-agent/**. 
+While the solution is being generated, you can explore the specification in the **Code** tab. You'll find it as **specification.md** under the **specification/equipment-troubleshooting-agent/**. 
 
 ![Spec ready](070bis-spec-ready.png)
 
@@ -123,6 +123,6 @@ While the solution is being generated, you can explore the specification in the 
 
     ![Solution code](085bis-solution-code.png)
 
-2. Go to the **view** tab of your solution and try your agent. What you can do will depend on what has been implemented. Ask **How can I test this agent?** if you want to get suggestions for prompts to use.
+2. Go to the **Try** tab of your solution to test your agent. What you can do will depend on what has been implemented. If you need some inspiration, ask **How can I test this agent?** to get suggestions for prompts you can use.
 
 For this tutorial, you will not be deploying your agent unless your instructor says otherwise. However, the code that has been generated follows SAP best practices and would be deployable to the Joule Studio runtime.
