@@ -52,13 +52,13 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
     Agent Name:
 
    ```COPY
-    HR Virtual Assistant
+   HR Virtual Assistant
    ```
 
     Intent Statement:
 
    ```COPY
-    Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.
+   Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.
    ```
 
     Select **Quick Create**.
@@ -82,13 +82,13 @@ Using Joule Studio's **intent-based development**, learn to create an intelligen
     Agent Name:
 
    ```COPY
-    HR Virtual Assistant
+   HR Virtual Assistant
    ```
 
     Intent Statement:
 
    ```COPY
-    Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.
+   Create an AI agent that acts as an HR virtual assistant, answers employee HR questions, analyzes workforce data, predicts attrition risks, and generates actionable insights and development recommendations using simulated HCM data.
    ```
 
     Deselect **Quick Create**. This tells the tool to ask you clarifying questions before generating the intent, and to pause for your confirmation at each phase.
