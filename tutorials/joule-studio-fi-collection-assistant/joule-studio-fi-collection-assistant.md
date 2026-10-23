@@ -32,9 +32,9 @@ parser: v2
 >
 >You are working with a pre-release version of the Joule Studio. This gives you an early look at our upcoming capabilities. Please keep the following in mind:
 >
-> - **Features are subject to change:** The UI, terminology, and functionality you see may differ from the final product.
-> - **Educational use only:** This environment is designed for learning and experimentation, not for production use.
-> - **Potential instability:** As a preview version, you may encounter occasional instability or unexpected behavior.
+> - **Features are subject to change:** The UI, terminology, and functionality you see may differ from the final product
+> - **Educational use only:** This environment is designed for learning and experimentation, not for production use
+> - **Potential instability:** As a preview version, you may encounter occasional instability or unexpected behavior
 
 Collection's specialists spend significant time manually crafting dunning and collection emails for each customer. Collectors need an agent that reads payment history and open AR items from SAP S/4HANA and generates context-aware, personalized collection emails hence reducing manual effort and improving collection effectiveness. Learn how to create such an intelligent finance assistant in a short time using Joule Studio's **intent-based development**.
 
